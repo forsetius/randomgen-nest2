@@ -1,0 +1,8 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "rootDir": "test/e2e",
+  "testRegex": ".*\\.test-e2e\\.ts$",
+  "setupFiles": ["<rootDir>/setEnvVars.js"],
+  "testTimeout": 50000
+}

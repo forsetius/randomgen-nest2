@@ -1,0 +1,6 @@
+{
+  "rootDir": "src",
+  "testRegex": ".*\\.test\\.ts$",
+  "preset": "ts-jest",
+  "testEnvironment": "node"
+}
