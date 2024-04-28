@@ -1,8 +1,4 @@
-import {
-  IsEnum, IsInt,
-  IsOptional,
-  IsUrl, Max, Min,
-} from 'class-validator';
+import { IsEnum, IsInt, IsOptional, IsUrl, Max, Min } from 'class-validator';
 import { Transform } from 'class-transformer';
 import { Env } from '../../shared/types/Env';
 

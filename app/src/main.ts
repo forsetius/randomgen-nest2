@@ -25,7 +25,7 @@ async function bootstrap(): Promise<void> {
   );
 
   await app.init();
-  await app.listen(configService.getInferred('app.port'))
+  await app.listen(configService.getInferred('app.port'));
 }
 
 void bootstrap();
