@@ -12,7 +12,11 @@ export const config = (envVars: EnvVarValidator) => ({
     port: envVars.APP_PORT,
     defaultLanguage: Language.EN,
   },
-  businessRules: {},
+  business: {
+    technobabble: {
+      maxResults: 20,
+    },
+  },
   docs: {
     endpoint: 'docs',
   },
