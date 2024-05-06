@@ -1,6 +1,6 @@
-import { EnvVarValidator } from './base/config/EnvVarValidator';
+import { EnvVarValidator } from '@config/EnvVarValidator';
 import { ApiVersion } from './base/apidoc/types/ApiVersion';
-import { Language } from './shared/types/Language';
+import { Language } from '@shared/types/Language';
 
 export const config = (envVars: EnvVarValidator) => ({
   app: {

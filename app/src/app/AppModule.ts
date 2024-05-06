@@ -6,7 +6,7 @@ import { AppConfigModule } from '../base/config/AppConfigModule';
 import { SecurityModule } from '../base/security/SecurityModule';
 import { TemplatingModule } from '../base/templating/TemplatingModule';
 import { ApiDocModule } from '../base/apidoc/ApiDocModule';
-import { TechnobabbleModule } from '../business/technobabble/TechnobabbleModule';
+import { TechnobabbleModule } from '../domain/technobabble/TechnobabbleModule';
 
 @Module({
   imports: [

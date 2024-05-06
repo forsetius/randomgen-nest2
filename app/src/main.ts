@@ -2,10 +2,10 @@ import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { ApiDocService } from './base/apidoc/ApiDocService';
-import { AppConfigService } from './base/config/AppConfigService';
+import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
 import { SecurityService } from './base/security/SecurityService';
-import { Env } from './shared/types/Env';
+import { Env } from '@shared/types/Env';
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
