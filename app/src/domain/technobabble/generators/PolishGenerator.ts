@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
-import { AdjectiveForms, Gender, NounForms } from '../types/SourcePl';
+import { AdjectiveForms, Gender, NounForms, SourcePl } from '../types/SourcePl';
 import { flipCoin } from '@shared/util/random';
 import { Language } from '@shared/types/Language';
 
 @Injectable()
-export class PolishGenerator extends BaseGenerator<Language.PL> {
+export class PolishGenerator extends BaseGenerator<SourcePl> {
   public constructor() {
     super(Language.PL);
   }

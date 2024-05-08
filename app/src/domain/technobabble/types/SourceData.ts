@@ -1,7 +1,3 @@
-import { Language } from '@shared/types/Language';
-import { SourceEn } from './SourceEn';
-import { SourcePl } from './SourcePl';
-
 export enum SourceKeys {
   ACTION = 'action',
   DESCRIPTOR = 'descriptor',
@@ -9,12 +5,8 @@ export enum SourceKeys {
   EFFECT = 'effect',
   DEVICE = 'device',
 }
+export type BaseSource = Record<SourceKeys, any[]>;
 
-type ToBaseSource<T extends Record<SourceKeys, any[]>> = {
+export type SourceData<T extends BaseSource> = {
   [K in SourceKeys]: T[K][number];
 };
-
-export interface SourceData {
-  [Language.EN]: ToBaseSource<SourceEn>;
-  [Language.PL]: ToBaseSource<SourcePl>;
-}

@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
 import { Language } from '@shared/types/Language';
+import { SourceEn } from '../types/SourceEn';
 
 @Injectable()
-export class EnglishGenerator extends BaseGenerator<Language.EN> {
+export class EnglishGenerator extends BaseGenerator<SourceEn> {
   public constructor() {
     super(Language.EN);
   }
