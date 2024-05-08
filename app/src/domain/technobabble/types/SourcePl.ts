@@ -1,7 +1,4 @@
-import { Language } from '@shared/types/Language';
-
-export interface TechnobabblePlDataModel {
-  language: Language.PL;
+export interface SourcePl {
   action: string[];
   descriptor: AdjectiveForms[];
   source: AdjectiveForms[];

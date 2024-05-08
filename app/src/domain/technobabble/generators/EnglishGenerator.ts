@@ -1,39 +1,24 @@
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
-import { TechnobabbleEnDataModel } from '../types/TechnobabbleEnDataModel';
-import { RollableCollection } from '@shared/util/RollableCollection';
+import { Language } from '@shared/types/Language';
 
 @Injectable()
-export class EnglishGenerator extends BaseGenerator<TechnobabbleEnDataModel> {
+export class EnglishGenerator extends BaseGenerator<Language.EN> {
   public constructor() {
-    super(DatasetEn);
+    super(Language.EN);
   }
 
-  public generate(sourceTemplateName: string): string {
-    const dataset = this.getDataset(sourceTemplateName);
-
+  public generate(): string {
     return [
-      dataset.descriptor.getRandom(),
-      dataset.action.getRandom(),
-      dataset.source.getRandom(),
-      dataset.effect.getRandom(),
-      dataset.device.getRandom(),
+      this.descriptor.getRandom(),
+      this.action.getRandom(),
+      this.source.getRandom(),
+      this.effect.getRandom(),
+      this.device.getRandom(),
     ].join(' ');
   }
-}
 
-class DatasetEn {
-  public readonly action: RollableCollection<string>;
-  public readonly descriptor: RollableCollection<string>;
-  public readonly source: RollableCollection<string>;
-  public readonly effect: RollableCollection<string>;
-  public readonly device: RollableCollection<string>;
-
-  public constructor(data: TechnobabbleEnDataModel) {
-    this.action = new RollableCollection(data.action);
-    this.descriptor = new RollableCollection(data.descriptor);
-    this.source = new RollableCollection(data.source);
-    this.effect = new RollableCollection(data.effect);
-    this.device = new RollableCollection(data.device);
+  protected override getData() {
+    return super.getData(Language.EN);
   }
 }
