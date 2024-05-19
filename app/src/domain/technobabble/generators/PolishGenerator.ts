@@ -10,12 +10,14 @@ export class PolishGenerator extends BaseGenerator<SourcePl> {
     super(Language.PL);
   }
 
-  public generate(): string {
-    const action = this.action.getRandom();
-    const descriptor = this.descriptor.getRandom();
-    const source = this.source.getRandom();
-    const effect = this.effect.getRandom();
-    const device = this.device.getRandom();
+  public generate(datasetName: string): string {
+    const dataset = this.getDataset(datasetName);
+
+    const action = dataset.action.getRandom();
+    const descriptor = dataset.descriptor.getRandom();
+    const source = dataset.source.getRandom();
+    const effect = dataset.effect.getRandom();
+    const device = dataset.device.getRandom();
 
     const isEffectPlural = flipCoin();
     const isDevicePlural = flipCoin();

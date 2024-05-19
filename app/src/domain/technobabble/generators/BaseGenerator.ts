@@ -1,37 +1,34 @@
 import * as fs from 'node:fs';
 import { Language } from '@shared/types/Language';
-import { RollableCollection } from '@shared/util/RollableCollection';
 import { SourceKeys, SourceData, BaseSource } from '../types/SourceData';
+import { Dataset } from './Dataset';
+import { globSync } from 'glob';
+import * as path from 'node:path';
 
 export abstract class BaseGenerator<S extends BaseSource> {
-  public readonly action: RollableCollection<SourceData<S>[SourceKeys.ACTION]>;
-  public readonly descriptor: RollableCollection<
-    SourceData<S>[SourceKeys.DESCRIPTOR]
-  >;
-  public readonly source: RollableCollection<SourceData<S>[SourceKeys.SOURCE]>;
-  public readonly effect: RollableCollection<SourceData<S>[SourceKeys.EFFECT]>;
-  public readonly device: RollableCollection<SourceData<S>[SourceKeys.DEVICE]>;
+  protected datasets: Record<string, Dataset<S>> = {};
 
   protected constructor(language: Language) {
-    const data = this.getData(language);
+    const dataFiles = globSync(
+      `../../../../dict/technobabble/*-${language}.json`,
+    );
+    dataFiles.forEach((dataFile) => {
+      const datasetName = path.basename(dataFile, `-${language}.json`);
+      const data = JSON.parse(fs.readFileSync(dataFile, 'utf-8')) as {
+        [K in SourceKeys]: SourceData<S>[K][];
+      };
 
-    this.action = new RollableCollection(data.action);
-    this.descriptor = new RollableCollection(data.descriptor);
-    this.source = new RollableCollection(data.source);
-    this.effect = new RollableCollection(data.effect);
-    this.device = new RollableCollection(data.device);
+      this.datasets[datasetName] = new Dataset(data);
+    });
   }
 
-  abstract generate(): string;
+  abstract generate(datasetName: string): string;
 
-  protected getData(language: Language): {
-    [K in SourceKeys]: SourceData<S>[K][];
-  } {
-    return JSON.parse(
-      fs.readFileSync(
-        `../../../../dict/technobabble/*-${language}.json`,
-        'utf-8',
-      ),
-    );
+  protected getDataset(name: string): Dataset<S> {
+    if (!(name in this.datasets)) {
+      throw new Error(`No such template: "${name}"`);
+    }
+
+    return this.datasets[name]!;
   }
 }

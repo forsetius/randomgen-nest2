@@ -9,17 +9,15 @@ export class EnglishGenerator extends BaseGenerator<SourceEn> {
     super(Language.EN);
   }
 
-  public generate(): string {
-    return [
-      this.descriptor.getRandom(),
-      this.action.getRandom(),
-      this.source.getRandom(),
-      this.effect.getRandom(),
-      this.device.getRandom(),
-    ].join(' ');
-  }
+  public generate(datasetName: string): string {
+    const dataset = this.getDataset(datasetName);
 
-  protected override getData() {
-    return super.getData(Language.EN);
+    return [
+      dataset.descriptor.getRandom(),
+      dataset.action.getRandom(),
+      dataset.source.getRandom(),
+      dataset.effect.getRandom(),
+      dataset.device.getRandom(),
+    ].join(' ');
   }
 }
