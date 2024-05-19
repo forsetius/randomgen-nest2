@@ -10,7 +10,7 @@ export abstract class BaseGenerator<S extends BaseSource> {
 
   protected constructor(language: Language) {
     const dataFiles = globSync(
-      `../../../../dict/technobabble/*-${language}.json`,
+      `${__dirname}/../../../../dict/technobabble/*-${language}.json`,
     );
     dataFiles.forEach((dataFile) => {
       const datasetName = path.basename(dataFile, `-${language}.json`);

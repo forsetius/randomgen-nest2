@@ -8,6 +8,7 @@ import { SourcePl } from './types/SourcePl';
 import { TechnobabbleRequestQueryDto } from './dto/TechnobabbleRequestQueryDto';
 import { ApiOperation } from '@nestjs/swagger';
 import { SourceTemplateName } from './types/SourceTemplateName';
+import { BaseSource } from './types/SourceData';
 
 @Controller()
 export class TechnobabbleController {
@@ -39,7 +40,7 @@ export class TechnobabbleController {
       .map(() => service.generate(templateName));
   }
 
-  private chooseGenerator(lang?: Language): BaseGenerator<SourcePl> {
+  private chooseGenerator(lang?: Language): BaseGenerator<BaseSource> {
     const language =
       lang ?? this.configService.getInferred('app.defaultLanguage');
 

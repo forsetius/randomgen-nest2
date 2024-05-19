@@ -42,8 +42,4 @@ export class PolishGenerator extends BaseGenerator<SourcePl> {
   private pickNounForm(forms: NounForms, isPlural: boolean) {
     return isPlural ? forms.pl : forms.sing;
   }
-
-  protected override getData() {
-    return super.getData(Language.PL);
-  }
 }
