@@ -1,0 +1,113 @@
+[
+  {
+    "chance": 1,
+    "name": "O",
+    "color": "Blue",
+    "description": "The hottest and brightest of stars, these stars tend to bathe their systems in harsh ultraviolet radiation. Many of them are also supergiants, burning through their cores very quickly and leaving the Main Sequence behind. They tend to be in star-rich areas as they have little time to move farther away during their short lives. ",
+    "age": "1d5"
+  },
+  {
+    "chance": 2,
+    "name": "B",
+    "color": "White-blue",
+    "description": "The hottest and brightest of stars, these stars tend to bathe their systems in harsh ultraviolet radiation. Many of them are also supergiants, burning through their cores very quickly and leaving the Main Sequence behind. They tend to be in star-rich areas as they have little time to move farther away during their short lives. ",
+    "age": "1d5"
+  },
+  {
+    "chance": 2,
+    "name": "A",
+    "color": "White",
+    "description": "The most common naked eye stars, they are the brightest and hottest of those that follow the Main Sequence. They are young and have considerable radiation, as well as a pure bluish- white light. Examples: Vega (α Lyrae), Deneb (α Cygni)",
+    "age": "1d5"
+  },
+  {
+    "chance": 6,
+    "name": "F",
+    "color": "Yellow-white",
+    "description": "Bright and hot stars, F- Types are nonetheless calmer than hotter stellar types. Transhumans still need radiation shielding to survive on the surface of any planets but they are much more likely to have biospheres. Example: Canopus (α Carinae). ",
+    "age": "1d10"
+  },
+  {
+    "chance": 8,
+    "name": "G",
+    "color": "Yellow",
+    "description": " These are the most familiar stellar systems to transhumans since the Earth’s Sun is a G- Type star. This broad category takes up a significant portion of a star’s time in the Main Sequence, although this phase is actually extremely unstable and therefore short for supergiants. Habitable zones are similar to the Sol system (for one- star systems) and the age of the system and low radiation levels both mean that life is much more likely. Examples: Sol, Alpha Centauri",
+    "age": "1d10+3"
+  },
+  {
+    "chance": 10,
+    "name": "K",
+    "color": "Orange",
+    "description": "The orange light of these stars is similar in many ways to that produced by G- Types (low frequency and so less harmful radiation) but many transhumans describe conditions on orbiting planets as feeling like “constantly evening.” This is normally a relatively short phase for a star, although it can be longer for K- Type giants and supergiants. Examples: Pollux (β Geminorum), Arcturus (α Boötis; giant).\t",
+    "age": "1d10+3"
+  },
+  {
+    "chance": 45,
+    "name": "M",
+    "color": "Red",
+    "description": "These stars are by far the most common in the galaxy, representing about 76% of the Main Sequence stars in the volume within 15 light years of Earth. Most of these, however, are red dwarfs which will eventually cool further to be L- , T- , C- , or S- Type stars. A number of others, though, are red giants and supergiants who make up for their low energy- output with sheer volume. Because stars swell towards the end of their lives, M- Types will be much, much larger than when they were G- Type stars, meaning that formerly inhospitable planets are now thawed and comfortable while formerly pleasant planets are now burned husks if not within the star itself. Examples: Proxima Centauri (red dwarf), Antares (α Scorpii; supergiant) Betelgeuse (α Orionis; giant). ",
+    "age": "1d10+4"
+  },
+  {
+    "chance": 5,
+    "name": "L",
+    "color": "Brown",
+    "description": "Brown dwarf stars (the hotter of which are called red dwarfs) are small and cool bodies, some of them even too small to support fusion of any appreciable amount. Any stellar systems with brown dwarf primaries will probably eventually collide into a Main Sequence star of a more impressive stellar class. Any planets surrounding a brown dwarf will be very poorly lit and extremely cold: even the close planets will be similar to living in the Outer System. L- Types are the hotter type, with significant metal compounds in their spectra, and T- Types are the cooler ones, also frequently called “methane stars.",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 5,
+    "name": "T",
+    "color": "Dark purple",
+    "description": "Brown dwarf stars (the hotter of which are called red dwarfs) are small and cool bodies, some of them even too small to support fusion of any appreciable amount. Any stellar systems with brown dwarf primaries will probably eventually collide into a Main Sequence star of a more impressive stellar class. Any planets surrounding a brown dwarf will be very poorly lit and extremely cold: even the close planets will be similar to living in the Outer System. L- Types are the hotter type, with significant metal compounds in their spectra, and T- Types are the cooler ones, also frequently called “methane stars.",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 5,
+    "name": "Y",
+    "color": "Near black",
+    "description": "Brown dwarf stars (the hotter of which are called red dwarfs) are small and cool bodies, some of them even too small to support fusion of any appreciable amount. Any stellar systems with brown dwarf primaries will probably eventually collide into a Main Sequence star of a more impressive stellar class. Any planets surrounding a brown dwarf will be very poorly lit and extremely cold: even the close planets will be similar to living in the Outer System. L- Types are the hotter type, with significant metal compounds in their spectra, and T- Types are the cooler ones, also frequently called “methane stars.",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 1,
+    "name": "C",
+    "color": "Rusty red",
+    "description": "These dim, cool stars are the remains of red giants near the end of their lives. C- Types (called carbon stars and at one point designated R- and N- Types) have an excess of carbon in their atmospheres that result in a deep, ruby- red color.  These stellar type are still giants but they have begun to retract meaning that the close planets have been baked and sterilized and are now in the process of being frozen as the star’s energy runs out for good.",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 1,
+    "name": "S",
+    "color": "Dim red",
+    "description": "These dim, cool stars are the remains of red giants near the end of their lives. S-Type stars have spectra dominated by zirconium at the expense of carbon, leading to lighter red colors though much dimmer than M- Types. Both of these stellar types are still giants but they have begun to retract meaning that the close planets have been baked and sterilized and are now in the process of being frozen as the star’s energy runs out for good.",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 6,
+    "name": "D",
+    "color": "White",
+    "description": "Whereas brown dwarfs are cool and barely- burning cinders, white dwarf stars are bright and hot despite being small. For close planets they can have plenty of light and heat but those conditions fall off fairly quickly with increasing orbits. They are much more common as companion stars, however. Example: Sirius B, Procyon B.\t",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 1,
+    "name": "Neutron star",
+    "color": "Blue-white",
+    "description": "When a star collapses and its mass isn’t sufficient to produce a black hole, the result instead is a superdense body composed entirely of neutrons (as the electrons and protons are forced together). When they spin, the poles emit beams of electromagnetic radiation and the cycling signal is detected as a pulsar.\t",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 1,
+    "name": "Black hole",
+    "color": "Black",
+    "description": "The infamous danger of deep space, these are the collapsed remnants of stars that have reached the end of their lifespans. The mass of the stellar remnant is so compacted that it’s effectively infinitely dense, resulting in the pinpoint phenomenon called a singularity which warps space around it enough to prevent everything, including light, from escaping. ",
+    "age": "1d10+5"
+  },
+  {
+    "chance": 1,
+    "name": "Exotic star",
+    "description": "Before travel through Pandora Gates, these were only theoretical bodies. However, Pathfinder researchers have released data confirming that at least one system has been discovered (though the encounter destroyed the probe). These compact stars are composed of exotic matter including quarks (as in the case of the confirmed system), preons (theoretical sub- quark particles), and even antimatter.",
+    "age": "1d10+5"
+  }
+]

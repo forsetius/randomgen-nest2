@@ -1,0 +1,611 @@
+{
+  "items": [
+    {
+      "chance": 20,
+      "name": "Small Body",
+      "description": "Very small worlds with negligible gravity such as might be found in the Main Belt or Kuiper Belt.",
+      "items": [
+        {
+          "chance": 34,
+          "name": "Vulcanoidal",
+          "description": "These are rocky bodies in epistellar orbits, and marked by high metallic content.  Rare, even unique mineralogical properties may develop because of their long term exposure (on the order of billions of years) to intense stellar radiation. First theoretically proposed by Charles Dillon Perrine in the mid-Twentieth Century."
+        },
+        {
+          "chance": 33,
+          "name": "Asteroidal",
+          "description": "These are the archetypal asteroids, small and irregular bodies which are often found in specific belts or fields within a solar system, although they may also be found in eccentric solar orbits. ",
+          "items": [
+            {
+              "chance": 5,
+              "name": "Metallic",
+              "description": "Metal‐rich, dense \nobjects with a metallic content in \nexcess of 50%. In most systems, these are the least common asteroid bodies"
+            },
+            {
+              "chance": 30,
+              "name": "Silicaceous",
+              "description": "Silicate-rich bodies with a silicate content in excess of 50%. These are fairly common in most solar systems."
+            },
+            {
+              "chance": 40,
+              "name": "Carbonaceous",
+              "description": "Carbon-rich bodies with varying amounts of silicates and metals. They are by far the most common type of asteroid in most systems."
+            },
+            {
+              "chance": 15,
+              "name": "Gelidaceous",
+              "description": "Commonly called “iceteroids,” these are ice-rich bodies with a frozen volatile content greater than 50%.  However, unlike the Cometary Class, these bodies are in stable, relatively circular orbits which do not take them close enough to the local sun for volatile-‐loss."
+            },
+            {
+              "chance": 10,
+              "name": "Aggregate",
+              "description": "Bodies which are essentially debris piles, held together by mutual gravity; their shapes may change over time, subtly or obviously, due to gravitational flexing. Their composition may vary, but for the most part they tend to be silicate-rich."
+            }
+          ]
+        },
+        {
+          "chance": 33,
+          "name": "Asteroidal",
+          "description": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "chance": 25,
+      "name": "Dwarf Terrestrial",
+      "description": "Small, rocky worlds that have enough gravity to maintain a thin atmosphere and support tectonic processes.",
+      "items": [
+        {
+          "name": "Protothermic",
+          "description": "",
+          "items": [
+            {
+              "name": "ProtoFerrinian",
+              "description": ""
+            },
+            {
+              "name": "ProtoLithian",
+              "description": ""
+            },
+            {
+              "name": "ProtoCarbonic",
+              "description": ""
+            },
+            {
+              "name": "ProtoGelidian",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "GeoPassive",
+          "description": "",
+          "items": [
+            {
+              "name": "Ferrinian",
+              "description": ""
+            },
+            {
+              "name": "Lithic",
+              "description": "",
+              "items": [
+                {
+                  "name": "Janian",
+                  "description": ""
+                },
+                {
+                  "name": "Hermian",
+                  "description": ""
+                },
+                {
+                  "name": "Vestian",
+                  "description": ""
+                },
+                {
+                  "name": "Selenian",
+                  "description": ""
+                },
+                {
+                  "name": "Cerean",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "name": "Carbonian",
+              "description": ""
+            },
+            {
+              "name": "Gelidian",
+              "description": ""
+            },
+            {
+              "name": "Stygian",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "GeoThermic",
+          "description": "",
+          "items": [
+            {
+              "name": "Phaetonic",
+              "description": ""
+            },
+            {
+              "name": "Apollinian",
+              "description": ""
+            },
+            {
+              "name": "Sethian",
+              "description": ""
+            },
+            {
+              "name": "Erisian",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "GeoTidal",
+          "description": "",
+          "items": [
+            {
+              "chance": 10,
+              "name": "Hephaestian",
+              "description": ""
+            },
+            {
+              "chance": 10,
+              "name": "Hebean",
+              "description": ""
+            },
+            {
+              "chance": 15,
+              "name": "Promethean",
+              "description": "",
+              "items": [
+                {
+                  "name": "EoPromethean",
+                  "description": ""
+                },
+                {
+                  "name": "MesoPromethean",
+                  "description": ""
+                },
+                {
+                  "name": "BathyPromethean",
+                  "description": ""
+                },
+                {
+                  "name": "AmuPromethean",
+                  "description": ""
+                },
+                {
+                  "name": "ThioPromethean",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "name": "Lokian",
+              "description": ""
+            },
+            {
+              "chance": 10,
+              "name": "Idunnian",
+              "description": ""
+            },
+            {
+              "chance": 10,
+              "name": "Burian",
+              "description": ""
+            },
+            {
+              "chance": 10,
+              "name": "Atlan",
+              "description": ""
+            },
+            {
+              "chance": 15,
+              "name": "Plutonian",
+              "description": "",
+              "items": [
+                {
+                  "chance": 3,
+                  "name": "Europan",
+                  "description": ""
+                },
+                {
+                  "chance": 4,
+                  "name": "Enceladusian",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "Iapetean",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "name": "Tritonic",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "GeoCyclic",
+          "description": "",
+          "items": [
+            {
+              "chance": 40,
+              "name": "Arean",
+              "description": "",
+              "items": [
+                {
+                  "chance": 4,
+                  "name": "MesoArean",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "EuArean",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "Arean-Lacustric",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "name": "Utgardian",
+              "description": "",
+              "items": [
+                {
+                  "chance": 4,
+                  "name": "MesoUtgardian",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "EuUtgardian",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "Utgard-Lacustric",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "name": "Titanian",
+              "description": "",
+              "items": [
+                {
+                  "chance": 3,
+                  "name": "MesoTitanian",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "EuTitanian",
+                  "description": ""
+                },
+                {
+                  "chance": 4,
+                  "name": "Titanian-Lacustric",
+                  "description": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chance": 20,
+      "name": "Terrestrial",
+      "description": "",
+      "items": [
+        {
+          "chance": 10,
+          "name": "ProtoActive",
+          "description": "",
+          "items": [
+            {
+              "name": "ProtoLithic",
+              "description": ""
+            },
+            {
+              "name": "ProtoCarbonian",
+              "description": ""
+            },
+            {
+              "name": "ProtoGelidic",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "chance": 10,
+          "name": "Epistellar",
+          "description": "",
+          "items": [
+            {
+              "name": "JaniLithic",
+              "description": ""
+            },
+            {
+              "name": "Vesperian",
+              "description": "",
+              "items": [
+                {
+                  "name": "JaniVesperian",
+                  "description": ""
+                },
+                {
+                  "name": "EuVesperian",
+                  "description": ""
+                },
+                {
+                  "name": "BathyVesperian",
+                  "description": ""
+                },
+                {
+                  "name": "ChloriVesperian",
+                  "description": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chance": 20,
+          "name": "Telluric",
+          "description": "",
+          "items": [
+            {
+              "name": "Phosphorian",
+              "description": ""
+            },
+            {
+              "name": "Cytherean",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "chance": 20,
+          "name": "Arid",
+          "description": "",
+          "items": [
+            {
+              "name": "Darwinian",
+              "description": ""
+            },
+            {
+              "name": "Saganian",
+              "description": ""
+            },
+            {
+              "name": "Asimovian",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "chance": 20,
+          "name": "Tectonic",
+          "description": "",
+          "items": [
+            {
+              "chance": 40,
+              "name": "Gaian",
+              "description": "",
+              "items": [
+                {
+                  "name": "EoGaian",
+                  "description": ""
+                },
+                {
+                  "name": "MesoGaian",
+                  "description": ""
+                },
+                {
+                  "chance": 2,
+                  "name": "EuGaian",
+                  "description": "",
+                  "items": [
+                    {
+                      "name": "Xeric Gaian",
+                      "description": ""
+                    },
+                    {
+                      "name": "Campian Gaian",
+                      "description": ""
+                    },
+                    {
+                      "name": "Paludial Gaian",
+                      "description": ""
+                    },
+                    {
+                      "name": "Continential Gaian",
+                      "description": ""
+                    },
+                    {
+                      "name": "Pelagic Gaian",
+                      "description": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "BathyGaian",
+                  "description": ""
+                },
+                {
+                  "name": "Cholritic Gaian",
+                  "description": ""
+                },
+                {
+                  "name": "AmuGaian",
+                  "description": ""
+                },
+                {
+                  "name": "ThioGaian",
+                  "description": ""
+                },
+                {
+                  "name": "GaianGelidian",
+                  "description": ""
+                },
+                {
+                  "name": "Post-Gelidian",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "name": "Amunian",
+              "description": "",
+              "items": [
+                {
+                  "chance": 3,
+                  "name": "EoAmunian",
+                  "description": ""
+                },
+                {
+                  "chance": 4,
+                  "name": "MesoAmunian",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "EuAmunian",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "name": "BathyAmunian",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "chance": 20,
+          "name": "Oceanic",
+          "description": "",
+          "items": [
+            {
+              "name": "Pelagic",
+              "description": "",
+              "items": [
+                {
+                  "chance": 3,
+                  "name": "EuPelagic",
+                  "description": ""
+                },
+                {
+                  "chance": 3,
+                  "name": "BathyPelagic",
+                  "description": ""
+                },
+                {
+                  "chance": 4,
+                  "name": "Pelagic-Gelidian",
+                  "description": ""
+                }
+              ]
+            },
+            {
+              "name": "Nunnic",
+              "description": ""
+            },
+            {
+              "name": "Teathic",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chance": 15,
+      "name": "Helian",
+      "description": "",
+      "items": [
+        {
+          "name": "Panthalassic",
+          "description": ""
+        },
+        {
+          "name": "Nebulous",
+          "description": "",
+          "items": [
+            {
+              "name": "GeoNebulous",
+              "description": ""
+            },
+            {
+              "name": "CryoNebulous",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "GeoHelian",
+          "description": "",
+          "items": [
+            {
+              "name": "Halcyonic",
+              "description": ""
+            },
+            {
+              "name": "Hyperionic",
+              "description": ""
+            },
+            {
+              "name": "Thetusean",
+              "description": ""
+            },
+            {
+              "name": "Metusean",
+              "description": ""
+            },
+            {
+              "name": "Solarian",
+              "description": ""
+            },
+            {
+              "name": "Thean",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chance": 15,
+      "name": "Jovian",
+      "description": "",
+      "items": []
+    },
+    {
+      "chance": 5,
+      "name": "Planemo",
+      "description": "",
+      "items": []
+    }
+  ]
+}

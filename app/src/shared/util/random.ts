@@ -6,6 +6,13 @@ export function flipCoin(): boolean {
   return Math.random() >= 0.5;
 }
 
+export function rollDice(definition: string): number {
+  const parts = new RegExp(/^([1-9][0-9]*)d([1-9][0-9)]*$/).exec(definition);
+  if (parts === null) {
+    throw new Error('Invalid roll definition');
+  }
+}
+
 /**
  * Shuffle the elements of the array
  *

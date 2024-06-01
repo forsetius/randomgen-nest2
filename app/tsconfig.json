@@ -21,6 +21,7 @@
     "sourceMap": true,
     "paths": {
       "@config/*": ["./src/base/config/*"],
+      "@dict/*": ["./dict/*"],
       "@shared/*": ["./src/shared/*"],
       "@templating/*": ["./src/base/templating/*"],
     }

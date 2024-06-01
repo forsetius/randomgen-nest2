@@ -1,0 +1,34 @@
+[
+ {
+  "name": "Ia+",
+  "description": "Extremely luminous supergiants"
+ },
+ {
+  "name": "Ia",
+  "description": "Luminous supergiants"
+ },
+ {
+  "name": "Iab",
+  "description": "Intermediate luminous supergiants"
+ },
+ {
+  "name": "Ib",
+  "description": "Less luminous supergiants"
+ },
+ {
+  "name": "II",
+  "description": "Bright giants"
+ },
+ {
+  "name": "III",
+  "description": "Normal giants\t"
+ },
+ {
+  "name": "IV",
+  "description": "Subgiants "
+ },
+ {
+  "name": "V",
+  "description": "Main-Sequence Stars"
+ }
+]
