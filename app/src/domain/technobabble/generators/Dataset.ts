@@ -1,4 +1,4 @@
-import { RollableCollection } from '@shared/util/RollableCollection';
+import { RollableCollection } from '@shared/util/struct/RollableCollection';
 import { BaseSource, SourceData, SourceKeys } from '../types/SourceData';
 
 export class Dataset<S extends BaseSource> {

@@ -2,6 +2,12 @@ export function roll(n: number): number {
   return Math.floor(Math.random() * n) + 1;
 }
 
+export function rollBetween(min: number, max: number): number {
+  const diff = max - min;
+
+  return roll(diff) + min;
+}
+
 export function flipCoin(): boolean {
   return Math.random() >= 0.5;
 }

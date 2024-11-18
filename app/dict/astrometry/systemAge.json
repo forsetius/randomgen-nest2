@@ -1,0 +1,37 @@
+[
+  {
+    "chance": 1,
+    "phase": 0,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "phase": 2,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "phase": 3,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "phase": 4,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "phase": 5,
+    "name": "Birth of the star system",
+    "age": 0
+  },  {
+    "chance": 1,
+    "phase": 6,
+    "name": "Birth of the star system",
+    "age": 0
+  },
+]

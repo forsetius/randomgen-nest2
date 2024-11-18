@@ -1,20 +1,15 @@
 import { Controller, Query } from '@nestjs/common';
-import { AstrometryGenerator } from './AstrometryGenerator';
-import { AstrometryQueryStringDto } from './dto/AstrometryQueryStringDto';
 import { AstrometryGenerateSystemQueryDto } from './dto/AstrometryGenerateSystemQueryDto';
+import { AstrometryService } from './AstrometryService';
+import { AstrometryGenerateSystemRawResponseDto } from './dto/AstrometryGenerateSystemRawResponseDto';
 
 @Controller()
 export class AstrometryController {
-  public constructor(private generator: AstrometryGenerator) {}
-  public generateSingleRaw(
-    @Query() query: AstrometryQueryStringDto,
-  ): AstrometrySingleRawResponseDto {
-    return this.generator.generate(query.single ?? false);
-  }
+  public constructor(private astrometryService: AstrometryService) {}
 
-  public generateSystemRaw(
+  public generateRawSystem(
     @Query() query: AstrometryGenerateSystemQueryDto,
-  ): AstrometrySystemRawResponseDto {
-    return this.generator.generateSystem(query);
+  ): AstrometryGenerateSystemRawResponseDto {
+    return this.astrometryService.generateSystem(query);
   }
 }
