@@ -1,8 +1,8 @@
 export function groupBy<T>(
   collection: T[],
   getter: (item: T) => string,
-): { [key: string]: T[] } {
-  const grouping: { [key: string]: T[] } = {};
+): Record<string, T[]> {
+  const grouping: Record<string, T[]> = {};
 
   collection.forEach((item) => {
     const discriminator = getter(item);

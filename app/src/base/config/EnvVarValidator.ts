@@ -1,6 +1,6 @@
 import { IsEnum, IsInt, IsOptional, IsUrl, Max, Min } from 'class-validator';
 import { Transform } from 'class-transformer';
-import { Env } from '../../shared/types/Env';
+import { Env } from '@shared/types/Env';
 
 const MIN_PORT_NUMBER = 0;
 const MAX_PORT_NUMBER = 65535;
