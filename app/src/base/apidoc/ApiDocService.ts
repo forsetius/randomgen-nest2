@@ -1,6 +1,6 @@
 import { INestApplication, Injectable } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { AppConfigService } from '../config/AppConfigService';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class ApiDocService {
@@ -14,7 +14,7 @@ export class ApiDocService {
       .setVersion(appConfig.version);
 
     if (appConfig.host) {
-      apiDocument.addServer(`${appConfig.host}:${appConfig.port}`);
+      apiDocument.addServer(`${appConfig.host}:${appConfig.port.toString()}`);
     }
 
     const document = SwaggerModule.createDocument(app, apiDocument.build());
