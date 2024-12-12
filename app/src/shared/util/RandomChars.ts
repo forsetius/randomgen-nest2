@@ -20,9 +20,9 @@ export class RandomChars {
   }
 }
 
-export type Charsets = {
+export interface Charsets {
   alpha: string[];
   alphaNum: string[];
   num: string[];
   upperNum: string[];
-};
+}

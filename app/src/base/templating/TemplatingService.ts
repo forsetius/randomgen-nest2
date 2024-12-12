@@ -3,12 +3,12 @@ import { join } from 'path';
 import { Inject, Injectable } from '@nestjs/common';
 import * as nunjucks from 'nunjucks';
 import { TEMPLATING_OPTIONS } from './TemplatingConstants';
-import { AppConfigService } from '../config/AppConfigService';
+import { AppConfigService } from '@config/AppConfigService';
 import {
   TemplateDtoInterface,
   TemplatePart,
-} from '../../shared/types/TemplateDtoInterface';
-import { Language } from '../../shared/types/Language';
+} from '@shared/types/TemplateDtoInterface';
+import { Language } from '@shared/types/Language';
 import * as TemplatingModuleOptions from './types/TemplatingModuleOptions';
 import { LanguageNotSupportedException } from './exceptions/LanguageNotSupportedException';
 import { UnknownTemplateException } from './exceptions/UnknownTemplateException';
@@ -37,8 +37,8 @@ export class TemplatingService {
     });
   }
 
-  public render<T extends TemplateDtoInterface>(
-    template: T,
+  public render(
+    template: TemplateDtoInterface,
     language: Language,
   ): Record<keyof TemplatePart, string> {
     try {
@@ -68,7 +68,7 @@ export class TemplatingService {
       throw new LanguageNotSupportedException(language);
     }
 
-    if (this.templates[language]!.includes(name)) {
+    if (this.templates[language].includes(name)) {
       return `${language}/${name}`;
     }
 
