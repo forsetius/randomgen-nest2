@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { SecurityService } from './SecurityService';
-import { AppConfigService } from '../config/AppConfigService';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Module({
   imports: [
