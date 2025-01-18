@@ -1,36 +1,39 @@
-import { Controller, Get, Inject, Query, Render } from '@nestjs/common';
-import { AppConfigService } from '@config/AppConfigService';
-import { Language } from '@shared/types/Language';
-import { ContentService } from './ContentService';
+import { Controller, Get, Inject, Param, Query } from '@nestjs/common';
+import { Locale } from '@shared/types/Locale';
+import { ContentService } from './services/ContentService';
 
 @Controller()
 export class CmsController {
-  private contentService: { pl: ContentService; en: ContentService };
+  private contentService: Record<Locale, ContentService>;
 
   public constructor(
-    private configService: AppConfigService,
     @Inject('PlContentService') PlContentService: ContentService,
     @Inject('EnContentService') EnContentService: ContentService,
   ) {
     this.contentService = {
-      pl: PlContentService,
-      en: EnContentService,
+      [Locale.PL]: PlContentService,
+      [Locale.EN]: EnContentService,
     };
   }
 
   @Get('/')
-  @Render('index')
-  public index(@Query('lang') lang: Language = Language.PL) {
-    const page = this.contentService[lang].getPage('_index');
-
-    return this.makeResponse(lang, { page });
+  public index(@Query('lang') lang: Locale = Locale.PL) {
+    return this.contentService[lang].renderPage('_index');
   }
 
-  private makeResponse(lang: Language, content: Record<string, object>) {
-    return {
-      meta: this.configService.getInferred('app.meta'),
-      menus: this.configService.getInferred(`app.menus.${lang}`),
-      ...content,
-    };
+  @Get('/:slug')
+  public getPage(
+    @Param('slug') slug: string,
+    @Query('lang') lang: Locale = Locale.PL,
+  ) {
+    return this.contentService[lang].renderPage(slug);
+  }
+
+  @Get('/search')
+  public search(
+    @Query('term') term: string,
+    @Query('lang') lang: Locale = Locale.PL,
+  ) {
+    return this.contentService[lang].search(term);
   }
 }

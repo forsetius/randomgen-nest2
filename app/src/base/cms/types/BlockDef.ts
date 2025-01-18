@@ -1,47 +1,37 @@
 import { BlockStyle } from './BlockStyle';
 import { BlockType } from './BlockType';
 
-export interface NoteBlockDef {
-  type: BlockType.NOTE;
+interface CommonBlockDef {
+  name: string;
+  template: string;
   style: BlockStyle;
-  title: string;
-  image?: string;
-  content: string;
 }
 
-export interface PageBlockDef {
+export interface ApiCallBlockDef extends CommonBlockDef {
+  type: BlockType.API_CALL;
+  url: string;
+}
+
+export interface PageBlockDef extends CommonBlockDef {
   type: BlockType.PAGE;
   slug: string;
 }
 
-export interface PostBlockDef {
-  type: BlockType.POST;
-  slug: string;
+export interface PageListBlockDef extends CommonBlockDef {
+  type: BlockType.PAGE_LIST;
+  count: number;
+  skip: number;
+  tag?: string;
 }
 
-export interface PageSetBlockDef {
+export interface PageSetBlockDef extends CommonBlockDef {
   type: BlockType.PAGE_SET;
   title: string;
   items: string[];
 }
 
-export interface PostListBlockDef {
-  type: BlockType.POST_LIST;
-  title: string;
-  itemCount: number;
-  tag?: string;
-  link?: string;
-}
-
-export interface PostSetBlockDef {
-  type: BlockType.POST_SET;
-  title: string;
-  items:  string[];
-}
-
-export type BlockDef = NoteBlockDef
+export type BlockDef =
+  | ApiCallBlockDef
   | PageBlockDef
-  | PageSetBlockDef
-  | PostBlockDef
-  | PostListBlockDef
-  | PostSetBlockDef;
+  | PageListBlockDef
+  | PageSetBlockDef;

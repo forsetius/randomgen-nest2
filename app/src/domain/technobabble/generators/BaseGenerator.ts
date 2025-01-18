@@ -1,16 +1,15 @@
 import * as fs from 'node:fs';
-import { Language } from '@shared/types/Language';
+import * as path from 'node:path';
+import { Locale } from '@shared/types/Locale';
 import { SourceKeys, SourceData, BaseSource } from '../types/SourceData';
 import { Dataset } from './Dataset';
-import { globSync } from 'glob';
-import * as path from 'node:path';
 
 export abstract class BaseGenerator<S extends BaseSource> {
   protected datasets: Record<string, Dataset<S>> = {};
 
-  protected constructor(language: Language) {
-    const dataFiles = globSync(
-      `${__dirname}/../../../../dict/technobabble/*-${language}.json`,
+  protected constructor(language: Locale) {
+    const dataFiles = fs.globSync(
+      `${__dirname}/../../../../content/technobabble/*-${language}.json`,
     );
     dataFiles.forEach((dataFile) => {
       const datasetName = path.basename(dataFile, `-${language}.json`);

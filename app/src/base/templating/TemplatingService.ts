@@ -4,11 +4,7 @@ import { Inject, Injectable } from '@nestjs/common';
 import * as nunjucks from 'nunjucks';
 import { TEMPLATING_OPTIONS } from './TemplatingConstants';
 import { AppConfigService } from '@config/AppConfigService';
-import {
-  TemplateDtoInterface,
-  TemplatePart,
-} from '@shared/types/TemplateDtoInterface';
-import { Language } from '@shared/types/Language';
+import { Locale } from '@shared/types/Locale';
 import * as TemplatingModuleOptions from './types/TemplatingModuleOptions';
 import { LanguageNotSupportedException } from './exceptions/LanguageNotSupportedException';
 import { UnknownTemplateException } from './exceptions/UnknownTemplateException';
@@ -16,7 +12,7 @@ import { InvalidTemplateException } from './exceptions/InvalidTemplateException'
 
 @Injectable()
 export class TemplatingService {
-  private readonly defaultLanguage: Language;
+  private readonly defaultLanguage: Locale;
   private readonly renderer: nunjucks.Environment;
   private readonly templates: Record<string, string[]> = {};
 
@@ -29,31 +25,20 @@ export class TemplatingService {
     this.defaultLanguage = configService.getInferred('app.defaultLanguage');
     options.paths.forEach((path) => {
       fs.readdirSync(path).forEach((language) => {
-        this.templates[language] = [
-          ...(this.templates[language] ?? []),
-          ...fs.readdirSync(join(path, language)),
-        ];
+        this.templates[language] = fs.readdirSync(join(path, language));
       });
     });
   }
 
   public render(
-    template: TemplateDtoInterface,
-    language: Language,
-  ): Record<keyof TemplatePart, string> {
+    template: string,
+    data: Record<string, unknown>,
+    language: Locale,
+  ): string {
     try {
-      return Object.fromEntries(
-        Object.entries(template.parts).map(
-          ([part, templateName]: [string, string]) => {
-            const renderedTemplate = this.renderer.render(
-              this.getTemplateName(templateName, language),
-              template.data,
-            );
+      const templateName = this.getTemplateName(template, language);
 
-            return [part, renderedTemplate];
-          },
-        ),
-      ) as Record<keyof TemplatePart, string>;
+      return this.renderer.render(templateName, data);
     } catch (e) {
       if (e instanceof Error) {
         throw e;
@@ -63,7 +48,7 @@ export class TemplatingService {
     }
   }
 
-  private getTemplateName(name: string, language: Language): string {
+  private getTemplateName(name: string, language: Locale): string {
     if (typeof this.templates[language] === 'undefined') {
       throw new LanguageNotSupportedException(language);
     }

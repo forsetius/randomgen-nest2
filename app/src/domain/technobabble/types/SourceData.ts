@@ -5,7 +5,7 @@ export enum SourceKeys {
   EFFECT = 'effect',
   DEVICE = 'device',
 }
-export type BaseSource = Record<SourceKeys, any[]>;
+export type BaseSource = Record<SourceKeys, never[]>;
 
 export type SourceData<T extends BaseSource> = {
   [K in SourceKeys]: T[K][number];

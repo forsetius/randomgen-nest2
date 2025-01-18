@@ -7,6 +7,7 @@ import { SecurityModule } from '../base/security/SecurityModule';
 import { TemplatingModule } from '@templating/TemplatingModule';
 import { ApiDocModule } from '../base/apidoc/ApiDocModule';
 import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
+import { CmsModule } from '../base/cms/CmsModule';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
         autoescape: true,
       },
     }),
+    CmsModule.forRoot(),
     TechnobabbleModule,
   ],
   controllers: [AppController],

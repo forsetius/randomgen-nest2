@@ -1,8 +1,6 @@
 export enum BlockType {
-  NOTE = 'note',
+  API_CALL = 'apiCall',
   PAGE = 'page',
+  PAGE_LIST = 'pageList',
   PAGE_SET = 'pageSet',
-  POST = 'post',
-  POST_LIST = 'postList',
-  POST_SET = 'postSet',
 }

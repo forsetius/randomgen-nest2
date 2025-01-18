@@ -1,6 +1,6 @@
 import { EnvVarValidator } from '@config/EnvVarValidator';
 import { ApiVersion } from './base/apidoc/types/ApiVersion';
-import { Language } from '@shared/types/Language';
+import { Locale } from '@shared/types/Locale';
 
 export const config = (envVars: EnvVarValidator) => ({
   app: {
@@ -10,11 +10,29 @@ export const config = (envVars: EnvVarValidator) => ({
     env: envVars.ENV,
     host: envVars.APP_HOST,
     port: envVars.APP_PORT,
-    defaultLanguage: Language.EN,
+    defaultLanguage: Locale.EN,
   },
   business: {
     technobabble: {
       maxResults: 20,
+    },
+  },
+  cms: {
+    meta: {
+      pl_PL: {
+        title: 'RandomGen',
+        description: 'Random generators for RPGs',
+        keywords: 'random, generator, rpg, dnd, star trek',
+      },
+      en_US: {
+        title: 'Random generator',
+        description: 'Random generators for RPGs',
+        keywords: 'random, generator, rpg, d&d, star trek',
+      },
+    },
+    menus: {
+      pl_PL: {},
+      en_US: {},
     },
   },
   docs: {
