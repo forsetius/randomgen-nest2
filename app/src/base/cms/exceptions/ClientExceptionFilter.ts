@@ -6,7 +6,6 @@ import {
   UnauthorizedException,
   ForbiddenException,
   UnprocessableEntityException,
-  HttpStatus,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { HttpException } from '@nestjs/common/exceptions/http.exception';
@@ -31,7 +30,7 @@ export class ClientExceptionFilter implements ExceptionFilter {
       Locale.PL;
     const title = lang === Locale.PL ? 'Zabronione' : 'Forbidden';
 
-    response.status(HttpStatus.NOT_FOUND).render('error', {
+    response.status(_exception.getStatus()).render('error', {
       meta: this.configService.getInferred('cms.meta'),
       menus: this.configService.getInferred(`cms.menus.${lang}`),
       page: {

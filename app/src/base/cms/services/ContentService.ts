@@ -1,32 +1,52 @@
 import fsSync from 'fs';
 import path from 'path';
-import YAML from 'yaml';
 import { Inject, Injectable } from '@nestjs/common';
+import { z, ZodError } from 'zod';
 import { Locale } from '@shared/types/Locale';
 import { TemplatingService } from '@templating/TemplatingService';
 import { ContentLib } from '../domain';
-import { MenuDef, MultiPageBlockData, PageDef } from '../types';
+import { MultiPageBlockData } from '../types';
 import type { PageFactory } from '../types';
+import { ParserService } from '../../parser/services/ParserService';
+import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
+import { BlockZodSchema } from '../types/BlockZodSchema';
+import { PageZodSchema } from '../types/PageZodSchema';
+import { MenuZodSchema } from '../types/MenuZodSchema';
 
 @Injectable()
 export class ContentService {
   private lib!: ContentLib;
-  private baseSourcePath = path.join(__dirname, '..', '..', 'content');
+  private preRenderedPages:;
+  private baseSourcePath: string;
 
   public constructor(
+    private readonly parserService: ParserService,
     private readonly templatingService: TemplatingService,
     @Inject('PageFactory')
     private readonly createPage: PageFactory,
     public readonly locale: Locale,
     private readonly metadata: Record<'meta' | 'menus', object>,
   ) {
+    this.baseSourcePath = path.join(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      '..',
+      'content',
+      'cms',
+      locale,
+    );
+
     this.load();
   }
 
   public load(): void {
     const lib = new ContentLib();
 
-    const blockDefs = this.readSourceFiles<PageDef>(SourceDirEnum.BLOCK);
+    const blockDefs = this.readSourceFiles(SourceDirEnum.BLOCK, BlockZodSchema);
+    const menuDefs = this.readSourceFiles(SourceDirEnum.MENU, MenuZodSchema);
+    const pageDefs = this.readSourceFiles(SourceDirEnum.PAGE, PageZodSchema);
     Object.entries(blockDefs).forEach(([name, def]) => {
       lib.addPage(
         `block.${name}`,
@@ -34,18 +54,17 @@ export class ContentService {
       );
     });
 
-    const menuDefs = this.readSourceFiles<MenuDef>(SourceDirEnum.MENU);
     Object.entries(menuDefs).forEach(([name, def]) => {
-      lib.addMenu(name, def.name);
+      lib.addMenu(name, def);
     });
 
-    const pageDefs = this.readSourceFiles<PageDef>(SourceDirEnum.PAGE);
     Object.entries(pageDefs).forEach(([slug, def]) => {
       lib.addPage(slug, this.createPage(slug, def, this.locale));
     });
 
     lib.finalize();
     this.lib = lib;
+    console.log({ lib: this.lib });
   }
 
   public renderPage(slug: string): string {
@@ -88,21 +107,31 @@ export class ContentService {
     );
   }
 
-  private readSourceFiles<T>(dirName: SourceDirEnum): Record<Slug, T> {
+  private readSourceFiles<T extends z.ZodTypeAny>(
+    dirName: SourceDirEnum,
+    schema: T,
+  ): Record<Slug, z.infer<T>> {
     const sourcePath = path.join(this.baseSourcePath, dirName);
     const fileNames = fsSync.readdirSync(sourcePath);
 
     return Object.fromEntries(
       fileNames
-        .filter((filename: string) => filename.endsWith('.yaml'))
+        .filter((filename: string) => this.parserService.isSupported(filename))
         .map((filename: string) => {
-          const slug = path.basename(filename, '.yaml');
-          const filePath = path.join(sourcePath, filename);
-          const def = YAML.parse(
-            fsSync.readFileSync(filePath, { encoding: 'utf8' }),
-          ) as T;
+          const slug = path.basename(filename, path.extname(filename));
+          const def = this.parserService.parseFile(
+            path.join(sourcePath, filename),
+          );
 
-          return [slug, def];
+          try {
+            return [slug, schema.parse(def) as z.infer<T>];
+          } catch (e) {
+            if (e instanceof ZodError) {
+              throw new SourceFileValidationException(filename, e);
+            }
+
+            throw e;
+          }
         }),
     );
   }

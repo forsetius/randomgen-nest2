@@ -4,7 +4,6 @@ import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
 import { Locale } from '@shared/types/Locale';
 import { AppConfigService } from '@config/AppConfigService';
-import { SourcePl } from './types/SourcePl';
 import { TechnobabbleRequestQueryDto } from './dto/TechnobabbleRequestQueryDto';
 import { ApiOperation } from '@nestjs/swagger';
 import { SourceTemplateName } from './types/SourceTemplateName';
@@ -31,7 +30,7 @@ export class TechnobabbleController {
   }
 
   private generate(
-    service: BaseGenerator<SourcePl>,
+    service: BaseGenerator<BaseSource>,
     templateName: SourceTemplateName,
     query: TechnobabbleRequestQueryDto,
   ): string[] {

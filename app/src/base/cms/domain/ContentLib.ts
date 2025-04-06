@@ -3,20 +3,21 @@ import { ArrayMap } from '@shared/util/ArrayMap';
 import { Page } from './Page';
 import { Pager } from './Pager';
 import {
-  BlockDef,
   BlockType,
   ApiCallBlockData,
   BlockData,
   MultiPageBlockData,
   SinglePageBlockData,
 } from '../types';
+import { MenuDef } from '../types/MenuZodSchema';
+import { BlockDef } from '../types/BlockZodSchema';
 
 export class ContentLib {
   private pages: Record<Slug, Page> = {};
-  public readonly menus: Record<Name, string> = {};
+  private menus: Record<Name, MenuDef> = {};
   private tags = new ArrayMap<Tag, Page>();
   private pagesByDate: Page[] = [];
-  private isFinal = false;
+  private preRenderedPages: Record<Slug, string> = {};
 
   public addPage(slug: string, page: Page): void {
     this.pages[slug] = page;
@@ -29,12 +30,12 @@ export class ContentLib {
     }
   }
 
-  public addMenu(name: string, menu: string): void {
+  public addMenu(name: string, menu: MenuDef): void {
     this.menus[name] = menu;
   }
 
   public finalize(): void {
-    if (this.isFinal) {
+    if (this.isFinal()) {
       return;
     }
 
@@ -47,8 +48,10 @@ export class ContentLib {
         ]),
       );
     });
+  }
 
-    this.isFinal = true;
+  private isFinal(): boolean {
+    return Object.values(this.preRenderedPages).length > 0;
   }
 
   private renderBlock(def: BlockDef): BlockData {
@@ -76,7 +79,7 @@ export class ContentLib {
       case BlockType.PAGE_LIST:
         return {
           ...common,
-          pages: this.getPagesByDate(def.count, def.skip),
+          pages: this.getPagesByDate(def.count, def.skip ?? 0),
         } as MultiPageBlockData;
     }
   }
@@ -101,12 +104,20 @@ export class ContentLib {
     return this.tags.get(tag)!.slice(skip, skip + count);
   }
 
-  public getMenu(name: string): string {
+  public getMenu(name: string): MenuDef {
     if (!this.menus[name]) {
       throw new NotFoundException('No such menu');
     }
 
     return this.menus[name];
+  }
+
+  public renderPage(slug: string): string {
+    if (!this.pages[slug]) {
+      throw new NotFoundException('No such page');
+    }
+
+
   }
 
   public search(term: string, perPage: number, pageNo: number): Pager<Page> {

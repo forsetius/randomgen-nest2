@@ -1,0 +1,67 @@
+{
+  "logo": {
+    "template": "homeLogo",
+    "text": "Forseti: abstract works",
+    "img": "logo.png",
+    "url": "/pl_PL",
+    "lang": {
+      "en": "/en_US"
+    }
+  },
+  "about": {
+    "template": "menuItem",
+    "text": "O mnie",
+    "url": "/pl_PL/page/o-mnie",
+    "lang": {
+      "en": "/en_US/page/about-me"
+    }
+  },
+  "programming": {
+    "template": "menuItem",
+    "text": "Programowanie",
+    "url": "/pl_PL/page/programowanie",
+    "lang": {
+      "en": "/en_US/page/programming"
+    }
+  },
+  "rpg": {
+    "template": "menu",
+    "text": "RPG",
+    "menu": {
+      "role-playing": {
+        "template": "menuItem",
+        "text": "Gry fabularne",
+        "url": "/pl_PL/page/gry-fabularne",
+        "lang": {
+          "en": "/en_US/page/role-playing-games"
+        }
+      },
+      "unimechanika": {
+        "template": "menuItem",
+        "text": "UniMechanika",
+        "url": "/pl_PL/page/unimechanika"
+      },
+      "generators": {
+        "template": "menuItem",
+        "text": "Generatory",
+        "url": "/pl_PL/page/generatory",
+        "lang": {
+          "en": "/en_US/page/generators"
+        }
+      },
+      "eclipse-phase": {
+        "template": "menuItem",
+        "text": "Eclipse Phase",
+        "url": "/pl_PL/page/eclipse-phase"
+      }
+    }
+  },
+  "astro": {
+    "template": "menuItem",
+    "text": "Astronomia",
+    "url": "/pl_PL/page/astronomia",
+    "lang": {
+      "en": "/en_US/page/astronomy"
+    }
+  }
+}

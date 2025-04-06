@@ -8,6 +8,7 @@ import { TemplatingModule } from '@templating/TemplatingModule';
 import { ApiDocModule } from '../base/apidoc/ApiDocModule';
 import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
+import { ParserModule } from '../base/parser/ParserModule';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { CmsModule } from '../base/cms/CmsModule';
     }),
     CmsModule.forRoot(),
     TechnobabbleModule,
+    ParserModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -14,4 +14,8 @@ export class MarkdownService {
   public parse(text: string): string {
     return marked.parse(text) as string;
   }
+
+  public stripMarkdown(text: string): string {
+    return text.replaceAll('\n', ' ').replaceAll(/[^\p{L}\d ]*/gmu, '');
+  }
 }
