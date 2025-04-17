@@ -3,7 +3,7 @@ import { Locale } from '@shared/types/Locale';
 import { TemplatingService } from '@templating/TemplatingService';
 import { PageDef } from '../types';
 import { Block } from './Block';
-import { BlockFactory } from './BlockFactory';
+import { BlockFactory } from '../services/BlockFactory';
 import { DynamicBlock } from './DynamicBlock';
 import { DateTime } from 'luxon';
 import { PageLib } from './PageLib';

@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { Locale } from '@shared/types/Locale';
 import { TemplatingService } from '@templating/TemplatingService';
-import { Page } from './Page';
+import { Page } from '../domain/Page';
 import { PageDef, PageZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';

@@ -4,7 +4,7 @@ import { MenuDef, MenuZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Locale } from '@shared/types/Locale';
-import { Menu } from './Menu';
+import { Menu } from '../domain/Menu';
 
 @Injectable()
 export class MenuFactory {

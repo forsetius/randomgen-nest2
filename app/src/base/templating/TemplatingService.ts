@@ -22,7 +22,10 @@ export class TemplatingService {
     language: Locale,
   ): string {
     try {
-      return this.renderer.render(`${language}/${template}.njs`, data);
+      return this.renderer.render(
+        `${language}/templates/${template}.njs`,
+        data,
+      );
     } catch (e) {
       console.log({ template, language });
       console.log(data);

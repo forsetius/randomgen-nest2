@@ -4,15 +4,15 @@ import { BlockDef, BlockType, BlockZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Locale } from '@shared/types/Locale';
-import { ApiCallBlock } from './ApiCallBlock';
+import { ApiCallBlock } from '../domain/ApiCallBlock';
 import { HttpService } from '@nestjs/axios';
-import { Block } from './Block';
+import { Block } from '../domain/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
-import { PageBlock } from './PageBlock';
-import { PageListBlock } from './PageListBlock';
-import { PageSetBlock } from './PageSetBlock';
-import { TagBlock } from './TagBlock';
-import { StaticBlock } from './StaticBlock';
+import { PageBlock } from '../domain/PageBlock';
+import { PageListBlock } from '../domain/PageListBlock';
+import { PageSetBlock } from '../domain/PageSetBlock';
+import { TagBlock } from '../domain/TagBlock';
+import { StaticBlock } from '../domain/StaticBlock';
 
 @Injectable()
 export class BlockFactory {

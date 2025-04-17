@@ -1,6 +1,6 @@
 import { Controller, Get, Inject, Param, Query } from '@nestjs/common';
 import { Locale } from '@shared/types/Locale';
-import { CmsService } from './CmsService';
+import { CmsService } from './services/CmsService';
 
 @Controller()
 export class CmsController {

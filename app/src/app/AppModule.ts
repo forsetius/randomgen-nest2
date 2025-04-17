@@ -10,13 +10,15 @@ import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
 
+const contentDir = path.join(__dirname, '..', '..', 'content', 'cms');
+
 @Module({
   imports: [
     AppConfigModule,
     ApiDocModule,
     SecurityModule,
     TemplatingModule.forRoot({
-      paths: path.join(__dirname, '../../templates'),
+      paths: contentDir,
       options: {
         autoescape: true,
         throwOnUndefined: true,

@@ -2,15 +2,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { Injectable } from '@nestjs/common';
 import { Locale } from '@shared/types/Locale';
-import { ParserService } from '../parser/services/ParserService';
-import { BlockFactory } from './domain/BlockFactory';
-import { MenuFactory } from './domain/MenuFactory';
-import { PageFactory } from './domain/PageFactory';
-import { BlockDef, MenuDef, PageDef } from './types';
-import { Block } from './domain/Block';
-import { PageLib } from './domain/PageLib';
-import { Page } from './domain/Page';
-import { Menu } from './domain/Menu';
+import { ParserService } from '../../parser/services/ParserService';
+import { BlockFactory } from './BlockFactory';
+import { MenuFactory } from './MenuFactory';
+import { PageFactory } from './PageFactory';
+import { BlockDef, MenuDef, PageDef } from '../types';
+import { Block } from '../domain/Block';
+import { PageLib } from '../domain/PageLib';
+import { Page } from '../domain/Page';
+import { Menu } from '../domain/Menu';
 
 @Injectable()
 export class CmsService {
