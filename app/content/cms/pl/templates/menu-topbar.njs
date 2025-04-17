@@ -24,7 +24,7 @@
                 
             {% elif topMenuItem.separator %}
                 {# SeparatorMenuItem #}
-                <li class="nav-item d-flex align-items-center px-2 text-muted">>{{ topMenuItem.separator }}</li>
+                <li class="nav-item d-flex align-items-center px-2 text-muted">{{ topMenuItem.separator }}</li>
                 
             {% elif topMenuItem.label %}
                 {# LabelMenuItem #}

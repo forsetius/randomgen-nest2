@@ -3,12 +3,14 @@
 {% block bodyClass %}home-page{% endblock %}
 
 {% block article %} 
-    <section class="content">
+    <article class="content col-sm-9">
         {{ content }}
-    </section>
+    </article>
 {% endblock %}
 
 {% block aside %}
-    <h2>Na blogu</h2>
-    <section id="last-posts"></section>
+    <aside class="bg-body-secondary col-sm-3" data-bs-theme="dark">
+        <h2 class="text-center">Ostatnie wpisy</h2>
+        <section id="last-posts"></section>
+    </aside>
 {% endblock %}

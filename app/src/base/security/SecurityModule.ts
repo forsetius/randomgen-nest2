@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { SecurityService } from './SecurityService';
 import { AppConfigService } from '@config/AppConfigService';
+import { ContentSecurityPolicyRegistry } from './ContentSecurityPolicyRegistry';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { AppConfigService } from '@config/AppConfigService';
       },
     }),
   ],
-  providers: [SecurityService],
+  providers: [SecurityService, ContentSecurityPolicyRegistry],
+  exports: [ContentSecurityPolicyRegistry],
 })
 export class SecurityModule {}

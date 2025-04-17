@@ -1,4 +1,4 @@
-template: footer
+template: menu-footer
 menu: 
   - title: Linki
     items:
@@ -12,3 +12,11 @@ menu:
     items:
       - title: RandomGen
         url: /page/randomgen
+
+  - title: Blurby
+    items:
+      - title: Polityka prywatności
+        url: /page/polityka-prywatnosci
+
+      - title: Kontakt
+        url: /kontakt

@@ -11,6 +11,7 @@ import { Block } from '../domain/Block';
 import { PageLib } from '../domain/PageLib';
 import { Page } from '../domain/Page';
 import { Menu } from '../domain/Menu';
+import * as process from 'node:process';
 
 @Injectable()
 export class CmsService {
@@ -24,15 +25,7 @@ export class CmsService {
     private readonly parserService: ParserService,
     private readonly locale: Locale,
   ) {
-    this.baseSourcePath = path.join(
-      __dirname,
-      '..',
-      '..',
-      '..',
-      'content',
-      'cms',
-      locale,
-    );
+    this.baseSourcePath = path.join(process.cwd(), 'content', 'cms', locale);
   }
 
   async onModuleInit(): Promise<void> {

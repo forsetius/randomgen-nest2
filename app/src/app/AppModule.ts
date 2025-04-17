@@ -20,7 +20,7 @@ const contentDir = path.join(__dirname, '..', '..', 'content', 'cms');
     TemplatingModule.forRoot({
       paths: contentDir,
       options: {
-        autoescape: true,
+        autoescape: false,
         throwOnUndefined: true,
       },
     }),

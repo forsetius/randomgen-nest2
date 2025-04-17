@@ -1,8 +1,15 @@
-<div id="footBar" class="row fg-custom-light-bold bg-custom-primary">
-    {% set items = nav.footer %}
-    <div class="col-sm-1"></div>
-    {% for item in items %}
-        <div class="col-sm-1"><a class="fg-custom-light-bold" href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></div>
-    {% endfor %}
-    <div class="col-sm-{{ 11 - items|length }}"></div>
-</div> 
+
+<footer class="bd-footer py-4 bg-body-tertiary" data-bs-theme="dark">
+    <div class="container px-4 px-md-3 text-body-secondary">
+        <div class="row">
+            <div class="col-lg-3 mb-3">
+                <h5>Forseti: Abstract Works</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2">© 2025 by Marcin "Forseti" Paździora</li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3"></div>
+            <menu id="footer" />
+        </div>
+    </div>
+</footer>
