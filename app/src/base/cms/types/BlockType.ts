@@ -3,4 +3,6 @@ export enum BlockType {
   PAGE = 'page',
   PAGE_LIST = 'pageList',
   PAGE_SET = 'pageSet',
+  STATIC = 'static',
+  TAG = 'tag',
 }

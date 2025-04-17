@@ -1,20 +1,52 @@
 import { z } from 'zod';
 
-const CommonMenuZodSchema = z.object({
-  name: z.string(),
+export const SimpleMenuItemZodSchema = z.object({
+  title: z.string(),
+  url: z.string(),
+});
+
+export const SimpleSubMenuZodSchema = z.object({
+  title: z.string(),
+  items: z.array(SimpleMenuItemZodSchema),
+});
+
+export const RichSubMenuZodSchema = z.object({
+  title: z.string(),
+  url: z.string().optional(),
+  text: z.string().optional(),
+  columns: z.array(
+    z.object({
+      title: z.string(),
+      url: z.string().optional(),
+      text: z.string().optional(),
+      items: z.array(
+        z.object({
+          title: z.string(),
+          url: z.string(),
+          text: z.string().optional(),
+        }),
+      ),
+    }),
+  ),
+});
+
+export const SeparatorMenuItemZodSchema = z.object({
+  separator: z.string(),
+});
+
+export const LabelMenuItemZodSchema = z.object({
+  label: z.string(),
+});
+
+export const MenuZodSchema = z.object({
   template: z.string(),
-  text: z.string(),
-  img: z.string().optional(),
+  class: z.string().optional(),
+  menu: z.array(
+    SimpleMenuItemZodSchema.or(SimpleSubMenuZodSchema)
+      .or(RichSubMenuZodSchema)
+      .or(SeparatorMenuItemZodSchema)
+      .or(LabelMenuItemZodSchema),
+  ),
 });
-
-export const MenuItemZodSchema = CommonMenuZodSchema.extend({
-  url: z.string().url(),
-});
-
-export const SubMenuZodSchema = CommonMenuZodSchema.extend({
-  menu: z.record(z.string(), MenuItemZodSchema),
-});
-
-export const MenuZodSchema = z.array(MenuItemZodSchema.or(SubMenuZodSchema));
 
 export type MenuDef = z.infer<typeof MenuZodSchema>;

@@ -32,7 +32,7 @@ async function bootstrap(): Promise<void> {
     await app.listen(configService.getInferred('app.port'));
 
     console.log(
-      `Application started on port ${configService.getInferred('app.port')}`,
+      `Application started on port ${configService.getInferred('app.port').toString()}`,
     );
   } catch (error) {
     console.error('Error while starting the application:', error);

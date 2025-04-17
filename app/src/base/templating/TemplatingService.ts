@@ -1,33 +1,19 @@
-import * as fs from 'node:fs';
-import { join } from 'path';
 import { Inject, Injectable } from '@nestjs/common';
 import * as nunjucks from 'nunjucks';
 import { TEMPLATING_OPTIONS } from './TemplatingConstants';
-import { AppConfigService } from '@config/AppConfigService';
 import { Locale } from '@shared/types/Locale';
 import * as TemplatingModuleOptions from './types/TemplatingModuleOptions';
-import { LanguageNotSupportedException } from './exceptions/LanguageNotSupportedException';
-import { UnknownTemplateException } from './exceptions/UnknownTemplateException';
 import { InvalidTemplateException } from './exceptions/InvalidTemplateException';
 
 @Injectable()
 export class TemplatingService {
-  private readonly defaultLanguage: Locale;
   private readonly renderer: nunjucks.Environment;
-  private readonly templates: Record<string, string[]> = {};
 
   constructor(
     @Inject(TEMPLATING_OPTIONS)
     options: TemplatingModuleOptions.TemplatingModuleOptions,
-    configService: AppConfigService,
   ) {
     this.renderer = nunjucks.configure(options.paths, options.options);
-    this.defaultLanguage = configService.getInferred('app.defaultLanguage');
-    options.paths.forEach((path) => {
-      fs.readdirSync(path).forEach((language) => {
-        this.templates[language] = fs.readdirSync(join(path, language));
-      });
-    });
   }
 
   public render(
@@ -36,31 +22,15 @@ export class TemplatingService {
     language: Locale,
   ): string {
     try {
-      const templateName = this.getTemplateName(template, language);
-
-      return this.renderer.render(templateName, data);
+      return this.renderer.render(`${language}/${template}.njs`, data);
     } catch (e) {
+      console.log({ template, language });
+      console.log(data);
       if (e instanceof Error) {
         throw e;
       }
 
       throw new InvalidTemplateException();
     }
-  }
-
-  private getTemplateName(name: string, language: Locale): string {
-    if (typeof this.templates[language] === 'undefined') {
-      throw new LanguageNotSupportedException(language);
-    }
-
-    if (this.templates[language].includes(name)) {
-      return `${language}/${name}`;
-    }
-
-    if (!this.templates[this.defaultLanguage]?.includes(name)) {
-      throw new UnknownTemplateException(name);
-    }
-
-    return `${this.defaultLanguage}/${name}`;
   }
 }

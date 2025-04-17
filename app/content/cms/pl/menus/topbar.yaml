@@ -1,0 +1,119 @@
+template: menu-topbar
+menu:
+  - title: O mnie
+    url: /page/o-mnie
+
+  - title: Blog
+    url: /blog
+
+  - title: Programowanie
+    columns:
+      - title: Programowanie
+        items:
+          - title: Umiejętności
+            url: /page/umiejetnosci
+            text: Co umiem, co znam, co mogę
+
+      - title: Projekty
+        items:
+          - title: RandomGen
+            url: /page/randomgen
+            text: Różnorodne generatory treści, głównie do RPG
+
+          - title: PlanetaryNames4Celestia
+            url: /page/planetarynames4celestia
+            text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
+
+  - separator: "|"
+
+  - label: "Hobby: "
+
+  - title: RPG
+    text: Czym są gry fabularne
+    columns:
+      - title: Eclipse Phase
+        url: /page/eclipse-phase
+        text: Gra hard-SF w realiach transhumanistycznego horroru
+        items:
+          - title: Wprowadzenie
+            url: /page/eclipse-phase-wprowadzenie
+            text: "Historia przyszłości: rozwój w kierunku transludzkości, wojna z AI i Upadek oraz rozproszenie po Układzie Słonecznym i poza nim"
+
+          - title: Encyklopedia settingu
+            url: /page/eclipse-phase/encyklopedia
+            text: "Realia Eclipse Phase: neopaństwa, hiperkorporacje, przestępczość, technologia i cała reszta"
+
+          - title: Atlas
+            url: /page/eclipse-phase-atlas
+            text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
+
+          - title: Scenariusz "Ego Sum"
+            url: /page/eclipse-phase-scenariusz-ego-sum
+            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+
+      - title: Przygody
+        url: /page/rpg-przygody
+        text: Scenariusze do gier fabularnych
+        items:
+          - title: Jaskółki [Dungeons & Dragons 5e]
+            url: /page/dnd-jaskolki
+            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
+
+          - title: Krew dla boga krwi [Dungeons & Dragons 5e]
+            url: /page/dnd-krew-dla-boga-krwi
+            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
+
+          - title: Ego Sum [Eclipse Phase]
+            url: /page/eclipse-phase-scenariusz-ego-sum
+            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+
+  - title: Astronomia
+    columns:
+      - title: Planetologia
+        items:
+          - title: Generowanie układów planetarnych
+            url: /page/generowanie-ukladow-planetarnych
+            text: TODO
+
+      - title: Celestia - symulator Wszechświata
+        items:
+          - title: Celestia
+            url: /page/celestia
+            text: |-
+              Nieco zapomniana już aplikacja, Celestia jest symulatorem Kosmosu. 
+              Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
+              które na niebie są tylko kropkami.  
+
+          - title: Lokacje w Układzie Słonecznym
+            url: /page/planetary-names-scraper
+            text: |-
+              Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
+              i konwertuje je na format symulatora Celestia
+
+  - title: Inne
+    columns:
+      - title: Inne
+        items:
+        - title: Dioramy
+          url: /page/dioramy
+          text: TODO
+
+        - title: Geopolityka
+          url: /page/geopolityka
+          text: TODO
+
+  - separator: "|"
+
+  - title: Zasoby
+    columns:
+      - title: Generatory
+        items:
+          - title: Technobełkot
+            url: /page/technobelkot
+            text: Generator Star Trekowego pseudotechnicznego bełkotu
+
+      - title: Zasoby
+        items:
+          - title: Lokacje w Układzie Słonecznym
+            url: /page/lokacje-uklad-sloneczny
+            text: TODO

@@ -1,0 +1,14 @@
+template: footer
+menu: 
+  - title: Linki
+    items:
+      - title: GitHub
+        url: https://github.com/forsetius
+
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/marcin-paździora-09a94625a
+
+  - title: Projekty
+    items:
+      - title: RandomGen
+        url: /page/randomgen

@@ -16,9 +16,10 @@ import { ParserModule } from '../base/parser/ParserModule';
     ApiDocModule,
     SecurityModule,
     TemplatingModule.forRoot({
-      paths: [path.join(__dirname, '../../templates')],
+      paths: path.join(__dirname, '../../templates'),
       options: {
         autoescape: true,
+        throwOnUndefined: true,
       },
     }),
     CmsModule.forRoot(),

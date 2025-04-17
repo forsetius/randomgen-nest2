@@ -4,6 +4,6 @@ import { ParserService } from './services/ParserService';
 
 @Module({
   providers: [MarkdownService, ParserService],
-  exports: [ParserService],
+  exports: [MarkdownService, ParserService],
 })
 export class ParserModule {}

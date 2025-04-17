@@ -1,14 +1,14 @@
 import { Controller, Get, Inject, Param, Query } from '@nestjs/common';
 import { Locale } from '@shared/types/Locale';
-import { ContentService } from './services/ContentService';
+import { CmsService } from './CmsService';
 
 @Controller()
 export class CmsController {
-  private contentService: Record<Locale, ContentService>;
+  private contentService: Record<Locale, CmsService>;
 
   public constructor(
-    @Inject('PlContentService') PlContentService: ContentService,
-    // @Inject('EnContentService') EnContentService: ContentService,
+    @Inject('PlCmsService') PlContentService: CmsService,
+    // @Inject('EnCmsService') EnContentService: ContentService,
   ) {
     this.contentService = {
       [Locale.PL]: PlContentService,
@@ -21,12 +21,26 @@ export class CmsController {
     return this.contentService[lang].renderPage('_index');
   }
 
-  @Get('/:slug')
+  @Get('/blog')
+  public blog(@Query('lang') lang: Locale = Locale.EN) {
+    return this.contentService[lang].renderPage('_blog');
+  }
+
+  @Get('/page/:slug')
+  @Get('/blog/:slug')
   public getPage(
     @Param('slug') slug: string,
     @Query('lang') lang: Locale = Locale.PL,
   ) {
     return this.contentService[lang].renderPage(slug);
+  }
+
+  @Get('/tag/:name')
+  public getPagesByTag(
+    @Param('name') name: string,
+    @Query('lang') lang: Locale = Locale.PL,
+  ) {
+    return this.contentService[lang].renderPage(`tag-${name}`);
   }
 
   @Get('/search')

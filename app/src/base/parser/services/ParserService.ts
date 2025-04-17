@@ -21,15 +21,23 @@ export class ParserService {
       case '.json':
         return JSON.parse(content);
       case '.md': {
-        const data = /^---(?<frontmatter>.*)---(?<content>.*)$/msu.exec(
+        const data = /^---(?<frontmatter>.*?)---(?<content>.*)$/msu.exec(
           content,
         );
         if (data?.groups) {
+          const frontmatter = data.groups['frontmatter']
+            ? (YAML.parse(data.groups['frontmatter']) as Record<
+                string,
+                unknown
+              >)
+            : {};
+          const content = this.markdownService.parse(
+            data.groups['content'] ?? '',
+          );
+
           return {
-            frontmatter: data.groups['frontmatter']
-              ? (YAML.parse(data.groups['frontmatter']) as unknown)
-              : {},
-            content: this.markdownService.parse(data.groups['content'] ?? ''),
+            ...frontmatter,
+            content,
           };
         }
 

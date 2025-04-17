@@ -100,6 +100,12 @@
       <option name="FOR_BRACE_FORCE" value="3" />
       <option name="SOFT_MARGINS" value="100,120" />
     </codeStyleSettings>
+    <codeStyleSettings language="Twig">
+      <indentOptions>
+        <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
     <codeStyleSettings language="TypeScript">
       <option name="RIGHT_MARGIN" value="100" />
       <option name="CALL_PARAMETERS_WRAP" value="5" />

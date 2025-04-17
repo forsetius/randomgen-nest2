@@ -1,25 +1,26 @@
 import { Block } from './Block';
-import { StaticBlockDef } from '../types';
+import { PageBlockDef, PageDef } from '../types';
 import { Locale } from '@shared/types/Locale';
 import { TemplatingService } from '@templating/TemplatingService';
-import { MarkdownService } from '../../parser/services/MarkdownService';
+import { PageLib } from './PageLib';
 
-export class StaticBlock extends Block {
+export class PageBlock extends Block {
   public constructor(
-    private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
     name: string,
-    public override readonly def: StaticBlockDef,
+    public override readonly def: PageBlockDef,
     locale: Locale,
   ) {
     super(name, def, locale);
   }
 
-  preRender(): void {
-    const content = this.markdownService.parse(this.def.content);
+  preRender(pages: PageLib): void {
+    const page = pages.getPage(this.def.slug);
+
+    const def: PageDef = page.parseMarkdown();
     this._content = this.templatingService.render(
       this.template,
-      { content },
+      def,
       this.locale,
     );
   }
