@@ -51,6 +51,18 @@ menu:
             url: /page/eclipse-phase-scenariusz-ego-sum
             text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
+      - title: UniMechanika
+        url: /page/rpg-unimechanika
+        text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
+        items:
+          - title: Zasady podstawowe
+            url: /page/rpg-unimechanika-zasady
+            text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
+
+          - title: Dodatki
+            url: /page/rpg-unimechanika-dodatki
+            text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
+
       - title: Przygody
         url: /page/rpg-przygody
         text: Scenariusze do gier fabularnych

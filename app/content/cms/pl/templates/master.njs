@@ -21,14 +21,16 @@
 <body class="{% block bodyClass %}default-page{% endblock %}">
 <header>
   <nav id="topbar-nav" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <a class="navbar-brand" href="/">
-      <img src="static/ui/logo-w.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-middle">
-      <span>{{ brand.name }}</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <menu id="topbar" />
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="static/ui/logo-w.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-middle">
+        <span>{{ brand.name }}</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <menu id="topbar" />
+    </div>
   </nav>
   {% block header %} {% include "./header.njs" %} {% endblock %}
 </header>

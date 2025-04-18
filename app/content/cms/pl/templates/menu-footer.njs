@@ -1,5 +1,5 @@
 {% for column in menu %}
-  <div class="col-6 col-lg-2 mb-3">
+  <div class="col-6 col-lg-2">
     <h5>{{ column.title }}</h5>
     <ul class="list-unstyled">
       {% for item in column.items %}

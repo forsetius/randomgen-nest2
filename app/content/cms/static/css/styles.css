@@ -1,5 +1,5 @@
 html, body {height: 100%}
-main {min-height: calc(100% - 234px) }
+main {min-height: calc(100% - 487px) }
 h1, h2, .h1, .h2, h1 a, h2 a, .h1 a, .h2 a, aside h3, aside h3 a {font-family: "Unica One", serif; font-weight: 400;}
 a, a:hover, a:active {color: #587cb3; text-decoration: none;}
 h4, h4 a {font-size: 1.5rem}
@@ -8,9 +8,43 @@ blockquote { margin-left: 30px; border-left: 7px solid #bbb; border-radius: 3px;
 blockquote p {font-family:  'Roboto Condensed' !important; }
 main {padding-top: 56px; padding-bottom: 49px;}
 
-.navbar { padding-top: 0 }
-.navbar-brand  { padding: 10px 0.5rem 0; }
 .navbar-brand span { padding: 0.5rem; }
+.dropdown-menu {
+    position: fixed !important;
+    top: 65px !important;
+    left: 1% !important;
+    right: 1% !important;
+    width: 98% !important;
+    opacity: 95%;
+    /*width: 60vw !important;*/
+    /*max-width: none !important;*/
+}
+
+.dropdown-item-column {
+    width: 30%;
+    margin: 0 2%;
+}
+
+.dropdown-item-column h5 {
+    font-size: 1.2rem;
+    margin: 20px 0 30px 0;
+    text-transform: uppercase;
+    border-bottom: #606060 1px solid;
+}
+
+.dropdown-item-column p {
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+
+.dropdown-item-column ul {
+    margin-top: 10px;
+}
+
+li.label {
+    padding: 7px 7px 0 3px;
+}
+
 #headerImg {display: flex; height: 300px; overflow: hidden; border-bottom: 8px solid #111}
 #headerImg h1 {
     display: inline-block;

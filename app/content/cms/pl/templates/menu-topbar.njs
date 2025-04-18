@@ -1,10 +1,10 @@
-<div class="collapse navbar-collapse " id="navbarNavDropdown">
-    <ul class="navbar-nav mt-2 mt-lg-0">
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
         {% for topMenuItem in menu %}
             {% if topMenuItem.items %}
                 {# SimpleSubMenu #}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{{ topMenuItem.url }}" title="{{ topMenuItem.title }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" title="{{ topMenuItem.title }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ topMenuItem.title }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -15,20 +15,37 @@
                 </li>
                 
             {% elif topMenuItem.columns %}
-                {# RichSubMenu #}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="{{ topMenuItem.title }}DropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ topMenuItem.title }}
-                    </a>
-                </li>
-                
+              {# RichSubMenu #}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ loop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ topMenuItem.title }}
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom p-3" aria-labelledby="navbarDropdown{{ loop.index }}">
+                  <div class="d-flex">
+                  {% for column in topMenuItem.columns %}
+                    <li class="dropdown-item-column">
+                      <h5>{{ column.title }}</h5>
+                      <ul class="list-unstyled">
+                        {% for subitem in column.items %}
+                          <li>
+                            <h6><a href="{{ subitem.url }}">{{ subitem.title }}</a></h6>
+                            <p>{{ subitem.text }}</p>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% endfor %}
+                  </div>
+                </ul>
+              </li>
+            
             {% elif topMenuItem.separator %}
                 {# SeparatorMenuItem #}
                 <li class="nav-item d-flex align-items-center px-2 text-muted">{{ topMenuItem.separator }}</li>
                 
             {% elif topMenuItem.label %}
                 {# LabelMenuItem #}
-                <li>{{ topMenuItem.label }}</li>
+                <li class="label text-muted pl-5">{{ topMenuItem.label }}<code> </code></li>
                 
             {% else %}
                 {# SimpleMenuItem #}

@@ -9,8 +9,7 @@
 {% endblock %}
 
 {% block aside %}
-    <aside class="bg-body-secondary col-sm-3" data-bs-theme="dark">
+    <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
         <h2 class="text-center">Ostatnie wpisy</h2>
-        <section id="last-posts"></section>
     </aside>
 {% endblock %}
