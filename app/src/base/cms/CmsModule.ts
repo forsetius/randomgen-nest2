@@ -15,8 +15,6 @@ import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicy
 import { SecurityModule } from '../security/SecurityModule';
 import * as express from 'express';
 
-// import { AppConfigService } from '@config/AppConfigService';
-
 @Module({
   controllers: [CmsController],
 })
@@ -30,10 +28,6 @@ export class CmsModule implements OnModuleInit {
     const staticPath = join(process.cwd(), 'content/cms/static');
     console.log('[CmsModule] Serving static from:', staticPath);
 
-    expressApp.use('/static', (req, _res, next) => {
-      console.log(`[CmsModule] Static request to: ${req.originalUrl}`);
-      next();
-    });
     expressApp.use('/static', express.static(staticPath));
   }
 
@@ -56,7 +50,6 @@ function createCmsService(name: string, locale: Locale) {
   return {
     provide: name,
     useFactory: (
-      // configService: AppConfigService,
       blockFactory: BlockFactory,
       menuFactory: MenuFactory,
       pageFactory: PageFactory,
@@ -66,7 +59,6 @@ function createCmsService(name: string, locale: Locale) {
       cspRegistry.registerScriptSrc('https://use.fontawesome.com');
       cspRegistry.registerStyleSrc('https://use.fontawesome.com');
       cspRegistry.registerFontSrc('https://use.fontawesome.com');
-      // const metadata = configService.getInferred(`cms.meta.${Locale.PL}`);
 
       return new CmsService(
         blockFactory,
