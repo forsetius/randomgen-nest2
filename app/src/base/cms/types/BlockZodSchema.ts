@@ -2,38 +2,42 @@ import { z } from 'zod';
 import { BlockType } from './BlockType';
 
 const CommonBlockZodSchema = z.object({
-  // name: z.string(),
-  template: z.string(),
-  class: z.string().optional(),
+  title: z.string().optional(),
 });
 
 export const ApiCallBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string(),
   type: z.literal(BlockType.API_CALL),
   url: z.string().url(),
 });
 
 export const PageBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('block-page-plain'),
   type: z.literal(BlockType.PAGE),
   slug: z.string(),
 });
 
 export const PageListBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('block-page-plain-list'),
   type: z.literal(BlockType.PAGE_LIST),
-  count: z.number().min(1),
-  skip: z.number().min(1).optional(),
+  prev: z.coerce.number().min(0),
+  next: z.coerce.number().min(0),
 });
 
 export const PageSetBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('block-page-plain-list'),
   type: z.literal(BlockType.PAGE_SET),
   items: z.array(z.string()),
 });
 
 export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('block-plain'),
   type: z.literal(BlockType.STATIC),
   content: z.string(),
 });
 
 export const TagBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('block-page-plain-list'),
   type: z.literal(BlockType.TAG),
   tag: z.string(),
 });

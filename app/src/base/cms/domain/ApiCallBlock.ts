@@ -15,15 +15,16 @@ export class ApiCallBlock extends DynamicBlock {
     name: string,
     public override readonly def: ApiCallBlockDef,
     locale: Locale,
+    public override readonly parentSlug: string,
   ) {
-    super(name, def, locale);
+    super(name, def, locale, parentSlug);
   }
 
   public preRender(): void {
     return;
   }
 
-  public async render(): Promise<void> {
+  public async render(): Promise<string> {
     let data: Record<string, unknown>;
     try {
       data = (await this.httpService.axiosRef.get(this.def.url)).data as Record<
@@ -39,10 +40,6 @@ export class ApiCallBlock extends DynamicBlock {
       );
     }
 
-    this._content = this.templatingService.render(
-      this.template,
-      data,
-      this.locale,
-    );
+    return this.templatingService.render(this.template, data, this.locale);
   }
 }

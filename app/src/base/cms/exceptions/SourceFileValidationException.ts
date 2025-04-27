@@ -1,9 +1,9 @@
-import { ZodError } from 'zod';
+import { ValidationError } from 'zod-validation-error';
 
 export class SourceFileValidationException extends Error {
-  public constructor(filename: string, error: ZodError) {
+  public constructor(source: string, error: ValidationError) {
     super(
-      `${filename} is not a valid source file. Issues found:\n${error.toString()}`,
+      `${source} is not a valid source. Issues found:\n${error.toString()}`,
     );
   }
 }

@@ -9,6 +9,7 @@ export abstract class Block {
     public readonly name: string,
     public readonly def: BlockDef,
     public readonly locale: Locale,
+    public readonly parentSlug: string | null,
   ) {}
 
   get template(): string {

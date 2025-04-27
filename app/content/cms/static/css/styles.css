@@ -16,8 +16,6 @@ main {padding-top: 56px; padding-bottom: 49px;}
     right: 1% !important;
     width: 98% !important;
     opacity: 95%;
-    /*width: 60vw !important;*/
-    /*max-width: none !important;*/
 }
 
 .dropdown-item-column {
@@ -45,41 +43,65 @@ li.label {
     padding: 7px 7px 0 3px;
 }
 
-#headerImg {display: flex; height: 300px; overflow: hidden; border-bottom: 8px solid #111}
+#headerImg {
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+    border-bottom: 8px solid #111;
+    background-position:
+            left center,
+            right center,
+            center center;
+    background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat;
+    background-size:
+            auto,
+            auto,
+            cover;
+    background-color: #000;
+}
 #headerImg h1 {
     display: inline-block;
     align-self: flex-end;
     font-size: 72pt;
     color: #fff;
     padding-left: 70px;
-    text-shadow: 5px 5px 15px #606060;
+    text-shadow: 0 0 5px #000;
 }
 
 #footBar {padding: 5px; margin: 0;}
 #footBar a, #footBar a:hover, #footBar a:focus {font-size: 14px;}
 #footBar a:hover, #footBar a:focus {text-decoration: underline;}
 
-article.lead {padding: 30px 28% 0 35px;}
-article.content {padding: 0 100px 10px 0;}
+article .lead {
+    padding-bottom: 30px;
+}
+article .lead p {
+    font-weight: bold;
+    font-size-adjust: 0.6;
+    line-height: 2;
+}
 
-article.lead p, 
-article.lead strong, 
-article.lead li, 
-article.content p, 
-article.content strong, 
-article.content li {font-family: 'Fira Sans', sans-serif;font-size: 1.05rem; line-height: 1.75; text-align: justify;}
+article .content { column-count: 2; column-gap: 75px; }
 
-article.content h2 {margin-top: 40px; padding: 10px 0 20px 15px; border-top: 1px #111 solid; width: 100%; }
-article.content h3 {
+article {padding: 0 100px 10px 0;}
+
+article p,
+article strong,
+article li {font-family: 'Fira Sans', sans-serif;font-size: 1.05rem; line-height: 1.75; text-align: justify;}
+article h2 {margin-top: 40px; padding: 10px 0 20px 15px; border-top: 1px #111 solid; width: 100%; }
+article h3 {
     padding: 10px 0 0 20px;
     font-size: 1.5rem;
 }
-article.content > p,
-article.content > blockquote,
-article.content > ul,
-article.content > ol,
-article.content > table,
-article.content > div {
+article > p,
+article > blockquote,
+article > ul,
+article > ol,
+article > table,
+article > div {
     margin-left: 75px;
 }
 
@@ -89,7 +111,7 @@ article.content > div {
 }
 @media screen and (max-width: 767px) {
     aside {position: inherit; width: auto; margin: 200px 20px 30px 20px;}
-    article.lead , article.content  {margin: 0 20px; padding: 0;}
+    article.content  {margin: 0 20px; padding: 0;}
 }
 
 section.cards { margin: 40px 0 40px 75px; }

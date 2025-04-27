@@ -63,17 +63,19 @@ export class CmsService {
         const blockDef: BlockDef = this.blockFactory.validate(filename, def);
         const name = this.getName(filename);
 
-        return [name, this.blockFactory.create(name, blockDef, this.locale)];
+        return [
+          name,
+          this.blockFactory.createShared(name, blockDef, this.locale),
+        ];
       }),
     );
-    console.log({ menus, blocks, pages });
 
     menus.forEach((menu) => {
       menu.preRender();
     });
-    for (const [, block] of blocks) {
+    blocks.forEach((block) => {
       block.preRender(pages);
-    }
+    });
     pages.preRender(menus, blocks);
 
     this.pages = pages;
@@ -99,21 +101,8 @@ export class CmsService {
 
   public async renderPage(slug: string): Promise<string> {
     const page = this.pages.getPage(slug);
-    if (page.dynamicBlocks.size === 0) {
-      return page.content;
-    }
 
-    let content = page.content;
-    for (const [id, block] of page.dynamicBlocks) {
-      await block.render();
-
-      content = content.replace(
-        `<block id="${id}"></block>`,
-        `<block id="${id}">${block.content}</block>`,
-      );
-    }
-
-    return content;
+    return page.render();
   }
 
   public search(term: string): Page[] {

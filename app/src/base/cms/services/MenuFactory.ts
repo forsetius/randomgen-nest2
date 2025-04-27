@@ -5,6 +5,7 @@ import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Locale } from '@shared/types/Locale';
 import { Menu } from '../domain/Menu';
+import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
 export class MenuFactory {
@@ -15,7 +16,7 @@ export class MenuFactory {
       return MenuZodSchema.parse(def);
     } catch (e) {
       if (e instanceof ZodError) {
-        throw new SourceFileValidationException(filename, e);
+        throw new SourceFileValidationException(filename, fromZodError(e));
       }
 
       throw e;

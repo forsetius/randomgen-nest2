@@ -12,6 +12,7 @@ export const PageZodSchema = z
     content: z.string(),
     tags: z.array(z.string()).optional(),
     template: z.string(),
+    slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
   })
   .strict();

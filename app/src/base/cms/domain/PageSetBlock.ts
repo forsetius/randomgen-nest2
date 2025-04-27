@@ -10,9 +10,10 @@ export class PageSetBlock extends Block {
     private readonly templatingService: TemplatingService,
     name: string,
     public override readonly def: PageSetBlockDef,
-    public override readonly locale: Locale,
+    locale: Locale,
+    public override readonly parentSlug: string,
   ) {
-    super(name, def, locale);
+    super(name, def, locale, parentSlug);
   }
 
   preRender(pages: PageLib): void {

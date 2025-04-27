@@ -10,8 +10,9 @@ export class PageBlock extends Block {
     name: string,
     public override readonly def: PageBlockDef,
     locale: Locale,
+    public override readonly parentSlug: string,
   ) {
-    super(name, def, locale);
+    super(name, def, locale, parentSlug);
   }
 
   preRender(pages: PageLib): void {

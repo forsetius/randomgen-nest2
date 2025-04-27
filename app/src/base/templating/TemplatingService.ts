@@ -27,7 +27,6 @@ export class TemplatingService {
         data,
       );
     } catch (e) {
-      console.log({ template, language });
       console.log(data);
       if (e instanceof Error) {
         throw e;

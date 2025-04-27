@@ -13,6 +13,7 @@ import { PageListBlock } from '../domain/PageListBlock';
 import { PageSetBlock } from '../domain/PageSetBlock';
 import { TagBlock } from '../domain/TagBlock';
 import { StaticBlock } from '../domain/StaticBlock';
+import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
 export class BlockFactory {
@@ -22,19 +23,45 @@ export class BlockFactory {
     private templatingService: TemplatingService,
   ) {}
 
-  public validate(filename: string, def: unknown): BlockDef {
+  public validate(source: string, def: unknown): BlockDef {
     try {
       return BlockZodSchema.parse(def);
     } catch (e) {
       if (e instanceof ZodError) {
-        throw new SourceFileValidationException(filename, e);
+        throw new SourceFileValidationException(source, fromZodError(e));
       }
 
       throw e;
     }
   }
 
-  public create(name: string, def: BlockDef, locale: Locale): Block {
+  public createShared(
+    name: string,
+    def: BlockDef,
+    locale: Locale,
+  ): StaticBlock {
+    if (def.type !== BlockType.STATIC) {
+      throw new Error(
+        `Shared blocks can only be static. Attempted to create ${def.type} block`,
+      );
+    }
+
+    return new StaticBlock(
+      this.markdownService,
+      this.templatingService,
+      name,
+      def,
+      locale,
+      null,
+    );
+  }
+
+  public create(
+    name: string,
+    def: BlockDef,
+    locale: Locale,
+    parent: string,
+  ): Block {
     switch (def.type) {
       case BlockType.API_CALL:
         return new ApiCallBlock(
@@ -43,13 +70,26 @@ export class BlockFactory {
           name,
           def,
           locale,
+          parent,
         );
       case BlockType.PAGE:
-        return new PageBlock(this.templatingService, name, def, locale);
+        return new PageBlock(this.templatingService, name, def, locale, parent);
       case BlockType.PAGE_LIST:
-        return new PageListBlock(this.templatingService, name, def, locale);
+        return new PageListBlock(
+          this.templatingService,
+          name,
+          def,
+          locale,
+          parent,
+        );
       case BlockType.PAGE_SET:
-        return new PageSetBlock(this.templatingService, name, def, locale);
+        return new PageSetBlock(
+          this.templatingService,
+          name,
+          def,
+          locale,
+          parent,
+        );
       case BlockType.STATIC:
         return new StaticBlock(
           this.markdownService,
@@ -57,9 +97,10 @@ export class BlockFactory {
           name,
           def,
           locale,
+          parent,
         );
       case BlockType.TAG:
-        return new TagBlock(this.templatingService, name, def, locale);
+        return new TagBlock(this.templatingService, name, def, locale, parent);
     }
   }
 }

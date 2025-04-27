@@ -8,14 +8,16 @@
         <div class="content">
         {{ content }}
         </div>
+    <block id="blog-pager" type="pageList" template="blog-pager" current="{{ slug }}" prev="1" next="1" />
     </article>
+    
 {% endblock %}
 
 {% block aside %}
-    {% for block in blocks %}
+    {% if slots %}
     <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
-        <h2 class="text-center">{{ block.title }}</h2>
-        {{ block.content }}
+        <h2 class="text-center">TODO</h2>
+        <slot id="aside" />
     </aside>
-    {% endfor %}
+    {% endif %}
 {% endblock %}

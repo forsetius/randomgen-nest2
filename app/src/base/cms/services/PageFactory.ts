@@ -7,11 +7,14 @@ import { PageDef, PageZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { BlockFactory } from './BlockFactory';
+import { AppConfigService } from '@config/AppConfigService';
+import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
 export class PageFactory {
   public constructor(
     private readonly blockFactory: BlockFactory,
+    private readonly configService: AppConfigService,
     private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
   ) {}
@@ -20,9 +23,8 @@ export class PageFactory {
     try {
       return PageZodSchema.parse(def);
     } catch (e) {
-      console.log(def);
       if (e instanceof ZodError) {
-        throw new SourceFileValidationException(filename, e);
+        throw new SourceFileValidationException(filename, fromZodError(e));
       }
 
       throw e;
@@ -35,8 +37,12 @@ export class PageFactory {
       this.markdownService,
       this.templatingService,
       filename,
-      def,
-      locale,
+      {
+        ...def,
+        brand: this.configService.getInferred('cms.brand'),
+        meta: this.configService.getInferred('cms.meta')[locale],
+        locale,
+      },
     );
   }
 }

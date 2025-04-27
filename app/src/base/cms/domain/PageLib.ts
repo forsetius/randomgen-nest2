@@ -11,7 +11,7 @@ export class PageLib {
 
   public constructor(pages: Page[]) {
     pages.forEach((page) => {
-      this.pages.set(page.slug, page);
+      this.pages.set(page.def.slug, page);
       page.def.tags?.forEach((tag) => {
         this.tags.add(tag, page);
       });
@@ -30,8 +30,20 @@ export class PageLib {
     return this.pages.get(slug)!;
   }
 
-  public getPagesByDate(count = 1, skip = 0): Page[] {
-    return this.pagesByDate.slice(skip, skip + count);
+  public getPagesByDate(
+    root: string,
+    prev: number,
+    next: number,
+  ): { prev: Page[]; next: Page[] } {
+    let startAt = this.pagesByDate.findIndex((el) => el.def.slug === root);
+    if (startAt === -1) {
+      startAt = 0;
+    }
+
+    return {
+      prev: this.pagesByDate.slice(startAt - prev, startAt),
+      next: this.pagesByDate.slice(startAt + 1, startAt + 1 + next),
+    };
   }
 
   public getPagesByTag(tag: Tag): Page[] {

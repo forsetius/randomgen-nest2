@@ -3,9 +3,9 @@
     <div class="container px-4 px-md-3 text-body-secondary">
         <div class="row">
             <div class="col-lg-3">
-                <h5>Forseti: Abstract Works</h5>
+                <h5>{{ brand.name }}</h5>
                 <ul class="list-unstyled small">
-                    <li class="mb-2">© 2025 by Marcin "Forseti" Paździora</li>
+                    <li class="mb-2">{{ brand.copyright }}</li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2"></div>

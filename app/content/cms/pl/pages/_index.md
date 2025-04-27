@@ -3,9 +3,13 @@ template: _index
 title: Hello, World!
 headerImage: index-head.png
 thumbnailImage: index.jpg
-tags:
-  - abc
-  - def
+slots:
+  aside:
+    - type: pageList
+      template: aside
+      title: Ostatnie posty
+      prev: 3
+      next: 0 
 ---
 
 **Jestem Marcin i nie lubię się opisywać.**

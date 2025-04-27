@@ -11,8 +11,9 @@ export class StaticBlock extends Block {
     name: string,
     public override readonly def: StaticBlockDef,
     locale: Locale,
+    parentSlug: string | null,
   ) {
-    super(name, def, locale);
+    super(name, def, locale, parentSlug);
   }
 
   preRender(): void {

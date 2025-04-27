@@ -19,20 +19,21 @@ export const config = (envVars: EnvVarValidator) => ({
   },
   cms: {
     meta: {
-      pl_PL: {
+      pl: {
         title: 'RandomGen',
         description: 'Random generators for RPGs',
         keywords: 'random, generator, rpg, dnd, star trek',
       },
-      en_US: {
+      en: {
         title: 'Random generator',
         description: 'Random generators for RPGs',
         keywords: 'random, generator, rpg, d&d, star trek',
       },
     },
-    menus: {
-      pl_PL: {},
-      en_US: {},
+    brand: {
+      name: 'Forseti: Abstract Works',
+      copyright: '© 2025 by Marcin "Forseti" Paździora',
+      logo: '/ui/logo-w.png',
     },
   },
   docs: {
