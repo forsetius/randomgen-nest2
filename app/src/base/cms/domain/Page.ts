@@ -1,13 +1,14 @@
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { TemplatingService } from '@templating/TemplatingService';
 import { PageDef } from '../types';
-import { Block } from './Block';
+import { Block } from './blocks/Block';
 import { BlockFactory } from '../services/BlockFactory';
-import { DynamicBlock } from './DynamicBlock';
+import { DynamicBlock } from './blocks/DynamicBlock';
 import { DateTime } from 'luxon';
 import { PageLib } from './PageLib';
 import { Menu } from './Menu';
 import { FullPageDef, PageMeta } from '../types/PageMeta';
+import { Logger } from '@nestjs/common';
 
 export class Page {
   private _content?: string;
@@ -16,6 +17,7 @@ export class Page {
   public readonly date: DateTime | undefined;
   public readonly timestamp: number | undefined;
   public readonly def: FullPageDef;
+  private readonly logger = new Logger(Page.name);
 
   public constructor(
     private blockFactory: BlockFactory,
@@ -57,9 +59,14 @@ export class Page {
         throw new Error(`Invalid date: ${dateString}`);
       }
 
+      if (date.isValid) {
+        this.def.date = date.toLocaleString(DateTime.DATE_MED);
+      }
       this.date = date;
       this.timestamp = date.toSeconds();
     }
+
+    this.logger.log(`${this.def.slug} created`);
   }
 
   get template(): string {
@@ -96,7 +103,6 @@ export class Page {
     blocks: Map<string, Block>,
     pages: PageLib,
   ): void {
-    console.log(`Page ${this.def.slug}: preRender`);
     const def = this.parseMarkdown();
     this._content = this.templatingService.render(
       this.template,
@@ -110,25 +116,21 @@ export class Page {
   }
 
   private insertMenus(menus: Map<string, Menu>) {
-    console.log('insertMenus');
     const menuMatches = (this._content ?? '').matchAll(
       /<menu id="(?<id>[a-zA-Z0-9]+)" \/>/gm,
     );
 
     for (const [match, id] of menuMatches) {
-      console.log({ match, id });
       if (typeof id === 'undefined') {
         throw new Error(`Menu without id in ${this.template}`);
       }
       if (!menus.has(id)) {
         throw new Error(`Unknown menu "${id}" in ${this.template}`);
       }
-      console.log(this._content?.length);
       this._content = (this._content ?? '').replace(
         match,
         menus.get(id)!.content,
       );
-      console.log(this._content.length);
     }
   }
 

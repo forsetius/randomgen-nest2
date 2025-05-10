@@ -5,7 +5,7 @@
     {% if pages.prev[0] %}
     <a href="/page/{{ pages.prev[0].slug }}"
        class="btn btn-outline-success d-flex flex-column align-items-start text-start fw-bold p-3 w-50">
-      <small class="text-muted">Poprzedni:</small>
+      <small class="text-black-50">Poprzedni:</small>
       {{ pages.prev[0].title }}
     </a>
     {% endif %}
@@ -14,7 +14,7 @@
     {% if pages.next[0] %}
     <a href="/page/{{ pages.next[0].slug }}"
        class="btn btn-outline-success d-flex flex-column align-items-end text-end fw-bold p-3 w-50">
-      <small class="text-muted">Następny:</small>
+      <small class="text-black-50">Następny:</small>
       {{ pages.next[0].title }}
     </a>
     {% endif %}

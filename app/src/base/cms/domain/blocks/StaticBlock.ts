@@ -1,8 +1,8 @@
 import { Block } from './Block';
-import { StaticBlockDef } from '../types';
+import { StaticBlockDef } from '../../types';
 import { Locale } from '@shared/types/Locale';
 import { TemplatingService } from '@templating/TemplatingService';
-import { MarkdownService } from '../../parser/services/MarkdownService';
+import { MarkdownService } from '../../../parser/services/MarkdownService';
 
 export class StaticBlock extends Block {
   public constructor(

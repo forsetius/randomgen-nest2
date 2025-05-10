@@ -4,15 +4,14 @@ import { BlockDef, BlockType, BlockZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Locale } from '@shared/types/Locale';
-import { ApiCallBlock } from '../domain/ApiCallBlock';
+import { ApiCallBlock } from '../domain/blocks/ApiCallBlock';
 import { HttpService } from '@nestjs/axios';
-import { Block } from '../domain/Block';
+import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
-import { PageBlock } from '../domain/PageBlock';
-import { PageListBlock } from '../domain/PageListBlock';
-import { PageSetBlock } from '../domain/PageSetBlock';
-import { TagBlock } from '../domain/TagBlock';
-import { StaticBlock } from '../domain/StaticBlock';
+import { MediaBlock } from '../domain/blocks/MediaBlock';
+import { PageListBlock } from '../domain/blocks/PageListBlock';
+import { PageSetBlock } from '../domain/blocks/PageSetBlock';
+import { StaticBlock } from '../domain/blocks/StaticBlock';
 import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
@@ -33,6 +32,22 @@ export class BlockFactory {
 
       throw e;
     }
+  }
+
+  public createAll(
+    blockDefs: Map<string, unknown>,
+    locale: Locale,
+    parent?: string,
+  ): Map<string, Block> {
+    return new Map(
+      Array.from(blockDefs).map(([source, def]) => {
+        const blockDef: BlockDef = this.validate(source, def);
+
+        return parent
+          ? [source, this.create(source, blockDef, locale, parent)]
+          : [source, this.createShared(source, blockDef, locale)];
+      }),
+    );
   }
 
   public createShared(
@@ -72,8 +87,14 @@ export class BlockFactory {
           locale,
           parent,
         );
-      case BlockType.PAGE:
-        return new PageBlock(this.templatingService, name, def, locale, parent);
+      case BlockType.MEDIA:
+        return new MediaBlock(
+          this.templatingService,
+          name,
+          def,
+          locale,
+          parent,
+        );
       case BlockType.PAGE_LIST:
         return new PageListBlock(
           this.templatingService,
@@ -99,8 +120,6 @@ export class BlockFactory {
           locale,
           parent,
         );
-      case BlockType.TAG:
-        return new TagBlock(this.templatingService, name, def, locale, parent);
     }
   }
 }

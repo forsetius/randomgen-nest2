@@ -12,4 +12,5 @@ export interface PageMeta {
 
 export interface FullPageDef extends PageDef, PageMeta {
   slug: string;
+  date?: string;
 }

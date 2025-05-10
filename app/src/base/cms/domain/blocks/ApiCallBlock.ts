@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Locale } from '@shared/types/Locale';
 import { AxiosError } from 'axios';
-import { ApiCallBlockDef } from '../types';
+import { ApiCallBlockDef } from '../../types';
 import { InternalServerErrorException } from '@nestjs/common';
 import { DynamicBlock } from './DynamicBlock';
 

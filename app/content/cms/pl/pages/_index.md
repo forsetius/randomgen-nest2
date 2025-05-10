@@ -6,8 +6,8 @@ thumbnailImage: index.jpg
 slots:
   aside:
     - type: pageList
-      template: aside
-      title: Ostatnie posty
+      template: aside-cards
+      title: Ostatnie wpisy
       prev: 3
       next: 0 
 ---

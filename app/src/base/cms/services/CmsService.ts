@@ -6,12 +6,12 @@ import { ParserService } from '../../parser/services/ParserService';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
 import { PageFactory } from './PageFactory';
-import { BlockDef, MenuDef, PageDef } from '../types';
-import { Block } from '../domain/Block';
 import { PageLib } from '../domain/PageLib';
 import { Page } from '../domain/Page';
-import { Menu } from '../domain/Menu';
 import * as process from 'node:process';
+import stopwatch from '@shared/util/stopwatch';
+import { BlockType, PageDef } from '../types';
+import { getBasename } from '@shared/util/string';
 
 @Injectable()
 export class CmsService {
@@ -33,65 +33,56 @@ export class CmsService {
   }
 
   public async load(): Promise<void> {
-    const [blockDefs, menuDefs, pageDefs] = await Promise.all([
-      this.readSourceFiles(SourceDirEnum.BLOCK),
-      this.readSourceFiles(SourceDirEnum.MENU),
-      this.readSourceFiles(SourceDirEnum.PAGE),
+    stopwatch.record('Loading CMS data...');
+    const lang = this.locale;
+    const [blocks, menus, pages, specialPageDefs] = await Promise.all([
+      this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK), lang),
+      this.menuFactory.createAll(await this.getSources(SourceDir.MENU), lang),
+      this.pageFactory.createAll(await this.getSources(SourceDir.PAGE), lang),
+      this.getSources(SourceDir.SPECIAL_PAGE),
     ]);
+    const pageLib = new PageLib(Array.from(pages.values()));
+    const tagPageDef = specialPageDefs.get(`tag`)! as Record<string, unknown>;
+    for (const [tag, pages] of pageLib.tags.entries()) {
+      const tagPage = this.pageFactory.create(
+        `tag-${tag}`,
+        {
+          ...tagPageDef,
+          title: `${tagPageDef['title'] as string}: ${tag}`,
+          blocks: {
+            pages: {
+              type: BlockType.PAGE_SET,
+              template: 'block-page-card-list',
+              items: pages.map((page) => page.def.slug),
+            },
+          },
+        } as unknown as PageDef,
+        this.locale,
+      );
 
-    const menus = new Map<Name, Menu>(
-      Array.from(menuDefs).map(([filename, def]) => {
-        const menuDef: MenuDef = this.menuFactory.validate(filename, def);
-        const name = this.getName(filename);
-
-        return [name, this.menuFactory.create(name, menuDef, this.locale)];
-      }),
-    );
-    const pages = new PageLib(
-      Array.from(pageDefs).map(([filename, def]) => {
-        const pageDef: PageDef = this.pageFactory.validate(filename, def);
-
-        return this.pageFactory.create(
-          this.getName(filename),
-          pageDef,
-          this.locale,
-        );
-      }),
-    );
-    const blocks = new Map<Name, Block>(
-      Array.from(blockDefs).map(([filename, def]) => {
-        const blockDef: BlockDef = this.blockFactory.validate(filename, def);
-        const name = this.getName(filename);
-
-        return [
-          name,
-          this.blockFactory.createShared(name, blockDef, this.locale),
-        ];
-      }),
-    );
+      pageLib.addPage(tagPage);
+    }
 
     menus.forEach((menu) => {
       menu.preRender();
     });
     blocks.forEach((block) => {
-      block.preRender(pages);
+      block.preRender(pageLib);
     });
-    pages.preRender(menus, blocks);
+    pageLib.preRender(menus, blocks);
 
-    this.pages = pages;
+    this.pages = pageLib;
+    stopwatch.record('CMS data loaded');
   }
 
-  private async readSourceFiles(
-    dirName: SourceDirEnum,
-  ): Promise<Map<Name, unknown>> {
+  private async getSources(dirName: SourceDir): Promise<Map<Name, unknown>> {
     const sourcePath = path.join(this.baseSourcePath, dirName);
     const fileNames = await fs.readdir(sourcePath);
-
     const map: [Name, unknown][] = await Promise.all(
       fileNames
         .filter((filename: string) => this.parserService.isSupported(filename))
         .map(async (filename: string) => [
-          filename,
+          getBasename(filename),
           await this.parserService.parseFile(path.join(sourcePath, filename)),
         ]),
     );
@@ -109,13 +100,14 @@ export class CmsService {
     return this.pages.search(term);
   }
 
-  private getName(filename: string): string {
-    return path.basename(filename, path.extname(filename));
+  public getTag(tag: string): Page[] {
+    return this.pages.getPagesByTag(tag);
   }
 }
 
-enum SourceDirEnum {
+enum SourceDir {
   PAGE = 'pages',
+  SPECIAL_PAGE = 'specialPages',
   BLOCK = 'blocks',
   MENU = 'menus',
 }

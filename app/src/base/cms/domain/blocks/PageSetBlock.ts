@@ -1,15 +1,15 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
-import { PageDef, TagBlockDef } from '../types';
+import { PageDef, PageSetBlockDef } from '../../types';
 import { Locale } from '@shared/types/Locale';
-import { Page } from './Page';
-import { PageLib } from './PageLib';
+import { Page } from '../Page';
+import { PageLib } from '../PageLib';
 
-export class TagBlock extends Block {
+export class PageSetBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
     name: string,
-    public override readonly def: TagBlockDef,
+    public override readonly def: PageSetBlockDef,
     locale: Locale,
     public override readonly parentSlug: string,
   ) {
@@ -17,11 +17,11 @@ export class TagBlock extends Block {
   }
 
   preRender(pages: PageLib): void {
-    const targetPages = pages.getPagesByTag(this.def.tag);
-
+    const targetPages = this.def.items.map((slug) => pages.getPage(slug));
     const pageDefs: PageDef[] = targetPages.map((page: Page) =>
       page.parseMarkdown(),
     );
+
     this._content = this.templatingService.render(
       this.template,
       { pages: pageDefs },

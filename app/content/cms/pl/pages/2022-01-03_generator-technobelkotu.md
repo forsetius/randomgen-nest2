@@ -4,10 +4,11 @@ title: Generator technobełkotu
 headerImage: startrek-engineers-head.png
 thumbnailImage: startrek-engineers-card.png
 excerpt: |-
-  Jakiś czas temu popełniłem tytułowy generator startrekowego technobełkotu. Losuje on 5-wyrazową frazę, która mogłaby paść z ust Scottiego, O’Briena, czy LaForge'a.
+  Generator startrekowego technobełkotu losujący frazę, która mogłaby paść z ust Scottiego, O’Briena, czy LaForge'a.
 tags:
   - generator
   - startrek
+  - fantastyka
 ---
 
 Jak wiadomo, życie bez programowania traci sens już po 3 dniach. Dlatego czasem piszę sobie coś hobbystycznie, czasem robię jakiś projekt na boku, żeby się czegoś nauczyć (takie rozpoznanie bojem) a najczęściej udaje mi się to połączyć.

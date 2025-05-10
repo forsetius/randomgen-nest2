@@ -1,9 +1,9 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
-import { PageListBlockDef } from '../types';
+import { PageListBlockDef } from '../../types';
 import { Locale } from '@shared/types/Locale';
-import { Page } from './Page';
-import { PageLib } from './PageLib';
+import { Page } from '../Page';
+import { PageLib } from '../PageLib';
 
 export class PageListBlock extends Block {
   public constructor(
@@ -23,14 +23,13 @@ export class PageListBlock extends Block {
       this.def.next,
     );
 
-    const pageDefs = {
-      prev: targetPages.prev.map((page: Page) => page.parseMarkdown()),
-      next: targetPages.next.map((page: Page) => page.parseMarkdown()),
-    };
+    const prev = targetPages.prev.map((page: Page) => page.parseMarkdown());
+    const next = targetPages.next.map((page: Page) => page.parseMarkdown());
+    const pageDefs = { prev, next, all: prev.concat(next) };
 
     this._content = this.templatingService.render(
       this.template,
-      { pages: pageDefs },
+      { title: this.def.title, pages: pageDefs },
       this.locale,
     );
   }

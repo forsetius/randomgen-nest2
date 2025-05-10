@@ -1,6 +1,6 @@
 
 <footer class="bd-footer pt-4 bg-body-tertiary" data-bs-theme="dark">
-    <div class="container px-4 px-md-3 text-body-secondary">
+    <div class="container text-body-secondary">
         <div class="row">
             <div class="col-lg-3">
                 <h5>{{ brand.name }}</h5>

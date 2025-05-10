@@ -1,23 +1,25 @@
+import stopwatch from '@shared/util/stopwatch';
+import { Settings as LuxonSettings } from 'luxon';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { ApiDocService } from './base/apidoc/ApiDocService';
 import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
 import { SecurityService } from './base/security/SecurityService';
 import { Env } from '@shared/types/Env';
-import { Settings as LuxonSettings } from 'luxon';
+
+stopwatch.record('after imports');
 
 async function bootstrap(): Promise<void> {
   LuxonSettings.throwOnInvalid = true;
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  const configService = app.get(AppConfigService);
+  stopwatch.record('app created');
 
+  const configService = app.get(AppConfigService);
   app.enableVersioning({ type: VersioningType.URI, prefix: false });
   app.enableShutdownHooks();
   app.get(SecurityService).setup(app);
-  app.get(ApiDocService).setup(app);
 
   app.useGlobalPipes(
     new ValidationPipe({
@@ -29,14 +31,16 @@ async function bootstrap(): Promise<void> {
 
   try {
     await app.init();
-    await app.listen(configService.getInferred('app.port'));
+    stopwatch.record('app initialized');
 
-    console.log(
-      `Application started on port ${configService.getInferred('app.port').toString()}`,
-    );
+    await app.listen(configService.getInferred('app.port'));
   } catch (error) {
     console.error('Error while starting the application:', error);
+    stopwatch.record('Exiting with error');
+
     process.exit(1);
+  } finally {
+    stopwatch.list();
   }
 }
 

@@ -23,6 +23,19 @@ export class MenuFactory {
     }
   }
 
+  public createAll(
+    menuDefs: Map<string, unknown>,
+    locale: Locale,
+  ): Map<string, Menu> {
+    return new Map(
+      Array.from(menuDefs).map(([source, def]) => {
+        const menuDef: MenuDef = this.validate(source, def);
+
+        return [source, this.create(source, menuDef, locale)];
+      }),
+    );
+  }
+
   public create(name: string, def: MenuDef, locale: Locale): Menu {
     return new Menu(this.templatingService, name, def, locale);
   }

@@ -1,21 +1,10 @@
 {% extends "./master.njs" %}
 
 {% block article %}
-    <article class="col-sm-9">
-        {% if lead %}
-        <div class="lead">{{ lead }}</div>
-        {% endif %}
-        <div class="content">
-        {{ content }}
-        </div>
-    </article>
-{% endblock %}
-
-{% block aside %}
-    {% for block in blocks %}
-    <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
-        <h2 class="text-center">{{ block.title }}</h2>
-        {{ block.content }}
-    </aside>
-    {% endfor %}
+    {% if lead %}
+    <div class="lead">{{ lead }}</div>
+    {% endif %}
+    <div class="content">
+    {{ content }}
+    </div>
 {% endblock %}

@@ -1,25 +1,29 @@
 import { Page } from './Page';
 import { ArrayMap } from '@shared/util/ArrayMap';
 import { NotFoundException } from '@nestjs/common';
-import { Block } from './Block';
+import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 
 export class PageLib {
-  private pages = new Map<Slug, Page>();
-  private pagesByDate: Page[] = [];
-  private tags = new ArrayMap<Tag, Page>();
+  public readonly pages = new Map<Slug, Page>();
+  public readonly pagesByDate: Page[] = [];
+  public readonly tags = new ArrayMap<Tag, Page>();
 
   public constructor(pages: Page[]) {
     pages.forEach((page) => {
-      this.pages.set(page.def.slug, page);
-      page.def.tags?.forEach((tag) => {
-        this.tags.add(tag, page);
-      });
+      this.addPage(page);
     });
 
     this.pagesByDate = pages
       .filter((page) => !(typeof page.timestamp === 'undefined'))
       .sort((a, b) => a.timestamp! - b.timestamp!);
+  }
+
+  public addPage(page: Page): void {
+    this.pages.set(page.def.slug, page);
+    page.def.tags?.forEach((tag) => {
+      this.tags.add(tag, page);
+    });
   }
 
   public getPage(slug: string): Page {
@@ -37,7 +41,7 @@ export class PageLib {
   ): { prev: Page[]; next: Page[] } {
     let startAt = this.pagesByDate.findIndex((el) => el.def.slug === root);
     if (startAt === -1) {
-      startAt = 0;
+      startAt = this.pagesByDate.length;
     }
 
     return {

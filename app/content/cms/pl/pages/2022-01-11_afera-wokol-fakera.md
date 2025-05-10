@@ -1,8 +1,9 @@
 ---
 template: blog-post
 title: Afera wokół Fakera
-headerImage: faker-head.jpg
-thumbnailImage: faker-card.jpg
+headerImage: index-head.jpg
+thumbnailImage: index.jpg
+excerpt: Sabotaż w pakietach NPM `colors` i `faker`
 lead: |-
   Był sobie programista. Kodował open source’owe pakiety do Node.js i udostępniał je społeczności przez zwykłe kanały (GitHub, NPM). 
   Prywatnie miał na koncie romans z teoriami spiskowymi, pożar we własnym mieszkaniu i śledztwo w kierunku terroryzmu ale swoje robił. 
@@ -12,14 +13,18 @@ tags:
 slots:
   aside:
     - type: static
-      title: Źródła
       content: |
+        ## Źródła
         - Techniczny opis problemu z `colors`: 
             [Dev corrupts NPM libs 'colors’ and 'faker’ breaking thousands of apps](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/)
         - Doniesienie o pożarze w domu Maraka: 
             [Neighbor on Queens man with bomb-making equipment:…](https://abc7ny.com/suspicious-package-queens-astoria-fire/6425363/)
         - Status projektu `colors`: 
             [(Semi-Official) Status Update](https://github.com/Marak/colors.js/issues/317)
+    - type: static
+      content: |
+        ## Test
+        Abcde
 ---
 
 Ekosystem aplikacji pisanych w Node.js zakłada przy ich pisaniu korzystanie z gotowych klocków oferujących jakieś cząstkowe funkcjonalności zamiast pisania ich samemu przez programistę. Na przykład programista w swojej aplikacji nie musi od nowa wynajdować koła i pisać funkcji obsługujących kolorowanie czy tworzenie zmyślonych danych do testów, bo deklaruje tylko użycie odpowiednich pakietów, które zostały udostępnione za darmo społeczności. Fajne i w sumie logiczne, nie?

@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 import { HttpModule } from '@nestjs/axios';
-import { Module, OnModuleInit } from '@nestjs/common';
+import { Logger, Module, OnModuleInit } from '@nestjs/common';
 import { HttpAdapterHost } from '@nestjs/core';
 import { Locale } from '@shared/types/Locale';
 import { ParserModule } from '../parser/ParserModule';
@@ -19,6 +19,8 @@ import * as express from 'express';
   controllers: [CmsController],
 })
 export class CmsModule implements OnModuleInit {
+  private readonly logger = new Logger(CmsModule.name);
+
   constructor(private readonly adapterHost: HttpAdapterHost) {}
 
   onModuleInit() {
@@ -26,7 +28,7 @@ export class CmsModule implements OnModuleInit {
       this.adapterHost.httpAdapter.getInstance();
 
     const staticPath = join(process.cwd(), 'content/cms/static');
-    console.log('[CmsModule] Serving static from:', staticPath);
+    this.logger.log(`Serving static from: ${staticPath}`);
 
     expressApp.use('/static', express.static(staticPath));
   }

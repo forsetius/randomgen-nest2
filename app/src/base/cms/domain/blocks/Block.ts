@@ -1,6 +1,6 @@
-import { BlockDef } from '../types';
+import { BlockDef } from '../../types';
 import { Locale } from '@shared/types/Locale';
-import { PageLib } from './PageLib';
+import { PageLib } from '../PageLib';
 
 export abstract class Block {
   protected _content?: string;
