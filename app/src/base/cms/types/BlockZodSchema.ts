@@ -21,6 +21,7 @@ export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
 export const PageListBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('block-page-plain-list'),
   type: z.literal(BlockType.PAGE_LIST),
+  series: z.string(),
   prev: z.coerce.number().min(0),
   next: z.coerce.number().min(0),
 });

@@ -17,7 +17,8 @@ export class PageListBlock extends Block {
   }
 
   preRender(pages: PageLib): void {
-    const targetPages = pages.getPagesByDate(
+    const targetPages = pages.getPagesFromSeries(
+      this.def.series,
       this.parentSlug,
       this.def.prev,
       this.def.next,

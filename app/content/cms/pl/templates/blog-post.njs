@@ -12,6 +12,6 @@
         <div class="content">
         {{ content }}
         </div>
-    <block id="blog-pager" type="pageList" template="blog-pager" current="{{ slug }}" prev="1" next="1" />
+    <block id="blog-pager" type="pageList" template="blog-pager" series="blog" current="{{ slug }}" prev="1" next="1" />
     </article>
 {% endblock %}

@@ -14,6 +14,7 @@ export class Page {
   private _content?: string;
   public readonly dynamicBlocks = new Map<string, DynamicBlock>();
   public readonly searchString: string;
+  public readonly series: string | undefined;
   public readonly date: DateTime | undefined;
   public readonly timestamp: number | undefined;
   public readonly def: FullPageDef;
@@ -27,9 +28,9 @@ export class Page {
     def: PageDef & PageMeta,
   ) {
     const filenameParts:
-      | { date?: string; time?: string; slug?: string }
+      | { series?: string; date?: string; time?: string; slug?: string }
       | undefined = new RegExp(
-      /^(?<slug>(?:(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?_)?.+)$/m,
+      /^(?<slug>(?:(?<series>[a-z][a-z0-9-]*)_(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?_)?.+)$/m,
     ).exec(filename)?.groups;
 
     if (!filenameParts?.slug) {
@@ -42,6 +43,7 @@ export class Page {
     this.searchString = this.getSearchString();
 
     if (filenameParts.date) {
+      this.series = filenameParts.series;
       const dateString = filenameParts.time
         ? `${filenameParts.date} ${filenameParts.time.replaceAll('-', ':')}`
         : `${filenameParts.date} 00:00:00`;

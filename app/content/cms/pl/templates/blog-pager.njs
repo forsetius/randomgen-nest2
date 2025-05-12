@@ -1,4 +1,4 @@
-<div  style="margin-left: 75px">
+<div style="margin-left: 75px">
   <hr>
   <div class="d-flex justify-content-center gap-5 w-75 mx-auto mt-5">
     <!-- Poprzedni -->

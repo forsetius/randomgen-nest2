@@ -5,22 +5,25 @@ import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 
 export class PageLib {
-  public readonly pages = new Map<Slug, Page>();
-  public readonly pagesByDate: Page[] = [];
-  public readonly tags = new ArrayMap<Tag, Page>();
+  public readonly pages = new Map<string, Page>();
+  public readonly series = new ArrayMap<string, Page>();
+  public readonly tags = new ArrayMap<string, Page>();
 
   public constructor(pages: Page[]) {
     pages.forEach((page) => {
       this.addPage(page);
     });
 
-    this.pagesByDate = pages
-      .filter((page) => !(typeof page.timestamp === 'undefined'))
-      .sort((a, b) => a.timestamp! - b.timestamp!);
+    this.series.forEach((pages) => {
+      pages.sort((a, b) => a.timestamp! - b.timestamp!);
+    });
   }
 
   public addPage(page: Page): void {
     this.pages.set(page.def.slug, page);
+    if (page.series) {
+      this.series.add(page.series, page);
+    }
     page.def.tags?.forEach((tag) => {
       this.tags.add(tag, page);
     });
@@ -34,23 +37,30 @@ export class PageLib {
     return this.pages.get(slug)!;
   }
 
-  public getPagesByDate(
+  public getPagesFromSeries(
+    series: string,
     root: string,
     prev: number,
     next: number,
   ): { prev: Page[]; next: Page[] } {
-    let startAt = this.pagesByDate.findIndex((el) => el.def.slug === root);
+    const seriesPages = this.series.get(series);
+    if (!seriesPages) {
+      console.log(Array.from(this.series.keys()));
+      throw new Error(`Series ${series} not found`);
+    }
+
+    let startAt = seriesPages.findIndex((el) => el.def.slug === root);
     if (startAt === -1) {
-      startAt = this.pagesByDate.length;
+      startAt = seriesPages.length;
     }
 
     return {
-      prev: this.pagesByDate.slice(startAt - prev, startAt),
-      next: this.pagesByDate.slice(startAt + 1, startAt + 1 + next),
+      prev: seriesPages.slice(startAt - prev, startAt),
+      next: seriesPages.slice(startAt + 1, startAt + 1 + next),
     };
   }
 
-  public getPagesByTag(tag: Tag): Page[] {
+  public getPagesByTag(tag: string): Page[] {
     return this.tags.getCollection(tag);
   }
 
@@ -68,6 +78,3 @@ export class PageLib {
     });
   }
 }
-
-type Slug = string;
-type Tag = string;

@@ -8,6 +8,7 @@ slots:
     - type: pageList
       template: aside-cards
       title: Ostatnie wpisy
+      series: blog
       prev: 3
       next: 0 
 ---
