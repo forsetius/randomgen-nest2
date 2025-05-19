@@ -9,20 +9,42 @@ import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
 
-const contentDir = path.join(__dirname, '..', '..', 'content', 'cms');
-
 @Module({
   imports: [
     AppConfigModule,
     SecurityModule,
     TemplatingModule.forRoot({
-      paths: contentDir,
+      paths: path.join(__dirname, '..', '..', 'content', 'cms', 'templates'),
       options: {
         autoescape: false,
         throwOnUndefined: true,
       },
     }),
-    CmsModule.forRoot(),
+    CmsModule.forRoot({
+      fragmentTemplates: [
+        'fragment-img-overlay-card',
+        // 'fragment-lead-card',
+        // 'fragment-data-card',
+        // 'fragment-list-item',
+      ],
+      meta: {
+        pl: {
+          title: 'RandomGen',
+          description: 'Random generators for RPGs',
+          keywords: 'random, generator, rpg, dnd, star trek',
+        },
+        en: {
+          title: 'Random generator',
+          description: 'Random generators for RPGs',
+          keywords: 'random, generator, rpg, d&d, star trek',
+        },
+      },
+      brand: {
+        name: 'Forseti: Abstract Works',
+        copyright: '© 2025 by Marcin "Forseti" Paździora',
+        logo: 'logo-w.png',
+      },
+    }),
     TechnobabbleModule,
     ParserModule,
   ],

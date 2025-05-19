@@ -1,6 +1,5 @@
 import { BlockDef } from '../../types';
-import { Locale } from '@shared/types/Locale';
-import { PageLib } from '../PageLib';
+import { Library } from '../Library';
 
 export abstract class Block {
   protected _content?: string;
@@ -8,8 +7,6 @@ export abstract class Block {
   public constructor(
     public readonly name: string,
     public readonly def: BlockDef,
-    public readonly locale: Locale,
-    public readonly parentSlug: string | null,
   ) {}
 
   get template(): string {
@@ -23,5 +20,5 @@ export abstract class Block {
     return this._content;
   }
 
-  public abstract preRender(pages: PageLib): void;
+  public abstract render(pages: Library): void;
 }

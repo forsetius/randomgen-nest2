@@ -6,7 +6,7 @@
 
 <div id="headerImg"
      class="bg-custom-primary-light"
-     style="background-image: url('/static/ui/gradient-left.png'), url('/static/ui/gradient-right.png'), url('/static/media/{{ picture }}')"
+     style="background-image: url('/ui/gradient-left.png'), url('/ui/gradient-right.png'), url('/media/{{ picture }}')"
 >
     <h1>{{ title }}</h1>
 </div>

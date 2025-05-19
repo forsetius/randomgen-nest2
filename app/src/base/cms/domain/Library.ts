@@ -3,13 +3,19 @@ import { ArrayMap } from '@shared/util/ArrayMap';
 import { NotFoundException } from '@nestjs/common';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
+import { Locale } from '@shared/types/Locale';
 
-export class PageLib {
+export class Library {
   public readonly pages = new Map<string, Page>();
   public readonly series = new ArrayMap<string, Page>();
   public readonly tags = new ArrayMap<string, Page>();
 
-  public constructor(pages: Page[]) {
+  public constructor(
+    pages: Map<string, Page>,
+    public readonly menus: Map<string, Menu>,
+    public readonly blocks: Map<string, Block>,
+    public readonly locale: Locale,
+  ) {
     pages.forEach((page) => {
       this.addPage(page);
     });
@@ -20,7 +26,8 @@ export class PageLib {
   }
 
   public addPage(page: Page): void {
-    this.pages.set(page.def.slug, page);
+    this.pages.set(page.slug, page);
+
     if (page.series) {
       this.series.add(page.series, page);
     }
@@ -49,7 +56,7 @@ export class PageLib {
       throw new Error(`Series ${series} not found`);
     }
 
-    let startAt = seriesPages.findIndex((el) => el.def.slug === root);
+    let startAt = seriesPages.findIndex((el) => el.slug === root);
     if (startAt === -1) {
       startAt = seriesPages.length;
     }
@@ -60,21 +67,11 @@ export class PageLib {
     };
   }
 
-  public getPagesByTag(tag: string): Page[] {
-    return this.tags.getCollection(tag);
-  }
-
   public search(term: string): Page[] {
     return Array.from(this.pages.values()).filter(
       (page) =>
         page.searchString.includes(term.toLowerCase()) ||
         !!page.def.tags?.includes(term.toLowerCase()),
     );
-  }
-
-  public preRender(menus: Map<string, Menu>, blocks: Map<string, Block>): void {
-    this.pages.forEach((page) => {
-      page.preRender(menus, blocks, this);
-    });
   }
 }

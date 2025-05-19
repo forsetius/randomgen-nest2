@@ -1,31 +1,24 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { PageDef, PageSetBlockDef } from '../../types';
-import { Locale } from '@shared/types/Locale';
 import { Page } from '../Page';
-import { PageLib } from '../PageLib';
+import { Library } from '../Library';
 
 export class PageSetBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
     name: string,
     public override readonly def: PageSetBlockDef,
-    locale: Locale,
-    public override readonly parentSlug: string,
   ) {
-    super(name, def, locale, parentSlug);
+    super(name, def);
   }
 
-  preRender(pages: PageLib): void {
+  render(pages: Library): void {
     const targetPages = this.def.items.map((slug) => pages.getPage(slug));
-    const pageDefs: PageDef[] = targetPages.map((page: Page) =>
-      page.parseMarkdown(),
-    );
+    const pageDefs: PageDef[] = targetPages.map((page: Page) => page.data);
 
-    this._content = this.templatingService.render(
-      this.template,
-      { pages: pageDefs },
-      this.locale,
-    );
+    this._content = this.templatingService.render(this.template, {
+      pages: pageDefs,
+    });
   }
 }

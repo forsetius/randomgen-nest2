@@ -3,8 +3,8 @@
     {% for item in pages %}
     <div class="col">
       <div class="card text-bg-dark h-100 ">
-        <a href="/page/{{ item.slug }}" class="stretched-link">
-            <img src="/static/media/{{ item.thumbnailImage }}" class="card-img" alt="...">
+        <a href="{{ item.htmlFilename }}" class="stretched-link">
+            <img src="/media/{{ item.thumbnailImage }}" class="card-img" alt="...">
             <div class="card-img-overlay">
               <h2 class="card-title position-absolute bottom-0">{{ item.title }}</h2>
             </div>

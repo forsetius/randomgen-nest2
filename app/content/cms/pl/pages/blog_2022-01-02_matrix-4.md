@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: page-blog-post
 title: "Matrix 4"
 headerImage: matrix-head.jpg
 thumbnailImage: matrix-card.jpg

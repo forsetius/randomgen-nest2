@@ -1,7 +1,7 @@
-{% extends "./master.njs" %}
+{% extends "_master.njs" %}
 
 {% block subHeader %}
-    <i class="bi-calendar"></i> &nbsp; {{ date }} {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/tag/{{ tag }}">{{ tag }}</a> {% endfor %}{% endif %}
+    <i class="bi-calendar"></i> &nbsp; {{ date }} {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}{% endif %}
 {% endblock %}
 
 {% block article %}

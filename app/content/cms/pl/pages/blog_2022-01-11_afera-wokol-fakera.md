@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: page-blog-post
 title: Afera wokół Fakera
 headerImage: index-head.jpg
 thumbnailImage: index.jpg

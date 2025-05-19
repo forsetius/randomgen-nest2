@@ -1,6 +1,6 @@
 ---
 title: Strony z tagiem
-template: _tag
+template: page-full-width
 headerImage: index-head.png
 thumbnailImage: index.jpg
 ---

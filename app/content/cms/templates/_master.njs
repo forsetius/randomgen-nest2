@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +12,16 @@
   {% block meta %}{% endblock %}
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link id="theme" rel="stylesheet" type="text/css" href="/static/css/styles.css" title="theme" />
+  <link id="theme" rel="stylesheet" type="text/css" href="/ui/styles.css" title="theme" />
   {% block style %}{% endblock %}
-  <link rel="icon" type="image/x-icon" href="/static{{ brand.logo }}" />
+  <link rel="icon" type="image/x-icon" href="/ui/{{ brand.logo }}" />
 </head>
 <body class="{% block bodyClass %}default-page{% endblock %}">
 <header>
   <nav id="topbar-nav" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="/static{{ brand.logo }}" alt="Logo" width="32" height="32" class="d-inline-block align-text-middle">
+      <a class="navbar-brand" href="/pages/{{ lang }}/index.html">
+        <img src="/ui/{{ brand.logo }}" alt="Logo" width="32" height="32" class="d-inline-block align-text-middle">
         <span>{{ brand.name }}</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
       <menu id="topbar" />
     </div>
   </nav>
-  {% block header %} {% include "./header.njs" %} {% endblock %}
+  {% block header %} {% include "_header.njs" %} {% endblock %}
   <div id="subHeader">
     {% block subHeader %} {% endblock %}
   </div>
@@ -49,7 +49,7 @@
   </article>
 </main>
 
-{% block footer %} {% include "./footer.njs" %} {% endblock %}
+{% block footer %} {% include "_footer.njs" %} {% endblock %}
 
 <!-- compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>

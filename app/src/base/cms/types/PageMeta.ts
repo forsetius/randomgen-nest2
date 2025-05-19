@@ -1,16 +1,19 @@
-import { config } from '../../../config';
-import { Locale } from '@shared/types/Locale';
 import { PageDef } from './PageZodSchema';
-
-type configType = ReturnType<typeof config>;
+import { CmsServiceOptions } from './CmsModuleOptions';
+import { Locale } from '@shared/types/Locale';
 
 export interface PageMeta {
-  meta: configType['cms']['meta']['pl'];
-  brand: configType['cms']['brand'];
-  locale: Locale;
+  meta: CmsServiceOptions['meta'];
+  brand: CmsServiceOptions['brand'];
 }
 
-export interface FullPageDef extends PageDef, PageMeta {
+export interface PageProps {
   slug: string;
-  date?: string;
+  series: string | undefined;
+  date: string | undefined;
+  sort: number | undefined;
+  lang: Locale;
+  htmlFilename: string;
 }
+
+export interface FullPageDef extends PageDef, PageMeta, PageProps {}

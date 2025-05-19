@@ -1,4 +1,3 @@
-// app/src/base/security/ContentSecurityPolicyRegistry.ts
 import { Injectable } from '@nestjs/common';
 
 @Injectable()

@@ -11,12 +11,12 @@ menu:
   - title: Projekty
     items:
       - title: RandomGen
-        url: /page/randomgen
+        url: /pages/pl/randomgen.html
 
   - title: Blurby
     items:
       - title: Polityka prywatności
-        url: /page/polityka-prywatnosci
+        url: /pages/pl/polityka-prywatnosci.html
 
       - title: Kontakt
         url: /kontakt

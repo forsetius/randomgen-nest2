@@ -1,4 +1,4 @@
-{% extends "./master.njs" %}
+{% extends "_master.njs" %}
 
 {% block article %}
     {% if lead %}

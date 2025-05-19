@@ -1,46 +1,54 @@
-import { MarkdownService } from '../../parser/services/MarkdownService';
-import { TemplatingService } from '@templating/TemplatingService';
-import { PageDef } from '../types';
-import { Block } from './blocks/Block';
-import { BlockFactory } from '../services/BlockFactory';
-import { DynamicBlock } from './blocks/DynamicBlock';
 import { DateTime } from 'luxon';
-import { PageLib } from './PageLib';
-import { Menu } from './Menu';
-import { FullPageDef, PageMeta } from '../types/PageMeta';
+import { PageProps } from '../types/PageMeta';
 import { Logger } from '@nestjs/common';
+import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
+import { MarkdownService } from '../../parser/services/MarkdownService';
+import { BlockFactory } from '../services/BlockFactory';
+import { TemplatingService } from '@templating/TemplatingService';
+import { Library } from './Library';
+import { Block } from './blocks/Block';
+import { PageDef } from '../types';
+import { RenderedContent } from '../types/RenderedContent';
+import { CmsServiceOptions } from '../types/CmsModuleOptions';
+import { Locale } from '@shared/types/Locale';
 
 export class Page {
-  private _content?: string;
-  public readonly dynamicBlocks = new Map<string, DynamicBlock>();
+  public readonly slug: string;
+  public readonly series: string | undefined = undefined;
+  public readonly date: DateTime | undefined = undefined;
+  public readonly sort: number | undefined = undefined;
   public readonly searchString: string;
-  public readonly series: string | undefined;
-  public readonly date: DateTime | undefined;
-  public readonly timestamp: number | undefined;
-  public readonly def: FullPageDef;
   private readonly logger = new Logger(Page.name);
 
   public constructor(
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
-    public filename: string,
-    def: PageDef & PageMeta,
+    filename: string,
+    public readonly def: PageDef,
+    private readonly lang: Locale,
   ) {
     const filenameParts:
-      | { series?: string; date?: string; time?: string; slug?: string }
+      | {
+          series?: string;
+          date?: string;
+          time?: string;
+          sort?: string;
+          slug?: string;
+        }
       | undefined = new RegExp(
-      /^(?<slug>(?:(?<series>[a-z][a-z0-9-]*)_(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?_)?.+)$/m,
+      /^(?<slug>(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?)_)?.+)$/m,
     ).exec(filename)?.groups;
 
     if (!filenameParts?.slug) {
-      throw new Error(`Invalid filename: ${filename}. No slug found.`);
+      throw new Error(`Invalid filename: ${filename}`);
     }
-    this.def = {
-      ...def,
-      slug: filenameParts.slug,
-    };
+    this.slug = filenameParts.slug;
     this.searchString = this.getSearchString();
+
+    if (filenameParts.sort) {
+      this.sort = parseInt(filenameParts.sort, 10);
+    }
 
     if (filenameParts.date) {
       this.series = filenameParts.series;
@@ -48,42 +56,31 @@ export class Page {
         ? `${filenameParts.date} ${filenameParts.time.replaceAll('-', ':')}`
         : `${filenameParts.date} 00:00:00`;
 
-      let date: DateTime;
       try {
-        date = DateTime.fromSQL(dateString);
-      } catch (e: unknown) {
-        if (e instanceof Error) {
-          throw new Error(
-            `Invalid date: ${dateString} in filename: ${filename}. \nReason: ${e.message}`,
-          );
+        this.date = DateTime.fromSQL(dateString);
+        if (!this.sort) {
+          this.sort = this.date.toSeconds();
         }
-
-        throw new Error(`Invalid date: ${dateString}`);
+      } catch (e: unknown) {
+        throw new InvalidDateTimeException(
+          `Invalid date: ${dateString} in ${filename}`,
+          e,
+        );
       }
-
-      if (date.isValid) {
-        this.def.date = date.toLocaleString(DateTime.DATE_MED);
-      }
-      this.date = date;
-      this.timestamp = date.toSeconds();
     }
 
-    this.logger.log(`${this.def.slug} created`);
+    this.logger.log(`${this.slug} created`);
   }
 
   get template(): string {
     return this.def.template;
   }
 
-  get content(): string {
-    if (typeof this._content === 'undefined') {
-      throw new Error(`Page ${this.def.slug} is not pre-rendered yet`);
-    }
-
-    return this._content;
+  get timestamp(): number | undefined {
+    return this.date?.toSeconds();
   }
 
-  public parseMarkdown(): FullPageDef {
+  get data(): PageDef & PageProps {
     return {
       ...this.def,
       title: this.def.title,
@@ -97,28 +94,51 @@ export class Page {
         ? this.markdownService.parse(this.def.lead)
         : undefined,
       content: this.markdownService.parse(this.def.content),
+      slug: this.slug,
+      series: this.series,
+      date: this.date?.toLocaleString(DateTime.DATE_MED),
+      sort: this.sort,
+      lang: this.lang,
+      htmlFilename: `/pages/${this.lang}/${this.slug}.html`,
     };
   }
 
-  public preRender(
-    menus: Map<string, Menu>,
-    blocks: Map<string, Block>,
-    pages: PageLib,
-  ): void {
-    const def = this.parseMarkdown();
-    this._content = this.templatingService.render(
+  public render(library: Library, opts: CmsServiceOptions): RenderedContent[] {
+    const renderedContents: RenderedContent[] = [];
+    const data = {
+      ...this.data,
+      meta: opts.meta,
+      brand: opts.brand,
+    };
+
+    opts.fragmentTemplates.forEach((template) => {
+      renderedContents.push({
+        filepath: `${template}_${this.slug}`,
+        content: this.templatingService.render(
+          template,
+          data as unknown as Record<string, unknown>,
+        ),
+      });
+    });
+
+    let pageContent = this.templatingService.render(
       this.template,
-      def as unknown as Record<string, unknown>,
-      this.def.locale,
+      data as unknown as Record<string, unknown>,
     );
 
-    this.insertMenus(menus);
-    this.fillSlots(pages);
-    this.insertBlocks(blocks, pages);
+    pageContent = this.insertMenus(pageContent, library);
+    pageContent = this.fillSlots(pageContent, library);
+    pageContent = this.insertBlocks(pageContent, library);
+    renderedContents.push({
+      filepath: this.slug,
+      content: pageContent,
+    });
+
+    return renderedContents;
   }
 
-  private insertMenus(menus: Map<string, Menu>) {
-    const menuMatches = (this._content ?? '').matchAll(
+  private insertMenus(content: string, library: Library): string {
+    const menuMatches = content.matchAll(
       /<menu id="(?<id>[a-zA-Z0-9]+)" \/>/gm,
     );
 
@@ -126,23 +146,19 @@ export class Page {
       if (typeof id === 'undefined') {
         throw new Error(`Menu without id in ${this.template}`);
       }
-      if (!menus.has(id)) {
+      if (!library.menus.has(id)) {
         throw new Error(`Unknown menu "${id}" in ${this.template}`);
       }
-      this._content = (this._content ?? '').replace(
-        match,
-        menus.get(id)!.content,
-      );
+      content = content.replace(match, library.menus.get(id)!.content);
     }
+
+    return content;
   }
 
-  private fillSlots(pages: PageLib) {
+  private fillSlots(content: string, library: Library): string {
     const slotTagRegex = /<slot id="(?<id>[a-zA-Z0-9-_]+)" ?\/>/g;
-    if (!this._content) {
-      return;
-    }
 
-    for (const [slotTag, id] of this._content.matchAll(slotTagRegex)) {
+    for (const [slotTag, id] of content.matchAll(slotTagRegex)) {
       if (typeof id === 'undefined') {
         throw new Error(`Slot without id in ${this.template}`);
       }
@@ -151,37 +167,25 @@ export class Page {
         const blockDefs = this.def.slots[id]!;
         const slotContent = blockDefs.map((blockDef, i) => {
           const blockId = `slot-${id}_block-${i.toString()}`;
-          const block = this.blockFactory.create(
-            blockId,
-            blockDef,
-            this.def.locale,
-            this.def.slug,
-          );
+          const block = this.blockFactory.create(blockId, blockDef, this.slug);
 
-          block.preRender(pages);
-          if (block instanceof DynamicBlock) {
-            this.dynamicBlocks.set(id, block);
-
-            return `<dynamic-block id="${blockId}" />`;
-          }
+          block.render(library);
 
           return block.content;
         });
 
-        this._content = this._content.replace(slotTag, slotContent.join('\n'));
+        content = content.replace(slotTag, slotContent.join('\n'));
       }
     }
+
+    return content;
   }
 
-  private insertBlocks(sharedBlocks: Map<string, Block>, pages: PageLib) {
-    if (!this._content) {
-      return;
-    }
-
+  private insertBlocks(content: string, library: Library): string {
     const blockTagRegex = /<block ([^>]*?)\/?>/g;
     const attrRegex = /(\w+)="([^"]*)"/g;
 
-    for (const [blockTag, attrs] of this._content.matchAll(blockTagRegex)) {
+    for (const [blockTag, attrs] of content.matchAll(blockTagRegex)) {
       if (typeof attrs === 'undefined') {
         continue;
       }
@@ -194,7 +198,7 @@ export class Page {
 
       const id = args['id'];
       if (typeof id !== 'string') {
-        throw new Error(`Block with no id found in page ${this.def.slug}`);
+        throw new Error(`Block with no id found in page ${this.slug}`);
       }
 
       if (this.def.blocks && id in this.def.blocks) {
@@ -202,24 +206,18 @@ export class Page {
       }
 
       let block: Block;
-      if (sharedBlocks.has(id)) {
-        block = sharedBlocks.get(id)!;
+      if (library.blocks.has(id)) {
+        block = library.blocks.get(id)!;
       } else {
         const blockArgs = this.blockFactory.validate(`Block "${id}"`, args);
-        block = this.blockFactory.create(
-          id,
-          blockArgs,
-          this.def.locale,
-          this.def.slug,
-        );
+        block = this.blockFactory.create(id, blockArgs, this.slug);
       }
 
-      block.preRender(pages);
-      this._content = this._content.replace(blockTag, block.content);
-      if (block instanceof DynamicBlock) {
-        this.dynamicBlocks.set(id, block);
-      }
+      block.render(library);
+      content = content.replace(blockTag, block.content);
     }
+
+    return content;
   }
 
   private getSearchString(includeContent = false): string {
@@ -234,26 +232,5 @@ export class Page {
       .filter((str) => typeof str === 'string')
       .join(' ')
       .toLowerCase();
-  }
-
-  public async render(): Promise<string> {
-    if (this.dynamicBlocks.size === 0) {
-      return this.content;
-    }
-
-    let content = this.content;
-    const renderedBlocks = await Promise.all(
-      Array.from(this.dynamicBlocks.entries()).map(
-        async ([id, block]): Promise<[string, string]> => [
-          id,
-          await block.render(),
-        ],
-      ),
-    );
-    renderedBlocks.forEach(([id, renderedBlock]) => {
-      content = content.replace(`<dynamic-block id="${id}" />`, renderedBlock);
-    });
-
-    return content;
   }
 }

@@ -3,9 +3,6 @@ import { TemplatingService } from '@templating/TemplatingService';
 import { BlockDef, BlockType, BlockZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
-import { Locale } from '@shared/types/Locale';
-import { ApiCallBlock } from '../domain/blocks/ApiCallBlock';
-import { HttpService } from '@nestjs/axios';
 import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { MediaBlock } from '../domain/blocks/MediaBlock';
@@ -17,7 +14,6 @@ import { fromZodError } from '@shared/util/fromZodError';
 @Injectable()
 export class BlockFactory {
   public constructor(
-    private httpService: HttpService,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
   ) {}
@@ -36,7 +32,6 @@ export class BlockFactory {
 
   public createAll(
     blockDefs: Map<string, unknown>,
-    locale: Locale,
     parent?: string,
   ): Map<string, Block> {
     return new Map(
@@ -44,17 +39,13 @@ export class BlockFactory {
         const blockDef: BlockDef = this.validate(source, def);
 
         return parent
-          ? [source, this.create(source, blockDef, locale, parent)]
-          : [source, this.createShared(source, blockDef, locale)];
+          ? [source, this.create(source, blockDef, parent)]
+          : [source, this.createShared(source, blockDef)];
       }),
     );
   }
 
-  public createShared(
-    name: string,
-    def: BlockDef,
-    locale: Locale,
-  ): StaticBlock {
+  public createShared(name: string, def: BlockDef): StaticBlock {
     if (def.type !== BlockType.STATIC) {
       throw new Error(
         `Shared blocks can only be static. Attempted to create ${def.type} block`,
@@ -66,59 +57,23 @@ export class BlockFactory {
       this.templatingService,
       name,
       def,
-      locale,
-      null,
     );
   }
 
-  public create(
-    name: string,
-    def: BlockDef,
-    locale: Locale,
-    parent: string,
-  ): Block {
+  public create(name: string, def: BlockDef, parent: string): Block {
     switch (def.type) {
-      case BlockType.API_CALL:
-        return new ApiCallBlock(
-          this.httpService,
-          this.templatingService,
-          name,
-          def,
-          locale,
-          parent,
-        );
       case BlockType.MEDIA:
-        return new MediaBlock(
-          this.templatingService,
-          name,
-          def,
-          locale,
-          parent,
-        );
+        return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_LIST:
-        return new PageListBlock(
-          this.templatingService,
-          name,
-          def,
-          locale,
-          parent,
-        );
+        return new PageListBlock(this.templatingService, name, def, parent);
       case BlockType.PAGE_SET:
-        return new PageSetBlock(
-          this.templatingService,
-          name,
-          def,
-          locale,
-          parent,
-        );
+        return new PageSetBlock(this.templatingService, name, def);
       case BlockType.STATIC:
         return new StaticBlock(
           this.markdownService,
           this.templatingService,
           name,
           def,
-          locale,
-          parent,
         );
     }
   }

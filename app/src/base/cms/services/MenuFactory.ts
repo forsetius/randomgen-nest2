@@ -3,7 +3,6 @@ import { TemplatingService } from '@templating/TemplatingService';
 import { MenuDef, MenuZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
-import { Locale } from '@shared/types/Locale';
 import { Menu } from '../domain/Menu';
 import { fromZodError } from '@shared/util/fromZodError';
 
@@ -23,20 +22,17 @@ export class MenuFactory {
     }
   }
 
-  public createAll(
-    menuDefs: Map<string, unknown>,
-    locale: Locale,
-  ): Map<string, Menu> {
+  public createAll(menuDefs: Map<string, unknown>): Map<string, Menu> {
     return new Map(
       Array.from(menuDefs).map(([source, def]) => {
         const menuDef: MenuDef = this.validate(source, def);
 
-        return [source, this.create(source, menuDef, locale)];
+        return [source, this.create(source, menuDef)];
       }),
     );
   }
 
-  public create(name: string, def: MenuDef, locale: Locale): Menu {
-    return new Menu(this.templatingService, name, def, locale);
+  public create(name: string, def: MenuDef): Menu {
+    return new Menu(this.templatingService, name, def);
   }
 }

@@ -1,107 +1,165 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
-import { Injectable } from '@nestjs/common';
+import fs from 'node:fs';
+import fsAsync from 'node:fs/promises';
+import { join } from 'node:path';
+import { cwd } from 'node:process';
+import { Inject, Injectable } from '@nestjs/common';
 import { Locale } from '@shared/types/Locale';
 import { ParserService } from '../../parser/services/ParserService';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
 import { PageFactory } from './PageFactory';
-import { PageLib } from '../domain/PageLib';
+import { Library } from '../domain/Library';
 import { Page } from '../domain/Page';
-import * as process from 'node:process';
 import stopwatch from '@shared/util/stopwatch';
-import { BlockType, PageDef } from '../types';
 import { getBasename } from '@shared/util/string';
+import { RenderedContent } from '../types/RenderedContent';
+import type { PageDef } from '../types';
+import type {
+  CmsModuleOptions,
+  CmsServiceOptions,
+} from '../types/CmsModuleOptions';
+import { CMS_OPTIONS } from '../CmsConstants';
 
 @Injectable()
 export class CmsService {
   private readonly baseSourcePath: string;
-  private pages!: PageLib;
+  private readonly baseOutputPath: string;
+  private readonly opts: Record<Locale, CmsServiceOptions>;
+  private libraries!: Record<Locale, Library>;
 
   public constructor(
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
     private readonly parserService: ParserService,
-    private readonly locale: Locale,
+    @Inject(CMS_OPTIONS)
+    options: CmsModuleOptions,
   ) {
-    this.baseSourcePath = path.join(process.cwd(), 'content', 'cms', locale);
+    this.baseSourcePath = join(cwd(), 'content', 'cms');
+    this.baseOutputPath = join(this.baseSourcePath, 'static');
+    this.opts = Object.fromEntries(
+      Object.values(Locale).map((lang) => [
+        lang,
+        {
+          ...options,
+          meta: {
+            ...options.meta[lang],
+            lang,
+          },
+        },
+      ]),
+    ) as Record<Locale, CmsServiceOptions>;
   }
 
   async onModuleInit(): Promise<void> {
-    await this.load();
+    stopwatch.record('Loading CMS data...');
+    await this.renderAll();
+    stopwatch.record('HTML files generated');
   }
 
-  public async load(): Promise<void> {
-    stopwatch.record('Loading CMS data...');
-    const lang = this.locale;
-    const [blocks, menus, pages, specialPageDefs] = await Promise.all([
-      this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK), lang),
-      this.menuFactory.createAll(await this.getSources(SourceDir.MENU), lang),
-      this.pageFactory.createAll(await this.getSources(SourceDir.PAGE), lang),
-      this.getSources(SourceDir.SPECIAL_PAGE),
-    ]);
-    const pageLib = new PageLib(Array.from(pages.values()));
-    const tagPageDef = specialPageDefs.get(`tag`)! as Record<string, unknown>;
-    for (const [tag, pages] of pageLib.tags.entries()) {
-      const tagPage = this.pageFactory.create(
-        `tag-${tag}`,
-        {
-          ...tagPageDef,
-          title: `${tagPageDef['title'] as string}: ${tag}`,
-          blocks: {
-            pages: {
-              type: BlockType.PAGE_SET,
-              template: 'block-page-card-list',
-              items: pages.map((page) => page.def.slug),
-            },
-          },
-        } as unknown as PageDef,
-        this.locale,
-      );
+  public async renderAll(): Promise<void> {
+    this.libraries = Object.fromEntries(
+      await Promise.all(
+        Object.values(Locale).map(
+          async (lang): Promise<[Locale, Library]> => [
+            lang,
+            await this.render(lang),
+          ],
+        ),
+      ),
+    ) as Record<Locale, Library>;
+  }
 
-      pageLib.addPage(tagPage);
+  public async render(lang: Locale): Promise<Library> {
+    const [blocks, menus, pages, specialPages] = await Promise.all([
+      this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK, lang)),
+      this.menuFactory.createAll(await this.getSources(SourceDir.MENU, lang)),
+      this.pageFactory.createAll(
+        await this.getSources(SourceDir.PAGE, lang),
+        lang,
+      ),
+      this.getSources(SourceDir.SPECIAL_PAGE, lang),
+    ]);
+    const library = new Library(pages, menus, blocks, lang);
+    for (const [tag, tagPages] of library.tags.entries()) {
+      library.addPage(
+        this.pageFactory.createTagPage(
+          tag,
+          tagPages,
+          specialPages.get('tag') as PageDef,
+          lang,
+        ),
+      );
     }
 
-    menus.forEach((menu) => {
-      menu.preRender();
+    library.menus.forEach((menu) => {
+      menu.render();
     });
-    blocks.forEach((block) => {
-      block.preRender(pageLib);
+    library.blocks.forEach((block) => {
+      block.render(library);
     });
-    pageLib.preRender(menus, blocks);
 
-    this.pages = pageLib;
-    stopwatch.record('CMS data loaded');
+    const renderedContents: RenderedContent[] = [];
+    library.pages.forEach((page) => {
+      console.log(`Rendering ${page.slug}...`);
+      renderedContents.push(...page.render(library, this.opts[lang]));
+    });
+    await this.saveHtml(renderedContents, lang);
+
+    return library;
   }
 
-  private async getSources(dirName: SourceDir): Promise<Map<Name, unknown>> {
-    const sourcePath = path.join(this.baseSourcePath, dirName);
-    const fileNames = await fs.readdir(sourcePath);
-    const map: [Name, unknown][] = await Promise.all(
-      fileNames
+  private async getSources(
+    sourceDir: SourceDir,
+    lang: Locale,
+  ): Promise<Map<string, unknown>> {
+    const sourcePath = join(this.baseSourcePath, lang, sourceDir);
+    const fileNames = await fsAsync.readdir(sourcePath);
+    const map = [
+      ...fileNames
         .filter((filename: string) => this.parserService.isSupported(filename))
-        .map(async (filename: string) => [
-          getBasename(filename),
-          await this.parserService.parseFile(path.join(sourcePath, filename)),
-        ]),
-    );
+        .map(
+          async (filename: string): Promise<[string, unknown]> => [
+            getBasename(filename),
+            await this.parserService.parseFile(join(sourcePath, filename)),
+          ],
+        ),
+    ];
 
-    return new Map<Name, unknown>(map);
+    return new Map<Name, unknown>(await Promise.all(map));
   }
 
-  public async renderPage(slug: string): Promise<string> {
-    const page = this.pages.getPage(slug);
+  private async saveHtml(
+    renderedContents: RenderedContent[],
+    lang: Locale,
+  ): Promise<void> {
+    const pagesDir = join(this.baseOutputPath, 'pages', lang);
+    const pagesTempDir = await fsAsync.mkdtemp(`${pagesDir}-`);
 
-    return page.render();
+    try {
+      await Promise.all(
+        renderedContents.map(({ filepath, content }) =>
+          fsAsync.writeFile(join(pagesTempDir, filepath) + '.html', content),
+        ),
+      );
+    } catch (error) {
+      await fsAsync.rm(pagesTempDir, { recursive: true, force: true });
+      throw error;
+    }
+
+    let oldPagesDir: string | null = null;
+    if (fs.existsSync(pagesDir)) {
+      oldPagesDir = fs.realpathSync(pagesDir);
+      fs.unlinkSync(pagesDir);
+    }
+    fs.symlinkSync(pagesTempDir, pagesDir);
+    if (oldPagesDir) {
+      await fsAsync.rm(oldPagesDir, { recursive: true, force: true });
+    }
   }
 
-  public search(term: string): Page[] {
-    return this.pages.search(term);
-  }
-
-  public getTag(tag: string): Page[] {
-    return this.pages.getPagesByTag(tag);
+  public search(term: string, lang: Locale): Page[] {
+    return this.libraries[lang].search(term);
   }
 }
 

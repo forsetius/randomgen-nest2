@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: page-blog-post
 title: Generator technobełkotu
 headerImage: startrek-engineers-head.png
 thumbnailImage: startrek-engineers-card.png
