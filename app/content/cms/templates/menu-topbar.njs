@@ -24,7 +24,7 @@
                   <div class="d-flex">
                   {% for column in topMenuItem.columns %}
                     <li class="dropdown-item-column">
-                      <h5>{{ column.title }}</h5>
+                      <h5><a href="{{ column.url|default('#') }}">{{ column.title }}</a></h5>
                       <ul class="list-unstyled">
                         {% for subitem in column.items %}
                           <li>

@@ -44,6 +44,7 @@ export class Page {
       throw new Error(`Invalid filename: ${filename}`);
     }
     this.slug = filenameParts.slug;
+    this.series = filenameParts.series;
     this.searchString = this.getSearchString();
 
     if (filenameParts.sort) {
@@ -51,7 +52,6 @@ export class Page {
     }
 
     if (filenameParts.date) {
-      this.series = filenameParts.series;
       const dateString = filenameParts.time
         ? `${filenameParts.date} ${filenameParts.time.replaceAll('-', ':')}`
         : `${filenameParts.date} 00:00:00`;
@@ -84,19 +84,17 @@ export class Page {
     return {
       ...this.def,
       title: this.def.title,
-      subtitle: this.def.subtitle
-        ? this.markdownService.parse(this.def.subtitle)
-        : undefined,
+      subtitle: this.def.subtitle,
       excerpt: this.def.excerpt
         ? this.markdownService.parse(this.def.excerpt)
         : undefined,
       lead: this.def.lead
         ? this.markdownService.parse(this.def.lead)
         : undefined,
-      content: this.markdownService.parse(this.def.content),
+      content: this.def.content,
       slug: this.slug,
       series: this.series,
-      date: this.date?.toLocaleString(DateTime.DATE_MED),
+      date: this.date?.setLocale(this.lang).toLocaleString(DateTime.DATE_FULL),
       sort: this.sort,
       lang: this.lang,
       htmlFilename: `/pages/${this.lang}/${this.slug}.html`,

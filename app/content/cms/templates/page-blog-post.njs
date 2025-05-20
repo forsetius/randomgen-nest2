@@ -1,9 +1,5 @@
 {% extends "_master.njs" %}
 
-{% block subHeader %}
-    <i class="bi-calendar"></i> &nbsp; {{ date }} {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}{% endif %}
-{% endblock %}
-
 {% block article %}
     <article class="col-sm-9">
         {% if lead %}
@@ -12,6 +8,6 @@
         <div class="content">
         {{ content }}
         </div>
-    <block id="blog-pager" type="pageList" template="blog-pager" series="blog" current="{{ slug }}" prev="1" next="1" />
+    <block id="pager" type="pageList" template="pager" series="blog" current="{{ slug }}" prev="1" next="1" />
     </article>
 {% endblock %}

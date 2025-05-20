@@ -32,8 +32,10 @@
   </nav>
   {% block header %} {% include "_header.njs" %} {% endblock %}
   <div id="subHeader">
-    {% block subHeader %} {% endblock %}
-  </div>
+    {% block subHeader %}
+      {% if date %}<i class="bi-calendar"></i> &nbsp; {{ date }}{% endif %}
+      {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}{% endif %}
+    {% endblock %}  </div>
 </header>
 
 <main>

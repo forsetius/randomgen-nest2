@@ -65,10 +65,17 @@ li.label {
 #headerImg h1 {
     display: inline-block;
     align-self: flex-end;
-    font-size: 72pt;
     color: #fff;
-    padding-left: 70px;
     text-shadow: 0 0 5px #000;
+    width: 100%
+}
+#headerImg h1 .main-title {
+    font-size: 72pt;
+    padding-left: 70px;
+}
+#headerImg h1 .subtitle {
+    font-size: 36pt;
+    padding-right: 50px;
 }
 
 #subHeader {

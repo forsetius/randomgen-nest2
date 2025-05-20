@@ -9,8 +9,10 @@
     <div class="content">
         {{ content }}
     </div>
+    
+    <slot id="bottom" />
 
     {% if series %}
-        <block id="blog-pager" type="pageList" template="blog-pager" current="{{ slug }}" prev="1" next="1" />
+        <block id="pager" type="pageList" template="pager" series="{{ series }}" current="{{ slug }}" prev="1" next="1" />
     {% endif %}
 {% endblock %}

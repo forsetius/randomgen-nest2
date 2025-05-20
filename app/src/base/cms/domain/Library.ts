@@ -52,7 +52,7 @@ export class Library {
   ): { prev: Page[]; next: Page[] } {
     const seriesPages = this.series.get(series);
     if (!seriesPages) {
-      console.log(Array.from(this.series.keys()));
+      console.log('Available series:', Array.from(this.series.keys()));
       throw new Error(`Series ${series} not found`);
     }
 

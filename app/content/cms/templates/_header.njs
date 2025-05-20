@@ -8,6 +8,9 @@
      class="bg-custom-primary-light"
      style="background-image: url('/ui/gradient-left.png'), url('/ui/gradient-right.png'), url('/media/{{ picture }}')"
 >
-    <h1>{{ title }}</h1>
+    <h1 class="d-flex justify-content-between align-items-baseline flex-nowrap m-0">
+        <span class="main-title">{{ title }}</span>
+        {% if subtitle %}<span class="subtitle">{{ subtitle }}</span>{% endif %}
+    </h1>
 </div>
  

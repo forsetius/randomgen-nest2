@@ -9,6 +9,6 @@
       {{ content }}
     </div>
     
-    <slot id="gallery" />
+    <slot id="bottom" />
   </article>
 {% endblock %}

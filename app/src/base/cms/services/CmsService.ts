@@ -101,7 +101,6 @@ export class CmsService {
 
     const renderedContents: RenderedContent[] = [];
     library.pages.forEach((page) => {
-      console.log(`Rendering ${page.slug}...`);
       renderedContents.push(...page.render(library, this.opts[lang]));
     });
     await this.saveHtml(renderedContents, lang);

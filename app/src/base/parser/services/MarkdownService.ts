@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { marked, Tokens } from 'marked';
+import { Locale } from '@shared/types/Locale';
 
 @Injectable()
 export class MarkdownService {
@@ -8,7 +9,7 @@ export class MarkdownService {
       async: false,
       breaks: true,
       gfm: true,
-      extensions: [this.getColumnsExtension()],
+      extensions: [this.linkifySlugs(), this.columnizeText()],
     });
   }
 
@@ -19,8 +20,65 @@ export class MarkdownService {
   public stripMarkdown(text: string): string {
     return text.replaceAll('\n', ' ').replaceAll(/[^\p{L}\d ]*/gmu, '');
   }
+  /**
+   * Slug extension for marked.js
+   *
+   * Provides the ability to convert strings like `[Text]<en/slug>`
+   * to `<a href="/pages/en/slug.html">Text</a>`
+   */
+  private linkifySlugs() {
+    return {
+      name: 'slug',
+      level: 'inline',
+      start(src: string) {
+        return /\[.*?]\{/.exec(src)?.index;
+      },
 
-  private getColumnsExtension() {
+      tokenizer(src: string) {
+        const match = /^\[(?<text>.+?)\]\{(?<lang>en|pl)\/(?<slug>.+?)\}/u.exec(
+          src,
+        );
+
+        if (match?.groups) {
+          console.log(src, '\n');
+          return {
+            type: 'slug',
+            raw: match[0],
+            text: match.groups['text'],
+            lang: match.groups['lang'],
+            slug: match.groups['slug'],
+          };
+        }
+
+        return undefined;
+      },
+      renderer(token: Tokens.Generic) {
+        if (token.type !== 'slug') {
+          return '';
+        }
+
+        const slugToken = token as SlugToken;
+
+        return `<a href="/pages/${slugToken.lang}/${slugToken.slug}.html">${slugToken.text}</a>`;
+      },
+    };
+  }
+
+  /**
+   * Column text extension for marked.js
+   *
+   * Provides the ability to convert strings like:
+   * ```
+   * :::columns
+   * :::column
+   * Content
+   * :::column
+   * Content
+   * :::
+   * ```
+   * to text split into columns.
+   */
+  private columnizeText() {
     return {
       name: 'columns',
       level: 'block',
@@ -57,6 +115,12 @@ export class MarkdownService {
       },
     };
   }
+}
+
+interface SlugToken extends Tokens.Generic {
+  text: string;
+  lang: Locale;
+  slug: string;
 }
 
 interface ColumnsToken extends Tokens.Generic {

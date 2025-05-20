@@ -5,13 +5,13 @@ export const PageZodSchema = z
   .object({
     title: z.string(),
     subtitle: z.string().optional(),
-    headerImage: z.string(),
-    thumbnailImage: z.string().optional(),
+    headerImage: z.string().default('index.jpg'),
+    thumbnailImage: z.string().default('index-head.jpg'),
     excerpt: z.string().optional(),
     lead: z.string().optional(),
     content: z.string(),
     tags: z.array(z.string()).optional(),
-    template: z.string(),
+    template: z.string().default('page-default'),
     slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
   })

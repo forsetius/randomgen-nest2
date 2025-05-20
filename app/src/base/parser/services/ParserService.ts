@@ -16,13 +16,13 @@ export class ParserService {
 
   public async parseFile(filename: string): Promise<unknown> {
     const extension = path.extname(filename);
-    const content = await fs.readFile(filename, { encoding: 'utf8' });
+    const fileContent = await fs.readFile(filename, { encoding: 'utf8' });
     switch (extension) {
       case '.json':
-        return JSON.parse(content);
+        return JSON.parse(fileContent);
       case '.md': {
         const data = /^---(?<frontmatter>.*?)---(?<content>.*)$/msu.exec(
-          content,
+          fileContent,
         );
         if (data?.groups) {
           const frontmatter = data.groups['frontmatter']
@@ -43,12 +43,12 @@ export class ParserService {
 
         return {
           frontmatter: {},
-          content: this.markdownService.parse(content),
+          content: this.markdownService.parse(fileContent),
         };
       }
       case '.yaml':
       case '.yml':
-        return YAML.parse(content);
+        return YAML.parse(fileContent);
       default:
         throw new Error('Unsupported extension');
     }

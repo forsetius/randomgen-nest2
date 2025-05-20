@@ -1,5 +1,7 @@
 {% extends "_master.njs" %}
 
+{% block subHeader %}{% endblock %}
+
 {% block article %}
   <article class="col-sm-9">
     {% if lead %}
@@ -9,6 +11,6 @@
       {{ content }}
     </div>
     
-    <block id="pages" />
+    <block id="bottom" />
   </article>
 {% endblock %}
