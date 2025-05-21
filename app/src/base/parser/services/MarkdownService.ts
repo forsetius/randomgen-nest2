@@ -40,7 +40,6 @@ export class MarkdownService {
         );
 
         if (match?.groups) {
-          console.log(src, '\n');
           return {
             type: 'slug',
             raw: match[0],

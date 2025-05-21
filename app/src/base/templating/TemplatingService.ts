@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import * as nunjucks from 'nunjucks';
 import { TEMPLATING_OPTIONS } from './TemplatingConstants';
-import * as TemplatingModuleOptions from './types/TemplatingModuleOptions';
+import type { TemplatingModuleOptions } from './types/TemplatingModuleOptions';
 import { InvalidTemplateException } from './exceptions/InvalidTemplateException';
 
 @Injectable()
@@ -10,7 +10,7 @@ export class TemplatingService {
 
   constructor(
     @Inject(TEMPLATING_OPTIONS)
-    options: TemplatingModuleOptions.TemplatingModuleOptions,
+    options: TemplatingModuleOptions,
   ) {
     this.renderer = nunjucks.configure(options.paths, options.options);
   }
