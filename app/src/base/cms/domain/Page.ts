@@ -1,6 +1,5 @@
 import { DateTime } from 'luxon';
 import { PageProps } from '../types/PageMeta';
-import { Logger } from '@nestjs/common';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { BlockFactory } from '../services/BlockFactory';
@@ -13,12 +12,11 @@ import { CmsServiceOptions } from '../types/CmsModuleOptions';
 import { Locale } from '@shared/types/Locale';
 
 export class Page {
-  public readonly slug: string;
+  public docTitle: string;
   public readonly series: string | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
-  public readonly sort: number | undefined = undefined;
+  public sort: number | undefined = undefined;
   public readonly searchString: string;
-  private readonly logger = new Logger(Page.name);
 
   public constructor(
     private blockFactory: BlockFactory,
@@ -34,16 +32,16 @@ export class Page {
           date?: string;
           time?: string;
           sort?: string;
-          slug?: string;
+          docTitle?: string;
         }
       | undefined = new RegExp(
-      /^(?<slug>(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?)_)?.+)$/m,
+      /^(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?)_)?(?<docTitle>.+)$/m,
     ).exec(filename)?.groups;
 
-    if (!filenameParts?.slug) {
+    if (!filenameParts) {
       throw new Error(`Invalid filename: ${filename}`);
     }
-    this.slug = filenameParts.slug;
+    this.docTitle = filenameParts.docTitle!;
     this.series = filenameParts.series;
     this.searchString = this.getSearchString();
 
@@ -58,9 +56,7 @@ export class Page {
 
       try {
         this.date = DateTime.fromSQL(dateString);
-        if (!this.sort) {
-          this.sort = this.date.toSeconds();
-        }
+        this.sort = this.date.toSeconds();
       } catch (e: unknown) {
         throw new InvalidDateTimeException(
           `Invalid date: ${dateString} in ${filename}`,
@@ -68,16 +64,22 @@ export class Page {
         );
       }
     }
-
-    this.logger.log(`${this.slug} created`);
   }
 
   get template(): string {
     return this.def.template;
   }
 
-  get timestamp(): number | undefined {
-    return this.date?.toSeconds();
+  get slug(): string {
+    return [this.series, this.sort, this.docTitle]
+      .filter((part) => !!part || (typeof part === 'number' && part >= 0))
+      .join('_');
+  }
+
+  get fragmentName(): string {
+    return [this.series, this.sort]
+      .filter((part) => !!part || (typeof part === 'number' && part >= 0))
+      .join('_');
   }
 
   get data(): PageDef & PageProps {
@@ -111,7 +113,7 @@ export class Page {
 
     opts.fragmentTemplates.forEach((template) => {
       renderedContents.push({
-        filepath: `${template}_${this.slug}`,
+        filepath: `${template}_${this.fragmentName}`,
         content: this.templatingService.render(
           template,
           data as unknown as Record<string, unknown>,

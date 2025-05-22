@@ -29,17 +29,12 @@ export class PageFactory {
     }
   }
 
-  public createAll(
-    pageDefs: Map<string, unknown>,
-    lang: Locale,
-  ): Map<string, Page> {
-    return new Map(
-      Array.from(pageDefs).map(([source, def]) => {
-        const pageDef: PageDef = this.validate(source, def);
+  public createAll(pageDefs: Map<string, unknown>, lang: Locale): Page[] {
+    return Array.from(pageDefs).map(([source, def]) => {
+      const pageDef: PageDef = this.validate(source, def);
 
-        return [source, this.create(source, pageDef, lang)];
-      }),
-    );
+      return this.create(source, pageDef, lang);
+    });
   }
 
   public create(filename: string, def: PageDef, lang: Locale): Page {

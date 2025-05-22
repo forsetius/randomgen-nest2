@@ -22,7 +22,7 @@ import { ParserModule } from '../base/parser/ParserModule';
     }),
     CmsModule.forRoot({
       fragmentTemplates: [
-        'fragment-img-overlay-card',
+        'fragment-img-card',
         // 'fragment-lead-card',
         // 'fragment-data-card',
         // 'fragment-list-item',

@@ -11,28 +11,44 @@ export class Library {
   public readonly tags = new ArrayMap<string, Page>();
 
   public constructor(
-    pages: Map<string, Page>,
+    pages: Page[],
     public readonly menus: Map<string, Menu>,
     public readonly blocks: Map<string, Block>,
     public readonly locale: Locale,
   ) {
-    pages.forEach((page) => {
-      this.addPage(page);
-    });
-
-    this.series.forEach((pages) => {
-      pages.sort((a, b) => a.timestamp! - b.timestamp!);
-    });
+    this.addPages(pages);
   }
 
   public addPage(page: Page): void {
-    this.pages.set(page.slug, page);
+    this.addPages([page]);
+  }
 
-    if (page.series) {
-      this.series.add(page.series, page);
-    }
-    page.def.tags?.forEach((tag) => {
-      this.tags.add(tag, page);
+  public addPages(pages: Page[]): void {
+    pages.forEach((page) => {
+      if (page.series) {
+        this.series.add(page.series, page);
+      }
+      if (page.def.tags) {
+        page.def.tags.forEach((tag) => {
+          this.tags.add(tag, page);
+        });
+      }
+    });
+
+    // this.sort can be either a running number or a timestamp.
+    // We need to convert it into running numbers
+    this.series.forEach((pages) => {
+      pages
+        .sort((a, b) => a.sort! - b.sort!)
+        .forEach((page) => {
+          page.sort = pages.indexOf(page) + 1;
+        });
+    });
+
+    // we add the pages to the this.pages collection last because
+    // the part of this.slug is made from this.sort
+    pages.forEach((page) => {
+      this.pages.set(page.slug, page);
     });
   }
 

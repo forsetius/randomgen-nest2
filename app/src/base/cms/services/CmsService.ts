@@ -81,16 +81,18 @@ export class CmsService {
       this.getSources(SourceDir.SPECIAL_PAGE, lang),
     ]);
     const library = new Library(pages, menus, blocks, lang);
-    for (const [tag, tagPages] of library.tags.entries()) {
-      library.addPage(
+
+    // we add all the tag pages at once to avoid multiple re-sorting
+    library.addPages(
+      Array.from(library.tags.entries()).map(([tag, tagPages]) =>
         this.pageFactory.createTagPage(
           tag,
           tagPages,
           specialPages.get('tag') as PageDef,
           lang,
         ),
-      );
-    }
+      ),
+    );
 
     library.menus.forEach((menu) => {
       menu.render();
