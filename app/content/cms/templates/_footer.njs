@@ -1,5 +1,5 @@
 
-<footer class="bd-footer pt-4 bg-body-tertiary" data-bs-theme="dark">
+<footer class="bd-footer pt-4 bg-body-tertiary left-page-space right-page-space" data-bs-theme="dark">
     <div class="container text-body-secondary">
         <div class="row">
             <div class="col-lg-3">

@@ -5,6 +5,13 @@ const CommonBlockZodSchema = z.object({
   title: z.string().optional(),
 });
 
+export const GalleryBlockZodSchema = CommonBlockZodSchema.extend({
+  type: z.literal(BlockType.GALLERY),
+  template: z.string().default('partial-gallery'),
+  cardTemplate: z.string().default('fragment-img-card'),
+  series: z.string(),
+});
+
 export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string(),
   type: z.literal(BlockType.MEDIA),
@@ -33,6 +40,7 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
 });
 
 export const BlockZodSchema = z.discriminatedUnion('type', [
+  GalleryBlockZodSchema,
   MediaBlockZodSchema,
   PageListBlockZodSchema,
   PageSetBlockZodSchema,
@@ -40,6 +48,7 @@ export const BlockZodSchema = z.discriminatedUnion('type', [
 ]);
 
 export type BlockDef = z.infer<typeof BlockZodSchema>;
+export type GalleryBlockDef = z.infer<typeof GalleryBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
 export type PageListBlockDef = z.infer<typeof PageListBlockZodSchema>;
 export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;

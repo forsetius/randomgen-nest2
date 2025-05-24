@@ -3,6 +3,8 @@
 {% block bodyClass %}home-page{% endblock %}
 {% block subHeader %}{% endblock %}
 
-{% block article %} 
+{% block article %}
+<article class="content left-page-space">
     {{ content }}
+</article>
 {% endblock %}

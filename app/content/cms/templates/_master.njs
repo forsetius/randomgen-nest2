@@ -31,7 +31,7 @@
     </div>
   </nav>
   {% block header %} {% include "_header.njs" %} {% endblock %}
-  <div id="subHeader">
+  <div id="subHeader" class="left-page-space right-page-space">
     {% block subHeader %}
       {% if date %}<i class="bi-calendar"></i> &nbsp; {{ date }}{% endif %}
       {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}{% endif %}
@@ -39,16 +39,15 @@
 </header>
 
 <main>
-  {% if slots %}
-  <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
-    {% block aside %}
-        <slot id="aside" />
-    {% endblock %}
-  </aside>
-  {% endif %}
-  <article class="content">
-    {% block article %} {% endblock %}
-  </article>
+  {% block aside %}
+    {% if slots and slots.aside %}
+    <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
+      <slot id="aside" />
+    </aside>
+    {% endif %}
+  {% endblock %}
+  
+  {% block article %} {% endblock %}
 </main>
 
 {% block footer %} {% include "_footer.njs" %} {% endblock %}

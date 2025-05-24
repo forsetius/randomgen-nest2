@@ -1,11 +1,21 @@
-<div class="card bg-body-secondary">
-{#  <div class="card-body text-white">#}
-{#    <img src="/static/media/{{ item.thumbnailImage }}" class="card-img-top" alt="...">#}
-{#    <div class="card-img-overlay">#}
-{#      <div class="position-absolute bottom-0 bg-dark bg-opacity-50">#}
-{#        <h3 class="card-title"><a href="/page/{{ item.slug }}">{{ item.title }}</a></h3>#}
-{#        <p class="card-text">{{ item.excerpt | default(item.lead) | default('') }}</p>#}
-{#      </div>#}
-{#    </div>#}
-{#  </div>#}
+<div class="col">
+  <div class="card bg-body-secondary h-100">
+    <div class="card-body p-0 d-flex flex-column text-white">
+      <div class="card-img-wrapper">
+        <img src="/media/{{ thumbnailImage }}" alt="">
+        <div class="card-img-overlay">
+          <div class="position-absolute bottom-0 bg-dark bg-opacity-50 w-100 p-3">
+            <h3 class="card-title">
+              <a href="/pages/{{ lang }}/{{ slug }}.html">
+                {{ title }}
+              </a>
+            </h3>
+            <div class="card-text">
+              {{ excerpt | default(lead) | default('') }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

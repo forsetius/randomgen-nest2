@@ -5,10 +5,13 @@ import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
-import { MediaBlock } from '../domain/blocks/MediaBlock';
-import { PageListBlock } from '../domain/blocks/PageListBlock';
-import { PageSetBlock } from '../domain/blocks/PageSetBlock';
-import { StaticBlock } from '../domain/blocks/StaticBlock';
+import {
+  GalleryBlock,
+  MediaBlock,
+  PageListBlock,
+  PageSetBlock,
+  StaticBlock,
+} from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
@@ -62,6 +65,8 @@ export class BlockFactory {
 
   public create(name: string, def: BlockDef, parent: string): Block {
     switch (def.type) {
+      case BlockType.GALLERY:
+        return new GalleryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_LIST:

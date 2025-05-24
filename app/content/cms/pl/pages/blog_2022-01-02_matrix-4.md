@@ -3,6 +3,7 @@ template: page-blog-post
 title: "Matrix 4"
 headerImage: matrix-head.jpg
 thumbnailImage: matrix-card.jpg
+excerpt: Na nowego „Matriksa” poszedłem bez większych nadziei na dzieło wybitne jak „jedynka”. A i tak się srodze zawiodłem.
 lead: |-
   Pierwszą część Matriksa widziałem 17 razy, w tym 4 razy w kinie. Przed trzecim razem potrącił mnie samochód ale wstałem, otrzepałem się i poszedłem na seans. Bo to Matrix!
 

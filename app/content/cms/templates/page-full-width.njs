@@ -1,7 +1,7 @@
 {% extends "_master.njs" %}
 
 {% block article %}
-  <article class="col-sm-9">
+  <article class="left-page-space right-page-space">
     {% if lead %}
       <div class="lead">{{ lead }}</div>
     {% endif %}
@@ -12,3 +12,5 @@
     <slot id="bottom" />
   </article>
 {% endblock %}
+
+{% block aside %}{% endblock %}
