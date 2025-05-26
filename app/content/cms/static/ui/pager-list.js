@@ -1,17 +1,16 @@
 (function () {
   let loadedCount = 0;
   let currentPage = 1;
-  const perPage = 3;
+  const perPage = 6;
   const container = document.getElementById('card-container');
+  const series = container.dataset['series'];
+  const cardTemplate = container.dataset['cardTemplate'] ?? 'img-card';
+  const lang = document.getElementsByTagName('html').item(0).lang;
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
 
   function getPageName(idx) {
-    const re = /^\/pages\/(?<lang>en|pl)\/(?<page>[a-zA-Z0-9_-]+)\.html$/.exec(
-      location.pathname,
-    )?.groups;
-
-    return `/pages/${re.lang}/fragment-img-card_${re.page}_${idx}.html`;
+    return `/pages/${lang}/${cardTemplate}_${series}_${idx}.html`;
   }
 
   function loadOneCard(idx) {
@@ -26,7 +25,6 @@
   function updateButtons() {
     prevBtn.classList.toggle('d-none', currentPage <= 1);
 
-    // Next: chowaj na starcie, włączy się jeśli HEAD zwróci OK
     nextBtn.classList.add('d-none');
     const startIdx = currentPage * perPage + 1;
     fetch(getPageName(startIdx), { method: 'HEAD' })

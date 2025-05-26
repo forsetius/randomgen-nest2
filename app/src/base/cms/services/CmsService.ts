@@ -13,7 +13,7 @@ import { Page } from '../domain/Page';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
 import { RenderedContent } from '../types/RenderedContent';
-import type { PageDef } from '../types';
+import { BlockType, PageDef } from '../types';
 import type {
   CmsModuleOptions,
   CmsServiceOptions,
@@ -81,14 +81,27 @@ export class CmsService {
       this.getSources(SourceDir.SPECIAL_PAGE, lang),
     ]);
     const library = new Library(pages, menus, blocks, lang);
+    const tagPageDef = specialPages.get('tag') as PageDef;
 
     // we add all the tag pages at once to avoid multiple re-sorting
     library.addPages(
       Array.from(library.tags.entries()).map(([tag, tagPages]) =>
-        this.pageFactory.createTagPage(
-          tag,
-          tagPages,
-          specialPages.get('tag') as PageDef,
+        this.pageFactory.create(
+          `tag-${tag}`,
+          {
+            ...tagPageDef,
+            title: `${tagPageDef.title}: ${tag}`,
+            slots: {
+              bottom: [
+                {
+                  type: BlockType.PAGE_SET,
+                  template: 'partial-gallery-set',
+                  cardTemplate: 'fragment-img-card',
+                  items: tagPages.map((page) => page.fragmentName),
+                },
+              ],
+            },
+          },
           lang,
         ),
       ),
@@ -105,7 +118,7 @@ export class CmsService {
     library.pages.forEach((page) => {
       renderedContents.push(...page.render(library, this.opts[lang]));
     });
-    await this.saveHtml(renderedContents, lang);
+    await this.saveContent(renderedContents, lang);
 
     return library;
   }
@@ -130,7 +143,7 @@ export class CmsService {
     return new Map<Name, unknown>(await Promise.all(map));
   }
 
-  private async saveHtml(
+  private async saveContent(
     renderedContents: RenderedContent[],
     lang: Locale,
   ): Promise<void> {
@@ -140,7 +153,7 @@ export class CmsService {
     try {
       await Promise.all(
         renderedContents.map(({ filepath, content }) =>
-          fsAsync.writeFile(join(pagesTempDir, filepath) + '.html', content),
+          fsAsync.writeFile(join(pagesTempDir, filepath), content),
         ),
       );
     } catch (error) {

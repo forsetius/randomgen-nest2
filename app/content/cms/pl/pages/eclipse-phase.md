@@ -7,10 +7,8 @@ tags:
   - rpg
 slots:
   bottom:
-    - type: pageList
+    - type: series
       series: eclipse-phase
-      prev: 3
-      next: 3
 #    - type: pageSet
 #      title: Zobacz też
 #      items:

@@ -13,4 +13,3 @@
         {% if subtitle %}<span class="subtitle right-page-space">{{ subtitle }}</span>{% endif %}
     </h1>
 </div>
- 

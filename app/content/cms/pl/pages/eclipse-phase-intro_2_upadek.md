@@ -1,25 +1,15 @@
 ---
 template: page-full-width
-title: Wprowadzenie do świata 
+title: Upadek
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
 #thumbnailImage: eclipse-phase-intro-card.jpg
-excerpt: Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
+excerpt: Upadek cywilizacji na Ziemi
 lead: |
   lead
 tags: 
   - eclipse-phase
-slots:
-  bottom:
-    - type: pageList
-      series: eclipse-phase-intro
-      prev: 3
-      next: 3
-#        - eclipse-phase-intro_1_zdarzylo-sie-za-100-lat
-#        - eclipse-phase-intro_2_upadek
-#        - eclipse-phase-intro_3_diaspora
-#        - eclipse-phase-intro_4_wewnetrze
-#        - eclipse-phase-intro_5_zewnetrze
+
 ---
 Akcja gry **Eclipse Phase** rozgrywa się za jakieś 120 lat, po [wojnie](Upadek.md), która zgładziła ponad 95% ludzkości. [Ziemia](Ziemia.md) leży w ruinie, większość cudów cywilizacji została zniszczona, państwa upadły. Niedobitki ludzi rozproszyły się po całym [Układzie Słonecznym](Atlas.md"), a nawet poza niego.
 

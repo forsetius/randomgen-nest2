@@ -4,7 +4,7 @@
 {% block subHeader %}{% endblock %}
 
 {% block article %}
-<article class="content left-page-space">
+<article class="aside-aware">
     {{ content }}
 </article>
 {% endblock %}

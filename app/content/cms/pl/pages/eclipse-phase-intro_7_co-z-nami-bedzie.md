@@ -1,18 +1,15 @@
 ---
 template: page-full-width
-title: Wprowadzenie do świata 
+title: Co z nami będzie?
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
 #thumbnailImage: eclipse-phase-intro-card.jpg
-excerpt: Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
+excerpt: Choć 10 lat po Upadku transludzkość zaczyna dochodzić do siebie, w cieniu wciąż czyhają na nią zagrożenia egzystencjalne
 lead: |
-  Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
-tags: 
+  lead
+tags:
   - eclipse-phase
-slots:
-  bottom:
-    - type: series
-      series: eclipse-phase-intro
+
 ---
 Akcja gry **Eclipse Phase** rozgrywa się za jakieś 120 lat, po [wojnie]{pl/eclipse-phase-intro_2_upadek}, która zgładziła ponad 95% ludzkości. [Ziemia](Ziemia.md) leży w ruinie, większość cudów cywilizacji została zniszczona, państwa upadły. Niedobitki ludzi rozproszyły się po całym [Układzie Słonecznym](Atlas.md"), a nawet poza niego.
 

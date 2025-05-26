@@ -1,7 +1,7 @@
 {% extends "_master.njs" %}
 
 {% block article %}
-<article class="content left-page-space">
+<article class="aside-aware">
     {% if lead %}
     <div class="lead">
         {{ lead }}

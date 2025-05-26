@@ -6,7 +6,7 @@ import { SourceFileValidationException } from '../exceptions/SourceFileValidatio
 import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
-  GalleryBlock,
+  SeriesBlock,
   MediaBlock,
   PageListBlock,
   PageSetBlock,
@@ -65,14 +65,14 @@ export class BlockFactory {
 
   public create(name: string, def: BlockDef, parent: string): Block {
     switch (def.type) {
-      case BlockType.GALLERY:
-        return new GalleryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_LIST:
         return new PageListBlock(this.templatingService, name, def, parent);
       case BlockType.PAGE_SET:
         return new PageSetBlock(this.templatingService, name, def);
+      case BlockType.SERIES:
+        return new SeriesBlock(this.templatingService, name, def);
       case BlockType.STATIC:
         return new StaticBlock(
           this.markdownService,

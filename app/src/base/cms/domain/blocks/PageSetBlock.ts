@@ -1,8 +1,6 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
-import { PageDef, PageSetBlockDef } from '../../types';
-import { Page } from '../Page';
-import { Library } from '../Library';
+import { PageSetBlockDef } from '../../types';
 
 export class PageSetBlock extends Block {
   public constructor(
@@ -13,12 +11,10 @@ export class PageSetBlock extends Block {
     super(name, def);
   }
 
-  render(pages: Library): void {
-    const targetPages = this.def.items.map((slug) => pages.getPage(slug));
-    const pageDefs: PageDef[] = targetPages.map((page: Page) => page.data);
-
+  render(): void {
     this._content = this.templatingService.render(this.template, {
-      pages: pageDefs,
+      cardTemplate: this.def.cardTemplate,
+      items: this.def.items,
     });
   }
 }

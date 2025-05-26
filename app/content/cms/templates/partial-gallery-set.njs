@@ -1,8 +1,9 @@
-<div id="card-container" class="row row-cols-1 row-cols-md-3 g-5"></div>
+<div id="card-container"
+     data-card-template="{{ cardTemplate }}"
+     data-items="{{ items | string }}"
+     class="row row-cols-1 row-cols-md-3 g-5"
+></div>
 
-<div id="spinner" style="display:none" class="position-absolute top-50 start-50">
-  <div class="spinner-border"></div>
-</div>
 <hr>
 <div class="d-flex justify-content-center gap-5 w-75 mx-auto mt-5">
   <a href="#"
@@ -20,4 +21,4 @@
   </a>
 </div>
 
-<script src="/ui/pager.js"></script>
+<script src="/ui/pager-set.js"></script>

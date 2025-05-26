@@ -1,9 +1,8 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { GalleryBlockDef } from '../../types';
-import { Library } from '../Library';
 
-export class GalleryBlock extends Block {
+export class SeriesBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
     name: string,
@@ -12,9 +11,8 @@ export class GalleryBlock extends Block {
     super(name, def);
   }
 
-  render(library: Library): void {
+  render(): void {
     this._content = this.templatingService.render(this.template, {
-      lang: library.locale,
       cardTemplate: this.def.cardTemplate,
       series: this.def.series,
     });

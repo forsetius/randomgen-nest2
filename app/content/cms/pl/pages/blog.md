@@ -6,7 +6,7 @@ thumbnailImage: index.jpg
   
 slots:
   bottom:
-    - type: gallery
+    - type: series
       series: blog
 ---
 Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!

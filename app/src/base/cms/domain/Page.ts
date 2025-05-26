@@ -113,7 +113,7 @@ export class Page {
 
     opts.fragmentTemplates.forEach((template) => {
       renderedContents.push({
-        filepath: `${template}_${this.fragmentName}`,
+        filepath: `${template}_${this.fragmentName}.html`,
         content: this.templatingService.render(
           template,
           data as unknown as Record<string, unknown>,
@@ -130,7 +130,7 @@ export class Page {
     pageContent = this.fillSlots(pageContent, library);
     pageContent = this.insertBlocks(pageContent, library);
     renderedContents.push({
-      filepath: this.slug,
+      filepath: `${this.slug}.html`,
       content: pageContent,
     });
 
