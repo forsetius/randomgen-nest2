@@ -35,7 +35,7 @@ export class Page {
           docTitle?: string;
         }
       | undefined = new RegExp(
-      /^(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?)_)?(?<docTitle>.+)$/m,
+      /^(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)_|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?_)?)?(?<docTitle>.+)$/m,
     ).exec(filename)?.groups;
 
     if (!filenameParts) {
