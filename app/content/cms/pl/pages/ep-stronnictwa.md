@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 subcategoryName: Stronnictwa
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

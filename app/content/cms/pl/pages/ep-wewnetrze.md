@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Wewnętrze
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
@@ -10,7 +10,7 @@ excerpt: Na planetach skalistych rządzi kapitalizm
 lead: |
   lead
 tags:
-  - eclipse-phase
+  - rpg
 
 ---
 Choć narody już nie istnieją, zostały zastąpione przez nowe byty polityczno-ekonomiczne, które tak czy inaczej były na najlepszej drodze do dominacji, nawet jeśli [Upadek](./Intro/Upadek.md) by nie nastąpił - **[hiperkorporacje](../Encyklopedia/Hiperkorpy.md)**. Podczas gdy jest wiele niezależnych habitatów i osad w Wewnętrznym Układzie Słonecznym, jest on silnie zdominowany przez hiperkorpy. Aby zredukować ilość konfliktów między sobą i wspierać wysiłki mające zapewnić przetrwanie transludzkości, niektóre hiperkorpy założyły sojusz znany jako [Konsorcjum Planetarne](./Encyklopedia/Konsorcjum-Planetarne.md). Sojusz ten rządzi większością [Marsa](Mars.md) i zarządza trwającym projektem [terraformowania Marsa](../Encyklopedia/Terraformowanie-Marsa.md). Konsorcjum kontroluje też wiele innych habitatów, w tym sporo baz [lunarnych](Luna.md) - zwykle tych, które są w jakiś sposób zaangażowane w monumentalne wysiłki na rzecz terraformowania Marsa.

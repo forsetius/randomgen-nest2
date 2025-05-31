@@ -6,7 +6,7 @@ thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 subcategoryName: Ulepszenia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

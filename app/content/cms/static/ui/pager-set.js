@@ -1,12 +1,13 @@
 (function () {
   let loadedCount = 0;
   let currentPage = 1;
-  const perPage = 6;
   let pageLength = 0;
 
   const container = document.getElementById('card-container');
 
   const cardTemplate = container.dataset['cardTemplate'] ?? 'fragment-img-card';
+  const perPage = parseInt(container.dataset['perPage'] ?? '6', 10);
+
   const lang = document.getElementsByTagName('html').item(0).lang;
   const fragments = (container.dataset['items'] ?? '')
     .split(',')
@@ -20,8 +21,10 @@
   loadPage(initialPage, false);
 
   function updateButtons() {
-    prevBtn.classList.toggle('d-none', currentPage <= 1);
-    nextBtn.classList.toggle('d-none', currentPage >= totalPages);
+    if (prevBtn && nextBtn) {
+      prevBtn.classList.toggle('d-none', currentPage <= 1);
+      nextBtn.classList.toggle('d-none', currentPage >= totalPages);
+    }
   }
 
   function loadPage(page, pushHistory = true) {
@@ -63,14 +66,16 @@
     }
   });
 
-  prevBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    loadPage(currentPage - 1);
-  });
-  nextBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    loadPage(currentPage + 1);
-  });
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      loadPage(currentPage - 1);
+    });
+    nextBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      loadPage(currentPage + 1);
+    });
+  }
 
   window.addEventListener('popstate', (e) => {
     loadPage(e.state?.page || 1, false);

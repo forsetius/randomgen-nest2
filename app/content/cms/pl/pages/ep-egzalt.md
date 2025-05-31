@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Ogólnie ulepszone genetycznie biomorfy z wysokiej półki
 category: ep-biomorf
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

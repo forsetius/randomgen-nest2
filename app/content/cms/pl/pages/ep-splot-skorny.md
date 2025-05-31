@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Podskórny lekki pancerz
 category: ep-ulepszenia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

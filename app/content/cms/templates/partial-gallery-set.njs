@@ -1,6 +1,7 @@
 <div id="card-container"
      data-card-template="{{ cardTemplate }}"
      data-items="{{ items | string }}"
+     data-per-page="{{ perPage }}"
      class="row row-cols-1 row-cols-md-3 g-5"
 ></div>
 

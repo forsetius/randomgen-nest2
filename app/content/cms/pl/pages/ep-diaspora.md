@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Diaspora
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
@@ -10,7 +10,7 @@ excerpt: Zagłada cywilizacji na Ziemi nie oznaczała końca człowieka. Translu
 lead: |
   lead
 tags:
-  - eclipse-phase
+  - rpg
 
 ---
 Po Upadku transludzie rozpierzchli się po całym [Układzie Słonecznym](Atlas.md). Znane ze Starego Globu państwa upadły, kiedy rządy pokazały, że nie są w stanie zapobiec katastrofie. Podobnie upadły stare ponadpaństwowe korporacje i organizacje.

@@ -20,10 +20,6 @@ export class Library {
     this.addPages(pages);
   }
 
-  public addPage(page: Page): void {
-    this.addPages([page]);
-  }
-
   public addPages(pages: Page[]): void {
     pages.forEach((page) => {
       this.pages.set(page.slug, page);
@@ -51,7 +47,9 @@ export class Library {
         if (!category) {
           throw new Error(`Category ${page.def.category} not found`);
         }
-        category.addPage(page);
+        if (!category.getPages().includes(page)) {
+          category.addPage(page);
+        }
 
         // if a page is a subcategory homepage and also has a category, it is a parent-child relationship
         if (page.def.subcategoryName) {
@@ -64,10 +62,8 @@ export class Library {
       category.sortPages();
       category.constructFullSlug();
       category.constructBreadcrumbs();
-      console.log(category.getPages().map((page) => page.slug));
-      category.getPages().forEach((page, idx) => {
+      category.getPages().forEach((page) => {
         page.category = category;
-        page.sort = idx + 1;
       });
     });
   }
@@ -78,29 +74,6 @@ export class Library {
     }
 
     return this.pages.get(slug)!;
-  }
-
-  public getPageRangeFromCategory(
-    categorySlug: string,
-    root: string,
-    prev: number,
-    next: number,
-  ): { prev: Page[]; next: Page[] } {
-    const category = this.categories.get(categorySlug);
-    if (!category) {
-      throw new Error(`Category ${categorySlug} not found`);
-    }
-    const pages = category.getPages();
-
-    let startAt = pages.findIndex((el) => el.slug === root);
-    if (startAt === -1) {
-      startAt = pages.length;
-    }
-
-    return {
-      prev: pages.slice(startAt - prev, startAt),
-      next: pages.slice(startAt + 1, startAt + 1 + next),
-    };
   }
 
   public search(term: string): Page[] {

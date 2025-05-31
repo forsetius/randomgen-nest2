@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Standardowy tytański biomorf przyzwyczajony do chłodu
 category: ep-biomorf
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

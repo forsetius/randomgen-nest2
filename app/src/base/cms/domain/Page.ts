@@ -15,7 +15,6 @@ import { Category } from './Category';
 export class Page {
   public category: Category | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
-  public sort = 0;
   public searchString: string;
 
   public constructor(
@@ -98,13 +97,8 @@ export class Page {
 
     if (typeof this.category !== 'undefined') {
       opts.fragmentTemplates.forEach((template) => {
-        console.log({
-          slug: this.slug,
-          cat: this.category?.categoryPage.slug,
-          sort: this.sort,
-        });
         renderedContents.push({
-          filepath: `${template}_${this.category!.categoryPage.slug}_${this.sort.toString()}.html`,
+          filepath: `${template}_${this.slug}.html`,
           content: this.templatingService.render(
             template,
             data as unknown as Record<string, unknown>,
@@ -160,7 +154,7 @@ export class Page {
         const blockDefs = this.def.slots[id]!;
         const slotContent = blockDefs.map((blockDef, i) => {
           const blockId = `slot-${id}_block-${i.toString()}`;
-          const block = this.blockFactory.create(blockId, blockDef, this.slug);
+          const block = this.blockFactory.create(blockId, blockDef);
 
           block.render(library);
 
@@ -203,7 +197,7 @@ export class Page {
         block = library.blocks.get(id)!;
       } else {
         const blockArgs = this.blockFactory.validate(`Block "${id}"`, args);
-        block = this.blockFactory.create(id, blockArgs, this.slug);
+        block = this.blockFactory.create(id, blockArgs);
       }
 
       block.render(library);

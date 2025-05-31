@@ -5,12 +5,12 @@ headerImage: index-head.png
 thumbnailImage: index.jpg
 slots:
   aside:
-    - type: pageList
+    - type: category
       template: aside-cards
       title: Ostatnie wpisy
       category: blog
-      prev: 3
-      next: 0 
+      count: 3
+      sortDir: desc
 ---
 
 **Jestem Marcin i nie lubię się opisywać.**

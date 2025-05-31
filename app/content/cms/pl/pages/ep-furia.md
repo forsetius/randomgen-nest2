@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Żeński biomorf bojowy
 category: ep-biomorf
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

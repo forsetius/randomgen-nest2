@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Motywy przewodnie
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-atlas-head.jpg

@@ -5,7 +5,7 @@ subtitle: Uplift
 headerImage: eclipse-phase-head.jpg
 thumbnailImage: eclipse-phase-head.jpg
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

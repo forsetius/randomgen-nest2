@@ -13,14 +13,19 @@ export class CategoryBlock extends Block {
   }
 
   render(library: Library): void {
-    const items = library.categories.get(this.def.category);
-    if (!items) {
+    const category = library.categories.get(this.def.category);
+    if (!category) {
       throw new Error(`Category ${this.def.category} not found`);
+    }
+    const items = [...category.getPages().map((page) => page.slug)];
+    if (this.def.sortDir === 'desc') {
+      items.reverse();
     }
 
     this._content = this.templatingService.render(this.template, {
       cardTemplate: this.def.cardTemplate,
       items,
+      perPage: this.def.count,
     });
   }
 }

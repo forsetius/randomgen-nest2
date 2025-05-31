@@ -1,5 +1,5 @@
-export { SeriesBlock } from './SeriesBlock';
+export { CategoryBlock } from './CategoryBlock';
 export { MediaBlock } from './MediaBlock';
-export { PageListBlock } from './PageListBlock';
 export { PageSetBlock } from './PageSetBlock';
 export { StaticBlock } from './StaticBlock';
+export { TagBlock } from './TagBlock';

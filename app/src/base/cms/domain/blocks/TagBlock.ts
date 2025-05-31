@@ -13,14 +13,19 @@ export class TagBlock extends Block {
   }
 
   render(library: Library): void {
-    const items = library.tags.get(this.def.tag);
-    if (!items) {
+    const tagPages = library.tags.get(this.def.tag);
+    if (!tagPages) {
       throw new Error(`Tag ${this.def.tag} not found`);
+    }
+    const items = [...tagPages].map((page) => page.slug);
+    if (this.def.sortDir === 'desc') {
+      items.reverse();
     }
 
     this._content = this.templatingService.render(this.template, {
       cardTemplate: this.def.cardTemplate,
       items,
+      perPage: this.def.count,
     });
   }
 }

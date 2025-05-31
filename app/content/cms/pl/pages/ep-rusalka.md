@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Ciała zaprojektowane jako piękne, czyste i powabne
 category: ep-biomorf
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

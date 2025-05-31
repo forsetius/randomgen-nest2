@@ -8,7 +8,7 @@ excerpt: Wirtualny morf pozwalający uruchomić Ego w środowisku Splotu
 category: ep-morf
 subcategoryName: Infomorfy
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   bottom:
     - type: category

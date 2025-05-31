@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Model biomorfa z ograniczonym zapotrzebowaniem na sen oraz zdolnością hibernacji
 category: ep-biomorf
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

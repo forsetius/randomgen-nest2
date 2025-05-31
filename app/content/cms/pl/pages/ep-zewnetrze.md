@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Zewnętrze
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
@@ -10,7 +10,7 @@ excerpt: Za pasem asteroid
 lead: |
   lead
 tags:
-  - eclipse-phase
+  - rpg
 
 ---
 Poza orbitą Marsa wpływ hiperkorporacji i Konsorcjum Planetarnego jest znacznie bardziej ograniczony. Z wyjątkiem ściśle autorytarnej Republiki Jowiszowej, mieszkańcy układu zewnętrznego mają znacznie więcej swobody niż ci żyjący w układzie wewnętrznym. Jednak nawet tutaj walka między pragnieniem wolności a tęsknotą za bezpieczeństwem stanowi ważną część dyskursu politycznego.

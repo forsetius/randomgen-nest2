@@ -8,7 +8,7 @@ excerpt: Ciała biologiczne
 category: ep-encyklopedia
 subcategoryName: Morfy
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

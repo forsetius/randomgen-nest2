@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Sztuczne krwinki gromadzące dodatkową porcję tlenu, wspomagające oddychanie komórkowe
 category: ep-ulepszenia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

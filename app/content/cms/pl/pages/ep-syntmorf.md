@@ -8,7 +8,7 @@ excerpt: W pełni robotyczne powłoki na Ego
 category: ep-morf
 subcategoryName: Syntmorfy
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

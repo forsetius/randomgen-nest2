@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Co z nami będzie?
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
@@ -10,7 +10,7 @@ excerpt: Choć 10 lat po Upadku transludzkość zaczyna dochodzić do siebie, w 
 lead: |
   lead
 tags:
-  - eclipse-phase
+  - rpg
 
 ---
 Akcja gry **Eclipse Phase** rozgrywa się za jakieś 120 lat, po [wojnie]{pl/ep-upadek}, która zgładziła ponad 95% ludzkości. [Ziemia](Ziemia.md) leży w ruinie, większość cudów cywilizacji została zniszczona, państwa upadły. Niedobitki ludzi rozproszyły się po całym [Układzie Słonecznym](Atlas.md"), a nawet poza niego.

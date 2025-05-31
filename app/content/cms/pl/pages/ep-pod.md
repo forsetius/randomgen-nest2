@@ -8,7 +8,7 @@ excerpt: Biologiczno-cybernetyczny erzatz biomorfa
 category: ep-morf
 subcategoryName: Pody
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

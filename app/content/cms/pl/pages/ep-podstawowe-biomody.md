@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Modyfikacje dla biomorfów polepszające odporność, likwidujące defekty i poprawiające zdrowie
 category: ep-ulepszenia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

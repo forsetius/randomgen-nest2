@@ -6,7 +6,7 @@ headerImage: eclipse-phase-head.jpg
 thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

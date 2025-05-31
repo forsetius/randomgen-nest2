@@ -7,7 +7,7 @@ thumbnailImage: eclipse-phase-head.jpg
 excerpt: Podczaszkowy komputer z interfejsem bezprzewodowym i siecią czujników raportujących stan morfa
 category: ep-ulepszenia
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

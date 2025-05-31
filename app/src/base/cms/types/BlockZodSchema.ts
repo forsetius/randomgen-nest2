@@ -5,40 +5,11 @@ const CommonBlockZodSchema = z.object({
   title: z.string().optional(),
 });
 
-export const CategoryBlockZodSchema = CommonBlockZodSchema.extend({
-  type: z.literal(BlockType.CATEGORY),
-  template: z.string().default('partial-gallery-set'),
-  cardTemplate: z.string().default('fragment-img-card'),
-  category: z.string(),
-});
-
 export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string(),
   type: z.literal(BlockType.MEDIA),
   src: z.string(),
   gallery: z.string().optional(),
-});
-
-export const PageListBlockZodSchema = CommonBlockZodSchema.extend({
-  template: z.string().default('block-page-plain-list'),
-  type: z.literal(BlockType.PAGE_LIST),
-  category: z.string(),
-  prev: z.coerce.number().min(0),
-  next: z.coerce.number().min(0),
-});
-
-export const PageSetBlockZodSchema = CommonBlockZodSchema.extend({
-  type: z.literal(BlockType.PAGE_SET),
-  template: z.string().default('partial-gallery-set'),
-  cardTemplate: z.string().default('fragment-img-card'),
-  items: z.array(z.string()),
-});
-
-export const SeriesBlockZodSchema = CommonBlockZodSchema.extend({
-  type: z.literal(BlockType.SERIES),
-  template: z.string().default('partial-gallery-list'),
-  cardTemplate: z.string().default('fragment-img-card'),
-  category: z.string(),
 });
 
 export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
@@ -47,28 +18,39 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
   content: z.string(),
 });
 
-export const TagBlockZodSchema = CommonBlockZodSchema.extend({
-  type: z.literal(BlockType.TAG),
+const SetBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('partial-gallery-set'),
   cardTemplate: z.string().default('fragment-img-card'),
+  count: z.number().default(6),
+  sortDir: z.enum(['asc', 'desc']).default('asc'),
+});
+
+export const CategoryBlockZodSchema = SetBlockZodSchema.extend({
+  type: z.literal(BlockType.CATEGORY),
+  category: z.string(),
+});
+
+export const PageSetBlockZodSchema = SetBlockZodSchema.extend({
+  type: z.literal(BlockType.PAGE_SET),
+  items: z.array(z.string()),
+});
+
+export const TagBlockZodSchema = SetBlockZodSchema.extend({
+  type: z.literal(BlockType.TAG),
   tag: z.string(),
 });
 
 export const BlockZodSchema = z.discriminatedUnion('type', [
   CategoryBlockZodSchema,
   MediaBlockZodSchema,
-  PageListBlockZodSchema,
   PageSetBlockZodSchema,
-  SeriesBlockZodSchema,
   StaticBlockZodSchema,
   TagBlockZodSchema,
 ]);
 
 export type BlockDef = z.infer<typeof BlockZodSchema>;
 export type CategoryBlockDef = z.infer<typeof CategoryBlockZodSchema>;
-export type GalleryBlockDef = z.infer<typeof SeriesBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
-export type PageListBlockDef = z.infer<typeof PageListBlockZodSchema>;
 export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;
 export type StaticBlockDef = z.infer<typeof StaticBlockZodSchema>;
 export type TagBlockDef = z.infer<typeof TagBlockZodSchema>;

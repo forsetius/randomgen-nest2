@@ -8,7 +8,7 @@ excerpt: Ciała biologiczne
 category: ep-morf
 subcategoryName: Biomorfy
 tags:
-  - eclipse-phase
+  - rpg
 slots:
   aside:
     - type: static

@@ -6,15 +6,13 @@ import { SourceFileValidationException } from '../exceptions/SourceFileValidatio
 import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
-  SeriesBlock,
+  CategoryBlock,
   MediaBlock,
-  PageListBlock,
   PageSetBlock,
   StaticBlock,
+  TagBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
-import { CategoryBlock } from '../domain/blocks/CategoryBlock';
-import { TagBlock } from '../domain/blocks/TagBlock';
 
 @Injectable()
 export class BlockFactory {
@@ -35,48 +33,24 @@ export class BlockFactory {
     }
   }
 
-  public createAll(
-    blockDefs: Map<string, unknown>,
-    parent?: string,
-  ): Map<string, Block> {
+  public createAll(blockDefs: Map<string, unknown>): Map<string, Block> {
     return new Map(
       Array.from(blockDefs).map(([source, def]) => {
         const blockDef: BlockDef = this.validate(source, def);
 
-        return parent
-          ? [source, this.create(source, blockDef, parent)]
-          : [source, this.createShared(source, blockDef)];
+        return [source, this.create(source, blockDef)];
       }),
     );
   }
 
-  public createShared(name: string, def: BlockDef): StaticBlock {
-    if (def.type !== BlockType.STATIC) {
-      throw new Error(
-        `Shared blocks can only be static. Attempted to create ${def.type} block`,
-      );
-    }
-
-    return new StaticBlock(
-      this.markdownService,
-      this.templatingService,
-      name,
-      def,
-    );
-  }
-
-  public create(name: string, def: BlockDef, parent: string): Block {
+  public create(name: string, def: BlockDef): Block {
     switch (def.type) {
       case BlockType.CATEGORY:
         return new CategoryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
-      case BlockType.PAGE_LIST:
-        return new PageListBlock(this.templatingService, name, def, parent);
       case BlockType.PAGE_SET:
         return new PageSetBlock(this.templatingService, name, def);
-      case BlockType.SERIES:
-        return new SeriesBlock(this.templatingService, name, def);
       case BlockType.STATIC:
         return new StaticBlock(
           this.markdownService,

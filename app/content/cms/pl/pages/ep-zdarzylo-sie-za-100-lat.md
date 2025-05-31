@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Zdarzyło się za 100 lat...
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
