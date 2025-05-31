@@ -12,4 +12,8 @@ lead: |
   Transludzkość zaludniła cały Układ Słoneczny oraz te miejsca poza nim, które są dostępne przez Bramy Pandoriańskie
 tags: 
   - eclipse-phase
+slots:
+  bottom:
+    - type: category
+      category: ep-atlas
 ---

@@ -13,6 +13,8 @@ import {
   StaticBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
+import { CategoryBlock } from '../domain/blocks/CategoryBlock';
+import { TagBlock } from '../domain/blocks/TagBlock';
 
 @Injectable()
 export class BlockFactory {
@@ -65,6 +67,8 @@ export class BlockFactory {
 
   public create(name: string, def: BlockDef, parent: string): Block {
     switch (def.type) {
+      case BlockType.CATEGORY:
+        return new CategoryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_LIST:
@@ -80,6 +84,8 @@ export class BlockFactory {
           name,
           def,
         );
+      case BlockType.TAG:
+        return new TagBlock(this.templatingService, name, def);
     }
   }
 }

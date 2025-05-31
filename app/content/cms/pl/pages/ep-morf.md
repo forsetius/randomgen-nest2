@@ -18,8 +18,8 @@ slots:
         ## Główne habitaty
         [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
   below:
-    - type: series
-      category: eclipse-phase-encyklopedia-biomorfy
+    - type: category
+      category: ep-morf
 ---
 **Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
 

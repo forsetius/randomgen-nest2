@@ -4,7 +4,7 @@ On the application startup, the process of generating pages is started. Its poin
 
 The process takes place in the `CmsService`'s `load()` method. Following steps are performed in order:
 
-1. **Reading definitions ("defs") from the subdirectories** of `/content/cms/${locale}` directory. There are 3 of them:
+1. **Reading definitions ("defs") from the subdirectories** of `/content/cms/${lang}` directory. There are 3 of them:
     - `blocks`: contains **static** block definitions
     - `menus`: contains menu definitions
     - `pages`: contains page definitions

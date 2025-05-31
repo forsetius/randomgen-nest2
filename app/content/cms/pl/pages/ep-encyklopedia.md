@@ -12,4 +12,8 @@ lead: |
   Transhumanistyczna przyszłość to nie tylko nowe technologie ale i nowe społeczeństwa, nowe podmioty polityczne, korporacje i organizacje przestępcze
 tags: 
   - eclipse-phase
+slots:
+  bottom:
+    - type: category
+      category: ep-encyklopedia
 ---

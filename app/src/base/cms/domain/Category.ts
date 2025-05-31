@@ -65,7 +65,10 @@ export class Category {
 
   public sortPages(): void {
     this.pages.sort((a, b) => {
-      const numSort = (a.sort ?? 0) - (b.sort ?? 0);
+      const aNumSort = a.def.sort ?? a.date?.toSeconds() ?? 0;
+      const bNumSort = b.def.sort ?? b.date?.toSeconds() ?? 0;
+
+      const numSort = aNumSort - bNumSort;
 
       return numSort === 0 ? a.def.title.localeCompare(b.def.title) : numSort;
     });

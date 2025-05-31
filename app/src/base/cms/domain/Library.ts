@@ -15,7 +15,7 @@ export class Library {
     pages: Page[],
     public readonly menus: Map<string, Menu>,
     public readonly blocks: Map<string, Block>,
-    public readonly locale: Locale,
+    public readonly lang: Locale,
   ) {
     this.addPages(pages);
   }
@@ -64,8 +64,10 @@ export class Library {
       category.sortPages();
       category.constructFullSlug();
       category.constructBreadcrumbs();
-      category.getPages().forEach((page) => {
+      console.log(category.getPages().map((page) => page.slug));
+      category.getPages().forEach((page, idx) => {
         page.category = category;
+        page.sort = idx + 1;
       });
     });
   }

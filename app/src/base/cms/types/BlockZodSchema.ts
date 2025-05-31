@@ -5,6 +5,13 @@ const CommonBlockZodSchema = z.object({
   title: z.string().optional(),
 });
 
+export const CategoryBlockZodSchema = CommonBlockZodSchema.extend({
+  type: z.literal(BlockType.CATEGORY),
+  template: z.string().default('partial-gallery-set'),
+  cardTemplate: z.string().default('fragment-img-card'),
+  category: z.string(),
+});
+
 export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string(),
   type: z.literal(BlockType.MEDIA),
@@ -40,17 +47,28 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
   content: z.string(),
 });
 
+export const TagBlockZodSchema = CommonBlockZodSchema.extend({
+  type: z.literal(BlockType.TAG),
+  template: z.string().default('partial-gallery-set'),
+  cardTemplate: z.string().default('fragment-img-card'),
+  tag: z.string(),
+});
+
 export const BlockZodSchema = z.discriminatedUnion('type', [
+  CategoryBlockZodSchema,
   MediaBlockZodSchema,
   PageListBlockZodSchema,
   PageSetBlockZodSchema,
   SeriesBlockZodSchema,
   StaticBlockZodSchema,
+  TagBlockZodSchema,
 ]);
 
 export type BlockDef = z.infer<typeof BlockZodSchema>;
+export type CategoryBlockDef = z.infer<typeof CategoryBlockZodSchema>;
 export type GalleryBlockDef = z.infer<typeof SeriesBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
 export type PageListBlockDef = z.infer<typeof PageListBlockZodSchema>;
 export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;
 export type StaticBlockDef = z.infer<typeof StaticBlockZodSchema>;
+export type TagBlockDef = z.infer<typeof TagBlockZodSchema>;

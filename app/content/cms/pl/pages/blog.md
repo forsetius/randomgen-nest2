@@ -7,7 +7,7 @@ subcategoryName: Blog
   
 slots:
   bottom:
-    - type: series
+    - type: category
       category: blog
 ---
 Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!

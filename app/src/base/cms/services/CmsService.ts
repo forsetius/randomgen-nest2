@@ -80,32 +80,9 @@ export class CmsService {
       ),
       this.getSources(SourceDir.SPECIAL_PAGE, lang),
     ]);
-    const library = new Library(pages, menus, blocks, lang);
     const tagPageDef = specialPages.get('tag') as PageDef;
-
-    // we add all the tag pages at once to avoid multiple re-sorting
-    library.addPages(
-      Array.from(library.tags.entries()).map(([tag, tagPages]) =>
-        this.pageFactory.create(
-          `tag-${tag}`,
-          {
-            ...tagPageDef,
-            title: `${tagPageDef.title}: ${tag}`,
-            slots: {
-              bottom: [
-                {
-                  type: BlockType.PAGE_SET,
-                  template: 'partial-gallery-set',
-                  cardTemplate: 'fragment-img-card',
-                  items: tagPages.map((page) => page.slug),
-                },
-              ],
-            },
-          },
-          lang,
-        ),
-      ),
-    );
+    const library = new Library(pages, menus, blocks, lang);
+    this.addTagPages(library, tagPageDef);
 
     library.menus.forEach((menu) => {
       menu.render();
@@ -141,6 +118,24 @@ export class CmsService {
     ];
 
     return new Map<Name, unknown>(await Promise.all(map));
+  }
+
+  private addTagPages(library: Library, tagPageDef: PageDef): void {
+    library.addPages(
+      Array.from(library.tags.keys()).map((tag) =>
+        this.pageFactory.create(
+          `tag-${tag}`,
+          {
+            ...tagPageDef,
+            title: `${tagPageDef.title}: ${tag}`,
+            slots: {
+              bottom: [{ type: BlockType.TAG, tag }],
+            },
+          },
+          library.lang,
+        ),
+      ),
+    );
   }
 
   private async saveContent(

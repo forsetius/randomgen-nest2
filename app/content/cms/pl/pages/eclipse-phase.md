@@ -8,7 +8,7 @@ tags:
   - rpg
 slots:
   bottom:
-    - type: series
+    - type: category
       category: eclipse-phase
 
   aside:

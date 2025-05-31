@@ -15,6 +15,7 @@ import { Category } from './Category';
 export class Page {
   public category: Category | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
+  public sort = 0;
   public searchString: string;
 
   public constructor(
@@ -45,10 +46,6 @@ export class Page {
 
   get filename(): string {
     return `${[this.category?.fullSlug, this.slug].filter(Boolean).join('_')}.html`;
-  }
-
-  get sort(): number | undefined {
-    return this.def.sort ?? this.date?.toSeconds();
   }
 
   get data(): PageDef & PageProps {
@@ -99,15 +96,22 @@ export class Page {
       brand: opts.brand,
     };
 
-    opts.fragmentTemplates.forEach((template) => {
-      renderedContents.push({
-        filepath: `${template}_${this.filename}`,
-        content: this.templatingService.render(
-          template,
-          data as unknown as Record<string, unknown>,
-        ),
+    if (typeof this.category !== 'undefined') {
+      opts.fragmentTemplates.forEach((template) => {
+        console.log({
+          slug: this.slug,
+          cat: this.category?.categoryPage.slug,
+          sort: this.sort,
+        });
+        renderedContents.push({
+          filepath: `${template}_${this.category!.categoryPage.slug}_${this.sort.toString()}.html`,
+          content: this.templatingService.render(
+            template,
+            data as unknown as Record<string, unknown>,
+          ),
+        });
       });
-    });
+    }
 
     let pageContent = this.templatingService.render(
       this.template,
@@ -210,16 +214,10 @@ export class Page {
   }
 
   private resolveSlugs(content: string, library: Library): string {
-    const slugRegex = /@slug=\{(?<slug>.+?)}/g;
-    for (const [slugTag, slug] of content.matchAll(slugRegex)) {
-      if (typeof slug === 'undefined') {
-        continue;
-      }
-      const page = library.getPage(slug);
-      content = content.replace(slugTag, page.filename);
-    }
-
-    return content;
+    return content.replace(
+      /@slug=\{(?<slug>.+?)}/g,
+      (_match, slug: string) => library.getPage(slug).filename,
+    );
   }
 
   private getSearchString(includeContent = false): string {

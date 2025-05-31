@@ -10,6 +10,9 @@ subcategoryName: Infomorfy
 tags:
   - eclipse-phase
 slots:
+  bottom:
+    - type: category
+      category: ep-infomorf
   aside:
     - type: static
       content: |

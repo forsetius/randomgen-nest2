@@ -14,7 +14,7 @@ tags:
   - eclipse-phase
 slots:
   bottom:
-    - type: series
+    - type: category
       category: ep-intro
 ---
 Akcja gry **Eclipse Phase** rozgrywa się za jakieś 120 lat, po [wojnie]{pl/ep-upadek}, która zgładziła ponad 95% ludzkości. [Ziemia](#) leży w ruinie, większość cudów cywilizacji została zniszczona, państwa upadły. Niedobitki ludzi rozproszyły się po całym [Układzie Słonecznym]{pl/ep-diaspora}, a nawet poza niego.
