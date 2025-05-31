@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+import { minify } from 'html-minifier';
 import { PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
@@ -116,6 +117,7 @@ export class Page {
     pageContent = this.fillSlots(pageContent, library);
     pageContent = this.insertBlocks(pageContent, library);
     pageContent = this.resolveSlugs(pageContent, library);
+    pageContent = this.minifyHTML(pageContent);
     renderedContents.push({
       filepath: this.filename,
       content: pageContent,
@@ -212,6 +214,22 @@ export class Page {
       /@slug=\{(?<slug>.+?)}/g,
       (_match, slug: string) => library.getPage(slug).filename,
     );
+  }
+
+  private minifyHTML(content: string): string {
+    try {
+      return minify(content, {
+        caseSensitive: true,
+        collapseWhitespace: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeScriptTypeAttributes: true,
+      });
+    } catch (err) {
+      console.error('❌ Error while minifying the HTML:', err);
+
+      return content;
+    }
   }
 
   private getSearchString(includeContent = false): string {

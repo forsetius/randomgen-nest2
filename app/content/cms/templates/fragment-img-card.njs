@@ -1,5 +1,5 @@
 <div class="col">
-  <a href="/pages/{{ lang }}/{{ filename }}.html">
+  <a href="/pages/{{ lang }}/{{ filename }}">
     <div class="card bg-body-secondary h-100">
       <div class="card-body p-0 d-flex flex-column text-white">
         <div class="card-img-wrapper">

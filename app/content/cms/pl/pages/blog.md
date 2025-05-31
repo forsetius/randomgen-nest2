@@ -9,5 +9,6 @@ slots:
   bottom:
     - type: category
       category: blog
+      sortDir: desc
 ---
 Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!

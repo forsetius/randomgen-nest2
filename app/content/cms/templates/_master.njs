@@ -33,9 +33,9 @@
   {% block header %} {% include "partial_header.njs" %} {% endblock %}
   <div id="subHeader" class="left-page-space right-page-space">
     {% block subHeader %}
-      {% if categoryData %}<i class="bi-folder2-open"></i> &nbsp; {{ categoryData.current.breadcrumbs }}{% endif %}
-      {% if date %}<i class="bi-calendar"></i> &nbsp; {{ date }}{% endif %}
-      {% if tags %} &nbsp;&nbsp;&nbsp; {% for tag in tags %} &nbsp; <i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}{% endif %}
+      {% if date %}<span class="info"><i class="bi-calendar3"></i> {{ date }}</span>{% endif %}
+      {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i> {{ categoryData.current.breadcrumbs }}</span>{% endif %}
+      {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}</span>{% endif %}
     {% endblock %}
   </div>
 </header>

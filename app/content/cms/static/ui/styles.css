@@ -75,6 +75,7 @@ li.label {
     font-weight: 400;
     font-size: 1.25rem;
 }
+#subHeader span.info { padding-inline: 20px;}
 
 footer { clear: both; }
 #footBar {padding: 5px; margin: 0;}
