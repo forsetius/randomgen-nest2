@@ -11,6 +11,13 @@ export const PageZodSchema = z
     lead: z.string().optional(),
     content: z.string(),
     tags: z.array(z.string()).optional(),
+    category: z.string().optional(),
+    subcategoryName: z.string().optional(),
+    sort: z.number().optional(),
+    date: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2}(?::\d{2})?)?$/)
+      .optional(),
     template: z.string().default('page-default'),
     slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),

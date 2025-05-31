@@ -12,9 +12,10 @@ export class SeriesBlock extends Block {
   }
 
   render(): void {
+    console.log(this.template);
     this._content = this.templatingService.render(this.template, {
       cardTemplate: this.def.cardTemplate,
-      series: this.def.series,
+      category: this.def.category,
     });
   }
 }

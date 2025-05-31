@@ -45,7 +45,6 @@
         history.pushState({ page: currentPage }, '', `?page=${currentPage}`);
       }
       for (const url of pageFragments) {
-        console.log(url);
         await htmx.ajax('GET', url, {
           target: '#card-container',
           swap: 'beforeend',

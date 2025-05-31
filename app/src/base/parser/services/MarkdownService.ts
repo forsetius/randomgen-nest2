@@ -20,6 +20,7 @@ export class MarkdownService {
   public stripMarkdown(text: string): string {
     return text.replaceAll('\n', ' ').replaceAll(/[^\p{L}\d ]*/gmu, '');
   }
+
   /**
    * Slug extension for marked.js
    *
@@ -55,10 +56,9 @@ export class MarkdownService {
         if (token.type !== 'slug') {
           return '';
         }
-
         const slugToken = token as SlugToken;
 
-        return `<a href="/pages/${slugToken.lang}/${slugToken.slug}.html">${slugToken.text}</a>`;
+        return `<a href="/pages/${slugToken.lang}/@slug={${slugToken.slug}}">${slugToken.text}</a>`;
       },
     };
   }

@@ -9,6 +9,6 @@
         {{ content }}
         </div>
         
-        <block id="pager" type="pageList" template="pager" series="blog" current="{{ slug }}" prev="1" next="1" />
+        {% include "partial-pager.njs" %}
     </article>
 {% endblock %}

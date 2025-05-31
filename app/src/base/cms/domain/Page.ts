@@ -10,56 +10,29 @@ import { PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
 import { CmsServiceOptions } from '../types/CmsModuleOptions';
 import { Locale } from '@shared/types/Locale';
+import { Category } from './Category';
 
 export class Page {
-  public docTitle: string;
-  public readonly series: string | undefined = undefined;
+  public category: Category | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
-  public sort: number | undefined = undefined;
-  public readonly searchString: string;
+  public searchString: string;
 
   public constructor(
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
-    filename: string,
+    public readonly slug: string,
     public readonly def: PageDef,
     private readonly lang: Locale,
   ) {
-    const filenameParts:
-      | {
-          series?: string;
-          date?: string;
-          time?: string;
-          sort?: string;
-          docTitle?: string;
-        }
-      | undefined = new RegExp(
-      /^(?:(?<series>[a-z][a-z0-9-]*)_(?:(?<sort>[1-9]\d*)_|(?<date>\d{4}-\d{2}-\d{2})(?:_(?<time>\d{2}-\d{2}-\d{2})?)?_)?)?(?<docTitle>.+)$/m,
-    ).exec(filename)?.groups;
-
-    if (!filenameParts) {
-      throw new Error(`Invalid filename: ${filename}`);
-    }
-    this.docTitle = filenameParts.docTitle!;
-    this.series = filenameParts.series;
     this.searchString = this.getSearchString();
 
-    if (filenameParts.sort) {
-      this.sort = parseInt(filenameParts.sort, 10);
-    }
-
-    if (filenameParts.date) {
-      const dateString = filenameParts.time
-        ? `${filenameParts.date} ${filenameParts.time.replaceAll('-', ':')}`
-        : `${filenameParts.date} 00:00:00`;
-
+    if (def.date) {
       try {
-        this.date = DateTime.fromSQL(dateString);
-        this.sort = this.date.toSeconds();
+        this.date = DateTime.fromSQL(def.date);
       } catch (e: unknown) {
         throw new InvalidDateTimeException(
-          `Invalid date: ${dateString} in ${filename}`,
+          `Invalid date: ${def.date} in ${this.slug}`,
           e,
         );
       }
@@ -70,19 +43,23 @@ export class Page {
     return this.def.template;
   }
 
-  get slug(): string {
-    return [this.series, this.sort, this.docTitle]
-      .filter((part) => !!part || (typeof part === 'number' && part >= 0))
-      .join('_');
+  get filename(): string {
+    return `${[this.category?.fullSlug, this.slug].filter(Boolean).join('_')}.html`;
   }
 
-  get fragmentName(): string {
-    return [this.series, this.sort]
-      .filter((part) => !!part || (typeof part === 'number' && part >= 0))
-      .join('_');
+  get sort(): number | undefined {
+    return this.def.sort ?? this.date?.toSeconds();
   }
 
   get data(): PageDef & PageProps {
+    const categoryPages = this.category?.getPages();
+    let currentPageIndex = categoryPages?.findIndex(
+      (page) => page.slug === this.slug,
+    );
+    if (currentPageIndex === -1) {
+      currentPageIndex = undefined;
+    }
+
     return {
       ...this.def,
       title: this.def.title,
@@ -94,12 +71,23 @@ export class Page {
         ? this.markdownService.parse(this.def.lead)
         : undefined,
       content: this.def.content,
-      slug: this.slug,
-      series: this.series,
+      categoryData: this.category
+        ? {
+            current: this.category,
+            prev:
+              currentPageIndex && currentPageIndex > 0
+                ? categoryPages![currentPageIndex - 1]!
+                : undefined,
+            next:
+              currentPageIndex && categoryPages!.length > currentPageIndex + 2
+                ? categoryPages![currentPageIndex + 2]!
+                : undefined,
+          }
+        : undefined,
       date: this.date?.setLocale(this.lang).toLocaleString(DateTime.DATE_FULL),
-      sort: this.sort,
       lang: this.lang,
-      htmlFilename: `/pages/${this.lang}/${this.slug}.html`,
+      slug: this.slug,
+      filename: this.filename,
     };
   }
 
@@ -113,7 +101,7 @@ export class Page {
 
     opts.fragmentTemplates.forEach((template) => {
       renderedContents.push({
-        filepath: `${template}_${this.fragmentName}.html`,
+        filepath: `${template}_${this.filename}`,
         content: this.templatingService.render(
           template,
           data as unknown as Record<string, unknown>,
@@ -129,8 +117,9 @@ export class Page {
     pageContent = this.insertMenus(pageContent, library);
     pageContent = this.fillSlots(pageContent, library);
     pageContent = this.insertBlocks(pageContent, library);
+    pageContent = this.resolveSlugs(pageContent, library);
     renderedContents.push({
-      filepath: `${this.slug}.html`,
+      filepath: this.filename,
       content: pageContent,
     });
 
@@ -215,6 +204,19 @@ export class Page {
 
       block.render(library);
       content = content.replace(blockTag, block.content);
+    }
+
+    return content;
+  }
+
+  private resolveSlugs(content: string, library: Library): string {
+    const slugRegex = /@slug=\{(?<slug>.+?)}/g;
+    for (const [slugTag, slug] of content.matchAll(slugRegex)) {
+      if (typeof slug === 'undefined') {
+        continue;
+      }
+      const page = library.getPage(slug);
+      content = content.replace(slugTag, page.filename);
     }
 
     return content;

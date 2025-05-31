@@ -15,8 +15,8 @@ export class PageListBlock extends Block {
   }
 
   render(pages: Library): void {
-    const targetPages = pages.getPagesFromSeries(
-      this.def.series,
+    const targetPages = pages.getPageRangeFromCategory(
+      this.def.category,
       this.parentSlug,
       this.def.prev,
       this.def.next,

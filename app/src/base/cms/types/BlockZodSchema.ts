@@ -15,7 +15,7 @@ export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
 export const PageListBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('block-page-plain-list'),
   type: z.literal(BlockType.PAGE_LIST),
-  series: z.string(),
+  category: z.string(),
   prev: z.coerce.number().min(0),
   next: z.coerce.number().min(0),
 });
@@ -31,7 +31,7 @@ export const SeriesBlockZodSchema = CommonBlockZodSchema.extend({
   type: z.literal(BlockType.SERIES),
   template: z.string().default('partial-gallery-list'),
   cardTemplate: z.string().default('fragment-img-card'),
-  series: z.string(),
+  category: z.string(),
 });
 
 export const StaticBlockZodSchema = CommonBlockZodSchema.extend({

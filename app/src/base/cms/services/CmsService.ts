@@ -28,10 +28,10 @@ export class CmsService {
   private libraries!: Record<Locale, Library>;
 
   public constructor(
+    private readonly parserService: ParserService,
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
-    private readonly parserService: ParserService,
     @Inject(CMS_OPTIONS)
     options: CmsModuleOptions,
   ) {
@@ -97,7 +97,7 @@ export class CmsService {
                   type: BlockType.PAGE_SET,
                   template: 'partial-gallery-set',
                   cardTemplate: 'fragment-img-card',
-                  items: tagPages.map((page) => page.fragmentName),
+                  items: tagPages.map((page) => page.slug),
                 },
               ],
             },

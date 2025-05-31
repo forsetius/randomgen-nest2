@@ -1,4 +1,4 @@
-<div id="card-container" data-series="{{ series }}" data-card-template="{{ cardTemplate }}" class="row row-cols-1 row-cols-md-3 g-5"></div>
+<div id="card-container" data-category="{{ category }}" data-card-template="{{ cardTemplate }}" class="row row-cols-1 row-cols-md-3 g-5"></div>
 
 <div id="spinner" style="display:none" class="position-absolute top-50 start-50">
   <div class="spinner-border"></div>

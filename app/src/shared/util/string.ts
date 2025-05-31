@@ -8,5 +8,13 @@ export function removeWhitespace(value: string) {
   return value.replace(/\s/g, '');
 }
 
+export function slugify(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[\s-]+/g, '-')
+    .replace(/[\u0300-\u036f]|[^a-zA-Z0-9-_]/g, '')
+    .toLowerCase();
+}
+
 export const uuidRegexp =
   /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$/;

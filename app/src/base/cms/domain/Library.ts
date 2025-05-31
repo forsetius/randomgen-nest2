@@ -4,10 +4,11 @@ import { NotFoundException } from '@nestjs/common';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 import { Locale } from '@shared/types/Locale';
+import { Category } from './Category';
 
 export class Library {
   public readonly pages = new Map<string, Page>();
-  public readonly series = new ArrayMap<string, Page>();
+  public readonly categories = new Map<string, Category>();
   public readonly tags = new ArrayMap<string, Page>();
 
   public constructor(
@@ -25,9 +26,17 @@ export class Library {
 
   public addPages(pages: Page[]): void {
     pages.forEach((page) => {
-      if (page.series) {
-        this.series.add(page.series, page);
+      this.pages.set(page.slug, page);
+
+      // we search for the category homepages to create all the categories
+      if (page.def.subcategoryName) {
+        this.categories.set(
+          page.slug,
+          new Category(page.def.subcategoryName, page),
+        );
       }
+
+      // we can sweep for tags while doing this
       if (page.def.tags) {
         page.def.tags.forEach((tag) => {
           this.tags.add(tag, page);
@@ -35,20 +44,29 @@ export class Library {
       }
     });
 
-    // this.sort can be either a running number or a timestamp.
-    // We need to convert it into running numbers
-    this.series.forEach((pages) => {
-      pages
-        .sort((a, b) => a.sort! - b.sort!)
-        .forEach((page) => {
-          page.sort = pages.indexOf(page) + 1;
-        });
-    });
+    // once we have all the categories, we can add the pages to them
+    this.pages.forEach((page) => {
+      if (page.def.category) {
+        const category = this.categories.get(page.def.category);
+        if (!category) {
+          throw new Error(`Category ${page.def.category} not found`);
+        }
+        category.addPage(page);
 
-    // we add the pages to the this.pages collection last because
-    // the part of this.slug is made from this.sort
-    pages.forEach((page) => {
-      this.pages.set(page.slug, page);
+        // if a page is a subcategory homepage and also has a category, it is a parent-child relationship
+        if (page.def.subcategoryName) {
+          const subcategory = this.categories.get(page.slug)!;
+          subcategory.parent = category;
+        }
+      }
+    });
+    this.categories.forEach((category) => {
+      category.sortPages();
+      category.constructFullSlug();
+      category.constructBreadcrumbs();
+      category.getPages().forEach((page) => {
+        page.category = category;
+      });
     });
   }
 
@@ -60,26 +78,26 @@ export class Library {
     return this.pages.get(slug)!;
   }
 
-  public getPagesFromSeries(
-    series: string,
+  public getPageRangeFromCategory(
+    categorySlug: string,
     root: string,
     prev: number,
     next: number,
   ): { prev: Page[]; next: Page[] } {
-    const seriesPages = this.series.get(series);
-    if (!seriesPages) {
-      console.log('Available series:', Array.from(this.series.keys()));
-      throw new Error(`Series ${series} not found`);
+    const category = this.categories.get(categorySlug);
+    if (!category) {
+      throw new Error(`Category ${categorySlug} not found`);
     }
+    const pages = category.getPages();
 
-    let startAt = seriesPages.findIndex((el) => el.slug === root);
+    let startAt = pages.findIndex((el) => el.slug === root);
     if (startAt === -1) {
-      startAt = seriesPages.length;
+      startAt = pages.length;
     }
 
     return {
-      prev: seriesPages.slice(startAt - prev, startAt),
-      next: seriesPages.slice(startAt + 1, startAt + 1 + next),
+      prev: pages.slice(startAt - prev, startAt),
+      next: pages.slice(startAt + 1, startAt + 1 + next),
     };
   }
 

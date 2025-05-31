@@ -11,8 +11,8 @@
     
     <slot id="bottom" />
     
-    {% if series %}
-      <block id="pager" type="pageList" template="pager" series="{{ series }}" current="{{ slug }}" prev="1" next="1" />
+    {% if category %}
+      {% include "partial-pager.njs" %}
     {% endif %}
   </article>
 {% endblock %}

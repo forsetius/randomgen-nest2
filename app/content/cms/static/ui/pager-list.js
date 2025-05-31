@@ -3,14 +3,14 @@
   let currentPage = 1;
   const perPage = 6;
   const container = document.getElementById('card-container');
-  const series = container.dataset['series'];
+  const category = container.dataset['category'];
   const cardTemplate = container.dataset['cardTemplate'] ?? 'img-card';
   const lang = document.getElementsByTagName('html').item(0).lang;
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
 
   function getPageName(idx) {
-    return `/pages/${lang}/${cardTemplate}_${series}_${idx}.html`;
+    return `/pages/${lang}/${cardTemplate}_${category}_${idx}.html`;
   }
 
   function loadOneCard(idx) {
