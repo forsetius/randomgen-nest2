@@ -17,4 +17,4 @@ slots:
         - [Wszczepka sieciowa]{pl/ep-wszczepka}
         - [Stos korowy]{pl/ep-stos-korowy}
 ---
-**Egzalty** to morfy genetycznie zmodyfikowane w kierunku wyeksponowania ulepszeń ogólnych. Są zdrowsze, bystrzejsze i bardziej atrakcyjne - bardziej niż [Genfiksy](#). Ich metabolizm jest ustawiony tak, by mieli predyspozycje do pozostawania w atletycznej formie przez cały czas trwania ich wydłużonego życia.
+**Egzalty** to morfy genetycznie zmodyfikowane w kierunku wyeksponowania ulepszeń ogólnych. Są zdrowsze, bystrzejsze i bardziej atrakcyjne - bardziej niż [Genfiksy]{pl/ep-genfiks}. Ich metabolizm jest ustawiony tak, by mieli predyspozycje do pozostawania w atletycznej formie przez cały czas trwania ich wydłużonego życia.

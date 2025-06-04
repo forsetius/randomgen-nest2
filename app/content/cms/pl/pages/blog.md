@@ -4,11 +4,11 @@ title: Wtem, na blogu!
 headerImage: index-head.png
 thumbnailImage: index.jpg
 subcategoryName: Blog
-  
+lead: Poniżej znajdziesz wszystkie wpisy z mojego bloga.
 slots:
   bottom:
     - type: category
       category: blog
       sortDir: desc
 ---
-Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!
+Pojawiają się tu zarówno nowe posty jak i archiwalne, odtworzone z poprzednich inkarnacji strony.

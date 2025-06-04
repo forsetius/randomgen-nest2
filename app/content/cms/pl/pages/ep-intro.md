@@ -11,7 +11,7 @@ excerpt: Niepohamowany rozwój technologii, upadek cywilizacji i powstanie trans
 lead: |
   Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
 tags: 
-  - eclipse-phase
+  - rpg
 slots:
   bottom:
     - type: category

@@ -2,8 +2,8 @@
 template: page-default
 title: Skoczek
 subtitle: Bouncer
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#headerImage: trans9-head.jpg
+#thumbnailImage: trans9-head.jpg
 category: ep-biomorf
 tags:
   - rpg
@@ -12,7 +12,12 @@ slots:
     - type: static
       content: |
         ## Ulepszenia
-        [Podstawowe biomody]{pl/ep-podstawowe-biomody}, [Wszczepka sieciowa]{pl/ep-wszczepka}, [Stos korowy]{pl/ep-stos-korowy}, [Rzepy], [Rezerwa tlenu], [Chwytne stopy]
+        - [Podstawowe biomody]{pl/ep-podstawowe-biomody}, 
+        - [Wszczepka sieciowa]{pl/ep-wszczepka}, 
+        - [Stos korowy]{pl/ep-stos-korowy}, 
+        - [Rzepy], 
+        - [Rezerwa tlenu], 
+        - [Chwytne stopy]
         ##### Warianty
         - z [chwytnym ogonem](#)
         - z orientacją przestrzenną waleni

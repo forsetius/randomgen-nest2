@@ -8,21 +8,16 @@ subcategoryName: Sztuczna inteligencja
 tags:
   - rpg
 slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
   bottom:
     - type: category
       category: ep-sztuczna-inteligencja
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+**Sztuczne inteligencje** wyewoluowały z programów pomocniczych tworzonych w celu usprawnienia transludzkich możliwości poznawczych.
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Pierwsze sztuczne inteligencje o możliwościach wykraczających poza realizowanie zadań pół-automatycznej wyszukiwarki i planera były programowane z myślą o konkretnych, wyspecjalizowanych zastosowaniach. Owszem, te **[Ekspertowe Sztuczne Inteligencje]{pl/ep-sztuczna-inteligencja}** są samoświadome i w przypisanej im roli niesamowicie szybkie, precyzyjne i wyręczające człowieka w rutynowej pracy, ale ich kompetencje kończą się na dziedzinie, do której je stworzono. Szczególnym typem ESI są **[Muzy](Muza.md "SI będąca osobistym pomocnikiem dla większości transludzi ")** - osobiste SI służące za sekretarza i zarządcę osobistego info-systemu w codziennym życiu niemal każdego transczłowieka.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
+Kolejnym krokiem były systemy bardziej kompletne jeśli chodzi o kompetencje mentalne, które nazwano **[Ogólnymi Sztucznymi Inteligencjami](Og%C3%B3lna+Sztuczna+Inteligencja "Sztuczna inteligencja o rozumności zbliżonej do ludzkiej")** - ich rozumność nie była bowiem już ograniczona do jednej, eksperckiej dziedziny ale można ją było przyrównać do rozumności człowieka.
 
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Dalsza ewolucja tych cyfrowych form inteligentnego życia doprowadziła do stworzenia **[Zalążkowych Sztucznych Inteligencji](Zal%C4%85%C5%BCkowa+Sztuczna+Inteligencja "SI posiadająca zdolność ulepszania swojego kodu")** - systemów zdolnych do inspekcji i w pełni świadomego ulepszania swojego kodu źródłowego. To niestety doprowadziło do stworzenia TITANów i w konsekwencji do Upadku.
+
+Ta katastrofa spowodowała, że wszelkie Sztuczne Inteligencje są traktowane z nieufnością, OSI wręcz doświadczają [dyskryminacji](Stygmatyzacja+OSI "Stygmatyzacja OSI") a ZSI są zakazane właściwie w całym [Układzie]((#)).

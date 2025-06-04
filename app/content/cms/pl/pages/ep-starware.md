@@ -11,15 +11,14 @@ slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
+        ## Główna działalność
+        Robotyka, Inżynieria lotnicza, Konstrukcja habitatów
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Stocznia im. Korolewa ([Luna](#)), 
+        - [Westa](https://pl.wikipedia.org/wiki/(4)_Westa) ([Pas asteroidów](#))
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Starware - podobnie jak [Omnicor](Omnicor.md "Nanofabrykacja, Chemikalia, Energia, Antymateria ") - jest kolejną z pozostałości megakorpa Monolith Industries. Jest wiodącym producentem robotyki, silników fuzyjnych do statków kosmicznych i prefabrykowanych habitatów. Mimo swoich zasobów i powodzenia w biznesie, krwawe zatargi Starware z Omnikorem powodują, że żadnen z tych hiperkorpów nie może osiągnąć pełnego członkostwa w [Konsorcjum Planetarnym]{pl/ep-konsorcjum-planetarne}.
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Starware na dużą skalę korzysta ze [Sztucznych Inteligencji](./Encyklopedia/Sztuczna-inteligencja.md) jako pracowników [przyodziewanych](#) w [robotyczne powłoki]{pl/ep-syntmorf} - na krok taki jej zarząd zdecydował się po nieco zbyt licznych sporach zbiorowych z robotnikami z Luny. Tak naprawdę relacje Starware z sąsiadami na Lunie są już tak złe, że na skutek coraz częstszych aktów sabotażu, hiperkorp musiał zainwestować w dodatkową ochronę.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+W ostatnim czasie pojawiły się plotki o negocjacjach między Starware a [Faktorami](#), co miałoby świadczyć o tym, że hiperkorp usiłuje pozyskać pomoc Obcych w budowie podświetlnego statku kosmicznego.

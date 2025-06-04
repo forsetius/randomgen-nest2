@@ -11,15 +11,9 @@ slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Nowa Sycylia ([Pas asteroidów](#))
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Gdy przynależność do jednego z wielu multi-etnicznych habitatów zastąpiła dawne pojęcie etnosu i narodowości, dziedzictwo kulturowe i tradycje odeszły do lamusa razem z nimi. W nowych warunkach kilka [przed-Upadkowych]{pl/ep-upadek} syndykatów etnicznych zawiązało ostrożny sojusz. Z początku wydawał się on bardzo kruchy i istniał wyłącznie z konieczności, jednak dekada [wczytywania Ego](#) i [przyodziewania w morfy](#) wymazała pokutujące jeszcze kody społeczne i uprzedzenia rasowe. Dzięki postępowej wizji zarówno w sferze biznesowej jak i kryminalnej, Nocny Kartel zawiera w sobie najkorzystniejsze cechy organizacji, z których powstał i jest obecnie jedną z najpotężniejszych struktur przestępczych w [Układze Słonecznym]((#)).
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
-
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Nocny Kartel ma w niektórych habitatach status legalnej [hiperkorporacji]{pl/ep-hiperkorporacja}, w innych zaś - bardziej praworządnych a mniej skorumpowanych - działa poza prawem. Kartel działa w branży bardziej tradycyjnych przestępstw: wymuszeń, porwań, handlu ludźmi i morfami oraz prostytucją. Oprócz tego dobrze zaadaptowali się do najnowszych osiągnięć technologicznych i konkurują z [Triadami]{pl/ep-triady} o rynek elektro-stymulantów, narkotyków i piractwa nanofabowego.

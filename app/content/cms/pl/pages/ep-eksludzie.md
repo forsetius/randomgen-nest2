@@ -12,12 +12,16 @@ slots:
     - type: static
       content: |
         ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
+        Adaptacja, Hiperewolucja, [Technologiczna Osobliwość](http://pl.wikipedia.org/wiki/Technologiczna_osobliwo%C5%9B%C4%87)
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - nieznane
 ---
-**Biokonserwatyści** są mocno podejrzliwi i krytyczni wobec transhumanistycznej ścieżki rozwoju, na jaką weszła rasa ludzka. Są zagorzałymi zwolennikami ograniczenia rozwoju technologiczneggo ze względu na zagrożenia, jakie stwarza dla istniejącego porządku społecznego. Do biokonserwatystów zaliczyć można ludzi o szerokim spektrum poglądów politycznych: od prawicowych konserwatystów kulturowych po lewicowych ekologów. Choć ich wpływ kurczy się, wciąż mają szeroką bazę społęczną wśród wyznawców większości starych [group religijnych](Religie.md "Religie"), w [Republice Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") oraz wśród niektórych [ekstremistów](Ekstremi%C5%9Bci).
+Bardziej niż jakiekolwiek inne stronnictwo, eksludzie pragną osiągną absolutne maksimum samo-modyfikacji i w rezultacie stać się [postludźmi](http://pl.wikipedia.org/wiki/Postcz%C5%82owiek). Typowi eksludzie postrzegają [Upadek]{pl/ep-upadek} jako przegapioną szansę ewolucyjną i/lub jako przykład podrzędności i ułomności transludzkości.
 
-Biokonserwatyści sprzeciwiają się między innnymi [nanofabrykacji](./Encyklopedia/Nanofabrykacja.md), modyfikacjom genetycznym, klonowaniu, modyfikacjom kognitywnym, [sztucznym inteligencjom](Sztuczne+inteligencje "Świadome systemy komputerowe zaprogramowane na podobieństwo ludzkiego rozumu"), ([upliftowaniu](./Encyklopedia/Uplift.md) i [forkowaniu](./Encyklopedia/Fork.md). Niektórzy są nawet przeciwko kopiom zapasowym, [emulacjom umysłu](./Encyklopedia/Emulacja-ego.md) i [przyodziewaniu](./Encyklopedia/Przyodziewanie.md), odrzucając je jako nienaturalne, afront dla woli Boskiej lub jako technologie, na które transludzkość nie jest jeszcze w pełni gotowa. Są też przeciwni ekspansji poza [Wrota pandoriańskie](Wrota+pandoria%C5%84skie) twierdząc, że transludzkość nie jest przygotowana na to, co może napotkać op drugiej stronie. Większość biokonserwatystów opowiada się za [starą ekonomią](Stara+ekonomia "Stara ekonomia").
+Choć grupy eksludzi różnią się między sobą ideologiami to ogólnie chcą samo-wyewoluować się do wyższego stanu bytu. Dla niektórych oznacza to genetyczne przekształcenie się w super-bystrego, zdolnego przetrwać wszędzie [drapieżnika alfa](http://en.wikipedia.org/wiki/Apex_predator), który może przewyższyć wszystkie inne formy życia. Dla innych oznacza to rozwinięcie własnej inteligencji do poziomu inteligencji [TITANów](#) przez rozległe modyfikacje genetyczne i terapie farmakologiczne. Inni jeszcze zostają [infomorfami]{pl/ep-infomorf} i próbują modyfikować swój kod źródłowy.
 
-Biokonserwatyści zdobyli wielu zwolenników i uznania na skutek [Upadku](Upadek.md) - apokaliptycznego zdarzenia, które stanowiło ziszczenie tego, przed czym ostrzegali. Jednak mimo to powab technologii oraz usprawnienia i wygody, jakie oferuje pracują przeciwko nim. W rezultacie niektórzy zdesperowani biokoni zwrócili się w kierunku sabotażu i aktów terroryzmu jako wsparcia ich ideologii.
+Część z nich to poszukiwacze Osobliwości mający nadzieję znaleźć jakiś relikt TITANów, który pozwoli im przekroczyć obecne transludzkie ograniczenia. Niektórzy wręcz chcą odnaleźć TITANów by zostać wchłoniętymi w ich świadomość.
+
+Generalnie, do eksludzi podchodzi się bardzo nieufnie - i jest ku temu bardzo dobry powód. Typowy eksczłowiek stosuje modyfikacje, które są ekstremalne, niebezpieczne, nieprzetestowane a czasem nawet oparte na jakiejś dziwnej pseudonauce. W rezultacie często dochodzi u nich do awarii i zeszpecenia, popadnięcia w obłęd czy wręcz w całkiem obcy lub dziki sposób myślenia.
+
+Choć każdy z eksludzi podąża swoją ścieżką, znane są przypadki ich łączenia się w grupy w Pasie Kuipera i innych oddalonych obszarach. Niektóre bandy eksludzi zaś przeniosły swą odrazę do swojego eks-gatunku na wyższy poziom, ogłaszając wojnę przeciw transludzkości i napadając odizolowane habitaty.

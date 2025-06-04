@@ -11,15 +11,11 @@ slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Rhea (Grupa Kronosa)
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+**Załoga Inteligentnego Projektu** (_Załoga IP_) specjalizuje się w przestępstwach elektronicznych i obrocie informacją. W szczegóności zajmują się defraudacją pieniędzy i [reputacji](sieci+reputacji), podrabianiem tożsamości, handlem [Ego](#), kradzieżą danych i porwaniami [forków](#).
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Informacje na temat pochodzenia tego syndykatu zaginęły w czasie [Upadku]{pl/ep-upadek}, ale uważa się, że Załoga IP powstała ze zrzeszenia się kilku gangów hakerskich pod przewodnictwem konsorcjum [infomorfów]{pl/ep-infomorf}. Ich umiejętne używanie oprogramowania do manipulowania pamięcią i włamań sieciowych sugeruje, że korzystają z pomocy wyrafinowanej [OSI](OSI) - nie wiadomo jednak, czy ta pomoc jest dobrowolna czy w jakiś sposób wymuszona.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Z uwagi na profil działalności Załoga IP nie ujawnia się fizycznie, ale ich obecność można odnaleźć w co bardziej mrocznych zakamarkach Sieci w niema każdym habitacie czy stacji. Ich raczej wyspecjalizowane "usługi" pozwalają im nie wchodzić w drogę [Triadom]{pl/ep-triady} czy [Nocnemu Kartelowi](Nocny+Kartel "przestępczość ") ale za to ciągle powodują rywalizację z syndykatem [Dziewięć Żyć](Dziewi%C4%99%C4%87+%C5%BBy%C4%87 "handlarze ego-niewolników").

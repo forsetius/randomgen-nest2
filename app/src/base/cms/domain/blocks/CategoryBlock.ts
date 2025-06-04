@@ -26,6 +26,9 @@ export class CategoryBlock extends Block {
       cardTemplate: this.def.cardTemplate,
       items,
       perPage: this.def.count,
+      category: this.def.category,
+      title: this.def.title,
+      lang: library.lang,
     });
   }
 }

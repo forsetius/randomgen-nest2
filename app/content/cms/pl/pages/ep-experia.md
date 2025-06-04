@@ -5,21 +5,20 @@ subtitle: Experia
 headerImage: eclipse-phase-head.jpg
 thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
+excerpt: Media, Wiadomości, Rozrywka, Memetyka
 tags:
   - rpg
 slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
+        ## Główna działalność
+        Media ([AR](#), [VR](#), [XP](#), Wiadomości, Rozrywka, [Memetyka](http://pl.wikipedia.org/wiki/Memetyka)        
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - [Elizjum](#) ([Mars](#)), 
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Jak wskazuje sama nazwa, **Experia** działa na rynku wiadomości, mediów i rozrywki w [Układzie Słonecznym]((#)). Wzbudza kontrowersje nie tylko publicznie wygłaszanymi poglądami pro-SI czy umieszczając [OSI](#) w swym zarządzie, ale również przez swoje kampanie marketingu hiperwiralnego i zaawansowane programowanie XP.
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Jednym z kluczowych działalności jest produkcja edukacyjnych XP i wirtualnych tutorów (czy to w formie [infomorfów]{pl/ep-infomorf} czy SI). Niektóre z tych ostatnich regularnie urastają do rangi ikon pop-kultury. Experia jest najważniejszym autorytetem [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} w zakresie projektowania i uwalniania memów wirusowych opracowanych by zwalczać wszystko, co stwarza zagrożenie dla interesów Konsorcjum. Korporacja ma zautomatyzowane węzły i centra VR w wielu habitatach w całym Układzie Słonecznym i kontraktuje tysiące freelancerów jako dziennikarzy obywatelskich.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Wysuwane przez niektóre infomorfy oskarżenia jakoby Experia nielegalnie poddawała infomorfy na [kontraktach służebnych](#) niekończącym się symulacjom na potrzeby prognozowania i wywiadu gospodarczego, nie znalazły potwierdzenia.

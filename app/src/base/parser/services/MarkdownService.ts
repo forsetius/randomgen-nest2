@@ -32,13 +32,12 @@ export class MarkdownService {
       name: 'slug',
       level: 'inline',
       start(src: string) {
-        return /\[.*?]\{/.exec(src)?.index;
+        return /\[[^\]]*?]\{/.exec(src)?.index;
       },
 
       tokenizer(src: string) {
-        const match = /^\[(?<text>.+?)\]\{(?<lang>en|pl)\/(?<slug>.+?)\}/u.exec(
-          src,
-        );
+        const match =
+          /^\[(?<text>[^\]]+?)\]\{(?<lang>en|pl)\/(?<slug>.+?)\}/u.exec(src);
 
         if (match?.groups) {
           return {
@@ -58,7 +57,7 @@ export class MarkdownService {
         }
         const slugToken = token as SlugToken;
 
-        return `<a href="/pages/${slugToken.lang}/@slug={${slugToken.slug}}">${slugToken.text}</a>`;
+        return `<a href="/pages/${slugToken.lang}/@{${slugToken.slug}}">${slugToken.text}</a>`;
       },
     };
   }

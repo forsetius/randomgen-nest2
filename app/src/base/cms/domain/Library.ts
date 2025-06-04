@@ -70,6 +70,7 @@ export class Library {
 
   public getPage(slug: string): Page {
     if (!this.pages.has(slug)) {
+      console.log(this.pages.keys());
       throw new NotFoundException(`Page ${slug} not found`);
     }
 

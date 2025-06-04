@@ -22,14 +22,14 @@ slots:
       content: |
         Obrazki wykorzystane jako nagłówki stron o Eclipse Phase pochodzą w większości z podręczników do 1. edycji, które wydane zostały na licencji Creative Commons.
         Nazwa obrazka wskazuje podręcznik, z którego został wzięty:
-          - argo: Argonauts
-          - ep: Eclipse Phase 1ed
-          - firewall: Firewall
-          - gate: Gatecrashing
-          - pano: Panopticon
-          - rim: Rimward
-          - sun: Sunward
-          - xrisk: X-Risks
+          - `argo`: Argonauts
+          - `ep`: Eclipse Phase 1ed
+          - `firewall`: Firewall
+          - `gate`: Gatecrashing
+          - `pano`: Panopticon
+          - `rim`: Rimward
+          - `sun`: Sunward
+          - `xrisk`: X-Risks
 ---
 
 **Eclipse Phase** jest [systemem RPG](http://pl.wikipedia.org/wiki/Gra_fabularna), którego akcja osadzona jest w odległej o około 120 lat przyszłości, po zagładzie Ziemi. Jest opisywana jako post-apokaliptyczna gra konspiracji i horroru, poruszająca kwestie [transhumanizmu](http://pl.wikipedia.org/wiki/Transhumanizm), ścierania się rozmaitych ideologii politycznych i ekonomicznych oraz przetrwania w obliczu zagrożeń godzących w istnienie rodzaju ludzkiego.

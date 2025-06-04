@@ -7,19 +7,38 @@ thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 tags:
   - rpg
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Istnienie Splotu w Eclipse Phase jest możliwe tylko i wyłącznie dzięki znacznemu postępowi w dziedzinie komputerów, technologii informacyjnej oraz nanoprodukcji. Bezprzewodowe odbiorniki radiowe są tak mikroskopijne, że mogą być wmontowane właściwie wszędzie, dzięki czemu wszystko jest skomputeryzowane i połączone ze sobą.
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Technologia przechowywania danych jest tak zaawansowana, że nawet przechowalnia danych przeciętnego użytkownika jest w stanie pomieścić ilość informacji przekraczającą rozmiar całego XX-wiecznego internetu. Lifelogerzy nagrywają dosłownie każdy moment swojego życia i nigdy nie muszą się martwić o to, że zabraknie im miejsca. Możliwości obliczeniowe również stały się hiperwydajne; przeciętne urządzenie przenośne jest w stanie spełnić wszystkie potrzeby użytkownika, nawet gdy jednocześnie korzysta on z osobistego asystenta SI, ściąga filmy, uploaduje porno i skanuje tysiące kanałów informacyjnych.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
+W obrębie Splotu urządzenia osiągające limit swoich możliwości po prostu dzielą się obliczeniami z innymi urządzeniami znajdującymi się w okolicy. Przepustowość łącza również znacznie przewyższa potrzeby większości obywateli - osoba urodzona w przeciągu ostatnich kilkudziesięciu lat od zawsze żyła w świecie gdzie hiperrealistyczne, wielozmysłowe media dowolnej długości są dostępne do natychmiastowego ściągnięcia. Olbrzymie bazy danych oraz archiwa mogą być swobodnie kopiowane. Przepustowość nie stanowi problemów do tego stopnia, że większość ludzi wręcz zapomina o jej istnieniu. Na dodatek Splot nigdy nie ulega awarii; to zdecentralizowana sieć – jeżeli jedno z urządzeń jest offline, połączenia po prostu je omijają, znajdując drogę przez tysiące innych dostępnych węzłów.
 
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Każdy dysponuje komputerową [wszczepką sieciową]{pl/ep-wszczepka} bezpośrednio połączoną z mózgiem właściciela. Emulacja myśli pozwala na sterowanie wszczepką za pomocą myśli oraz na komunikację bez używania głosu. Przychodzące dane są przekazywane bezpośrednio do mózgu i czasem postrzegane jako rzeczywistość rozszerzona, nakładana na fizyczne zmysły użytkownika.
+
+## Informacje na wyciągnięcie ręki
+
+Następujące informacje zazwyczaj są bezproblemowo dostępne za pośrednictwem Splotu w danym habitacie czy mieście:
+
+### Warunki lokalne
+
+*   Lokalne mapy pokazujące twoje bieżące położenie, z notatkami dotyczącymi twoich konkretnych zainteresowań (zgodnie z osobistymi ustawieniami oraz filtrami) oraz odległością od nich i trasą, którą należy podążyć. Szczegóły dotyczące stref prywatnych i chronionych (rządowych, korporacyjnych, związanych z bezpieczeństwem lub infrastrukturą) zazwyczaj nie są dostępne.
+*   Obecne i prognozowane warunki systemu podtrzymywania życia i pogody w habitacie, włączając w to skład atmosfery oraz temperaturę.
+*   Aktualna mapa [Układu Słonecznego]((#)) oraz orbity habitatu z widocznymi trajektoriami lotu oraz opóźnieniem w komunikacji.
+
+### Sieć lokalna
+
+*   Publiczne wyszukiwarki, bazy danych, strony, blogi, fora i archiwa, a także powiadomienia o pojawieniu się nowej zawartości.
+*   Stałe kanały informacyjne w różnych formatach, filtrowane wedle osobistych ustawień.
+*   Dane z sensorów z dowolnego publicznego miejsca w habitacie.
+*   Automatyczne wyszukiwanie nowych informacji w sieci zawierających twoje imię lub inne istotne wyrażenia.
+*   Wyszukiwanie za pomocą rozpoznawania twarzy/obrazu w publicznej sieci i archiwach oraz dopasowywanie fotografii lub nagrań.
+
+### Informacje osobiste
+
+*   Wskaźniki stanu morfa (medyczne i/lub mechaniczne): ciśnienie krwi, tempo bicia serca, temperatura, liczebność białych krwinek, stan składników odżywczych, status implantów i ich funkcjonalność itd.
+*   Położenie, funkcjonalność, dane z czujników oraz raporty od rzeczy należących do Ciebie (z pomocą sensorów i nadajników w nich się znajdujących)
+*   Dostęp do audio-wizualnego/empirycznego archiwum wspomnień z całego życia.
+*   Dostęp do archiwum plików z całego życia (muzyki, oprogramowania, mediów, dokumentów)
+*   Poziom reputacji, status sieci społecznościowych, stan konta kredytowego

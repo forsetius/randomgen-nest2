@@ -72,12 +72,13 @@ export class Page {
         ? {
             current: this.category,
             prev:
-              currentPageIndex && currentPageIndex > 0
+              typeof currentPageIndex === 'number' && currentPageIndex > 0
                 ? categoryPages![currentPageIndex - 1]!
                 : undefined,
             next:
-              currentPageIndex && categoryPages!.length > currentPageIndex + 2
-                ? categoryPages![currentPageIndex + 2]!
+              typeof currentPageIndex === 'number' &&
+              categoryPages!.length > currentPageIndex
+                ? categoryPages![currentPageIndex + 1]!
                 : undefined,
           }
         : undefined,
@@ -211,7 +212,7 @@ export class Page {
 
   private resolveSlugs(content: string, library: Library): string {
     return content.replace(
-      /@slug=\{(?<slug>.+?)}/g,
+      /@{(?<slug>[a-z0-9_-]+?)}/g,
       (_match, slug: string) => library.getPage(slug).filename,
     );
   }

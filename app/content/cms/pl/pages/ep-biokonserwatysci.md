@@ -2,8 +2,8 @@
 template: page-default
 title: Biokonserwatyści
 subtitle: TODO
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-biocon-head.jpg
+thumbnailImage: mid-biocon-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg
@@ -14,10 +14,10 @@ slots:
         ## Memy
         Biokonserwatyzm, Prymitywizm, Prawo naturalne
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Vo Nguyen (orbita [Ziemi](#))
 ---
-**Biokonserwatyści** są mocno podejrzliwi i krytyczni wobec transhumanistycznej ścieżki rozwoju, na jaką weszła rasa ludzka. Są zagorzałymi zwolennikami ograniczenia rozwoju technologiczneggo ze względu na zagrożenia, jakie stwarza dla istniejącego porządku społecznego. Do biokonserwatystów zaliczyć można ludzi o szerokim spektrum poglądów politycznych: od prawicowych konserwatystów kulturowych po lewicowych ekologów. Choć ich wpływ kurczy się, wciąż mają szeroką bazę społęczną wśród wyznawców większości starych [group religijnych](Religie.md "Religie"), w [Republice Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") oraz wśród niektórych [ekstremistów](Ekstremi%C5%9Bci).
+**Biokonserwatyści** są mocno nieufni i krytyczni wobec transhumanistycznej ścieżki rozwoju, na jaką weszła rasa ludzka. Są zagorzałymi zwolennikami ograniczenia rozwoju technologiczneggo ze względu na zagrożenia, jakie stwarza on dla istniejącego porządku społecznego. Do biokonserwatystów zaliczyć można ludzi o szerokim spektrum poglądów politycznych: od prawicowych konserwatystów kulturowych po lewicowych ekologów. Choć ich wpływ kurczy się, wciąż mają szeroką bazę społęczną wśród wyznawców większości starych [group religijnych](#) i w [Republice Jowiszowej]{pl/ep-republika-jowiszowa}.
 
-Biokonserwatyści sprzeciwiają się między innnymi [nanofabrykacji](./Encyklopedia/Nanofabrykacja.md), modyfikacjom genetycznym, klonowaniu, modyfikacjom kognitywnym, [sztucznym inteligencjom](Sztuczne+inteligencje "Świadome systemy komputerowe zaprogramowane na podobieństwo ludzkiego rozumu"), ([upliftowaniu](./Encyklopedia/Uplift.md) i [forkowaniu](./Encyklopedia/Fork.md). Niektórzy są nawet przeciwko kopiom zapasowym, [emulacjom umysłu](./Encyklopedia/Emulacja-ego.md) i [przyodziewaniu](./Encyklopedia/Przyodziewanie.md), odrzucając je jako nienaturalne, afront dla woli Boskiej lub jako technologie, na które transludzkość nie jest jeszcze w pełni gotowa. Są też przeciwni ekspansji poza [Wrota pandoriańskie](Wrota+pandoria%C5%84skie) twierdząc, że transludzkość nie jest przygotowana na to, co może napotkać op drugiej stronie. Większość biokonserwatystów opowiada się za [starą ekonomią](Stara+ekonomia "Stara ekonomia").
+Biokonserwatyści sprzeciwiają się między innnymi [nanofabrykacji](#), modyfikacjom genetycznym, klonowaniu, modyfikacjom kognitywnym, [sztucznym inteligencjom]{pl/ep-sztuczna-inteligencja}, [upliftowaniu]{pl/ep-uplift} i [forkowaniu](#). Niektórzy są nawet przeciwko kopiom zapasowym, [emulacjom umysłu](#) i [przyodziewaniu](#), odrzucając je jako nienaturalne, afront dla woli Boskiej lub jako technologie, na które transludzkość nie jest jeszcze w pełni gotowa. Są też przeciwni ekspansji poza [Wrota pandoriańskie](#) twierdząc, że transludzkość nie jest przygotowana na to, co może napotkać op drugiej stronie. Większość biokonserwatystów opowiada się za [starą ekonomią](#).
 
-Biokonserwatyści zdobyli wielu zwolenników i uznania na skutek [Upadku](Upadek.md) - apokaliptycznego zdarzenia, które stanowiło ziszczenie tego, przed czym ostrzegali. Jednak mimo to powab technologii oraz usprawnienia i wygody, jakie oferuje pracują przeciwko nim. W rezultacie niektórzy zdesperowani biokoni zwrócili się w kierunku sabotażu i aktów terroryzmu jako wsparcia ich ideologii.
+Biokonserwatyści zdobyli wielu zwolenników na skutek [Upadku]{pl/ep-upadek} - apokaliptycznego zdarzenia, które stanowiło ziszczenie tego, przed czym ostrzegali. Jednak mimo to powab technologii oraz usprawnienia i wygody, jakie oferuje postęp pracują przeciwko nim. W rezultacie niektórzy zdesperowani biokoni zwrócili się w kierunku sabotażu i aktów terroryzmu.

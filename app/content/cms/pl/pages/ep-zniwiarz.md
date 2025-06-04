@@ -11,11 +11,26 @@ slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        ## Ulepszenia
+        - [Wszczepka sieciowa]{pl/ep-wszczepka}
+        - [Stos korowy]{pl/ep-stos-korowy}
+        - [Cybermózg]{pl/ep-cybermozg}
+        - [Ulepszenie pamięci](#)
+        - [Gniazda dostępu]{pl/ep-gniazda-dostepu}  
+        - [Widzenie dookólne](Widzenie+dook%C3%B3lne), 
+        - [Anti-Glare](Anti-Glare), 
+        - [Cyber-szpony](Cyber-szpony), 
+        - [Dodatkowe kończyny](Dodatkowe+ko%C5%84czyny) (4), 
+        - [System magnetyczny](System+magnetyczny), 
+        - [Pneumatyczne kończyny](Pneumatyczne+ko%C5%84czyny), 
+        - [Gniazdo pacynkarza](Gniazdo+pacynkarza), 
+        - [Radar](Radar), 
+        - [Dopalacz refleksu](Dopalacz+refleksu), 
+        - [Zmiana kształtu](Zmiana+kszta%C5%82tu), 
+        - [Ulepszenia strukturalne](Ulepszenia+strukturalne), 
+        - [T-radar](T-radar), 
+        - [Gniazda broni](Gniazda+broni) (4, przegubowe)
 ---
-Syntmorfy nazywane pogardliwie _"blaszakami"_, _"puszkami"_ czy _"pudłami"_ to ekstremalnie tanie, masowo produkowane powłoki robotyczne. Są odpowiedzią [hiperkorpów](Hiperkorpy "Hiperkorpy") na konieczność szybkiego [przyodziania](./Encyklopedia/Przyodziewanie.md) milionów pozbawionych wszystkiego [info-uchodźców](info-uchod%C5%BAcy). Choć istnieje wiele rodzajów i wariantów Puszek, są one generalnie wszystkie uznawane za podrzędne rzęchy. Większość jest z grubsza antropomorficzna, cienka, nieco niższa niż przeciętny [Normals](Normals.md "zwykli, niezmodyfikowani ludzie"). Puszki są prześladowany jest przez częste awarie i wynikłe z oszczędności niedoróbki.
+**Żniwiarz** (znany też jako _Kosiarz_) to typowy syntmorf bojowy używany zamiast żołnierzy [biomorficznych]{pl/ep-biomorf} i zwykle teleoperowany przez autonomiczną [SI]{pl/ep-sztuczna-inteligencja}. Podstawową formą Kosiarza jest pancerny dysk, co pozwala mu obracać się tak, żeby zwracać w stronę wroga jedynie cienki profil. Do manewrowania w mikrograwitacji używa wektorowych silniczków manewrowych a dodatkowo wyposażony jest w silnik jonowy umożliwiający szybkie poruszanie się na długie dystanse. W dysku schowane są cztery składane kończyny (mogące pełnić funkcje nóg bądź manipulatorów) oraz cztery zasobniki z bronią. Powłoka Kosiarza jest zrobiona ze smartmateriałów, co pozwala kończynom rozkładać się w dowolnym kierunku, zmieniać kształt a nawet rozciągać się. W środowisku obdarzonym grawitacją syntmorf ten chodzi lub skacze na dwóch lub czterech kończynach.
 
-**Ulepszenia**: [Wszczepka sieciowa](Wszczepka+sieciowa "Podczaszkowy komputer z interfejsem bezprzewodowym i siecią czujników raportujących stan morfa"), [Stos korowy](./Encyklopedia/Stos-korowy.md), [Cybermózg](Cyberm%C3%B3zg "Cybernetyczny odpowiednik mózgu dla syntetyków i podów"), [Gniazdo dostępu](Gniazdo+dost%C4%99pu), [Ulepszenie pamięci](Ulepszenie+pami%C4%99ci)
+Kosiarze są dość sławni (czy też raczej niesławni) w Układzie Słonecznym dzięki licznym [XP-kom](XP) wojennym. Z pewnością budzą respekt, ale i obawy, dlatego wprowadzenie ich do większości habitatów wzbudziłoby sensację a nawet mogłoby doprowadzić do ich aresztowania.

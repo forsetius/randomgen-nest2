@@ -2,24 +2,16 @@
 template: page-default
 title: Przymierze Autonomistów
 subtitle: Autonomists Alliance
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#headerImage: rim4-head.jpg
+#thumbnailImage: rim4-head.jpg
 category: ep-ustroje
 tags:
   - rpg
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Anty-kapitalizm, Komunizm, Demokracja bezpośrednia, Wzajemna pomoc
-        ## Główne habitaty
-        Locus (Trojańczycy Jowiszowi)
 ---
-Anarchiści odrzucają władzę i hierarchię, promując horyzontalne metody organizacji i demokrację bezpośrednią. Kompetencje przeniesione na jednostki i działania kolektywne są filarami ich filozofii, podobnie jak ekonomiczny komunizm, możliwy w praktyce dzięki równemu i powszechnemu dostępowi do [maszyn obfitości](./Encyklopedia/Nanofabrykacja.md) i współdzielonych zasobów.
+[Zewnętrzny Układ Słoneczny]{pl/ep-zewnetrze} oferował ludziom, którym nie po drodze było z autorytarnymi, fasadowymi demokracjami [Wewnętrza]{pl/ep-wewnetrze} i [Republiki Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") szansę na zorganizowanie się w sposób drastycznie odmienny. Daleko poza zasięgiem rządów i [hiperkorpów]{pl/ep-hiperkorporacja}, to pogranicze zostało zaludnione politycznymi radykałami, społecznymi wyrzutkami, eksperymentatorami czy po prostu ludźmi, którzy chcieli, by zostawić ich w spokoju. Te pierwsze habitaty przyciągnęły uwagę powstańców z [Ziemi](../Atlas/Wewnetrze/Ziemia.md), naukowców i techników, którym nie podobała się korporacyjna smycz, [służebnych](#) pracowników kosmicznych, którzy chcieli uciec od niewolniczych warunków ich kontraktu, a nawet kryminalistów uciekających przed hiperkorporacyjnym wymiarem sprawiedliwości lub ukaranych przez niego banicją. Ich szeregi powiększały się z każdym aktem niesprawiedliwości w Wewnętrzu, choć życie na obrzeżach było często surowe i zabójcze. Wprawdzie autonomiści doświadczali okazjonalnych aktów wrogości ze strony wojsk narodowych czy sił bezpieczeństwa hiperkorpów, ale koszt okiełznania tych radykałów i ekspatriantów był zbyt wielki, żeby im poważniej zaszkodzić. A do pewnego stopnia ich obecność była użyteczna dla ówczesnych władz - jako wentyl bezpieczeństwa.
 
-W stacjach anarchistów własność prywatna ponad poziomem rzeczy osobistych została zarzucona - nikt nic nie posiada, wszystko jest wspólne. Nie ma żadnych praw i nikt nie pilnuje co robisz. Tym, co promuje pozytywne, pro-społeczne zachowania są [sieci reputacji](sieci+reputacji) - działania aspołeczne często powodują stosowną, stanowczą reakcję ze strony świadków, lub nawet całej populacji danego habitatu. Zatargi są rozstrzygane przez doraźne działania rozjemcze organizowane przez lokalną wspólnotę. W celu osiągania konsensusu w czasie rzeczywistym używa się Sieci i różnych narzędzi online.
+Odkrycia związane z [nanofabrykacją](./Encyklopedia/Nanofabrykacja.md) dały tym libertynom i outsiderom atut, którego potrzebowali by utrzymać swą autonomię w długim okresie. Gdy [maszyny obfitości](Maszyny+obfito%C5%9Bci) stały się szeroko osiągalne, każdy miał już środki by utrzymać się i obronić bez polegania na zewnętrznych czy wyższych władzach. Będąc już przedtem przedmurzem wolnej i otwartej kultury i domem aktywistów walczących z restrykcjami nakładanymi na idee, media i cyfrowe treści, Zewnętrze stało się również przystanią udostępniania szablonów do nanofabów i obchodzenia zabezpieczeń, które hiperkorpy umieszczały na swoim oprogramowaniu i cyfrowych dobrach.
 
-Do przyziemnych czy uwłaczających prac na szeroką skalę używa się [SI](SI) i dronów. Z kolei do zadań ważnych dla habitatu i jego społeczności - takich jak: komunikacja, kontrola ruchu kosmicznego, usługi archiwizowania i [przyodziewania](./Encyklopedia/Przyodziewanie.md) itd. - organizują się różne kolektywy, syndykaty, rady pracownicze i grupy zainteresowań, często o rotacyjnym składzie. Ochotnicze milicje organizują kolektywną obronę przeciw zagrożeniom zewnętrznym.
+Podczas [Upadku]{pl/ep-upadek} wiele habitatów w Zewnętrzu otworzyło podwoje przed uciekinierami z [Ziemi](#). Jednak odległość i wysokie koszty [egotransferu](Egotransfer) ograniczały imigrację. Ograniczały ją zresztą jak mogły również rządy Wewnętrza, niechętne wysyłaniu potencjalnych rekrutów do ich ideologicznych przeciwników. Tym, co w ogóle skłaniało owe władze do zezwalania na migracje było jednak przepełnienie habitatów i niedobory zasobów Wewnętrza. Hiperkorpy upewniały się, że w podróż ruszą przede wszystkim jednostki najbardziej niezadowolone, przejawiające tendencje socjopatyczne i kryminalne.
 
-W habitatach anarchistycznych jest duża różnorodność w organizacji życia na stacji. Wszystko jest dogrywane lokalnie przez zaangażowane osoby. Większe, zdecentralizowane konfederacje zajmują się sprawami między-habitatowymi i dzieleniem zasobów, a nawet handem z [hiperkorpami](Hiperkorporacje "Hiperkorporacje"). Choć obecność hiperkorpów jest tolerowana na niektórych stacjach, nie mają one żadnego specjalnego statusu, są traktowani jak wszyscy inni.
+Choć habitaty Zewnętrza reprezentowały pełne spektrum socjo-polityczne, wykształciły się cztery główne tendencje. Stacje i gromady wierne tym ideom związały się razem luźnym sojuszem autonomistów, paktem wzajemnej pomocy w razie kryzysów i zobowiązaniem do prezentowania wspólnego frontu przeciw reżimom Wewnętrza i Junty Jowiszowej. W sojuszu tym jest naprawdę niewiele formalnej struktury, istnieje on zasadniczo jako zespół wspólnych rezolucji uzgodnionych przez habitaty członkowskie i tworzonych ad-hoc, czasowych zespołów zadaniowych poświęconych rozwiązywaniu konkretnego problemu. Delegowani ambasadorowie działają jako negocjatorzy z zewnętrznymi władzami ale mają ograniczone uprawnienia i są pociągani do odpowiedzialności za swoje postępowanie.

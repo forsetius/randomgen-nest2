@@ -13,7 +13,11 @@ slots:
     - type: static
       content: |
         ## Ulepszenia
-        [Podstawowe biomody]{pl/ep-podstawowe-biomody}, [Wszczepka sieciowa]{pl/ep-wszczepka}, [Stos korowy]{pl/ep-stos-korowy}, [Usprawnione oddychanie](#), [Tolerancja temperatury](#)
+        - [Podstawowe biomody]{pl/ep-podstawowe-biomody}, 
+        - [Wszczepka sieciowa]{pl/ep-wszczepka}, 
+        - [Stos korowy]{pl/ep-stos-korowy}, 
+        - [Usprawnione oddychanie](#), 
+        - [Tolerancja temperatury](#)
 ---
 **Rdzawi** zostali pomyślani jako morfy przystosowane do nie do końca jeszcze sterraformowanych obszarów Marsa. W tym celu wyposażono ich w izolację skórną poprawiającą termoregulację ciała oraz usprawniony układ oddechowy dający mniejsze zapotrzebowanie na tlen oraz filtrowanie dwutlenku węgla.
 

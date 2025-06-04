@@ -7,19 +7,9 @@ thumbnailImage: eclipse-phase-head.jpg
 category: ep-organizacje
 tags:
   - rpg
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Społeczeństwo Open Source, Wolność informacyjna, Odpowiedzialność społeczna, Technoprogresywizm
-        ## Główne habitaty
-        [Stacja Mitre](Stacja+Mitre) ([orbita Luny](Luna.md "Luna"), [Markov](Markov) ([Pas Kuipera](Pas+Kuipera), [Hooverman-Geischecker](Hooverman-Geischecker) ([Słońce](S%C5%82o%C5%84ce)
 ---
-Grupa nazywająca się Argonautami jest publiczną organizacją propagującą społecznie odpowiedzialne używanie technologii. Grupa wzięła swoją nazwę od [przed-Upadkowej](Upadek.md) Jazonów - grupy doradczej przy rządzie Stanóœ Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Podobnie Argonauci oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym [Układzie Słonecznym](../Atlas/Uklad-Sloneczny.md), odmawiając jednocześnie uwikłania się w bieżącą politykę Układu.
+**Projekt Ozma** przed Upadkiem był nazwą międzynarodowego [projektu SETI](https://pl.wikipedia.org/Instytut_SETI). Po [Upadku]{pl/ep-upadek} na krótko stał się tematem debaty publicznej po odkryciu pierwszych [Wrót Pandoriańskich](#) jako inicjatywa [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} mająca na celu odkrycie miejsca pobytu [TITANów](TITAN%C3%B3w) w Galaktyce. Jednak krótko później Projekt Ozma zniknął z widoku, wymazany z wszelkich publicznych serwerów [Splotu]((./Encyklopedia/Splot.md)) w [Wewnętrzu]{pl/ep-wewnetrze}. Urzędnicy Konsorcjum twierdzą, że projekt ten został po prostu włączony do innych departamentów.
 
-Tuż Upadkiem drogi Argonautów i [hiperkorporacji](Hiperkorporacje "Hiperkorporacje") rozeszły się, co w wielu przypadkach oznaczało zawłaszczanie korporacyjnych danych i zasobów. Jednak później, w trakcie Upadku ich kompetencje i wsparcie, jakiego udzielali wszystkim potrzebującym w walce z TITANami przywróciło im respekt i poważanie wśród decydentów.
+[Zapora](Zapora.md "Konspiracja zwalczająca zagrożenia egzystencjalne - takie, które mogą zagrozić istnieniu gatunku ludzkiego") nie wie, czym jest Projekt Ozma, ale wie na pewno, że jest gdzieś w pobliżu - i co więcej, ma podobne zainteresowania. Obie organizacje zbyt często wpadały na siebie i brały za łby, by mógł to być przypadek. Być może jest to konsorcyjna wersja Zapory, ale równie prawdopodobne, że ich cele są zupełnie inne. Spekuluje się, że przydzielono im zadanie przygotowania i przeprowadzenia kontaktu z [Obcymi](Obcy).
 
-Argonauci są gorącymi orędownikami ruchu Open Source, propagującymi otwarty dostęp do technologii i informacji. Ich zdaniem, zapewnienie równego dostępu do wiedzy i osiągnięć transludzkości będzie sprzyjać jej wzrostowi i bezpieczeństwu, zwiększając jej przygotowanie na przyszłe zagrożenia i wyzwania. Dlatego Argonauci zwykle nalegają, by zapłata za ich usługi przyjmowała formę opublikowania w publicznej Sieci jakiejś skądinąd niedostępnej informacji: tajemnic handlowych hiperkorpów, danych badawczych, szablonów do nanofabów, ukrytych przed-Upadkowych archiwów itd. W celu przechowywania tego rodzaju udostępnionych informacji Argonauci utrzymują liczne otwarte bazy danych i archiwa.
-
-Choć to otwarta organizacja, chodzą plotki, że Argonauci poza częścią otwartą i widoczną publicznie, mają też tajny wewnętrzny krąg, któremu podlegają szeregowi człnkowie. Teorię tą podsyca istnienie Medean - konspiracyjnego, paramilitarnego skrzydła tej organizacji. Ich funkcją jest ochrona wysokiej rangi Argonautów i zasobów grupy.
+Wszystko, co Zapora wie na pewno sprowadza się do tego, że mają niebywale zasobny czarny budżet i wręcz nieprawdopodobne zasoby do dyspozycji. Są też zjadliwi jak cholera, typ tych co najpierw strzelają a później przesłuchują [kopię zapasową](#). Jeśli się na nich natkniesz to standardową procedurą operacyjną jest szybki odskok i wycofanie się. Zapora i tak straciła już przez nich dziesiątki agentów.

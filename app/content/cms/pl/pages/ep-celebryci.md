@@ -2,8 +2,8 @@
 template: page-default
 title: Celebryci
 subtitle: Glitterati
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-glitterati-head.jpg
+thumbnailImage: mid-glitterati-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg
@@ -14,10 +14,14 @@ slots:
         ## Memy
         Biokonserwatyzm, Prymitywizm, Prawo naturalne
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Valles-New Shanghai ([Mars](#))
+        - Elysium ([Mars](#))
+        - Noctis-Quinjiao ([Mars](#))
 ---
-**Biokonserwatyści** są mocno podejrzliwi i krytyczni wobec transhumanistycznej ścieżki rozwoju, na jaką weszła rasa ludzka. Są zagorzałymi zwolennikami ograniczenia rozwoju technologiczneggo ze względu na zagrożenia, jakie stwarza dla istniejącego porządku społecznego. Do biokonserwatystów zaliczyć można ludzi o szerokim spektrum poglądów politycznych: od prawicowych konserwatystów kulturowych po lewicowych ekologów. Choć ich wpływ kurczy się, wciąż mają szeroką bazę społęczną wśród wyznawców większości starych [group religijnych](Religie.md "Religie"), w [Republice Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") oraz wśród niektórych [ekstremistów](Ekstremi%C5%9Bci).
+[Kopiowanie umysłu](#) i [przyodziewanie](#) pozwoliło wreszcie uzyskać praktyczną nieśmiertelność - tym, których na to stać. To spowodowało zmianę wśród elit [Wewnętrza](#) - czy to prezesów [hiperkorpów]{pl/ep-hiperkorporacja}, członków starych dynastii czy innych oligarchów. Najbardziej wpływowi i bogaci nie musieli już obawiać się śmierci i mogli planować naprawdę dalekosiężnie. Niektórzy z nich byli już w szeregach tych, których jako pierwszych było stać na terapie odmłodzeniowe, gdy stały się one osiągalne na Ziemi. Teraz ci matuzalemowie mają już prawie 200 lat.
 
-Biokonserwatyści sprzeciwiają się między innnymi [nanofabrykacji](./Encyklopedia/Nanofabrykacja.md), modyfikacjom genetycznym, klonowaniu, modyfikacjom kognitywnym, [sztucznym inteligencjom](Sztuczne+inteligencje "Świadome systemy komputerowe zaprogramowane na podobieństwo ludzkiego rozumu"), ([upliftowaniu](./Encyklopedia/Uplift.md) i [forkowaniu](./Encyklopedia/Fork.md). Niektórzy są nawet przeciwko kopiom zapasowym, [emulacjom umysłu](./Encyklopedia/Emulacja-ego.md) i [przyodziewaniu](./Encyklopedia/Przyodziewanie.md), odrzucając je jako nienaturalne, afront dla woli Boskiej lub jako technologie, na które transludzkość nie jest jeszcze w pełni gotowa. Są też przeciwni ekspansji poza [Wrota pandoriańskie](Wrota+pandoria%C5%84skie) twierdząc, że transludzkość nie jest przygotowana na to, co może napotkać op drugiej stronie. Większość biokonserwatystów opowiada się za [starą ekonomią](Stara+ekonomia "Stara ekonomia").
+Podczas gdy dawniej ci decydenci musieliby przekazać swoje bogactwa rodzinie i potomkom, teraz ich spadkobiercy mają wprawdzie bardziej-niż-komfortowe życia i dostęp do ogromnych fortun... ale żadnych widoków na przejęcie kontroli nad tymi fortunami czy pozycji starszych rodu. Zresztą nie tylko zawiedzeni spadkobiercy grają w drugiej lidze bogaczy - nie zaliczają się do niej też nuworysze, którzy może i doszli sami do podobnej potęgi, co ekstraklasa, ale wciąż musieliby pożyć z pięćdziesiąt lat, by przestać być uważanymi za młodzików.
 
-Biokonserwatyści zdobyli wielu zwolenników i uznania na skutek [Upadku](Upadek.md) - apokaliptycznego zdarzenia, które stanowiło ziszczenie tego, przed czym ostrzegali. Jednak mimo to powab technologii oraz usprawnienia i wygody, jakie oferuje pracują przeciwko nim. W rezultacie niektórzy zdesperowani biokoni zwrócili się w kierunku sabotażu i aktów terroryzmu jako wsparcia ich ideologii.
+Cała ta kasta ultrabogaczy jest znudzona, nieobciążona żadną odpowiedzialnością, za to mają w zasięgu rąk cały [Układ Słoneczny](#). Stworzyli nową kulturę pławiących się w luksusie celebrytów, socjety zajętej nieustannym imprezowaniem i ekscentrycznymi wybrykami. Jakby mało było ich solowych ekscesów, ci celebryci zbierają się w ciągle zmieniające się kliki i naskakujące na siebie koterie, między którymi ciągle dochodzi do intryg, podkładania świń i zdrad.
+
+Ich życia są oczywiście skrzętnie relacjonowane przez media - ich prywatne habitaty i statki, wystawne przyjęcia, armie służących i możliwość kupienia prawie wszystkiego i wszystkich... to wszystko aż ocieka wszelkiego rodzaju skandalami i perypetiami, które można sprzedać żądnym sensacji masom maluczkich.

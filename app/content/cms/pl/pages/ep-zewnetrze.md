@@ -7,8 +7,6 @@ subtitle: Eclipse Phase
 category: ep-intro
 sort: 5
 excerpt: Za pasem asteroid
-lead: |
-  lead
 tags:
   - rpg
 

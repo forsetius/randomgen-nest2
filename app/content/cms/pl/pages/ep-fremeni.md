@@ -5,6 +5,7 @@ subtitle: Barsoomians
 headerImage: eclipse-phase-head.jpg
 thumbnailImage: eclipse-phase-head.jpg
 category: ep-stronnictwa
+excerpt: Marsjańscy redneckowie i autonomiści występujący przeciw hiperkorporacjom
 tags:
   - rpg
 slots:
@@ -12,12 +13,10 @@ slots:
     - type: static
       content: |
         ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
+        Abolicjonizm niewolnictwa, Marsjańska niepodległość, Marsjański nacjonalizm, Kontrola terraformowania
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Asioka ([Mars](#))
 ---
-**Biokonserwatyści** są mocno podejrzliwi i krytyczni wobec transhumanistycznej ścieżki rozwoju, na jaką weszła rasa ludzka. Są zagorzałymi zwolennikami ograniczenia rozwoju technologiczneggo ze względu na zagrożenia, jakie stwarza dla istniejącego porządku społecznego. Do biokonserwatystów zaliczyć można ludzi o szerokim spektrum poglądów politycznych: od prawicowych konserwatystów kulturowych po lewicowych ekologów. Choć ich wpływ kurczy się, wciąż mają szeroką bazę społęczną wśród wyznawców większości starych [group religijnych](Religie.md "Religie"), w [Republice Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") oraz wśród niektórych [ekstremistów](Ekstremi%C5%9Bci).
+Wzbierający resentyment wobec dominacji [hiperkorpów]{pl/ep-hiperkorporacja} na Marsie znalazł ujście w ruchu **Fremenów**. Transludzie ci, należący do marsjańskich niższych klas społecznych opowiadają się za bardziej egalitarną strukturą społeczną. Ten masowy ruch społeczny pozostaje pod wyraźnym ideowym wpływem [Autonomistów]{pl/ep-przymierze-autonomistow} i domaga się lokalnej kontroli nad projektami terraformowania Marsa, położenia kresu powszechnej hiperkorporacyjnej praktyce zatrudniania [infomorfów]{pl/ep-infomorf} na [kontraktach służebnych](#) i kontroli nad marsjańskimi [Wrotami pandoriańskimi](#).
 
-Biokonserwatyści sprzeciwiają się między innnymi [nanofabrykacji](./Encyklopedia/Nanofabrykacja.md), modyfikacjom genetycznym, klonowaniu, modyfikacjom kognitywnym, [sztucznym inteligencjom](Sztuczne+inteligencje "Świadome systemy komputerowe zaprogramowane na podobieństwo ludzkiego rozumu"), ([upliftowaniu](./Encyklopedia/Uplift.md) i [forkowaniu](./Encyklopedia/Fork.md). Niektórzy są nawet przeciwko kopiom zapasowym, [emulacjom umysłu](./Encyklopedia/Emulacja-ego.md) i [przyodziewaniu](./Encyklopedia/Przyodziewanie.md), odrzucając je jako nienaturalne, afront dla woli Boskiej lub jako technologie, na które transludzkość nie jest jeszcze w pełni gotowa. Są też przeciwni ekspansji poza [Wrota pandoriańskie](Wrota+pandoria%C5%84skie) twierdząc, że transludzkość nie jest przygotowana na to, co może napotkać op drugiej stronie. Większość biokonserwatystów opowiada się za [starą ekonomią](Stara+ekonomia "Stara ekonomia").
-
-Biokonserwatyści zdobyli wielu zwolenników i uznania na skutek [Upadku](Upadek.md) - apokaliptycznego zdarzenia, które stanowiło ziszczenie tego, przed czym ostrzegali. Jednak mimo to powab technologii oraz usprawnienia i wygody, jakie oferuje pracują przeciwko nim. W rezultacie niektórzy zdesperowani biokoni zwrócili się w kierunku sabotażu i aktów terroryzmu jako wsparcia ich ideologii.
+Większość Fremenów to byli info-uchodźcy, którzy zakończyli już służbę, ale spora część to pierwotni koloniści i serwitorzy, w habitatach których powodzi się znacznie gorzej niż w hiperkorporacyjnych miastach. Wielu odzianych jest w [Rdzawych]{pl/ep-rdzawy} lub [syntetyki]{pl/ep-synt} i woli nomadyczny styl życia w marsjańskiej dziczy. Kilku radykałów chwyciło za broń i przeprowadza ataki przeciw obiektom należącym do hiperkorpów, co zwykle spotyka się z rajdami odwetowymi, które mają na celu zgładzenie Fremeńskich przywódców, co nakręca spiralę przemocy.

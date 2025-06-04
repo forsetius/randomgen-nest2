@@ -2,8 +2,8 @@
 template: page-default
 title: Infomorf
 subtitle: Infomorph
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#headerImage: ep19-head.jpg
+#thumbnailImage: ep19-head.jpg
 excerpt: Wirtualny morf pozwalający uruchomić Ego w środowisku Splotu
 category: ep-morf
 subcategoryName: Infomorfy
@@ -13,18 +13,17 @@ slots:
   bottom:
     - type: category
       category: ep-infomorf
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Dla tysięcy [info-uchodźców](#), przyodziewanie niematerialnej formy cyfrowej jest ich jedynym wyjściem. Niektórzy są ulokowani w oddzielonych od [Splotu]{pl/ep-splot} wirtualnych przechowalniach czy wręcz nieaktywnych magazynach, zamkniętych przez habitaty, które nie miały wystarczających zasobów by ich obsłużyć. Inni są uwięzieni w [wirtualnych symulacjach](#), zabijając czas w wybrany przez siebie sposób, czekając aż nadejdzie szansa na [przyodzianie](#).
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Całkiem spora część jednak może swobodnie poruszać się po Splocie i prowadzić przez niego swobodne interakcje z transludźmi przyodzianymi w fizyczne [morfy]{pl/ep-morf}. Są oni na bieżąco z aktualnymi wiadomościami, a czasem nawet przejmują inicjatywę tworząc polityczne bloki walczące o prawa i przywileje dla infomorfów.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
+Cyfrowe życia pozostałych infomorfów uwiązane są do ich wirtualnej pracy. Pracują oni na [kontraktach służebnych](#) [hiperkorpów]{pl/ep-hiperkorporacja} aż zapracują na swojego fizycznego morfa, choćby i jakiegoś prostego [Blaszaka]{pl/ep-blaszak}. Inni nie mają nawet takich widoków, pracując jako wirtualni niewolnicy w fabrykach różnorakich [syndykatów zbrodni]{pl/ep-przestepczosc}.
 
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+Niektórzy transludzie świadomie wybierają życie infomorfa - główne pobudki to:
+
+*   hedonizm - symulacje i gry VR po wsze czasy
+*   eskapizm - strata bliskich skłania ich do oderwania się od trosk fizyczności na jakiś czas
+*   poszukiwanie wolności - idą gdziekolwiek zaniesie ich Splot - niektórzy nawet wysłali cyfrowe kopie do odległych układów planetarnych, mając nadzieję, że ktoś odbierze ich sygnał, gdy tam dotrą)
+*   eksperymentowanie - forkowanie i merdże, prowadzenie symulacji i dziwniejsze rzeczy
+*   nieśmiertelność

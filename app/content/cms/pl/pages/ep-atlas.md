@@ -11,7 +11,8 @@ excerpt: Transludzkość w Układzie Słonecznym i poza nim
 lead: |
   Transludzkość zaludniła cały Układ Słoneczny oraz te miejsca poza nim, które są dostępne przez Bramy Pandoriańskie
 tags: 
-  - eclipse-phase
+  - rpg
+  - TODO-tresc
 slots:
   bottom:
     - type: category

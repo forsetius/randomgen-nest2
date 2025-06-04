@@ -5,17 +5,17 @@ subtitle: Eclipse Phase
 #headerImage: eclipse-phase-atlas-head.jpg
 #thumbnailImage: eclipse-phase-atlas-card.jpg
 category: eclipse-phase
-sort: 2
-excerpt: Transludzkość zaludniła cały Układ Słoneczny oraz te miejsca poza nim, które są dostępne przez Bramy Pandoriańskie
+sort: 4
+excerpt: "W Eclipse Phase przewija się kilka istotnych motywów przewodnich: transhumanizm, postapokaliptyczny, konspiracja i groza"
 lead: |
     W Eclipse Phase przewija się kilka istotnych motywów przewodnich:
     
     *   **transhumanizm** - jak ulepszenia człowieka wpływają na niego samego i jego kulturę? jakie wiążą się z nimi zagrożenia i możliwości?
     *   **postapokaliptyczny** - transludzkość przegrała, straciła niemal wszystko. Jak przetrwać? Jak to przetrwanie zmieni transludzi?
     *   **konspiracja** - czy masy są zdolne do osiągnięcia dobrostanu, czy muszą mieć ukrytych pasterzy, którzy lepiej wiedzą, co dla nich dobre? I któż obroni owe masy przed złowrogimi manipulatorami, gotowymi dla własnej korzyści skrycie je zniewolić?
-    *   **groza** - czego nauczymy się w dzieciństwie wydaje nam się naturalne, to co przychodzi później - sprzeczne z naturą, zagrażające. Zmiana wpisana jest w rzeczywistość Eclipse Phase a [Upadek](Upadek.md) spowodował, że zmiany te są drastyczne. Mówiąc o Upadku - wydobył on z transludzi wszystkie te skazy naszej duszy, które sprawiają, że potrafimy być prawdziwymi potworami; efekty są czasem wstrząsające. Ale transczłowiek i jego społeczeństwo to nie wszystko - Kosmos jest obcy i przeogromny i chowa w sobie przerażające tajemnice.
+    *   **groza** - czego nauczymy się w dzieciństwie wydaje nam się naturalne, to co przychodzi później - sprzeczne z naturą, zagrażające. Zmiana wpisana jest w rzeczywistość Eclipse Phase a [Upadek]{pl/ep-upadek} spowodował, że zmiany te są drastyczne. Mówiąc o Upadku - wydobył on z transludzi wszystkie te skazy naszej duszy, które sprawiają, że potrafimy być prawdziwymi potworami; efekty są czasem wstrząsające. Ale transczłowiek i jego społeczeństwo to nie wszystko - Kosmos jest obcy i przeogromny i chowa w sobie przerażające tajemnice.
 tags: 
-  - eclipse-phase
+  - rpg
 ---
 ## Transhumanizm
 
@@ -39,9 +39,9 @@ Nasza cywilizacja rozwija się szybciej niż kiedykolwiek, wkrótce możemy stan
 
 ## Przetrwanie
 
-Akcja Eclipse Phase dzieje się po [Upadku](Upadek.md) - wojnie wydanej transludzkości przez sztuczną inteligencję, która wyniszczyła [Ziemię](Ziemia.md) i spowodowała zagładę ponad 90% transludzi.
+Akcja Eclipse Phase dzieje się po [Upadku]{pl/ep-upadek} - wojnie wydanej transludzkości przez sztuczną inteligencję, która wyniszczyła [Ziemię](#) i spowodowała zagładę ponad 90% transludzi.
 
-Ten rodzaj fantastyki określa się mianem "postapokaliptycznej" - opisuje na rzeczywistość po kataklizmie, który zakończył ludzką cywilizację i któremu towarzyszy eksterminacja istnień ludzkich na niespotykaną skalę. Dokładny mechanizm tej katastrofy jest zwykle mało istotny - może to być wojna nuklearna, zaraza, klęska ekologiczna, uderzenie asteroidy, [Obcy](../Encyklopedia/Faktorzy.md)...
+Ten rodzaj fantastyki określa się mianem "postapokaliptycznej" - opisuje na rzeczywistość po kataklizmie, który zakończył ludzką cywilizację i któremu towarzyszy eksterminacja istnień ludzkich na niespotykaną skalę. Dokładny mechanizm tej katastrofy jest zwykle mało istotny - może to być wojna nuklearna, zaraza, klęska ekologiczna, uderzenie asteroidy, [Obcy](#)...
 
 Tak naprawdę jednak ważna jest [kondycja człowieka](http://en.wikipedia.org/wiki/Human_condition) w zmienionym świecie. Jeśli odebrano nam świat, jaki znamy, jeśli upadła cywilizacja, jeśli codziennie jesteśmy zmuszeni stawiać czoła horrorom - to jak radzi sobie ludzkość? Czy nieszczęście przetrąci kręgosłup naszemu gatunkowi i wymrzemy? A może przeciwnie - stanie się ono szansą na rozwój i [radiację](http://pl.wikipedia.org/wiki/Radiacja_adaptacyjna) do nowych środowisk i warunków? Czy aby nie stracimy przy tym człowieczeństwa?
 
@@ -53,12 +53,12 @@ Innymi kwestiami poruszanymi w fikcji postapokaliptycznej są samotność w obli
 
 Teorie te uznają, że za zdarzeniem (czy łańcuchem zdarzeń), którzy niewtajemniczeni mają za przypadkowe, w rzeczywistości stoi jakaś potężna, sekretna grupa (polityczna, społeczna, religijna, wojskowa, ekonomiczna…), która dzięki swoim ukrytym wpływom i knowaniom dąży do spełnienia swoich celów bez względu na konsekwencje. W bardziej rozbudowanych teoriach spiskowych występują wzajemnie zwalczające się grupy, zakulisowo toczące sekretną wojnę o to, kto będzie kształtował przyszłość świata…
 
-W Eclipse Phase istnieją zarówno realne konspiracje (jak choćby [Zapora](Zapora.md) – organizacja chroniąca transludzkość przed [zagrożeniami godzącymi w jej dalszą egzystencję](http://en.wikipedia.org/wiki/Global_catastrophic_risk), jak i mnogość teorii spiskowych. Te ostatnie biorą się z wielu źródeł:
+W Eclipse Phase istnieją zarówno realne konspiracje (jak choćby [Zapora]{pl/ep-zapora} – organizacja chroniąca transludzkość przed [zagrożeniami godzącymi w jej dalszą egzystencję](http://en.wikipedia.org/wiki/Global_catastrophic_risk), jak i mnogość teorii spiskowych. Te ostatnie biorą się z wielu źródeł:
 
-*   z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITANami](../Encyklopedia/titani.md) a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
-*   z utrudnień w przepływie informacji między poszczególnymi habitatami, rozdzielonymi od siebie pustką Kosmosu czy nawet [Wrotami pandoriańskimi](../Encyklopedia/Wrota-pandorianskie.md). Brakujące informacje na temat złowróżbnych zdarzeń uzupełnia się wtedy zatrważającymi przypuszczeniami, a nawet _trans_ludzki umysł ma tendencję do szukania wzorców i celowości
+*   z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITANami](#) a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
+*   z utrudnień w przepływie informacji między poszczególnymi habitatami, rozdzielonymi od siebie pustką Kosmosu czy nawet [Wrotami pandoriańskimi](#). Brakujące informacje na temat złowróżbnych zdarzeń uzupełnia się wtedy zatrważającymi przypuszczeniami, a nawet _trans_ludzki umysł ma tendencję do szukania wzorców i celowości
 *   z traumy Upadku – transludzie, którzy przeżyli apokalipsę często boją się powtórki. Słabsi psychiczne wszędzie upatrują symptomów knowań TITANów i ich sekretnych sprzymierzeńców. W latach po Upadku wielokrotnie doprowadziło to do polowań na czarownice a nawet pogromów i zniszczenia całych habitatów, na które padł cień podejrzenia.
-*   z rozpaczy uciemiężonych mas niewolników [hiperkorpów](../Encyklopedia/Hiperkorporacja.md), i innych rzuconych na dno nieszczęśników, którzy chcą widzieć sprawców swojego nieszczęścia
+*   z rozpaczy uciemiężonych mas niewolników [hiperkorpów]{pl/ep-hiperkorporacja}, i innych rzuconych na dno nieszczęśników, którzy chcą widzieć sprawców swojego nieszczęścia
 *   z paranoi prawdziwych spiskowców, mierzących innych swoją miarą
 *   z nadmiaru wyzwań i nowych odkryć, których jeszcze nie zdążono satysfakcjonująco wyjaśnić - Obcy, wrota pandoriańskie, artefakty TITANów i wymarłych cywilizacji rozpalają wyobraźnię nie pojedynczych transludzi, ale całych mas!
 
@@ -68,4 +68,4 @@ Z drugiej strony, nikt nie jest w stanie zapewnić, że wszystkie teorie spisku 
 
 **Groza** przyjmuje wiele form, jednak w Eclipse Phase najczęściej jest to groza psychologiczna. Postaci w tym świecie stają przecież czoła niepewności przetrwania (zarówno własnego, jak i przetrwania całego gatunku), strach przed nieznanym, poczucie przejmującej pustki i obojętności Wszechświata... Czasem strachy przyjmują formę realną i postaci spotykają pośród gwiazd Rzeczy i Istoty, których być nie powinno czy odpychających Obcych. A przede wszystkim są świadkami krzywd i niesprawiedliwości, jakie transludzie są w stanie wyrządzić sobie nawzajem - a pośród pustki Kosmosu, gdy wydaje się, że żadne społeczeństwo nie patrzy i nie ocenia, są to rzeczy przejmujące i straszne.
 
-Mimo wszystkich zdobyczy nauki i techniki, którymi rozporządzają transludzie, wciąż nieobca jest im groza dopadająca ich, gdy ktoś odbierze im kontrolę nad własną tożsamością - co nie jest rzadkie w dobie kopiowania [Ego](../Encyklopedia/Ego.md) i chaosu Upadku. Wielu transludzi odchodzi od zmysłów, gdy przemiany kulturowe i technologiczne wstrząsną ich postrzeganiem świata - a to przecież przy tym tempie rozwoju zdarza się coraz częściej. Są też tacy, którzy zbyt głęboko wzięli sobie do serca maksymę "umysł to software - zaprogramuj go" i przeholowali z edycją, gubiąc swoją osobowość.
+Mimo wszystkich zdobyczy nauki i techniki, którymi rozporządzają transludzie, wciąż nieobca jest im groza dopadająca ich, gdy ktoś odbierze im kontrolę nad własną tożsamością - co nie jest rzadkie w dobie kopiowania [Ego](#) i chaosu Upadku. Wielu transludzi odchodzi od zmysłów, gdy przemiany kulturowe i technologiczne wstrząsną ich postrzeganiem świata - a to przecież przy tym tempie rozwoju zdarza się coraz częściej. Są też tacy, którzy zbyt głęboko wzięli sobie do serca maksymę "umysł to software - zaprogramuj go" i przeholowali z edycją, gubiąc swoją osobowość.

@@ -2,29 +2,26 @@
 template: page-default
 title: Syntmorf
 subtitle: Synthmorph
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#headerImage: pano22-head.jpg
+#thumbnailImage: pano22-head.jpg
 excerpt: W pełni robotyczne powłoki na Ego
 category: ep-morf
 subcategoryName: Syntmorfy
 tags:
   - rpg
 slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
   bottom:
     - type: category
       category: ep-syntmorf
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Morfy syntetyczne to powłoki w całości robotyczne. Przed [Upadkiem]{pl/ep-upadek} były najczęściej pilotowane przez [SI]{pl/ep-sztuczna-inteligencja} jednak po Upadku niedobory [biomorfów]{pl/ep-biomorf}, a także miejsca w stosownych dla biomorfów habitatach spowodowały, że koniecznością stało się przyodziewanie info-uchodźców w morfy mechaniczne, najczęściej andro- lub gynoidy. Są one tańsze, szybsze w produkcji, szeroko dostępne i niewymagające udogodnień środowiskowych potrzebnych biomorfom.
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Syntmorfy w wielu habitatach (w szczególności w [Wewnętrzu]{pl/ep-wewnetrze} są traktowane z pogardą - jako tania, gorsza alternatywa, z której korzystają tylko biedni i zdesperowani. Postawa taka wzięła się stąd, że po Upadku, gdy habitaty były po brzegi wypełnione info-uchodźcami, przestawiono produkcję na tanie, uproszczone modele, które szybko schodziły z taśmy bez szczególnej kontroli jakości. W takie [Blaszaki]{pl/ep-blaszak} masowo odziewano pragnących ciała uchodźców i wkrótce powstała cała nowa klasa społeczna - [szmelcen-proletariat](szmelcen-proletariat).
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
+Niemniej jednak syntmorfy mają wiele zalet w porównaniu z biomorfami:
 
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+*   **brak funkcji biologicznych** - nie muszą oddychać, jeść, pić, defekować. Nie starzeją się i nie chorują - co nie znaczy, że się nie zużywają, jednak ich naprawy są prostsze.
+*   **filtry bodźców** - syntmorfy mogą regulować intensywność symulowanych bodźców bólowych i czuciowych, aż do kompletnego ich wytłumienia. Stąd mimo, iż odczuwają gorąco, zimno i ból, może im to nie przeszkadzać. W szczególności oznacza to, że ignorują modyfikator -10 za pierwszą ranę (w FATE pierwsze -1).
+*   **odporność na szok elektryczny** - syntmorfy nie mają układu nerwowego jako takiego, a jego analog zbudowany jest z optoelektroniki, która jest dobrze chroniona przed interferencją. W związku z tym ataki taserami, EMP itp. są nieskuteczne, choć mogą zakłócić łączność bezprzewodową.
+*   **odporność środowiskowa** - syntmorfy są budowane do pracy w szerokim spektrum środowisk, od zapylonego Marsa przez mroźnego Tytana po próżnię. Są odporne na temperatury i ciśnienia, które zabiłyby biomorfa - należy traktować je jakby miały [Tolerancję temperatury](Tolerancja+temperaury) i [Hermetyczny pancerz](Hermetyczny+pancerz). Syntmorfy przeznaczone do bardziej ekstremalnych środowisk - jak korona Słońca, powierzchnia Wenus czy podpowierzchniowe oceany księżyców Zewnętrza - mają dodatkowe adaptacje środowiskowe.
+*   **wytrzymałość** - obudowa syntmorfów spełnia również funkcję ochronną i działa jak pancerz.

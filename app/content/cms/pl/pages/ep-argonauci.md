@@ -2,8 +2,8 @@
 template: page-default
 title: Argonauci
 subtitle: Argonauts
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: argo2-head.jpg
+thumbnailImage: argo2-head.jpg
 category: ep-organizacje
 tags:
   - rpg
@@ -14,12 +14,14 @@ slots:
         ## Memy
         Społeczeństwo Open Source, Wolność informacyjna, Odpowiedzialność społeczna, Technoprogresywizm
         ## Główne habitaty
-        [Stacja Mitre](#) ([orbita Luny](#), [Markov](#) ([Pas Kuipera](#), [Hooverman-Geischecker](#) ([Słońce](#)
+        - Mitre (orbita [Luny](#), 
+        - Markov ([Pas Kuipera](#)), 
+        - Hooverman-Geischecker ([Słońce](#))
 ---
-Grupa nazywająca się Argonautami jest publiczną organizacją propagującą społecznie odpowiedzialne używanie technologii. Grupa wzięła swoją nazwę od [przed-Upadkowej]{pl/ep-upadek} Jazonów - grupy doradczej przy rządzie Stanóœ Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Podobnie Argonauci oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym [Układzie Słonecznym](#), odmawiając jednocześnie uwikłania się w bieżącą politykę Układu.
+Grupa nazywająca się Argonautami jest publiczną organizacją propagującą społecznie odpowiedzialne używanie technologii. Grupa nawiązuje nazwą do Jazonów - [przed-Upadkowej]{pl/ep-upadek} grupy doradczej przy rządzie Stanów Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Podobnie Argonauci oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym [Układzie Słonecznym](#), odmawiając jednocześnie uwikłania się w bieżącą politykę Układu.
 
-Tuż Upadkiem drogi Argonautów i [hiperkorporacji]{pl/ep-hiperkorporacja} rozeszły się, co w wielu przypadkach oznaczało zawłaszczanie korporacyjnych danych i zasobów. Jednak później, w trakcie Upadku ich kompetencje i wsparcie, jakiego udzielali wszystkim potrzebującym w walce z TITANami przywróciło im respekt i poważanie wśród decydentów.
+Tuż Upadkiem drogi Argonautów i [hiperkorporacji]{pl/ep-hiperkorporacja} rozeszły się, co w wielu przypadkach oznaczało zawłaszczanie korporacyjnych danych i zasobów. Jednak później, w trakcie Upadku ich kompetencje i wsparcie, jakiego udzielali wszystkim potrzebującym w walce z [TITANami](#) przywróciło im respekt i poważanie wśród decydentów.
 
-Argonauci są gorącymi orędownikami ruchu Open Source, propagującymi otwarty dostęp do technologii i informacji. Ich zdaniem, zapewnienie równego dostępu do wiedzy i osiągnięć transludzkości będzie sprzyjać jej wzrostowi i bezpieczeństwu, zwiększając jej przygotowanie na przyszłe zagrożenia i wyzwania. Dlatego Argonauci zwykle nalegają, by zapłata za ich usługi przyjmowała formę opublikowania w publicznej Sieci jakiejś skądinąd niedostępnej informacji: tajemnic handlowych hiperkorpów, danych badawczych, szablonów do nanofabów, ukrytych przed-Upadkowych archiwów itd. W celu przechowywania tego rodzaju udostępnionych informacji Argonauci utrzymują liczne otwarte bazy danych i archiwa.
+Argonauci są gorącymi orędownikami ruchu [Open Source](https://pl.wikipedia.org/wiki/Otwarte_oprogramowanie), propagującymi otwarty dostęp do technologii i informacji. Ich zdaniem, zapewnienie równego dostępu do wiedzy i osiągnięć transludzkości będzie sprzyjać jej wzrostowi i bezpieczeństwu, zwiększając jej przygotowanie na przyszłe zagrożenia i wyzwania. Dlatego Argonauci zwykle nalegają, by zapłata za ich usługi przyjmowała formę opublikowania w publicznej Sieci jakiejś skądinąd niedostępnej informacji: tajemnic handlowych hiperkorpów, danych badawczych, szablonów do [nanofabów](#), ukrytych przed-Upadkowych archiwów itd. W celu przechowywania tego rodzaju udostępnionych informacji Argonauci utrzymują liczne otwarte bazy danych i archiwa.
 
-Choć to otwarta organizacja, chodzą plotki, że Argonauci poza częścią otwartą i widoczną publicznie, mają też tajny wewnętrzny krąg, któremu podlegają szeregowi członkowie. Teorię tą podsyca istnienie Medean - konspiracyjnego, paramilitarnego skrzydła tej organizacji. Ich funkcją jest ochrona wysokiej rangi Argonautów i zasobów grupy.
+Choć to otwarta organizacja, chodzą plotki, że Argonauci poza częścią otwartą i widoczną publicznie, mają też tajny wewnętrzny krąg, któremu podlegają szeregowi członkowie. Teorię tą podsyca istnienie [Medean](#) - konspiracyjnego, paramilitarnego skrzydła tej organizacji. Ich funkcją jest ochrona wysokiej rangi Argonautów i zasobów grupy.

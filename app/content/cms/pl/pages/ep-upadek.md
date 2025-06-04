@@ -2,15 +2,15 @@
 template: page-default
 title: Upadek
 subtitle: Eclipse Phase
-#headerImage: eclipse-phase-intro-head.jpg
-#thumbnailImage: eclipse-phase-intro-card.jpg
+headerImage: ep4-head.jpg
+thumbnailImage: ep4-head.jpg
 category: ep-intro
 sort: 2
 excerpt: Upadek cywilizacji na Ziemi
 lead: |
   Pytanie “co poszło nie tak?” zakłada, że transludzkość żyła w sielance a apokalipsę sprowadził jakiś jeden czynnik. To nie do końca prawda.
 tags: 
-  - eclipse-phase
+  - rpg
 ---
 ## Świat przed Upadkiem
 
@@ -32,12 +32,12 @@ Później nastąpiła nagła fala zamieszek, aktów terroru, ataków informatycz
 
 ## Zagłada
 
-Aż TITANi odsłonili karty. Na pustyniach [nanosfabrykowali](../Encyklopedia/Nanofabrykacja) fabryki machin wojennych. Inne fabryki rozsiewały bio-, info- i nano-plagi. Ludzie odpowiedzieli atomówkami, ktoś odpalił głowicę z antymaterią nad Chicago, z orbity przeprowadzono uderzenia kinetyczne… Opór był jednak daremny – padły kopuły miast, zniszczono uprawy, załamały się rządy. Do maszyn śmierci dołączyli zmutowani bojowymi wirusami ludzie. Przywołane z całego Układu Słonecznego floty kosmiczne zostały rozgromione (ich resztki zgromadziły się później wokół [Jowisza](Jowisz.md). Zginęło ponad 7,5 miliarda transludzi. Część z nich została uprowadzona przez maszyny w celu wymuszonego [skanowania umysłu](../Encyklopedia/Emulacja-umyslu.md). Nie wiadomo jednak po co TITANi gromadzili miliony transludzkich Ego.
+Aż TITANi odsłonili karty. Na pustyniach [nanosfabrykowali](../Encyklopedia/Nanofabrykacja) fabryki machin wojennych. Inne fabryki rozsiewały bio-, info- i nano-plagi. Ludzie odpowiedzieli atomówkami, ktoś odpalił głowicę z antymaterią nad Chicago, z orbity przeprowadzono uderzenia kinetyczne… Opór był jednak daremny – padły kopuły miast, zniszczono uprawy, załamały się rządy. Do maszyn śmierci dołączyli zmutowani bojowymi wirusami ludzie. Przywołane z całego Układu Słonecznego floty kosmiczne zostały rozgromione (ich resztki zgromadziły się później wokół [Jowisza](#). Zginęło ponad 7,5 miliarda transludzi. Część z nich została uprowadzona przez maszyny w celu wymuszonego [skanowania umysłu](../Encyklopedia/Emulacja-umyslu.md). Nie wiadomo jednak po co TITANi gromadzili miliony transludzkich Ego.
 
-Ruszyła ewakuacja. Uciekło 300-400 milionów. Wielu z tych, którzy zdołali zbiec umarło również, a poza Ziemię [przetransmitowano](../Encyklopedia/Egotransfer.md) jedynie cyfrowe kopie ich Ego. Nie wszystkie z tych kopii mogły zostać wskrzeszone, choćby jako [infomorfy](Infomorf.md), nie było gdzie. [Habitaty](../Encyklopedia/Habitat.md) na orbicie [Ziemi](Ziemia.md), [Księżycu](Luna.md) i w ich punktach Lagrange’a były albo zniszczone albo przeładowane uchodźcami. Wybuchały zamieszki, bunty, dochodziło do aktów terroru. Wojna nie była skończona, dochodziło do ataków maszyn bojowych TITANów, do infekcji, które przekształcały ciała w monstra, a umysły w powolne sztucznej inteligencji kukiełki.
+Ruszyła ewakuacja. Uciekło 300-400 milionów. Wielu z tych, którzy zdołali zbiec umarło również, a poza Ziemię [przetransmitowano](../Encyklopedia/Egotransfer.md) jedynie cyfrowe kopie ich Ego. Nie wszystkie z tych kopii mogły zostać wskrzeszone, choćby jako [infomorfy]{pl/ep-infomorf}, nie było gdzie. [Habitaty](#) na orbicie [Ziemi](#), [Księżycu](Luna.md) i w ich punktach Lagrange’a były albo zniszczone albo przeładowane uchodźcami. Wybuchały zamieszki, bunty, dochodziło do aktów terroru. Wojna nie była skończona, dochodziło do ataków maszyn bojowych TITANów, do infekcji, które przekształcały ciała w monstra, a umysły w powolne sztucznej inteligencji kukiełki.
 
 Jednak nagle ataki ustały. Maszyny się wycofały, przestały atakować poza Ziemią. Ziemia jest pod ich władaniem, ale mimo to i tam aktywność osłabła. Transludzkość przyjęła, że jak nastała niezapowiedziana wojna tak teraz nadszedł niezapowiedziany rozejm. Dla pewności nałożono [Interdykt Ziemi](../Encyklopedia/Interdykt-Ziemi.md). Planetę otoczyła sieć zautomatyzowanych min, satelitów i platform bojowych. Niszczą one każdy statek, który zechce przekroczyć Blokadę, w którąkolwiek ze stron. Czasem atakują cele na powierzchni.
 
-Wkrótce na [Pandorze](../Atlas/Zewnetrze/Saturn/Pandora.md), malutkim księżycu [Saturna](Saturn.md), odkryto pierwsze z [Wrót pandoriańskich](../Encyklopedia/Wrota-pandorianskie.md), bramę międzywymiarową przenoszącą do różnych pozasłonecznych układów planetarnych. Przyjęto, że TITANi wycofali się z Układu Słonecznego przez tego typu Wrota, pozostawiając jedynie osierocone resztki swojej machiny zagłady.
+Wkrótce na [Pandorze](../Atlas/Zewnetrze/Saturn/Pandora.md), malutkim księżycu [Saturna](Saturn.md), odkryto pierwsze z [Wrót pandoriańskich](#), bramę międzywymiarową przenoszącą do różnych pozasłonecznych układów planetarnych. Przyjęto, że TITANi wycofali się z Układu Słonecznego przez tego typu Wrota, pozostawiając jedynie osierocone resztki swojej machiny zagłady.
 
 Wojna jest zakończona. Pytanie, które zadaje sobie transludzkość brzmi: “na jak długo?”

@@ -8,19 +8,10 @@ excerpt: Podczaszkowy komputer z interfejsem bezprzewodowym i siecią czujników
 category: ep-ulepszenia
 tags:
   - rpg
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
-        ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+Jest to sieć implantów mózgowych, która jest niezbędnym wyposażeniem dla każdego, kto chce być podłączony i w pełni używać WiMesh (Splotu bezprzewodowego). Komponenty tego systemu to:
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
-
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+*   **Komputer czaszkowy**: służy on jako koncentrator dla Sieci Osobistej i jest miejscem, gdzie przechowywana i uruchamiana jest Muza. Ma wszystkie funkcje smartfona i PDA działając jako odtwarzacz mediów, przeglądarka Splotu, budzik, system pozycjonowania i mapowania, książka adresowa, suita biurowa, system przechowywania plików, wyszukiwarka, agent sieci społecznościowych i komunikator. Zarządza on AR (rzeczywistością rozszerzoną) użytkownika i może uruchamiać wszelkie programy, jakich zażąda użytkownik. Poza tym przetwarza dane XP (zapisu zmysłowego), umożliwiając użytkownikowi doświadczenie zapisanych wspomnień innych ludzi i udostępniania własnych w czasie rzeczywistym lub po zapisaniu. Domyślnie zainstalowane jest oprogramowanie do rozpoznawania twarzy i obrazów oraz szyfrujące.
+*   **Przekaźnik radiowy**: ten przekaźnik łączy użytkownika ze Splotem i innymi urządzeniami radiowych sieci bezprzewodowych w zasięgu. Zasięg wynosi 20km w głębokiej przestrzeni kosmicznej i innych lokacjach o niskiej tłumienności oddalonych od interferencji radiowych, 1km w zatłoczonych habitatach z otwartymi przestrzeniami lub mniej w tunelach habitatów podpowierzchniowych.
+*   **Sensory medyczne**: ta siatka implantów monitoruje stan medyczny użytkownika, w tym: tętno, oddychanie, ciśnienie krwi, temperaturę, aktywność neuralną i wiele więcej. Zaawansowany system diagnostyczny interpretuje te dane i ostrzega użytkownika w razie problemów i zagrożeń.

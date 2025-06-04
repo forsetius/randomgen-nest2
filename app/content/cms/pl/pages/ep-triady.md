@@ -2,8 +2,8 @@
 template: page-default
 title: Triady
 subtitle: Triads
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: trans5-head.jpg
+thumbnailImage: trans5-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg
@@ -11,15 +11,14 @@ slots:
   aside:
     - type: static
       content: |
-        ## Memy
-        Biokonserwatyzm, Prymitywizm, Prawo naturalne
         ## Główne habitaty
-        [Vo Nguyen](Vo+Nguyen) ([Orbita Ziemi](Ziemia.md))
+        - Quin Long ([Trojańczycy marsjańscy](#))
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](./Encyklopedia/Przyodziewanie.md) się [Ego](Ego "Ego"). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia](./Encyklopedia/Ulepszenia.md), które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku](Upadek.md).
+**Triady** jako jedyny większy ziemski syndykat zbrodni przeżyły [Upadek]{pl/ep-upadek} bez większego szwanku. W dekadę po nim zdominowały półświatek [Układu Słonecznego]((#)) przez samą liczbę swych członków oraz sięgające stulecia wstecz wpływy polityczne i ekonomiczne. Jeszcze przed upadkiem wyewoluowały w legalne przedsięwzięcia i mała konsorcja ekonomiczne a następnie razem z masami chińskich robotników wzięły udział w podboju kosmosu od najwcześniejszej fazy jego kolonizacji. Wpływy Triad sięgają coraz to nowych habitatów - eksploatując rozwarstwienie majątkowe i restrykcyjne polityki imigracyjne, tworzą w nich kwitnące szaro- i czarnorynkowe biznesy powiązane znajomościami i silnie osadzone w kulturze chińskiej (lub w tym, co z niej pozostało).
 
-Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, orkach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli wymaga to przyzwyczajenia się do posiadania 8 czy 10 odnóży.
+Choć jest cała masa małych band nazywających się triadami (zwykle ograniczających działalność do jednego habitatu), to istnieją cztery duże warte wspomnienia grupy, z których każda ma wpływy wystarczające do prowadzenia działalności kryminalnej w całym Układzie. Tradycyjnie operują przez małe lub średnie gangi albo używają legalnych biznesów jako przykrywki dla swej działalności.
 
-Z drugiej strony mamy [Uplifty](./Encyklopedia/Uplift.md) - zwierzęta podniesione do rozumności ludzkiej. Ich Ego nie musi pozostawać w morfie odpowiednim do ich oryginalnego gatunku. I tak na przykład ośmiornica może przyodziać się w morfa zarówno oktomorfa, któregoś z morfów ludzkich jak i np. w jakiegoś morfświna.
-
-Biomorfy to najdroższe z morfów. Jest to spowodowane ich czasem produkcji i jej kosztownością - na odchowanie biomorfa potrzeba kilku lat. Owszem, ciała są hodowane w zbiornikach przyspieszonego wzrostu, ale z powodu sposobu, w jaki rozwija się umysł transczłowieka nie można przyspieszyć go bardziej niż kilkukrotnie. Drugim powodem wysokiego kosztu biomorfów jest wysoki popyt - niemal każdy chciałby znów mieć biologiczne ciało, doznania oferowane przez syntetyki jednak nie mogą równać się tym autentycznym, generowanym przez ciało. Podaż za to jest niewielka, a do tego ciała biologiczne potrzebują właściwych warunków do życia: atmosfery, ciepłoty, wody, pożywienia, schronienia... Nie jest prosto (a zatem tanio) dostarczyć tego w kosmosie. To wszystko sprawia, że na biomorfa mogą pozwolić sobie tylko lepiej sytuowani.
+*   **14K Triada** kontroluje dużą część branży hazardowej: kasyna, zakłady, ustawione loterie... Przez [Galaxy Entertainment Group](Galaxy+Entertainment+Group) (legalnie działającą [hiperkorporację]{pl/ep-hiperkorporacja}, 14K utrzymuje ścisłe związki z politykami, celebrytami i wpływowymi przedsiębiorcami w kilku znaczących habitatach i stać ją nawet na luksus utrzymywania lokalnej policji - Pain Gow (Podwójnej Ręki). Używając kasyn jako pralni brudnych pieniędzy siedzą także w lichwiarskich pożyczkach, haraczach i podrabianiu kredyt- oraz ID-czipów.
+*   **Shui Fong** zajmuje się znacznie uboższą klientelą, zaspokajając nałogi i słabości służebnych habtechów, górników i innych pracowników fizycznych przez dostarczanie narkotyków i nielegalnych [XP](XP), prowadząc gangi sutenerskie, aranżując nielegalne walki i turnieje hazardowe. Między Shui Fong i 14K istnieje zadawniony zatarg, którego przyczyny zginęły w chaosie Upadku, ale który po dziś dzień ożywia nienawiśź między tymi organizacjami.
+*   **Sun Yee On** była kiedyś drugą co do wielkości Triadą Ziemi, o przynależność do której podejrzewano ponad 25 000 osób. Bogacą się głównie na sprzedaży tanich kopii schematów nanofabrykacji i obchodzenia zabezpieczeń nanofabów. Ich legalne produkty są rozprowadzane prze ich korporację [Wuashang](Wuashang) a nielegalne są składane przez zniewolone infomorfy w wirtualnych obozach pracy w odległych rejonach Sieci. Drugim ważnym źródłem dochodów tej triady są fałszywe [pamiątki z Ziemi](pami%C4%85tki+z+Ziemi) takie jak biżuteria, dokumenty, monety i inne rzeczy kolekcjonerskie.
+*   **Gang Wielkiego Kręgu** to najmniejsza z wiekiej czwórki, liczy tylko ok. 8 000 członków. Prowadzą lwią część handu narkotykami w Układzie Słonecznym, produkując narkotyki organiczne, narkotyki celowane i narkoagorytmy wszelkiego rodzaju w ustronnych habitatach czy opuszczonych kopalniach.

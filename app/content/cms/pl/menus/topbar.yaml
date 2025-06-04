@@ -1,27 +1,24 @@
 template: menu-topbar
 menu:
-  - title: O mnie
-    url: /pages/pl/o-mnie.html
-
   - title: Blog
-    url: /pages/pl/blog.html
+    url: "@{blog}"
 
   - title: Programowanie
     columns:
       - title: Programowanie
         items:
           - title: Umiejętności
-            url: /pages/pl/umiejetnosci.html
+            url: "@{umiejetnosci}"
             text: Co umiem, co znam, co mogę
 
       - title: Projekty
         items:
           - title: RandomGen
-            url: /pages/pl/randomgen.html
+            url: "@{randomgen}"
             text: Różnorodne generatory treści, głównie do RPG
 
           - title: PlanetaryNames4Celestia
-            url: /pages/pl/planetarynames4celestia.html
+            url: "@{planetarynames4celestia}"
             text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
 
   - separator: "|"
@@ -29,75 +26,75 @@ menu:
   - label: "Hobby: "
 
   - title: RPG
-    text: Czym są gry fabularne
+    text: FIXME
     columns:
       - title: Eclipse Phase
-        url: /pages/pl/eclipse-phase.html
+        url: "@{eclipse-phase}"
         text: Gra hard-SF w realiach transhumanistycznego horroru
         items:
           - title: Wprowadzenie
-            url: /pages/pl/eclipse-phase_1_intro.html
+            url: "@{ep-intro}"
             text: "Historia przyszłości: rozwój w kierunku transludzkości, wojna z AI i Upadek oraz rozproszenie po Układzie Słonecznym i poza nim"
 
           - title: Encyklopedia settingu
-            url: /pages/pl/eclipse-phase_2_encyklopedia.html
+            url: "@{ep-encyklopedia}"
             text: "Realia Eclipse Phase: neopaństwa, hiperkorporacje, przestępczość, technologia i cała reszta"
 
           - title: Atlas
-            url: /pages/pl/eclipse-phase_3_atlas.html
+            url: "@{ep-atlas}"
             text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
 
           - title: Scenariusz "Ego Sum"
-            url: /pages/pl/eclipse-phase-scenariusz-ego-sum.html
+            url: "@{ep-scenariusz-ego-sum}"
             text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
       - title: UniMechanika
-        url: /pages/pl/rpg-unimechanika.html
+        url: "@{rpg-unimechanika}"
         text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
         items:
           - title: Zasady podstawowe
-            url: /pages/pl/rpg-unimechanika-zasady.html
+            url: "@{rpg-unimechanika-zasady}"
             text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
 
           - title: Dodatki
-            url: /pages/pl/rpg-unimechanika-dodatki.html
+            url: "@{rpg-unimechanika-dodatki}"
             text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
 
-      - title: Przygody
-        url: /pages/pl/rpg-przygody.html
-        text: Scenariusze do gier fabularnych
-        items:
-          - title: Jaskółki [Dungeons & Dragons 5e]
-            url: /pages/pl/dnd-jaskolki.html
-            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
-
-          - title: Krew dla boga krwi [Dungeons & Dragons 5e]
-            url: /pages/pl/dnd-krew-dla-boga-krwi.html
-            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
-
-          - title: Ego Sum [Eclipse Phase]
-            url: /pages/pl/eclipse-phase-scenariusz-ego-sum.html
-            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+#      - title: Przygody
+#        url: "@{rpg-scenariusze}"
+#        text: Scenariusze do gier fabularnych
+#        items:
+#          - title: Jaskółki [Dungeons & Dragons 5e]
+#            url: "@{dnd-scenariusz-jaskolki}"
+#            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
+#
+#          - title: Krew dla boga krwi [Dungeons & Dragons 5e]
+#            url: "@{dnd-scenariusz-krew-dla-boga-krwi}"
+#            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
+#
+#          - title: Ego Sum [Eclipse Phase]
+#            url: "@{ep-scenariusz-ego-sum}"
+#            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
   - title: Astronomia
     columns:
       - title: Planetologia
         items:
           - title: Generowanie układów planetarnych
-            url: /pages/pl/generowanie-ukladow-planetarnych.html
+            url: "@{generowanie-ukladow-planetarnych}"
             text: TODO
 
       - title: Celestia - symulator Wszechświata
         items:
           - title: Celestia
-            url: /pages/pl/celestia.html
+            url: "@{celestia}"
             text: |-
               Nieco zapomniana już aplikacja, Celestia jest symulatorem Kosmosu. 
               Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
               które na niebie są tylko kropkami.  
 
           - title: Lokacje w Układzie Słonecznym
-            url: /pages/pl/planetary-names-scraper.html
+            url: "@{planetary-names-scraper}"
             text: |-
               Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
               i konwertuje je na format symulatora Celestia
@@ -107,11 +104,11 @@ menu:
       - title: Inne
         items:
         - title: Dioramy
-          url: /pages/pl/dioramy.html
+          url: "@{dioramy}"
           text: TODO
 
         - title: Geopolityka
-          url: /pages/pl/geopolityka.html
+          url: "@{geopolityka}"
           text: TODO
 
   - separator: "|"
@@ -121,11 +118,11 @@ menu:
       - title: Generatory
         items:
           - title: Technobełkot
-            url: /pages/pl/technobelkot.html
-            text: Generator Star Trekowego, pseudotechnicznego bełkotu
+            url: "@{technobelkot}"
+            text: Generator startrekowego, pseudotechnicznego bełkotu
 
       - title: Zasoby
         items:
           - title: Lokacje w Układzie Słonecznym
-            url: /pages/pl/lokacje-uklad-slonecznym.html
+            url: "@{lokacje-uklad-slonecznym}"
             text: TODO

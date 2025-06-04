@@ -7,19 +7,9 @@ thumbnailImage: eclipse-phase-head.jpg
 category: ep-organizacje
 tags:
   - rpg
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Memy
-        Społeczeństwo Open Source, Wolność informacyjna, Odpowiedzialność społeczna, Technoprogresywizm
-        ## Główne habitaty
-        [Stacja Mitre](Stacja+Mitre) ([orbita Luny](Luna.md "Luna"), [Markov](Markov) ([Pas Kuipera](Pas+Kuipera), [Hooverman-Geischecker](Hooverman-Geischecker) ([Słońce](S%C5%82o%C5%84ce)
 ---
-Grupa nazywająca się Argonautami jest publiczną organizacją propagującą społecznie odpowiedzialne używanie technologii. Grupa wzięła swoją nazwę od [przed-Upadkowej](Upadek.md) Jazonów - grupy doradczej przy rządzie Stanóœ Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Podobnie Argonauci oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym [Układzie Słonecznym](../Atlas/Uklad-Sloneczny.md), odmawiając jednocześnie uwikłania się w bieżącą politykę Układu.
+Jednym z wiodących tematów dociekań tropicieli spisków jest istnienie grupy [zalążkowych SI](Zal%C4%85%C5%BCkowa+Sztuczna+Inteligencja "SI posiadająca zdolność ulepszania swojego kodu") nazywających się **Prometeuszami**. Plotki na temat tych istot krążyły nawet jeszcze przed [Upadkiem]{pl/ep-upadek} i co jakiś czas powracają z nową intensywnością, gdy tylko jakieś nowe dowody wyjdą na jaw - choć te dowody są niemal zawsze wkrótce potem dyskredytowane.
 
-Tuż Upadkiem drogi Argonautów i [hiperkorporacji](Hiperkorporacje "Hiperkorporacje") rozeszły się, co w wielu przypadkach oznaczało zawłaszczanie korporacyjnych danych i zasobów. Jednak później, w trakcie Upadku ich kompetencje i wsparcie, jakiego udzielali wszystkim potrzebującym w walce z TITANami przywróciło im respekt i poważanie wśród decydentów.
+Według niektórych teorii, Prometeusze są starsi niż [TITANi](#) i mogą być nawet odpowiedzialni za powołanie ich do istnienia. Inne postulują, że Prometeusze to frakcja, która oddzieliła się od TITANów i próbowała przeciwdziałać ich aktywnościpodczas Upadku. Jeszcze inni szepczą z kolei, że Prometeusze nie są w ogóle tworami transludzi ale tak naprawdę są Obcą formą umysłu, który odnalazł Ziemię i teraz aktywnie miesza się w sprawy transludzi.
 
-Argonauci są gorącymi orędownikami ruchu Open Source, propagującymi otwarty dostęp do technologii i informacji. Ich zdaniem, zapewnienie równego dostępu do wiedzy i osiągnięć transludzkości będzie sprzyjać jej wzrostowi i bezpieczeństwu, zwiększając jej przygotowanie na przyszłe zagrożenia i wyzwania. Dlatego Argonauci zwykle nalegają, by zapłata za ich usługi przyjmowała formę opublikowania w publicznej Sieci jakiejś skądinąd niedostępnej informacji: tajemnic handlowych hiperkorpów, danych badawczych, szablonów do nanofabów, ukrytych przed-Upadkowych archiwów itd. W celu przechowywania tego rodzaju udostępnionych informacji Argonauci utrzymują liczne otwarte bazy danych i archiwa.
-
-Choć to otwarta organizacja, chodzą plotki, że Argonauci poza częścią otwartą i widoczną publicznie, mają też tajny wewnętrzny krąg, któremu podlegają szeregowi człnkowie. Teorię tą podsyca istnienie Medean - konspiracyjnego, paramilitarnego skrzydła tej organizacji. Ich funkcją jest ochrona wysokiej rangi Argonautów i zasobów grupy.
+Czy Prometeusze są wrodzy, przyjaźni czy też obojętni pozostaje kwestią domysłów i niezgody. Prominentne organizacje w rodzaju [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} odrzucają wszelkie plotki lub nie wypowiadają się na te tematy.

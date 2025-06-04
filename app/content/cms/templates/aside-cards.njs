@@ -4,7 +4,7 @@
      data-card-template="{{ cardTemplate }}"
      data-items="{{ items | string }}"
      data-per-page="{{ perPage }}"
-     class="g-5"
 ></div>
+<p><a href="/pages/{{ lang }}/{{ category }}.html" class="float-end">Zobacz więcej...</a></p>
 
 <script src="/ui/pager-set.js"></script>
