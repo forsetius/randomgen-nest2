@@ -101,7 +101,7 @@ menu:
 
   - title: Inne
     columns:
-      - title: Inne
+      - title: Kanapowe
         items:
         - title: Dioramy
           url: "@{dioramy}"
@@ -110,6 +110,11 @@ menu:
         - title: Geopolityka
           url: "@{geopolityka}"
           text: TODO
+      - title: terenowe
+        items:
+          - title: Znowu baba mnie wywlokła
+            url: "@{znowu-baba-mnie-wywlokla}"
+            text: Czasami mojej kobiecie albo mnie włącza się szwendacz. Łazimy po lasach, górkach a czasem odkrywamy fajną knajpkę na naszym podwórku
 
   - separator: "|"
 
@@ -118,7 +123,7 @@ menu:
       - title: Generatory
         items:
           - title: Technobełkot
-            url: "@{technobelkot}"
+            url: "@{2022-01-03_generator-technobelkotu}"
             text: Generator startrekowego, pseudotechnicznego bełkotu
 
       - title: Zasoby

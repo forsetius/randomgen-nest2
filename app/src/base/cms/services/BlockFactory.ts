@@ -6,6 +6,7 @@ import { SourceFileValidationException } from '../exceptions/SourceFileValidatio
 import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
+  ApiCallBlock,
   CategoryBlock,
   MediaBlock,
   PageSetBlock,
@@ -45,6 +46,8 @@ export class BlockFactory {
 
   public create(name: string, def: BlockDef): Block {
     switch (def.type) {
+      case BlockType.API_CALL:
+        return new ApiCallBlock(this.templatingService, name, def);
       case BlockType.CATEGORY:
         return new CategoryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:

@@ -5,6 +5,12 @@ const CommonBlockZodSchema = z.object({
   title: z.string().optional(),
 });
 
+export const ApiCallBlockZodSchema = CommonBlockZodSchema.extend({
+  type: z.literal(BlockType.API_CALL),
+  template: z.string(),
+  url: z.string(),
+});
+
 export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string(),
   type: z.literal(BlockType.MEDIA),
@@ -41,6 +47,7 @@ export const TagBlockZodSchema = SetBlockZodSchema.extend({
 });
 
 export const BlockZodSchema = z.discriminatedUnion('type', [
+  ApiCallBlockZodSchema,
   CategoryBlockZodSchema,
   MediaBlockZodSchema,
   PageSetBlockZodSchema,
@@ -49,6 +56,7 @@ export const BlockZodSchema = z.discriminatedUnion('type', [
 ]);
 
 export type BlockDef = z.infer<typeof BlockZodSchema>;
+export type ApiCallBlockDef = z.infer<typeof ApiCallBlockZodSchema>;
 export type CategoryBlockDef = z.infer<typeof CategoryBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
 export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;

@@ -97,17 +97,15 @@ export class Page {
       brand: opts.brand,
     };
 
-    if (typeof this.category !== 'undefined') {
-      opts.fragmentTemplates.forEach((template) => {
-        renderedContents.push({
-          filepath: `${template}_${this.slug}.html`,
-          content: this.templatingService.render(
-            template,
-            data as unknown as Record<string, unknown>,
-          ),
-        });
+    opts.fragmentTemplates.forEach((template) => {
+      renderedContents.push({
+        filepath: `${template}_${this.slug}.html`,
+        content: this.templatingService.render(
+          template,
+          data as unknown as Record<string, unknown>,
+        ),
       });
-    }
+    });
 
     let pageContent = this.templatingService.render(
       this.template,

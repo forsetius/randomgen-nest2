@@ -1,3 +1,4 @@
+export { ApiCallBlock } from './ApiCallBlock';
 export { CategoryBlock } from './CategoryBlock';
 export { MediaBlock } from './MediaBlock';
 export { PageSetBlock } from './PageSetBlock';

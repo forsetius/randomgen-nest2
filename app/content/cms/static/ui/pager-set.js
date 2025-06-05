@@ -7,24 +7,25 @@
 
   const cardTemplate = container.dataset['cardTemplate'] ?? 'fragment-img-card';
   const perPage = parseInt(container.dataset['perPage'] ?? '6', 10);
+  const lang = document.querySelector('html').lang || 'pl';
 
-  const lang = document.getElementsByTagName('html').item(0).lang;
   const fragments = (container.dataset['items'] ?? '')
     .split(',')
     .map((item) => `/pages/${lang}/${cardTemplate}_${item}.html`);
+
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
   const totalPages = Math.ceil(fragments.length / perPage);
 
-  const initialPage =
-    Number(new URLSearchParams(location.search).get('page')) || 1;
+  const urlParams = new URLSearchParams(location.search);
+  const initialPage = Number(urlParams.get('page')) || 1;
+
   loadPage(initialPage, false);
 
   function updateButtons() {
-    if (prevBtn && nextBtn) {
-      prevBtn.classList.toggle('d-none', currentPage <= 1);
-      nextBtn.classList.toggle('d-none', currentPage >= totalPages);
-    }
+    if (!prevBtn || !nextBtn) return;
+    prevBtn.classList.toggle('d-none', currentPage <= 1);
+    nextBtn.classList.toggle('d-none', currentPage >= totalPages);
   }
 
   function loadPage(page, pushHistory = true) {
@@ -41,30 +42,48 @@
     container.style.minHeight = `${container.offsetHeight}px`;
     container.style.opacity = '0';
 
-    const onFadeOut = async () => {
+    function onFadeOut() {
       container.removeEventListener('transitionend', onFadeOut);
+
       container.innerHTML = '';
+
       if (pushHistory) {
         history.pushState({ page: currentPage }, '', `?page=${currentPage}`);
       }
-      for (const url of pageFragments) {
-        await htmx.ajax('GET', url, {
-          target: '#card-container',
-          swap: 'beforeend',
-        });
-      }
-    };
+
+      (async () => {
+        for (const url of pageFragments) {
+          await loadFragment(url);
+        }
+        container.style.opacity = '1';
+        container.style.minHeight = '';
+      })();
+    }
+
     container.addEventListener('transitionend', onFadeOut, { once: true });
   }
 
-  document.body.addEventListener('htmx:afterSwap', (evt) => {
-    if (evt.detail.target.id !== 'card-container') return;
-    loadedCount++;
-    if (loadedCount === pageLength) {
-      container.style.opacity = '1';
-      container.style.minHeight = '';
+  async function loadFragment(url) {
+    try {
+      const res = await fetch(url);
+      if (res.status === 404) {
+        console.warn(`Fragment from ${url} returned 404`);
+        loadedCount++;
+        return;
+      }
+      if (!res.ok) {
+        console.error(`Error ${res.status} while loading ${url}`);
+        loadedCount++;
+        return;
+      }
+      const html = await res.text();
+      container.insertAdjacentHTML('beforeend', html);
+      loadedCount++;
+    } catch (e) {
+      console.error(`Network error while loading ${url}:`, e);
+      loadedCount++;
     }
-  });
+  }
 
   if (prevBtn && nextBtn) {
     prevBtn.addEventListener('click', (e) => {
@@ -78,6 +97,7 @@
   }
 
   window.addEventListener('popstate', (e) => {
-    loadPage(e.state?.page || 1, false);
+    const pg = e.state?.page || 1;
+    loadPage(pg, false);
   });
 })();
