@@ -3,7 +3,7 @@ template: page-default
 title: Exotech
 subtitle: Exotech
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

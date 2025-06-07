@@ -3,7 +3,7 @@ template: page-default
 title: Biokonserwatyści
 subtitle: TODO
 headerImage: mid-biocon-head.jpg
-thumbnailImage: mid-biocon-head.jpg
+#thumbnailImage: mid-biocon-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

@@ -2,8 +2,8 @@
 template: page-default
 title: Synt
 subtitle: Synth
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-clanking-masses-head.jpg
+#thumbnailImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-default
 title: Konsorcjum Planetarne
 subtitle: Planetary Consortium
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

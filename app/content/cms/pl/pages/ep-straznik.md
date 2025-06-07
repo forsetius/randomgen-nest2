@@ -2,8 +2,7 @@
 template: page-default
 title: Pod-strażnik
 subtitle: Security pod
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-security-pod-head.jpg
 category: ep-pod
 tags:
   - rpg

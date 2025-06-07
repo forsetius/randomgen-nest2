@@ -3,7 +3,6 @@ template: page-default
 title: Comet Express
 subtitle: Comet Express
 headerImage: mid-comex-head.jpg
-thumbnailImage: mid-comex-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

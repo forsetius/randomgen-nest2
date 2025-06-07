@@ -3,7 +3,7 @@ template: page-default
 title: Zalążkowa sztuczna inteligencja
 subtitle: Seed AI
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-sztuczna-inteligencja
 tags:
   - rpg

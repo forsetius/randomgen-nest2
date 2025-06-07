@@ -2,8 +2,7 @@
 template: page-default
 title: Blaszak
 subtitle: Case
-headerImage: mid-case-head.jpg
-thumbnailImage: mid-case-head.jpg
+headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 tags:
   - rpg

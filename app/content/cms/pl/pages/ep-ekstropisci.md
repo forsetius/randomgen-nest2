@@ -3,7 +3,7 @@ template: page-default
 title: Ekstropiści
 subtitle: Extropists
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

@@ -2,8 +2,7 @@
 template: page-default
 title: Cognite
 subtitle: Cognite
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-cognite-head.jpg
 category: ep-hiperkorporacja
 excerpt: Kognitywistyka, psychochirurgia i udoskonalanie umysłu
 tags:

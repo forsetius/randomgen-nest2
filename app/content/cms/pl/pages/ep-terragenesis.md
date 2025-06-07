@@ -2,8 +2,8 @@
 template: page-default
 title: Terragenesis
 subtitle: Terragenesis
-headerImage: sun14-head.jpg
-thumbnailImage: sun14-head.jpg
+#headerImage: sun14-head.jpg
+##thumbnailImage: sun14-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

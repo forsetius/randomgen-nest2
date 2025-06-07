@@ -2,8 +2,7 @@
 template: page-full-width
 title: Atlas świata 
 subtitle: Eclipse Phase
-#headerImage: eclipse-phase-atlas-head.jpg
-#thumbnailImage: eclipse-phase-atlas-card.jpg
+headerImage: mid-ep-atlas-head.jpg
 category: eclipse-phase
 subcategoryName: Atlas
 sort: 3

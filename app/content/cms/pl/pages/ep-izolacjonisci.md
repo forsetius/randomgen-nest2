@@ -1,8 +1,6 @@
 ---
 template: page-default
 title: Izolacjoniści
-headerImage: rim11-head.jpg
-thumbnailImage: rim11-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

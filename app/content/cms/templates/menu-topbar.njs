@@ -41,11 +41,11 @@
             
             {% elif topMenuItem.separator %}
                 {# SeparatorMenuItem #}
-                <li class="nav-item d-flex align-items-center px-2 text-muted">{{ topMenuItem.separator }}</li>
+                <li class="nav-item d-flex align-items-center px-2 text-muted only-web">{{ topMenuItem.separator }}</li>
                 
             {% elif topMenuItem.label %}
                 {# LabelMenuItem #}
-                <li class="label text-muted pl-5">{{ topMenuItem.label }}<code> </code></li>
+                <li class="label text-muted pl-5 only-web">{{ topMenuItem.label }}<code> </code></li>
                 
             {% else %}
                 {# SimpleMenuItem #}

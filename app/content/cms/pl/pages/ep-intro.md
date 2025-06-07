@@ -3,11 +3,11 @@ template: page-full-width
 title: Wprowadzenie do świata 
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
-#thumbnailImage: eclipse-phase-intro-card.jpg
+##thumbnailImage: eclipse-phase-intro-card.jpg
 category: eclipse-phase
 subcategoryName: Wprowadzenie
 sort: 1
-excerpt: Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
+excerpt: Transludzka przyszłość po Upadku
 lead: |
   Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
 tags: 

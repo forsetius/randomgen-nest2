@@ -3,7 +3,7 @@ template: page-default
 title: Wspólnota Tytana
 subtitle: Titanian Commonwealth
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-default
 title: Załoga IP
 subtitle: IP Crew
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

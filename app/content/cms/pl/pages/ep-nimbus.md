@@ -3,7 +3,7 @@ template: page-default
 title: Nimbus
 subtitle: Nimbus
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-default
 title: Podstawowe biomody
 subtitle: Basic biomods
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Modyfikacje dla biomorfów polepszające odporność, likwidujące defekty i poprawiające zdrowie
 category: ep-ulepszenia
 tags:

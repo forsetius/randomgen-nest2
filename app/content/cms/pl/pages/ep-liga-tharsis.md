@@ -3,7 +3,7 @@ template: page-default
 title: Liga Tharsis
 subtitle: Tharsis League
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

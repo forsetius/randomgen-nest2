@@ -3,7 +3,7 @@ template: page-default
 title: Eko-konserwatyści
 subtitle: TODO
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

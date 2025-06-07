@@ -1,8 +1,6 @@
 ---
 template: page-full-width
 title: Wtem, na blogu!
-headerImage: index-head.png
-thumbnailImage: index.jpg
 subcategoryName: Blog
 lead: Poniżej znajdziesz wszystkie wpisy z mojego bloga.
 slots:

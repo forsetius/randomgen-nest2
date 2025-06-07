@@ -3,7 +3,7 @@ template: page-default
 title: Dziewięć Żyć
 subtitle: Nine Lives
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

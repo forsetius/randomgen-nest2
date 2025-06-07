@@ -3,7 +3,7 @@ template: page-default
 title: Gniazdo zdalnej kontroli
 subtitle: TODO
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ulepszenia
 tags:
   - rpg

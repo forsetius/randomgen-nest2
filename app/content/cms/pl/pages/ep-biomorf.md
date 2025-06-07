@@ -2,8 +2,7 @@
 template: page-default
 title: Biomorf
 subtitle: Biomorph
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-biomorph-head.jpg
 excerpt: Ciała biologiczne
 category: ep-morf
 subcategoryName: Biomorfy

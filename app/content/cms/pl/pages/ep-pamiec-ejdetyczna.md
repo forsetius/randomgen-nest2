@@ -3,7 +3,7 @@ template: page-default
 title: Pamięć ejdetyczna
 subtitle: Eidetic memory
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Analogowa pamięć fotograficzna
 category: ep-ulepszenia
 tags:

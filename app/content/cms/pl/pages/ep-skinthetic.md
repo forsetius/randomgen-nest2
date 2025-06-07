@@ -3,7 +3,7 @@ template: page-default
 title: Skinthetic
 subtitle: Skinthetic
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

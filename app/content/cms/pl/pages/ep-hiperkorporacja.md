@@ -3,7 +3,7 @@ template: page-full-width
 title: Hiperkorporacja
 subtitle: Hypercorporation
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 subcategoryName: Hiperkorpy
 tags:

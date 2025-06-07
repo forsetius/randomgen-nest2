@@ -1,8 +1,8 @@
 ---
 template: page-blog-post
 title: Afera wokół Fakera
-headerImage: index-head.jpg
-thumbnailImage: index.jpg
+headerImage: mid-afera-fakera-head.jpg
+#thumbnailImage: mid-afera-fakera-head.jpg
 category: blog
 date: 2022-01-11
 excerpt: Sabotaż w pakietach NPM `colors` i `faker`

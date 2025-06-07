@@ -2,8 +2,7 @@
 template: page-default
 title: Cybermózg
 subtitle: Cyberbrain
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-cyberbrain-head.jpg
 category: ep-ulepszenia
 tags:
   - rpg

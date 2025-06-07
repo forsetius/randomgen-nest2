@@ -3,7 +3,7 @@ template: page-default
 title: Eksludzie
 subtitle: Exhumans
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

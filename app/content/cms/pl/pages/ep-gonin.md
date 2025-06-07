@@ -3,7 +3,7 @@ template: page-default
 title: Go-nin
 subtitle: Go-nin
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

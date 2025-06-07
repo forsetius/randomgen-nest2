@@ -3,7 +3,7 @@ template: page-default
 title: Furia
 subtitle: Fury
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Żeński biomorf bojowy
 category: ep-biomorf
 tags:

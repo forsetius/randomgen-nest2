@@ -3,7 +3,7 @@ template: page-default
 title: Rdzawy
 subtitle: Ruster
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Standardowy biomorf z przystosowaniami do życia na Marsie
 category: ep-biomorf
 tags:

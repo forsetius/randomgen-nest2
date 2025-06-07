@@ -42,6 +42,9 @@ main {padding-top: 56px; padding-bottom: 36px;}
 li.label {
     padding: 7px 7px 0 3px;
 }
+@media screen and (max-width: 767px) {
+    .only-web {display: none !important;}
+}
 
 #headerImg {
     display: flex;
@@ -52,7 +55,6 @@ li.label {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, cover;
     background-color: #000;
-    padding: 0 50px 10px 70px;
 }
 #headerImg h1 {
     display: inline-block;
@@ -61,11 +63,15 @@ li.label {
     text-shadow: 0 0 5px #000;
     width: 100%
 }
-#headerImg h1 span.main-title {
-    font-size: 72pt;
+@media screen and (min-width: 768px) {
+    #headerImg {padding: 0 50px 10px 70px;}
+    #headerImg h1 span.main-title {font-size: 72pt;}
+    #headerImg h1 span.subtitle {font-size: 36pt;}
 }
-#headerImg h1 span.subtitle {
-    font-size: 36pt;
+@media screen and (max-width: 767px) {
+    #headerImg {padding: 0 20px 10px 20px;}
+    #headerImg h1 span.main-title {font-size: 60pt;}
+    #headerImg h1 span.subtitle {font-size: 30pt;}
 }
 
 #subHeader {
@@ -92,9 +98,16 @@ article .lead p {
     line-height: 2;
 }
 
-article { padding: 0 75px; }
-article.aside-aware { margin-right: 25%; }
-article .content { column-count: 2; column-gap: 75px; }
+@media screen and (min-width: 768px) {
+    article { padding: 0 75px; }
+    article.aside-aware { margin-right: 25%; }
+    article .content { column-count: 2; column-gap: 75px; }
+}
+@media screen and (max-width: 767px) {
+    article { padding: 0 25px; }
+    article.aside-aware { margin-right: 0; }
+    article .content { column-count: 1; }
+}
 article .content p { break-inside: avoid-column; }
 
 article p,
@@ -109,18 +122,11 @@ article h3 {
 .btn-outline-success:hover small { color: rgba(222, 226, 230, 0.75) !important;}
 footer div.container { margin-left: 0 }
 
-/*@media screen and (min-width: 768px) {*/
-/*    aside {float: right; margin-top: -160px; right: 0; width: 25% !important; margin-right: 1.5% }*/
-/*}*/
-/*@media screen and (max-width: 767px) {*/
-/*    aside {position: inherit; width: auto; margin: 200px 20px 30px 20px;}*/
-/*    article.content  {margin: 0 20px; padding: 0;}*/
-/*}*/
 #card-container {transition: opacity 0.3s ease;opacity: 1; margin-top: 20px;}
 #card-container .col {display: flex;}
 #card-container .card {flex: 1;display: flex;flex-direction: column;}
-.card-img-wrapper {position: relative;flex: 1;background-color: black;overflow: hidden;}
-.card-img-wrapper img {width: 100%; min-height: 250px; display: block; object-fit: cover; object-position: center;}
+.card-img-wrapper {position: relative;flex: 1;background-color: black;overflow: hidden;border-radius: 10px;border: 2.5px solid #303030}
+.card-img-wrapper img {width: 100%; min-height: 240px; display: block; object-fit: cover; object-position: center;}
 .card-img-wrapper .card-img-overlay {
     position: absolute;
     bottom: 0;
@@ -128,17 +134,24 @@ footer div.container { margin-left: 0 }
     right: 0;
     padding: 0;
 }
-.card-title { font-size: 1.2rem; padding: 0 0 10px 0; }
-.card-text p { font-size: 0.9rem; margin-bottom: 0 }
+.card-title { font-size: 1.1rem; padding: 0 0 10px 0; }
+.card-text p { font-size: 0.85rem; margin-bottom: 0 }
 
 section.cards { margin: 40px 0 40px 75px; }
 section .col { margin-top: 36px; padding: 0 18px;}
 section.cards .card-title { left: 0; border: 0; padding: 30px 38px; font-size: 2.5rem; text-shadow: 3px 3px 5px #606060; color: #dddddd}
 .content .card:hover { border: 0; box-shadow: 0px 0px 20px #606060;}
 
-aside { float: right; margin: -160px 1.5% 40px 75px; width: 25% !important; }
-aside { border-radius: 8px; padding-bottom: 6px; }
-aside .card { border: 0; margin-bottom: 12px;}
+@media screen and (min-width: 768px) {
+    aside {float: right; margin-top: -160px; right: 0; width: 25% !important; margin-right: 1.5% }
+}
+@media screen and (max-width: 767px) {
+    main {margin-top: 0; padding-top: 0;}
+    aside {position: inherit; width: auto; margin: 0 20px 30px 20px;}
+    article.content  {margin: 0 20px; padding: 0;}
+}
+aside { border-radius: 12px; padding-bottom: 6px; }
+aside .card { border: 0; border-radius: 8px; margin-bottom: 12px;}
 aside .card-body { margin: 5px 10px; padding: 0 12px; }
 aside .card-title { font-size: 1.45rem; padding: 8px 0 4px 0; margin: 0 28px 0 18px;}
 aside .card-title a { color: white; }

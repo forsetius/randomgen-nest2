@@ -3,7 +3,7 @@ template: page-default
 title: Konstelacja Gwiazdy Zarannej
 subtitle: Morningstar Constellation
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

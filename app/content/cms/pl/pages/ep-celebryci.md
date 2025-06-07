@@ -3,7 +3,6 @@ template: page-default
 title: Celebryci
 subtitle: Glitterati
 headerImage: mid-glitterati-head.jpg
-thumbnailImage: mid-glitterati-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

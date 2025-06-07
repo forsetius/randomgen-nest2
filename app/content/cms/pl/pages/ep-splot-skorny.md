@@ -3,7 +3,7 @@ template: page-default
 title: Splot skórny
 subtitle: TODO
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Podskórny lekki pancerz
 category: ep-ulepszenia
 tags:

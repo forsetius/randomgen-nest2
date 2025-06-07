@@ -3,7 +3,7 @@ template: page-default
 title: Pathfinder
 subtitle: Pathfinder
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 excerpt: "Układy pozasłoneczne: Kolonizacja, Wydobycie, Badania naukowe"
 tags:

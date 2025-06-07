@@ -3,7 +3,7 @@ template: page-default
 title: Prosperity Group
 subtitle: Prosperity Group
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 excerpt: Rolnictwo, Akwakultura, Farmaceutyki
 tags:

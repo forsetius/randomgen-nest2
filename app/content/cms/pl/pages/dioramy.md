@@ -1,8 +1,7 @@
 ---
 template: page-default
 title: Dioramy
-headerImage: diorama-head.jpg
-thumbnailImage:  diorama-card.jpg
+headerImage: mid-diorama-head.jpg
 tags:
   - hobby
   - TODO-media

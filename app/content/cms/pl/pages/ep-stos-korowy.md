@@ -3,7 +3,7 @@ template: page-default
 title: Stos korowy
 subtitle: Cortical stack
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ulepszenia
 tags:
   - rpg

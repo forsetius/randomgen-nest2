@@ -2,7 +2,6 @@
 template: page-default
 title: Eclipse Phase
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
 subcategoryName: Eclipse Phase
 tags:
   - rpg

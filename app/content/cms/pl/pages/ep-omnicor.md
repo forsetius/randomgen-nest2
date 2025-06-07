@@ -3,7 +3,7 @@ template: page-default
 title: Omnicor
 subtitle: Omnicor
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

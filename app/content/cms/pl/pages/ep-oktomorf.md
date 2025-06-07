@@ -3,7 +3,7 @@ template: page-default
 title: Oktomorf
 subtitle: Octomorph
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Ulepszone ośmiornice
 category: ep-biomorf
 tags:

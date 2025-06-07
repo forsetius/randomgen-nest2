@@ -3,7 +3,7 @@ template: page-default
 title: Splot
 subtitle: Mesh
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-encyklopedia
 tags:
   - rpg

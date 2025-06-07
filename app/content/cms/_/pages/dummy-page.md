@@ -2,7 +2,7 @@
 title: Title
 subtitle: ?Subtitle
 headerImage: index
-thumbnailImage: index-head
+#thumbnailImage: index-head
 excerpt: ?Excerpt
 lead: |
   lead

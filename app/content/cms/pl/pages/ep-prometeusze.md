@@ -3,7 +3,7 @@ template: page-default
 title: Prometeusze
 subtitle: Prometheans
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-organizacje
 tags:
   - rpg

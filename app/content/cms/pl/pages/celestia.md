@@ -3,7 +3,6 @@ template: page-default
 title: Celestia
 subtitle: Symulator Wszechświata
 headerImage: astro-head.jpg
-thumbnailImage: astro-card.jpg
 subcategoryName: Zasoby do Celestii
 tags:
   - astro

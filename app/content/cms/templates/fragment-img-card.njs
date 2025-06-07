@@ -5,7 +5,7 @@
         <div class="card-img-wrapper">
           <img src="/media/{{ thumbnailImage }}" alt="">
           <div class="card-img-overlay">
-            <div class="position-absolute bottom-0 bg-dark bg-opacity-50 w-100 p-3">
+            <div class="position-absolute bottom-0 bg-dark bg-opacity-50 w-100 p-1">
               <h3 class="card-title">
                   {{ title }}
               </h3>

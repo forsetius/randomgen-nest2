@@ -2,8 +2,7 @@
 template: page-default
 title: Argonauci
 subtitle: Argonauts
-headerImage: argo2-head.jpg
-thumbnailImage: argo2-head.jpg
+headerImage: mid-argonauts-head.jpg
 category: ep-organizacje
 tags:
   - rpg

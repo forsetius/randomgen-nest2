@@ -2,8 +2,8 @@
 template: page-default
 title: Sex-pod
 subtitle: Sex pod
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-sex-pod-head.jpg
+#thumbnailImage: mid-sex-pod-head.jpg
 category: ep-pod
 tags:
   - rpg

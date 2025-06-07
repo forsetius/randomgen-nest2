@@ -2,8 +2,7 @@
 template: page-default
 title: Podstawowy pod
 subtitle: Basic pod
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-basic-pod-head.jpg
 category: ep-pod
 tags:
   - rpg

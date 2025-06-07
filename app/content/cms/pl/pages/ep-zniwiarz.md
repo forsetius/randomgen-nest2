@@ -3,7 +3,7 @@ template: page-default
 title: Żniwiarz
 subtitle: Reaper
 headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+#thumbnailImage: eclipse-phase-head.jpg
 category: ep-syntmorf
 tags:
   - rpg

@@ -2,7 +2,7 @@
 template: page-blog-post
 title: Generator technobełkotu
 headerImage: startrek-engineers-head.png
-thumbnailImage: startrek-engineers-card.png
+#thumbnailImage: startrek-engineers-head.png
 category: blog
 date: 2022-01-03
 excerpt: |-

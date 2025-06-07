@@ -3,7 +3,7 @@ template: page-default
 title: Diaspora
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
-#thumbnailImage: eclipse-phase-intro-card.jpg
+##thumbnailImage: eclipse-phase-intro-card.jpg
 category: ep-intro
 sort: 3
 excerpt: Zagłada cywilizacji na Ziemi nie oznaczała końca człowieka. Transludzie rozpierzchli się po całym Układzie Słonecznym a nawet poza niego

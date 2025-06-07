@@ -3,7 +3,7 @@ template: page-default
 title: Zdarzyło się za 100 lat...
 subtitle: Eclipse Phase
 headerImage: mid-happened-in-100-years-head.jpg
-thumbnailImage: mid-happened-in-100-years-head.jpg
+#thumbnailImage: mid-happened-in-100-years-head.jpg
 category: ep-intro
 sort: 1
 excerpt: "Najbliższe dekady to galopujący rozwój technologii i społeczeństwa, które usiłują za nim nadążyć"

@@ -3,7 +3,6 @@ template: page-blog-post
 title: I koniec Expanse...
 lead: Skończył się szósty, wg zapowiedzi Amazon Prime, ostatni sezon Expanse. Żal, żal, serce płacze, był to bowiem chyba najtwardszy serial SF ever.
 headerImage: expanse-head.jpg
-thumbnailImage: expanse-card.jpg
 category: blog
 date: 2022-02-03
 tags:

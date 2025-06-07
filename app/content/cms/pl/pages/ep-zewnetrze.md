@@ -3,7 +3,7 @@ template: page-default
 title: Zewnętrze
 subtitle: Eclipse Phase
 #headerImage: eclipse-phase-intro-head.jpg
-#thumbnailImage: eclipse-phase-intro-card.jpg
+##thumbnailImage: eclipse-phase-intro-card.jpg
 category: ep-intro
 sort: 5
 excerpt: Za pasem asteroid

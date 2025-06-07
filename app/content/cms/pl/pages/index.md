@@ -1,8 +1,8 @@
 ---
 template: page-index
 title: Hello, World!
-headerImage: index-head.png
-thumbnailImage: index.jpg
+headerImage: index-head.jpg
+#thumbnailImage: index.jpg
 slots:
   aside:
     - type: category

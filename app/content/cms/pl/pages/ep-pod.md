@@ -2,8 +2,8 @@
 template: page-default
 title: Pod
 subtitle: Pod
-headerImage: eclipse-phase-head.jpg
-thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-pod-head.jpg
+#thumbnailImage: mid-pod-head.jpg
 excerpt: Biologiczno-cybernetyczny erzatz biomorfa
 category: ep-morf
 subcategoryName: Pody

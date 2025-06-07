@@ -3,7 +3,7 @@ template: page-default
 title: Przymierze Autonomistów
 subtitle: Autonomists Alliance
 #headerImage: rim4-head.jpg
-#thumbnailImage: rim4-head.jpg
+##thumbnailImage: rim4-head.jpg
 category: ep-ustroje
 tags:
   - rpg

@@ -5,8 +5,8 @@ export const PageZodSchema = z
   .object({
     title: z.string(),
     subtitle: z.string().optional(),
-    headerImage: z.string().default('index.jpg'),
-    thumbnailImage: z.string().default('index-head.jpg'),
+    headerImage: z.string().default('index-head.jpg'),
+    thumbnailImage: z.string().optional(),
     excerpt: z.string().optional(),
     lead: z.string().optional(),
     content: z.string(),
@@ -22,6 +22,10 @@ export const PageZodSchema = z
     slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
   })
-  .strict();
+  .strict()
+  .transform((data) => ({
+    ...data,
+    thumbnailImage: data.thumbnailImage ?? data.headerImage,
+  }));
 
 export type PageDef = z.infer<typeof PageZodSchema>;
