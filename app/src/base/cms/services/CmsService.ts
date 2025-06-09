@@ -9,7 +9,6 @@ import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
 import { PageFactory } from './PageFactory';
 import { Library } from '../domain/Library';
-import { Page } from '../domain/Page';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
 import { RenderedContent } from '../types/RenderedContent';
@@ -167,8 +166,15 @@ export class CmsService {
     }
   }
 
-  public search(term: string, lang: Locale): Page[] {
-    return this.libraries[lang].search(term);
+  public search(
+    term: string,
+    lang: Locale,
+    limit?: number,
+    template = 'fragment-list-item',
+  ): string {
+    const pages = this.libraries[lang].search(term, limit);
+
+    return pages.map((page) => page.renderBasicData(template)).join('');
   }
 }
 

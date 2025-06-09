@@ -2,11 +2,10 @@
 template: page-default
 title: Diaspora
 subtitle: Eclipse Phase
-#headerImage: eclipse-phase-intro-head.jpg
-##thumbnailImage: eclipse-phase-intro-card.jpg
+headerImage: mid-diaspora-head.jpg
 category: ep-intro
 sort: 3
-excerpt: Zagłada cywilizacji na Ziemi nie oznaczała końca człowieka. Transludzie rozpierzchli się po całym Układzie Słonecznym a nawet poza niego
+excerpt: Zagłada cywilizacji na Ziemi oznaczała rozproszenie transludzi na cały Układzie Słonecznym a nawet poza niego
 lead: |
   Po Upadku, transludzie rozpierzchli się po całym [Układzie Słonecznym](#). Znane ze Starego Globu państwa upadły, kiedy rządy pokazały, że nie są w stanie zapobiec katastrofie. Podobnie upadły stare ponadpaństwowe korporacje i organizacje.
 tags:

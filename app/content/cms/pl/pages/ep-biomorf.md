@@ -3,7 +3,7 @@ template: page-default
 title: Biomorf
 subtitle: Biomorph
 headerImage: mid-biomorph-head.jpg
-excerpt: Ciała biologiczne
+excerpt: Biologiczne ciała dla transludzkich Ego
 category: ep-morf
 subcategoryName: Biomorfy
 tags:

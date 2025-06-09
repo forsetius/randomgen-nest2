@@ -3,7 +3,6 @@ template: page-default
 title: Experia
 subtitle: Experia
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 excerpt: Media, Wiadomości, Rozrywka, Memetyka
 tags:

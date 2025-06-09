@@ -3,7 +3,6 @@ template: page-default
 title: Upadek
 subtitle: Eclipse Phase
 headerImage: mid-fall-head.jpg
-#thumbnailImage: mid-fall-head.jpg
 category: ep-intro
 sort: 2
 excerpt: Upadek cywilizacji na Ziemi

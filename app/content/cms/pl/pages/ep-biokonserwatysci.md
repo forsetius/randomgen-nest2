@@ -1,9 +1,9 @@
 ---
 template: page-default
 title: Biokonserwatyści
-subtitle: TODO
+subtitle: Bioconservatives
+excerpt: Ruch przeciwstawiający się rozwojowi technologicznemu i postępom transhumanizmu 
 headerImage: mid-biocon-head.jpg
-#thumbnailImage: mid-biocon-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

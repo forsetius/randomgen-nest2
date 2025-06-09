@@ -3,7 +3,6 @@ template: page-default
 title: Respirocyty
 subtitle: Respirocites
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 excerpt: Sztuczne krwinki gromadzące dodatkową porcję tlenu, wspomagające oddychanie komórkowe
 category: ep-ulepszenia
 tags:

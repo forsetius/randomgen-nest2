@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Eclipse Phase
+excerpt: Gra RPG hard-SF w klimatach konspiracji i grozy
 headerImage: eclipse-phase-head.jpg
 subcategoryName: Eclipse Phase
 tags:

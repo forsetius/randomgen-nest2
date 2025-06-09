@@ -2,8 +2,8 @@
 template: page-default
 title: Muza
 subtitle: Muse
+excerpt: Osobista ekspertowa AI zainstalowana we wszczepce, pełniąca funkcje sekretarskie
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-sztuczna-inteligencja
 tags:
   - rpg

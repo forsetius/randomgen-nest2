@@ -3,7 +3,6 @@ template: page-default
 title: Motywy przewodnie
 subtitle: Eclipse Phase
 headerImage: mid-ep-themes-head.jpg
-#thumbnailImage: mid-ep-themes-head.jpg
 category: eclipse-phase
 sort: 4
 excerpt: Transhumanizm, postapokalipsa, konspiracja i groza

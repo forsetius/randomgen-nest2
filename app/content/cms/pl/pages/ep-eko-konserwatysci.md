@@ -1,9 +1,9 @@
 ---
 template: page-default
 title: Eko-konserwatyści
-subtitle: TODO
+subtitle: Preservationists
+excerpt: Radykalni ekologowie żądający zachowania istniejących ekosystemów
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

@@ -89,6 +89,13 @@ export class Page {
     };
   }
 
+  public renderBasicData(template: string): string {
+    return this.templatingService.render(
+      template,
+      this.data as unknown as Record<string, unknown>,
+    );
+  }
+
   public render(library: Library, opts: CmsServiceOptions): RenderedContent[] {
     const renderedContents: RenderedContent[] = [];
     const data = {
@@ -233,9 +240,9 @@ export class Page {
 
   private getSearchString(includeContent = false): string {
     return [
-      this.markdownService.stripMarkdown(this.def.title),
-      this.def.subtitle &&
-        this.markdownService.stripMarkdown(this.def.subtitle),
+      this.def.title,
+      this.def.subtitle,
+      this.def.tags?.join(' ').replaceAll('-', ' '),
       this.def.excerpt && this.markdownService.stripMarkdown(this.def.excerpt),
       this.def.lead && this.markdownService.stripMarkdown(this.def.lead),
       includeContent && this.markdownService.stripMarkdown(this.def.content),

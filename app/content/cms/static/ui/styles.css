@@ -46,6 +46,21 @@ li.label {
     .only-web {display: none !important;}
 }
 
+#pageOverlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 1010;
+}
+
+#searchForm {z-index: 1020;}
+#searchResults {z-index: 1030; }
+#searchResults div {margin: 0 16px;}
+#searchResults div:first-child {margin-top: 16px;}
+#searchResults h6 {text-transform:  uppercase; font-size: 11.5pt}
+#searchResults p {font-size: 10pt; color: #dddddd}
+
 #headerImg {
     display: flex;
     height: 300px;

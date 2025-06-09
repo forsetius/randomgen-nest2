@@ -2,8 +2,7 @@
 template: page-full-width
 title: Wprowadzenie do świata 
 subtitle: Eclipse Phase
-#headerImage: eclipse-phase-intro-head.jpg
-##thumbnailImage: eclipse-phase-intro-card.jpg
+headerImage: eclipse-phase-head.jpg
 category: eclipse-phase
 subcategoryName: Wprowadzenie
 sort: 1

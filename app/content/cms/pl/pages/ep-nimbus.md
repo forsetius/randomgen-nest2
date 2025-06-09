@@ -2,8 +2,8 @@
 template: page-default
 title: Nimbus
 subtitle: Nimbus
+excerpt: Elektronika, Systemy sieciowe, [Teletransfery](#), Komunikacja
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

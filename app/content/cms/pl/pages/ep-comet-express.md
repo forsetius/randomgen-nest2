@@ -2,6 +2,7 @@
 template: page-default
 title: Comet Express
 subtitle: Comet Express
+excerpt: Usługi kurierskie, Spedycja, Logistyka
 headerImage: mid-comex-head.jpg
 category: ep-hiperkorporacja
 tags:

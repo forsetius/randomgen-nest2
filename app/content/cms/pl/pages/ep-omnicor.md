@@ -2,8 +2,8 @@
 template: page-default
 title: Omnicor
 subtitle: Omnicor
+excerpt: Nanofabrykacja, Chemikalia, Energia, Antymateria
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg
@@ -12,7 +12,7 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        [Nanofabrykacja](./Encyklopedia/Nanofabrykacja.md), Chemikalia, Energia, [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
+        [Nanofabrykacja](#), Chemikalia, Energia, [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
         ## Główne habitaty
         - MonoLit3 ([Merkury](#)), 
         - Feynman ([Luna](#))

@@ -77,11 +77,19 @@ export class Library {
     return this.pages.get(slug)!;
   }
 
-  public search(term: string): Page[] {
-    return Array.from(this.pages.values()).filter(
-      (page) =>
-        page.searchString.includes(term.toLowerCase()) ||
-        !!page.def.tags?.includes(term.toLowerCase()),
-    );
+  public search(term: string, maxHits?: number): Page[] {
+    let pages = Array.from(this.pages.values())
+      .map((page): [Page, number] => [
+        page,
+        page.searchString.indexOf(term.toLocaleLowerCase()),
+      ])
+      .filter(([, index]) => index > -1)
+      .sort((a, b) => a[1] - b[1]);
+
+    if (maxHits) {
+      pages = pages.slice(0, maxHits);
+    }
+
+    return pages.map(([page]) => page);
   }
 }

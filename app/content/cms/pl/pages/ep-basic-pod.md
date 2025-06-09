@@ -2,6 +2,7 @@
 template: page-default
 title: Podstawowy pod
 subtitle: Basic pod
+excerpt: Tanie ciała składane z klonowanych organów i wszczepów syntetycznych
 headerImage: mid-basic-pod-head.jpg
 category: ep-pod
 tags:

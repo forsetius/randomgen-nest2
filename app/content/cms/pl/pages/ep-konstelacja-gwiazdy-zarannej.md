@@ -2,8 +2,8 @@
 template: page-default
 title: Konstelacja Gwiazdy Zarannej
 subtitle: Morningstar Constellation
+excerpt: Sojusz wenusjańskich miast-aerostatów
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg

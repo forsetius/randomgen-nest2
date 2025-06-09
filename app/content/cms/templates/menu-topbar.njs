@@ -55,4 +55,39 @@
             {% endif %}
         {% endfor %}
     </ul>
+  
+  <form
+      id="searchForm"
+      class="d-flex ms-auto"
+      action="/pages/pl/search.html?term={value}"
+      method="GET"
+      autocomplete="off"
+  >
+    <div class="position-relative">
+      <div class="input-group">
+        <input
+            id="searchInput"
+            class="form-control"
+            type="search"
+            name="term"
+            placeholder="Szukaj..."
+            aria-label="Search"
+            autocomplete="off"
+            hx-get="/search/7"
+            hx-trigger="keyup[window.event.target.value.length >= 3] delay:300ms"
+            hx-target="#searchResults"
+            hx-swap="innerHTML"
+        />
+        <button class="btn btn-outline-success" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      
+      <ul
+          id="searchResults"
+          class="list-group position-absolute d-none w-100 mt-1 bg-body-secondary"
+      >
+      </ul>
+    </div>
+  </form>
 </div>

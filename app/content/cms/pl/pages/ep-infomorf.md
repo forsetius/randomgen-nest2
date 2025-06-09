@@ -3,7 +3,6 @@ template: page-default
 title: Infomorf
 subtitle: Infomorph
 headerImage: mid-infomorph-head.jpg
-#thumbnailImage: mid-infomorph-head.jpg
 excerpt: Wirtualny morf pozwalający uruchomić Ego w środowisku Splotu
 category: ep-morf
 subcategoryName: Infomorfy

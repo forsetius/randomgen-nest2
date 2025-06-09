@@ -1,6 +1,7 @@
 ---
 template: page-blog-post
 title: I koniec Expanse...
+excerpt: Koniec serialu Expanse. Żal, żal, serce płacze ;(
 lead: Skończył się szósty, wg zapowiedzi Amazon Prime, ostatni sezon Expanse. Żal, żal, serce płacze, był to bowiem chyba najtwardszy serial SF ever.
 headerImage: expanse-head.jpg
 category: blog

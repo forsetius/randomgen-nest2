@@ -2,8 +2,8 @@
 template: page-default
 title: Starware
 subtitle: Starware
+excerpt: Robotyka, Inżynieria lotnicza, Konstrukcja habitatów
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

@@ -1,7 +1,8 @@
-import { Controller, Get, Query, Res } from '@nestjs/common';
+import { Controller, Get, Param, Query, Res } from '@nestjs/common';
 import { Locale } from '@shared/types/Locale';
 import { CmsService } from './services/CmsService';
 import type { Response } from 'express';
+import { SearchParamsDto, SearchQueryDto } from './dtos/SearchDto';
 
 @Controller()
 export class CmsController {
@@ -15,11 +16,26 @@ export class CmsController {
     res.redirect(302, `/pages/${lang}/index.html`);
   }
 
-  @Get('/search')
+  @Get('/search/:count')
   public search(
-    @Query('term') term: string,
-    @Query('lang') lang: Locale = Locale.PL,
+    @Param() params: SearchParamsDto,
+    @Query() query: SearchQueryDto,
   ) {
-    return this.contentService.search(term, lang);
+    const { count } = params;
+    const { term, lang } = query;
+
+    return this.contentService.search(term, lang, count);
+  }
+
+  @Get('/search')
+  public searchAll(@Query() query: SearchQueryDto) {
+    const { term, lang } = query;
+
+    return this.contentService.search(
+      term,
+      lang,
+      undefined,
+      'fragment-img-card',
+    );
   }
 }

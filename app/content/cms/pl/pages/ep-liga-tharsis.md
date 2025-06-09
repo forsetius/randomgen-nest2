@@ -2,8 +2,8 @@
 template: page-default
 title: Liga Tharsis
 subtitle: Tharsis League
+excerpt: Stowarzyszenie marsjańskich miast, nominalnie niezależne od Konsorcjum Planetarnego
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-ustroje
 tags:
   - rpg
@@ -14,10 +14,10 @@ slots:
         ## Memy
         Marsjański nacjonalizm
         ## Członkowie ligi 
-        - Asioka] 
-        - Elizjum] 
-        - Noctis-Quinjiao] 
-        - Olympus] 
+        - Asioka
+        - Elizjum
+        - Noctis-Quinjiao
+        - Olympus
         - Valles-New Shanghai 
         i kilkanaście innych
 ---

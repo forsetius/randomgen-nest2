@@ -2,6 +2,7 @@
 template: page-default
 title: Cybermózg
 subtitle: Cyberbrain
+excerpt: Cybernetyczny analog mózgu
 headerImage: mid-ep-cyberbrain-head.jpg
 category: ep-ulepszenia
 tags:

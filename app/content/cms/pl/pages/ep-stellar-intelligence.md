@@ -3,7 +3,6 @@ template: page-default
 title: Stellar Intelligence
 subtitle: Stellar Intelligence
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-hiperkorporacja
 excerpt: Wywiad, Eksploatacja danych, Obrót informacją, Szpiegostwo
 tags:

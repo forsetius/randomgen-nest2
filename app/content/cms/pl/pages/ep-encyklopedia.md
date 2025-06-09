@@ -3,7 +3,6 @@ template: page-full-width
 title: Encyklopedia 
 subtitle: Eclipse Phase
 headerImage: mid-ency-head.jpg
-#thumbnailImage: mid-ency-head.jpg
 excerpt: Wikipedyczny opis świata Eclipse Phase
 category: eclipse-phase
 subcategoryName: Encyklopedia

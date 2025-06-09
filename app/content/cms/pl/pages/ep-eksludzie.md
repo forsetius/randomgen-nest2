@@ -2,8 +2,8 @@
 template: page-default
 title: Eksludzie
 subtitle: Exhumans
+excerpt: Frakcja pragnąca ulepszać się by przekroczyć limity człowieczeństwa i stać się postludźmi 
 headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg
@@ -12,7 +12,7 @@ slots:
     - type: static
       content: |
         ## Memy
-        Adaptacja, Hiperewolucja, [Technologiczna Osobliwość](http://pl.wikipedia.org/wiki/Technologiczna_osobliwo%C5%9B%C4%87)
+        Adaptacja, Hiperewolucja, [Technologiczna Osobliwość](https://pl.wikipedia.org/wiki/Technologiczna_osobliwo%C5%9B%C4%87)
         ## Główne habitaty
         - nieznane
 ---
