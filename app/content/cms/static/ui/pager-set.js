@@ -16,9 +16,7 @@
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
   const totalPages = Math.ceil(fragments.length / perPage);
-
-  const urlParams = new URLSearchParams(location.search);
-  const initialPage = Number(urlParams.get('page')) || 1;
+  const initialPage = Number(qs.page) || 1;
 
   loadPage(initialPage, false);
 
@@ -53,7 +51,8 @@
 
       (async () => {
         for (const url of pageFragments) {
-          await loadFragment(url);
+          container.insertAdjacentHTML('beforeend', await loadFragment(url));
+          loadedCount++;
         }
         container.style.opacity = '1';
         container.style.minHeight = '';
@@ -61,28 +60,6 @@
     }
 
     container.addEventListener('transitionend', onFadeOut, { once: true });
-  }
-
-  async function loadFragment(url) {
-    try {
-      const res = await fetch(url);
-      if (res.status === 404) {
-        console.warn(`Fragment from ${url} returned 404`);
-        loadedCount++;
-        return;
-      }
-      if (!res.ok) {
-        console.error(`Error ${res.status} while loading ${url}`);
-        loadedCount++;
-        return;
-      }
-      const html = await res.text();
-      container.insertAdjacentHTML('beforeend', html);
-      loadedCount++;
-    } catch (e) {
-      console.error(`Network error while loading ${url}:`, e);
-      loadedCount++;
-    }
   }
 
   if (prevBtn && nextBtn) {

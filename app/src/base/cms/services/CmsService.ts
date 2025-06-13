@@ -3,7 +3,7 @@ import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { cwd } from 'node:process';
 import { Inject, Injectable } from '@nestjs/common';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 import { ParserService } from '../../parser/services/ParserService';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
@@ -12,19 +12,19 @@ import { Library } from '../domain/Library';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
 import { RenderedContent } from '../types/RenderedContent';
-import { BlockType, PageDef } from '../types';
 import type {
   CmsModuleOptions,
   CmsServiceOptions,
 } from '../types/CmsModuleOptions';
 import { CMS_OPTIONS } from '../CmsConstants';
+import { Locale } from '../domain/Locale';
 
 @Injectable()
 export class CmsService {
   private readonly baseSourcePath: string;
   private readonly baseOutputPath: string;
-  private readonly opts: Record<Locale, CmsServiceOptions>;
-  private libraries!: Record<Locale, Library>;
+  private readonly opts: Record<Lang, CmsServiceOptions>;
+  private libraries!: Record<Lang, Library>;
 
   public constructor(
     private readonly parserService: ParserService,
@@ -37,7 +37,7 @@ export class CmsService {
     this.baseSourcePath = join(cwd(), 'content', 'cms');
     this.baseOutputPath = join(this.baseSourcePath, 'static');
     this.opts = Object.fromEntries(
-      Object.values(Locale).map((lang) => [
+      Object.values(Lang).map((lang) => [
         lang,
         {
           ...options,
@@ -47,7 +47,7 @@ export class CmsService {
           },
         },
       ]),
-    ) as Record<Locale, CmsServiceOptions>;
+    ) as Record<Lang, CmsServiceOptions>;
   }
 
   async onModuleInit(): Promise<void> {
@@ -59,29 +59,30 @@ export class CmsService {
   public async renderAll(): Promise<void> {
     this.libraries = Object.fromEntries(
       await Promise.all(
-        Object.values(Locale).map(
-          async (lang): Promise<[Locale, Library]> => [
+        Object.values(Lang).map(
+          async (lang): Promise<[Lang, Library]> => [
             lang,
-            await this.render(lang),
+            await this.render(new Locale(lang)),
           ],
         ),
       ),
-    ) as Record<Locale, Library>;
+    ) as Record<Lang, Library>;
   }
 
-  public async render(lang: Locale): Promise<Library> {
-    const [blocks, menus, pages, specialPages] = await Promise.all([
+  public async render(locale: Locale): Promise<Library> {
+    const lang = locale.lang;
+    const [blocks, menus, pages] = await Promise.all([
       this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK, lang)),
-      this.menuFactory.createAll(await this.getSources(SourceDir.MENU, lang)),
+      this.menuFactory.createAll(
+        await this.getSources(SourceDir.MENU, lang),
+        locale,
+      ),
       this.pageFactory.createAll(
         await this.getSources(SourceDir.PAGE, lang),
-        lang,
+        locale,
       ),
-      this.getSources(SourceDir.SPECIAL_PAGE, lang),
     ]);
-    const tagPageDef = specialPages.get('tag') as PageDef;
-    const library = new Library(pages, menus, blocks, lang);
-    this.addTagPages(library, tagPageDef);
+    const library = new Library(locale, pages, menus, blocks);
 
     library.menus.forEach((menu) => {
       menu.render();
@@ -101,7 +102,7 @@ export class CmsService {
 
   private async getSources(
     sourceDir: SourceDir,
-    lang: Locale,
+    lang: Lang,
   ): Promise<Map<string, unknown>> {
     const sourcePath = join(this.baseSourcePath, lang, sourceDir);
     const fileNames = await fsAsync.readdir(sourcePath);
@@ -119,27 +120,9 @@ export class CmsService {
     return new Map<Name, unknown>(await Promise.all(map));
   }
 
-  private addTagPages(library: Library, tagPageDef: PageDef): void {
-    library.addPages(
-      Array.from(library.tags.keys()).map((tag) =>
-        this.pageFactory.create(
-          `tag-${tag}`,
-          {
-            ...tagPageDef,
-            title: `${tagPageDef.title}: ${tag}`,
-            slots: {
-              bottom: [{ type: BlockType.TAG, tag }],
-            },
-          },
-          library.lang,
-        ),
-      ),
-    );
-  }
-
   private async saveContent(
     renderedContents: RenderedContent[],
-    lang: Locale,
+    lang: Lang,
   ): Promise<void> {
     const pagesDir = join(this.baseOutputPath, 'pages', lang);
     const pagesTempDir = await fsAsync.mkdtemp(`${pagesDir}-`);
@@ -168,13 +151,25 @@ export class CmsService {
 
   public search(
     term: string,
-    lang: Locale,
+    lang: Lang,
+    template: string,
     limit?: number,
-    template = 'fragment-list-item',
   ): string {
     const pages = this.libraries[lang].search(term, limit);
 
-    return pages.map((page) => page.renderBasicData(template)).join('');
+    return JSON.stringify(pages.map((page) => `${template}_${page.slug}.html`));
+  }
+
+  public getTag(tag: string, lang: Lang, template: string): string {
+    const pages = this.libraries[lang].tags.get(tag) ?? [];
+
+    return JSON.stringify(pages.map((page) => `${template}_${page.slug}.html`));
+  }
+
+  public getTags(lang: Lang, template: string): string {
+    const tags = Array.from(this.libraries[lang].tags.keys());
+
+    return JSON.stringify(tags.map((tag) => `${template}_tag.html?tag=${tag}`));
   }
 }
 

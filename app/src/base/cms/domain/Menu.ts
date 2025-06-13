@@ -1,5 +1,6 @@
 import { TemplatingService } from '@templating/TemplatingService';
 import { MenuDef } from '../types';
+import { Locale } from './Locale';
 
 export class Menu {
   private _content = '';
@@ -8,6 +9,7 @@ export class Menu {
     private templatingService: TemplatingService,
     public readonly name: string,
     private def: MenuDef,
+    private locale: Locale,
   ) {}
 
   get content(): string {
@@ -16,10 +18,11 @@ export class Menu {
 
   public render(): void {
     try {
-      this._content = this.templatingService.render(
-        this.def.template,
-        this.def,
-      );
+      this._content = this.templatingService.render(this.def.template, {
+        ...this.def,
+        lang: this.locale.lang,
+        translations: this.locale.translations,
+      });
     } catch (e: unknown) {
       if (e instanceof Error) {
         throw new Error(

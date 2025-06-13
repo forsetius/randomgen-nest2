@@ -9,7 +9,7 @@
      style="background-image: url('/ui/gradient-left.png'), url('/ui/gradient-right.png'), url('/media/{{ picture }}')"
 >
     <h1 class="d-flex justify-content-between flex-nowrap m-0 left-page-space">
-        <span class="main-title">{{ title }}</span>
-        {% if subtitle %}<span class="subtitle right-page-space">{{ subtitle }}</span>{% endif %}
+        {% block mainTitle %}<span id="main-title">{{ title }}</span>{% endblock %}
+        {% if subtitle %}<span id="subtitle">{{ subtitle }}</span>{% endif %}
     </h1>
 </div>

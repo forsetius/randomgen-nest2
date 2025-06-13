@@ -1,6 +1,7 @@
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { ApiCallBlockDef } from '../../types';
+import { Library } from '../Library';
 
 export class ApiCallBlock extends Block {
   public constructor(
@@ -11,10 +12,12 @@ export class ApiCallBlock extends Block {
     super(name, def);
   }
 
-  render(): void {
+  render(library: Library): void {
     this._content = this.templatingService.render(this.template, {
       title: this.def.title,
       url: this.def.url,
+      lang: library.locale.lang,
+      translations: library.locale.translations,
     });
   }
 }

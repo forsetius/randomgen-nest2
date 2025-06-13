@@ -2,8 +2,7 @@
 template: page-default
 title: Rusałka
 subtitle: Sylph
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-sylph-head.jpg
 excerpt: Ciała zaprojektowane jako piękne, czyste i powabne
 category: ep-biomorf
 tags:

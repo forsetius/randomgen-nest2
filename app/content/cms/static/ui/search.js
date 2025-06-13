@@ -31,3 +31,41 @@ document.addEventListener('click', function (e) {
     input.dispatchEvent(new Event('input'));
   }
 });
+
+async function loadFragment(url) {
+  try {
+    const res = await fetch(url);
+    if (res.status === 404) {
+      console.warn(`Fragment from ${url} returned 404`);
+      return '';
+    }
+    if (!res.ok) {
+      console.error(`Error ${res.status} while loading ${url}`);
+      return '';
+    }
+
+    return await res.text();
+  } catch (e) {
+    console.error(`Network error while loading ${url}:`, e);
+  }
+}
+
+async function handleSearchResponse(event, containerName) {
+  const container = document.getElementById(containerName);
+  console.log(event);
+  let urls;
+  try {
+    urls = JSON.parse(event.detail.xhr.responseText);
+    if (!Array.isArray(urls)) throw 'not an array';
+  } catch (err) {
+    console.error('Invalid JSON response for search:', err);
+    return;
+  }
+
+  container.innerHTML = '';
+  for (const url of urls) {
+    container.insertAdjacentHTML('beforeend', await loadFragment(url));
+  }
+
+  container.classList.remove('d-none');
+}

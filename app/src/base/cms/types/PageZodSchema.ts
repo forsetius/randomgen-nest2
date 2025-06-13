@@ -21,6 +21,7 @@ export const PageZodSchema = z
     template: z.string().default('page-default'),
     slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
+    searchable: z.boolean().default(true),
   })
   .strict()
   .transform((data) => ({

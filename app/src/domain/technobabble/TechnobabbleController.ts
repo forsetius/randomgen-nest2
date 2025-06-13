@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common';
 import type { BaseGenerator } from './generators/BaseGenerator';
 import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 import { AppConfigService } from '@config/AppConfigService';
 import { TechnobabbleRequestQueryDto } from './dto/TechnobabbleRequestQueryDto';
 import { ApiOperation } from '@nestjs/swagger';
@@ -39,11 +39,11 @@ export class TechnobabbleController {
       .map(() => service.generate(templateName));
   }
 
-  private chooseGenerator(lang?: Locale): BaseGenerator<BaseSource> {
+  private chooseGenerator(lang?: Lang): BaseGenerator<BaseSource> {
     const language =
       lang ?? this.configService.getInferred('app.defaultLanguage');
 
-    return language === Locale.PL
+    return language === Lang.PL
       ? this.polishGeneratorService
       : this.englishGeneratorService;
   }

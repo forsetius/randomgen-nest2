@@ -1,5 +1,5 @@
 import { EnvVarValidator } from '@config/EnvVarValidator';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 
 export const config = (envVars: EnvVarValidator) => ({
   app: {
@@ -9,7 +9,7 @@ export const config = (envVars: EnvVarValidator) => ({
     env: envVars.ENV,
     host: envVars.APP_HOST,
     port: envVars.APP_PORT,
-    defaultLanguage: Locale.EN,
+    defaultLanguage: Lang.EN,
   },
   business: {
     technobabble: {

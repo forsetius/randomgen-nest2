@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { marked, Tokens } from 'marked';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 
 @Injectable()
 export class MarkdownService {
@@ -117,7 +117,7 @@ export class MarkdownService {
 
 interface SlugToken extends Tokens.Generic {
   text: string;
-  lang: Locale;
+  lang: Lang;
   slug: string;
 }
 

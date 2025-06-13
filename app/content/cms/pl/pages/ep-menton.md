@@ -2,7 +2,7 @@
 template: page-default
 title: Menton
 subtitle: Menton
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-menton-head.jpg
 excerpt: Model biomorfa z mocno podkręconą inteligencją
 category: ep-biomorf
 tags:

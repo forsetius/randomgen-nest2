@@ -20,5 +20,5 @@ export abstract class Block {
     return this._content;
   }
 
-  public abstract render(pages: Library): void;
+  public abstract render(library: Library): void;
 }

@@ -15,6 +15,7 @@
   {% block style %}{% endblock %}
   <link rel="icon" type="image/x-icon" href="/ui/{{ brand.logo }}" />
   <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+  <script src="/ui/head.js"></script>
 </head>
 <body class="{% block bodyClass %}default-page{% endblock %}">
 <div id="pageOverlay" class="d-none"></div>
@@ -37,7 +38,7 @@
     {% block subHeader %}
       {% if date %}<span class="info"><i class="bi-calendar3"></i>&nbsp; {{ date }}</span>{% endif %}
       {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i> {{ categoryData.current.breadcrumbs }}</span>{% endif %}
-      {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag-{{ tag }}.html">{{ tag }}</a> {% endfor %}</span>{% endif %}
+      {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i> <a href="/pages/{{ lang }}/tag.html?tag={{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}
     {% endblock %}
   </div>
 </header>

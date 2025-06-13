@@ -70,13 +70,14 @@
             class="form-control"
             type="search"
             name="term"
-            placeholder="Szukaj..."
+            placeholder="{{ translations.search }}..."
             aria-label="Search"
             autocomplete="off"
             hx-get="/search/7"
-            hx-trigger="keyup[window.event.target.value.length >= 3] delay:300ms"
+            hx-trigger="keyup[this.value.length >= 3] delay:300ms"
             hx-target="#searchResults"
-            hx-swap="innerHTML"
+            hx-on:htmx:after-request="handleSearchResponse(event, 'searchResults')"
+            hx-swap="none"
         />
         <button class="btn btn-outline-success" type="submit">
           <i class="bi bi-search"></i>

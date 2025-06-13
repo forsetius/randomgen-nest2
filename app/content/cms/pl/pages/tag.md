@@ -1,10 +1,10 @@
 ---
-title: Wyszukiwanie
-template: page-full-width
+title: Strony z tagiem
+template: page-tag-full-width
 searchable: false
 slots:
   bottom:
     - type: static
-      template: form-full-search
+      template: form-tag
       content: ""
 ---

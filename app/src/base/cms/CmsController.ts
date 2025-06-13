@@ -1,8 +1,10 @@
 import { Controller, Get, Param, Query, Res } from '@nestjs/common';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 import { CmsService } from './services/CmsService';
 import type { Response } from 'express';
 import { SearchParamsDto, SearchQueryDto } from './dtos/SearchDto';
+import { TagParamDto } from './dtos/TagParamDto';
+import { LangQueryDto } from './dtos/LangQueryDto';
 
 @Controller()
 export class CmsController {
@@ -10,7 +12,7 @@ export class CmsController {
 
   @Get('/')
   public index(
-    @Query('lang') lang: Locale = Locale.PL,
+    @Query('lang') lang: Lang = Lang.PL,
     @Res() res: Response,
   ): void {
     res.redirect(302, `/pages/${lang}/index.html`);
@@ -24,18 +26,27 @@ export class CmsController {
     const { count } = params;
     const { term, lang } = query;
 
-    return this.contentService.search(term, lang, count);
+    return this.contentService.search(term, lang, 'fragment-list-item', count);
   }
 
   @Get('/search')
   public searchAll(@Query() query: SearchQueryDto) {
     const { term, lang } = query;
 
-    return this.contentService.search(
-      term,
-      lang,
-      undefined,
+    return this.contentService.search(term, lang, 'fragment-img-card');
+  }
+
+  @Get('/tag/:tag')
+  public getTag(@Param() params: TagParamDto, @Query() query: LangQueryDto) {
+    return this.contentService.getTag(
+      params.tag,
+      query.lang,
       'fragment-img-card',
     );
+  }
+
+  @Get('/tag')
+  public getTags(@Query() query: LangQueryDto) {
+    return this.contentService.getTags(query.lang, 'fragment-list-item');
   }
 }

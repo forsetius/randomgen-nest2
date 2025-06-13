@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 import { SourceEn } from '../types/SourceEn';
 
 @Injectable()
 export class EnglishGenerator extends BaseGenerator<SourceEn> {
   public constructor() {
-    super(Locale.EN);
+    super(Lang.EN);
   }
 
   public generate(datasetName: string): string {

@@ -1,9 +1,9 @@
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 
 export interface CmsModuleOptions {
   fragmentTemplates: string[];
   meta: Record<
-    Locale,
+    Lang,
     {
       title: string;
       description: string;
@@ -23,7 +23,7 @@ export interface CmsServiceOptions {
     title: string;
     description: string;
     keywords: string;
-    lang: Locale;
+    lang: Lang;
   };
   brand: {
     name: string;

@@ -2,8 +2,7 @@
 template: page-default
 title: Olimpijczyk
 subtitle: Olympian
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-olympian-head.jpg
 excerpt: Biomorf ze wzmocnioną tężyzną fizyczną
 category: ep-biomorf
 tags:

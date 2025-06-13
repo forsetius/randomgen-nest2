@@ -23,9 +23,9 @@ import { ParserModule } from '../base/parser/ParserModule';
     CmsModule.forRoot({
       fragmentTemplates: [
         'fragment-img-card',
+        'fragment-list-item',
         // 'fragment-lead-card',
         // 'fragment-data-card',
-        // 'fragment-list-item',
       ],
       meta: {
         pl: {

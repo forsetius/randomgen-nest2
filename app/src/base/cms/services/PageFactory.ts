@@ -7,7 +7,7 @@ import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { BlockFactory } from './BlockFactory';
 import { fromZodError } from '@shared/util/fromZodError';
-import { Locale } from '@shared/types/Locale';
+import { Locale } from '../domain/Locale';
 
 @Injectable()
 export class PageFactory {
@@ -29,13 +29,13 @@ export class PageFactory {
     }
   }
 
-  public createAll(pageDefs: Map<string, unknown>, lang: Locale): Page[] {
+  public createAll(pageDefs: Map<string, unknown>, locale: Locale): Page[] {
     return Array.from(pageDefs).map(([source, def]) => {
-      return this.create(source, def, lang);
+      return this.create(source, def, locale);
     });
   }
 
-  public create(filename: string, def: unknown, lang: Locale): Page {
+  public create(filename: string, def: unknown, locale: Locale): Page {
     const pageDef: PageDef = this.validate(filename, def);
 
     return new Page(
@@ -44,7 +44,7 @@ export class PageFactory {
       this.templatingService,
       filename,
       pageDef,
-      lang,
+      locale,
     );
   }
 }

@@ -3,8 +3,8 @@ import { ArrayMap } from '@shared/util/ArrayMap';
 import { NotFoundException } from '@nestjs/common';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
-import { Locale } from '@shared/types/Locale';
 import { Category } from './Category';
+import { Locale } from './Locale';
 
 export class Library {
   public readonly pages = new Map<string, Page>();
@@ -12,10 +12,10 @@ export class Library {
   public readonly tags = new ArrayMap<string, Page>();
 
   public constructor(
+    public readonly locale: Locale,
     pages: Page[],
     public readonly menus: Map<string, Menu>,
     public readonly blocks: Map<string, Block>,
-    public readonly lang: Locale,
   ) {
     this.addPages(pages);
   }

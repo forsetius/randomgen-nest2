@@ -80,13 +80,13 @@ li.label {
 }
 @media screen and (min-width: 768px) {
     #headerImg {padding: 0 50px 10px 70px;}
-    #headerImg h1 span.main-title {font-size: 72pt;}
-    #headerImg h1 span.subtitle {font-size: 36pt;}
+    #main-title {font-size: 72pt;}
+    #subtitle {font-size: 36pt;}
 }
 @media screen and (max-width: 767px) {
     #headerImg {padding: 0 20px 10px 20px;}
-    #headerImg h1 span.main-title {font-size: 60pt;}
-    #headerImg h1 span.subtitle {font-size: 30pt;}
+    #main-title {font-size: 60pt;}
+    #subtitle {font-size: 30pt;}
 }
 
 #subHeader {

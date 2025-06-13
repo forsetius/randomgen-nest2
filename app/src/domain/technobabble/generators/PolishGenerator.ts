@@ -2,12 +2,12 @@ import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
 import { AdjectiveForms, Gender, NounForms, SourcePl } from '../types/SourcePl';
 import { flipCoin } from '@shared/util/random';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 
 @Injectable()
 export class PolishGenerator extends BaseGenerator<SourcePl> {
   public constructor() {
-    super(Locale.PL);
+    super(Lang.PL);
   }
 
   public generate(datasetName: string): string {

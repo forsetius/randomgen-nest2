@@ -1,10 +1,10 @@
 import { IsEnum, IsInt, IsOptional, Max, Min } from 'class-validator';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 
 export class TechnobabbleRequestQueryDto {
   @IsOptional()
-  @IsEnum(Locale)
-  lang?: Locale;
+  @IsEnum(Lang)
+  lang?: Lang;
 
   @IsOptional()
   @IsInt()

@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
-import { IsEnum, IsInt, IsOptional, Matches, Max, Min } from 'class-validator';
-import { Locale } from '@shared/types/Locale';
+import { IsInt, Matches, Max, Min } from 'class-validator';
+import { LangQueryDto } from './LangQueryDto';
 
 export class SearchParamsDto {
   @Type(() => Number)
@@ -10,11 +10,7 @@ export class SearchParamsDto {
   count!: number;
 }
 
-export class SearchQueryDto {
+export class SearchQueryDto extends LangQueryDto {
   @Matches(/^[\p{L}\d\s-]+$/u)
   term!: string;
-
-  @IsOptional()
-  @IsEnum(Locale)
-  lang: Locale = Locale.PL;
 }

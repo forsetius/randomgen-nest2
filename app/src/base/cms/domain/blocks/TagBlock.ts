@@ -28,7 +28,8 @@ export class TagBlock extends Block {
       perPage: this.def.count,
       category: this.def.tag,
       title: this.def.title,
-      lang: library.lang,
+      lang: library.locale.lang,
+      translations: library.locale.translations,
     });
   }
 }

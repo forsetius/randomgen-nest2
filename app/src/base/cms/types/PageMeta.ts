@@ -1,6 +1,6 @@
 import { PageDef } from './PageZodSchema';
 import { CmsServiceOptions } from './CmsModuleOptions';
-import { Locale } from '@shared/types/Locale';
+import { Lang } from '@shared/types/Lang';
 import { Page } from '../domain/Page';
 import { Category } from '../domain/Category';
 
@@ -11,7 +11,8 @@ export interface PageMeta {
 
 export interface PageProps {
   categoryData: CategoryData | undefined;
-  lang: Locale;
+  lang: Lang;
+  translations: Record<string, string>;
   slug: string;
   filename: string;
 }

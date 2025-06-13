@@ -10,13 +10,13 @@ import { Block } from './blocks/Block';
 import { PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
 import { CmsServiceOptions } from '../types/CmsModuleOptions';
-import { Locale } from '@shared/types/Locale';
 import { Category } from './Category';
+import { Locale } from './Locale';
 
 export class Page {
   public category: Category | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
-  public searchString: string;
+  public searchString = '';
 
   public constructor(
     private blockFactory: BlockFactory,
@@ -24,9 +24,11 @@ export class Page {
     private templatingService: TemplatingService,
     public readonly slug: string,
     public readonly def: PageDef,
-    private readonly lang: Locale,
+    private readonly locale: Locale,
   ) {
-    this.searchString = this.getSearchString();
+    if (def.searchable) {
+      this.searchString = this.getSearchString();
+    }
 
     if (def.date) {
       try {
@@ -82,8 +84,11 @@ export class Page {
                 : undefined,
           }
         : undefined,
-      date: this.date?.setLocale(this.lang).toLocaleString(DateTime.DATE_FULL),
-      lang: this.lang,
+      date: this.date
+        ?.setLocale(this.locale.lang)
+        .toLocaleString(DateTime.DATE_FULL),
+      lang: this.locale.lang,
+      translations: this.locale.translations,
       slug: this.slug,
       filename: this.filename,
     };
