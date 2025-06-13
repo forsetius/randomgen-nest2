@@ -7,6 +7,7 @@ import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
 import { SecurityService } from './base/security/SecurityService';
 import { Env } from '@shared/types/Env';
+import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 
 stopwatch.record('after imports');
 
@@ -21,6 +22,7 @@ async function bootstrap(): Promise<void> {
   app.enableShutdownHooks();
   app.get(SecurityService).setup(app);
 
+  app.useGlobalFilters(new NotFoundFilter());
   app.useGlobalPipes(
     new ValidationPipe({
       disableErrorMessages: configService.getInferred('app.env') === Env.PROD,
