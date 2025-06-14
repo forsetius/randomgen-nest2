@@ -177,4 +177,19 @@ aside li { padding-top: 12px;}
 aside section { margin: 5px 25px; padding-bottom: 12px; }
 aside section h2 { border-bottom: 1px #ddd solid; }
 
-#dynamic_form1 {padding: 15px;}
+.form-floating {
+    position: relative;
+}
+.form-floating .form-control {
+    transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+.form-floating .invalid-feedback {
+    position: absolute;
+    float: right;
+    top: 0.75rem;
+    right: 2.25rem;
+    text-align: right;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+}

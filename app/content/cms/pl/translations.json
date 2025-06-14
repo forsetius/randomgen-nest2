@@ -1,3 +1,14 @@
 {
-  "search": "Szukaj"
+  "content": "Treść",
+  "emailRequired": "Pole jest wymagane i musi być poprawnym adresem email",
+  "fieldRequired": "Pole jest wymagane",
+  "firstName": "Imię",
+  "messageSent": "Wiadomość wysłana!",
+  "messageError": "Błąd przy wysyłaniu wiadomości",
+  "messageThanks": "Dziękuję za wiadomość, odpowiem najszybciej jak będę mógł.",
+  "messageSorry": "Nie udało się wysłać emaili ale zdarzenie zostało zalogowane.",
+  "search": "Szukaj",
+  "send": "Wyślij",
+  "subject": "Temat wiadomości",
+  "yourEmail": "Twój email"
 }

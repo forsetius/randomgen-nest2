@@ -4,4 +4,4 @@ subtitle: ...choć szukano
 lead: |
   Strona o podanym adresie nie została odnaleziona.
 ---
-Jeśli sądzisz, że to błąd na stronie, wyślij mi proszę [zgłoszenie błędu]{pl/blog}. Z góry dzięki!
+Jeśli sądzisz, że to błąd na stronie, wyślij mi proszę [zgłoszenie błędu]{pl/kontakt}. Z góry dzięki!

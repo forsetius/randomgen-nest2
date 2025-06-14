@@ -1,5 +1,6 @@
 import { EnvVarValidator } from '@config/EnvVarValidator';
 import { Lang } from '@shared/types/Lang';
+import { MailProvider } from './io/mail/types';
 
 export const config = (envVars: EnvVarValidator) => ({
   app: {
@@ -15,6 +16,22 @@ export const config = (envVars: EnvVarValidator) => ({
     technobabble: {
       maxResults: 20,
     },
+  },
+  mail: {
+    provider: MailProvider.SMTP,
+    credentials: {
+      smtp: {
+        host: envVars.SMTP_HOST,
+        port: envVars.SMTP_PORT,
+        user: envVars.SMTP_USER,
+        pass: envVars.SMTP_PASSWORD,
+      },
+    },
+    sender: {
+      name: envVars.MAIL_SENDER_NAME,
+      address: envVars.MAIL_SENDER_EMAIL,
+    },
+    adminEmail: 'forseti@forseti.pl',
   },
   security: {
     rateLimit: {

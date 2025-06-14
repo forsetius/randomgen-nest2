@@ -28,6 +28,8 @@ async function bootstrap(): Promise<void> {
       disableErrorMessages: configService.getInferred('app.env') === Env.PROD,
       transform: true,
       whitelist: true,
+      forbidNonWhitelisted: true,
+      errorHttpStatusCode: 422,
     }),
   );
 

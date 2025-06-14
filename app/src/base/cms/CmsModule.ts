@@ -14,6 +14,8 @@ import { SecurityModule } from '../security/SecurityModule';
 import * as express from 'express';
 import { CmsModuleOptions } from './types/CmsModuleOptions';
 import { CMS_OPTIONS } from './CmsConstants';
+import { MailModule } from '../../io/mail';
+import { AppConfigModule } from '@config/AppConfigModule';
 
 @Module({
   controllers: [CmsController],
@@ -49,7 +51,14 @@ export class CmsModule implements OnModuleInit {
   static forRoot(options: CmsModuleOptions) {
     return {
       module: CmsModule,
-      imports: [HttpModule, ParserModule, SecurityModule, TemplatingModule],
+      imports: [
+        AppConfigModule,
+        HttpModule,
+        ParserModule,
+        SecurityModule,
+        TemplatingModule,
+        MailModule,
+      ],
       providers: [
         BlockFactory,
         MenuFactory,

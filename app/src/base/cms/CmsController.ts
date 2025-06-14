@@ -1,14 +1,33 @@
-import { Controller, Get, Param, Query, Res } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  InternalServerErrorException,
+  Logger,
+  Param,
+  Post,
+  Query,
+  Res,
+} from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import { CmsService } from './services/CmsService';
 import type { Response } from 'express';
 import { SearchParamsDto, SearchQueryDto } from './dtos/SearchDto';
 import { TagParamDto } from './dtos/TagParamDto';
 import { LangQueryDto } from './dtos/LangQueryDto';
+import { ContactDto } from './dtos/ContactDto';
+import { MailService } from '../../io/mail';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Controller()
 export class CmsController {
-  public constructor(private contentService: CmsService) {}
+  private readonly logger = new Logger(CmsController.name);
+
+  public constructor(
+    private configService: AppConfigService,
+    private contentService: CmsService,
+    private mailService: MailService,
+  ) {}
 
   @Get('/')
   public index(
@@ -48,5 +67,35 @@ export class CmsController {
   @Get('/tag')
   public getTags(@Query() query: LangQueryDto) {
     return this.contentService.getTags(query.lang, 'fragment-list-item');
+  }
+
+  @Post('/contact')
+  public async submitContact(@Body() dto: ContactDto) {
+    this.logger.debug(
+      `A message from: ${dto.firstName} <${dto.email}> titled: ${dto.title}\n${dto.content.slice(0, 79)}`,
+    );
+    const config = this.configService.getInferred('mail');
+
+    try {
+      await this.mailService.sendMail({
+        from: config.sender,
+        to: config.adminEmail,
+        subject: dto.title,
+        text: `
+From: ${dto.firstName} <${dto.email}>
+Title: ${dto.title}
+---
+${dto.content}
+        `,
+        replyTo: dto.email,
+      });
+
+      return {};
+    } catch (e) {
+      const reason = e instanceof Error ? `: ${e.message}` : '';
+      throw new InternalServerErrorException(
+        `Could not send an email${reason}`,
+      );
+    }
   }
 }

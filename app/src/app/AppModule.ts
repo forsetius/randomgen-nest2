@@ -8,6 +8,7 @@ import { TemplatingModule } from '@templating/TemplatingModule';
 import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
+import { MailModule } from '../io/mail';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { ParserModule } from '../base/parser/ParserModule';
         throwOnUndefined: true,
       },
     }),
+    MailModule,
     CmsModule.forRoot({
       fragmentTemplates: [
         'fragment-img-card',
