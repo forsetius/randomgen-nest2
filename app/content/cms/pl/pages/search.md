@@ -1,6 +1,7 @@
 ---
 title: Wyszukiwanie
 template: page-full-width
+headerImage: mid-search-head.jpg
 searchable: false
 slots:
   bottom:
@@ -8,3 +9,4 @@ slots:
       template: form-full-search
       content: ""
 ---
+Znaleziono następujące strony:

@@ -3,7 +3,7 @@ template: page-full-width
 title: Hiperkorporacja
 subtitle: Hypercorporation
 excerpt: Następcy ponadnarodowych megakorporacji z Ziemi, trzymający władzę w Wewnętrznym Układzie Słonecznym
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-hypercorp-head.jpg
 category: ep-encyklopedia
 subcategoryName: Hiperkorpy
 tags:

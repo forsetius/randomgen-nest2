@@ -24,7 +24,7 @@ slots:
         ## Warunki użycia
         Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
 ---
-I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic ale brzmi bardzo mądrze i technicznie. Przykładowo:
+I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:
 
 > **zsynchronizować wielomodalny podtrzymywacz obrazowania kwantowego**
 
@@ -53,4 +53,4 @@ Opcjonalnie w query stringu można dodać dwa parametry:
 Odpowiedź jest czystym tekstem. Jeśli `repeat` > 1 to frazy są rozdzielane nową linią
 
 ## Technikalia
-Generator ten zainmplementowałem jako moduł aplikacji w Node.js+TypeScript, opartej na NestJS. Obsługuje język polski i angielski, z możliwością dodania kolejnych. Poszczególne słowa (lub w języku polskim - zestawy form gramatycznych danego słowa) są zaczytywane z plików JSON. Jeśli ktoś chciałby pomóc mi zaimplementować nowy język albo dodać jakieś klawe słownictwo to zapraszam do kontaktu.
+Generator ten zaimplementowałem jako moduł aplikacji w Node.js+TypeScript, opartej na NestJS. Obsługuje języki: polski i angielski, z możliwością dodania kolejnych. Poszczególne słowa (lub w języku polskim - zestawy form gramatycznych danego słowa) są zaczytywane z plików JSON. Jeśli ktoś chciałby pomóc mi zaimplementować nowy język albo dodać jakieś klawe słownictwo to zapraszam do [kontaktu]{pl/kontakt}.

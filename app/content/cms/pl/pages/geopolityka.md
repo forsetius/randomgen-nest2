@@ -1,8 +1,5 @@
 ---
 template: page-default
-title: Wtem, na blogu!
-headerImage: index-head.jpg
-#thumbnailImage: index.jpg
-
+title: Geopolityka
 ---
-Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!
+<block id="w-budowie" />

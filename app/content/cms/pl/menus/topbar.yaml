@@ -3,13 +3,16 @@ menu:
   - title: Blog
     url: "@{blog}"
 
-  - title: Programowanie
+  - title: O mnie
     columns:
       - title: Programowanie
         items:
           - title: Umiejętności
-            url: "@{umiejetnosci}"
+            url: "@{prog-umiejetnosci}"
             text: Co umiem, co znam, co mogę
+          - title: Doświadczenia
+            url: "@{prog-doswiadczenia}"
+            text: Co już zrobiłem
 
       - title: Projekty
         items:
@@ -23,15 +26,14 @@ menu:
 
   - separator: "|"
 
-  - label: "Hobby: "
-
   - title: RPG
-    text: FIXME
     columns:
       - title: Eclipse Phase
-        url: "@{eclipse-phase}"
-        text: Gra hard-SF w realiach transhumanistycznego horroru
         items:
+          - title: O grze Eclipse Phase
+            url: "@{eclipse-phase}"
+            text: Gra hard-SF w realiach transhumanistycznego horroru
+
           - title: Wprowadzenie
             url: "@{ep-intro}"
             text: "Historia przyszłości: rozwój w kierunku transludzkości, wojna z AI i Upadek oraz rozproszenie po Układzie Słonecznym i poza nim"
@@ -44,26 +46,21 @@ menu:
             url: "@{ep-atlas}"
             text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
 
-          - title: Scenariusz "Ego Sum"
-            url: "@{ep-scenariusz-ego-sum}"
-            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
-
       - title: UniMechanika
-        url: "@{rpg-unimechanika}"
         text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
         items:
           - title: Zasady podstawowe
-            url: "@{rpg-unimechanika-zasady}"
+            url: "@{rpg-unimechanika}"
             text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
 
           - title: Dodatki
             url: "@{rpg-unimechanika-dodatki}"
             text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
 
-#      - title: Przygody
-#        url: "@{rpg-scenariusze}"
-#        text: Scenariusze do gier fabularnych
-#        items:
+      - title: Przygody
+        url: "@{rpg-scenariusze}"
+        text: Scenariusze do gier fabularnych
+        items:
 #          - title: Jaskółki [Dungeons & Dragons 5e]
 #            url: "@{dnd-scenariusz-jaskolki}"
 #            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
@@ -72,9 +69,9 @@ menu:
 #            url: "@{dnd-scenariusz-krew-dla-boga-krwi}"
 #            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
 #
-#          - title: Ego Sum [Eclipse Phase]
-#            url: "@{ep-scenariusz-ego-sum}"
-#            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+          - title: Ego Sum [Eclipse Phase]
+            url: "@{ep-scenariusz-ego-sum}"
+            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
   - title: Astronomia
     columns:
@@ -82,7 +79,7 @@ menu:
         items:
           - title: Generowanie układów planetarnych
             url: "@{generowanie-ukladow-planetarnych}"
-            text: TODO
+            text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
 
       - title: Celestia - symulator Wszechświata
         items:
@@ -105,11 +102,11 @@ menu:
         items:
         - title: Dioramy
           url: "@{dioramy}"
-          text: TODO
+          text: Małe, modularne dioramy
 
         - title: Geopolityka
           url: "@{geopolityka}"
-          text: TODO
+          text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
       - title: terenowe
         items:
           - title: Znowu baba mnie wywlokła
@@ -130,4 +127,4 @@ menu:
         items:
           - title: Lokacje w Układzie Słonecznym
             url: "@{lokacje-uklad-slonecznym}"
-            text: TODO
+            text: Zatwierdzone przez Międzynarodową Unię Astronomiczną nazwy kraterów, gór, dolin i innych lokacji w Układzie Słonecznym

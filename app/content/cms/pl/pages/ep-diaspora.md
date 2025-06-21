@@ -3,6 +3,7 @@ template: page-default
 title: Diaspora
 subtitle: Eclipse Phase
 headerImage: mid-diaspora-head.jpg
+thumbnailImage: mid-diaspora-card.jpg
 category: ep-intro
 sort: 3
 excerpt: Zagłada cywilizacji na Ziemi oznaczała rozproszenie transludzi na cały Układzie Słonecznym a nawet poza niego

@@ -19,5 +19,5 @@ menu:
         url: "@{polityka-prywatnosci}"
 
       - title: Kontakt
-        url: /page/pl/kontakt.html
+        url: /pages/pl/kontakt.html
         

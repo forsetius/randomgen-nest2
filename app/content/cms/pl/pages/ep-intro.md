@@ -3,7 +3,6 @@ template: page-full-width
 title: Wprowadzenie do świata 
 subtitle: Eclipse Phase
 headerImage: eclipse-phase-head.jpg
-category: eclipse-phase
 subcategoryName: Wprowadzenie
 sort: 1
 excerpt: Transludzka przyszłość po Upadku

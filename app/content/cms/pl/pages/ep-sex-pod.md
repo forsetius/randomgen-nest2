@@ -1,9 +1,8 @@
 ---
 template: page-default
 title: Sex-pod
-subtitle: Sex pod
+#subtitle: Sex pod
 headerImage: mid-sex-pod-head.jpg
-#thumbnailImage: mid-sex-pod-head.jpg
 category: ep-pod
 tags:
   - rpg
@@ -19,4 +18,8 @@ slots:
         - [Ulepszenie pamięci](#)
         - [Gniazdo zdalnej kontroli]{pl/ep-gniazdo-zdalnej-kontroli}
 ---
-**Sex pody** są dokładnie tym, na co wyglądają - sztucznymi ludzkimi ciałami zaprojektowanymi w celu zapewniania "rozrywek intymnych dla dorosłych". Pody te mają dodatkowe zakończenia nerwowe w strefach erogennych, doskonałą kontrolę motoryczną nad pewnymi grupami mięśni, wzmocnione feromony, wyczyszczony metabolizm i... zaprogramowaną genetycznie zdolność mruczenia. Z wiadomych względów są biorzeźbieni tak, by dobrze wyglądali, mieli odpowiednią charyzmę i inne potzebne zachowania. Sex pody mogą zmieniać do woli płeć - na męską, żeńską, zostać hermafrodytą bądź bezpłciowcem.
+**Sex pody** są dokładnie tym, na co wyglądają - sztucznymi ludzkimi ciałami zaprojektowanymi w celu zapewniania "rozrywek intymnych dla dorosłych". 
+
+Pody te mają dodatkowe zakończenia nerwowe w strefach erogennych, doskonałą kontrolę motoryczną nad pewnymi grupami mięśni, wzmocnione feromony, wyczyszczony metabolizm i... zaprogramowaną genetycznie zdolność mruczenia. Z wiadomych względów są biorzeźbieni tak, by dobrze wyglądali, mieli odpowiednią charyzmę i inne potzebne zachowania. 
+
+Sex pody mogą zmieniać do woli płeć - na męską, żeńską, zostać hermafrodytą bądź bezpłciowcem.

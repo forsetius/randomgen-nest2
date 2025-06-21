@@ -2,7 +2,7 @@
 template: page-default
 title: Morf
 subtitle: Morph
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-morph-head.jpg
 excerpt: Ciała dla Ego transludzi, upliftów i AI, 
 category: ep-encyklopedia
 subcategoryName: Morfy

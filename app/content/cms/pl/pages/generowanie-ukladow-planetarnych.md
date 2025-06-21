@@ -1,7 +1,6 @@
 ---
 template: page-default
 title: Generowanie układów planetarnych
-headerImage: index-head.jpg
-#thumbnailImage: index.jpg
+headerImage: mid-generowanie-ukladow-planetarnych-head.jpg
 ---
-Tutaj jest przegląd wszystkich wpisów na blogu. Enjoy!
+<block id="w-budowie" />

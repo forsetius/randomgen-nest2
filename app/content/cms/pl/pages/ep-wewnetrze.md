@@ -2,8 +2,7 @@
 template: page-default
 title: Wewnętrze
 subtitle: Eclipse Phase
-#headerImage: eclipse-phase-intro-head.jpg
-##thumbnailImage: eclipse-phase-intro-card.jpg
+headerImage: mid-sunward-head.jpg
 category: ep-intro
 sort: 4
 excerpt: Na planetach skalistych rządzi kapitalizm
