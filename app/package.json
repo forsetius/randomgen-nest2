@@ -1,7 +1,7 @@
 {
   "name": "randomgen",
-  "version": "1.0.0",
-  "description": "Random generators for RPGs",
+  "version": "0.3.3",
+  "description": "CMS for forseti.pl, Random generators for RPGs",
   "keywords": [
     "rpg",
     "random",

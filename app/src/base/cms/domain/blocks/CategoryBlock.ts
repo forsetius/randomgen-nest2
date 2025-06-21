@@ -23,6 +23,7 @@ export class CategoryBlock extends Block {
     }
 
     this._content = this.templatingService.render(this.template, {
+      blockId: this.name,
       cardTemplate: this.def.cardTemplate,
       items,
       perPage: this.def.count,

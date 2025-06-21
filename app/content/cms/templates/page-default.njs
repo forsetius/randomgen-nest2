@@ -1,11 +1,8 @@
 {% extends "_master.njs" %}
 
 {% block article %}
-<article class="aside-aware">
     {% if lead %}
-    <div class="lead">
-        {{ lead }}
-    </div>
+    <div class="lead">{{ lead }}</div>
     {% endif %}
     <div class="content">
         {{ content }}
@@ -16,5 +13,4 @@
     {% if category %}
         {% include "partial-pager.njs" %}
     {% endif %}
-</article>
 {% endblock %}

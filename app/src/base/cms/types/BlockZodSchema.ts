@@ -11,6 +11,18 @@ export const ApiCallBlockZodSchema = CommonBlockZodSchema.extend({
   url: z.string(),
 });
 
+export const GalleryBlockZodSchema = CommonBlockZodSchema.extend({
+  template: z.string().default('lightbox-gallery'),
+  type: z.literal(BlockType.GALLERY),
+  items: z.array(
+    z.object({
+      template: z.string().default('lightbox-image'),
+      src: z.string(),
+      title: z.string().optional(),
+    }),
+  ),
+});
+
 export const MediaBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string(),
   type: z.literal(BlockType.MEDIA),
@@ -49,6 +61,7 @@ export const TagBlockZodSchema = SetBlockZodSchema.extend({
 export const BlockZodSchema = z.discriminatedUnion('type', [
   ApiCallBlockZodSchema,
   CategoryBlockZodSchema,
+  GalleryBlockZodSchema,
   MediaBlockZodSchema,
   PageSetBlockZodSchema,
   StaticBlockZodSchema,
@@ -58,6 +71,7 @@ export const BlockZodSchema = z.discriminatedUnion('type', [
 export type BlockDef = z.infer<typeof BlockZodSchema>;
 export type ApiCallBlockDef = z.infer<typeof ApiCallBlockZodSchema>;
 export type CategoryBlockDef = z.infer<typeof CategoryBlockZodSchema>;
+export type GalleryBlockDef = z.infer<typeof GalleryBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
 export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;
 export type StaticBlockDef = z.infer<typeof StaticBlockZodSchema>;

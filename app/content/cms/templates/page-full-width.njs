@@ -1,7 +1,8 @@
 {% extends "_master.njs" %}
 
-{% block article %}
-  <article class="">
+{% block articleOuter %}
+  {% if lead or content|trim|length > 0 %}
+    <article class="order-2 order-lg-1 col-12">
     {% if lead %}
       <div class="lead">{{ lead }}</div>
     {% endif %}
@@ -14,7 +15,8 @@
     {% if category %}
       {% include "partial-pager.njs" %}
     {% endif %}
-  </article>
+    </article>
+  {% endif %}
 {% endblock %}
 
-{% block aside %}{% endblock %}
+{% block asideOuter %}{% endblock %}

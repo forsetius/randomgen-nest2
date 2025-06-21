@@ -21,10 +21,10 @@
                   {{ topMenuItem.title }}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-custom p-3" aria-labelledby="navbarDropdown{{ loop.index }}">
-                  <div class="d-flex">
+                  <div class="d-flex row">
                   {% for column in topMenuItem.columns %}
-                    <li class="dropdown-item-column">
-                      <h5><a href="{{ column.url|default('#') }}">{{ column.title }}</a></h5>
+                    <li class="dropdown-item-column col">
+                      <h5>{{ column.title }}</h5>
                       <ul class="list-unstyled">
                         {% for subitem in column.items %}
                           <li>
@@ -64,7 +64,6 @@
       autocomplete="off"
   >
     <div class="position-relative">
-      <div class="input-group">
         <input
             id="searchInput"
             class="form-control"
@@ -79,10 +78,6 @@
             hx-on:htmx:after-request="handleSearchResponse(event, 'searchResults')"
             hx-swap="none"
         />
-        <button class="btn btn-outline-success" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
-      </div>
       
       <ul
           id="searchResults"

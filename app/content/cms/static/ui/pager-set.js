@@ -1,80 +1,106 @@
-(function () {
-  let loadedCount = 0;
-  let currentPage = 1;
-  let pageLength = 0;
+class GalleryBlock {
+  loadedCount = 0;
+  currentPage = 1;
+  pageLength = 0;
 
-  const container = document.getElementById('card-container');
+  constructor(blockElement, lang) {
+    this.lang = lang;
+    this.container = blockElement.querySelector('.card-container');
+    this.prevBtn = blockElement.querySelector('.prev-btn');
+    this.nextBtn = blockElement.querySelector('.next-btn');
 
-  const cardTemplate = container.dataset['cardTemplate'] ?? 'fragment-img-card';
-  const perPage = parseInt(container.dataset['perPage'] ?? '6', 10);
-  const lang = document.querySelector('html').lang || 'pl';
+    const cardTemplate =
+      this.container.dataset['cardTemplate'] ?? 'fragment-img-card';
+    this.perPage = parseInt(this.container.dataset['perPage'] ?? '6', 10);
 
-  const fragments = (container.dataset['items'] ?? '')
-    .split(',')
-    .map((item) => `/pages/${lang}/${cardTemplate}_${item}.html`);
+    this.fragments = (this.container.dataset['items'] ?? '')
+      .split(',')
+      .map((item) => `/pages/${lang}/${cardTemplate}_${item}.html`);
 
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const totalPages = Math.ceil(fragments.length / perPage);
-  const initialPage = Number(qs.page) || 1;
+    this.totalPages = Math.ceil(this.fragments.length / this.perPage);
+    const initialPage = Number(qs.page) || 1;
 
-  loadPage(initialPage, false);
+    if (this.prevBtn && this.nextBtn) {
+      this.prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.loadPage(this.currentPage - 1);
+      });
+      this.nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.loadPage(this.currentPage + 1);
+      });
+    }
+    console.log(this);
+    this.loadPage(initialPage, false);
 
-  function updateButtons() {
-    if (!prevBtn || !nextBtn) return;
-    prevBtn.classList.toggle('d-none', currentPage <= 1);
-    nextBtn.classList.toggle('d-none', currentPage >= totalPages);
+    window.addEventListener('popstate', (e) => {
+      const pg = e.state?.page || 1;
+      this.loadPage(pg, false);
+    });
   }
 
-  function loadPage(page, pushHistory = true) {
-    page = Math.min(Math.max(1, page), totalPages);
-    currentPage = page;
+  updateButtons() {
+    if (!this.prevBtn || !this.nextBtn) return;
+    this.prevBtn.classList.toggle('d-none', this.currentPage <= 1);
+    this.nextBtn.classList.toggle(
+      'd-none',
+      this.currentPage >= this.totalPages,
+    );
+  }
 
-    const start = (currentPage - 1) * perPage;
-    const pageFragments = fragments.slice(start, start + perPage);
-    pageLength = pageFragments.length;
-    loadedCount = 0;
+  loadPage(page, pushHistory = true) {
+    page = Math.min(Math.max(1, page), this.totalPages);
+    this.currentPage = page;
 
-    updateButtons();
+    const start = (this.currentPage - 1) * this.perPage;
+    const pageFragments = this.fragments.slice(start, start + this.perPage);
+    this.pageLength = pageFragments.length;
+    this.loadedCount = 0;
 
-    container.style.minHeight = `${container.offsetHeight}px`;
-    container.style.opacity = '0';
+    this.updateButtons();
+    console.log('page', this.perPage);
 
-    function onFadeOut() {
-      container.removeEventListener('transitionend', onFadeOut);
+    this.container.style.minHeight = `${this.container.offsetHeight}px`;
+    this.container.style.opacity = '0';
 
-      container.innerHTML = '';
+    const onFadeOut = () => {
+      console.log('FadeOut');
+      this.container.removeEventListener('transitionend', onFadeOut);
+      this.container.innerHTML = '';
 
       if (pushHistory) {
-        history.pushState({ page: currentPage }, '', `?page=${currentPage}`);
+        history.pushState(
+          { page: this.currentPage },
+          '',
+          `?page=${this.currentPage}`,
+        );
       }
 
       (async () => {
         for (const url of pageFragments) {
-          container.insertAdjacentHTML('beforeend', await loadFragment(url));
-          loadedCount++;
+          this.container.insertAdjacentHTML(
+            'beforeend',
+            await loadFragment(url),
+          );
+          this.loadedCount++;
         }
-        container.style.opacity = '1';
-        container.style.minHeight = '';
+        this.container.style.opacity = '1';
+        this.container.style.minHeight = '';
       })();
-    }
+    };
 
-    container.addEventListener('transitionend', onFadeOut, { once: true });
-  }
-
-  if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      loadPage(currentPage - 1);
-    });
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      loadPage(currentPage + 1);
+    this.container.addEventListener('transitionend', onFadeOut, {
+      once: true,
     });
   }
+}
 
-  window.addEventListener('popstate', (e) => {
-    const pg = e.state?.page || 1;
-    loadPage(pg, false);
+(function () {
+  const lang = document.querySelector('html').lang || 'pl';
+  const blockElements = document.querySelectorAll('.gallery-set');
+  console.log(lang, blockElements);
+  const blocks = [];
+  blockElements.forEach((block) => {
+    blocks.push(new GalleryBlock(block, lang));
   });
 })();

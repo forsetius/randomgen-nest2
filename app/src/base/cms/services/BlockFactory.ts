@@ -14,6 +14,7 @@ import {
   TagBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
+import { GalleryBlock } from '../domain/blocks/GalleryBlock';
 
 @Injectable()
 export class BlockFactory {
@@ -50,6 +51,8 @@ export class BlockFactory {
         return new ApiCallBlock(this.templatingService, name, def);
       case BlockType.CATEGORY:
         return new CategoryBlock(this.templatingService, name, def);
+      case BlockType.GALLERY:
+        return new GalleryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_SET:

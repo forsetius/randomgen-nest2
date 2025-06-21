@@ -34,7 +34,7 @@
     </div>
   </nav>
   {% block header %} {% include "partial_header.njs" %} {% endblock %}
-  <div id="subHeader" class="left-page-space right-page-space">
+  <div id="subHeader">
     {% block subHeader %}
       {% if date %}<span class="info"><i class="bi-calendar3"></i>&nbsp; {{ date }}</span>{% endif %}
       {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i> {{ categoryData.current.breadcrumbs }}</span>{% endif %}
@@ -43,16 +43,28 @@
   </div>
 </header>
 
-<main>
-  {% block aside %}
+<main class="container-fluid position-relative">
+  <div class="row flex-column flex-lg-row">
+  
+  {% block asideOuter %}
     {% if slots and slots.aside %}
-    <aside class="bg-body-secondary text-light col-sm-3" data-bs-theme="dark">
-      <slot id="aside" />
-    </aside>
+      <div id="aside-outer" class="order-1 order-lg-2 col-12 col-lg-4">
+        <aside class="bg-body-secondary text-light pb-4 rounded-4" data-bs-theme="dark">
+          {% block aside %} <slot id="aside" /> {% endblock %}
+        </aside>
+      </div>
     {% endif %}
   {% endblock %}
   
-  {% block article %} {% endblock %}
+  {% block articleOuter %}
+    {% if lead or content|trim|length > 0 %}
+    <article class="order-2 order-lg-1 col-12 col-lg-8">
+      {% block article %} {% endblock %}
+    </article>
+    {% endif %}
+  {% endblock %}
+  
+  </div>
 </main>
 
 {% block footer %} {% include "partial_footer.njs" %} {% endblock %}
@@ -61,6 +73,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
 <script src="/ui/search.js"></script>
+<script src="/ui/pager-set.js"></script>
 {% block javascripts %}{% endblock %}
 </body>
 </html>
