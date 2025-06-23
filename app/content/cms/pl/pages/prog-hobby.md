@@ -1,9 +1,9 @@
 ---
 template: page-default
 title: Projekty hobbystyczne
-headerImage: mid-casino-head.jpg
+headerImage: mid-backend-head.jpg
 category: prog-doswiadczenia
-sort: 5
+sort: 7
 tags:
   - o-mnie
 ---

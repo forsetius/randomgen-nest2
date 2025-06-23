@@ -7,6 +7,15 @@ sort: 1
 tags:
   - o-mnie
 excerpt: Systemy integrujące czujniki, kamery, wyświetlacze i aplikacje backoffice
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Technologie
+        - PHP + Symfony + EasyAdmin
+        - Node.js + websockets
+        - PostgreSQL + PostGIS
+        
 lead: |
   Pracując dla firmy zajmującej się obsługą parkingów i opłat za parkowanie wykonałem całą serię systemów integrujących przez różnorodne API różne czujniki i przekazujące przetworzone dane z nich do urządzeń wyjściowych oraz systemów backoffice'owych.
 ---
