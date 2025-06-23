@@ -34,7 +34,7 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('block-plain'),
   type: z.literal(BlockType.STATIC),
   content: z.string(),
-});
+}).catchall(z.string());
 
 const SetBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('partial-gallery-set'),

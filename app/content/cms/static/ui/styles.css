@@ -163,6 +163,7 @@ aside section h2 { border-bottom: 1px #ddd solid; }
 }
 
 .alert h2 {font-weight: 600;border-top: 0;border-radius: 1rem;}
+.lightbox-caption { background-color: black; }
 
 /* XS, SM, MD */
 @media screen and (max-width: 991px) {

@@ -1,3 +1,3 @@
-<a href="/media/{{ src }}" data-toggle="lightbox" {% if title %} data-caption="{{ title }}" {% endif%} data-type="image" {% if gallery %} data-gallery="{{ gallery }}" {% endif %}>
-  <img src="/media/{{ src }}" class="img-fluid" {% if title %} alt="{{ title }}" {% endif%} />
-</a>
+<p class="border-top border-3 border-bottom border-dark-subtle p-3">
+  {% include 'lightbox-image-inner.njs' %}
+</p>

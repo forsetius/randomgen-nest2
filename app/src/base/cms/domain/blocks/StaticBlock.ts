@@ -15,9 +15,12 @@ export class StaticBlock extends Block {
   }
 
   render(library: Library): void {
-    const content = this.markdownService.parse(this.def.content);
-    this._content = this.templatingService.render(this.template, {
-      content,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { template, type, content, ...rest } = this.def;
+
+    this._content = this.templatingService.render(template, {
+      ...rest,
+      content: this.markdownService.parse(content),
       lang: library.locale.lang,
       translations: library.locale.translations,
     });

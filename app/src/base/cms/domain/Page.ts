@@ -182,10 +182,12 @@ export class Page {
   }
 
   private insertBlocks(content: string, library: Library): string {
-    const blockTagRegex = /<block ([^>]*?)\/?>/g;
+    const blockTagRegex =
+      /<block (?<attrs>[^>]*?)(?:\/>|>(?<content>.*?)<\/block>)/gs;
     const attrRegex = /(\w+)="([^"]*)"/g;
 
-    for (const [blockTag, attrs] of content.matchAll(blockTagRegex)) {
+    for (const res of content.matchAll(blockTagRegex)) {
+      const [blockTag, attrs] = res;
       if (typeof attrs === 'undefined') {
         continue;
       }
@@ -195,6 +197,9 @@ export class Page {
           return [attr, val] as [string, unknown];
         }),
       );
+      if (!('content' in args) && res.groups?.['content']) {
+        args['content'] = res.groups['content'];
+      }
 
       const id = args['id'];
       if (typeof id !== 'string') {
