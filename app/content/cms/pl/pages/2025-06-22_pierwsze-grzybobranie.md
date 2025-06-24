@@ -18,7 +18,7 @@ blocks:
         title: Przeplatka atalia x2
 
 ---
-Wyruszyliśmy bladym, barbarzyńskim świtem, tj. o 7 rano, a na miejscu byliśmy przed 9. Gorąc już było czuć w powietrzu, ale na miejscu w cieniu było jeszcze w miarę rześko. Zachłysnąłem się tą rześkością na tyle, że rozłożyłem się z kocykiem wśród traw i napawałem się ich zapachem i świergotem ptaków. A konkretnie, wg Merlina:
+Wyruszyliśmy bladym, barbarzyńskim świtem, tj. o 7 rano, a na miejscu byliśmy przed 9. Gorąc już było czuć w powietrzu, ale na miejscu w cieniu było jeszcze w miarę rześko. Zachłysnąłem się tą rześkością na tyle, że rozłożyłem się z kocykiem wśród traw i napawałem się ich zapachem i świergotem ptaków. A konkretnie, wg [Merlina](https://merlin.allaboutbirds.org/) dał się słyszeć:
 
 <block id="birds" type="static" template="partial-multicolumn-list" count="3">
 - potrzesz

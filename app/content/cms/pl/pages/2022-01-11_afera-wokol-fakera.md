@@ -6,9 +6,7 @@ category: blog
 date: 2022-01-11
 excerpt: Sabotaż w pakietach NPM `colors` i `faker`
 lead: |-
-  Był sobie programista. Kodował open source’owe pakiety do Node.js i udostępniał je społeczności przez zwykłe kanały (GitHub, NPM). 
-  Prywatnie miał na koncie romans z teoriami spiskowymi, pożar we własnym mieszkaniu i śledztwo w kierunku terroryzmu ale swoje robił. 
-  A teraz nagle się zbiesił i zaczął sabotować swoje – i niestety nie swoje – projekty.
+  Był sobie programista. Kodował open source’owe pakiety do Node.js i udostępniał je społeczności przez zwykłe kanały (GitHub, NPM). Prywatnie miał na koncie romans z teoriami spiskowymi, pożar we własnym mieszkaniu i śledztwo w kierunku terroryzmu ale swoje robił. A teraz nagle się zbiesił i zaczął sabotować swoje – i niestety nie swoje – projekty.
 tags:
   - open-source
 slots:

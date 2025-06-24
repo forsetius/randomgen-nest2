@@ -2,7 +2,6 @@
 template: page-blog-post
 title: Generator technobełkotu
 headerImage: startrek-engineers-head.png
-#thumbnailImage: startrek-engineers-head.png
 category: blog
 date: 2022-01-03
 excerpt: |-
@@ -22,13 +21,15 @@ slots:
         - Endpointy API: [polski](https://forseti.pl/api/1.0/startrek/technobabble?lang=pl), [angielski](https://forseti.pl/api/1.0/startrek/technobabble?lang=en)
         - Źródło fraz: [polskich](https://github.com/forsetius/randomgen/blob/dev/dict/technobabble-pl.json), [angielskich](https://github.com/forsetius/randomgen/blob/dev/dict/technobabble-en.json)
         ## Warunki użycia
-        Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
+        Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. 
+        
+        Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
 ---
 I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:
 
-> **zsynchronizować wielomodalny podtrzymywacz obrazowania kwantowego**
+> ...zresetować wtórny sprzęg fazy tetrionowej
 
-Imponujące, nieprawdaż? Nic tylko wycedzić zduszone "make it so!" i wziąć się do roboty.
+Imponujące, nieprawdaż? Nic tylko wycedzić: "make it so!" i wziąć się do roboty.
 
 No dobrze, jest to dość prosty generator, szczególnie w wersji angielskiej. W polskiej to wiadomo, "polska język - trudna język", trzeba było uzgodnić ze sobą te wszystkie rodzaje, liczby i inne rzeczy, które były na polskim w podstawówce i które przyszłemu programiście na pewno już się w życiu nie przydadzą. A np. jeśli myśleliście, że w naszym pięknym, nie-gęsim języku są tylko trzy rodzaje, to ktoś Was srogo oszukał!
 

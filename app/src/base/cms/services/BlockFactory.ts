@@ -8,13 +8,13 @@ import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
   ApiCallBlock,
   CategoryBlock,
+  GalleryBlock,
   MediaBlock,
   PageSetBlock,
   StaticBlock,
   TagBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
-import { GalleryBlock } from '../domain/blocks/GalleryBlock';
 
 @Injectable()
 export class BlockFactory {

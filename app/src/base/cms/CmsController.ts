@@ -3,7 +3,6 @@ import {
   Controller,
   Get,
   InternalServerErrorException,
-  Logger,
   Param,
   Post,
   Query,
@@ -23,8 +22,6 @@ import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor'
 
 @Controller()
 export class CmsController {
-  private readonly logger = new Logger(CmsController.name);
-
   public constructor(
     private configService: AppConfigService,
     private contentService: CmsService,
@@ -74,10 +71,6 @@ export class CmsController {
   @Post('/contact')
   @UseInterceptors(AkismetInterceptor<ContactDto>)
   public async submitContactForm(@Body() dto: ContactDto) {
-    this.logger.debug(
-      `A message from: ${dto.name} <${dto.email}> titled: ${dto.title}\n${dto.content.slice(0, 79)}`,
-    );
-
     const config = this.configService.getInferred('mail');
     try {
       await this.mailService.sendMail({

@@ -7,10 +7,10 @@
           <div class="card-img-overlay">
             <div class="position-absolute bottom-0 bg-dark bg-opacity-50 w-100 px-2 py-1">
               <h3 class="card-title">
-                  {{ title }}
+                {% if date %}<span class="date">{{ dateTime | formatDate(lang) }}</span> {% endif %}{{ title }}
               </h3>
               <div class="card-text">
-                {{ excerpt | default(lead) | default('') }}
+                {{ excerpt | default('') }}
               </div>
             </div>
           </div>
