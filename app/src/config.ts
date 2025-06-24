@@ -10,7 +10,7 @@ export const config = (envVars: EnvVarValidator) => ({
     env: envVars.ENV,
     host: envVars.APP_HOST,
     port: envVars.APP_PORT,
-    defaultLanguage: Lang.EN,
+    defaultLanguage: Lang.PL,
   },
   business: {
     technobabble: {

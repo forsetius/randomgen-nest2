@@ -1,5 +1,6 @@
 html, body {height: 100%}
-main {min-height: calc(100% - 487px) }
+main {min-height: calc(100% - 559px) }
+p, li, blockquote {font-family: 'Fira Sans', sans-serif; font-size: 1rem; line-height: 1.75; text-align: justify;}
 h1, h2, .h1, .h2, h1 a, h2 a, .h1 a, .h2 a {font-family: "Unica One", serif; font-weight: 400;}
 a:where(:link, :visited, :hover, :focus, :active) {color: #11944e; text-decoration: none;}
 .bg-body-secondary a:is(:link, :visited, :hover, :focus, :active) {color: #1eec7d; }
@@ -8,8 +9,7 @@ a:where(:link, :visited, :hover, :focus, :active) {color: #11944e; text-decorati
 h4, h4 a {font-size: 1.5rem}
 h3 a, h4 a, h5 a, h3 a:hover, h4 a:hover, h5 a:hover {color: #fff; font-weight: bold; text-transform: uppercase;}
 hr { border-color: #aaa; margin: 12px 0 0 -20px }
-blockquote { margin-left: 30px; border-left: 7px solid #bbb; border-radius: 16px; padding: 0 20px; }
-blockquote p {font-family:  'Roboto Condensed' !important; }
+blockquote { margin-left: 16px; border-left: 6px solid #1fb565; border-radius: 16px; padding: 0 20px; font-style: italic; font-weight: 600 }
 main {padding-top: 20px; }
 
 .navbar-brand span { padding: 0.5rem; }
@@ -63,7 +63,6 @@ li.label {
     display: flex;
     height: 300px;
     overflow: hidden;
-    /*border-bottom: 8px solid #111;*/
     background-position: left center, right center, center center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, cover;
@@ -102,9 +101,9 @@ article .lead p {
 
 article .content p { break-inside: avoid-column; }
 
-article p,
-article strong,
-article li {font-family: 'Fira Sans', sans-serif; font-size: 1.05rem; line-height: 1.75; text-align: justify;}
+/*article p,*/
+/*article strong,*/
+/*article li {font-family: 'Fira Sans', sans-serif; font-size: 1.05rem; line-height: 1.75; text-align: justify;}*/
 article h2 {margin-top: 40px; padding: 10px 0; border-top: 1px #111 solid; width: 100%; }
 article h2:first-child {margin-top: 0;}
 article h3 {
@@ -164,6 +163,7 @@ aside section h2 { border-bottom: 1px #ddd solid; }
 
 .alert h2 {font-weight: 600;border-top: 0;border-radius: 1rem;}
 .lightbox-caption { background-color: black; }
+span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 
 /* XS, SM, MD */
 @media screen and (max-width: 991px) {

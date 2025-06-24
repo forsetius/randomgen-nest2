@@ -3,13 +3,13 @@ import { minify } from 'html-minifier';
 import { PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
-import { BlockFactory } from '../services/BlockFactory';
+import { BlockFactory } from '../services';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from './Library';
 import { Block } from './blocks/Block';
 import { PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
-import { CmsServiceOptions } from '../types/CmsModuleOptions';
+import { CmsModuleOptions } from '../types/CmsModuleOptions';
 import { Category } from './Category';
 import { Locale } from './Locale';
 
@@ -84,9 +84,7 @@ export class Page {
                 : undefined,
           }
         : undefined,
-      date: this.date
-        ?.setLocale(this.locale.lang)
-        .toLocaleString(DateTime.DATE_FULL),
+      dateTime: this.date,
       lang: this.locale.lang,
       translations: this.locale.translations,
       slug: this.slug,
@@ -101,11 +99,10 @@ export class Page {
     );
   }
 
-  public render(library: Library, opts: CmsServiceOptions): RenderedContent[] {
+  public render(library: Library, opts: CmsModuleOptions): RenderedContent[] {
     const renderedContents: RenderedContent[] = [];
     const data = {
       ...this.data,
-      meta: opts.meta,
       brand: opts.brand,
     };
 
@@ -252,7 +249,7 @@ export class Page {
     return [
       this.def.title,
       this.def.subtitle,
-      this.def.tags?.join(' ').replaceAll('-', ' '),
+      this.def.tags.join(' ').replaceAll('-', ' '),
       this.def.excerpt && this.markdownService.stripMarkdown(this.def.excerpt),
       this.def.lead && this.markdownService.stripMarkdown(this.def.lead),
       includeContent && this.markdownService.stripMarkdown(this.def.content),

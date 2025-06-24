@@ -1,13 +1,7 @@
-import { PageDef } from './PageZodSchema';
-import { CmsServiceOptions } from './CmsModuleOptions';
 import { Lang } from '@shared/types/Lang';
 import { Page } from '../domain/Page';
 import { Category } from '../domain/Category';
-
-export interface PageMeta {
-  meta: CmsServiceOptions['meta'];
-  brand: CmsServiceOptions['brand'];
-}
+import { DateTime } from 'luxon';
 
 export interface PageProps {
   categoryData: CategoryData | undefined;
@@ -15,9 +9,8 @@ export interface PageProps {
   translations: Record<string, string>;
   slug: string;
   filename: string;
+  dateTime: DateTime | undefined;
 }
-
-export interface FullPageDef extends PageDef, PageMeta, PageProps {}
 
 export interface CategoryData {
   current: Category;

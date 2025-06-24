@@ -4,26 +4,22 @@ import { join } from 'node:path';
 import { cwd } from 'node:process';
 import { Inject, Injectable } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
+import stopwatch from '@shared/util/stopwatch';
+import { getBasename } from '@shared/util/string';
 import { ParserService } from '../../parser/services/ParserService';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
 import { PageFactory } from './PageFactory';
 import { Library } from '../domain/Library';
-import stopwatch from '@shared/util/stopwatch';
-import { getBasename } from '@shared/util/string';
-import { RenderedContent } from '../types/RenderedContent';
-import type {
-  CmsModuleOptions,
-  CmsServiceOptions,
-} from '../types/CmsModuleOptions';
-import { CMS_OPTIONS } from '../CmsConstants';
 import { Locale } from '../domain/Locale';
+import { RenderedContent } from '../types/RenderedContent';
+import type { CmsModuleOptions } from '../types/CmsModuleOptions';
+import { CMS_OPTIONS } from '../CmsConstants';
 
 @Injectable()
 export class CmsService {
   private readonly baseSourcePath: string;
   private readonly baseOutputPath: string;
-  private readonly opts: Record<Lang, CmsServiceOptions>;
   private libraries!: Record<Lang, Library>;
 
   public constructor(
@@ -32,22 +28,10 @@ export class CmsService {
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
     @Inject(CMS_OPTIONS)
-    options: CmsModuleOptions,
+    private readonly opts: CmsModuleOptions,
   ) {
     this.baseSourcePath = join(cwd(), 'content', 'cms');
     this.baseOutputPath = join(this.baseSourcePath, 'static');
-    this.opts = Object.fromEntries(
-      Object.values(Lang).map((lang) => [
-        lang,
-        {
-          ...options,
-          meta: {
-            ...options.meta[lang],
-            lang,
-          },
-        },
-      ]),
-    ) as Record<Lang, CmsServiceOptions>;
   }
 
   async onModuleInit(): Promise<void> {
@@ -93,7 +77,7 @@ export class CmsService {
 
     const renderedContents: RenderedContent[] = [];
     library.pages.forEach((page) => {
-      renderedContents.push(...page.render(library, this.opts[lang]));
+      renderedContents.push(...page.render(library, this.opts));
     });
     await this.saveContent(renderedContents, lang);
 
@@ -175,7 +159,6 @@ export class CmsService {
 
 enum SourceDir {
   PAGE = 'pages',
-  SPECIAL_PAGE = 'specialPages',
   BLOCK = 'blocks',
   MENU = 'menus',
 }

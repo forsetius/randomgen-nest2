@@ -23,24 +23,7 @@ import { MailModule } from '../io/mail';
     }),
     MailModule,
     CmsModule.forRoot({
-      fragmentTemplates: [
-        'fragment-img-card',
-        'fragment-list-item',
-        // 'fragment-lead-card',
-        // 'fragment-data-card',
-      ],
-      meta: {
-        pl: {
-          title: 'RandomGen',
-          description: 'Random generators for RPGs',
-          keywords: 'random, generator, rpg, dnd, star trek',
-        },
-        en: {
-          title: 'Random generator',
-          description: 'Random generators for RPGs',
-          keywords: 'random, generator, rpg, d&d, star trek',
-        },
-      },
+      fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
       brand: {
         name: 'Forseti: Abstract Works',
         copyright: '© 2025 by Marcin "Forseti" Paździora',
