@@ -8,6 +8,7 @@ import {
   Post,
   Query,
   Res,
+  UseInterceptors,
 } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import { CmsService } from './services/CmsService';
@@ -18,6 +19,7 @@ import { LangQueryDto } from './dtos/LangQueryDto';
 import { ContactDto } from './dtos/ContactDto';
 import { MailService } from '../../io/mail';
 import { AppConfigService } from '@config/AppConfigService';
+import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor';
 
 @Controller()
 export class CmsController {
@@ -70,24 +72,25 @@ export class CmsController {
   }
 
   @Post('/contact')
-  public async submitContact(@Body() dto: ContactDto) {
+  @UseInterceptors(AkismetInterceptor<ContactDto>)
+  public async submitContactForm(@Body() dto: ContactDto) {
     this.logger.debug(
-      `A message from: ${dto.firstName} <${dto.email}> titled: ${dto.title}\n${dto.content.slice(0, 79)}`,
+      `A message from: ${dto.name} <${dto.email}> titled: ${dto.title}\n${dto.content.slice(0, 79)}`,
     );
-    const config = this.configService.getInferred('mail');
 
+    const config = this.configService.getInferred('mail');
     try {
       await this.mailService.sendMail({
         from: config.sender,
         to: config.adminEmail,
+        replyTo: dto.email,
         subject: dto.title,
         text: `
-From: ${dto.firstName} <${dto.email}>
+From: ${dto.name} <${dto.email}>
 Title: ${dto.title}
 ---
 ${dto.content}
         `,
-        replyTo: dto.email,
       });
 
       return {};

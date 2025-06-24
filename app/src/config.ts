@@ -34,6 +34,10 @@ export const config = (envVars: EnvVarValidator) => ({
     adminEmail: 'forseti@forseti.pl',
   },
   security: {
+    akismet: {
+      key: envVars.AKISMET_KEY,
+      siteUrl: envVars.APP_HOST,
+    },
     rateLimit: {
       limit: 100,
       windowMs: 1000,

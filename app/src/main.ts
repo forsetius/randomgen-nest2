@@ -5,7 +5,7 @@ import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
-import { SecurityService } from './base/security/SecurityService';
+import { SecurityService } from './base/security/services/SecurityService';
 import { Env } from '@shared/types/Env';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 

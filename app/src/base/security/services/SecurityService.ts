@@ -1,7 +1,7 @@
 import compression from 'compression';
 import helmet from 'helmet';
 import { INestApplication, Injectable } from '@nestjs/common';
-import { ContentSecurityPolicyRegistry } from './ContentSecurityPolicyRegistry';
+import { ContentSecurityPolicyRegistry } from '../ContentSecurityPolicyRegistry';
 
 @Injectable()
 export class SecurityService {

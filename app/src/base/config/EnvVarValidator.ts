@@ -1,7 +1,6 @@
 import {
   IsEnum,
   IsInt,
-  IsOptional,
   IsString,
   IsUrl,
   Max,
@@ -19,12 +18,14 @@ export class EnvVarValidator {
   @IsEnum(Env)
   ENV!: Env;
 
+  @IsString()
+  AKISMET_KEY!: string;
+
   @Transform(({ value }: { value: unknown }) =>
     value === '' ? undefined : value,
   )
-  @IsOptional()
   @IsUrl({ require_tld: false, protocols: ['http', 'https'] })
-  APP_HOST?: string;
+  APP_HOST!: string;
 
   @IsInt()
   @Min(MIN_PORT_NUMBER)

@@ -1,9 +1,14 @@
-import { IsString, IsNotEmpty, IsEmail } from 'class-validator';
+import { IsString, IsNotEmpty, IsEmail, IsEmpty } from 'class-validator';
 
 export class ContactDto {
+  // Honeypot field. Invisible in the UI but some bots will fill it.
+  @IsString()
+  @IsEmpty()
+  catcher: string | undefined;
+
   @IsString()
   @IsNotEmpty()
-  firstName!: string;
+  name!: string;
 
   @IsEmail()
   @IsNotEmpty()

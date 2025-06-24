@@ -6,21 +6,26 @@
     hx-post="/contact"
     hx-swap="none"
 >
+  
   <div class="row gx-3">
     <div class="col-12 col-md-6 mb-3">
+      <div class="d-none">
+        <input id="honeypot" type="text" name="catcher">
+        <label for="honeypot">Come to daddy</label>
+      </div>
       <div class="form-floating h-100">
         <input
             type="text"
             class="form-control"
-            id="contactFirstName"
-            name="firstName"
-            placeholder="{{ translations.firstName }}"
+            id="contactName"
+            name="name"
+            placeholder="{{ translations.name }}"
             required
         />
         <div class="invalid-feedback">
           {{ translations.fieldRequired }}
         </div>
-        <label for="contactFirstName">{{ translations.firstName }}</label>
+        <label for="contactName">{{ translations.name }}</label>
       </div>
     </div>
     

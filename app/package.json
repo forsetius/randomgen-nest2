@@ -1,6 +1,6 @@
 {
   "name": "randomgen",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "CMS for forseti.pl, Random generators for RPGs",
   "keywords": [
     "rpg",
@@ -43,6 +43,7 @@
     "@nestjs/swagger": "^11.2.0",
     "@nestjs/terminus": "^11.0.0",
     "@nestjs/throttler": "^6.4.0",
+    "akismet-api": "^6.0.0",
     "axios": "^1.10.0",
     "bootstrap-icons": "^1.13.1",
     "class-transformer": "^0.5.1",

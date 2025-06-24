@@ -2,7 +2,7 @@
   "content": "Treść",
   "emailRequired": "Pole jest wymagane i musi być poprawnym adresem email",
   "fieldRequired": "Pole jest wymagane",
-  "firstName": "Imię",
+  "name": "Imię",
   "messageSent": "Wiadomość wysłana!",
   "messageError": "Błąd przy wysyłaniu wiadomości",
   "messageThanks": "Dziękuję za wiadomość, odpowiem najszybciej jak będę mógł.",
