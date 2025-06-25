@@ -2,8 +2,7 @@
 template: page-default
 title: Triady
 subtitle: Triads
-#headerImage: trans5-head.jpg
-##thumbnailImage: trans5-head.jpg
+headerImage: mid-triads-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

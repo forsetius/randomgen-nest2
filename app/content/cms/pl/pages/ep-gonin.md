@@ -3,7 +3,7 @@ template: page-default
 title: Go-nin
 subtitle: Go-nin
 excerpt: Bankowość, Agrotechnologia, Robotyka, Usługi
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-gonin-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

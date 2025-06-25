@@ -2,7 +2,7 @@
 template: page-default
 title: Stronnictwa
 subtitle: Eclipse Phase
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ep-factions-head.jpg
 category: ep-encyklopedia
 subcategoryName: Stronnictwa
 tags:

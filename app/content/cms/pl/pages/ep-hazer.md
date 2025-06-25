@@ -2,7 +2,7 @@
 template: page-default
 title: Hazer
 subtitle: Hazer
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-hazer-head.jpg
 excerpt: Standardowy tytański biomorf przyzwyczajony do chłodu
 category: ep-biomorf
 tags:

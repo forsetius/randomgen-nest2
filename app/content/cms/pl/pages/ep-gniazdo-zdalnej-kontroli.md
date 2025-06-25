@@ -2,7 +2,7 @@
 template: page-default
 title: Gniazdo zdalnej kontroli
 subtitle: TODO
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-remote-control-jacks-head.jpg
 #thumbnailImage: eclipse-phase-head.jpg
 category: ep-ulepszenia
 tags:

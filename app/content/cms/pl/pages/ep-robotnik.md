@@ -2,7 +2,7 @@
 template: page-default
 title: Pod-robotnik
 subtitle: Worker pod
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-worker-pod-head.jpg
 category: ep-pod
 tags:
   - rpg

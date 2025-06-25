@@ -3,7 +3,7 @@ template: page-default
 title: Exotech
 subtitle: Exotech
 excerpt: Uploading, SI, Elektronika, Oprogramowanie
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-exotech-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

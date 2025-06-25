@@ -2,7 +2,7 @@
 template: page-default
 title: Genfiks
 subtitle: Splicer
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-splicer-head.jpg
 excerpt: Standardowy model biomorfa z usuniętymi defektami genetycznymi
 category: ep-biomorf
 tags:

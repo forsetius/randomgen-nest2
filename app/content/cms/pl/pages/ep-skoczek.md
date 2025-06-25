@@ -2,8 +2,7 @@
 template: page-default
 title: Skoczek
 subtitle: Bouncer
-#headerImage: trans9-head.jpg
-##thumbnailImage: trans9-head.jpg
+headerImage: mid-bouncer-head.jpg
 category: ep-biomorf
 tags:
   - rpg

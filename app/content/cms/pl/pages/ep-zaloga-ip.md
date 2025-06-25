@@ -2,8 +2,7 @@
 template: page-default
 title: Załoga IP
 subtitle: IP Crew
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-wp-ip-crew-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

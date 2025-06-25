@@ -2,7 +2,7 @@
 template: page-default
 title: Fa Jing
 subtitle: Fa Jing
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-fajing-head.jpg
 category: ep-hiperkorporacja
 excerpt: Wydobycie, Energia, Biotechnologia, Wytwarzanie przemysłowe
 tags:

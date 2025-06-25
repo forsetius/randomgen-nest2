@@ -6,8 +6,7 @@ headerImage: mid-sunward-head.jpg
 category: ep-intro
 sort: 4
 excerpt: Na planetach skalistych rządzi kapitalizm
-lead: |
-  lead
+
 tags:
   - rpg
 

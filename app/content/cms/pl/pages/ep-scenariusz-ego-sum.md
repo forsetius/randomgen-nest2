@@ -2,7 +2,7 @@
 template: page-full-width
 title: Ego Sum
 subtitle: Scenariusz do Eclipse Phase
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ep-ego-sum-head.jpg
 subcategoryName: Ego Sum
 tags:
   - rpg

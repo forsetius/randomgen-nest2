@@ -2,8 +2,7 @@
 template: page-default
 title: Novacrab
 subtitle: Novacrab
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-novacrab-head.jpg
 category: ep-pod
 tags:
   - rpg

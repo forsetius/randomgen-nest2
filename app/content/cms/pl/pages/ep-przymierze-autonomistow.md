@@ -2,7 +2,7 @@
 template: page-default
 title: Przymierze Autonomistów
 subtitle: Autonomists Alliance
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-autonomists-alliance-head.jpg
 category: ep-ustroje
 tags:
   - rpg

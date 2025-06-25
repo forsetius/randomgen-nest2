@@ -3,7 +3,7 @@ template: page-default
 title: Skinaesthesia
 subtitle: Skinaesthesia
 excerpt: Genetyka, Klonowanie, Biotechnologia
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-skinaesthesia-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

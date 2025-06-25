@@ -3,7 +3,6 @@ template: page-default
 title: Synt
 subtitle: Synth
 headerImage: mid-clanking-masses-head.jpg
-#thumbnailImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 tags:
   - rpg

@@ -2,8 +2,7 @@
 template: page-default
 title: Projekt Ozma
 subtitle: Project Ozma
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-project-ozma-head.jpg
 category: ep-organizacje
 tags:
   - rpg

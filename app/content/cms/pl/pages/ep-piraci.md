@@ -2,8 +2,7 @@
 template: page-default
 title: Piraci
 subtitle: Pirates
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-pirates-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

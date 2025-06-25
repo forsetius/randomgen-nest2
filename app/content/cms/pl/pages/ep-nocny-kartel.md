@@ -2,8 +2,7 @@
 template: page-default
 title: Nocny Kartel
 subtitle: Night Cartel
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-night-cartel-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

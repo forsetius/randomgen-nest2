@@ -3,7 +3,7 @@ template: page-default
 title: Dziewięć Żyć
 subtitle: Nine Lives
 excerpt: "Ego-handlarze: pozyskiwanie, handel i przemyt transludzi"
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-nine-lives-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

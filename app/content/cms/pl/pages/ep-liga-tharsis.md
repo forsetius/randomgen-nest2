@@ -3,7 +3,7 @@ template: page-default
 title: Liga Tharsis
 subtitle: Tharsis League
 excerpt: Stowarzyszenie marsjańskich miast, nominalnie niezależne od Konsorcjum Planetarnego
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-tharsis-league-head.jpg
 category: ep-ustroje
 tags:
   - rpg

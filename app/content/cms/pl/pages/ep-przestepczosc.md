@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Przestępczość
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-crime-head.jpg
 category: ep-encyklopedia
 subcategoryName: Przestępczość
 tags:

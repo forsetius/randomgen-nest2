@@ -3,7 +3,7 @@ template: page-default
 title: Moduł pasażera
 subtitle: Ghostrider module
 excerpt: Moduł dołączany do wszczepki, umożliwiający uruchomienie w morfie dodatkowego Ego
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ghostrider-module-head.jpg
 category: ep-ulepszenia
 tags:
   - rpg

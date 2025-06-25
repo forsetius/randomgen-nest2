@@ -2,8 +2,7 @@
 template: page-default
 title: Szumowiny
 subtitle: Scum
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-scum-head.jpg
 category: ep-ustroje
 tags:
   - rpg

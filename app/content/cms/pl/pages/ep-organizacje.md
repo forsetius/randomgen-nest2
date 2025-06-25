@@ -2,7 +2,7 @@
 template: page-default
 title: Organizacje
 subtitle: Eclipse Phase
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ep-organizations-head.jpg
 category: ep-encyklopedia
 subcategoryName: Organizacje
 tags:

@@ -2,8 +2,7 @@
 template: page-default
 title: Normals
 subtitle: Flat
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-flat-head.jpg
 excerpt: Nieulepszone ludzkie ciało
 category: ep-biomorf
 tags:

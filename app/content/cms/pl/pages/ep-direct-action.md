@@ -2,7 +2,7 @@
 template: page-default
 title: Direct Action
 subtitle: Direct Action
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-direct-action-head.jpg
 category: ep-hiperkorporacja
 excerpt: Usługi bezpieczeństwa, Kontrakty wojskowe
 tags:

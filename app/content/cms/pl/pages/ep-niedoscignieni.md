@@ -1,9 +1,8 @@
 ---
 template: page-default
 title: Niedoścignieni
-subtitle: TODO
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+subtitle: Ultimates
+headerImage: mid-ultimates-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

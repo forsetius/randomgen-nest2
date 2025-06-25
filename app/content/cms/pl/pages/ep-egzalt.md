@@ -2,7 +2,7 @@
 template: page-default
 title: Egzalt
 subtitle: Exalt
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-exalt-head.jpg
 excerpt: Ogólnie ulepszone genetycznie biomorfy z wysokiej półki
 category: ep-biomorf
 tags:

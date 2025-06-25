@@ -2,7 +2,7 @@
 template: page-default
 title: Izolacjoniści
 subtitle: Brinkers
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-brinkers-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

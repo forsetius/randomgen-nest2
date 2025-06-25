@@ -2,7 +2,7 @@
 template: page-default
 title: Solaris
 subtitle: Solaris
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ep-solaris-head.jpg
 category: ep-hiperkorporacja
 excerpt: Bankowość, Ubezpieczenia, Inwestycje, Rynki futures, Obrót informacją
 tags:

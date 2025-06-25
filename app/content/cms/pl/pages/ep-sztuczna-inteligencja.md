@@ -1,8 +1,7 @@
 ---
 template: page-default
 title: Sztuczna inteligencja
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-ep-ai-head.jpg
 category: ep-encyklopedia
 subcategoryName: Sztuczna inteligencja
 tags:

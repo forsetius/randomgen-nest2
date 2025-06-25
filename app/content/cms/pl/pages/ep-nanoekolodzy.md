@@ -2,8 +2,7 @@
 template: page-default
 title: Nanoekolodzy
 subtitle: TODO
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-nano-ecologists-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

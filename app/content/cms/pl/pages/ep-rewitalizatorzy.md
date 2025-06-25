@@ -2,7 +2,7 @@
 template: page-default
 title: Rewitalizatorzy
 subtitle: Reclaimers
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-reclaimers-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

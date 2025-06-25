@@ -3,7 +3,7 @@ template: page-default
 title: Splot
 subtitle: Mesh
 excerpt: Następca Internetu
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ep-mesh-head.jpg
 category: ep-encyklopedia
 tags:
   - rpg

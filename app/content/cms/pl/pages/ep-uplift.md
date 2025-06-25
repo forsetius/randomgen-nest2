@@ -2,8 +2,7 @@
 template: page-default
 title: Uplift
 subtitle: Uplift
-#headerImage: pano19-head.jpg
-##thumbnailImage: pano19-head.jpg
+headerImage: mid-uplift-head.jpg
 tags:
   - rpg
 

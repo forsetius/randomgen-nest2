@@ -2,8 +2,7 @@
 template: page-default
 title: Pax Familiae
 subtitle: Pax Familiae
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-pax-familiae-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

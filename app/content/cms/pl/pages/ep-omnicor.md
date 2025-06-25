@@ -3,7 +3,7 @@ template: page-default
 title: Omnicor
 subtitle: Omnicor
 excerpt: Nanofabrykacja, Chemikalia, Energia, Antymateria
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-omnicor-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

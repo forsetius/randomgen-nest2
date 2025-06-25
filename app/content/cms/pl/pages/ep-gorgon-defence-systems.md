@@ -3,7 +3,7 @@ template: page-default
 title: Gorgon Defence Systems
 subtitle: Gorgon Defence Systems
 excerpt: Technologia wojskowa, Bezpieczeństwo, Kontrakty wojskowe
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-gorgon-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

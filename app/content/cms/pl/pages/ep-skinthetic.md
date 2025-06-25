@@ -3,7 +3,7 @@ template: page-default
 title: Skinthetic
 subtitle: Skinthetic
 excerpt: Genetyka, Klonowanie, Biotechnologia
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-skinthetic-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

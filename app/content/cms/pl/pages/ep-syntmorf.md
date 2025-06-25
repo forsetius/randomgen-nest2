@@ -3,7 +3,6 @@ template: page-default
 title: Syntmorf
 subtitle: Synthmorph
 headerImage: mid-syntmorph-head.jpg
-#thumbnailImage: mid-syntmorph-head.jpg
 excerpt: W pełni robotyczne powłoki na Ego
 category: ep-morf
 subcategoryName: Syntmorfy

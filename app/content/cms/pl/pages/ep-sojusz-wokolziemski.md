@@ -2,8 +2,7 @@
 template: page-default
 title: Sojusz Wokółziemskki
 subtitle: Lunar Lagrange Alliance
-headerImage: eclipse-phase-head.jpg
-#thumbnailImage: eclipse-phase-head.jpg
+headerImage: mid-lunar-lagrange-alliance-head.jpg
 category: ep-ustroje
 tags:
   - rpg

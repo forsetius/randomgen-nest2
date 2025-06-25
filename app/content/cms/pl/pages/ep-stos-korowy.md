@@ -3,7 +3,7 @@ template: page-default
 title: Stos korowy
 subtitle: Cortical stack
 excerpt: Implant, w którym zapisuje się backup Ego
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-cortical-stack-head.jpg
 category: ep-ulepszenia
 tags:
   - rpg

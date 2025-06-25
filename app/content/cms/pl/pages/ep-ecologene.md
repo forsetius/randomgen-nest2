@@ -3,7 +3,7 @@ template: page-default
 title: Ecologene
 subtitle: Ecologene
 excerpt: Systemy podtrzymania życia, Inżynieria środowiskowa, Genetyka
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-ecologene-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

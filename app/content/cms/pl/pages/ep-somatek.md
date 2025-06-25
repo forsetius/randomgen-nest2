@@ -3,7 +3,7 @@ template: page-default
 title: Somatek
 subtitle: Somatek
 excerpt: Uplifty, Farmaceutyki, Biofarmaceutyki, Genetyka
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-somatek-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg

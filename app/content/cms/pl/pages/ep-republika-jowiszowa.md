@@ -3,7 +3,6 @@ template: page-default
 title: Republika Jowiszowa
 subtitle: Jovian Republic
 headerImage: mid-jupiter-junta-head.jpg
-#thumbnailImage: mid-jupiter-junta-head.jpg
 excerpt: Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza
 category: ep-ustroje
 tags:

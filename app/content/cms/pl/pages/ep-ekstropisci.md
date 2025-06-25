@@ -3,7 +3,7 @@ template: page-default
 title: Ekstropiści
 subtitle: Extropists
 excerpt: Radykalni anarchokapitaliści
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-extropia-head.jpg
 category: ep-ustroje
 tags:
   - rpg

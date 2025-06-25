@@ -3,7 +3,7 @@ template: page-default
 title: Gatekeeper
 subtitle: Gatekeeper
 excerpt: Eksploracja pozasłoneczna, Badania naukowe, ExpLogi, Kolonizacja egzoplanet
-headerImage: eclipse-phase-head.jpg
+headerImage: mid-gatekeeper-head.jpg
 category: ep-hiperkorporacja
 tags:
   - rpg
