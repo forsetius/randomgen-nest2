@@ -10,12 +10,14 @@ import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
 import { MailModule } from '../io/mail';
 
+const appRoot = path.join(__dirname, '..', '..');
+
 @Module({
   imports: [
     AppConfigModule,
     SecurityModule,
     TemplatingModule.forRoot({
-      paths: path.join(__dirname, '..', '..', 'content', 'cms', 'templates'),
+      paths: path.join(appRoot, 'content', 'cms', 'templates'),
       options: {
         autoescape: false,
         throwOnUndefined: true,
@@ -24,6 +26,12 @@ import { MailModule } from '../io/mail';
     MailModule,
     CmsModule.forRoot({
       fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
+      paths: {
+        mediaDir: path.join(appRoot, 'content', 'cms', 'static', 'media'),
+      },
+      defaults: {
+        headerImage: 'index-head.jpg',
+      },
       brand: {
         name: 'Forseti: Abstract Works',
         copyright: '© 2025 by Marcin "Forseti" Paździora',

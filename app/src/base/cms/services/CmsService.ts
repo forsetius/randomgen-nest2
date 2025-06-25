@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { cwd } from 'node:process';
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
@@ -13,8 +13,6 @@ import { PageFactory } from './PageFactory';
 import { Library } from '../domain/Library';
 import { Locale } from '../domain/Locale';
 import { RenderedContent } from '../types/RenderedContent';
-import type { CmsModuleOptions } from '../types/CmsModuleOptions';
-import { CMS_OPTIONS } from '../CmsConstants';
 
 @Injectable()
 export class CmsService {
@@ -27,8 +25,6 @@ export class CmsService {
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
-    @Inject(CMS_OPTIONS)
-    private readonly opts: CmsModuleOptions,
   ) {
     this.baseSourcePath = join(cwd(), 'content', 'cms');
     this.baseOutputPath = join(this.baseSourcePath, 'static');
@@ -75,11 +71,12 @@ export class CmsService {
       block.render(library);
     });
 
-    const renderedContents: RenderedContent[] = [];
-    library.pages.forEach((page) => {
-      renderedContents.push(...page.render(library, this.opts));
-    });
-    await this.saveContent(renderedContents, lang);
+    const renderedContents = await Promise.all(
+      Array.from(library.pages).map(
+        async ([, page]) => await page.render(library),
+      ),
+    );
+    await this.saveContent(renderedContents.flat(), lang);
 
     return library;
   }

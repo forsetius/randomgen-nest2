@@ -1,5 +1,8 @@
-import { DateTime } from 'luxon';
+import * as fs from 'node:fs/promises';
+import { join } from 'node:path';
 import { minify } from 'html-minifier';
+import { DateTime } from 'luxon';
+import { Inject } from '@nestjs/common';
 import { PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
@@ -7,11 +10,12 @@ import { BlockFactory } from '../services';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from './Library';
 import { Block } from './blocks/Block';
-import { PageDef } from '../types';
+import type { PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
-import { CmsModuleOptions } from '../types/CmsModuleOptions';
+import type { CmsModuleOptions } from '../types/CmsModuleOptions';
 import { Category } from './Category';
 import { Locale } from './Locale';
+import { CMS_OPTIONS } from '../CmsConstants';
 
 export class Page {
   public category: Category | undefined = undefined;
@@ -22,6 +26,7 @@ export class Page {
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
+    @Inject(CMS_OPTIONS) private opts: CmsModuleOptions,
     public readonly slug: string,
     public readonly def: PageDef,
     private readonly locale: Locale,
@@ -99,14 +104,20 @@ export class Page {
     );
   }
 
-  public render(library: Library, opts: CmsModuleOptions): RenderedContent[] {
+  public async render(library: Library): Promise<RenderedContent[]> {
     const renderedContents: RenderedContent[] = [];
+    const [headerImage, thumbnailImage] = await Promise.all([
+      this.defaultImage(this.data.headerImage, this.opts.defaults.headerImage),
+      this.defaultImage(this.data.headerImage, this.opts.defaults.headerImage),
+    ]);
     const data = {
       ...this.data,
-      brand: opts.brand,
+      headerImage,
+      thumbnailImage,
+      brand: this.opts.brand,
     };
 
-    opts.fragmentTemplates.forEach((template) => {
+    this.opts.fragmentTemplates.forEach((template) => {
       renderedContents.push({
         filepath: `${template}_${this.slug}.html`,
         content: this.templatingService.render(
@@ -225,7 +236,12 @@ export class Page {
   private resolveSlugs(content: string, library: Library): string {
     return content.replace(
       /@{(?<slug>[a-z0-9_-]+?)}/g,
-      (_match, slug: string) => library.getPage(slug).filename,
+      (_match, slug: string) => {
+        const page = library.getPage(slug);
+        const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';
+
+        return `${page.filename}${title}`;
+      },
     );
   }
 
@@ -239,7 +255,7 @@ export class Page {
         removeScriptTypeAttributes: true,
       });
     } catch (err) {
-      console.error('❌ Error while minifying the HTML:', err);
+      console.error('❌ Error while minifying the HTML:\n', err);
 
       return content;
     }
@@ -257,5 +273,18 @@ export class Page {
       .filter((str) => typeof str === 'string')
       .join(' ')
       .toLowerCase();
+  }
+
+  private async defaultImage(
+    image: string,
+    defaultTo: string,
+  ): Promise<string> {
+    try {
+      await fs.access(join(this.opts.paths.mediaDir, image), fs.constants.R_OK);
+
+      return image;
+    } catch {
+      return defaultTo;
+    }
   }
 }

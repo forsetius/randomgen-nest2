@@ -30,7 +30,7 @@ class GalleryBlock {
         this.loadPage(this.currentPage + 1);
       });
     }
-    console.log(this);
+
     this.loadPage(initialPage, false);
 
     window.addEventListener('popstate', (e) => {
@@ -41,9 +41,9 @@ class GalleryBlock {
 
   updateButtons() {
     if (!this.prevBtn || !this.nextBtn) return;
-    this.prevBtn.classList.toggle('d-none', this.currentPage <= 1);
+    this.prevBtn.classList.toggle('invisible', this.currentPage <= 1);
     this.nextBtn.classList.toggle(
-      'd-none',
+      'invisible',
       this.currentPage >= this.totalPages,
     );
   }
@@ -58,13 +58,11 @@ class GalleryBlock {
     this.loadedCount = 0;
 
     this.updateButtons();
-    console.log('page', this.perPage);
 
     this.container.style.minHeight = `${this.container.offsetHeight}px`;
     this.container.style.opacity = '0';
 
     const onFadeOut = () => {
-      console.log('FadeOut');
       this.container.removeEventListener('transitionend', onFadeOut);
       this.container.innerHTML = '';
 

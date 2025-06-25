@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Page } from '../domain/Page';
@@ -8,6 +8,8 @@ import { SourceFileValidationException } from '../exceptions/SourceFileValidatio
 import { BlockFactory } from './BlockFactory';
 import { fromZodError } from '@shared/util/fromZodError';
 import { Locale } from '../domain/Locale';
+import { CMS_OPTIONS } from '../CmsConstants';
+import type { CmsModuleOptions } from '../types/CmsModuleOptions';
 
 @Injectable()
 export class PageFactory {
@@ -15,6 +17,7 @@ export class PageFactory {
     private readonly blockFactory: BlockFactory,
     private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
+    @Inject(CMS_OPTIONS) private opts: CmsModuleOptions,
   ) {}
 
   public validate(filename: string, def: unknown): PageDef {
@@ -42,6 +45,7 @@ export class PageFactory {
       this.blockFactory,
       this.markdownService,
       this.templatingService,
+      this.opts,
       filename,
       pageDef,
       locale,
