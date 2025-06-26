@@ -65,7 +65,6 @@ li.label {
     overflow: hidden;
     background-position: left center, right center, center center;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, cover;
     background-color: #000;
 }
 #headerImg h1 {
@@ -77,7 +76,7 @@ li.label {
 }
 
 #subHeader {
-    padding: 10px 10px 10px 70px;
+    padding: 10px 10px 10px 7%;
     border-top: 1px #555 solid;
     margin: -20px 0 20px 0;
     background-color: black;
@@ -86,7 +85,7 @@ li.label {
     font-size: 0.9rem;
     text-transform: uppercase;
 }
-#subHeader span.info { padding-inline: 20px;}
+#subHeader span.info { padding-inline: 0 40px;}
 
 #footBar {padding: 5px; margin: 0;}
 #footBar a, #footBar a:hover, #footBar a:focus {font-size: 14px;}
@@ -169,9 +168,9 @@ span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 @media screen and (max-width: 991px) {
     .only-web {display: none !important;}
 
-    #headerImg {padding: 0 20px 10px 20px;}
-    #main-title {font-size: 48pt;}
-    #subtitle {font-size: 24pt;}
+    #headerImg {padding: 0 20px 10px 6%; background-size: 0, 0, cover;}
+    #main-title {font-size: 40pt;}
+    #subtitle {font-size: 20pt;}
 
     main {padding: 0 7% !important;}
     article .content { column-count: 1; }
@@ -184,7 +183,7 @@ span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 
 /* LG */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #headerImg {padding: 0 50px 10px 70px;}
+    #headerImg {padding: 0 50px 10px 6%; background-size: auto, auto, cover;}
     #main-title {font-size: 60pt;}
     #subtitle {font-size: 30pt;}
     #subHeader {min-height: 2.6rem;}
@@ -200,7 +199,7 @@ span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 
 /* XL */
 @media screen and (min-width: 1200px) {
-    #headerImg {padding: 0 50px 10px 70px;}
+    #headerImg {padding: 0 50px 10px 6%; background-size: auto, auto, cover;}
     #main-title {font-size: 72pt;}
     #subtitle {font-size: 36pt;}
     #subHeader {min-height: 2.6rem;}
