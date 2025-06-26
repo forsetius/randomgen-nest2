@@ -68,8 +68,6 @@ li.label {
     background-color: #000;
 }
 #headerImg h1 {
-    display: inline-block;
-    align-self: flex-end;
     color: #fff;
     text-shadow: 0 0 5px #000;
     width: 100%
@@ -164,8 +162,25 @@ aside section h2 { border-bottom: 1px #ddd solid; }
 .lightbox-caption { background-color: black; }
 span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 
-/* XS, SM, MD */
+/* XS */
 @media screen and (max-width: 991px) {
+    .only-web {display: none !important;}
+
+    #headerImg {padding: 0 20px 10px 6%; background-size: 0, 0, cover;}
+    #main-title {font-size: 32pt;}
+    #subtitle {font-size: 16pt;}
+
+    main {padding: 0 7% !important;}
+    article .content { column-count: 1; }
+
+    main {margin-top: 0; padding-top: 0;}
+    aside {margin-bottom: 30px;}
+
+    .alert {padding-bottom: 0; margin: 0 -12px 32px -12px; border-radius: 1rem;}
+}
+
+/* SM, MD */
+@media screen and (min-width: 575px) and (max-width: 991px) {
     .only-web {display: none !important;}
 
     #headerImg {padding: 0 20px 10px 6%; background-size: 0, 0, cover;}

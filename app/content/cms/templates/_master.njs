@@ -13,9 +13,8 @@
   <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
   <script src="/ui/head.js"></script>
   {% block meta %}
-    <title>{{ title }} | {{ brand.name }}</title>
-    <meta name="description" content="{{ meta.description }}">
-    <meta name="robots" content="{{ 'index' if meta.robots.index else 'noindex' }},{{ 'follow' if meta.robots.follow else 'nofollow' }}"/>
+    {% include 'partial-seo-main.njs' %}
+    {% include 'partial-seo-og.njs' %}
   {% endblock %}
 </head>
 <body class="{% block bodyClass %}default-page{% endblock %}">
@@ -37,9 +36,9 @@
   {% block header %} {% include "partial_header.njs" %} {% endblock %}
   <div id="subHeader">
     {% block subHeader %}
-      {% if date %}<span class="info"><i class="bi-calendar3"></i>&nbsp; {{ date }}</span>{% endif %}
-      {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i>&nbsp; {{ categoryData.current.breadcrumbs }}</span>{% endif %}
-      {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i>&nbsp; <a href="/pages/{{ lang }}/tag.html?tag={{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}
+      {% if date %}<span class="info"><i class="bi-calendar3"></i>&nbsp;&nbsp;{{ date }}</span>{% endif %}
+      {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i>&nbsp;&nbsp;{{ categoryData.current.breadcrumbs }}</span>{% endif %}
+      {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i>&nbsp;&nbsp;<a href="/pages/{{ lang }}/tag.html?tag={{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}
     {% endblock %}
   </div>
 </header>

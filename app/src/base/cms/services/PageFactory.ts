@@ -10,15 +10,24 @@ import { fromZodError } from '@shared/util/fromZodError';
 import { Locale } from '../domain/Locale';
 import { CMS_OPTIONS } from '../CmsConstants';
 import type { CmsModuleOptions } from '../types/CmsModuleOptions';
+import { AppConfigService } from '@config/AppConfigService';
+import { PageMeta } from '../types/PageMeta';
 
 @Injectable()
 export class PageFactory {
+  private readonly metadata: PageMeta & CmsModuleOptions;
   public constructor(
     private readonly blockFactory: BlockFactory,
     private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
-    @Inject(CMS_OPTIONS) private opts: CmsModuleOptions,
-  ) {}
+    @Inject(CMS_OPTIONS) opts: CmsModuleOptions,
+    configService: AppConfigService,
+  ) {
+    this.metadata = {
+      ...opts,
+      appOrigin: configService.getInferred('app.host'),
+    };
+  }
 
   public validate(filename: string, def: unknown): PageDef {
     try {
@@ -45,7 +54,7 @@ export class PageFactory {
       this.blockFactory,
       this.markdownService,
       this.templatingService,
-      this.opts,
+      this.metadata,
       filename,
       pageDef,
       locale,

@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { cwd } from 'node:process';
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
@@ -19,6 +19,7 @@ export class CmsService {
   private readonly baseSourcePath: string;
   private readonly baseOutputPath: string;
   private libraries!: Record<Lang, Library>;
+  private readonly logger = new Logger(CmsService.name);
 
   public constructor(
     private readonly parserService: ParserService,
@@ -77,6 +78,9 @@ export class CmsService {
       ),
     );
     await this.saveContent(renderedContents.flat(), lang);
+    this.logger.debug(
+      `Rendered ${library.pages.size.toString()} pages for "${lang}"`,
+    );
 
     return library;
   }

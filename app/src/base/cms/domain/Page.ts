@@ -2,8 +2,7 @@ import * as fs from 'node:fs/promises';
 import { join } from 'node:path';
 import { minify } from 'html-minifier';
 import { DateTime } from 'luxon';
-import { Inject } from '@nestjs/common';
-import { PageProps } from '../types/PageMeta';
+import { PageMeta, PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { BlockFactory } from '../services';
@@ -15,7 +14,6 @@ import { RenderedContent } from '../types/RenderedContent';
 import type { CmsModuleOptions } from '../types/CmsModuleOptions';
 import { Category } from './Category';
 import { Locale } from './Locale';
-import { CMS_OPTIONS } from '../CmsConstants';
 
 export class Page {
   public category: Category | undefined = undefined;
@@ -26,7 +24,7 @@ export class Page {
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
-    @Inject(CMS_OPTIONS) private opts: CmsModuleOptions,
+    private meta: PageMeta & CmsModuleOptions,
     public readonly slug: string,
     public readonly def: PageDef,
     private readonly locale: Locale,
@@ -107,17 +105,18 @@ export class Page {
   public async render(library: Library): Promise<RenderedContent[]> {
     const renderedContents: RenderedContent[] = [];
     const [headerImage, thumbnailImage] = await Promise.all([
-      this.defaultImage(this.data.headerImage, this.opts.defaults.headerImage),
-      this.defaultImage(this.data.headerImage, this.opts.defaults.headerImage),
+      this.defaultImage(this.data.headerImage, this.meta.defaults.headerImage),
+      this.defaultImage(this.data.headerImage, this.meta.defaults.headerImage),
     ]);
     const data = {
       ...this.data,
       headerImage,
       thumbnailImage,
-      brand: this.opts.brand,
+      appOrigin: this.meta.appOrigin,
+      brand: this.meta.brand,
     };
 
-    this.opts.fragmentTemplates.forEach((template) => {
+    this.meta.fragmentTemplates.forEach((template) => {
       renderedContents.push({
         filepath: `${template}_${this.slug}.html`,
         content: this.templatingService.render(
@@ -280,7 +279,7 @@ export class Page {
     defaultTo: string,
   ): Promise<string> {
     try {
-      await fs.access(join(this.opts.paths.mediaDir, image), fs.constants.R_OK);
+      await fs.access(join(this.meta.paths.mediaDir, image), fs.constants.R_OK);
 
       return image;
     } catch {
