@@ -15,12 +15,12 @@ tags:
 #    - type: category
 #      category: ep-atlas
 ---
-Habitaty istnieją nawet wokół [Słońca](#) i na spalonych nim [Wulkanoidach](#). Z drugiej strony, pojedyncze bazy dryfują daleko w Obłoku Oorta. Z trzeciej strony, na niektórych z wielu odkrytych lokacji pozasłonecznych, które dostępne są przez Wrota Pandoriańskie.
+Transludzkie [habitaty](#) istnieją nawet wokół [Słońca](#) i na spalonych nim [Wulkanoidach](#). Z drugiej strony, pojedyncze bazy dryfują daleko w Obłoku Oorta. Z trzeciej strony, na niektórych z wielu odkrytych lokacji pozasłonecznych, które dostępne są przez Wrota Pandoriańskie.
 
 [Merkury](#), [Wenus](#), okolice [Ziemi](#) (wraz z Księżycem, zwanym powszechnie [Luną](#) bo zamieszkałych w Układzie Słonecznym księżyców jest dostatek) oraz [Mars](#) to domena społeczeństw wyrosłych na ideach kapitalistycznych. W szczególności Mars jest siedzibą [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne}, które zrzesza [hiperkorporacje]{pl/ep-hiperkorporacja} i ma mocno post-cyberpunkowy charakter. Wenusjańska [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej} to z kolei przykład "kapitalizmu z ludzką twarzą", można powiedzieć: daleki, duchowy potomek Unii Europejskiej. [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}, skupiający habitaty z orbity Ziemi oraz Luny próbuje zachować _status quo ante_ i zachować styl życia sprzed Upadku ale coraz bardziej zostaje w tyle za pozostałymi dwoma ustrojami [Wewnętrznego Układu Słonecznego]{pl/ep-wewnetrze}.
 
 W [pasie asteroidów](#) mieszają się wpływu Wewnętrza i [Zewnętrza]{pl/ep-zewnetrze} Układu. Pełno tam baz górniczych, niezależnych ustrojów (najsławniejszym jest [Extropia]{pl/ep-ekstropisci} na asteroidzie [44 Nysa](#), gdzie panuje galopujący anarchokapitalizm), tajnych laboratoriów hiperkorpów itd.
 
-Okolice [Jowisza](#) to siedziba [Republiki Jowiszowej]{pl/ep-republika-jowiszowa}, zwanej przez resztę Układu "Jowiszową Juntą" bo rządzi tam post-amerykańsko-chilijska junta wojskowa, egzekwująca [biokonserwatywny]{pl/ep-biokonserwatysci} reżim morfologiczno-ekonomiczny z gorliwością irańskich ajatollahów. Przy okazji: Junta wzięła pod swoje skrzydła [Stolicę Apostolską](#), która ewakuowała się z Ziemi w okolice Jowisza.
+Okolice [Jowisza](#) to siedziba [Republiki Jowiszowej]{pl/ep-republika-jowiszowa}, zwanej przez resztę Układu "Jowiszową Juntą" bo rządzi tam post-amerykańsko-chilijska junta wojskowa, egzekwująca [biokonserwatywny]{pl/ep-biokonserwatysci} reżim morfologiczno-technologiczny z gorliwością irańskich ajatollahów. Przy okazji: Junta wzięła pod swoje skrzydła [Stolicę Apostolską](#), która ewakuowała się z Ziemi w okolice Jowisza.
 
-Trojańczycy Jowiszowi oraz dalsze rejony Zewnętrza Układu to domena różnej maści anarchistów. Na [Tytanie](#) rządzi [Wspólnota Tytana]{pl/ep-wspolnota-tytana}.
+Trojańczycy Jowiszowi oraz dalsze rejony Zewnętrza Układu to domena różnej maści anarchistów. Na ich tle wyróżnia się [Wspólnota Tytana]{pl/ep-wspolnota-tytana} rządzona w systemie cyberdemokracji na modłę nordycką.

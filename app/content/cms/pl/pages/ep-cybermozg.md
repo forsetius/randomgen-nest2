@@ -12,4 +12,4 @@ Mózg cybernetyczny jest miejscem, gdzie w morfie pozbawionym biologicznego móz
 
 Ponieważ cybermózg przechowuje zapis pamięci w sposób cyfrowy, ma odpowiednik [pamięci ejdetycznej]{pl/ep-pamiec-ejdetyczna}. Aby umożliwiać kablowe podłączanie urządzeń zewnętrznych, cybermózg posiada koncentrator magistrali dostępowej, do której podłączone są zewnętrzne [gniazda dostępu]{pl/ep-gniazda-dostepu}. Magistrala ta obsługuje również komunikację inicjowaną z drugiej strony, zapewniając infrastrukturę, do której podłączone jest [gniazdo kontroli zdalnej]{pl/ep-gniazdo-zdalnej-kontroli}, umożliwiające przejęcie kontroli nad morfem poprzez podłączenie kablowe.
 
-Cybermózgi, jako urządzenia elektroniczne, mogą być zhakowane lub w inny sposób zaatakowane metodami walki elektronicznej.
+Cybermózgi, jako urządzenia elektroniczne, mogą być zhakowane lub w inny sposób zaatakowane metodami walki elektronicznej. Z drugiej strony, transfer Ego do i z nich jest bezproblemowy, ponieważ zasadniczo polega na skopiowaniu zapisu Ego - w przeciwieństwie do biologicznego mózgu, którego neurony i synapsy muszą być fizycznie zrekonfigurowane przy [przyodziewaniu](#).

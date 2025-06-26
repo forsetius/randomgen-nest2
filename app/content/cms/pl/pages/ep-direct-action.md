@@ -12,7 +12,8 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Usługi bezpieczeństwa, Kontrakty wojskowe
+        - Usługi bezpieczeństwa
+        - Kontrakty wojskowe
         ## Główne habitaty
         - Heksagon ([Ziemia](#)-[Luna](#) L5), 
 ---
