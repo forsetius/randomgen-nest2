@@ -12,3 +12,4 @@ slots:
     - type: category
       category: ep-ustroje
 ---
+<block id="w-budowie" />

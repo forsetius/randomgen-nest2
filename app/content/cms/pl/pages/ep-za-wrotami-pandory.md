@@ -11,3 +11,4 @@ tags:
   - rpg
   - TODO-tresc
 ---
+<block id="w-budowie" />

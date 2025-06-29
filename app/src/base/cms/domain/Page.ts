@@ -234,7 +234,7 @@ export class Page {
 
   private resolveSlugs(content: string, library: Library): string {
     return content.replace(
-      /@{(?<slug>[a-z0-9_-]+?)}/g,
+      /@\{(?<slug>[\p{L}\d_-]+?)\}/gu,
       (_match, slug: string) => {
         const page = library.getPage(slug);
         const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';

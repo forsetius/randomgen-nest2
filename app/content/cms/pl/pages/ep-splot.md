@@ -11,7 +11,7 @@ tags:
 ---
 Istnienie Splotu w Eclipse Phase jest możliwe tylko i wyłącznie dzięki znacznemu postępowi w dziedzinie komputerów, technologii informacyjnej oraz nanoprodukcji. Bezprzewodowe odbiorniki radiowe są tak mikroskopijne, że mogą być wmontowane właściwie wszędzie, dzięki czemu wszystko jest skomputeryzowane i połączone ze sobą.
 
-Technologia przechowywania danych jest tak zaawansowana, że nawet przechowalnia danych przeciętnego użytkownika jest w stanie pomieścić ilość informacji przekraczającą rozmiar całego XX-wiecznego internetu. Lifelogerzy nagrywają dosłownie każdy moment swojego życia i nigdy nie muszą się martwić o to, że zabraknie im miejsca. Możliwości obliczeniowe również stały się hiperwydajne; przeciętne urządzenie przenośne jest w stanie spełnić wszystkie potrzeby użytkownika, nawet gdy jednocześnie korzysta on z osobistego asystenta SI, ściąga filmy, uploaduje porno i skanuje tysiące kanałów informacyjnych.
+Technologia przechowywania danych jest tak zaawansowana, że nawet przechowalnia danych przeciętnego użytkownika jest w stanie pomieścić ilość informacji przekraczającą rozmiar całego XX-wiecznego internetu. Lifelogerzy nagrywają dosłownie każdy moment swojego życia i nigdy nie muszą się martwić o to, że zabraknie im miejsca. Możliwości obliczeniowe również stały się hiperwydajne; przeciętne urządzenie przenośne jest w stanie spełnić wszystkie potrzeby użytkownika, nawet gdy jednocześnie korzysta on z osobistego asystenta AI, ściąga filmy, uploaduje porno i skanuje tysiące kanałów informacyjnych.
 
 W obrębie Splotu urządzenia osiągające limit swoich możliwości po prostu dzielą się obliczeniami z innymi urządzeniami znajdującymi się w okolicy. Przepustowość łącza również znacznie przewyższa potrzeby większości obywateli - osoba urodzona w przeciągu ostatnich kilkudziesięciu lat od zawsze żyła w świecie gdzie hiperrealistyczne, wielozmysłowe media dowolnej długości są dostępne do natychmiastowego ściągnięcia. Olbrzymie bazy danych oraz archiwa mogą być swobodnie kopiowane. Przepustowość nie stanowi problemów do tego stopnia, że większość ludzi wręcz zapomina o jej istnieniu. Na dodatek Splot nigdy nie ulega awarii; to zdecentralizowana sieć – jeżeli jedno z urządzeń jest offline, połączenia po prostu je omijają, znajdując drogę przez tysiące innych dostępnych węzłów.
 
@@ -19,7 +19,7 @@ Każdy dysponuje komputerową [wszczepką sieciową]{pl/ep-wszczepka} bezpośred
 
 ## Informacje na wyciągnięcie ręki
 
-Następujące informacje zazwyczaj są bezproblemowo dostępne za pośrednictwem Splotu w danym habitacie czy mieście:
+Następujące informacje zazwyczaj są bezproblemowo dostępne za pośrednictwem Splotu w danym [habitacie]{pl/ep-habitat} czy mieście:
 
 ### Warunki lokalne
 

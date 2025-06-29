@@ -19,7 +19,7 @@ slots:
         - Nectar ([Luna](#))
         - Olympus ([Mars](#))
 ---
-**Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzygwiezdnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie](#) w [Układzie Słonecznym](#), zwykle przy pomocy lokalnych podwykonawców.
+**Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzygwiezdnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie]{pl/ep-habitat} w [Układzie Słonecznym](#), zwykle przy pomocy lokalnych podwykonawców.
 
 Mimo cudów [nanofabrykacji](#) wiele zasobów wciąż musi być importowane. ComEx skupia się na zarządzaniu szlakami zaopatrzenia i handlu tak, by zapewnić dostarczenie fizycznych przesyłek do ich punktów docelowych. W tym celu ComEx utrzymuje strategicznie rozmieszczone po Układzie centra orbitalne, jak również flotę transportowców i dronów kurierskich.
 

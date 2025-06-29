@@ -12,7 +12,9 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Systemy podtrzymania życia, Inżynieria środowiskowa, Genetyka
+        - Systemy podtrzymania życia
+        - Inżynieria środowiskowa
+        - Genetyka
         ## Główne habitaty
         - McClintock (orbita [Marsa](#))
 ---
@@ -20,4 +22,4 @@ slots:
 
 Jednym z bardziej godnych uwagi projektów Ecologene jest budowa kompletnego archiwum genetycznego wszystkich form życia. Projekt ten został niemal doszczętnie zrujnowany przez [Upadek]{pl/ep-upadek}, jednak Ecologene powoli odtwarza utracone dane.
 
-Z nieznanych przyczyn, Ecologene wydaje się być faworyzowana przez [Faktorów](#). Niektórzy spekulują, że ta hiperkorporacja jest w posiadaniu jakiś kompromitujących Faktorów materiałów. Inni uważają, że Ecologene wyprzedaje Obcym sekrety genetyczne transludzkości w zamian za ksenotechnologiczne zabawki.
+Z nieznanych przyczyn, Ecologene wydaje się faworyzowana przez [Faktorów](#). Niektórzy spekulują, że ta hiperkorporacja jest w posiadaniu jakiś kompromitujących Faktorów materiałów. Inni uważają, że Ecologene wyprzedaje Obcym sekrety genetyczne transludzkości w zamian za ksenotechnologiczne zabawki.

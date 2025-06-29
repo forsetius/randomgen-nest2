@@ -22,6 +22,6 @@ slots:
 
 Hiperkorporacja ta różni się od innych w tym, że jest spółdzielnią produkcyjną z radami pracowniczymi w lokalnych biurach i wybieralnym spośród pracowników kongresem sprawującym zarząd.
 
-Terragenesis posiada kilka habitatów na Marsie i niewielką ilość stacji badawczych na orbicie Ziemi, zbierających dane do symulacji projektów rewitalizacyjnych Ziemi. Ta ostatnia inicjatywa jest mocno wspierana (i co możliwe - finansowana) przez prominentnych [rewitalizatorów](Rewitalizatorzy.md "Aktywiści dążący do oczyszczenia i odzyskania Ziemi"). Z kolei projekt terraformowania Marsa jest często na celowniku [prezerwacjonistycznych](Eko-konserwaty%C5%9Bci "Radykalni ekolodzy wzywający do bezwzględnego zachowania istniejących środowisk") eko-sabotażystów.
+Terragenesis posiada kilka [habitatów]{pl/ep-habitat} na Marsie i niewielką ilość stacji badawczych na orbicie Ziemi, zbierających dane do symulacji projektów rewitalizacyjnych Ziemi. Ta ostatnia inicjatywa jest mocno wspierana (i co możliwe - finansowana) przez prominentnych [rewitalizatorów](Rewitalizatorzy.md "Aktywiści dążący do oczyszczenia i odzyskania Ziemi"). Z kolei projekt terraformowania Marsa jest często na celowniku [prezerwacjonistycznych](Eko-konserwaty%C5%9Bci "Radykalni ekolodzy wzywający do bezwzględnego zachowania istniejących środowisk") eko-sabotażystów.
 
 Dzięki utrzymywaniu kontroli nad [Wrotami pandoriańskimi](#) na [Wulkanoidach](#) kooperatywa ta rozszerza swoją obecność na różnych egzoplanetach stosownych do terraformowania i geoinżynierii.

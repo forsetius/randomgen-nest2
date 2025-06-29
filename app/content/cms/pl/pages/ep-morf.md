@@ -14,4 +14,5 @@ slots:
     - type: category
       category: ep-morf
 ---
-TODO
+<block id="w-budowie" />
+

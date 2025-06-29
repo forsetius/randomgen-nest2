@@ -4,16 +4,25 @@ title: Infomorf
 subtitle: Infomorph
 headerImage: mid-infomorph-head.jpg
 excerpt: Wirtualny morf pozwalający uruchomić Ego w środowisku Splotu
+lead: |
+  Infomorfy to formy wyłącznie cyfrowe – nie mają fizycznego ciała, istnieją wyłącznie w wirtualnym, cyfrowym środowisku uruchomieniowym. Termin „infomorf” odnosi się do każdego ego osadzonego w cyfrowym ciele, niezależnie od tego, czy jest to AI ogólna (AGI), czy cyfrowa emulacja biologicznego umysłu (wliczając w to kopie zapasowe i forki).
 category: ep-morf
 subcategoryName: Infomorfy
 tags:
   - rpg
-slots:
-  bottom:
-    - type: category
-      category: ep-infomorf
+#slots:
+#  bottom:
+#    - type: category
+#      category: ep-infomorf
 ---
-Dla tysięcy [info-uchodźców](#), przyodziewanie niematerialnej formy cyfrowej jest ich jedynym wyjściem. Niektórzy są ulokowani w oddzielonych od [Splotu]{pl/ep-splot} wirtualnych przechowalniach czy wręcz nieaktywnych magazynach, zamkniętych przez habitaty, które nie miały wystarczających zasobów by ich obsłużyć. Inni są uwięzieni w [wirtualnych symulacjach](#), zabijając czas w wybrany przez siebie sposób, czekając aż nadejdzie szansa na [przyodzianie](#).
+W swojej istocie infomorfy są po prostu programami, dlatego traktuje się je jak każde inne oprogramowanie. Muszą działać na konkretnym komputerze osobistym lub serwerze. Jeśli to urządzenie zostanie wyłączone, infomorf również ulega dezaktywacji i przechodzi w stan nieświadomości, by zostać ponownie uruchomionym wraz z urządzeniem (infomorfy mogą też same się wyłączyć, choć zdarza się to rzadko). Jeśli urządzenie zostanie zniszczone, infomorf ginie razem z nim (chyba że dane da się w jakiś sposób odzyskać z ocalałych komponentów, co może skutkować powstaniem tzw. wybrakowanej kopii – vapor).
+
+Infomorfy mogą kopiować same siebie, choć w niektórych miejscach jest to nielegalne, a w większości budzi kontrowersje natury etycznej i prawnej. Z tego powodu wiele infomorfów, które kopiują się i przenoszą na nowe urządzenie, dokładnie wymazuje swoją wcześniejszą wersję z poprzedniego nośnika.
+
+Jako byty cyfrowe, infomorfy nie posiadają fizycznego mózgu, ale z łatwością mogą „zamieszkać” w niezamieszkanym morfie syntetycznym, zajmując jego cybermózg. Mogą także zostać pobrane do morfów biologicznych zgodnie ze standardowymi zasadami [przyodziewania](#). Nawet bezcieleśnie mogą wchodzić w interakcje ze światem fizycznym za pośrednictwem [Splotu]{pl/ep-splot} – obserwując przez sensory, przesyłając strumieniowo zapisy doświadczeń ([XP](#) feeds), komunikując się z postaciami, kontrolując podporządkowane urządzenia oraz zdalnie sterując lub zakłócając pracę dronów.
+
+## Stan obecny
+Dla tysięcy [info-uchodźców]{pl/ep-info-uchodzcy}, przyodziewanie niematerialnej formy cyfrowej jest ich jedynym wyjściem. Niektórzy są ulokowani w oddzielonych od [Splotu]{pl/ep-splot} wirtualnych przechowalniach czy wręcz nieaktywnych magazynach, zamkniętych przez [habitaty]{pl/ep-habitat}, które nie miały wystarczających zasobów by ich obsłużyć. Inni są uwięzieni w [wirtualnych symulacjach](#), zabijając czas w wybrany przez siebie sposób, czekając aż nadejdzie szansa na [przyodzianie](#).
 
 Całkiem spora część jednak może swobodnie poruszać się po Splocie i prowadzić przez niego swobodne interakcje z transludźmi przyodzianymi w fizyczne [morfy]{pl/ep-morf}. Są oni na bieżąco z aktualnymi wiadomościami, a czasem nawet przejmują inicjatywę tworząc polityczne bloki walczące o prawa i przywileje dla infomorfów.
 

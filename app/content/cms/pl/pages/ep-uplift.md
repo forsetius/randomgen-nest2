@@ -3,6 +3,7 @@ template: page-default
 title: Uplift
 subtitle: Uplift
 headerImage: mid-uplift-head.jpg
+category: ep-realia
 tags:
   - rpg
 
@@ -24,12 +25,12 @@ Jednak agresywne [hiperkorpy]{pl/ep-hiperkorporacja} nie chcące pogodzić się 
 
 Inna firma, [New Day](New+Day), przywróciła do życia neandertalczyków, wskrzeszając kuzynów ludzkości, wybitych przez nią dawno temu. Natomiast w ukrytych otchłaniach [Układu Słonecznego]((#)) pracowali ludzie, którzy może nie mieli takich funduszy jak giganci, ale za to byli kreatywni i umieli pociągać za sznurki. I tak w dekadach przed Upadkiem upliftowano pierwsze bezkręgowce (ośmiornice), słonie a także orki i inne gatunki waleni. Dziesiątkom innych gatunków zwierząt ulepszono zdolności poznawcze nawet jeśli nie zdążono doprowadzić do pełnej rozumności. Na przeszkodzie stanął oczywiście Upadek spowodowany niekontrolowanym rajdem TITANów ku technologicznej osobliwości. Mówi się, że na przykład słonie dołączyły do grona upliftów po to tylko, by wyginąć w Upadku.
 
-Uplifty generalnie źle zniosły Upadek. Wielu nie dano szans ewakuacji z Ziemi - pierwszeństwo mieli ludzie, tak cieleśni jak i [info-uchodźcy]((#). Na przykład przeżyła ledwie garstka neo-wielorybów, dołączając wkrótce do swoich kuzynów w głębiach oceanów na [Europie](Europa), [Ceres](Ceres) czy w [koronie Słońca](S%C5%82o%C5%84ce). W zasadzie to, że tyle ich przetrwało, uplifty zawdzięczają głównie temu, że większość badań nad nimi już przed apokalipsą była prowadzona poza Ziemią.
+Uplifty generalnie źle zniosły Upadek. Wielu nie dano szans ewakuacji z Ziemi - pierwszeństwo mieli ludzie, tak cieleśni jak i [info-uchodźcy]{pl/ep-info-uchodzcy}. Na przykład przeżyła ledwie garstka neo-wielorybów, dołączając wkrótce do swoich kuzynów w głębiach oceanów na [Europie](Europa), [Ceres](Ceres) czy w [koronie Słońca](S%C5%82o%C5%84ce). W zasadzie to, że tyle ich przetrwało, uplifty zawdzięczają głównie temu, że większość badań nad nimi już przed apokalipsą była prowadzona poza Ziemią.
 
 ## Sytuacja obecna
 
 Po niespełna pół wieku istnienia, uplifty rozproszyły się po całym Układzie Słonecznym, stając się rozpoznawalnym elementem transludzkiej kultury. Wiele z nich wciąż odpracowuje [kontrakty służebne](#), podczas gdy inne są praktycznie niewolnikami hiperkorpów, które je stworzyły - pracują jako siła najemna na umowach na czas nieokreślony (czytaj: wieczny).
 
-Ostatnio było kilka fal uwolnionych upliftów opuszczających hiperkorpy i na księżyce i do habitatów [Zewnętrznego Układu]{pl/ep-zewnetrze}. Te rubieże cywilizacji są ostoją niezwykłej różnorodności: uchodźcy, który uciekli przed Upadkiem jako oprogramowanie, stworzenia nurzające się w gorejącym Słońcu lub baraszkujące w mroźnych i mrocznych oceanach lodowych księżyców, [Skoczki](./Encyklopedia/Skoczek.md) gibko przemierzające [habitaty](Habitaty "Habitaty") z mikrograwitacją, samotnicy we w pełni syntetycznych morfach żyjący w ogóle poza habitatami w otwartej przestrzeni kosmicznej... W tej czeredzie uplifty nie odstają specjalnie.
+Ostatnio było kilka fal uwolnionych upliftów opuszczających hiperkorpy i na księżyce i do [habitatów]{pl/ep-habitat} [Zewnętrznego Układu]{pl/ep-zewnetrze}. Te rubieże cywilizacji są ostoją niezwykłej różnorodności: uchodźcy, który uciekli przed Upadkiem jako oprogramowanie, stworzenia nurzające się w gorejącym Słońcu lub baraszkujące w mroźnych i mrocznych oceanach lodowych księżyców, [Skoczki](./Encyklopedia/Skoczek.md) gibko przemierzające [habitaty]{pl/ep-habitat} z mikrograwitacją, samotnicy we w pełni syntetycznych morfach żyjący w ogóle poza habitatami w otwartej przestrzeni kosmicznej... W tej czeredzie uplifty nie odstają specjalnie.
 
 Uplifty mają takie same potrzeby i marzenia jak wszyscy: pożywienie i schronienie. Praca, w której można się spełnić i kreatywność. Wreszcie przyszłość dla ich dzieci. Mimo uprzedzeń transludzi, są dokładnie tacy jak oni: tak samo transbiologiczni, tak samo wspomagani, tak samo dostosowani. Mimo to, nie wszyscy akceptują ich jako część transludzkości. W większości Układu Słonecznego ich prawa są ograniczone, odmawia się im zatrudnienia, posiadania dzieci, traktuje jak potwory, zabawki czy niewolnicy.

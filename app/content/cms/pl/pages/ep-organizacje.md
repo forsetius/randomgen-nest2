@@ -13,3 +13,4 @@ slots:
     - type: category
       category: ep-organizacje
 ---
+<block id="w-budowie" />

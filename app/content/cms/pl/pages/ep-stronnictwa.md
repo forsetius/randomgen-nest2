@@ -13,3 +13,4 @@ slots:
     - type: category
       category: ep-stronnictwa
 ---
+<block id="w-budowie" />

@@ -20,4 +20,4 @@ Jako wiodący projektant [biomorfów]{pl/ep-biomorf}, **Skinaesthesia** cieszy s
 
 Skinaestesia skupia się na adaptacjach środowiskowych i użytecznych [usprawnieniach cybernetycznych](Cybermody "Cybermody"), poprawiając szanse transludzkości na przetrwanie i dalszy dobrobyt.
 
-Ciekawostką jest to, że eksperymentalne morfy są czasem oferowane desperackim info-uchodźcom do przetestowania w terenie.
+Ciekawostką jest to, że eksperymentalne morfy są czasem oferowane desperackim [info-uchodźcom]{pl/ep-info-uchodzcy} do przetestowania w terenie.

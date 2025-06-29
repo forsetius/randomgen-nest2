@@ -9,6 +9,6 @@ lead: |
 slots:
   bottom:
     - type: tag
-      tag: znowu-baba-mnie-wywlokla
+      tag: znowu-baba-mnie-wywlokła
 ---
 

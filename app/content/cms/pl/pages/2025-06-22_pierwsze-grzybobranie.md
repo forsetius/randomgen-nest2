@@ -7,7 +7,7 @@ headerImage: mid-forest-head.jpg
 category: blog
 date: 2025-06-22
 tags:
-  - znowu-baba-mnie-wywlokla
+  - znowu-baba-mnie-wywlokła
 blocks:
   okolicznosciPrzyrody:
     type: gallery
