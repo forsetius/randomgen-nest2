@@ -27,6 +27,16 @@ export class Category {
     return this._breadcrumbs;
   }
 
+  get data(): CategoryData {
+    return {
+      name: this.name,
+      parent: this.parent?.data,
+      pages: this.pages.map((page) => page.slug),
+      fullSlug: this.fullSlug,
+      breadcrumbs: this.breadcrumbs,
+    };
+  }
+
   public constructor(
     public readonly name: string,
     public readonly categoryPage: Page,
@@ -51,7 +61,7 @@ export class Category {
     let parentCategory: Category | undefined = this.parent;
     while (parentCategory) {
       breadcrumbs.unshift(
-        `<a href="${parentCategory.categoryPage.filename}">${parentCategory.name}</a>`,
+        fn(parentCategory.categoryPage.filename, parentCategory.name),
       );
       parentCategory = parentCategory.parent;
     }
@@ -77,4 +87,12 @@ export class Category {
   public getPages(): Page[] {
     return this.pages;
   }
+}
+
+interface CategoryData {
+  name: string;
+  parent: CategoryData | undefined;
+  pages: string[];
+  fullSlug: string;
+  breadcrumbs: string;
 }

@@ -3,10 +3,6 @@ import { Page } from '../domain/Page';
 import { Category } from '../domain/Category';
 import { DateTime } from 'luxon';
 
-export interface PageMeta {
-  appOrigin: string;
-}
-
 export interface PageProps {
   categoryData: CategoryData | undefined;
   lang: Lang;

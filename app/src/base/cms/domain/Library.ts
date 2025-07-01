@@ -33,11 +33,9 @@ export class Library {
       }
 
       // we can sweep for tags while doing this
-      if (page.def.tags) {
-        page.def.tags.forEach((tag) => {
-          this.tags.add(tag, page);
-        });
-      }
+      page.def.tags.forEach((tag) => {
+        this.tags.add(tag, page);
+      });
     });
 
     // once we have all the categories, we can add the pages to them
@@ -59,18 +57,19 @@ export class Library {
       }
     });
     this.categories.forEach((category) => {
-      category.sortPages();
       category.constructFullSlug();
-      category.constructBreadcrumbs();
       category.getPages().forEach((page) => {
         page.category = category;
       });
+      category.sortPages();
+    });
+    this.categories.forEach((category) => {
+      category.constructBreadcrumbs();
     });
   }
 
   public getPage(slug: string): Page {
     if (!this.pages.has(slug)) {
-      console.log(this.pages.keys());
       throw new NotFoundException(`Page ${slug} not found`);
     }
 

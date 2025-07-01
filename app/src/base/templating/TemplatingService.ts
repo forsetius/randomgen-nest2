@@ -26,6 +26,7 @@ export class TemplatingService {
     try {
       return this.renderer.render(`${template}.njs`, data);
     } catch (e) {
+      console.log(`Data passed to template ${template}:`);
       console.log(data);
       if (e instanceof Error) {
         throw e;

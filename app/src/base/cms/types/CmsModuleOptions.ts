@@ -12,3 +12,7 @@ export interface CmsModuleOptions {
     logo: string;
   };
 }
+
+export interface SitewideData extends CmsModuleOptions {
+  appOrigin: string;
+}

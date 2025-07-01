@@ -15,9 +15,12 @@ menu:
 
   - title: Blurby
     items:
+      - title: Zasubskrybuj RSS
+        url: /pages/pl/rss.xml
+
       - title: Polityka prywatności
         url: "@{polityka-prywatnosci}"
 
       - title: Kontakt
-        url: /pages/pl/kontakt.html
+        url: "@{kontakt}"
         

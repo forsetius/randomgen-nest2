@@ -2,7 +2,7 @@ import * as fs from 'node:fs/promises';
 import { join } from 'node:path';
 import { minify } from 'html-minifier';
 import { DateTime } from 'luxon';
-import { PageMeta, PageProps } from '../types/PageMeta';
+import { PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { BlockFactory } from '../services';
@@ -11,7 +11,7 @@ import { Library } from './Library';
 import { Block } from './blocks/Block';
 import type { PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
-import type { CmsModuleOptions } from '../types/CmsModuleOptions';
+import type { SitewideData } from '../types/CmsModuleOptions';
 import { Category } from './Category';
 import { Locale } from './Locale';
 
@@ -24,7 +24,7 @@ export class Page {
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
     private templatingService: TemplatingService,
-    private meta: PageMeta & CmsModuleOptions,
+    private meta: SitewideData,
     public readonly slug: string,
     public readonly def: PageDef,
     private readonly locale: Locale,
@@ -104,10 +104,14 @@ export class Page {
 
   public async render(library: Library): Promise<RenderedContent[]> {
     const renderedContents: RenderedContent[] = [];
-    const [headerImage, thumbnailImage] = await Promise.all([
-      this.defaultImage(this.data.headerImage, this.meta.defaults.headerImage),
-      this.defaultImage(this.data.headerImage, this.meta.defaults.headerImage),
-    ]);
+    const headerImage = await this.defaultImage(
+      this.data.headerImage,
+      this.meta.defaults.headerImage,
+    );
+    const thumbnailImage = await this.defaultImage(
+      this.data.thumbnailImage,
+      headerImage,
+    );
     const data = {
       ...this.data,
       headerImage,

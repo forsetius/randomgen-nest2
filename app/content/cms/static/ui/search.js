@@ -52,7 +52,7 @@ async function loadFragment(url) {
 
 async function handleSearchResponse(event, containerName) {
   const container = document.getElementById(containerName);
-  console.log(event);
+
   let urls;
   try {
     urls = JSON.parse(event.detail.xhr.responseText);

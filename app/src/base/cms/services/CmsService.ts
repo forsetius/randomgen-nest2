@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { cwd } from 'node:process';
-import { Injectable, Logger } from '@nestjs/common';
+import { Inject, Injectable, Logger } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { getBasename } from '@shared/util/string';
@@ -13,6 +13,9 @@ import { PageFactory } from './PageFactory';
 import { Library } from '../domain/Library';
 import { Locale } from '../domain/Locale';
 import { RenderedContent } from '../types/RenderedContent';
+import { TemplatingService } from '@templating/TemplatingService';
+import type { SitewideData } from '../types/CmsModuleOptions';
+import { CMS_OPTIONS } from '../CmsConstants';
 
 @Injectable()
 export class CmsService {
@@ -23,9 +26,11 @@ export class CmsService {
 
   public constructor(
     private readonly parserService: ParserService,
+    private readonly templatingService: TemplatingService,
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
+    @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
   ) {
     this.baseSourcePath = join(cwd(), 'content', 'cms');
     this.baseOutputPath = join(this.baseSourcePath, 'static');
@@ -77,6 +82,10 @@ export class CmsService {
         async ([, page]) => await page.render(library),
       ),
     );
+    renderedContents.push([
+      { filepath: 'rss.xml', content: this.constructRss(library) },
+    ]);
+
     await this.saveContent(renderedContents.flat(), lang);
     this.logger.debug(
       `Rendered ${library.pages.size.toString()} pages for "${lang}"`,
@@ -114,9 +123,9 @@ export class CmsService {
 
     try {
       await Promise.all(
-        renderedContents.map(({ filepath, content }) =>
-          fsAsync.writeFile(join(pagesTempDir, filepath), content),
-        ),
+        renderedContents.map(({ filepath, content }) => {
+          return fsAsync.writeFile(join(pagesTempDir, filepath), content);
+        }),
       );
     } catch (error) {
       await fsAsync.rm(pagesTempDir, { recursive: true, force: true });
@@ -132,6 +141,21 @@ export class CmsService {
     if (oldPagesDir) {
       await fsAsync.rm(oldPagesDir, { recursive: true, force: true });
     }
+  }
+
+  private constructRss(library: Library): string {
+    const blogPages =
+      library.categories
+        .get('blog')
+        ?.getPages()
+        .map((page) => page.data) ?? [];
+
+    return this.templatingService.render('rss-feed', {
+      pages: blogPages,
+      metadata: this.metadata,
+      lang: library.locale.lang,
+      translations: library.locale.translations,
+    });
   }
 
   public search(

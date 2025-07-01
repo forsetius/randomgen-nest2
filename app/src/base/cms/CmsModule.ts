@@ -9,10 +9,11 @@ import { BlockFactory, CmsService, MenuFactory, PageFactory } from './services';
 import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicyRegistry';
 import { SecurityModule } from '../security/SecurityModule';
 import * as express from 'express';
-import { CmsModuleOptions } from './types/CmsModuleOptions';
+import { CmsModuleOptions, SitewideData } from './types/CmsModuleOptions';
 import { CMS_OPTIONS } from './CmsConstants';
 import { MailModule } from '../../io/mail';
 import { AppConfigModule } from '@config/AppConfigModule';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Module({
   controllers: [CmsController],
@@ -63,7 +64,11 @@ export class CmsModule implements OnModuleInit {
         CmsService,
         {
           provide: CMS_OPTIONS,
-          useValue: options,
+          useFactory: (configService: AppConfigService): SitewideData => ({
+            ...options,
+            appOrigin: configService.getInferred('app.host'),
+          }),
+          inject: [AppConfigService],
         },
       ],
     };

@@ -96,7 +96,7 @@ class GalleryBlock {
 (function () {
   const lang = document.querySelector('html').lang || 'pl';
   const blockElements = document.querySelectorAll('.gallery-set');
-  console.log(lang, blockElements);
+
   const blocks = [];
   blockElements.forEach((block) => {
     blocks.push(new GalleryBlock(block, lang));

@@ -9,25 +9,16 @@ import { BlockFactory } from './BlockFactory';
 import { fromZodError } from '@shared/util/fromZodError';
 import { Locale } from '../domain/Locale';
 import { CMS_OPTIONS } from '../CmsConstants';
-import type { CmsModuleOptions } from '../types/CmsModuleOptions';
-import { AppConfigService } from '@config/AppConfigService';
-import { PageMeta } from '../types/PageMeta';
+import type { SitewideData } from '../types/CmsModuleOptions';
 
 @Injectable()
 export class PageFactory {
-  private readonly metadata: PageMeta & CmsModuleOptions;
   public constructor(
     private readonly blockFactory: BlockFactory,
     private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
-    @Inject(CMS_OPTIONS) opts: CmsModuleOptions,
-    configService: AppConfigService,
-  ) {
-    this.metadata = {
-      ...opts,
-      appOrigin: configService.getInferred('app.host'),
-    };
-  }
+    @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
+  ) {}
 
   public validate(filename: string, def: unknown): PageDef {
     try {
