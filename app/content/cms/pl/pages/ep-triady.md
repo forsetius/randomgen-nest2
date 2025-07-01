@@ -2,6 +2,7 @@
 template: page-default
 title: Triady
 subtitle: Triads
+excerpt: Wschodnioazjatyckie gangi z wielowiekowymi tradycjami
 headerImage: mid-triads-head.jpg
 category: ep-przestepczosc
 tags:

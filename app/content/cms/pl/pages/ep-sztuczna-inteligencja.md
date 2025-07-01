@@ -1,6 +1,7 @@
 ---
-template: page-default
+template: page-full-width
 title: Sztuczna inteligencja
+excerpt: Różne rodzaje sztucznych inteligencji przyszłości
 headerImage: mid-ep-ai-head.jpg
 category: ep-encyklopedia
 subcategoryName: Sztuczna inteligencja

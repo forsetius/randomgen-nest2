@@ -2,6 +2,7 @@
 template: page-default
 title: Prometeusze
 subtitle: Prometheans
+excerpt: Grupa zalążkowych AI sympatyzująca z transludzkością (a może tylko rozgrywająca ją)
 headerImage: mid-prometheans-head.jpg
 category: ep-organizacje
 tags:

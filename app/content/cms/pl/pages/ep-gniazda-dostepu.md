@@ -2,6 +2,7 @@
 template: page-default
 title: Gniazda dostępu
 subtitle: TODO
+excerpt: Bezpośredni dostęp do cybermózgu zapewniający bezpieczną komunikację
 headerImage: mid-access-jacks-head.jpg
 category: ep-ulepszenia
 tags:

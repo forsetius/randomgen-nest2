@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Morf
 subtitle: Morph
 headerImage: mid-morph-head.jpg

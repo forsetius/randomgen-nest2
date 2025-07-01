@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Infomorf
 subtitle: Infomorph
 headerImage: mid-infomorph-head.jpg

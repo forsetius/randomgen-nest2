@@ -2,6 +2,7 @@
 template: page-default
 title: Pax Familiae
 subtitle: Pax Familiae
+excerpt: Syndykat zbrodni złożony z kopii jednej osoby, Claudii Ambelliny
 headerImage: mid-pax-familiae-head.jpg
 category: ep-przestepczosc
 tags:

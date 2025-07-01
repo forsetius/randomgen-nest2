@@ -1,7 +1,10 @@
 ---
 template: page-default
 title: Sex-pod
-#subtitle: Sex pod
+subtitle: Pleasure pod
+excerpt: Biorobot - zabawka erotyczna z duszą
+lead: |
+  > Z Sex podami mamy ten sam problem, co z każdą instytucjonalizowaną intymnością: udajemy, że nie chodzi o władzę. A przecież one nigdy nie przestają się uśmiechać.
 headerImage: mid-sex-pod-head.jpg
 category: ep-pod
 tags:

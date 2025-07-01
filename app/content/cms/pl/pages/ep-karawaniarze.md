@@ -2,6 +2,7 @@
 template: page-default
 title: Karawaniarze
 subtitle: Scum
+excerpt: Włóczędzy podróżujący we flotyllach połatanych barek i statków kosmicznych
 headerImage: mid-ep-scum-head.jpg
 category: ep-ustroje
 tags:

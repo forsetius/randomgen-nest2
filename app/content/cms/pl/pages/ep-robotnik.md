@@ -2,6 +2,9 @@
 template: page-default
 title: Pod-robotnik
 subtitle: Worker pod
+excerpt: Wzmocniony i bardziej wytrzymały pod używany jako muł roboczy
+lead: |
+  > Szanuję, że robią, co trzeba, ale nie rozumiem, czemu patrzą na mnie, jakbym był zbędnym luksusem. Może po prostu zazdroszczą, że czuję smak kawy.
 headerImage: mid-worker-pod-head.jpg
 category: ep-pod
 tags:

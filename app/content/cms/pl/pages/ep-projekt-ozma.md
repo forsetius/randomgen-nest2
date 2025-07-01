@@ -2,6 +2,7 @@
 template: page-default
 title: Projekt Ozma
 subtitle: Project Ozma
+excerpt: Organizacja - widmo, transludzie w czerni i główny przeciwnik Zapory
 headerImage: mid-project-ozma-head.jpg
 category: ep-organizacje
 tags:

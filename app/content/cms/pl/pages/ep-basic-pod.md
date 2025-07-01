@@ -3,6 +3,8 @@ template: page-default
 title: Podstawowy pod
 subtitle: Basic pod
 excerpt: Tanie ciała składane z klonowanych organów i wszczepów syntetycznych
+lead: |
+  > Basic Pody są jak baraki z plastobetonu: tanie, funkcjonalne, pozbawione stylu. I dokładnie tak je traktujemy — jak ludzi, których nie było stać na lepsze urodzenie.
 headerImage: mid-basic-pod-head.jpg
 category: ep-pod
 tags:

@@ -2,6 +2,7 @@
 template: page-default
 title: Nanoekolodzy
 subtitle: TODO
+excerpt: Postępowi ekolodzy balansujący między eko-konserwatyzmem a pełnoskalowym terraformingiem
 headerImage: mid-nano-ecologists-head.jpg
 category: ep-stronnictwa
 tags:

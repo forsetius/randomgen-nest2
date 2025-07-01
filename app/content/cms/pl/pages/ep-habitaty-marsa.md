@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Habitaty Marsa
 headerImage: mid-mars-domes-head.jpg
 excerpt: Osadnictwo na Marsie - pod kopułami i nie tylko

@@ -4,6 +4,8 @@ title: Egzalt
 subtitle: Exalt
 headerImage: mid-exalt-head.jpg
 excerpt: Ogólnie ulepszone genetycznie biomorfy z wysokiej półki
+lead: |
+  > Przyszedł bez koszulki, jakby chciał, żeby wszyscy wiedzieli, że nie jest Splicerem. Skóra bez skazy, oczy błyszczące jak genetycznie wzmacniana stal. W laboratorium poruszał się jak reklama wydajności, zdawało się, że jego pot potrafi sortować dane.
 category: ep-biomorf
 tags:
   - rpg

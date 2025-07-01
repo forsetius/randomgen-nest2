@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Barki Karawaniarzy
 headerImage: mid-scum-fleet-head.jpg
 excerpt: Flotylle byłych statków ewakuacyjnych przejęte przez Karawaniarzy

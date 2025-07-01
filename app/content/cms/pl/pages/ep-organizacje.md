@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Organizacje
 subtitle: Eclipse Phase
 headerImage: mid-ep-organizations-head.jpg

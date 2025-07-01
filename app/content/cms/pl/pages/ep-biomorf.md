@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Biomorf
 subtitle: Biomorph
 headerImage: mid-biomorph-head.jpg

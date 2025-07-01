@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Habitaty tunelowe
 headerImage: mid-lunar-city-head.jpg
 excerpt: Habitaty wydrążone pod powierzchniami ciał niebieskich

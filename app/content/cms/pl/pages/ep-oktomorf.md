@@ -4,6 +4,8 @@ title: Oktomorf
 subtitle: Octomorph
 headerImage: mid-octomorph-head.jpg
 excerpt: Ulepszone ośmiornice
+lead: |
+  > Płynął środkiem modułu kontroli, każde ramię zajęte czymś innym. Dwa poprawiały makijaż, jedno obracało kamerę, a inne obracały kawę w lewitującym kubku. Nie potrzebował pomocy. Właściwie — ja przeszkadzałem. Przeprosiłem i się wylogowałem.
 category: ep-biomorf
 tags:
   - rpg

@@ -1,7 +1,8 @@
 ---
-template: page-default
+template: page-full-width
 title: Realia świata
 subtitle: Eclipse Phase
+excerpt: Różnorodne aspekty settingu Eclipse Phase 
 headerImage: mid-ep-reality-head.jpg
 category: ep-encyklopedia
 subcategoryName: Realia

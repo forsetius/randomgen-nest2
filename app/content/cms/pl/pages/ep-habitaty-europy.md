@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Habitaty Europy
 headerImage: mid-europan-city-head.jpg
 excerpt: Miasta w oceanie pod lodową skorupą Europy

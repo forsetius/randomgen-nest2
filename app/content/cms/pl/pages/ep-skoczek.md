@@ -2,6 +2,9 @@
 template: page-default
 title: Skoczek
 subtitle: Bouncer
+excerpt: Biomorf z chwytnymi stopami, predestynowany do pracy w zero-G
+lead: |
+  > Widziałem go, jak naprawiał uszkodzoną linię chłodzenia nad reaktorem. Wisiał do góry nogami, przytrzymując się stopami jak nietoperz, a rękami lutował. Nawet nie miał pasa asekuracyjnego. Tylko Skoczki tak potrafią — jakby grawitacja była sugestią.
 headerImage: mid-bouncer-head.jpg
 category: ep-biomorf
 tags:
@@ -14,9 +17,9 @@ slots:
         - [Podstawowe biomody]{pl/ep-podstawowe-biomody}, 
         - [Wszczepka sieciowa]{pl/ep-wszczepka}, 
         - [Stos korowy]{pl/ep-stos-korowy}, 
-        - [Rzepy], 
-        - [Rezerwa tlenu], 
-        - [Chwytne stopy]
+        - [Rzepy](#), 
+        - [Rezerwa tlenu](#), 
+        - [Chwytne stopy](#)
         ##### Warianty
         - z [chwytnym ogonem](#)
         - z orientacją przestrzenną waleni

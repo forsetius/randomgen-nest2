@@ -4,6 +4,8 @@ title: Hazer
 subtitle: Hazer
 headerImage: mid-hazer-head.jpg
 excerpt: Standardowy tytański biomorf przyzwyczajony do chłodu
+lead: |
+  > Mówili, że na Tytanie każdy wcześniej czy później zaczyna gadać do siebie. Że brak słońca, te pomarańczowe chmury za oknem i wieczny półmrok rozkładają ludzi jak rdza hydraulikę. Ale Hazerzy? Oni są inni. Jakby zostali stworzeni do życia w miejscach, gdzie każdy oddech przypomina, że świat cię nie chce. Gruba skóra, adaptacje neurologiczne, metabolizm działający jak piec plazmowy... dla nich Tytan to nie wygnanie - to dom.
 category: ep-biomorf
 tags:
   - rpg

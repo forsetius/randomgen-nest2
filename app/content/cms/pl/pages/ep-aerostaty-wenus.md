@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Aerostaty nad Wenus
 headerImage: mid-aerostat-head.jpg
 excerpt: Miasta unoszące się wysoko w atmosferze Wenus

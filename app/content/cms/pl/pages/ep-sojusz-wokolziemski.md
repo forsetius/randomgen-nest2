@@ -2,6 +2,7 @@
 template: page-default
 title: Sojusz Wokółziemskki
 subtitle: Lunar Lagrange Alliance
+excerpt: Sojusz kolonii na Lunie, orbicie Ziemi i w ziemskich punktach Lagrange'a
 headerImage: mid-lunar-lagrange-alliance-head.jpg
 category: ep-ustroje
 tags:

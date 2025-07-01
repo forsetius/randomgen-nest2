@@ -1,3 +1,18 @@
 {
-  "search": "Search"
+  "content": "Content",
+  "emailRequired": "The field is required and has to be a valid email",
+  "fieldRequired": "The field is required",
+  "lastPosts": "Last posts",
+  "name": "Name",
+  "next": "Next",
+  "messageSent": "Message sent!",
+  "messageError": "Error while sending message",
+  "messageThanks": "Thank you for your message, I will reply as soon as I can.",
+  "messageSorry": "Failed to send emails but event was logged.",
+  "previous": "Previous",
+  "search": "Search",
+  "seeMore": "See more",
+  "send": "Send",
+  "subject": "Message subject",
+  "yourEmail": "Your email"
 }
