@@ -17,6 +17,9 @@ export class PageSetBlock extends Block {
       blockId: this.name,
       cardTemplate: this.def.cardTemplate,
       items: this.def.items,
+      perPage: this.def.count,
+      perRow: this.def.columns,
+      title: this.def.title,
       lang: library.locale.lang,
       translations: library.locale.translations,
     });

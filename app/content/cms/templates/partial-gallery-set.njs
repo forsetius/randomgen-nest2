@@ -2,7 +2,7 @@
   <div data-card-template="{{ cardTemplate }}"
        data-items="{{ items | string }}"
        data-per-page="{{ perPage | default(3) }}"
-       class="card-container row row-cols-1 row-cols-md-3 g-4"
+       class="card-container row row-cols-1 row-cols-md-{{ perRow }} g-4"
   ></div>
   
   <hr>

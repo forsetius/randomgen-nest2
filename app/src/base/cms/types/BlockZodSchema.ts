@@ -39,7 +39,8 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
 const SetBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('partial-gallery-set'),
   cardTemplate: z.string().default('fragment-img-card'),
-  count: z.number().default(6),
+  count: z.number().int().default(6),
+  columns: z.number().int().min(1).max(6).default(3),
   sortDir: z.enum(['asc', 'desc']).default('asc'),
 });
 

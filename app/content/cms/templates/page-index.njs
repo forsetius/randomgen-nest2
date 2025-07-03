@@ -5,4 +5,6 @@
 
 {% block article %}
     {{ content }}
+    
+    <slot id="bottom" />
 {% endblock %}
