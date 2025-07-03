@@ -3,7 +3,7 @@ template: page-default
 title: Splot
 subtitle: Mesh
 excerpt: Następca Internetu
-headerImage: mid-ep-mesh-head.jpg
+headerImage: mid-nimbus-head.jpg
 category: ep-encyklopedia
 tags:
   - rpg

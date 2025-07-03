@@ -12,7 +12,7 @@ slots:
     - type: static
       content: |
         ## Memy
-        Odzyskanie Ziemi
+        - Odzyskanie Ziemi
         ## Główne habitaty
         - Erato ([Luna](#))
         - Świadectwo (Orbita [Ziemi](#))

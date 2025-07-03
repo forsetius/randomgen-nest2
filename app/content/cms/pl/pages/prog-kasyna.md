@@ -18,8 +18,12 @@ slots:
         - Node.js + TypeScript
         - Serverless
 ---
-<block id="w-budowie" />
-
 Był to największy projekt, w jakim pracowałem. W sumie pracowało przy nim kilkunastu programistów, devopsów i testerów. Dzielił się na kilka niezależnych serwisów, z czego ja pracowałem przy backendzie backoffice'owym, module security oraz module raportów. 
 
-Mieliśmy komfort zaczęcia od zera, więc przygotowaliśmy kompleksową architekturę CQRS z event sourcingiem i pełnym pokryciem testami.
+Mieliśmy komfort zaczęcia od zera, więc przygotowaliśmy kompleksową architekturę z zastosowaniem m.in. CQRS z event sourcingiem i pełnym pokryciem testami. Pracowaliśmy w najnowszej (ówcześnie) wersji PHP i Symfony, w zdockeryzowanym środowisku.
+
+Nad projektem pracowałem od jego początku, implementując zarówno podstawowe funkcjonalności (system list i filtrów, system uprawnień) jak i bardziej skomplikowaną logikę biznesową, np. związaną z weryfikacjami graczy, systemami odpowiedzialnej gry, strategiami obsługi dostawców płatności i dostawcami gier itp.
+
+Kiedy nawał pracy zelżał przeszedłem do innych projektów ale wróciłem, gdy zaistniała potrzeba wykonania modułu raportów. Tym razem robiliśmy to w Node.js w TypeScripcie, na AWS Lambda. Były to operacje na dużych zbiorach danych, więc idea była taka, że serwis odbiera żądanie wygenerowania raportu, potwierdza to żądanie, po czym przetwarza je w tle, a wyniki zapisuje w plikach CSV i XLS. Same raporty były dość różnorodne ale mimo wszystko udało mi się przygotować odpowiednie abstrakcje do poszczególnych faz przetwarzania i wszystko działało w przejrzysty, łatwy do ogarnięcia sposób.
+
+Tym razem nie używaliśmy Nest.js tylko czystego Node'a z TypeORM-em. Do tego modułu przygotowałem również kompleksowe testy i dokumentację.

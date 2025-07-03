@@ -7,6 +7,16 @@ category: prog-doswiadczenia
 sort: 6
 tags:
   - o-mnie
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Technologie
+        - PHP 8 + Symfony
+        - MSSQL
 ---
-<block id="w-budowie" />
-Tu z kolei oprócz nieopłaconych faktur problemem były nieoddane w terminie stojaki na okna. Wiadomo, takie okno to delikatna rzecz, często robiona na zamówienie, więc dostarcza się je na specjalnych stojakach, które wypożyczane są kontrahentowi i które ten musi zwrócić. Niestety,
+Ten projekt to często spotykana rzecz: firmowa aplikacja, która usprawnia interakcję klienta z przedsiębiorcą. Z perspektywy klienta aplikacja oferuje w miarę standardowy zestaw funkcjonalności: przegląd zamówień, wystawionych faktur i innych dokumentów sprzedażowych a także wypożyczonych stojaków. Wiadomo, takie okno to delikatna rzecz, często robiona na zamówienie, więc dostarcza się je na specjalnych stojakach, które wypożyczane są kontrahentowi i które ten musi zwrócić. 
+
+O ile dla klienta to powszechne rzeczy, odpowiadały one na istotną potrzebę biznesową klienta. Otóż dla samego klienta bardzo istotne było stworzenie kanału, którym mógłby przypominać klientom o konieczności zwrotu wypożyczonego sprzętu a czasem także opłacenia faktur czy podpisania dokumentów. Oprócz tego po stronie backendowej aplikacja stanowi zwornik między kilkoma systemami klienta, na których do tej pory musiał oddzielnie operować by pozyskać te dane.
+
+Od strony technicznej wyzwaniem było już podpięcie bazy danych. Musieliśmy zintegrować istniejącą bazę klienta (zawierającą wiele niepotrzebnych nam danych), w którą nie mogliśmy ingerować z naszą, obsługującą dodatkowe funkcjonalności. W rezultacie stworzyliśmy fasadę na bazę klienta, z której dane były dekorowane naszymi danymi.

@@ -5,6 +5,8 @@ subtitle: Experia
 headerImage: mid-experia-head.jpg
 category: ep-hiperkorporacja
 excerpt: Media, Wiadomości, Rozrywka, Memetyka
+lead: |
+  > Powiedzieli, że mój związek ma świetny potencjał narracyjny. Zapłacili za rozstanie, dorzucili nową twarz dla byłej i podpisaliśmy umowę na sezon drugi. Teraz gram konkurencyjnego kochanka — samego siebie, tylko innego.
 tags:
   - rpg
 slots:

@@ -3,7 +3,7 @@ template: page-default
 title: Konstelacja Gwiazdy Zarannej
 subtitle: Morningstar Constellation
 excerpt: Sojusz wenusjańskich miast-aerostatów
-headerImage: mid-morningstar-constellation-head.jpg
+headerImage: mid-aerostat-head.jpg
 category: ep-ustroje
 tags:
   - rpg

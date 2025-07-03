@@ -12,7 +12,10 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        [Nanofabrykacja](#), Chemikalia, Energia, [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
+        - [Nanofabrykacja](#)
+        - Chemikalia
+        - Energia
+        - [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
         ## Główne habitaty
         - MonoLit3 ([Merkury](#)), 
         - Feynman ([Luna](#))

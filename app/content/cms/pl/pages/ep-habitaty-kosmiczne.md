@@ -2,6 +2,7 @@
 template: page-full-width
 title: Habitaty kosmiczne
 excerpt: Kosmiczne środowiska mieszkalne
+headerImage: mid-space-habitats-head.jpg
 category: ep-habitat
 subcategoryName: Habitaty kosmiczne
 tags: 

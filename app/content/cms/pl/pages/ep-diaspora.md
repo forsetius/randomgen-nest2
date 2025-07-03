@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Diaspora
 subtitle: Eclipse Phase
 headerImage: mid-diaspora-head.jpg

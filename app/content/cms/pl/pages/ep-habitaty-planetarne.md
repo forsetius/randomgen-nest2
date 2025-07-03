@@ -2,6 +2,8 @@
 template: page-full-width
 title: Habitaty planetarne
 excerpt: Osady na i pod powierzchnią dużych ciał niebieskich
+headerImage: mid-diaspora-head.jpg
+thumbnailImage: mid-diaspora-card.jpg
 category: ep-habitat
 subcategoryName: Habitaty planetarne
 tags: 

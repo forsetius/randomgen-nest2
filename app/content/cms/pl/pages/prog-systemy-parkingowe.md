@@ -40,7 +40,7 @@ Potrzeba wprowadzenia takiego systemu wiązała się z tym, że przy rozległych
 
 W rzeczywistości integracja z API kamery i API systemu opłat to była mniejsza część pracy. Większą stanowiło wykonanie backoffice'u, w którym realizowana była konfiguracja połączenia z kamerą i terenów podlegających sprawdzeniu oraz wizualizacji w czasie rzeczywistym przebiegu kontroli. Całość wykonana była w PHP+Symfony a konfiguracja obszarów oraz wizualizacja kontroli znów wymagały PostGIS-a, ponownie w użyciu była kontrolka mapy do EasyAdmina.
 
-Na marginesie, pamiętam, że trochę kłopotów mieliśmy z kalibracją GPS-ów. Wysłaliśmy dwoje ochotników wzdłuż ustalonej trasy po osiedlu i śledziliśmy jak ta trasa zostanie zwizualizowana. Wypadło nieźle... oprócz sąsiedztwa 15-piętrowego wieżowca i kościoła. Do tej pory nie wiem, które z nich odpowiadało za odchylenie o dobre 5 metrów od realnej ścieżki. Problem rozwiązaliśmy przez użycie opcji snap-to-road w [OSRM](https://project-osrm.org/).
+Na marginesie, pamiętam, że trochę kłopotów mieliśmy z kalibracją GPS-ów. Wysłaliśmy dwoje ochotników wzdłuż ustalonej trasy po osiedlu i śledziliśmy jak ta trasa zostanie zwizualizowana. Wypadło nieźle... oprócz sąsiedztwa 15-piętrowego wieżowca i kościoła. Do tej pory nie wiem, które z nich odpowiadało za odchylenie o dobre 10 metrów od realnej ścieżki. Problem rozwiązaliśmy przez użycie opcji snap-to-road w [OSRM](https://project-osrm.org/).
 
 ## Integracja urządzeń na wjeździe/wyjeździe i systemu opłat parkingowych
 System obsługi parkingu ze skanowaniem tablic rejestracyjnych pod szlabanami i integracją z systemem opłat.

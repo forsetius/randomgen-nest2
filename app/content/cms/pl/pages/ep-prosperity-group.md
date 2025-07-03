@@ -2,9 +2,11 @@
 template: page-default
 title: Prosperity Group
 subtitle: Prosperity Group
+excerpt: Rolnictwo, Akwakultura, Farmaceutyki
+lead: |
+  > Wszystko bio, wszystko zgodnie z normami, wszystko zgodnie z twoim profilem zdrowotnym. A jeśli umrzesz, to tylko dlatego, że statystycznie powinieneś.
 headerImage: mid-prosperity-group-head.jpg
 category: ep-hiperkorporacja
-excerpt: Rolnictwo, Akwakultura, Farmaceutyki
 tags:
   - rpg
 slots:
@@ -12,7 +14,9 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Rolnictwo, [Akwakultura](http://pl.wikipedia.org/wiki/Akwakultura), Farmaceutyki
+        - Rolnictwo
+        - [Akwakultura](http://pl.wikipedia.org/wiki/Akwakultura)
+        - Farmaceutyki
         ## Główne habitaty
         - Ceres ([Pas asteroidów](#)), 
         - Lu Xing ([Mars](#))

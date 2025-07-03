@@ -3,8 +3,10 @@ template: page-default
 title: Direct Action
 subtitle: Direct Action
 headerImage: mid-direct-action-head.jpg
-category: ep-hiperkorporacja
 excerpt: Usługi bezpieczeństwa, Kontrakty wojskowe
+lead: |
+  > Zabijają czysto, raportują bez emocji, płacisz bez zwłoki
+category: ep-hiperkorporacja
 tags:
   - rpg
 slots:

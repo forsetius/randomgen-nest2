@@ -10,4 +10,4 @@ slots:
       category: blog
       sortDir: desc
 ---
-Pojawiają się tu zarówno nowe posty jak i archiwalne, odtworzone z poprzednich inkarnacji strony.
+Pojawiają się tu zarówno nowe posty, jak i archiwalne, odtworzone z poprzednich inkarnacji strony.

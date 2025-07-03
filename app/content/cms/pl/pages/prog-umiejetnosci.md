@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Moje umiejętności
+excerpt: Co umiem, co wiem, co mogę
 headerImage: mid-moje-umiejetnosci-head.jpg
 tags:
   - o-mnie

@@ -12,7 +12,9 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        [Terraformowanie](http://pl.wikipedia.org/wiki/Terraformowanie), Zarządzanie ekosystemami, Dane środowiskowe
+        - [Terraformowanie](http://pl.wikipedia.org/wiki/Terraformowanie)
+        - Zarządzanie ekosystemami
+        - Dane środowiskowe
         ## Główne habitaty
         - Caldwell ([Wulkanoidy](#)), 
         - Asioka ([Mars](#))

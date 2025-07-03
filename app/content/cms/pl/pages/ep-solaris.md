@@ -2,9 +2,11 @@
 template: page-default
 title: Solaris
 subtitle: Solaris
+excerpt: Bankowość, Ubezpieczenia, Inwestycje, Rynki futures, Obrót informacją
+lead: |
+  > To nie są finanse. To inżynieria geopolityczna. Zainwestują w twoje życie, a potem przystawią ci broń do głowy. Zwrot z inwestycji liczony jest w ludziach — nie w walucie.
 headerImage: mid-ep-solaris-head.jpg
 category: ep-hiperkorporacja
-excerpt: Bankowość, Ubezpieczenia, Inwestycje, Rynki futures, Obrót informacją
 tags:
   - rpg
 slots:
@@ -12,7 +14,11 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Bankowość, Ubezpieczenia, Inwestycje, Rynki futures, Obrót informacją
+        - Bankowość
+        - Ubezpieczenia
+        - Inwestycje
+        - Rynki futures
+        - Obrót informacją
         ## Główne habitaty
         - brak
 ---

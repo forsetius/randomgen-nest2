@@ -2,7 +2,7 @@
 template: page-default
 title: Fremeni
 subtitle: Barsoomians
-headerImage: mid-barsoomians-head.jpg
+headerImage: mid-ruster-head.jpg
 category: ep-stronnictwa
 excerpt: Marsjańscy redneckowie i autonomiści występujący przeciw hiperkorporacjom
 tags:

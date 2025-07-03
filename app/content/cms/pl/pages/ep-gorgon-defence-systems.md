@@ -3,6 +3,8 @@ template: page-default
 title: Gorgon Defence Systems
 subtitle: Gorgon Defence Systems
 excerpt: Technologia wojskowa, Bezpieczeństwo, Kontrakty wojskowe
+lead: |
+  > Ich sparring wyglądał jak taniec maszyn wojny. Żadnej litości, żadnych błędów. Po wszystkim publiczność wstała i klaskała, jak w teatrze.
 headerImage: mid-gorgon-head.jpg
 category: ep-hiperkorporacja
 tags:

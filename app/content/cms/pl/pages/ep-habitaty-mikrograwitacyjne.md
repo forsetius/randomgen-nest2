@@ -2,6 +2,7 @@
 template: page-default
 title: Habitaty mikrograwitacyjne
 excerpt: Wszystkie rzeczy zamieszkiwane przez transludzkość
+headerImage: mid-beehive-head.jpg
 category: ep-habitat
 tags: 
   - rpg

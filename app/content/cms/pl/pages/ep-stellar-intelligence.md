@@ -2,9 +2,11 @@
 template: page-default
 title: Stellar Intelligence
 subtitle: Stellar Intelligence
+excerpt: Wywiad, Eksploatacja danych, Obrót informacją, Szpiegostwo
+lead: |
+  > Zniknęliśmy im z radaru. Odłączyliśmy się. Zmieniliśmy ID. A potem dostaliśmy kartkę: ‘Proszę wrócić do symulacji. Ucieczka była przewidziana w parametrach.’
 headerImage: mid-stellar-intelligence-head.jpg
 category: ep-hiperkorporacja
-excerpt: Wywiad, Eksploatacja danych, Obrót informacją, Szpiegostwo
 tags:
   - rpg
 slots:
@@ -12,7 +14,10 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Wywiad, Eksploatacja danych, Obrót informacją, Szpiegostwo
+        - Wywiad
+        - Eksploatacja danych
+        - Obrót informacją
+        - Szpiegostwo
         ## Główne habitaty
         - Znikający Punkt ([Trojańczycy marsjańscy](#)), 
 ---

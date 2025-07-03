@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Ul
-headerImage: leo-beehive-head.jpg
+headerImage: mid-beehive-head.jpg
 excerpt: Asteroidy wydrążone w sieć tuneli i komór
 lead: |
   > Ule to labirynty w kamieniu. Mikrograwitacja, niekończące się tunele, komory bez kierunku. Bez AR nawet nie wiesz, czy idziesz do kuchni czy do szybu wylotowego. Mówią, że jak ktoś zniknie w ulu, to może dryfować latami, aż go znajdzie sprzątający bot. O ile jeszcze działa.

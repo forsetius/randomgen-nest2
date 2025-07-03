@@ -5,6 +5,8 @@ subtitle: Cognite
 headerImage: mid-ep-cognite-head.jpg
 category: ep-hiperkorporacja
 excerpt: Kognitywistyka, psychochirurgia i udoskonalanie umysłu
+lead: |
+  > Oni nie pytają, czy coś można. Pytają, czy to da się zoptymalizować do 17. cyklu poznawczego. A potem patrzą, jak twoje jaźnie się synchronizują, aż zaczniesz sam siebie pytać o zgodę.
 tags:
   - rpg
 slots:

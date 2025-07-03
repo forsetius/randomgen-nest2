@@ -3,6 +3,8 @@ template: page-default
 title: Somatek
 subtitle: Somatek
 excerpt: Uplifty, Farmaceutyki, Biofarmaceutyki, Genetyka
+lead: |
+  > Zabrali delfina, dali mu krtań i problem filozoficzny. Teraz siedzi w drydocku, pisze poezję i nie chce pracować. Somatek mówi, że to 'emocjonalna niestabilność prototypu'. Ja mówię: bunt w wersji beta.
 headerImage: mid-somatek-head.jpg
 category: ep-hiperkorporacja
 tags:
@@ -12,7 +14,10 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-         [Uplifty]{pl/ep-uplift}, Farmaceutyki, [Biofarmaceutyki](http://en.wikipedia.org/wiki/Pharming_%28genetics%29), Genetyka
+        - [Uplifty]{pl/ep-uplift}
+        - Farmaceutyki
+        - [Biofarmaceutyki](http://en.wikipedia.org/wiki/Pharming_%28genetics%29)
+        - Genetyka
         ## Główne habitaty
         - Zdolne Dłonie ([Luna](#)), 
 ---

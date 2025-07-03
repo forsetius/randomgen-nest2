@@ -3,6 +3,8 @@ template: page-default
 title: Nimbus
 subtitle: Nimbus
 excerpt: Elektronika, Systemy sieciowe, Teletransfery, Komunikacja
+lead: |
+  > Wszędzie, gdzie coś myśli, przetwarza albo żąda dostępu, Nimbus już tam jest. Nie trzeba być bogiem, kiedy kontrolujesz chmurę, która mówi wszystkim, co myślą.
 headerImage: mid-nimbus-head.jpg
 category: ep-hiperkorporacja
 tags:
@@ -12,7 +14,10 @@ slots:
     - type: static
       content: |
         ## Główna działalność
-        Elektronika, Systemy sieciowe, [Teletransfery](#), Komunikacja
+        - Elektronika
+        - Systemy sieciowe
+        - [Teletransfery](#)
+        - Komunikacja
         ## Główne habitaty
         - Octavia ([Wenus](#)), 
 ---

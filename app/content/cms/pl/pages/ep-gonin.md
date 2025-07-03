@@ -3,6 +3,8 @@ template: page-default
 title: Go-nin
 subtitle: Go-nin
 excerpt: Bankowość, Agrotechnologia, Robotyka, Usługi
+lead: |
+  > Powiedzieli tylko: stracił twarz. I wiecie co? Oni twórczo rozwinęli karę tysiąca cięć: na początku odcięli mu dostępy a na końcu - stos korowy
 headerImage: mid-gonin-head.jpg
 category: ep-hiperkorporacja
 tags:

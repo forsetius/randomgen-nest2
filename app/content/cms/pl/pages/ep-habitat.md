@@ -2,6 +2,7 @@
 template: page-full-width
 title: Habitat
 excerpt: Wszystkie rzeczy zamieszkiwane przez transludzkość
+headerImage: mid-habitats-head.jpg
 category: ep-encyklopedia
 subcategoryName: Habitaty
 tags: 

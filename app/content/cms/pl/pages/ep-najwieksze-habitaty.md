@@ -2,6 +2,7 @@
 template: page-default
 title: Największe habitaty
 excerpt: Największe miasta Układu
+headerImage: mid-mars-sprawl-head.jpg
 category: ep-habitat
 tags: 
   - rpg

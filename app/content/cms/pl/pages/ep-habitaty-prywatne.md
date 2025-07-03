@@ -2,6 +2,7 @@
 template: page-default
 title: Habitaty prywatne
 excerpt: Największe miasta Układu
+headerImage: mid-private-habitat-head.jpg
 category: ep-habitat
 tags: 
   - rpg

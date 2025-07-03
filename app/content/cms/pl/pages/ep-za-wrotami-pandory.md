@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-full-width
 title: Za Wrotami Pandory
 subtitle: Eclipse Phase
 excerpt: Odkryte wkrótce po Upadku Wrota Pandoriańskie wiodą ku światom poza Układem Słonecznym
