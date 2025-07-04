@@ -40,11 +40,11 @@ Potrzeba wprowadzenia takiego systemu wiązała się z tym, że przy rozległych
 
 W rzeczywistości integracja z API kamery i API systemu opłat to była mniejsza część pracy. Większą stanowiło wykonanie backoffice'u, w którym realizowana była konfiguracja połączenia z kamerą i terenów podlegających sprawdzeniu oraz wizualizacji w czasie rzeczywistym przebiegu kontroli. Całość wykonana była w PHP+Symfony a konfiguracja obszarów oraz wizualizacja kontroli znów wymagały PostGIS-a, ponownie w użyciu była kontrolka mapy do EasyAdmina.
 
-Na marginesie, pamiętam, że trochę kłopotów mieliśmy z kalibracją GPS-ów. Wysłaliśmy dwoje ochotników wzdłuż ustalonej trasy po osiedlu i śledziliśmy jak ta trasa zostanie zwizualizowana. Wypadło nieźle... oprócz sąsiedztwa 15-piętrowego wieżowca i kościoła. Do tej pory nie wiem, które z nich odpowiadało za odchylenie o dobre 10 metrów od realnej ścieżki. Problem rozwiązaliśmy przez użycie opcji snap-to-road w [OSRM](https://project-osrm.org/).
+Na marginesie, pamiętam, że trochę kłopotów mieliśmy z kalibracją GPS-ów. Wysłaliśmy dwoje ochotników wzdłuż ustalonej trasy po osiedlu i śledziliśmy, jak ta trasa zostanie zwizualizowana. Wypadło nieźle... oprócz sąsiedztwa 15-piętrowego wieżowca i kościoła. Do tej pory nie wiem, które z nich odpowiadało za odchylenie o dobre 10 metrów od realnej ścieżki. Problem rozwiązaliśmy przez użycie opcji snap-to-road w [OSRM](https://project-osrm.org/).
 
 ## Integracja urządzeń na wjeździe/wyjeździe i systemu opłat parkingowych
 System obsługi parkingu ze skanowaniem tablic rejestracyjnych pod szlabanami i integracją z systemem opłat.
 
-System pracował tak, że w momencie, gdy pod szlabanem wjazdowym pojawia się pojazd, kamera ALPR skanuje jego tablice rejestracyjne, zachowuje je w systemie z czasem wjazdu i otwiera szlaban. Zanim kierowca wyjedzie musi opłacić postój. Gdy samochód pojawi się pod szlabanej wyjazdowym, jego tablica znów jest skanowana i następuje sprawdzenie czy opłata została wniesiona - jeśli tak to szlaban jest podnoszony.
+System pracował tak, że w momencie, gdy pod szlabanem wjazdowym pojawia się pojazd, kamera ALPR skanuje jego tablice rejestracyjne, zachowuje je w systemie z czasem wjazdu i otwiera szlaban. Zanim kierowca wyjedzie musi opłacić postój. Gdy samochód pojawi się pod szlabanem wyjazdowym, jego tablica znów jest skanowana i następuje sprawdzenie czy opłata została wniesiona - jeśli tak to szlaban jest podnoszony.
 
 Integracja API kamer, szlabanów i systemu opłat zrealizowana była w Node.js. Do tego jak zwykle backoffice w PHP+Symfony z EasyAdminem.

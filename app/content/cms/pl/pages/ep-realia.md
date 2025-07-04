@@ -8,7 +8,6 @@ category: ep-encyklopedia
 subcategoryName: Realia
 tags:
   - rpg
-  - TODO
 slots:
   bottom:
     - type: category

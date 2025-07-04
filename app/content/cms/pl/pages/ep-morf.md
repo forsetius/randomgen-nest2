@@ -8,7 +8,6 @@ category: ep-encyklopedia
 subcategoryName: Morfy
 tags:
   - rpg
-  - TODO
 slots:
   bottom:
     - type: category

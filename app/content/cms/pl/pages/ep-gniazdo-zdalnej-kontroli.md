@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Gniazdo zdalnej kontroli
-subtitle: TODO
+subtitle: Puppet sock
 excerpt: Przyłącze pozwalające na przejęcie kontroli nad morfem i jego teleoperację 
 headerImage: mid-remote-control-jacks-head.jpg
 category: ep-ulepszenia

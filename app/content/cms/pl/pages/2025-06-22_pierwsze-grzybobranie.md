@@ -21,7 +21,7 @@ blocks:
 Wyruszyliśmy bladym, barbarzyńskim świtem, tj. o 7 rano, a na miejscu byliśmy przed 9. Gorąc już było czuć w powietrzu, ale na miejscu w cieniu było jeszcze w miarę rześko. Zachłysnąłem się tą rześkością na tyle, że rozłożyłem się z kocykiem wśród traw i napawałem się ich zapachem i świergotem ptaków. A konkretnie, wg [Merlina](https://merlin.allaboutbirds.org/) dał się słyszeć:
 
 <block id="birds" type="static" template="partial-multicolumn-list">
-- potrzesz
+- potrzeszcz
 - dymówka
 - śpiewak
 - skowronek
@@ -33,13 +33,12 @@ Wyruszyliśmy bladym, barbarzyńskim świtem, tj. o 7 rano, a na miejscu byliśm
 - gajówka
 - rudzik
 - pierwiosnek
-- zięba
 - pełzacz leśny
 - bażant
 - kukułka
 </block>
 
-Po czym poszliśmy dalej, zanurzając się w pięknych okolicznościach przyrody lasu. Odrobinę bardziej dziko było, niż to zapamiętaliśmy z jesieni bo ścieżki jeszcze nie wydeptane buciorami rzesz grzybiarzy. 
+Po czym poszliśmy dalej, zanurzając się w pięknych okolicznościach przyrody lasu. Odrobinę bardziej dziko było, niż to zapamiętaliśmy z jesieni, bo ścieżki jeszcze nie wydeptane buciorami rzeszy grzybiarzy. 
 
 <block id="okolicznosciPrzyrody" />
 

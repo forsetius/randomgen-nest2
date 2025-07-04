@@ -1,8 +1,5 @@
 template: menu-topbar
 menu:
-  - title: Blog
-    url: "@{blog}"
-
   - title: O mnie
     columns:
       - title: Programowanie
@@ -23,6 +20,9 @@ menu:
           - title: PlanetaryNames4Celestia
             url: "@{planetarynames4celestia}"
             text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
+
+  - title: Blog
+    url: "@{blog}"
 
   - separator: "|"
 
@@ -57,10 +57,10 @@ menu:
             url: "@{rpg-unimechanika-dodatki}"
             text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
 
-      - title: Przygody
-        url: "@{rpg-scenariusze}"
-        text: Scenariusze do gier fabularnych
-        items:
+#      - title: Przygody
+#        url: "@{rpg-scenariusze}"
+#        text: Scenariusze do gier fabularnych
+#        items:
 #          - title: Jaskółki [Dungeons & Dragons 5e]
 #            url: "@{dnd-scenariusz-jaskolki}"
 #            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
@@ -69,9 +69,9 @@ menu:
 #            url: "@{dnd-scenariusz-krew-dla-boga-krwi}"
 #            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
 #
-          - title: Ego Sum [Eclipse Phase]
-            url: "@{ep-scenariusz-ego-sum}"
-            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+#          - title: Ego Sum [Eclipse Phase]
+#            url: "@{ep-scenariusz-ego-sum}"
+#            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
   - title: Astronomia
     columns:
@@ -81,7 +81,7 @@ menu:
             url: "@{generowanie-ukladow-planetarnych}"
             text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
 
-      - title: Celestia - symulator Wszechświata
+      - title: Symulatory Wszechświata
         items:
           - title: Celestia
             url: "@{celestia}"
@@ -107,7 +107,7 @@ menu:
         - title: Geopolityka
           url: "@{geopolityka}"
           text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
-      - title: terenowe
+      - title: Terenowe
         items:
           - title: Znowu baba mnie wywlokła
             url: "@{znowu-baba-mnie-wywlokla}"
@@ -123,7 +123,7 @@ menu:
             url: "@{2022-01-03_generator-technobelkotu}"
             text: Generator startrekowego, pseudotechnicznego bełkotu
 
-      - title: Zasoby
+      - title: Do pobrania
         items:
           - title: Lokacje w Układzie Słonecznym
             url: "@{lokacje-uklad-slonecznym}"

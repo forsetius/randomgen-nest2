@@ -1,5 +1,5 @@
 ---
-template: page-blog-post
+template: page-default
 title: Generator technobełkotu
 headerImage: startrek-engineers-head.png
 category: blog
@@ -24,6 +24,10 @@ slots:
         Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. 
         
         Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
+  bottom:
+    - type: apiCall
+      template: partial-technobabble
+      url: /api/1.0/startrek/technobabble?lang=pl
 ---
 I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:
 
@@ -35,13 +39,11 @@ No dobrze, jest to dość prosty generator, szczególnie w wersji angielskiej. W
 
 ## Użycie
 
-A więc jesteś np. w środku sesji Star Trek Adventures RPG i chcesz błysnąć jako inżynier czy inny jajogłowy? Nic prostszego, kliknij poniższy przycisk:
-
-<block id="generateBtn" type="apiCall" template="partial-technobabble" url="/api/1.0/startrek/technobabble?lang=pl"></block>
+A więc jesteś np. w środku sesji Star Trek Adventures RPG i chcesz błysnąć jako inżynier czy inny jajogłowy? Nic prostszego, kliknij przycisk poniżej:
 
 ## Dostęp przez API
 
-Jeśli potrzebujesz to zintegrować do jakiegoś swojego narzędzia to wyślij żądanie HTTP na:
+Jeśli potrzebujesz zintegrować ten generator do jakiegoś swojego narzędzia, wyślij żądanie HTTP na:
 
 ```
 GET https://forseti.pl/api/1.0/startrek/technobabble

@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Splot skórny
-subtitle: TODO
+subtitle: Bioweave
 headerImage: mid-arachnoweave-head.jpg
 excerpt: Podskórny lekki pancerz
 category: ep-ulepszenia

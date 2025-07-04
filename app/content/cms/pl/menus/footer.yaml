@@ -1,5 +1,13 @@
 template: menu-footer
-menu: 
+menu:
+  - title: Kontakt
+    items:
+      - title: Formularz kontaktowy
+        url: "@{kontakt}"
+
+      - title: Zasubskrybuj RSS
+        url: /pages/pl/rss.xml
+
   - title: Linki
     items:
       - title: GitHub
@@ -15,12 +23,6 @@ menu:
 
   - title: Blurby
     items:
-      - title: Zasubskrybuj RSS
-        url: /pages/pl/rss.xml
-
       - title: Polityka prywatności
         url: "@{polityka-prywatnosci}"
 
-      - title: Kontakt
-        url: "@{kontakt}"
-        

@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Wszczepka sieciowa
-subtitle: TODO
+subtitle: Basic mesh inserts
 headerImage: mid--head.jpg
 excerpt: Podczaszkowy komputer z interfejsem bezprzewodowym i siecią czujników raportujących stan morfa
 category: ep-ulepszenia

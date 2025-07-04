@@ -6,9 +6,7 @@ excerpt: Odkryte wkrótce po Upadku Wrota Pandoriańskie wiodą ku światom poza
 headerImage: mid-gate-head.jpg
 category: ep-intro
 sort: 6
-
 tags:
   - rpg
-  - TODO-tresc
 ---
 <block id="w-budowie" />

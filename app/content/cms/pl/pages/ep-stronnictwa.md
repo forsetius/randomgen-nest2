@@ -8,7 +8,6 @@ category: ep-encyklopedia
 subcategoryName: Stronnictwa
 tags:
   - rpg
-  - TODO-tresc
 slots:
   bottom:
     - type: category

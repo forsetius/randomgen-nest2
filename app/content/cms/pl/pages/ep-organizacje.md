@@ -7,7 +7,6 @@ category: ep-encyklopedia
 subcategoryName: Organizacje
 tags:
   - rpg
-  - TODO-tresc
 slots:
   bottom:
     - type: category
