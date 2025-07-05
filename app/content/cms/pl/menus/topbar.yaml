@@ -2,7 +2,7 @@ template: menu-topbar
 menu:
   - title: O mnie
     columns:
-      - title: Programowanie
+      - title: <i class="text-warning bi bi-braces-asterisk"></i> Programowanie
         items:
           - title: Umiejętności
             url: "@{prog-umiejetnosci}"
@@ -11,7 +11,7 @@ menu:
             url: "@{prog-doswiadczenia}"
             text: Co już zrobiłem
 
-      - title: Projekty
+      - title: <i class="text-warning bi bi-lightbulb"></i> Projekty
         items:
           - title: RandomGen
             url: "@{randomgen}"
@@ -28,7 +28,7 @@ menu:
 
   - title: RPG
     columns:
-      - title: Eclipse Phase
+      - title: <i class="text-warning bi bi-robot"></i> Eclipse Phase
         items:
           - title: O grze Eclipse Phase
             url: "@{eclipse-phase}"
@@ -46,7 +46,7 @@ menu:
             url: "@{ep-atlas}"
             text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
 
-      - title: UniMechanika
+      - title: <i class="text-warning bi bi-plus-square"></i> UniMechanika
         text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
         items:
           - title: Zasady podstawowe
@@ -75,13 +75,13 @@ menu:
 
   - title: Astronomia
     columns:
-      - title: Planetologia
+      - title: <i class="text-warning bi bi-globe-europe-africa"></i> Planetologia
         items:
           - title: Generowanie układów planetarnych
             url: "@{generowanie-ukladow-planetarnych}"
             text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
 
-      - title: Symulatory Wszechświata
+      - title: <i class="text-warning bi bi-stars"></i> Symulatory Wszechświata
         items:
           - title: Celestia
             url: "@{celestia}"
@@ -98,7 +98,7 @@ menu:
 
   - title: Inne
     columns:
-      - title: Kanapowe
+      - title: <i class="text-warning bi bi-display"></i> Kanapowe
         items:
         - title: Dioramy
           url: "@{dioramy}"
@@ -107,7 +107,7 @@ menu:
         - title: Geopolityka
           url: "@{geopolityka}"
           text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
-      - title: Terenowe
+      - title: <i class="text-warning bi bi-tree"></i> Terenowe
         items:
           - title: Znowu baba mnie wywlokła
             url: "@{znowu-baba-mnie-wywlokla}"
@@ -117,13 +117,13 @@ menu:
 
   - title: Zasoby
     columns:
-      - title: Generatory
+      - title: <i class="text-warning bi bi-gear-wide-connected"></i> Generatory
         items:
           - title: Technobełkot
             url: "@{2022-01-03_generator-technobelkotu}"
             text: Generator startrekowego, pseudotechnicznego bełkotu
 
-      - title: Do pobrania
+      - title: <i class="text-warning bi bi-download"></i> Do pobrania
         items:
           - title: Lokacje w Układzie Słonecznym
             url: "@{lokacje-uklad-slonecznym}"
