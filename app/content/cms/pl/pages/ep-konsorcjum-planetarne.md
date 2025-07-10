@@ -3,7 +3,7 @@ template: page-default
 title: Konsorcjum Planetarne
 subtitle: Planetary Consortium
 excerpt: Konsorcjum hiperkorporacji w praktyce rządzące Marsem i większością Wewnętrznego Układu Słonecznego
-headerImage: mid-planetary-consortium-head.jpg
+headerImage: leo-planetary-consortium-head.jpg
 category: ep-ustroje
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-default
 title: Załoga IP
 subtitle: IP Crew
 excerpt: Grupa hakerska specjalizująca się w przestępstwach cyfrowych
-headerImage: mid-wp-ip-crew-head.jpg
+headerImage: leo-id-crew-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

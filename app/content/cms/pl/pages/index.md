@@ -2,6 +2,8 @@
 template: page-index
 title: Hello, World!
 headerImage: index-head.jpg
+langs:
+  en: index
 slots:
   aside:
     - type: category

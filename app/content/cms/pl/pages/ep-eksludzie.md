@@ -3,7 +3,7 @@ template: page-default
 title: Eksludzie
 subtitle: Exhumans
 excerpt: Frakcja pragnąca ulepszać się by przekroczyć limity człowieczeństwa i stać się postludźmi 
-headerImage: mid-exhumans-head.jpg
+headerImage: leo-exhumans-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

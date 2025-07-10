@@ -3,7 +3,7 @@ template: page-default
 title: Izolacjoniści
 subtitle: Brinkers
 excerpt: Samotnicy zaszyci na obrzeżach Układu
-headerImage: mid-brinkers-head.jpg
+headerImage: leo-ep-brinkers-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-default
 title: Przymierze Autonomistów
 subtitle: Autonomists Alliance
 excerpt: Sojusz Anarchistów, Extropistów, Karawaniarzy i Tytańczyków
-headerImage: mid-autonomists-alliance-head.jpg
+headerImage: mid-autonomist-alliance-head.jpg
 category: ep-ustroje
 tags:
   - rpg

@@ -4,7 +4,7 @@ title: Argonauci
 excerpt: Naukowcy propagujący odpowiedzialne używanie technologii, zwolennicy podejścia Open Source
 subtitle: Argonauts
 headerImage: mid-argonauts-head.jpg
-category: ep-organizacje
+category: ep-konspiracje
 tags:
   - rpg
 slots:

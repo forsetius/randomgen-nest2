@@ -3,7 +3,7 @@ template: page-default
 title: Celebryci
 subtitle: Glitterati
 excerpt: Kasta ultrabogaczy bez umiaru żyjących chwilą
-headerImage: mid-glitterati-head.jpg
+headerImage: leo-ep-glitterati-head.jpg
 category: ep-stronnictwa
 tags:
   - rpg

@@ -3,7 +3,7 @@ template: page-full-width
 title: Ustroje
 subtitle: Eclipse Phase
 excerpt: Poupadkowe państwa i sojusze polityczne
-headerImage: mid-ep-polities-head.jpg
+headerImage: leo-ep-political-blocks-head.jpg
 category: ep-encyklopedia
 subcategoryName: Ustroje
 tags:

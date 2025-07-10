@@ -1,15 +1,15 @@
 ---
 template: page-full-width
-title: Organizacje
+title: Konspiracje
 subtitle: Eclipse Phase
-headerImage: mid-ep-organizations-head.jpg
+headerImage: mid-ep-conspiracy-head.jpg
 category: ep-encyklopedia
-subcategoryName: Organizacje
+subcategoryName: Konspiracje
 tags:
   - rpg
 slots:
   bottom:
     - type: category
-      category: ep-organizacje
+      category: ep-konspiracje
 ---
 <block id="w-budowie" />

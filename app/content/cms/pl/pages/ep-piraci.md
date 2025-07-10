@@ -3,7 +3,7 @@ template: page-default
 title: Piraci
 subtitle: Pirates
 excerpt: Kosmiczni piraci atakujący statki z zaopatrzeniem i mniejsze habitaty
-headerImage: mid-ep-pirates-head.jpg
+headerImage: leo-ep-pirates-head.jpg
 category: ep-przestepczosc
 tags:
   - rpg

@@ -2,7 +2,7 @@
 template: page-full-width
 title: Przestępczość
 excerpt: Kryminaliści w świecie Eclipse Phase
-headerImage: mid-crime-head.jpg
+headerImage: mid-ep-criminals-head.jpg
 category: ep-encyklopedia
 subcategoryName: Przestępczość
 tags:
