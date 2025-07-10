@@ -199,7 +199,7 @@ span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 /* LG */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     #headerImg {padding: 0 50px 10px 6%; background-size: auto, auto, cover;}
-    #main-title {font-size: 60pt;}
+    #main-title {font-size: 52pt;}
     #subtitle {font-size: 30pt;}
     #subHeader {min-height: 2.6rem;}
 
@@ -215,7 +215,7 @@ span.date {font-size: 70%; font-weight: 700; color: #e685b5}
 /* XL */
 @media screen and (min-width: 1200px) {
     #headerImg {padding: 0 50px 10px 6%; background-size: auto, auto, cover;}
-    #main-title {font-size: 72pt;}
+    #main-title {font-size: 60pt;}
     #subtitle {font-size: 36pt;}
     #subHeader {min-height: 2.6rem;}
 

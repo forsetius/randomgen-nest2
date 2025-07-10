@@ -1,117 +1,87 @@
 import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
-import { cwd } from 'node:process';
-import { Inject, Injectable, Logger } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
-import { getBasename } from '@shared/util/string';
-import { ParserService } from '../../parser/services/ParserService';
-import { BlockFactory } from './BlockFactory';
-import { MenuFactory } from './MenuFactory';
-import { PageFactory } from './PageFactory';
 import { Library } from '../domain/Library';
 import { Locale } from '../domain/Locale';
 import { RenderedContent } from '../types/RenderedContent';
 import { TemplatingService } from '@templating/TemplatingService';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { CMS_OPTIONS } from '../CmsConstants';
+import { LibraryFactory } from './LibraryFactory';
+import { cwd } from 'node:process';
 
 @Injectable()
 export class CmsService {
-  private readonly baseSourcePath: string;
   private readonly baseOutputPath: string;
   private libraries!: Record<Lang, Library>;
-  private readonly logger = new Logger(CmsService.name);
 
   public constructor(
-    private readonly parserService: ParserService,
     private readonly templatingService: TemplatingService,
-    private readonly blockFactory: BlockFactory,
-    private readonly menuFactory: MenuFactory,
-    private readonly pageFactory: PageFactory,
+    private readonly libraryFactory: LibraryFactory,
     @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
   ) {
-    this.baseSourcePath = join(cwd(), 'content', 'cms');
-    this.baseOutputPath = join(this.baseSourcePath, 'static');
+    this.baseOutputPath = join(cwd(), 'content', 'cms', 'static');
   }
 
   async onModuleInit(): Promise<void> {
-    stopwatch.record('Loading CMS data...');
     await this.renderAll();
-    stopwatch.record('HTML files generated');
   }
 
   public async renderAll(): Promise<void> {
+    stopwatch.record('Loading CMS data...');
     this.libraries = Object.fromEntries(
       await Promise.all(
         Object.values(Lang).map(
           async (lang): Promise<[Lang, Library]> => [
             lang,
-            await this.render(new Locale(lang)),
+            await this.libraryFactory.create(new Locale(lang)),
           ],
         ),
       ),
     ) as Record<Lang, Library>;
+
+    for (const library of Object.values(this.libraries)) {
+      await this.render(library);
+    }
+    stopwatch.record('HTML files generated');
   }
 
-  public async render(locale: Locale): Promise<Library> {
-    const lang = locale.lang;
-    const [blocks, menus, pages] = await Promise.all([
-      this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK, lang)),
-      this.menuFactory.createAll(
-        await this.getSources(SourceDir.MENU, lang),
-        locale,
-      ),
-      this.pageFactory.createAll(
-        await this.getSources(SourceDir.PAGE, lang),
-        locale,
-      ),
-    ]);
-    const library = new Library(locale, pages, menus, blocks);
-
-    library.menus.forEach((menu) => {
-      menu.render();
-    });
-    library.blocks.forEach((block) => {
-      block.render(library);
-    });
-
-    const renderedContents = await Promise.all(
-      Array.from(library.pages).map(
-        async ([, page]) => await page.render(library),
-      ),
-    );
-    renderedContents.push([
-      { filepath: 'rss.xml', content: this.constructRss(library) },
-    ]);
-
-    await this.saveContent(renderedContents.flat(), lang);
-    this.logger.debug(
-      `Rendered ${library.pages.size.toString()} pages for "${lang}"`,
-    );
-
-    return library;
-  }
-
-  private async getSources(
-    sourceDir: SourceDir,
-    lang: Lang,
-  ): Promise<Map<string, unknown>> {
-    const sourcePath = join(this.baseSourcePath, lang, sourceDir);
-    const fileNames = await fsAsync.readdir(sourcePath);
-    const map = [
-      ...fileNames
-        .filter((filename: string) => this.parserService.isSupported(filename))
-        .map(
-          async (filename: string): Promise<[string, unknown]> => [
-            getBasename(filename),
-            await this.parserService.parseFile(join(sourcePath, filename)),
-          ],
+  public async render(library: Library): Promise<void> {
+    const renderedContents = (
+      await Promise.all(
+        Array.from(library.pages).map(
+          async ([, page]) => await page.render(library),
         ),
-    ];
+      )
+    ).flat();
+    renderedContents.push({
+      filepath: 'rss.xml',
+      content: this.constructRss(library),
+    });
 
-    return new Map<Name, unknown>(await Promise.all(map));
+    await this.saveContent(
+      renderedContents.map(({ filepath, content }) => ({
+        filepath,
+        content: this.linkify(content),
+      })),
+      library.locale.lang,
+    );
+    stopwatch.record(`Rendered library "${library.locale.lang}"`);
+  }
+
+  private linkify(content: string): string {
+    return content.replace(
+      /@\{(?<lang>pl|en)\/(?<slug>[\p{L}\d_-]+?)\}/gu,
+      (_match, lang: Lang, slug: string) => {
+        const page = this.libraries[lang].getPage(slug);
+        const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';
+
+        return `/pages/${lang}/${page.filename}${title}`;
+      },
+    );
   }
 
   private async saveContent(
@@ -181,11 +151,3 @@ export class CmsService {
     return JSON.stringify(tags.map((tag) => `${template}_tag.html?tag=${tag}`));
   }
 }
-
-enum SourceDir {
-  PAGE = 'pages',
-  BLOCK = 'blocks',
-  MENU = 'menus',
-}
-
-type Name = string;

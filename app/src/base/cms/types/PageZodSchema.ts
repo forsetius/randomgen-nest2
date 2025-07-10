@@ -22,6 +22,7 @@ export const PageZodSchema = z
     slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
     searchable: z.boolean().default(true),
+    langs: z.record(z.string()).optional(),
     meta: z
       .object({
         title: z.string().optional(),

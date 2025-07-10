@@ -3,7 +3,7 @@ menu:
   - title: Kontakt
     items:
       - title: Formularz kontaktowy
-        url: "@{kontakt}"
+        url: "@{pl/kontakt}"
 
       - title: Zasubskrybuj RSS
         url: /pages/pl/rss.xml
@@ -19,10 +19,10 @@ menu:
   - title: Projekty
     items:
       - title: RandomGen
-        url: "@{randomgen}"
+        url: "@{pl/randomgen}"
 
   - title: Blurby
     items:
       - title: Polityka prywatności
-        url: "@{polityka-prywatnosci}"
+        url: "@{pl/polityka-prywatnosci}"
 

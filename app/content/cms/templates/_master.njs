@@ -32,6 +32,18 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <menu id="topbar" />
+      {% if langs %}
+        {% for langVersion, langUrl in langs %}
+          <a href="@{{ '{' }}{{ langVersion }}/{{ langUrl }}{{ '}' }}" class="">&nbsp;&nbsp;
+            <img
+                src="/ui/flag-{{ langVersion }}-1.png"
+                srcset="/ui/flag-{{ langVersion }}-2.png 2x, /ui/flag-{{ langVersion }}-3.png 3x"
+                width="32"
+                height="24"
+            >
+          </a>
+        {% endfor %}
+      {% endif %}
     </div>
   </nav>
   {% block header %} {% include "partial_header.njs" %} {% endblock %}

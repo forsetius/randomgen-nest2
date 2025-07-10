@@ -72,7 +72,7 @@ export class Page {
       lead: this.def.lead
         ? this.markdownService.parse(this.def.lead)
         : undefined,
-      content: this.def.content,
+      content: this.markdownService.parse(this.def.content),
       categoryData: this.category
         ? {
             current: this.category,
@@ -89,6 +89,7 @@ export class Page {
         : undefined,
       dateTime: this.date,
       lang: this.locale.lang,
+      langs: this.def.langs,
       translations: this.locale.translations,
       slug: this.slug,
       filename: this.filename,
@@ -138,7 +139,6 @@ export class Page {
     pageContent = this.insertMenus(pageContent, library);
     pageContent = this.fillSlots(pageContent, library);
     pageContent = this.insertBlocks(pageContent, library);
-    pageContent = this.resolveSlugs(pageContent, library);
     pageContent = this.minifyHTML(pageContent);
     renderedContents.push({
       filepath: this.filename,
@@ -234,18 +234,6 @@ export class Page {
     }
 
     return content;
-  }
-
-  private resolveSlugs(content: string, library: Library): string {
-    return content.replace(
-      /@\{(?<slug>[\p{L}\d_-]+?)\}/gu,
-      (_match, slug: string) => {
-        const page = library.getPage(slug);
-        const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';
-
-        return `${page.filename}${title}`;
-      },
-    );
   }
 
   private minifyHTML(content: string): string {

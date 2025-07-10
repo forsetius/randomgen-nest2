@@ -1,0 +1,28 @@
+template: menu-footer
+menu:
+  - title: Contact
+    items:
+      - title: Contact form
+        url: "@{en/contact}"
+
+      - title: Subscribe to RSS
+        url: /pages/en/rss.xml
+
+  - title: Links
+    items:
+      - title: GitHub
+        url: https://github.com/forsetius
+
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/marcin-paździora-09a94625a
+
+  - title: Projects
+    items:
+      - title: RandomGen
+        url: "@{en/randomgen}"
+
+  - title: Blurb
+    items:
+      - title: Privacy policy
+        url: "@{en/privacy-policy}"
+

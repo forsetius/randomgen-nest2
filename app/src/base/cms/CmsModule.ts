@@ -14,6 +14,7 @@ import { CMS_OPTIONS } from './CmsConstants';
 import { MailModule } from '../../io/mail';
 import { AppConfigModule } from '@config/AppConfigModule';
 import { AppConfigService } from '@config/AppConfigService';
+import { LibraryFactory } from './services/LibraryFactory';
 
 @Module({
   controllers: [CmsController],
@@ -61,6 +62,7 @@ export class CmsModule implements OnModuleInit {
         BlockFactory,
         MenuFactory,
         PageFactory,
+        LibraryFactory,
         CmsService,
         {
           provide: CMS_OPTIONS,

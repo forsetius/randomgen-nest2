@@ -2,13 +2,10 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 import { Injectable } from '@nestjs/common';
 import YAML from 'yaml';
-import { MarkdownService } from './MarkdownService';
 
 @Injectable()
 export class ParserService {
   private supports = ['.json', '.md', '.yaml', '.yml'];
-
-  constructor(private markdownService: MarkdownService) {}
 
   isSupported(filename: string): boolean {
     return this.supports.includes(path.extname(filename));
@@ -31,19 +28,16 @@ export class ParserService {
                 unknown
               >)
             : {};
-          const content = this.markdownService.parse(
-            data.groups['content'] ?? '',
-          );
 
           return {
             ...frontmatter,
-            content,
+            content: data.groups['content'] ?? '',
           };
         }
 
         return {
           frontmatter: {},
-          content: this.markdownService.parse(fileContent),
+          content: fileContent,
         };
       }
       case '.yaml':

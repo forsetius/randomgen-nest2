@@ -9,7 +9,7 @@ export class MarkdownService {
       async: false,
       breaks: true,
       gfm: true,
-      extensions: [this.linkifySlugs(), this.columnizeText()],
+      extensions: [this.preprocessSlugs(), this.columnizeText()],
     });
   }
 
@@ -27,7 +27,7 @@ export class MarkdownService {
    * Provides the ability to convert strings like `[Text]<en/slug>`
    * to `<a href="/pages/en/slug.html">Text</a>`
    */
-  private linkifySlugs() {
+  private preprocessSlugs() {
     return {
       name: 'slug',
       level: 'inline',
@@ -57,7 +57,7 @@ export class MarkdownService {
         }
         const slugToken = token as SlugToken;
 
-        return `<a href="/pages/${slugToken.lang}/@{${slugToken.slug}}">${slugToken.text}</a>`;
+        return `<a href="@{${slugToken.lang}/${slugToken.slug}}">${slugToken.text}</a>`;
       },
     };
   }
