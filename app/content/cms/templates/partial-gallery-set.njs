@@ -1,4 +1,11 @@
 <div id="{{ blockId }}" class="gallery-set">
+  {% if title %}
+    <h2>{{ title }}</h2>
+  {% endif %}
+  {% if content %}
+    {{ content }}
+  {% endif %}
+  
   <div data-card-template="{{ cardTemplate }}"
        data-items="{{ items | string }}"
        data-per-page="{{ perPage | default(3) }}"

@@ -2,10 +2,12 @@ import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { PageSetBlockDef } from '../../types';
 import { Library } from '../Library';
+import { MarkdownService } from '../../../parser/services/MarkdownService';
 
 export class PageSetBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
+    private readonly markdownService: MarkdownService,
     name: string,
     public override readonly def: PageSetBlockDef,
   ) {
@@ -20,6 +22,9 @@ export class PageSetBlock extends Block {
       perPage: this.def.count,
       perRow: this.def.columns,
       title: this.def.title,
+      content: this.def.content
+        ? this.markdownService.parse(this.def.content)
+        : undefined,
       lang: library.locale.lang,
       translations: library.locale.translations,
     });

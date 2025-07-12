@@ -1,11 +1,12 @@
 import { Page } from './Page';
 import { slugify } from '@shared/util/string';
+import { ArrayMap } from '@shared/util/ArrayMap';
 
 export class Category {
   public parent: Category | undefined = undefined;
   private _fullSlug: string | undefined;
   private _breadcrumbs: string | undefined;
-  private readonly pages: Page[] = [];
+  private readonly subcategories = new ArrayMap<string, Page>([['_', []]]);
 
   get fullSlug(): string {
     if (typeof this._fullSlug === 'undefined') {
@@ -31,7 +32,7 @@ export class Category {
     return {
       name: this.name,
       parent: this.parent?.data,
-      pages: this.pages.map((page) => page.slug),
+      pages: this.subcategories.get('_')!.map((page) => page.slug),
       fullSlug: this.fullSlug,
       breadcrumbs: this.breadcrumbs,
     };
@@ -69,23 +70,36 @@ export class Category {
     this._breadcrumbs = breadcrumbs.join(' › ');
   }
 
-  public addPage(page: Page): void {
-    this.pages.push(page);
+  public addPage(page: Page, subcategory?: string): void {
+    this.subcategories.get('_')!.push(page);
+    if (subcategory) {
+      this.subcategories.getCollection(subcategory).push(page);
+    }
   }
 
   public sortPages(): void {
-    this.pages.sort((a, b) => {
-      const aNumSort = a.def.sort ?? a.date?.toSeconds() ?? 0;
-      const bNumSort = b.def.sort ?? b.date?.toSeconds() ?? 0;
+    this.subcategories.forEach((subcategory) => {
+      subcategory.sort((a, b) => {
+        const aNumSort = a.def.sort ?? a.date?.toSeconds() ?? 0;
+        const bNumSort = b.def.sort ?? b.date?.toSeconds() ?? 0;
 
-      const numSort = aNumSort - bNumSort;
+        const numSort = aNumSort - bNumSort;
 
-      return numSort === 0 ? a.def.title.localeCompare(b.def.title) : numSort;
+        return numSort === 0 ? a.def.title.localeCompare(b.def.title) : numSort;
+      });
     });
   }
 
-  public getPages(): Page[] {
-    return this.pages;
+  public getPages(subcategory?: string): Page[] {
+    if (!subcategory) {
+      return this.subcategories.getCollection('_');
+    }
+
+    if (!this.subcategories.has(subcategory)) {
+      throw new Error(`No such subcategory ${subcategory}`);
+    }
+
+    return this.subcategories.get(subcategory)!;
   }
 }
 

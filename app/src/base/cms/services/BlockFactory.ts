@@ -50,22 +50,37 @@ export class BlockFactory {
       case BlockType.API_CALL:
         return new ApiCallBlock(this.templatingService, name, def);
       case BlockType.CATEGORY:
-        return new CategoryBlock(this.templatingService, name, def);
+        return new CategoryBlock(
+          this.templatingService,
+          this.markdownService,
+          name,
+          def,
+        );
       case BlockType.GALLERY:
         return new GalleryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
       case BlockType.PAGE_SET:
-        return new PageSetBlock(this.templatingService, name, def);
+        return new PageSetBlock(
+          this.templatingService,
+          this.markdownService,
+          name,
+          def,
+        );
       case BlockType.STATIC:
         return new StaticBlock(
-          this.markdownService,
           this.templatingService,
+          this.markdownService,
           name,
           def,
         );
       case BlockType.TAG:
-        return new TagBlock(this.templatingService, name, def);
+        return new TagBlock(
+          this.templatingService,
+          this.markdownService,
+          name,
+          def,
+        );
     }
   }
 }

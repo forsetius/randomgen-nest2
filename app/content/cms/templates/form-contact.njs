@@ -1,4 +1,4 @@
-<h2>Formularz kontaktowy</h2>
+<h2>{{ translations.contactForm }}</h2>
 <form
     id="contact-form"
     class="needs-validation"

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Unica+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link id="theme" rel="stylesheet" type="text/css" href="/ui/styles.css" title="theme" />
@@ -49,9 +50,11 @@
   {% block header %} {% include "partial_header.njs" %} {% endblock %}
   <div id="subHeader">
     {% block subHeader %}
+      <slot id="preSubheader" />
       {% if date %}<span class="info"><i class="bi-calendar3"></i>&nbsp;&nbsp;{{ date }}</span>{% endif %}
       {% if categoryData %}<span class="info"><i class="bi-folder2-open"></i>&nbsp;&nbsp;{{ categoryData.current.breadcrumbs }}</span>{% endif %}
       {% if tags %}<span class="info">{% for tag in tags %}<i class="bi-tag"></i>&nbsp;&nbsp;<a href="/pages/{{ lang }}/tag.html?tag={{ tag }}">{{ tag }}</a> {% endfor %}</span>{% endif %}
+      <slot id="postSubheader" />
     {% endblock %}
   </div>
 </header>

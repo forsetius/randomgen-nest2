@@ -2,10 +2,12 @@ import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { CategoryBlockDef } from '../../types';
 import { Library } from '../Library';
+import { MarkdownService } from '../../../parser/services/MarkdownService';
 
 export class CategoryBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
+    private readonly markdownService: MarkdownService,
     name: string,
     public override readonly def: CategoryBlockDef,
   ) {
@@ -17,7 +19,10 @@ export class CategoryBlock extends Block {
     if (!category) {
       throw new Error(`Category ${this.def.category} not found`);
     }
-    const items = [...category.getPages().map((page) => page.slug)];
+    const items = category
+      .getPages(this.def.subcategory)
+      .map((page) => page.slug);
+
     if (this.def.sortDir === 'desc') {
       items.reverse();
     }
@@ -30,6 +35,9 @@ export class CategoryBlock extends Block {
       perRow: this.def.columns,
       category: this.def.category,
       title: this.def.title,
+      content: this.def.content
+        ? this.markdownService.parseInline(this.def.content)
+        : undefined,
       lang: library.locale.lang,
       translations: library.locale.translations,
     });

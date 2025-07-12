@@ -2,10 +2,12 @@ import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { TagBlockDef } from '../../types';
 import { Library } from '../Library';
+import { MarkdownService } from '../../../parser/services/MarkdownService';
 
 export class TagBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
+    private readonly markdownService: MarkdownService,
     name: string,
     public override readonly def: TagBlockDef,
   ) {
@@ -30,6 +32,9 @@ export class TagBlock extends Block {
       perRow: this.def.columns,
       category: this.def.tag,
       title: this.def.title,
+      content: this.def.content
+        ? this.markdownService.parseInline(this.def.content)
+        : undefined,
       lang: library.locale.lang,
       translations: library.locale.translations,
     });

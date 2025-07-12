@@ -6,8 +6,8 @@ import { Library } from '../Library';
 
 export class StaticBlock extends Block {
   public constructor(
-    private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
+    private readonly markdownService: MarkdownService,
     name: string,
     public override readonly def: StaticBlockDef,
   ) {

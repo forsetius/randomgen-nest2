@@ -7,7 +7,7 @@ a:where(:link, :visited, :hover, :focus, :active) {color: #11944e; text-decorati
 #subHeader a:is(:link, :visited, :hover, :focus, :active) {color: #1fb565; font-weight: 500;}
 .bg-body-tertiary a:is(:link, :visited, :hover, :focus, :active) { font-weight: 600 }
 h4, h4 a {font-size: 1.5rem}
-h3 a, h4 a, h5 a, h3 a:hover, h4 a:hover, h5 a:hover {color: #fff; font-weight: bold; text-transform: uppercase;}
+h3 a, h4 a, h5 a, h3 a:hover, h4 a:hover, h5 a:hover {color: #fff; font-weight: bold; text-transform: uppercase}
 hr { border-color: #aaa; margin: 12px 0 0 -20px }
 blockquote { margin-left: 16px; border-left: 6px solid #1fb565; border-radius: 16px; padding: 0 20px; font-style: italic; font-weight: 600 }
 main {padding-top: 20px; }
@@ -103,9 +103,13 @@ article .content p { break-inside: avoid-column; }
 /*article li {font-family: 'Fira Sans', sans-serif; font-size: 1.05rem; line-height: 1.75; text-align: justify;}*/
 article h2 {margin-top: 40px; padding: 10px 0; border-top: 1px #111 solid; width: 100%; }
 article h2:first-child {margin-top: 0;}
+article h3, aside h3 {
+    font-size: 1.35rem;
+    font-weight: bold;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
 article h3 {
-    padding: 10px 0 0 20px;
-    font-size: 1.5rem;
+    padding-top: 10px;
 }
 .btn-outline-success:hover small { color: rgba(222, 226, 230, 0.75) !important;}
 footer { clear: both; margin-top: 20px}
@@ -127,14 +131,17 @@ footer div.container { margin-left: 0 }
 .card-text p { font-size: 0.85rem; margin-bottom: 0 }
 
 section.cards { margin: 40px 0 40px 75px; }
-section .col { margin-top: 36px; padding: 0 18px;}
+/*section .col { margin-top: 36px; padding: 0 18px;}*/
 section.cards .card-title { left: 0; border: 0; padding: 30px 38px; font-size: 2.5rem; text-shadow: 3px 3px 5px #606060; color: #dddddd}
 .card { border: 0; border-radius: 1rem; }
 .card:hover { border: 0; box-shadow: 0 0 20px #606060;}
 
 aside .card { border: 0; border-radius: 8px; margin-bottom: 12px;}
 aside .card-body { margin: 5px 10px; padding: 0 12px; }
-aside .card-title { font-size: 1.45rem; padding: 8px 0 4px 0; margin: 0 28px 0 18px;}
+aside .card-title {
+    padding: 8px 0 4px 0;
+    margin: 0 10px;
+}
 aside .card-title a { color: white; }
 aside .card-img-overlay { padding: 12px; }
 aside h2 { padding-top: 16px; }
@@ -161,6 +168,10 @@ aside section h2 { border-bottom: 1px #ddd solid; }
 .alert h2 {font-weight: 600;border-top: 0;border-radius: 1rem;}
 .lightbox-caption { background-color: black; }
 span.date {font-size: 70%; font-weight: 700; color: #e685b5}
+
+article .gallery-set h2 { margin-top: 50px; }
+article .gallery-set h2 ~ p:last-of-type { margin-bottom: 0; }
+article .gallery-set h2 ~ .card-container { margin-top: 0; padding-top: 0; }
 
 /* XS */
 @media screen and (max-width: 991px) {

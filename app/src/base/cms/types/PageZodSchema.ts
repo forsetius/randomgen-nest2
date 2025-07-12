@@ -12,6 +12,7 @@ export const PageZodSchema = z
     content: z.string(),
     tags: z.array(z.string()).default([]),
     category: z.string().optional(),
+    subcategory: z.string().optional(),
     subcategoryName: z.string().optional(),
     sort: z.number().optional(),
     date: z
@@ -39,11 +40,11 @@ export const PageZodSchema = z
   .strict()
   .transform((data) => ({
     ...data,
-    excerpt: data.excerpt ?? data.lead,
+    excerpt: data.excerpt,
     thumbnailImage: data.thumbnailImage ?? data.headerImage,
     meta: {
       title: data.meta?.title ?? data.title,
-      description: data.meta?.description ?? data.excerpt ?? data.lead ?? '',
+      description: data.meta?.description ?? data.excerpt ?? '',
       robots: data.meta?.robots ?? { index: true, follow: true },
     },
   }));

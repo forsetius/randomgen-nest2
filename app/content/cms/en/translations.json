@@ -1,4 +1,5 @@
 {
+  "contactForm": "Contact form",
   "content": "Content",
   "emailRequired": "The field is required and has to be a valid email",
   "fieldRequired": "The field is required",

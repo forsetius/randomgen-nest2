@@ -38,6 +38,7 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
 
 const SetBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('partial-gallery-set'),
+  content: z.string().optional(),
   cardTemplate: z.string().default('fragment-img-card'),
   count: z.number().int().default(6),
   columns: z.number().int().min(1).max(6).default(3),
@@ -47,6 +48,7 @@ const SetBlockZodSchema = CommonBlockZodSchema.extend({
 export const CategoryBlockZodSchema = SetBlockZodSchema.extend({
   type: z.literal(BlockType.CATEGORY),
   category: z.string(),
+  subcategory: z.string().optional(),
 });
 
 export const PageSetBlockZodSchema = SetBlockZodSchema.extend({

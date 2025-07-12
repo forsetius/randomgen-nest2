@@ -46,7 +46,7 @@ export class Library {
           throw new Error(`Category ${page.def.category} not found`);
         }
         if (!category.getPages().includes(page)) {
-          category.addPage(page);
+          category.addPage(page, page.def.subcategory);
         }
 
         // if a page is a subcategory homepage and also has a category, it is a parent-child relationship
