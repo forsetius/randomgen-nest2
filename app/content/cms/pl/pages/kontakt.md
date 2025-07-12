@@ -1,6 +1,8 @@
 ---
-title: Kontakt
 template: page-default
+title: Kontakt
+langs:
+  en: contact
 headerImage: mid-contact-head.jpg
 searchable: false
 slots:

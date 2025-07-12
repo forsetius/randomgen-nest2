@@ -1,6 +1,8 @@
 ---
 template: page-full-width
 title: Wtem, na blogu!
+langs:
+  en: blog
 headerImage: mid-blog-head.jpg
 subcategoryName: Blog
 lead: Poniżej znajdziesz wszystkie wpisy z mojego bloga.

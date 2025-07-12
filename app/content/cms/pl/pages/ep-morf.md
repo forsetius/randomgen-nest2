@@ -12,6 +12,6 @@ slots:
   bottom:
     - type: category
       category: ep-morf
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />
 

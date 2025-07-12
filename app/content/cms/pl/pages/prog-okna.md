@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Aplikacja dla producenta okien
+langs:
+  en: prog-windows
 headerImage: mid-windows-head.jpg
 excerpt: Aplikacja z przeglądem zamówień, dokumentów i wypożyczeń stojaków
 category: prog-doswiadczenia

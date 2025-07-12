@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Realia świata
-subtitle: Eclipse Phase
 excerpt: Różnorodne aspekty settingu Eclipse Phase 
 headerImage: leo-ep-reality-head.jpg
 category: ep-encyklopedia
@@ -12,5 +11,5 @@ slots:
   bottom:
     - type: category
       category: ep-realia
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />

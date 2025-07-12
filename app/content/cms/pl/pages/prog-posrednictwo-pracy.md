@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Pośrednictwo pracy
+langs:
+  en: prog-job-placement
 headerImage: mid-work-head.jpg
 excerpt: Rozbudowany system rozgłaszania ogłoszeń o pracę i zbierania aplikacji
 category: prog-doswiadczenia

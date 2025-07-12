@@ -16,7 +16,7 @@ slots:
         - Zarządzanie ekosystemami
         - Dane środowiskowe
         ## Główne habitaty
-        - Caldwell ([Wulkanoidy](#)), 
+        - [Caldwell]{pl/ep-habitat-caldwell} ([Wulkanoidy]{pl/ep-atlas-wulkanoidy}), 
         - Asioka ([Mars](#))
         - Elegua (orbita [Ziemi](#))
 ---

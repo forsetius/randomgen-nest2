@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Zapotrzebowanie na narzędzia
+langs:
+  en: prog-requisitions
 excerpt: Aplikacja mobilna pozwalająca pracownikom wnioskować o zakup narzędzi
 headerImage: mid-requisition-head.jpg
 category: prog-doswiadczenia

@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Backoffice kasyn
+langs:
+  en: prog-casinos
 headerImage: mid-casino-head.jpg
 excerpt: Platforma obsługująca kasyna, gry, płatności oraz wszelkie działania związane z graczami
 lead: |

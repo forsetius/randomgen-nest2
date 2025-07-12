@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Diaspora
-subtitle: Eclipse Phase
 headerImage: mid-diaspora-head.jpg
 thumbnailImage: mid-diaspora-card.jpg
 category: ep-intro

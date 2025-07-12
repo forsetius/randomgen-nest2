@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Konspiracje
-subtitle: Eclipse Phase
 headerImage: mid-ep-conspiracy-head.jpg
 category: ep-encyklopedia
 subcategoryName: Konspiracje
@@ -11,5 +10,5 @@ slots:
   bottom:
     - type: category
       category: ep-konspiracje
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />

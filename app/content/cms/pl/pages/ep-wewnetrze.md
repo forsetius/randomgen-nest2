@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Wewnętrze
-subtitle: Eclipse Phase
 excerpt: Wewnętrzny Układ Słoneczny - od Słońca do pasa asteroidów
 headerImage: mid-sunward-head.jpg
 category: ep-intro

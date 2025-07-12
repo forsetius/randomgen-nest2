@@ -1,6 +1,8 @@
 ---
 title: Pierwsze grzybobranie
 subtitle: w tym roku
+langs:
+  en: 2025-06-22_first-mushroom-picking
 excerpt: Pierwszy tego roku wypad na tereny grzybonośne
 lead: Pierwszy raz w tym roku wybraliśmy się na nasze ulubione, ściśle tajne przez poufne, tereny grzybonośne.
 headerImage: mid-forest-head.jpg

@@ -1,6 +1,8 @@
 ---
-title: Wyszukiwanie
 template: page-full-width
+title: Wyszukiwanie
+langs:
+  en: search
 headerImage: mid-search-head.jpg
 searchable: false
 slots:

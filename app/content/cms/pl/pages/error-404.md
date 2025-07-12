@@ -1,6 +1,8 @@
 ---
 title: "404: Nie znaleziono"
 subtitle: ...choć szukano
+langs:
+  en: error-404
 lead: |
   Strona o podanym adresie nie została odnaleziona.
 ---

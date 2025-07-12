@@ -21,8 +21,8 @@ slots:
         - prog-doswiadczenia
         - 2022-01-03_generator-technobelkotu
         - eclipse-phase
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />
 
 **Jestem Marcin i nie lubię się opisywać.**
 

@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Upadek
-subtitle: Eclipse Phase
 headerImage: mid-fall-head.jpg
 category: ep-intro
 sort: 2

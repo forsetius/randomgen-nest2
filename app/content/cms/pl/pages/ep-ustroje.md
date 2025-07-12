@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Ustroje
-subtitle: Eclipse Phase
 excerpt: Poupadkowe państwa i sojusze polityczne
 headerImage: leo-ep-political-blocks-head.jpg
 category: ep-encyklopedia
@@ -12,5 +11,5 @@ slots:
   bottom:
     - type: category
       category: ep-ustroje
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />

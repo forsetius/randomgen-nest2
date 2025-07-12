@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Celestia
+langs:
+  en: celestia
 excerpt: Celestia jest symulatorem wszechświata, który umożliwia oglądanie go z każdego miejsca, jakie nam się zamarzy
 subtitle: Symulator Wszechświata
 lead: |

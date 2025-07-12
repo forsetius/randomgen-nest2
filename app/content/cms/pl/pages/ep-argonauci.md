@@ -17,7 +17,7 @@ slots:
         - Odpowiedzialność społeczna
         - Technoprogresywizm
         ## Główne habitaty
-        - Hooverman-Geischecker ([Słońce](#))
+        - [Hooverman-Geischecker]{pl/ep-habitat-hooverman-geischecker} ([Słońce]{pl/ep-atlas-slonce})
         - Mitre (orbita [Luny](#)
         - Markov ([Pas Kuipera](#))
 ---

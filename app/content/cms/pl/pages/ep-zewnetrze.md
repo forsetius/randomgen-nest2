@@ -1,7 +1,6 @@
 ---
 template: page-full-width
 title: Zewnętrze
-subtitle: Eclipse Phase
 excerpt: Zewnętrzny Układ Słoneczny - za pasem asteroid
 lead: |
     Poza orbitą Marsa wpływ [hiperkorporacji]{pl/ep-hiperkorporacja} i [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} jest znacznie bardziej ograniczony. Z wyjątkiem ściśle autorytarnej [Republiki Jowiszowej]{pl/ep-republika-jowiszowa}, mieszkańcy układu zewnętrznego mają znacznie więcej swobody niż ci żyjący w u[kładzie wewnętrznym]{pl/ep-wewnetrze}. Jednak nawet tutaj walka między pragnieniem wolności a tęsknotą za bezpieczeństwem stanowi ważną część dyskursu politycznego.

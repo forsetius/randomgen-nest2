@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Rozmowy 1&#8209;na&#8209;1
+langs:
+  en: prog-1on1
 excerpt: Narzędzie dla działów HR do rozmów z pracownikami
 headerImage: mid-hr-1on1-head.jpg
 category: prog-doswiadczenia

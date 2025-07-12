@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Moje umiejętności
+langs:
+  en: prog-skills
 excerpt: Co umiem, co wiem, co mogę
 headerImage: mid-moje-umiejetnosci-head.jpg
 tags:

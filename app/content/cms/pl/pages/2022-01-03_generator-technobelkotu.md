@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Generator technobełkotu
+langs:
+  en: 2022-01-03_technobabble-generator
 headerImage: startrek-engineers-head.png
 category: blog
 date: 2022-01-03

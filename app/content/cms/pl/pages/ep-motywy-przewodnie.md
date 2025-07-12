@@ -1,10 +1,9 @@
 ---
 template: page-default
 title: Motywy przewodnie
-subtitle: Eclipse Phase
 headerImage: mid-ep-themes-head.jpg
 category: eclipse-phase
-sort: 4
+subcategory: more
 excerpt: Transhumanizm, postapokalipsa, konspiracja i groza
 lead: |
     W Eclipse Phase przewija się kilka istotnych motywów przewodnich:

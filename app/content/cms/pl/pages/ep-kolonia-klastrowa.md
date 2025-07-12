@@ -2,7 +2,7 @@
 template: page-default
 title: Kolonia klastrowa
 headerImage: mid-cluster-colony-head.jpg
-excerpt: Flotylle byłych statków ewakuacyjnych przejęte przez Karawaniarzy
+excerpt: Modułowe habitaty z zerową grawitacją
 lead: |
   > Klastry? Ha, takie... latające wioski modułowe. Zero-g, trochę farm, trochę ludzi przywiązanych do kabli i planów terraformacji, których nigdy nie będzie. Dobre miejsce, jak lubisz życie w dryfie, ale nie licz na prywatność – wszyscy wszystko o sobie wiedzą, zanim cokolwiek powiesz.
 category: ep-habitaty-kosmiczne

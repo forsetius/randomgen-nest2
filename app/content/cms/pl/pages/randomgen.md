@@ -1,6 +1,8 @@
 ---
 template: page-full-width
 title: randomgen
+langs:
+  en: randomgen
 excerpt: Generatory do RPG
 lead: RandomGen to zbiór generatorów do gier fabularnych.
 slots:

@@ -2,7 +2,7 @@
 template: page-default
 title: Torus
 headerImage: mid-torus-head.jpg
-excerpt: Asteroidy wydrążone w sieć tuneli i komór
+excerpt: Toroidalne habitaty kosmiczne, obecnie już nie konstruowane
 lead: |
   > Pierwszy raz w torusie? Daj znać, jak ci się zakręci w głowie – większości się kręci. Niby wygląda jak pączek z oknami, ale jak staniesz przy wewnętrznej ścianie i spojrzysz wzdłuż obręczy… to jakbyś patrzył w krzywe niebo, które cię otacza.
   >

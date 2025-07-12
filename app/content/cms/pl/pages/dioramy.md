@@ -1,12 +1,14 @@
 ---
 template: page-default
 title: Dioramy
+langs:
+  en: dioramas
 headerImage: mid-diorama-head.jpg
 tags:
   - hobby
   - TODO-media
+lead: <block id="w-budowie" />
 ---
-<block id="w-budowie" />
 
 Parę lat temu, w ramach szukania hobby, które oderwałoby mnie od komputera, zacząłem robić dioramy. Zaczęło się od jakiegoś tutoriala robienia terenów do gier, który nie wiadomo czemu przywędrował na mojego walla na Fejsie... i mnie pochłonęło. Takie fajne cudeńka ludzie robili! Od razu zdałem sobie sprawę, że malowanie figurek to trochę ponad moje możliwości, ale składanie makietek z kupnych komponentów - czemu nie? 
 

@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Systemy parkingowe
+langs:
+  en: prog-parking-systems
 headerImage: mid-parking-head.jpg
 category: prog-doswiadczenia
 sort: 1

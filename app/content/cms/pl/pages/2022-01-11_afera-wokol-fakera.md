@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Afera wokół Fakera
+langs:
+  en: 2022-01-11_faker-affair
 headerImage: mid-afera-fakera-head.jpg
 category: blog
 date: 2022-01-11
