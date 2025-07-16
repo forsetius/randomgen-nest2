@@ -5,8 +5,7 @@ subtitle: Omnicor
 excerpt: Nanofabrykacja, Chemikalia, Energia, Antymateria
 headerImage: mid-omnicor-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static
@@ -17,7 +16,7 @@ slots:
         - Energia
         - [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
         ## Główne habitaty
-        - MonoLit3 ([Merkury](#)), 
+        - MonoLit3 ([Merkury]{pl/ep-atlas-merkury}), 
         - Feynman ([Luna](#))
 ---
 **Omnicor** specjalizuje się w projektowaniu nanotechnologii i procesie nanofabrykacji, rafinacji chemicznej, paliwach alternatywnych i badaniach nad antymaterią.

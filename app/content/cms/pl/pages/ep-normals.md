@@ -7,8 +7,7 @@ excerpt: Nieulepszone ludzkie ciało
 lead: |
   > Ma ledwie pięćdziesiąt, a wygląda na sześćdziesiąt. Zęby krzywe, kolana bolą, gdzieś tam pewnie już czai się raczysko. W Republice nazywają ich ‘naturalnymi’, ale prawda jest taka, że to tania siła robocza. Winda do kopalni ma osobny przedział — ‘dla Normalsów’, żeby nie zarażać widokiem.
 category: ep-biomorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

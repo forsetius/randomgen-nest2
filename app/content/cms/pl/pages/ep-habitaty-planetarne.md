@@ -6,8 +6,7 @@ headerImage: mid-diaspora-head.jpg
 thumbnailImage: mid-diaspora-card.jpg
 category: ep-habitat
 subcategoryName: Habitaty planetarne
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

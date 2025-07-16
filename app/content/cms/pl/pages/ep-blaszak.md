@@ -7,8 +7,7 @@ lead: |
   > Widziałem kiedyś Blaszaka, który ukradkiem dotykał szyby akwarium — jakby wspomnienie zmysłu chciało wrócić. Do środka załadowali Ego ale po tylu latach, czy w środku jest jeszcze człowiek czy już tylko maszyna?
 headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

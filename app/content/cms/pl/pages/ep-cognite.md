@@ -7,8 +7,7 @@ category: ep-hiperkorporacja
 excerpt: Kognitywistyka, psychochirurgia i udoskonalanie umysłu
 lead: |
   > Oni nie pytają, czy coś można. Pytają, czy to da się zoptymalizować do 17. cyklu poznawczego. A potem patrzą, jak twoje jaźnie się synchronizują, aż zaczniesz sam siebie pytać o zgodę.
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static
@@ -19,7 +18,7 @@ slots:
         - [Psychochirurgia](#)
         - [Nootropy](http://pl.wikipedia.org/wiki/Leki_nootropowe)
         ## Główne habitaty
-        - Myśl (orbita [Wenus](#)), 
+        - Myśl (orbita [Wenus]{pl/ep-atlas-wenus}), 
         - Fobos (księżyc [Marsa](#))
 ---
 Jako pionier na polu kognitywistyki, **Cognite** poszerza horyzonty wiedzy o umyśle transczłowieka. Najbardziej znani są z [ulepszeń mentalnych](#) oraz z ich sztandarowego modelu [morfa]{pl/ep-morf}: [Mentona]{pl/ep-menton}. Jednak Cognite specjalizuje się również w [psychochirurgii](#) i nootropach.

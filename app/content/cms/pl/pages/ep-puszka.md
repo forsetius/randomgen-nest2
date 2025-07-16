@@ -7,8 +7,7 @@ excerpt: Puszki to prymitywne i ciasne habitaty z wczesnej epoki podboju kosmosu
 lead: |
   > Ten habitat? Puszka. Jeszcze z czasów ewakuacji. Zero grawitacji, zero prywatności, pełno kurzu. Ale jak nie masz repu, to lepsze to niż dryfować luzem.
 category: ep-habitaty-kosmiczne
-tags: 
-  - rpg
+
 ---
 Do tej kategorii pasują stare stacje badawcze i stacje-schrony poszukiwaczy. Habitaty typu „puszka” to zaledwie kilka poziomów powyżej Międzynarodowej Stacji Kosmicznej z początku XXI wieku.
 

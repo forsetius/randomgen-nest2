@@ -5,8 +5,7 @@ excerpt: Kryminaliści w świecie Eclipse Phase
 headerImage: mid-ep-criminals-head.jpg
 category: ep-encyklopedia
 subcategoryName: Przestępczość
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

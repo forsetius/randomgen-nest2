@@ -7,8 +7,7 @@ lead: |
   > Novacraby radzą sobie świetnie w środowiskach o dużym ciśnieniu, promieniowaniu lub toksyczności. W misjach solo są bezkonkurencyjni ale ich morfologia nie sprzyja integracji z zespołami mieszanymi. No, chyba że mówimy o Extropii, ale tam nikt nie musi się integrować
 headerImage: mid-novacrab-head.jpg
 category: ep-pod
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

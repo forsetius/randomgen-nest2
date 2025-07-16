@@ -2,21 +2,18 @@
 template: page-default
 title: Experia
 subtitle: Experia
-headerImage: mid-experia-head.jpg
+headerImage: mid-ep-experia-head.jpg
 category: ep-hiperkorporacja
 excerpt: Media, Wiadomości, Rozrywka, Memetyka
 lead: |
   > Powiedzieli, że mój związek ma świetny potencjał narracyjny. Zapłacili za rozstanie, dorzucili nową twarz dla byłej i podpisaliśmy umowę na sezon drugi. Teraz gram konkurencyjnego kochanka — samego siebie, tylko innego.
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static
       content: |
         ## Główna działalność
-        - Media ([AR](#)
-        - [VR](#)
-        - [XP](#)
+        - Media ([AR](#), [VR](#), [XP](#))
         - Wiadomości
         - Rozrywka
         - [Memetyka](http://pl.wikipedia.org/wiki/Memetyka)        

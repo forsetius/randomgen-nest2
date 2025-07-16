@@ -6,8 +6,7 @@ langs:
 excerpt: Gra RPG hard-SF w klimatach konspiracji i grozy
 headerImage: eclipse-phase-head.jpg
 subcategoryName: Eclipse Phase
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

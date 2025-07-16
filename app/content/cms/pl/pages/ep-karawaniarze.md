@@ -5,8 +5,7 @@ subtitle: Scum
 excerpt: Włóczędzy podróżujący we flotyllach połatanych barek i statków kosmicznych
 headerImage: mid-scum-fleet-head.jpg
 category: ep-ustroje
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

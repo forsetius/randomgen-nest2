@@ -4,8 +4,7 @@ title: V/2011 Caldwell
 excerpt: Wulkanoida i lokalizacja Wrót Pandoriańskich
 headerImage: mid-ep-caldwell-head.jpg
 category: ep-atlas-wulkanoidy
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static

@@ -5,8 +5,7 @@ excerpt: Główna baza Solarian
 headerImage: mid-ep-ukko-jylina-head.jpg
 category: ep-atlas-slonce
 subcategory: habitaty
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static

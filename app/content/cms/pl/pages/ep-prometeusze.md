@@ -5,8 +5,7 @@ subtitle: Prometheans
 excerpt: Grupa zalążkowych AI sympatyzująca z transludzkością (a może tylko rozgrywająca ją)
 headerImage: mid-prometheans-head.jpg
 category: ep-konspiracje
-tags:
-  - rpg
+
 ---
 Jednym z wiodących tematów dociekań tropicieli spisków jest istnienie grupy [zalążkowych AI](Zal%C4%85%C5%BCkowa+Sztuczna+Inteligencja "AI posiadająca zdolność ulepszania swojego kodu") nazywających się **Prometeuszami**. Plotki na temat tych istot krążyły nawet jeszcze przed [Upadkiem]{pl/ep-upadek} i co jakiś czas powracają z nową intensywnością, gdy tylko jakieś nowe dowody wyjdą na jaw - choć te dowody są niemal zawsze wkrótce potem dyskredytowane.
 

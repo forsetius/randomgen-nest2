@@ -5,8 +5,7 @@ subtitle: Ghostrider module
 excerpt: Moduł dołączany do wszczepki, umożliwiający uruchomienie w morfie dodatkowego Ego
 headerImage: mid-ghostrider-module-head.jpg
 category: ep-ulepszenia
-tags:
-  - rpg
+
 
 ---
 Moduł pasażera (zwany też _Ghostrider_) to samodzielny komputer, który pozwala przenosić w morfie dodatkowego [infomorfa]{pl/ep-infomorf}. Może to być kolejna [muza]{pl/ep-muza}, [AI]{pl/ep-sztuczna-inteligencja}, backup Ego lub [fork](#).

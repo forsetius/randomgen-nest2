@@ -6,8 +6,7 @@ excerpt: Następcy ponadnarodowych megakorporacji z Ziemi, trzymający władzę 
 headerImage: mid-hypercorp-head.jpg
 category: ep-encyklopedia
 subcategoryName: Hiperkorpy
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

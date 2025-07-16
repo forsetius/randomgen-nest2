@@ -4,8 +4,7 @@ title: Habitaty solarne
 headerImage: mid-ep-sun-habitat-head.jpg
 category: ep-atlas-slonce
 subcategory: more
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

@@ -6,6 +6,7 @@ class GalleryBlock {
   constructor(blockElement, lang) {
     this.lang = lang;
     this.container = blockElement.querySelector('.card-container');
+    this.pagerButtons = blockElement.querySelector('.pager-buttons');
     this.prevBtn = blockElement.querySelector('.prev-btn');
     this.nextBtn = blockElement.querySelector('.next-btn');
 
@@ -21,14 +22,19 @@ class GalleryBlock {
     const initialPage = Number(qs.page) || 1;
 
     if (this.prevBtn && this.nextBtn) {
-      this.prevBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.loadPage(this.currentPage - 1);
-      });
-      this.nextBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.loadPage(this.currentPage + 1);
-      });
+      if (this.totalPages === 1) {
+        this.pagerButtons.classList.remove('d-flex');
+        this.pagerButtons.classList.add('d-none');
+      } else {
+        this.prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.loadPage(this.currentPage - 1);
+        });
+        this.nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.loadPage(this.currentPage + 1);
+        });
+      }
     }
 
     this.loadPage(initialPage, false);

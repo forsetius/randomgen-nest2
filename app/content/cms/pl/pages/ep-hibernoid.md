@@ -7,8 +7,7 @@ excerpt: Model biomorfa z ograniczonym zapotrzebowaniem na sen oraz zdolnością
 lead: |
   > Mamy wysyp takich zawsze jak przycumuje jakiś frachtowiec. Wbiją do baru, zamówią kilka głębszych i zwijają się w kąciku, nie reagują na krzyki, muzykę, nawet strobo. Jakby rzeczywistość to był jakiś hologram. Kiedyś jeden przespał eksplozję. Obudził się tylko po to, żeby się przeciągnąć.
 category: ep-biomorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

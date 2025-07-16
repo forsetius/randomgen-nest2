@@ -7,8 +7,7 @@ lead: |
   > Ich sparring wyglądał jak taniec maszyn wojny. Żadnej litości, żadnych błędów. Po wszystkim publiczność wstała i klaskała, jak w teatrze.
 headerImage: mid-gorgon-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

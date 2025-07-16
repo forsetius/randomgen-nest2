@@ -5,8 +5,7 @@ excerpt: Ruchy społeczne i ideologiczne odłamy transludzkości
 headerImage: mid-ep-factions-head.jpg
 category: ep-encyklopedia
 subcategoryName: Stronnictwa
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

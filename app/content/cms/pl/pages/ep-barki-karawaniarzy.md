@@ -6,8 +6,7 @@ excerpt: Flotylle byłych statków ewakuacyjnych przejęte przez Karawaniarzy
 lead: |
   > Kiedy widzisz barkę karawaniarzy na radarze, masz trzy opcje: dołączyć, uciekać albo robić interesy. Albo wszystko naraz. Tam się sprzedaje światy, kupuje tożsamości, bierze śluby na dwa dni i traci morfa w pokerze. Dryfujący chaos, ale jak trafisz na właściwą – może być domem. Albo końcem.
 category: ep-habitaty-kosmiczne
-tags: 
-  - rpg
+
 ---
 Barki [Karawaniarzy]{pl/ep-karawaniarze} to statki kosmiczne zbudowane przed [Upadkiem]{pl/ep-upadek} lub w jego trakcie, wykorzystywane w początkowych etapach ewakuacji do transportowania ludzi z ginącej [Ziemi](#). Wiele z tych statków ewakuacyjnych nigdy nie znalazło miejsca, gdzie mogłyby rozładować swój transludzki ładunek, przekształcając się z czasem w ruchome obozy uchodźców – czasem pogrążone w buntach. Ostatecznie połączyły się z istniejącymi już statkami i rojami Karawaniarzy, przyjmując ich nomadyczny, nieokiełznany i anarchistyczny styl życia.
 

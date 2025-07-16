@@ -7,8 +7,7 @@ excerpt: Ciała zaprojektowane jako piękne, czyste i powabne
 lead: |
   > Na scenie nie było nic oprócz niej i światła. Ruchy idealnie zsynchronizowane z muzyką, skóra błyszczała jak krople rtęci. SRusałkiylphy są piękne jak coś stworzonego do obserwacji — nie do dotyku. I może o to właśnie chodzi.
 category: ep-biomorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

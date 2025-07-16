@@ -4,8 +4,7 @@ title: Tłumaczenia
 headerImage: eclipse-phase-head.jpg
 category: eclipse-phase
 subcategory: more
-tags: 
-  - rpg
+
 ---
 Staram się jak mogę oddawać znaczenie stosując zgrabne językowo i (o ile to możliwe) polskie tłumaczenie. Jednak nie jestem profesjonalnym tłumaczem - moje tłumaczenia mogą kłuć w oczy, godzić w poczytalność i powodować łysienie plackowate. Do tego nie ma kanonu tłumaczenia wielu specyficznych nazw i zwrotów wykorzystywanych w tym systemie.
 

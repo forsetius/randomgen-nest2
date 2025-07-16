@@ -6,8 +6,7 @@ headerImage: mid-biomorph-head.jpg
 excerpt: Biologiczne ciała dla transludzkich Ego
 category: ep-morf
 subcategoryName: Biomorfy
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

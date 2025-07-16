@@ -5,8 +5,7 @@ subtitle: IP Crew
 excerpt: Grupa hakerska specjalizująca się w przestępstwach cyfrowych
 headerImage: leo-id-crew-head.jpg
 category: ep-przestepczosc
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

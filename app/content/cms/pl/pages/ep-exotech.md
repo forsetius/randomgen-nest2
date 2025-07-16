@@ -7,8 +7,7 @@ lead: |
   > Widziałem postmortem z incydentu, jak ktoś przesłał swoje wspomnienia do ich softu edukacyjnego. Sabotaż, ale dzieci nauczyły się jego traumy razem z tabliczką mnożenia.
 headerImage: mid-exotech-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

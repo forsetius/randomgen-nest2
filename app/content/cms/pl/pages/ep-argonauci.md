@@ -5,8 +5,7 @@ excerpt: Naukowcy propagujący odpowiedzialne używanie technologii, zwolennicy 
 subtitle: Argonauts
 headerImage: mid-argonauts-head.jpg
 category: ep-konspiracje
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

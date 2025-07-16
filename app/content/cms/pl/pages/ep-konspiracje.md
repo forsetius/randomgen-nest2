@@ -4,8 +4,7 @@ title: Konspiracje
 headerImage: mid-ep-conspiracy-head.jpg
 category: ep-encyklopedia
 subcategoryName: Konspiracje
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

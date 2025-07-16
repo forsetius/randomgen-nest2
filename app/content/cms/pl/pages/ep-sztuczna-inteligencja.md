@@ -5,8 +5,7 @@ excerpt: Różne rodzaje sztucznych inteligencji przyszłości
 headerImage: mid-ep-ai-head.jpg
 category: ep-encyklopedia
 subcategoryName: Sztuczna inteligencja
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

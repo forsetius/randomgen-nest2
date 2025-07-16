@@ -6,7 +6,7 @@
     {% if lead %}
       <div class="lead">{{ lead }}</div>
     {% endif %}
-    <div class="content">
+    <div class="content3">
       {{ content }}
     </div>
     

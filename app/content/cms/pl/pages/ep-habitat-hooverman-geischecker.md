@@ -5,8 +5,7 @@ excerpt: Solarne centrum otwartych badań nad Słońcem
 headerImage: mid-ep-hooverman-head.jpg
 category: ep-atlas-slonce
 subcategory: habitaty
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static

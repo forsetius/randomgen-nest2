@@ -5,8 +5,7 @@ excerpt: Różnorodne aspekty settingu Eclipse Phase
 headerImage: leo-ep-reality-head.jpg
 category: ep-encyklopedia
 subcategoryName: Realia
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

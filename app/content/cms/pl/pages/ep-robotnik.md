@@ -7,8 +7,7 @@ lead: |
   > Szanuję, że robią, co trzeba, ale nie rozumiem, czemu patrzą na mnie, jakbym był zbędnym luksusem. Może po prostu zazdroszczą, że czuję smak kawy.
 headerImage: mid-worker-pod-head.jpg
 category: ep-pod
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

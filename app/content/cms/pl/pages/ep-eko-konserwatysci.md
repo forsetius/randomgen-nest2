@@ -5,8 +5,7 @@ subtitle: Preservationists
 excerpt: Radykalni ekologowie żądający zachowania istniejących ekosystemów
 headerImage: leo-eco-conservatives-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

@@ -5,8 +5,7 @@ subtitle: Brinkers
 excerpt: Samotnicy zaszyci na obrzeżach Układu
 headerImage: leo-ep-brinkers-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

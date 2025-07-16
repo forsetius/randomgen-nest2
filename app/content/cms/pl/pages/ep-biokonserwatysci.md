@@ -5,8 +5,7 @@ subtitle: Bioconservatives
 excerpt: Ruch przeciwstawiający się rozwojowi technologicznemu i postępom transhumanizmu 
 headerImage: mid-biocon-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

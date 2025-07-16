@@ -5,8 +5,7 @@ subtitle: Starware
 excerpt: Robotyka, Inżynieria lotnicza, Konstrukcja habitatów
 headerImage: mid-starware-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

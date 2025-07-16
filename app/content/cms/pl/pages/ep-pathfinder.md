@@ -7,8 +7,7 @@ lead: |
   > Nie szukają cudów. Szukają tego, co można podpiąć, zmierzyć i spieniężyć. Jeśli czegoś nie zrozumieją — zostawiają flagę i kontraktują kogoś, kto będzie udawał, że wie.”
 headerImage: mid-pathfinder-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

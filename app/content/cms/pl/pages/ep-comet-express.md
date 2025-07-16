@@ -7,8 +7,7 @@ lead: |
   > Niepokoi mnie, że kiedyś odebrałem siebie z kapsuły dostawczej i do dziś nie wiem, kto mnie wysłał.
 headerImage: mid-comex-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

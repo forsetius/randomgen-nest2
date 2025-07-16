@@ -3,8 +3,7 @@ template: page-default
 title: Solarianie
 excerpt: Transludzie w morfach solarnych zamieszkujący koronę Słońca
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

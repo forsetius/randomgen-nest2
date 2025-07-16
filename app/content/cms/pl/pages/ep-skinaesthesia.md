@@ -7,8 +7,7 @@ lead: |
   > Wszedłem tam, żeby zmienić wygląd. Wyszedłem jako narzędzie reklamowe z trzynastoma punktami dotykowymi. W umowie było napisane, że moje ciało może emitować emocje sponsora.
 headerImage: mid-skinaesthesia-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

@@ -7,8 +7,7 @@ lead: |
   > W środku siedzi ktoś, kto kiedyś mógł być nauczycielem albo poetą — ale to nie ma znaczenia, kiedy stoisz przed nim w korytarzu. Ludzie widzą tylko pancerz, broń i milczenie.
 headerImage: mid-security-pod-head.jpg
 category: ep-pod
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

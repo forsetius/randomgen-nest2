@@ -7,8 +7,7 @@ lead: |
 headerImage: mid-rimward-head.jpg
 category: ep-intro
 sort: 5
-tags:
-  - rpg
+
 ---
 Różne formy [anarchizmu](https://pl.wikipedia.org/wiki/Anarchizm) i podobnych [libertariańskich](https://pl.wikipedia.org/wiki/Libertarianizm) ideologii były dość powszechne wśród pierwszych transludzi, którzy zasiedlili przestrzeń kosmiczną w ciągu dwóch dekad przed [Upadkiem]{pl/ep-upadek}. Wiele osad w układzie zewnętrznym odziedziczyło tę spuściznę wolności. Nowe pogranicze otwarte przez kolonizację kosmosu stanowiło fantastyczną okazję dla tych, którzy pragnęli uniknąć autorytaryzmu kontrolowanego przez hiperkorporacje systemu wewnętrznego i [Ziemi](#), aby dążyć do organizacji społeczności bardziej opartych na równości i kolektywnym działaniu, a nawet po prostu eksperymentować z nowymi modelami społecznymi. Poza Pasem asteroidów wpływy hiperkorporacji były słabe i ograniczone, co dawało zaradnym kolonistom szansę na nieskrępowaną eksplorację własnych zainteresowań. Bardziej radykalne środowiska wyrastały z lub podtrzymywały więzi z postępowymi, radykalnymi i lewicowymi ruchami społecznymi i powstaniami na Ziemi, uzyskując wsparcie tam, gdzie mogły. Inni po prostu kradli zasoby hiperkorporacji z systemu wewnętrznego, szmuglując je do swoich tajnych projektów. W kilku przypadkach dochodziło do buntów całych statków lub stacji, które odrzucały rozkazy korporacji i podążały własną ścieżką. Hiperkorporacje rzadko były w stanie ścigać i karać takie przewroty.
 

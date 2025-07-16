@@ -8,8 +8,7 @@ lead: |
   Infomorfy to formy wyłącznie cyfrowe – nie mają fizycznego ciała, istnieją wyłącznie w wirtualnym, cyfrowym środowisku uruchomieniowym. Termin „infomorf” odnosi się do każdego ego osadzonego w cyfrowym ciele, niezależnie od tego, czy jest to AI ogólna (AGI), czy cyfrowa emulacja biologicznego umysłu (wliczając w to kopie zapasowe i forki).
 category: ep-morf
 subcategoryName: Infomorfy
-tags:
-  - rpg
+
 #slots:
 #  bottom:
 #    - type: category

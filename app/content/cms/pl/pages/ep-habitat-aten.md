@@ -5,8 +5,7 @@ excerpt: Silnie chroniony habitat słoneczny
 headerImage: mid-ep-aten-head.jpg
 category: ep-atlas-slonce
 subcategory: habitaty
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static

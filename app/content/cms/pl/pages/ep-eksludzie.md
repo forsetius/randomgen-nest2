@@ -5,8 +5,7 @@ subtitle: Exhumans
 excerpt: Frakcja pragnąca ulepszać się by przekroczyć limity człowieczeństwa i stać się postludźmi 
 headerImage: leo-exhumans-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

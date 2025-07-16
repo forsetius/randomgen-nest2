@@ -9,8 +9,7 @@ subcategoryName: Encyklopedia
 sort: 2
 lead: |
   Transhumanistyczna przyszłość to nie tylko nowe technologie ale i nowe społeczeństwa, nowe podmioty polityczne, korporacje i organizacje przestępcze
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

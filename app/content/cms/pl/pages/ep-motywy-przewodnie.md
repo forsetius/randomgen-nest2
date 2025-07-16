@@ -12,8 +12,7 @@ lead: |
     *   **postapokaliptyczny** - transludzkość przegrała, straciła niemal wszystko. Jak przetrwać? Jak to przetrwanie zmieni transludzi?
     *   **konspiracja** - czy masy są zdolne do osiągnięcia dobrostanu, czy muszą mieć ukrytych pasterzy, którzy lepiej wiedzą, co dla nich dobre? I któż obroni owe masy przed złowrogimi manipulatorami, gotowymi dla własnej korzyści skrycie je zniewolić?
     *   **groza** - czego nauczymy się w dzieciństwie wydaje nam się naturalne, to co przychodzi później - sprzeczne z naturą, zagrażające. Zmiana wpisana jest w rzeczywistość Eclipse Phase a [Upadek]{pl/ep-upadek} spowodował, że zmiany te są drastyczne. Mówiąc o Upadku - wydobył on z transludzi wszystkie te skazy naszej duszy, które sprawiają, że potrafimy być prawdziwymi potworami; efekty są czasem wstrząsające. Ale transczłowiek i jego społeczeństwo to nie wszystko - Kosmos jest obcy i przeogromny i chowa w sobie przerażające tajemnice.
-tags: 
-  - rpg
+
 ---
 ## Transhumanizm
 

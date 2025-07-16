@@ -5,8 +5,7 @@ subtitle: Cyberbrain
 excerpt: Cybernetyczny analog mózgu
 headerImage: mid-ep-cyberbrain-head.jpg
 category: ep-ulepszenia
-tags:
-  - rpg
+
 ---
 Mózg cybernetyczny jest miejscem, gdzie w morfie pozbawionym biologicznego mózgu (a więc w [syntmorfie]{pl/ep-syntmorf} lub [podzie]{pl/ep-pod}) rezyduje [Ego](#) lub kontrolująca morfa [AI]{pl/ep-sztuczna-inteligencja}. Holistyczna architektura cybermózgów wzorowana jest na architekturze ich biologicznych odpowiedników i pełni rolę głównego ośrodka zarządzającego, podejmowania decyzji oraz centrum przetwarzania wrażeń zmysłowych. Tylko jedno Ego lub AI może “zamieszkiwać” cybermózg w danej chwili. By zapewnić miejsce dla następnego Ego, można użyć środowiska [wszczepki sieciowej]{pl/ep-wszczepka} lub [modułu pasażera]{pl/ep-modul-pasazera}.
 

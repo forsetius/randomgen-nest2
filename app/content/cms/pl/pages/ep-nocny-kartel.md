@@ -5,8 +5,7 @@ subtitle: Night Cartel
 excerpt: Multietniczny sojusz dawnych mafii i etnicznych syndykatów zbrodni
 headerImage: mid-night-cartel-head.jpg
 category: ep-przestepczosc
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

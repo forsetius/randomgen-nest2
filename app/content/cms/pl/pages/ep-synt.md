@@ -7,8 +7,7 @@ lead: |
   > Zbudowaliśmy Synthy jako funkcję, a potem obraziliśmy się, że nie mają duszy. To nie ich wina, że odbijają nasze chłodne intencje jak lustro.
 headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

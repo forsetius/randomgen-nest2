@@ -4,8 +4,7 @@ title: Największe habitaty
 excerpt: Największe miasta Układu
 headerImage: mid-mars-sprawl-head.jpg
 category: ep-habitat
-tags: 
-  - rpg
+
 ---
 Extropia, ogromne miasta-państwa marsjańskie oraz niektóre z największych stacji na Lunie mieszczą od miliona do dwudziestu milionów mieszkańców. Istnieje także wiele mniejszych osad liczących od stu tysięcy do miliona osób. Habitaty tego typu są znacznie mniej ekscentryczne i egzotyczne niż mniejsze kolonie. Prawie wszystkie posiadają kosmopolityczną i zróżnicowaną populację, wywodzącą się z szerokiego spektrum subkultur. Z powodu tej różnorodności oraz trudności w osiąganiu jakiejkolwiek formy konsensusu przy tak dużej liczbie mieszkańców, osady te często przypominają miasta dawnej Ziemi.
 

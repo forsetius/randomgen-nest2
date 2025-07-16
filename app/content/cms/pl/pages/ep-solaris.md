@@ -7,8 +7,7 @@ lead: |
   > To nie są finanse. To inżynieria geopolityczna. Zainwestują w twoje życie, a potem przystawią ci broń do głowy. Zwrot z inwestycji liczony jest w ludziach — nie w walucie.
 headerImage: mid-ep-solaris-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

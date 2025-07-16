@@ -5,8 +5,7 @@ subtitle: Uplift
 excerpt: Podnoszenie zwierząt do rozumności ludzkiego poziomu
 headerImage: mid-uplift-head.jpg
 category: ep-realia
-tags:
-  - rpg
+
 
 ---
 

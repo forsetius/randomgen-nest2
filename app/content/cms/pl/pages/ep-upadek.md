@@ -7,8 +7,7 @@ sort: 2
 excerpt: Upadek cywilizacji na Ziemi
 lead: |
   Pytanie “co poszło nie tak?” zakłada, że transludzkość żyła w sielance a apokalipsę sprowadził jakiś jeden czynnik. To nie do końca prawda.
-tags: 
-  - rpg
+
 ---
 ## Świat przed Upadkiem
 

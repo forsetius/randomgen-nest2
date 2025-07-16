@@ -5,8 +5,7 @@ excerpt: Kosmiczne środowiska mieszkalne
 headerImage: mid-space-habitats-head.jpg
 category: ep-habitat
 subcategoryName: Habitaty kosmiczne
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

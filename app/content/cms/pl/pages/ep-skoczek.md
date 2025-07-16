@@ -7,8 +7,7 @@ lead: |
   > Widziałem go, jak naprawiał uszkodzoną linię chłodzenia nad reaktorem. Wisiał do góry nogami, przytrzymując się stopami jak nietoperz, a rękami lutował. Nawet nie miał pasa asekuracyjnego. Tylko Skoczki tak potrafią — jakby grawitacja była sugestią.
 headerImage: mid-bouncer-head.jpg
 category: ep-biomorf
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

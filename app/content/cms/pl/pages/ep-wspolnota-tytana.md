@@ -5,8 +5,7 @@ subtitle: Titanian Commonwealth
 excerpt: Cyberdemokracja typu skandynawskiego na Tytanie
 headerImage: mid-titanian-commonwealth-head.jpg
 category: ep-ustroje
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

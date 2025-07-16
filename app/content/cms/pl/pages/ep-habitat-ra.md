@@ -4,8 +4,7 @@ title: V/2014 Ra
 excerpt: Wulkanoida bliska V/2011 Caldwell
 headerImage: mid-ep-ra-head.jpg
 category: ep-atlas-wulkanoidy
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static

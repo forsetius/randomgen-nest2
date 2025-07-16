@@ -5,8 +5,7 @@ subtitle: Ultimates
 excerpt: Transludzie uważający się za nadludzi, jednostki alfa i topowych drapieżników
 headerImage: mid-ultimates-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

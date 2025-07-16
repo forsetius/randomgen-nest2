@@ -5,8 +5,7 @@ subtitle: Triads
 excerpt: Wschodnioazjatyckie gangi z wielowiekowymi tradycjami
 headerImage: leo-ep-triads-head.jpg
 category: ep-przestepczosc
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

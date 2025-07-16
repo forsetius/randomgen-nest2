@@ -7,8 +7,7 @@ lead: |
   > Tania, szybka, personalna reinkarnacja. Wchodzisz z backupem, wychodzisz z nowym uśmiechem i fabryczną instalacją gestów aprobaty.
 headerImage: mid-skinthetic-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

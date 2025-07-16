@@ -7,8 +7,7 @@ lead: |
   > Basic Pody są jak baraki z plastobetonu: tanie, funkcjonalne, pozbawione stylu. I dokładnie tak je traktujemy — jak ludzi, których nie było stać na lepsze urodzenie.
 headerImage: mid-basic-pod-head.jpg
 category: ep-pod
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

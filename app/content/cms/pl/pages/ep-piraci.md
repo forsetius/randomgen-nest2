@@ -5,8 +5,7 @@ subtitle: Pirates
 excerpt: Kosmiczni piraci atakujący statki z zaopatrzeniem i mniejsze habitaty
 headerImage: leo-ep-pirates-head.jpg
 category: ep-przestepczosc
-tags:
-  - rpg
+
 ---
 Większość piratów atakuje zautomatyzowane statki towarowe i długodystansowe konwoje zaopatrzeniowe. Okazjonalnie przeprowadzają rajd na kopalnię asteroidową, stację badawczą czy [habitat]{pl/ep-habitat} [Izolacjonistów]{pl/ep-izolacjonisci}. Zanotowano też rzadkie przypadki ataków na cywilne statki pasażerskie w celu rabunku na bogatych lub porwań [celebrytów](Celebryci.md "Bogata elita pławiąca się w hedoniźmie") dla okupu.
 

@@ -6,8 +6,7 @@ headerImage: mid-sunward-head.jpg
 category: ep-intro
 sort: 4
 
-tags:
-  - rpg
+
 
 ---
 Choć narody już nie istnieją, zostały zastąpione przez nowe byty polityczno-ekonomiczne, które tak czy inaczej były na najlepszej drodze do dominacji, nawet jeśli [Upadek](./Intro/Upadek.md) by nie nastąpił - **[hiperkorporacje]{pl/ep-hiperkorporacja}**. Podczas gdy jest wiele niezależnych [habitatów]{pl/ep-habitat} i osad w Wewnętrznym Układzie Słonecznym, jest on silnie zdominowany przez hiperkorpy. Aby zredukować ilość konfliktów między sobą i wspierać wysiłki mające zapewnić przetrwanie transludzkości, niektóre hiperkorpy założyły sojusz znany jako [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}. Sojusz ten rządzi większością [Marsa](#) i zarządza trwającym projektem [terraformowania Marsa](../Encyklopedia/Terraformowanie-Marsa.md). Konsorcjum kontroluje też wiele innych habitatów, w tym sporo baz [lunarnych](#) - zwykle tych, które są w jakiś sposób zaangażowane w monumentalne wysiłki na rzecz terraformowania Marsa.

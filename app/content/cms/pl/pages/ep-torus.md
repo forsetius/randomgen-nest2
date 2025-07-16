@@ -8,8 +8,7 @@ lead: |
   >
   > Starocie. Zbudowali go jeszcze zanim nanoboty potrafiły stawiać miasta. Grawitacja działa tylko na obręczy, port jest w osi, a jeśli jedziesz windą z 0 g na pełne 1 g, to czujesz każdy centymetr. Ale rośliny rosną, panele się świecą, a komercyjna strefa żyje jak przed Upadkiem.
 category: ep-habitaty-kosmiczne
-tags: 
-  - rpg
+
 ---
 Torusy – zwane zamiennie toroidami, obręczami, kołami albo po prostu pączkami – to okrągłe habitaty kosmiczne, które stanowiły tańszą alternatywę dla cylindrów O’Neilla, wykorzystywaną głównie w mniejszych instalacjach. Podobnie jak O’Neille, torusy obecnie rzadko się buduje, ale wiele z nich nadal funkcjonuje w wewnętrznym Układzie Słonecznym, zwłaszcza na orbitach Ziemi i Luny.
 

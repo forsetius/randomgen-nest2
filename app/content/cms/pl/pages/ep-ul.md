@@ -6,8 +6,7 @@ excerpt: Asteroidy wydrążone w sieć tuneli i komór
 lead: |
   > Ule to labirynty w kamieniu. Mikrograwitacja, niekończące się tunele, komory bez kierunku. Bez AR nawet nie wiesz, czy idziesz do kuchni czy do szybu wylotowego. Mówią, że jak ktoś zniknie w ulu, to może dryfować latami, aż go znajdzie sprzątający bot. O ile jeszcze działa.
 category: ep-habitaty-kosmiczne
-tags: 
-  - rpg
+
 ---
 **Ule** to asteroidy wydrążone w sieć tuneli i komór. Najczęściej powstają przez przekształcenie asteroid, które wcześniej poddano eksploatacji górniczej – głównie w poszukiwaniu metali lub krzemianów. Są to habitaty mikrograwitacyjne i bez pomocy rozszerzonej rzeczywistości mogą być bardzo trudne do nawigowania.
 

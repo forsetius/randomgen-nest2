@@ -6,8 +6,7 @@ headerImage: mid-pod-head.jpg
 excerpt: Biologiczno-cybernetyczny erzatz biomorfa
 category: ep-morf
 subcategoryName: Pody
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

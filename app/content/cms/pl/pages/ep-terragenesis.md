@@ -5,8 +5,7 @@ subtitle: Terragenesis
 excerpt: Terraformowanie, Zarządzanie ekosystemami, Dane środowiskowe
 headerImage: mid-terragenesis-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

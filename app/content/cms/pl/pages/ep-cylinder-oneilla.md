@@ -6,8 +6,7 @@ excerpt: Klasyczne stacje kosmiczne o kształcie cylindra
 lead: |
   > Klasyka gatunku. Jakby ktoś zwinął Ziemię w rolkę i puścił ją w obrót. Sześć pasów – trzy zielone, trzy przezroczyste, wszystko obraca się jak karuzela dla bogatych. Można tam żyć całe życie i nigdy nie spojrzeć w prawdziwe niebo. Czasem zapominam, że to w ogóle stacja, nie planeta.
 category: ep-habitaty-kosmiczne
-tags: 
-  - rpg
+
 ---
 Cylindry O’Neilla, znajdujące się głównie na orbitach Ziemi, Luny, Wenus i Marsa, były jednymi z pierwszych wielkoskalowych projektów habitatów kosmicznych w historii transludzkości. Obecnie nie są już budowane – zastąpiono je wydajniejszymi konstrukcjami – jednak nadal zamieszkują je dziesiątki milionów ludzi.
 

@@ -5,8 +5,7 @@ subtitle: Extropists
 excerpt: Radykalni anarchokapitaliści
 headerImage: leo-extropians-head.jpg
 category: ep-ustroje
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

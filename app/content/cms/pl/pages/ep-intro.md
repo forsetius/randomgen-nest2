@@ -9,8 +9,7 @@ sort: 1
 excerpt: Transludzka przyszłość po Upadku
 lead: |
   Niepohamowany rozwój technologii, upadek cywilizacji i powstanie transludzkiej diaspory w Układzie Słonecznym
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

@@ -5,8 +5,7 @@ subtitle: Firewall
 excerpt: Konspiracyjna organizacja strzegąca transludzkości przed zagrożeniami egzystencjalnymi
 headerImage: mid-ep-firewall-head.jpg
 category: ep-konspiracje
-tags:
-  - rpg
+
 ---
 Zapora od czasów Upadku stoi na pierwszej linii tajnej walki o ocalenie transludzkości. Jest to niezależna sieć komórek i jednostek rekrutowanych ze wszystkich możliwych stronnictw, kultur, środowisk i habitatów. Potencjalnych nowych członków kontaktuje się w tajemnicy, informując ich, że mają umiejętności lub wiedzę przydatną tajnej siatce działającej na rzecz zabezpieczenia dalszego przetrwania transludzkości. Misja Zapory jest prosta: chronić transludzkość przed zagrożeniami o egzystencjalnej skali – niezależnie od tego, czy pochodzą one z wnętrza transludzkości, czy z zewnętrznych, obcych źródeł.
 

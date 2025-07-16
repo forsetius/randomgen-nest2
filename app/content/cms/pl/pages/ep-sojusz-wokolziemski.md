@@ -5,8 +5,7 @@ subtitle: Lunar Lagrange Alliance
 excerpt: Sojusz kolonii na Lunie, orbicie Ziemi i w ziemskich punktach Lagrange'a
 headerImage: mid-ep-lla-head.jpg
 category: ep-ustroje
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

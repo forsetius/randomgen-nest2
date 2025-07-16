@@ -6,16 +6,15 @@ headerImage: mid-sunward-head.jpg
 category: ep-atlas
 subcategoryName: Słońce
 sort: 1
-tags: 
-  - rpg
+
 slots:
   aside:
     - type: static
       content: |
         ## Słońce
-        - _Rodzaj_: [żółty karzeł](https://pl.wikipedia.org/wiki/%C5%BB%C3%B3%C5%82ty_karze%C5%82)
+        - **Rodzaj**: [żółty karzeł](https://pl.wikipedia.org/wiki/%C5%BB%C3%B3%C5%82ty_karze%C5%82)
         - _Typ widmowy_: [G2 V](https://pl.wikipedia.org/wiki/Gwiazdy_typu_widmowego_G)
-        - _Średnica_: 695 500 km
+        - **Średnica**: 695 500 km
         
     - type: category
       template: aside-cards

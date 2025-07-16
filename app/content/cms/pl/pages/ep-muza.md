@@ -5,8 +5,7 @@ subtitle: Muse
 excerpt: Osobista ekspertowa AI zainstalowana we wszczepce, pełniąca funkcje sekretarskie
 headerImage: mid-muse-head.jpg
 category: ep-sztuczna-inteligencja
-tags:
-  - rpg
+
 
 ---
 **Muzy** to specjalny typ [ESI]{pl/ep-sztuczna-inteligencja} zaprojektowany, by służyć za osobistego pomocnika i towarzysza. Większości transludzi Muzę już w dzieciństwie instaluje się we [wszczepce]{pl/ep-wszczepka} w mózgu tak, że korzystają z jej pomocy przez większość swojego życia.

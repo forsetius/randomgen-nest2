@@ -5,8 +5,7 @@ subtitle: Autonomists Alliance
 excerpt: Sojusz Anarchistów, Extropistów, Karawaniarzy i Tytańczyków
 headerImage: mid-autonomist-alliance-head.jpg
 category: ep-ustroje
-tags:
-  - rpg
+
 ---
 [Zewnętrzny Układ Słoneczny]{pl/ep-zewnetrze} oferował ludziom, którym nie po drodze było z autorytarnymi, fasadowymi demokracjami [Wewnętrza]{pl/ep-wewnetrze} i [Republiki Jowiszowej](Republika+Jowiszowa "Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku cały system Jowisza") szansę na zorganizowanie się w sposób drastycznie odmienny. Daleko poza zasięgiem rządów i [hiperkorpów]{pl/ep-hiperkorporacja}, to pogranicze zostało zaludnione politycznymi radykałami, społecznymi wyrzutkami, eksperymentatorami czy po prostu ludźmi, którzy chcieli, by zostawić ich w spokoju. Te pierwsze [habitaty]{pl/ep-habitat} przyciągnęły uwagę powstańców z [Ziemi](../Atlas/Wewnetrze/Ziemia.md), naukowców i techników, którym nie podobała się korporacyjna smycz, [służebnych](#) pracowników kosmicznych, którzy chcieli uciec od niewolniczych warunków ich kontraktu, a nawet kryminalistów uciekających przed hiperkorporacyjnym wymiarem sprawiedliwości lub ukaranych przez niego banicją. Ich szeregi powiększały się z każdym aktem niesprawiedliwości w Wewnętrzu, choć życie na obrzeżach było często surowe i zabójcze. Wprawdzie autonomiści doświadczali okazjonalnych aktów wrogości ze strony wojsk narodowych czy sił bezpieczeństwa hiperkorpów, ale koszt okiełznania tych radykałów i ekspatriantów był zbyt wielki, żeby im poważniej zaszkodzić. A do pewnego stopnia ich obecność była użyteczna dla ówczesnych władz - jako wentyl bezpieczeństwa.
 

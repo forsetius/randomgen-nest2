@@ -5,8 +5,7 @@ excerpt: Bio-, cyber- i nanoulepszenia dla morfów
 headerImage: mid-ep-augmentations-head.jpg
 category: ep-encyklopedia
 subcategoryName: Ulepszenia
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

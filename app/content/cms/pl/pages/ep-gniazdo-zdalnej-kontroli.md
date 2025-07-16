@@ -5,8 +5,7 @@ subtitle: Puppet sock
 excerpt: Przyłącze pozwalające na przejęcie kontroli nad morfem i jego teleoperację 
 headerImage: mid-remote-control-jacks-head.jpg
 category: ep-ulepszenia
-tags:
-  - rpg
+
 ---
 Ten samodzielny komputer pozwala innej postaci na zdalną kontrolę nad morfem wyposażonym w to urządzenie. Gdy jest aktywne, ego rezydujące w morfie nie ma żadnej kontroli nad swym ciałem i może tylko obserwować, co mu się przydarza. Uwaga: może to powodować stres i być zagrożeniem dla poczytalności!
 

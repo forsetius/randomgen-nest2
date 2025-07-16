@@ -7,8 +7,7 @@ lead: |
   > Wszystko bio, wszystko zgodnie z normami, wszystko zgodnie z twoim profilem zdrowotnym. A jeśli umrzesz, to tylko dlatego, że statystycznie powinieneś.
 headerImage: mid-prosperity-group-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

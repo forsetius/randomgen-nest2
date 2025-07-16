@@ -7,8 +7,7 @@ excerpt: Usługi bezpieczeństwa, Kontrakty wojskowe
 lead: |
   > Zabijają czysto, raportują bez emocji, płacisz bez zwłoki
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

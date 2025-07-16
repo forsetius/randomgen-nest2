@@ -5,8 +5,7 @@ subtitle: Clanking masses
 headerImage: mid-clanking-masses-head.jpg
 excerpt: Wirtualni uchodźcy z Ziemi pozbawieni wszelkich rzeczy materialnych - nawet ciał
 category: ep-realia
-tags:
-  - rpg
+
 
 ---
 Ponieważ tak wielu [info-uchodźców]{pl/ep-info-uchodzcy} zdobyło tanie [syntetyczne powłoki]{pl/ep-syntmorf} — zwłaszcza [Blaszaki]{pl/ep-blaszak} i [Synty]{pl/ep-synt} — i nie stać ich na nic lepszego, morfy syntetyczne zaczęto kojarzyć z ubóstwem w całym Układzie Słonecznym. Najniższa warstwa biedoty bywa często określana mianem „szmelcen-proletariatu” i stanowi jedną szóstą populacji transhumanistycznej. Większość z tych osób bardzo pragnie przyodziać się w morfa choć w części biologicznego, nawet jeśli miałby to być jedynie [Genfiks]{pl/ep-genfiks} lub choćby [pod-robotnik]{pl/ep-robotnik}.

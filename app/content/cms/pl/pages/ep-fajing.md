@@ -7,8 +7,7 @@ category: ep-hiperkorporacja
 excerpt: Wydobycie, Energia, Biotechnologia, Produkcja przemysłowa
 lead: |
   > Zaczynasz w niskograwitacyjnej kopalni. Jeśli masz szczęście, awansujesz do logistyki. Jeśli masz pecha, stajesz się strukturą własnościową.
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

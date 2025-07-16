@@ -7,8 +7,7 @@ lead: |
   > Brama się nie otwiera bez ich zgody. Zobaczysz cuda, jeśli masz autoryzację. Albo wrócisz jako paczka z nową nazwą pliku i brakującą pamięcią. Jedno i drugie kosztuje.
 headerImage: mid-gatekeeper-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

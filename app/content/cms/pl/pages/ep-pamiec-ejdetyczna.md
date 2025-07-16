@@ -5,8 +5,7 @@ subtitle: Eidetic memory
 headerImage: mid-eidetic-memory-head.jpg
 excerpt: Analogowa pamięć fotograficzna
 category: ep-ulepszenia
-tags:
-  - rpg
+
 
 ---
 Dzięki temu ulepszeniu postać może zapamiętać wszystko, co kiedykolwiek się jej przydarzyło, w detalach i bez utraty pamięci długookresowej. Na przykład jest w stanie wyrecytować stronę tekstu z książki, którą czytała miesiąc temu, przypomnieć sobie łańcuch 200 losowych znaków, które widzieli rok temu a nawet powiedzieć dokładnie, co jedli na śniadanie dekadę temu.

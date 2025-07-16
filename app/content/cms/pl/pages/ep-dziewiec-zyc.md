@@ -5,8 +5,7 @@ subtitle: Nine Lives
 excerpt: "Ego-handlarze: pozyskiwanie, handel i przemyt transludzi"
 headerImage: mid-nine-lives-head.jpg
 category: ep-przestepczosc
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

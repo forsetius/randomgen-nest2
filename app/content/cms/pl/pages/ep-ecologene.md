@@ -7,8 +7,7 @@ lead: |
   > To nie rośliny, to produkty. Każdy liść ma licencję, każdy pyłek zna twój profil alergiczny. Zrób zdjęcie nielegalnej kiełkującej łące i obserwuj, jak przyjeżdża zespół czyszczący glebę.
 headerImage: mid-ecologene-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

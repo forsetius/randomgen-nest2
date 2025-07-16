@@ -7,8 +7,7 @@ lead: |
   > Zniknęliśmy im z radaru. Odłączyliśmy się. Zmieniliśmy ID. A potem dostaliśmy kartkę: ‘Proszę wrócić do symulacji. Ucieczka była przewidziana w parametrach.’
 headerImage: mid-stellar-intelligence-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

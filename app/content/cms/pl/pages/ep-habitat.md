@@ -5,14 +5,13 @@ excerpt: Wszystkie rzeczy zamieszkiwane przez transludzkość
 headerImage: mid-habitats-head.jpg
 category: ep-encyklopedia
 subcategoryName: Habitaty
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category
       category: ep-habitat
 ---
-[Ziemia](#) stała się niezdatna do zamieszkania, więc transludzkość przetrwała w różnych habitatach poza jej powierzchnią. Istnieją dwa główne typy takich habitatów: osady na planetach lub dużych księżycach, takich jak [Luna](#), [Mars](#), [Wenus](#), [Europa](#) czy [Tytan](#), oraz habitaty kosmiczne zbudowane na asteroidach lub w ich pobliżu – tam, gdzie znajdują się użyteczne zasoby surowcowe. Większość z tych habitatów kosmicznych obraca się wokół własnej osi, by zapewnić sztuczną grawitację – najczęściej równą tej ziemskiej lub marsjańskiej. Istnieje także wiele habitatów w warunkach zerowej lub mikrograwitacji, które nie obracają się, bądź są stacjami wbudowanymi w niewielkie asteroidy lub księżyce.
+[Ziemia](#) stała się niezdatna do zamieszkania, więc transludzkość przetrwała w różnych habitatach poza jej powierzchnią. Istnieją dwa główne typy takich habitatów: osady na planetach lub dużych księżycach, takich jak [Luna](#), [Mars](#), [Wenus]{pl/ep-atlas-wenus}, [Europa](#) czy [Tytan](#), oraz habitaty kosmiczne zbudowane na asteroidach lub w ich pobliżu – tam, gdzie znajdują się użyteczne zasoby surowcowe. Większość z tych habitatów kosmicznych obraca się wokół własnej osi, by zapewnić sztuczną grawitację – najczęściej równą tej ziemskiej lub marsjańskiej. Istnieje także wiele habitatów w warunkach zerowej lub mikrograwitacji, które nie obracają się, bądź są stacjami wbudowanymi w niewielkie asteroidy lub księżyce.
 
 ## Różnorodność habitatów
 Zastosowanie maszyn obfitości i inteligentnych materiałów sprawia, że wnętrza niemal wszystkich habitatów – poza najuboższymi i najbardziej zaniedbanymi – mogą być kształtowane według upodobań ich mieszkańców. Gdy liczba mieszkańców jest wystarczająco mała lub ich estetyka na tyle zbieżna, by podzielać te same gusta, rezultaty bywają zarówno unikatowe, jak i dziwaczne. Czasem nawet w największych i najbardziej kosmopolitycznych habitatów wybuchają masowe mody, które potrafią uczynić całe kolonie niemal równie osobliwymi.

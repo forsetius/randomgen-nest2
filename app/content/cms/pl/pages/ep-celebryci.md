@@ -5,8 +5,7 @@ subtitle: Glitterati
 excerpt: Kasta ultrabogaczy bez umiaru żyjących chwilą
 headerImage: leo-ep-glitterati-head.jpg
 category: ep-stronnictwa
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static

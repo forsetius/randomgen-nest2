@@ -5,8 +5,7 @@ subtitle: Cortical stack
 excerpt: Implant, w którym zapisuje się backup Ego
 headerImage: mid-cortical-stack-head.jpg
 category: ep-ulepszenia
-tags:
-  - rpg
+
 ---
 Stos korowy to cyber-jednostka przechowująca dane w skorupie z syntetycznego diamentu. Jest niewielka (wielkości winogrona) i jest wszczepiana u podstawy czaszki, na styku rdzenia przedłużonego i kręgowego. Zawiera cyfrową kopię zapasową Ego, które rezyduje w tym morfie.
 

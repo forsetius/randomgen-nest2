@@ -6,8 +6,7 @@ headerImage: mid-syntmorph-head.jpg
 excerpt: W pełni robotyczne powłoki na Ego
 category: ep-morf
 subcategoryName: Syntmorfy
-tags:
-  - rpg
+
 slots:
   bottom:
     - type: category

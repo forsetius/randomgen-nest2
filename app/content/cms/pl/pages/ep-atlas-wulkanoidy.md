@@ -6,8 +6,7 @@ headerImage: mid-ep-wulkanoidy-head.jpg
 category: ep-atlas
 subcategoryName: Wulkanoidy
 sort: 2
-tags: 
-  - rpg
+
 slots:
   bottom:
     - type: category

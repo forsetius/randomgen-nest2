@@ -7,8 +7,7 @@ lead: |
   > Powiedzieli tylko: stracił twarz. I wiecie co? Oni twórczo rozwinęli karę tysiąca cięć: na początku odcięli mu dostępy a na końcu - stos korowy
 headerImage: mid-gonin-head.jpg
 category: ep-hiperkorporacja
-tags:
-  - rpg
+
 slots:
   aside:
     - type: static
