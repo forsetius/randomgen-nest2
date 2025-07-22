@@ -12,7 +12,7 @@ slots:
       content: |
         ## Lumina
         - _Położenie_: krater [Aristoxenus](https://planetarynames.wr.usgs.gov/Feature/383) ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: [Habitat planetarny]{pl/ep-habitaty-planetarne}
+        - _Typ_: Habitat planetarny
         - _Przynależność_: [hiperkorpy]{pl/ep-hiperkorporacja}
 lead: |
 ---

@@ -17,7 +17,7 @@ slots:
         - [Antymateria](http://pl.wikipedia.org/wiki/Antymateria)
         ## Główne habitaty
         - MonoLit3 ([Merkury]{pl/ep-atlas-merkury}), 
-        - Feynman ([Luna](#))
+        - Feynman ([Luna]{pl/ep-atlas-luna})
 ---
 **Omnicor** specjalizuje się w projektowaniu nanotechnologii i procesie nanofabrykacji, rafinacji chemicznej, paliwach alternatywnych i badaniach nad antymaterią.
 

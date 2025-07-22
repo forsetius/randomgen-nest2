@@ -18,7 +18,7 @@ slots:
         - [Biofarmaceutyki](http://en.wikipedia.org/wiki/Pharming_%28genetics%29)
         - Genetyka
         ## Główne habitaty
-        - Zdolne Dłonie ([Luna](#)), 
+        - Zdolne Dłonie ([Luna]{pl/ep-atlas-luna}), 
 ---
 Dzięki odkryciom w dziedzinie ulepszeń kognitywistycznych i modyfikacji genetycznej, Somatek stał się pionierem w sztuce i nauce upliftu - wynoszenia zwierząt do ludzkiego poziomu rozumności. Ta hiperkorporacja prowadzi również prace nad biofarmaceutykami (substancjami leczniczymi pozyskiwanymi z organizmów transgenicznych) i marketuje liczne produkty i usługi związane z [bystrymi zwierzętami](#) i stworzeniami [chimerycznymi](http://pl.wikipedia.org/wiki/Chimera_%28biologia%29).
 

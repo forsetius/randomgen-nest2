@@ -17,7 +17,7 @@ slots:
         - Spedycja
         - Logistyka
         ## Główne habitaty
-        - Nectar ([Luna](#))
+        - Nectar ([Luna]{pl/ep-atlas-luna})
         - Olympus ([Mars](#))
 ---
 **Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzygwiezdnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie]{pl/ep-habitat} w [Układzie Słonecznym](#), zwykle przy pomocy lokalnych podwykonawców.

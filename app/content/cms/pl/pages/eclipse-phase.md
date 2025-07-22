@@ -27,6 +27,7 @@ slots:
 
         ## Rzeczy niekanoniczne
         Świat Eclipse Phase jest bardzo bogaty, ale aż prosi się o dopełnienie rzeczami, których nie znajdziecie w podręcznikach. W tej wiki znajdziecie więc również moje dodatki - zapożyczenia z kompatybilnej literatury i systemów RPG hard SF. Do tego dochodzą pomysły, które jakoś nie znalazły ujścia w moich przygodach, ale żal mi je wyrzucić na śmietnik. Żeby jednak była jasność co do statusu materiału, owe dodatki są oznaczone tagiem [#niekanoniczne](/pages/pl/tag.html?tag=niekanoniczne).
+    
     - type: category
       template: aside-cards
       category: eclipse-phase

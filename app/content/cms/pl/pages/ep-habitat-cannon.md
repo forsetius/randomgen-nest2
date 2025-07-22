@@ -12,7 +12,7 @@ slots:
       content: |
         ## Cannon
         - _Położenie_: [Caloris Planitia](https://planetarynames.wr.usgs.gov/Feature/979), ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: mobilny [Habitat planetarny]{pl/ep-habitaty-planetarne}
+        - _Typ_: mobilny Habitat planetarny
         - _Przynależność_: hiperkorp Jaehon Offworld
         - _Główny język_: koreański
 lead: |

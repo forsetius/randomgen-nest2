@@ -2,6 +2,7 @@
 template: page-full-width
 title: Powierzchnia Wenus
 excerpt: Piekło na powierzchni Wenus
+headerImage: mid-ep-venus-surface-head.jpg
 category: ep-atlas-wenus
 subcategory: more
 lead: |

@@ -5,7 +5,8 @@ headerImage: mid-hamilton-head.jpg
 excerpt: Stacje kosmiczne o kształcie cylindra, budowane nanotechnologią
 lead: |
   > Nowa szkoła. Hamiltony nie są budowane – one rosną. Nanomaszyny zaplatają im kości, ścięgna, tkanki... jak żywe habitaty. W środku jeszcze pusto, jeszcze dziko, ale za kilka lat to będzie złoty standard. Jak ktoś cię zaprosi do Hamiltona – nie odmawiasz. 
-category: ep-habitaty-kosmiczne
+category: ep-habitat
+subcategory: kosmiczne
 
 ---
 Cylindry Hamiltona to nowa technologia. W całym Układzie Słonecznym działają obecnie tylko trzy w pełni operacyjne cylindry tego typu, ale ich konstrukcja ma ogromny potencjał i prawdopodobnie będzie szeroko stosowana w nadchodzących dekadach.

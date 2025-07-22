@@ -13,7 +13,7 @@ slots:
         ## Memy
         Suwerenność Wenus
         ## Główne habitaty
-        - [Octavia]{pl/ep-habitat-octavia] (atmosfera [Wenus]{pl/ep-atlas-wenus})
+        - [Octavia]{pl/ep-habitat-octavia} (atmosfera [Wenus]{pl/ep-atlas-wenus})
 ---
 **Konstelacja Gwiazdy Zarannej** jest sojuszem [aerostatów](https://en.wikipedia.org/wiki/Colonization_of_Venus#Aerostat_habitats_and_floating_cities) - powietrznych miast unoszących się w górnej atmosferze [Wenus]{pl/ep-atlas-wenus}. Aerostaty te powstały głównie z inicjatywy [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} w celu zapewnienia infrastruktury służącej [terraformowaniu Wenus](http://en.wikipedia.org/wiki/Terraforming_of_Venus). Jednak po latach przygotowań doszło do rozłamu między rezydującymi na w większości na Marsie członkami Konsorcjum a obywatelami zamieszkującymi nad Wenus. Ci ostatni docenili unikalny charakter środowiska, w którym przyszło im zamieszkać i odrzucili plany przekształcenia Wenus w drugą Ziemię. W 6PU (szósty rok po Upadku) w ogólnym referendum mieszkańcy Wenus zagłosowali za niepodległością i w tej chwili (10PU) jest najmłodszym blokiem politycznym [Układu Słonecznego]((#)). Jego ogólna polityka i cele dopiero są jeszcze na etapie uzgodnień między członkami Konstelacji.
 

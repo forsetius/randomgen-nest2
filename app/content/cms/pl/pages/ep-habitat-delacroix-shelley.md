@@ -12,7 +12,7 @@ slots:
       content: |
         ## Delacroix-Shelley
         - _Położenie_: kratery [Delacroix](https://planetarynames.wr.usgs.gov/Feature/1466) i [Shelley](https://planetarynames.wr.usgs.gov/Feature/5483), ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: [Habitat planetarny]{pl/ep-habitaty-planetarne}
+        - _Typ_: Habitat planetarny
         - _Przynależność_: hiperkorp [Fa Jing]{pl/ep-fajing}
         - _Główny język_: angielski, mandaryński
 lead: |

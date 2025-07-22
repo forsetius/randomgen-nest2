@@ -5,8 +5,8 @@ headerImage: mid-cluster-colony-head.jpg
 excerpt: Modułowe habitaty z zerową grawitacją
 lead: |
   > Klastry? Ha, takie... latające wioski modułowe. Zero-g, trochę farm, trochę ludzi przywiązanych do kabli i planów terraformacji, których nigdy nie będzie. Dobre miejsce, jak lubisz życie w dryfie, ale nie licz na prywatność – wszyscy wszystko o sobie wiedzą, zanim cokolwiek powiesz.
-category: ep-habitaty-kosmiczne
-
+category: ep-habitat
+subcategory: kosmiczne
 ---
 Klastry to najpowszechniejsza forma habitatów mikrograwitacyjnych. Składają się z sieci kulistych lub prostokątnych modułów, wykonanych z lekkich materiałów i połączonych ze sobą za pomocą kanałów dryfowych.
 

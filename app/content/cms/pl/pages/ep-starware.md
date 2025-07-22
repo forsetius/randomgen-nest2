@@ -15,7 +15,7 @@ slots:
         - Inżynieria lotnicza i kosmiczna
         - Konstrukcja [habitatów]{pl/ep-habitat}
         ## Główne habitaty
-        - Stocznia im. Korolewa ([Luna](#)), 
+        - Stocznia im. Korolewa ([Luna]{pl/ep-atlas-luna}), 
         - [Westa](https://pl.wikipedia.org/wiki/(4)_Westa) ([Pas asteroidów](#))
 ---
 Starware - podobnie jak [Omnicor]{pl/ep-omnicor} - jest kolejną z pozostałości megakorporacji Monolith Industries. Jest wiodącym producentem robotyki, silników fuzyjnych do statków kosmicznych i prefabrykowanych [habitatów]{pl/ep-habitat}. Mimo swoich zasobów i powodzenia w biznesie, krwawe zatargi Starware z Omnikorem powodują, że żadnen z tych hiperkorpów nie może osiągnąć pełnego członkostwa w [Konsorcjum Planetarnym]{pl/ep-konsorcjum-planetarne}.

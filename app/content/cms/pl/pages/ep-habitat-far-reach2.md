@@ -1,6 +1,6 @@
 ---
 template: page-default
-title: Deep Reach II
+title: Far Reach II
 excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus" 
 category: ep-atlas-wenus
 subcategory: orbitale

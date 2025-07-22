@@ -13,8 +13,8 @@ slots:
         ## Memy
         - Odzyskanie Ziemi
         ## Główne habitaty
-        - Erato ([Luna](#))
-        - Świadectwo (Orbita [Ziemi](#))
+        - [Erato]{pl/ep-habitat-erato} ([Luna]{pl/ep-atlas-luna})
+        - Świadectwo ([orbita Ziemi]{pl/ep-atlas-ziemia-orbita})
 ---
 **Sojusz Wokółziemski** to małe grono [habitatów]{pl/ep-habitat} na orbicie Ziemi, na Lunie i jej orbicie oraz w [punktach Lagrange'a](http://pl.wikipedia.org/wiki/Punkt_libracyjny) Ziemi. Zawiązały one sojusz raczej z konieczności niż ze względu na jakąś wspólną agendę polityczną czy społeczną lub wspólne korzenie. Tak naprawdę, poszczególne stacje są dość zróżnicowane i czasem skłócone, jako że wiele z nich wciąż jeszcze nie rozstało się z przywiązaniem do tożsamości kulturowej i narodowej wyniesionej ze starej Ziemi. Ze względu na względną bliskość, członkowie dzielą się podstawowymi zasobami i usługami oraz podpisali porozumienia o wzajemnej pomocy w razie zagrożeń i sytuacji awaryjnych.
 

@@ -4,7 +4,7 @@ title: Habitaty prywatne
 excerpt: Największe miasta Układu
 headerImage: mid-private-habitat-head.jpg
 category: ep-habitat
-
+subcategory: more
 ---
 Najrzadszymi i najbardziej egzotycznymi spośród wszystkich typów habitatów są luksusowe habitaty prywatne, należące do niezwykle zamożnych lub wysoko notowanych w reputacji jednostek. Większość z nich jest niewielka, ale zapewnia każdemu mieszkańcowi kilka tysięcy metrów sześciennych prywatnej przestrzeni.
 

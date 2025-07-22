@@ -18,7 +18,7 @@ slots:
         - Robotyka
         - Usługi
         ## Główne habitaty
-        - Tsukomo ([Luna](#)), 
+        - Tsukomo ([Luna]{pl/ep-atlas-luna}), 
 ---
 Uznawany za relikt kapitalistycznej gospodarki rynkowej [Ziemi](#), **Go-nin Group** to tradycyjne japońskie [keiretsu](http://pl.wikipedia.org/wiki/Keiretsu) - kongmerat firm z przeplatającymi się zależnościami i udziałami, poziomo integrujących wiele gałęzi przemysłu (a czasem również zintegrowanych pionowo wewnątrz sektora rynku). Centralną pozycję w tym keiretsu zajmuje firma doradztwa biznesowego **Tamahashi**, która z wpływowego lobby korporacyjnego wyewoluowała w zdywersyfikowany bank posiadający znaczne udziały każdego z partnerów grupy. W tej chwili kontroluje ona aktywa grupy i kieruje jej ogólną strategią biznesową.
 

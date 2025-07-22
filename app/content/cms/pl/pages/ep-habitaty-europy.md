@@ -3,8 +3,8 @@ template: page-default
 title: Habitaty Europy
 headerImage: mid-europan-city-head.jpg
 excerpt: Miasta w oceanie pod lodową skorupą Europy
-category: ep-habitaty-planetarne
-
+category: ep-habitat
+subcategory: powierzchniowe
 
 ---
 Najbardziej niezwykłymi osadami planetarnymi są miasta oceaniczne Europy, księżyca Jowisza. Należą one do najbardziej egzotycznych lokalizacji w całym Układzie Słonecznym i potrafią być mocno dezorientujące dla osób nieprzyzwyczajonych do życia pod wodą. Z oddali większość z nich wygląda jak skomplikowane bombki choinkowe, zawieszone sto lub więcej metrów poniżej lodowej skorupy. Niektóre zbudowano głębiej, tuż przy hydrotermalnych kominach, w których żyją rodzime europańskie formy życia.

@@ -12,7 +12,7 @@ slots:
       content: |
         ## Caloris 18
         - _Położenie_: [Caloris Planitia](https://planetarynames.wr.usgs.gov/Feature/979), ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: [Habitat planetarny]{pl/ep-habitaty-planetarne}
+        - _Typ_: Habitat planetarny
         - _Przynależność_: TITAN-i
 lead: |
   Położony na południowym krańcu [Caloris Planitia](https://planetarynames.wr.usgs.gov/Feature/979) (niemal dokładnie na północ od krateru [Mozart](https://planetarynames.wr.usgs.gov/Feature/4058)), Caloris 18 to miejsce dawnej aktywności TITANów. Baza ta była niegdyś stacją przekaźnikową energii słonecznej, obsługiwaną przez dziś już nieistniejącą korporację Lukos.

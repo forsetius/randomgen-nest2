@@ -16,7 +16,7 @@ slots:
         - Usługi bezpieczeństwa
         - Kontrakty wojskowe
         ## Główne habitaty
-        - Heksagon ([Ziemia](#)-[Luna](#) L5), 
+        - [Heksagon]{pl/ep-habitat-heksagon} ([Ziemia]{pl/ep-atlas-ziemia}-[Luna]{pl/ep-atlas-luna} L5), 
 ---
 Ta budząca lęk i respekt hiperkorporacja wywodzi się z niedobitków narodowych sił zbrojnych i prywatnych kontraktorów militarnych sprzed [Upadku]{pl/ep-upadek}. Na swą "sławę" zapracowali w okresie zaraz po Upadku, kiedy to byli najmowani przez wiele [habitatów]{pl/ep-habitat} i [barek](#) do zarządzania bezpieczeństwem populacji przybyłych do nich uchodźców. Wszelkie przejawy niezadowolenia czy zamieszki były pacyfikowane z całą bezwzględnością i nie przebierając w środkach.
 

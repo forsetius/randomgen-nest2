@@ -4,7 +4,7 @@ title: Habitaty mikrograwitacyjne
 excerpt: Wszystkie rzeczy zamieszkiwane przez transludzkość
 headerImage: mid-beehive-head.jpg
 category: ep-habitat
-
+subcategory: more
 ---
 Habitaty zerowej grawitacji znacznie różnią się od tych, które korzystają z grawitacji obrotowej. Większość z nich to sieci tuneli wydrążonych we wnętrzu asteroidy – podobnie jak miasta tunelowe na Lunie i Tytanie – choć niektóre są znacznie bardziej egzotyczne. Tak jak inne habitaty, niemal wszystkie kolonie mikrograwitacyjne zlokalizowane są w, na lub w pobliżu jednej lub kilku asteroid bogatych w użyteczne surowce. Zazwyczaj panuje w nich grawitacja niższa niż 0,01 g, która ma znikomy wpływ na codzienne życie mieszkańców.
 

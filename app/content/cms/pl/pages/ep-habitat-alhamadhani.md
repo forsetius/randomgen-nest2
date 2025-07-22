@@ -12,7 +12,7 @@ slots:
       content: |
         ## Al-Hamadhani
         - _Położenie_: krater [Al-Hamadhani](https://planetarynames.wr.usgs.gov/Feature/147) ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: [Habitat planetarny]{pl/ep-habitaty-planetarne}
+        - _Typ_: Habitat planetarny
         - _Przynależność_: Pylarze
         - _Główne języki_: arabski, hindi
 lead: |

@@ -10,5 +10,6 @@ slots:
   bottom:
     - type: category
       category: ep-ustroje
-lead: <block id="w-budowie" />
+lead: |
+  Społeczna, kulturowa i ideologiczna różnorodność transludzkości, w połączeniu z jej rozproszoną i odizolowaną obecnością w klastrowych habitatów w całym Układzie Słonecznym, prowadzi do powstawania szerokiego wachlarza memów politycznych i frakcji promujących równie zróżnicowane modele organizacyjne. Wiele z tych ugrupowań łączy się w większe struktury polityczne, by wspólnie realizować cele i działać na rzecz wzajemnych interesów.
 ---

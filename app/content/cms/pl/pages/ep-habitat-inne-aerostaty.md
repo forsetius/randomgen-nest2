@@ -4,6 +4,7 @@ title: Inne aerostaty
 excerpt: Mniejsze aerostaty nad Wenus
 category: ep-atlas-wenus
 subcategory: aerostaty
+sort: 99
 lead: |
   Pozostałych 15 zamieszkanych aerostatów różni się pod względem kultury, formy i funkcji. Jedną z głównych wolności zagwarantowanych przez Konstelację Gwiazdy Zarannej jest prawo każdego aerostatu do samodzielnego regulowania swoich spraw wewnętrznych. Chociaż wszystkie aerostaty należące do Konstelacji muszą zapewniać swoim obywatelom prawa gwarantowane przez Konstytucję Gwiazdy Zarannej, poza tym są wolne w tworzeniu własnych systemów rządów oraz zasad regulujących ich wewnętrzną gospodarkę.
 ---
