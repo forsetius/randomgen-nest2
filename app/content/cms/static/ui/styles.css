@@ -2,7 +2,11 @@ html, body {height: 100%}
 main {min-height: calc(100% - 559px) }
 p, li, blockquote {font-family: 'Fira Sans', sans-serif; font-size: 1rem; line-height: 1.75; text-align: justify;}
 h1, h2, .h1, .h2, h1 a, h2 a, .h1 a, .h2 a {font-family: "Unica One", serif; font-weight: 400;}
-a:where(:link, :visited, :hover, :focus, :active) {color: #11944e; text-decoration: none;}
+a:where(:link, :visited, :hover, :focus, :active) {color: #11944e; text-decoration: none; font-weight: bold}
+a.external:where(:link, :visited, :hover, :focus, :active) {color: #186db3;}
+a.external i.bi {margin-left: 0.25em;font-size: 0.75em;vertical-align: 0.5em;color: #115994;}
+.bg-body-secondary a.external i.bi {margin-left: 0.125em;font-size: 0.6em;vertical-align: 0.5em;color: #1eec7d;}
+a.self:where(:link, :visited, :hover, :focus, :active) {color: #75ca96;}
 .bg-body-secondary a:is(:link, :visited, :hover, :focus, :active) {color: #1eec7d; }
 #subHeader a:is(:link, :visited, :hover, :focus, :active) {color: #1fb565; font-weight: 500;}
 .bg-body-tertiary a:is(:link, :visited, :hover, :focus, :active) { font-weight: 600 }
@@ -146,6 +150,7 @@ aside .card-title {
 aside .card-title a { color: white; }
 aside .card-img-overlay { padding: 12px; }
 aside h2 { padding-top: 16px; }
+aside h2 a { color: white !important; }
 aside p { margin: 0 28px 0 18px; padding-bottom: 8px; }
 aside li { padding-top: 12px;}
 aside section { margin: 5px 25px; padding-bottom: 12px; }

@@ -96,7 +96,9 @@ export class Category {
     }
 
     if (!this.subcategories.has(subcategory)) {
-      throw new Error(`No such subcategory ${subcategory}`);
+      throw new Error(
+        `No such subcategory ${subcategory} for category ${this.name}`,
+      );
     }
 
     return this.subcategories.get(subcategory)!;

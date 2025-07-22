@@ -1,15 +1,29 @@
 import { Injectable } from '@nestjs/common';
-import { marked, Tokens } from 'marked';
+import { marked, Renderer, Tokens } from 'marked';
 import { Lang } from '@shared/types/Lang';
 
 @Injectable()
 export class MarkdownService {
   public constructor() {
+    const renderer = new Renderer();
+    renderer.link = ({ href, title, text }: Tokens.Link) => {
+      const titleAttr = title ? ` title="${title}"` : `test="${href}"`;
+
+      if (href.startsWith('/') || href.startsWith('https://forseti.pl')) {
+        return `<a href="${href}"${titleAttr} class="internal">${text}</a>`;
+      } else if (href.startsWith('#')) {
+        return `<a href="${href}"${titleAttr} class="self">${text}</a>`;
+      } else {
+        return `<a href="${href}"${titleAttr} class="external" target="_blank" rel="noopener noreferrer">${text}<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>`;
+      }
+    };
+
     marked.use({
       async: false,
       breaks: true,
       gfm: true,
-      extensions: [this.preprocessSlugs(), this.columnizeText()],
+      extensions: [this.preprocessSlugs()],
+      renderer,
     });
   }
 
@@ -61,59 +75,7 @@ export class MarkdownService {
         }
         const slugToken = token as SlugToken;
 
-        return `<a href="@{${slugToken.lang}/${slugToken.slug}}">${slugToken.text}</a>`;
-      },
-    };
-  }
-
-  /**
-   * Column text extension for marked.js
-   *
-   * Provides the ability to convert strings like:
-   * ```
-   * :::columns
-   * :::column
-   * Content
-   * :::column
-   * Content
-   * :::
-   * ```
-   * to text split into columns.
-   */
-  private columnizeText() {
-    return {
-      name: 'columns',
-      level: 'block',
-      start(src: string) {
-        return /:::columns/.exec(src)?.index;
-      },
-      tokenizer(src: string) {
-        const match = /^:::columns\n([\s\S]+?)\n:::/m.exec(src);
-        if (match?.[1]) {
-          return {
-            type: 'columns',
-            raw: match[0],
-            text: match[1].trim(),
-          };
-        }
-
-        return undefined;
-      },
-      renderer(token: Tokens.Generic) {
-        const columnsToken = token as ColumnsToken;
-        const columns = columnsToken.text
-          .split(':::column')
-          .map((c) => c.trim())
-          .filter(Boolean);
-        const htmlColumns = columns
-          .map((c) => {
-            const parsed = marked.parse(c, { async: false });
-
-            return `<div class="column">${parsed}</div>`;
-          })
-          .join('');
-
-        return `<div class="columns">${htmlColumns}</div>`;
+        return `<a class="internal" href="@{${slugToken.lang}/${slugToken.slug}}">${slugToken.text}</a>`;
       },
     };
   }
@@ -123,8 +85,4 @@ interface SlugToken extends Tokens.Generic {
   text: string;
   lang: Lang;
   slug: string;
-}
-
-interface ColumnsToken extends Tokens.Generic {
-  text: string;
 }
