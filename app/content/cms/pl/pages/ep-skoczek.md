@@ -23,4 +23,5 @@ slots:
         - z [chwytnym ogonem](#)
         - z orientacją przestrzenną waleni
 ---
-**Skoczkowie** (zwani też _Czworączkami_) to morfy przystosowane do środowisk zero-G i podobnych. Ich nogi są gibkie a stopy - chwytne, równie zręczne jak dłonie. Dodatkowe "chwytaki" przydają się w mikrograwitacji lecz utrudniają poruszanie w zwykłej grawitacji. Na [Lunie](#) czy [Tytanie](#) nie stanowi to wielkiego problemu, jednak już na [Marsie](#) i w wyższych grawitacjach utrudnia poruszanie i powoduje dyskomfort - łatwo nabawić się bąbli, odcisków czy nawet żylaków.
+**Skoczkowie** (zwani też _Czworączkami_) to [morfy]{pl/ep-morf} przystosowane do środowisk zero-G i podobnych. Ich nogi są gibkie a stopy - chwytne, równie zręczne jak dłonie. Dodatkowe "chwytaki" przydają się w mikrograwitacji lecz utrudniają poruszanie w zwykłej grawitacji. Na [Lunie]{pl/ep-atlas-luna} czy [Tytanie](#) nie stanowi to wielkiego problemu, jednak już na [Marsie]{pl/ep-atlas-mars} i w wyższych grawitacjach utrudnia poruszanie i powoduje dyskomfort - łatwo nabawić się bąbli, odcisków czy nawet żylaków.
+

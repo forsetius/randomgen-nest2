@@ -18,7 +18,7 @@ lead: |
 
 [Transhumanizm](http://pl.wikipedia.org/wiki/Transhumanizm) to pojęcie używane zamiennie z "ulepszaniem człowieka". Jest to światowy ruch kulturalno-intelektualny popierający rozwój nauki i techniki oraz używanie ich w celu poprawy kondycji ludzkiej. Poprawa ta wyrażałaby się w eliminacji chorób, starości, niedostatku przy jednoczesnym rozszerzaniu możliwości fizycznych i umysłowych istoty transludzkiej. Umożliwiło by to transczłowiekowi pełniejsze życie wolne od trosk, znosząc przy tym ograniczenia, które przykuwają go do Starego Globu.
 
-By to osiągnąć, transhumaniści akceptują i nawołują do rozwoju raczkujących dopiero technologii, takich jak kognitywistyka, nanotechnologia, biotechnologia i technologia informatyczna. Wielu transhumanistów wierzy, że osiągnięcia tych technologii zaczną się pojawiać już w naszej nieodległej przyszłości i to w coraz szybszym tempie. Promują więc równy dostęp do nich, zdając sobie sprawę z tego, że jeśli pozostaną jedynie w rękach wybranych to poszerzą i utrwalą istniejące nierówności na skalę niespotykaną w historii, a nawet mogą stać się narzędziami opresji miast dobrostanu.
+By to osiągnąć, transhumaniści akceptują i nawołują do rozwoju raczkujących dopiero technologii, takich jak kognitywistyka, nanotechnologia, biotechnologia i technologia informatyczna. Wielu transhumanistów wierzy, że osiągnięcia tych technologii zaczną się pojawiać już w naszej nieodległej przyszłości i to w coraz szybszym tempie. Promują więc równy dostęp do nich, zdając sobie sprawę z tego, że jeśli pozostaną jedynie w rękach wybranych to poszerzą i utrwalą istniejące nierówności na skalę niespotykaną w historii, a nawet mogą stać się narzędziami opresji zamiast dobrostanu.
 
 W dłuższej perspektywie transhumanizm może być uważany za etap przejściowy między obecną kondycją ludzką a istotą tak zaawansowaną w swych możliwościach (zarówno fizycznych jak i mentalnych), że można będzie nazywać ją już "postczłowiekiem".
 
@@ -36,7 +36,7 @@ Nasza cywilizacja rozwija się szybciej niż kiedykolwiek, wkrótce możemy stan
 
 ## Przetrwanie
 
-Akcja Eclipse Phase dzieje się po [Upadku]{pl/ep-upadek} - wojnie wydanej transludzkości przez sztuczną inteligencję, która wyniszczyła [Ziemię](#) i spowodowała zagładę ponad 90% transludzi.
+Akcja Eclipse Phase dzieje się po [Upadku]{pl/ep-upadek} - wojnie wydanej transludzkości przez sztuczną inteligencję, która wyniszczyła [Ziemię]{pl/ep-atlas-ziemia} i spowodowała zagładę ponad 90% transludzi.
 
 Ten rodzaj fantastyki określa się mianem "postapokaliptycznej" - opisuje na rzeczywistość po kataklizmie, który zakończył ludzką cywilizację i któremu towarzyszy eksterminacja istnień ludzkich na niespotykaną skalę. Dokładny mechanizm tej katastrofy jest zwykle mało istotny - może to być wojna nuklearna, zaraza, klęska ekologiczna, uderzenie asteroidy, [Obcy](#)...
 
@@ -52,17 +52,17 @@ Teorie te uznają, że za zdarzeniem (czy łańcuchem zdarzeń), którzy niewtaj
 
 W Eclipse Phase istnieją zarówno realne konspiracje (jak choćby [Zapora]{pl/ep-zapora} – organizacja chroniąca transludzkość przed [zagrożeniami godzącymi w jej dalszą egzystencję](http://en.wikipedia.org/wiki/Global_catastrophic_risk), jak i mnogość teorii spiskowych. Te ostatnie biorą się z wielu źródeł:
 
-*   z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITANami](#) a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
+*   z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITAN-ami](#) a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
 *   z utrudnień w przepływie informacji między poszczególnymi [habitatami]{pl/ep-habitat}, rozdzielonymi od siebie pustką Kosmosu czy nawet [Wrotami pandoriańskimi](#). Brakujące informacje na temat złowróżbnych zdarzeń uzupełnia się wtedy zatrważającymi przypuszczeniami, a nawet _trans_ludzki umysł ma tendencję do szukania wzorców i celowości
-*   z traumy Upadku – transludzie, którzy przeżyli apokalipsę często boją się powtórki. Słabsi psychiczne wszędzie upatrują symptomów knowań TITANów i ich sekretnych sprzymierzeńców. W latach po Upadku wielokrotnie doprowadziło to do polowań na czarownice a nawet pogromów i zniszczenia całych habitatów, na które padł cień podejrzenia.
+*   z traumy Upadku – transludzie, którzy przeżyli apokalipsę często boją się powtórki. Słabsi psychiczne wszędzie upatrują symptomów knowań TITAN-ów i ich sekretnych sprzymierzeńców. W latach po Upadku wielokrotnie doprowadziło to do polowań na czarownice a nawet pogromów i zniszczenia całych habitatów, na które padł cień podejrzenia.
 *   z rozpaczy uciemiężonych mas niewolników [hiperkorpów]{pl/ep-hiperkorporacja}, i innych rzuconych na dno nieszczęśników, którzy chcą widzieć sprawców swojego nieszczęścia
 *   z paranoi prawdziwych spiskowców, mierzących innych swoją miarą
-*   z nadmiaru wyzwań i nowych odkryć, których jeszcze nie zdążono satysfakcjonująco wyjaśnić - Obcy, wrota pandoriańskie, artefakty TITANów i wymarłych cywilizacji rozpalają wyobraźnię nie pojedynczych transludzi, ale całych mas!
+*   z nadmiaru wyzwań i nowych odkryć, których jeszcze nie zdążono satysfakcjonująco wyjaśnić - Obcy, wrota pandoriańskie, artefakty TITAN-ów i wymarłych cywilizacji rozpalają wyobraźnię nie pojedynczych transludzi, ale całych mas!
 
 Z drugiej strony, nikt nie jest w stanie zapewnić, że wszystkie teorie spisku to tylko wymysł. A może prawda jest bardziej przerażająca niż jakakolwiek teoria?
 
 ## Groza
 
-**Groza** przyjmuje wiele form, jednak w Eclipse Phase najczęściej jest to groza psychologiczna. Postaci w tym świecie stają przecież czoła niepewności przetrwania (zarówno własnego, jak i przetrwania całego gatunku), strach przed nieznanym, poczucie przejmującej pustki i obojętności Wszechświata... Czasem strachy przyjmują formę realną i postaci spotykają pośród gwiazd Rzeczy i Istoty, których być nie powinno czy odpychających Obcych. A przede wszystkim są świadkami krzywd i niesprawiedliwości, jakie transludzie są w stanie wyrządzić sobie nawzajem - a pośród pustki Kosmosu, gdy wydaje się, że żadne społeczeństwo nie patrzy i nie ocenia, są to rzeczy przejmujące i straszne.
+**Groza** przyjmuje wiele form, jednak w Eclipse Phase najczęściej jest to groza psychologiczna. Postaci w tym świecie stają przecież czoła niepewności przetrwania (zarówno własnego, jak i przetrwania całego gatunku), strachu przed nieznanym, poczuciu przejmującej pustki i obojętności Wszechświata... Czasem strachy przyjmują formę realną i postaci spotykają pośród gwiazd Rzeczy i Istoty, których być nie powinno czy odpychających Obcych. A przede wszystkim są świadkami krzywd i niesprawiedliwości, jakie transludzie są w stanie wyrządzić sobie nawzajem - a pośród pustki Kosmosu, gdy wydaje się, że żadne społeczeństwo nie patrzy i nie ocenia, są to rzeczy przejmujące i straszne.
 
 Mimo wszystkich zdobyczy nauki i techniki, którymi rozporządzają transludzie, wciąż nieobca jest im groza dopadająca ich, gdy ktoś odbierze im kontrolę nad własną tożsamością - co nie jest rzadkie w dobie kopiowania [Ego](#) i chaosu Upadku. Wielu transludzi odchodzi od zmysłów, gdy przemiany kulturowe i technologiczne wstrząsną ich postrzeganiem świata - a to przecież przy tym tempie rozwoju zdarza się coraz częściej. Są też tacy, którzy zbyt głęboko wzięli sobie do serca maksymę "umysł to software - zaprogramuj go" i przeholowali z edycją, gubiąc swoją osobowość.

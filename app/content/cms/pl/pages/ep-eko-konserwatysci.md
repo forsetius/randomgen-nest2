@@ -13,7 +13,7 @@ slots:
         ## Memy
         - [Ekoetyka](http://en.wikipedia.org/wiki/Environmental_ethics)
         ## Główne habitaty
-        - Muir ([Luna]{pl/ep-atlas-luna})
+        - [Muir](#) ([Luna]{pl/ep-atlas-luna})
 ---
 **Eko-konserwatyści** (zwani też _Kustoszami_ bądź _Prezerwacjonistami_) są radykalnymi ekologami wzywającymi do zachowania istniejących ekosystemów przy zasiedlaniu nowych światów. Są ekstremalnie opiekuńczy wobec środowisk, które mogą posiadać nawet najmniejsze oznaki życia - bez względu na to jak mikroskopijne - by zachować je od zanieczyszczenia życiem przywleczonym przez [transludzkość](#).
 

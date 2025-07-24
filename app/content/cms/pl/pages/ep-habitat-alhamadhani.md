@@ -20,6 +20,6 @@ lead: |
 ---
 W rzeczywistości to raczej giełda pod gołym niebem niż siedziba władz – miejsce, gdzie Pylarze spotykają się, by handlować, wymieniać wieści i korzystać ze specjalistycznych usług. W rzadkich przypadkach, gdy jakiś problem okaże się na tyle poważny, że wymusi wspólny konsensus, to właśnie w Al-Hamadhani się o nim rozmawia i głosuje.
 
-Gdy zapyta się lokalnego PR-owca z hyperkorporacji o Al-Hamadhani, najpewniej z przekąsem zauważy, że ta "mekka Pylarzy" leży zaledwie kilkaset kilometrów na południowy zachód od krateru Vyasa – podziemnej siedziby dużego korporacyjnego kompleksu wydobywczego. Sugestia jest jasna: Pylarze nie przetrwaliby, gdyby nie żyli z resztek cywilizacji hyperkorpów. Nietrudno się domyślić, że taka postawa wcale nie łagodzi napięć między Pylarzami a obywatelami korporacyjnymi.
+Gdy zapyta się lokalnego PR-owca z [hiperkorporacji]{pl/ep-hiperkorporacja} o Al-Hamadhani, najpewniej z przekąsem zauważy, że ta "mekka Pylarzy" leży zaledwie kilkaset kilometrów na południowy zachód od krateru Vyasa – podziemnej siedziby dużego korporacyjnego kompleksu wydobywczego. Sugestia jest jasna: Pylarze nie przetrwaliby, gdyby nie żyli z resztek cywilizacji hiperkorpów. Nietrudno się domyślić, że taka postawa wcale nie łagodzi napięć między Pylarzami a obywatelami korporacyjnymi.
 
-Dla Strażnika, który potrzebuje zdobyć informacje lub sprzęt bez zwracania uwagi hyperkorpów, Al-Hamadhani to najlepszy trop.
+Dla Strażnika, który potrzebuje zdobyć informacje lub sprzęt bez zwracania uwagi hiperkorpów, Al-Hamadhani to najlepszy trop.

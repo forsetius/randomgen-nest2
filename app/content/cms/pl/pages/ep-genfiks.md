@@ -19,4 +19,4 @@ slots:
 ---
 **Genfiksy** to morfy, których kod genetyczny został oczyszczony z wad skutkujących chorobami genetycznymi oraz podatnością na choroby zakaźne i cywilizacyjne. Wyeliminowano też sporo mankamentów obniżających jakość życia niepoprawionego człowieka, nieznacznie poprawiono też kosmetykę. 
 
-Poza polepszeniem zdrowia i wyglądu nie są jednak znacząco zmodyfikowani. W 10 lat po [Upadku]{pl/ep-upadek} stanowią większość biomorfów, których używa transludzkość.
+Poza polepszeniem zdrowia i wyglądu nie są jednak znacząco zmodyfikowani. W 10 lat po [Upadku]{pl/ep-upadek} stanowią większość [biomorfów](#), których używa transludzkość.

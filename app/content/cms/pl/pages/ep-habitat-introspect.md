@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Introspect
-excerpt: Kolonia izolacjonistów dla tych, którzy wybierają śmierć zamiast transhumanizmu.
+excerpt: Habitat ExoTechu w L5 Marsa, znany z badań nad AI i przyspieszonymi symulacjami.
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:
@@ -14,6 +14,6 @@ slots:
         - _Przynależność_: [Exotech]{pl/ep-exotech}
         - _Główne języki_: angielski
 ---
-Ten [torus]{pl/ep-torus} to jedna z głównych placówek badawczych firmy [Exotech]{pl/ep-exotech}. [Zapora]{pl/ep-zapora} uważnie go monitoruje z powodu doniesień, że neurolodzy ExoTechu prowadzą długoterminowe, przyspieszone czasowo eksperymenty nad rozwojem AI. Badania te obejmują nie tylko ograniczone AI i AGI, ale prawdopodobnie również [infomorfy]{pl/ep-infomorf}. Istnieją przypuszczenia, że mogą to być najdłużej działające (zarówno w czasie rzeczywistym, jak i symulowanym) przyspieszone symulacje znane Zaporze.
+Ten [torus]{pl/ep-torus} to jedna z głównych placówek badawczych firmy [Exotech]{pl/ep-exotech}. [Zapora]{pl/ep-zapora} uważnie go monitoruje z powodu doniesień, że neurolodzy ExoTechu prowadzą długoterminowe, przyspieszone czasowo eksperymenty nad rozwojem [AI](#). Badania te obejmują nie tylko ograniczone AI i [AGI](#), ale prawdopodobnie również [infomorfy]{pl/ep-infomorf}. Istnieją przypuszczenia, że mogą to być najdłużej działające (zarówno w czasie rzeczywistym, jak i symulowanym) przyspieszone symulacje znane Zaporze.
 
-To jednak tylko jeden z wielu prowadzonych tu projektów. Inni badacze ExoTechu pracują nad udoskonaleniem technik uploadowania, projektami zaawansowanych [ego-mostków](#), lepszymi szablonami osobowości dla AGI oraz nowej generacji oprogramowania do obecności w [Splocie]{pl/ep-splot}.
+To jednak tylko jeden z wielu prowadzonych tu projektów. Inni badacze Exotechu pracują nad udoskonaleniem technik [uploadowania](#), projektami zaawansowanych [ego-mostków](#), lepszymi szablonami osobowości dla AGI oraz nowej generacji oprogramowania do obecności w [Splocie]{pl/ep-splot}.

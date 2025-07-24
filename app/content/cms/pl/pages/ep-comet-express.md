@@ -17,11 +17,12 @@ slots:
         - Spedycja
         - Logistyka
         ## Główne habitaty
-        - Nectar ([Luna]{pl/ep-atlas-luna})
-        - Olympus ([Mars](#))
+        - [Nectar](#) ([Luna]{pl/ep-atlas-luna})
+        - [Olympus](#) ([Mars]{pl/ep-atlas-mars})
+        - [Transix](#) (punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce})
 ---
-**Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzygwiezdnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie]{pl/ep-habitat} w [Układzie Słonecznym](#), zwykle przy pomocy lokalnych podwykonawców.
+**Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzyplanetarnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie]{pl/ep-habitat} w Układzie Słonecznym, zwykle przy pomocy lokalnych podwykonawców.
 
-Mimo cudów [nanofabrykacji](#) wiele zasobów wciąż musi być importowane. ComEx skupia się na zarządzaniu szlakami zaopatrzenia i handlu tak, by zapewnić dostarczenie fizycznych przesyłek do ich punktów docelowych. W tym celu ComEx utrzymuje strategicznie rozmieszczone po Układzie centra orbitalne, jak również flotę transportowców i dronów kurierskich.
+Mimo cudów [nanofabrykacji](#) wiele zasobów wciąż musi być importowane. **ComEx** skupia się na zarządzaniu szlakami zaopatrzenia i handlu tak, by zapewnić dostarczenie fizycznych przesyłek do ich punktów docelowych. W tym celu ComEx utrzymuje strategicznie rozmieszczone po Układzie centra orbitalne, jak również flotę transportowców i dronów kurierskich.
 
-Z powodów nieznanych opinii publicznej, [Republika Jowiszowa]{pl/ep-republika-jowiszowa} jest wrogo nastawiona do ComEx-u, utrzymując w mocy rozkazy zestrzeliwania przelatujących statków ComEx-u.
+Z powodów nieznanych opinii publicznej, [Republika Jowiszowa]{pl/ep-republika-jowiszowa} jest wrogo nastawiona do ComEx-u, utrzymując w mocy rozkazy zestrzeliwania statków ComEx-u próbujących skorzystać z [asysty grawitacyjnej](https://pl.wikipedia.org/wiki/Asysta_grawitacyjna) Jowisza.

@@ -18,8 +18,9 @@ slots:
         - [Biofarmaceutyki](http://en.wikipedia.org/wiki/Pharming_%28genetics%29)
         - Genetyka
         ## Główne habitaty
-        - Zdolne Dłonie ([Luna]{pl/ep-atlas-luna}), 
+        - [Zdolne Dłonie]{pl/ep-habitat-clever-hands} ([Luna]{pl/ep-atlas-luna}), 
 ---
-Dzięki odkryciom w dziedzinie ulepszeń kognitywistycznych i modyfikacji genetycznej, Somatek stał się pionierem w sztuce i nauce upliftu - wynoszenia zwierząt do ludzkiego poziomu rozumności. Ta hiperkorporacja prowadzi również prace nad biofarmaceutykami (substancjami leczniczymi pozyskiwanymi z organizmów transgenicznych) i marketuje liczne produkty i usługi związane z [bystrymi zwierzętami](#) i stworzeniami [chimerycznymi](http://pl.wikipedia.org/wiki/Chimera_%28biologia%29).
+Dzięki odkryciom w dziedzinie ulepszeń kognitywistycznych i modyfikacji genetycznej, **Somatek** stał się pionierem w sztuce i nauce [upliftu]{pl/ep-uplift} - wynoszenia zwierząt do ludzkiego poziomu rozumności. Ta [hiperkorporacja]{pl/ep-hiperkorporacja} prowadzi również prace nad biofarmaceutykami (substancjami leczniczymi pozyskiwanymi z organizmów transgenicznych) i marketuje liczne produkty i usługi związane z [bystrymi zwierzętami](#) i stworzeniami [chimerycznymi](http://pl.wikipedia.org/wiki/Chimera_%28biologia%29).
 
 Mimo programów edukacyjnych i treningowych, które ten hiperkorp oferuje upliftom jak również tego, że duża część jego pracowników to uplifty, Somatek jest kontrowersyjny wśród [Proteuszy](#). Ich niezadowolenie wzbudzają stosowane przez tą korporację metody (częste stosowanie rygorystycznej kontroli rozmnażania), nie branie pod uwagę zdania samych upliftów co do ich modyfikacji i rozwoju oraz wmuszanie upliftom antropocentrycznego sposobu myślenia.
+

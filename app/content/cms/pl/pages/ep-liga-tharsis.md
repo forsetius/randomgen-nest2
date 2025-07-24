@@ -13,11 +13,11 @@ slots:
         ## Memy
         Marsjański nacjonalizm
         ## Członkowie ligi 
-        - Asioka
-        - Elizjum
-        - Noctis-Quinjiao
-        - Olympus
-        - Valles-New Shanghai 
+        - [Asioka](#)
+        - [Elizjum](#)
+        - [Noctis-Quinjiao](#)
+        - [Olympus](#)
+        - [Valles-New Shanghai](#) 
         i kilkanaście innych
 ---
 **Liga Tharsis** jest luźną koalicją największych niezależnych osad [marsjańskich](#). Wybrani reprezentanci tych habitatów tworzą komitet obradujący na tematy dotyczące większości osad. Ważniejsze debaty obracają się wokół naukowego podejścia do toczącego się procesu [terraformowania Marsa](http://en.wikipedia.org/wiki/Terraforming_of_Mars), a także restrykcji podatkowych i handlowych nałożonych przez [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne} i poszczególne wchodzące w jego skład [hiperkorporacje]{pl/ep-hiperkorporacja}.

@@ -3,8 +3,6 @@ template: page-default
 title: Blaszak
 subtitle: Case
 excerpt: Tandetne syntetyczne ciała dla biedoty
-lead: |
-  > Widziałem kiedyś Blaszaka, który ukradkiem dotykał szyby akwarium — jakby wspomnienie zmysłu chciało wrócić. Do środka załadowali Ego ale po tylu latach, czy w środku jest jeszcze człowiek czy już tylko maszyna?
 headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 
@@ -19,6 +17,6 @@ slots:
         - [Gniazda dostępu]{pl/ep-gniazda-dostepu}
         - [Ulepszenie pamięci](#)
 ---
-Syntmorfy nazywane pogardliwie _"blaszakami"_, _"puszkami"_ czy _"pudłami"_ to ekstremalnie tanie, masowo produkowane powłoki robotyczne. Są odpowiedzią [hiperkorpów]{pl/ep-hiperkorporacja} na konieczność szybkiego [przyodziania](#) milionów pozbawionych wszystkiego [info-uchodźców]{pl/ep-info-uchodzcy}. Choć istnieje wiele rodzajów i wariantów Puszek, są one generalnie wszystkie uznawane za podrzędne rzęchy. Większość jest z grubsza antropomorficzna, cienka, nieco niższa niż przeciętny [Normals]{pl/ep-normals}. 
+Syntmorfy nazywane pogardliwie _"blaszakami"_, _"puszkami"_ czy _"pudłami"_ to najtańsze, masowo produkowane [powłoki robotyczne](pl/ep-syntmorf). Są odpowiedzią [hiperkorpów]{pl/ep-hiperkorporacja} na konieczność szybkiego [przyodziania](#) milionów pozbawionych wszystkiego [info-uchodźców]{pl/ep-info-uchodzcy}. Choć istnieje wiele rodzajów i wariantów Puszek, są one generalnie wszystkie uznawane za podrzędne rzęchy. Większość jest z grubsza antropomorficzna, cienka, nieco niższa niż przeciętny [Normals]{pl/ep-normals}. 
 
 Puszki są prześladowane przez częste awarie i wynikłe z oszczędności niedoróbki. W związku z tym ich właścicieli stereotypowo klasyfikuje się jako biedotę najniższego sortu, co wiąże się z niejakim ostracyzmem i stygmatyzacją. Nie jest to oczywiście sprawiedliwe - większość [szmelcen-proletariatu]{pl/ep-szmelcen-proletariat} w żaden sposób nie zasłużyła na swój los. Część jest wręcz zmuszona używać syntmorfa ponieważ np. mieszkają lub pracują w środowisku pozbawionym podtrzymania życia.

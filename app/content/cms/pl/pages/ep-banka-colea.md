@@ -8,7 +8,7 @@ lead: |
 category: ep-habitat
 subcategory: kosmiczne
 ---
-Bańki Cole’a (znane też jako „światy bańkowe”) występują głównie w Pasie Głównym, gdzie obficie występują duże asteroidy niklowo-żelazowe, używane jako surowiec do ich budowy. Są znacznie rzadsze w rejonach Trojańczyków i Greków, gdzie dominują lodowe asteroidy o skorupiastej strukturze.
+Bańki Cole’a (znane też jako „światy bańkowe”) występują głównie w [Pasie Głównym](#), gdzie obficie występują duże asteroidy niklowo-żelazowe, używane jako surowiec do ich budowy. Są znacznie rzadsze w rejonach Trojańczyków i Greków, gdzie dominują lodowe asteroidy o skorupiastej strukturze.
 
 Bańka Cole’a jest pod wieloma względami podobna do [cylindra O’Neilla]{pl/ep-cylinder-oneilla}, ale nie posiada podłużnych okien. Zamiast tego światło słoneczne wpuszczane jest do wnętrza przez osiowe zespoły luster. Bańki Cole’a mogą być wprawiane w ruch obrotowy, aby zapewnić sztuczną grawitację – zgodnie z wolą mieszkańców. Grawitacja maleje jednak w miarę zbliżania się do biegunów konstrukcji, osiągając stan nieważkości w osi obrotu.
 

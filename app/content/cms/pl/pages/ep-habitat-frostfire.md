@@ -15,7 +15,7 @@ slots:
         - _Główne języki_: hiszpański, portugalski
         
 lead: |
-  Frostfire ma populację 35 000 mieszkańców i odpowiada za zbieranie oraz dystrybucję wielu lodowych głazów i małych asteroid lodowych, które są transportowane na Wenus. Lód ten jest potrzebny, by stopniowo zwiększać ilość pary wodnej w górnych warstwach atmosfery.
+  Frostfire ma populację 35 000 mieszkańców i odpowiada za zbieranie oraz dystrybucję wielu lodowych głazów i małych asteroid lodowych, które są transportowane na [Wenus]{pl/ep-atlas-wenus}. Lód ten jest potrzebny, by stopniowo zwiększać ilość pary wodnej w [górnych warstwach atmosfery](#).
 ---
 Frostfire wysyła holowniki, które zbierają te lodowe głazy i wprowadzają je na stabilną orbitę. Gdy lodowe asteroidy znajdą się już na orbicie, pracownicy dzielą je na wiele mniejszych głazów, z których większość ma od 20 do 50 metrów średnicy. Następnie do każdego z nich przymocowuje się niewielkie silniki, które pozwalają wprowadzić je w atmosferę Wenus po płytkiej trajektorii, umożliwiającej stopniowe odparowanie w górnych warstwach atmosfery, wysoko ponad pułapem aerostatów.
 

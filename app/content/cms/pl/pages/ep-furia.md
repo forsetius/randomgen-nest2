@@ -20,4 +20,4 @@ slots:
         - [Neurachem](#) (poziom 1)
         - [Filtr toksyn](#)
 ---
-**Furie** to morfy bojowe. Mają wbudowane ulepszenia transgeniczne nakierowane na wytrzymałość, siłę i refleks. Do tego dołożono modyfikacje behawioralne w kierunku agresji i przebiegłości. Aby zrównoważyć tendencje do awanturnictwa i postaw typu _macho_, Furie posiadają sekwencje genów promujące mentalność stadną i kooperację. Z tego samego powodu większość z nich to kobiety.
+**Furie** to [morfy](#) bojowe. Mają wbudowane ulepszenia transgeniczne nakierowane na wytrzymałość, siłę i refleks. Do tego dołożono modyfikacje behawioralne w kierunku agresji i przebiegłości. Aby zrównoważyć tendencje do awanturnictwa i postaw typu _macho_, Furie posiadają sekwencje genów promujące mentalność stadną i kooperację. Z tego samego powodu większość z nich to kobiety.

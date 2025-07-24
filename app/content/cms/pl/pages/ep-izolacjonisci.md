@@ -11,7 +11,7 @@ slots:
     - type: static
       content: |
         ## Memy
-        Izolacjonizm
+        - Izolacjonizm
         ## Główne habitaty
         - brak
 ---

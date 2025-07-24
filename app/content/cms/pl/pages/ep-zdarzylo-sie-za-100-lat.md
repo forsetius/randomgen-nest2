@@ -6,8 +6,6 @@ headerImage: mid-happened-in-100-years-head.jpg
 category: ep-intro
 sort: 1
 
-
-
 ---
 Nieustający i wciąż przyspieszający rozwój cywilizacji technicznej przyniósł dobrobyt i wyzwolenie od chorób i śmierci. Odkrycia na polu inżynierii genetycznej, nanotechnologii, technologii informatycznej oraz neurokognitywistyki zaowocowały takimi wynalazkami jak: wszechstronne [biomodyfikacje](#), szybkie [leczenie](#) i regeneracja nawet po biologicznej śmierci organizmu, [nanofabrykatory](#), miniaturowe i wszechobecne [zsieciowane]{pl/ep-splot} komputery… I wreszcie ukoronowanie myśli technicznej Homo sapiens sapiens: [kopiowanie i emulacja umysłu](#) w postaci cyfrowej, umożliwiające praktyczną nieśmiertelność, silna [sztuczna inteligencja]{pl/ep-sztuczna-inteligencja} dorównująca ludzkiej oraz [uplifty]{pl/ep-uplift} – nasi pierwsi bracia (czy raczej dzieci) w rozumie, zwierzęta wyniesione do rozumności ludzkiej.
 

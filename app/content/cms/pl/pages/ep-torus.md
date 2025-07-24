@@ -10,7 +10,7 @@ lead: |
 category: ep-habitat
 subcategory: kosmiczne
 ---
-Torusy – zwane zamiennie toroidami, obręczami, kołami albo po prostu pączkami – to okrągłe habitaty kosmiczne, które stanowiły tańszą alternatywę dla cylindrów O’Neilla, wykorzystywaną głównie w mniejszych instalacjach. Podobnie jak O’Neille, torusy obecnie rzadko się buduje, ale wiele z nich nadal funkcjonuje w wewnętrznym Układzie Słonecznym, zwłaszcza na orbitach Ziemi i Luny.
+**Torusy** – zwane zamiennie toroidami, obręczami, kołami albo po prostu pączkami – to okrągłe [habitaty]{pl/ep-habitat} kosmiczne, które stanowiły tańszą alternatywę dla [cylindrów O’Neilla]{pl/ep-cylinder-oneilla}, wykorzystywaną głównie w mniejszych instalacjach. Podobnie jak O’Neille, torusy obecnie rzadko się buduje, ale wiele z nich nadal funkcjonuje w [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze}, zwłaszcza na [orbitach Ziemi]{pl/ep-atlas-ziemia-orbita} i [Luny]{pl/ep-atlas-luna}.
 
 Typowy habitat toroidalny wygląda jak obracający się pączek o średnicy 1 kilometra, osadzony na wielkich szprychach. Port kosmiczny znajduje się w centralnej części koła, w strefie zerowej grawitacji. Odwiedzający zjeżdżają windą wzdłuż szprychy na poziom obręczy, gdzie obrót konstrukcji wytwarza grawitację równą ziemskiej.
 

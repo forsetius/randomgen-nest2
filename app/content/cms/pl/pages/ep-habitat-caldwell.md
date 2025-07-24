@@ -19,7 +19,7 @@ lead: |
 ---
 Asteroida została błyskawicznie „przejęta” przez [TerraGenesis]{pl/ep-terragenesis}, która natychmiast rozpoczęła misje badawcze przez Wrota, eksplorując [egzoplanety](https://pl.wikipedia.org/wiki/Planeta_pozas%C5%82oneczna). Po kilku latach katalogowania nowych światów, TerraGenesis zmieniła kierunek działań, koncentrując się na terraformowaniu obcych globów i projektach geo-inżynieryjnych.
 
-Początkowo TerraGenesis chętnie dzieliła się – lub przynajmniej wydzierżawiała – czas dostępu do wrót innym [hiperkorpom]{pl/ep-hiperkorporacja i grupom badawczym. Szczególnie kilka wenusjańskich instytucji rozpoczęło liczne badania poza Układem. Wszystko to uległo zmianie, gdy niezidentyfikowana komórka terrorystyczna zaatakowała Caldwell, niemal skutecznie próbując zniszczyć same wrota.
+Początkowo TerraGenesis chętnie dzieliła się – lub przynajmniej wydzierżawiała – czas dostępu do wrót innym [hiperkorpom]{pl/ep-hiperkorporacja i grupom badawczym. Szczególnie kilka [wenusjańskich](#) instytucji rozpoczęło liczne badania poza Układem. Wszystko to uległo zmianie, gdy niezidentyfikowana komórka terrorystyczna zaatakowała Caldwell, niemal skutecznie próbując zniszczyć same wrota.
 
 Napastnicy, przyodziani w morfy typu [Żniwiarz]{pl/ep-zniwiarz}, przedarli się aż do wewnętrznych struktur bramowych. Po ich unieszkodliwieniu odkryto, że mieli przy sobie głowicę jądrową, której na szczęście nie udało im się zdetonować. Do dziś TerraGenesis nie ustaliła, kto stał za atakiem, mimo wielu krążących pogłosek.
 

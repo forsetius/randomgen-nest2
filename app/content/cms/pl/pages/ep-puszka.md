@@ -9,10 +9,11 @@ lead: |
 category: ep-habitat
 subcategory: kosmiczne
 ---
-Do tej kategorii pasują stare stacje badawcze i stacje-schrony poszukiwaczy. Habitaty typu „puszka” to zaledwie kilka poziomów powyżej Międzynarodowej Stacji Kosmicznej z początku XXI wieku.
+Do tej kategorii pasują stare stacje badawcze i stacje-schrony poszukiwaczy. Habitaty typu „**puszka**” to zaledwie kilka poziomów powyżej Międzynarodowej Stacji Kosmicznej z początku XXI wieku.
 
-Typowa puszka składa się z jednego lub kilku modułów, połączonych z panelami słonecznymi i innymi systemami użytkowymi za pomocą odkrytego rusztowania. W wersjach „luksusowych” znajdują się kanały dryfowe lub pełzaki łączące moduły, natomiast najuboższe wersje wymagają skafandra próżniowego lub morfu odpornego na próżnię, aby przejść z pomieszczenia do pomieszczenia.
+Typowa puszka składa się z jednego lub kilku modułów, połączonych z panelami słonecznymi i innymi systemami użytkowymi za pomocą odkrytego rusztowania. W wersjach „luksusowych” znajdują się kanały dryfowe lub pełzaki łączące moduły, natomiast najuboższe wersje wymagają skafandra próżniowego lub [morfa]{pl/ep-morf} odpornego na próżnię, aby przejść z pomieszczenia do pomieszczenia.
 
-Zdolność do hodowli żywności jest w nich bardzo ograniczona, często brak też farkasterów, choć zwykle dostępne są fabrykatory, miejsca cumownicze dla wahadłowców, a czasem także dla statków poszukiwawczych.
+Zdolność do hodowli żywności jest w nich bardzo ograniczona, często brak też [egotransmiterów](#), choć zwykle dostępne są [fabrykatory](#), miejsca cumownicze dla wahadłowców, a czasem także dla statków poszukiwawczych.
 
 Puszki rzadko mieszczą więcej niż 50 osób.
+

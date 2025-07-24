@@ -15,8 +15,8 @@ slots:
         - _Przynależność_: [Cognite]{pl/ep-cognite}
         - _Główne języki_: angielski, niemiecki
 lead: |
-  Stacja ta, kontrolowana przez Cognite, jest siedzibą jednych z najnowocześniejszych badań nad sztuczną inteligencją w całym Układzie Słonecznym. Pracujący tu badacze specjalizują się w tworzeniu AI o wysokim poziomie inteligencji ogólnej zbliżonym do AGI, ale wciąż na tyle wyspecjalizowanych i ograniczonych, by nie stanowiły zagrożenia dla użytkowników i nie posiadały zdolności samodoskonalenia się.
+  Stacja ta, kontrolowana przez [Cognite](#), jest siedzibą jednych z najnowocześniejszych badań nad [sztuczną inteligencją](#) w całym Układzie Słonecznym. Pracujący tu badacze specjalizują się w tworzeniu AI o wysokim poziomie inteligencji ogólnej zbliżonym do [AGI](#), ale wciąż na tyle wyspecjalizowanych i ograniczonych, by nie stanowiły zagrożenia dla użytkowników i nie posiadały zdolności samodoskonalenia się.
 ---
-To właśnie tutaj prowadzone są najbardziej spekulatywne i utajnione projekty badawcze Cognite, z dala od ciekawskich oczu. Nasze ograniczone rozpoznanie ich modeli badawczych sugeruje, że Cognite coraz odważniej eksploruje radykalne kierunki rozwoju, mimo wcześniejszych doświadczeń oraz niedawnych ostrzeżeń ze strony regulatorów Konsorcjum Planetarnego, dotyczących prac z AGI o niedostatecznych ograniczeniach.
+To właśnie tutaj prowadzone są najbardziej spekulatywne i utajnione projekty badawcze Cognite, z dala od ciekawskich oczu. Ograniczone rozpoznanie ich modeli badawczych przez [Zaporę](#) sugeruje, że Cognite coraz odważniej eksploruje radykalne kierunki rozwoju, mimo wcześniejszych doświadczeń oraz niedawnych ostrzeżeń ze strony regulatorów [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne}, dotyczących prac z AGI o niedostatecznych ograniczeniach.
 
-Zapora uznaje tę sytuację za potencjalne zagrożenie wysokiego szczebla, dlatego wdrożyliśmy kilka protokołów i planów awaryjnych, na wypadek konieczności izolacji i neutralizacji.
+Zapora uznaje tę sytuację za potencjalne zagrożenie wysokiego poziomu, dlatego wdrożyliśmy kilka protokołów i planów awaryjnych, na wypadek konieczności izolacji i neutralizacji.

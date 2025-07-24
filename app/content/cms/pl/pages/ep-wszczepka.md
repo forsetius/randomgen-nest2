@@ -6,7 +6,6 @@ headerImage: mid--head.jpg
 excerpt: Podczaszkowy komputer z interfejsem bezprzewodowym i siecią czujników raportujących stan morfa
 category: ep-ulepszenia
 
-
 ---
 Jest to sieć implantów mózgowych, która jest niezbędnym wyposażeniem dla każdego, kto chce być podłączony i w pełni używać [Splotu]{pl/ep-splot}. Komponenty tego systemu to:
 

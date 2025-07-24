@@ -2,9 +2,9 @@
 template: page-default
 title: Synt
 subtitle: Synth
-excerpt: W całości robotyczne morfy pozbawione części biologicznych
+excerpt: Tanie, humanoidalne roboty używane do pracy fizycznej
 lead: |
-  > Zbudowaliśmy Synthy jako funkcję, a potem obraziliśmy się, że nie mają duszy. To nie ich wina, że odbijają nasze chłodne intencje jak lustro.
+  > Zbudowaliśmy Synty jako funkcję, a potem obraziliśmy się, że nie mają duszy. To nie ich wina, że odbijają nasze chłodne intencje jak lustro.
 headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 
@@ -19,4 +19,4 @@ slots:
         - [Ulepszenie pamięci](#)
         - [Gniazda dostępu]{pl/ep-gniazda-dostepu}
 ---
-Syntmorfy nazywane pogardliwie _"puszkami"_ czy _"pudłami"_ to ekstremalnie tanie, masowo produkowane powłoki robotyczne. Są odpowiedzią [hiperkorpów]{pl/ep-hiperkorporacja} na konieczność szybkiego [przyodziania](#) milionów pozbawionych wszystkiego [info-uchodźców]{pl/ep-info-uchodzcy}. Choć istnieje wiele rodzajów i wariantów Puszek, są one generalnie wszystkie uznawane za podrzędne rzęchy. Większość jest z grubsza antropomorficzna, cienka, nieco niższa niż przeciętny [Normals]{pl/ep-normals}. Puszki są prześladowany jest przez częste awarie i wynikłe z oszczędności niedoróbki.
+**Synty** to antropomorficzne, robotyczne powłoki (androidy i gynoidy). Zazwyczaj wykorzystywane są do prac fizycznych, w których użycie [podów]{pl/ep-pod} nie jest równie efektywne. Tańsze niż wiele innych morfów, są często wybierane przez osoby potrzebujące ciała szybko i tanio, lub tylko na czas przejściowy. Choć mają humanoidalny wygląd, łatwo rozpoznać, że nie są biologiczne — chyba że wyposażono je w opcję syntetycznego maskowania.

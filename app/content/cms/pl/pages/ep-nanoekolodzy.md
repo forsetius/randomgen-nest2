@@ -13,7 +13,7 @@ slots:
         ## Memy
         Nanoekologia, Nanotechnologia, [Ekoetyka](http://en.wikipedia.org/wiki/Environmental_ethics), [Technoprogresywizm](http://en.wikipedia.org/wiki/Techno-progressivism)
         ## Główne habitaty
-        - Viriditas ([Mars](#))
+        - Viriditas ([Mars]{pl/ep-atlas-mars})
 ---
 **Nanoekolodzy** to techno-postępowi ekolodzy i inżynierowie środowiskowi, którzy są bardzo aktywni przy [terraformowaniu Marsa](http://en.wikipedia.org/wiki/Terraforming_of_Mars) i wielu [egzoplanet](#). Nawołują oni do używania nanotechnologicznych środków przy terraformowaniu czy innych ingerencjach w istniejące ekosfery. W ich odczuciu nanotechnologia pozwala na mniej inwazyjne, dokładniejsze, bardziej wydajne i niezanieczyszczające podejście do wszelkiego rodzaju projektów i procesów adaptacyjnych. W ten sposób obchodzi się konieczność wystawiania środowiska na masywne i drastyczne zmiany podczas przygotowywania do zasiedlenia przez [transludzkość](#).
 

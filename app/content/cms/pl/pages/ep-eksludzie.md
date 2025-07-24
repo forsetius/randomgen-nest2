@@ -11,7 +11,9 @@ slots:
     - type: static
       content: |
         ## Memy
-        Adaptacja, Hiperewolucja, [Technologiczna Osobliwość](https://pl.wikipedia.org/wiki/Technologiczna_osobliwo%C5%9B%C4%87)
+        - Adaptacja
+        - Hiperewolucja
+        - [Technologiczna Osobliwość](https://pl.wikipedia.org/wiki/Technologiczna_osobliwo%C5%9B%C4%87)
         ## Główne habitaty
         - nieznane
 ---
@@ -19,7 +21,7 @@ Bardziej niż jakiekolwiek inne stronnictwo, eksludzie pragną osiągnąć absol
 
 Choć grupy eksludzi różnią się między sobą ideologiami, to ogólnie chcą samo-wyewoluować się do wyższego stanu bytu. Dla niektórych oznacza to genetyczne przekształcenie się w superbystrego, zdolnego przetrwać wszędzie [drapieżnika alfa](http://en.wikipedia.org/wiki/Apex_predator), który może przewyższyć wszystkie inne formy życia. Dla innych oznacza to rozwinięcie własnej inteligencji do poziomu inteligencji [TITAN-ów](#) przez rozległe modyfikacje genetyczne i terapie farmakologiczne. Inni jeszcze zostają [infomorfami]{pl/ep-infomorf} i próbują modyfikować swój kod źródłowy.
 
-Część z nich to poszukiwacze Osobliwości mający nadzieję znaleźć jakiś relikt TITAN-ów, który pozwoli im przekroczyć obecne transludzkie ograniczenia. Niektórzy wręcz chcą odnaleźć TITAN-ów by zostać wchłoniętymi w ich świadomość.
+Część z nich to poszukiwacze Osobliwości mający nadzieję znaleźć jakiś relikt [TITAN-ów](#), który pozwoli im przekroczyć obecne transludzkie ograniczenia. Niektórzy wręcz chcą odnaleźć TITAN-ów by zostać wchłoniętymi w ich świadomość.
 
 Na ogół do eksludzi podchodzi się bardzo nieufnie - i jest ku temu bardzo dobry powód. Typowy eksczłowiek stosuje modyfikacje, które są ekstremalne, niebezpieczne, nieprzetestowane a czasem nawet oparte na jakiejś dziwnej pseudonauce. W rezultacie często dochodzi u nich do awarii i zeszpecenia, popadnięcia w obłęd czy wręcz w całkiem obcy lub dziki sposób myślenia.
 

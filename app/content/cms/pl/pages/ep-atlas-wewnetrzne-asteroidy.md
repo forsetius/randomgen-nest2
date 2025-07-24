@@ -15,7 +15,7 @@ slots:
         - **Apohele** (znane też jako **Atiry**) krążą całkowicie wewnątrz orbity Ziemi — ich aphelium wynosi 0,983 AU lub mniej.
         - **Ateny** poruszają się głównie pomiędzy Ziemią a Słońcem. Wiele z nich ma jednak ekscentryczne orbity, przez co w punkcie aphelium czasami przecinają orbitę Ziemi.
         - **Apollo** mają średnią orbitę zbliżoną do 1 AU. Z powodu ekscentryczności ich trajektorie regularnie przecinają orbitę Ziemi.
-        - **Arjuna** mają orbity bardzo podobne do ziemskich (1 AU), o niskiej ekscentryczności i niewielkim nachyleniu.
+        - **Arjuny** mają orbity bardzo podobne do ziemskich (1 AU), o niskiej ekscentryczności i niewielkim nachyleniu.
         - **Amory** krążą głównie między Ziemią a Marsem, choć czasami przecinają orbitę Marsa — nigdy jednak nie przecinają orbity Ziemi.
         ## Klasyfikacja
         Asteroidy ogólnie dzieli się na trzy główne typy:
@@ -46,5 +46,5 @@ slots:
         Kilka odległych habitatów znajduje się z dala od jakiegokolwiek ciała planetarnego lub asteroidy. Podobnie, niektóre duże statki kosmiczne pełnią funkcję mobilnych habitatów.
 
 lead: |
-  W wewnętrznym Układzie Słonecznym krąży niemal 10 000 asteroidów, z czego co najmniej tysiąc ma ponad kilometr średnicy i nadaje się do umieszczenia na nich dużego habitatu typu Cole lub ula. Wiele z nich posiada mniejsze stacje z kopułami lub w stylu puszki. Większość z tych obiektów zaczynała jako kolonie górnicze, choć niemało zostało założonych przez grupy poszukujące odosobnienia i izolacji.
+  W [wewnętrznym Układzie Słonecznym](#) krąży niemal 10 000 asteroidów, z czego co najmniej tysiąc ma ponad kilometr średnicy i nadaje się do umieszczenia na nich dużego [habitatu typu Cole](#) lub [ula](#). Wiele z nich posiada mniejsze stacje z kopułami lub w stylu [puszki](#). Większość z tych obiektów zaczynała jako kolonie górnicze, choć niemało zostało założonych przez grupy poszukujące odosobnienia i izolacji.
 ---
