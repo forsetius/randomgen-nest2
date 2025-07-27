@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Ekonomia przejściowa
+headerImage: mid-ep-mixed-economy-head.jpg
 excerpt: Gospodarka hybrydowa między starą a nową ekonomią
 category: ep-ekonomia
 sort: 2

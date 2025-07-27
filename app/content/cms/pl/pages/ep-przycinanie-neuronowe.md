@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Przycinanie neuronowe
+headerImage: mid-ep-neural-pruning-head.jpg
 excerpt: Tworzenie ograniczonych forków i zarządzanie sobą jak oprogramowaniem.
 category: ep-ego
 

@@ -25,4 +25,4 @@ lead: |
 
 Do Zapory dotarły dziwne i niepokojące opowieści: o próbach uzbrojenia [egzowirusa]{pl/ep-egzowirus}, opracowywaniu obrazu zdolnego [zawiesić umysł]{pl/ep-atak-bazyliszkowy} transludzki poprzez błąd w przetwarzaniu w korze wzrokowej, czy prowadzeniu symulacji wojennych z udziałem [forknapowanych](# "porwanie kopii umysłu (forka), często w celu wymuszenia informacji, przeprowadzenia symulacji negocjacyjnych lub manipulacji behawioralnej") przywódców w celu uzyskania przewagi negocjacyjnej.
 
-Niestety, Zapora wie niewiele ponad te plotki. Środki bezpieczeństwa są wyjątkowo silne, a populacja habitatu – licząca 12 000 osób – objęta jest poważnymi ograniczeniami w zakresie [egotransferów](#). Zapora podjęła co najmniej dwie nieudane próby infiltracji tutejszych projektów w celu zdobycia dodatkowych informacji.
+Niestety, Zapora wie niewiele ponad te plotki. Środki bezpieczeństwa są wyjątkowo silne, a populacja habitatu – licząca 12 000 osób – objęta jest poważnymi ograniczeniami w zakresie [egotransferów]{pl/ep-egotransfer}. Zapora podjęła co najmniej dwie nieudane próby infiltracji tutejszych projektów w celu zdobycia dodatkowych informacji.

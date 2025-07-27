@@ -2,6 +2,7 @@
 template: page-full-width
 title: Forkowanie
 subtitle: Forking
+headerImage: mid-ep-fork-head.jpg
 excerpt: Proces tworzenia funkcjonujących kopii żyjącej osoby.
 category: ep-ego
 
@@ -26,6 +27,6 @@ Forki beta tworzy się poprzez wzięcie forka alfa i poddanie go procesowi znane
 Forki delta to skrajnie ograniczone kopie ego, bardziej przypominające szablony [AI]{pl/ep-sztuczna-inteligencja} z naniesionymi powierzchownymi cechami osobowości. Tworzone również za pomocą przycinania neuronowego, działają sprawnie (na poziomie forka beta lub AI), ale dysponują wyjątkowo ograniczonymi umiejętnościami i drastycznie okrojonymi wspomnieniami — zazwyczaj do poziomu funkcjonalnej amnezji.
 
 ## Forki gamma
-Znane powszechnie jako **opary** (vapors), forki gamma to drastycznie niekompletne, uszkodzone lub poważnie zniekształcone kopie ego. Opary nie są tworzone celowo — powstają w wyniku nieudanych uploadów, uszkodzonych backupów, przerwanych [egotransferów](#) lub awarii infomorfów i forków, które uległy zniszczeniu lub popadły w obłęd. Rzadko kiedy ktoś celowo tworzy opary, chyba że w celach badawczych, choć potrafią pojawiać się w zaskakujących miejscach. Przykładowo, niektóre źle skonstruowane skillsofty zawierają tyle cech osobowości i wspomnień dawcy, że mogą zachowywać się w sposób zbliżony do forka gamma.
+Znane powszechnie jako **opary** (vapors), forki gamma to drastycznie niekompletne, uszkodzone lub poważnie zniekształcone kopie ego. Opary nie są tworzone celowo — powstają w wyniku nieudanych uploadów, uszkodzonych backupów, przerwanych [egotransferów]{pl/ep-egotransfer} lub awarii infomorfów i forków, które uległy zniszczeniu lub popadły w obłęd. Rzadko kiedy ktoś celowo tworzy opary, chyba że w celach badawczych, choć potrafią pojawiać się w zaskakujących miejscach. Przykładowo, niektóre źle skonstruowane skillsofty zawierają tyle cech osobowości i wspomnień dawcy, że mogą zachowywać się w sposób zbliżony do forka gamma.
 
 Jako anomalie, a nie świadomie stworzone byty, opary charakteryzują się osłabionymi umiejętnościami, obniżonymi atrybutami, niepełnymi lub niespójnymi wspomnieniami, negatywnymi cechami psychicznymi oraz chronicznym stresem mentalnym — w tym zaburzeniami, urojeniami lub trwałymi dysfunkcjami.

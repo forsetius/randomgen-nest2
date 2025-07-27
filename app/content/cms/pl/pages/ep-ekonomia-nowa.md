@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Nowa ekonomia
+headerImage: mid-ep-new-economy-head.jpg
 excerpt: Zdecentralizowana produkcja dóbr i dostęp warunkowany obywatelstwem lub pracą
 category: ep-ekonomia
 sort: 3
@@ -36,3 +37,4 @@ Większość transludzkości żyje w standardowych jednostkach mieszkalnych, kt�
 Choć praca transludzka jest tania z racji dużej liczby [info-uchodźców]{pl/ep-info-uchodzcy}, którzy muszą sprzedawać swoje usługi lub poddawać się [kontraktowi służebnemu]{pl/ep-sluzba} aby uzyskać morf i miejsce do życia, praca wykwalifikowana jest znacznie droższa. Unikalny, niestandardowy morf zaprojektowany przez zdolnego genoinżyniera może kosztować tyle co mały statek kosmiczny, zależnie od stopnia odstępstwa od modeli standardowych. Podobnie jest z odzieżą na zamówienie czy technologią zaprojektowaną do jednego konkretnego zastosowania. Choć koszty produkcji takich przedmiotów nie różnią się od innych podobnych dóbr, czas i wysiłek potrzebne do ich zaprojektowania znacząco podnoszą cenę.
 
 Ostatnim zasobem, który jest zarówno rzadki, jak i cenny, jest nowość. Choć każdy może pić dobre wino czy nosić designerskie ubrania, inne dobra są celowo utrzymywane w niedoborze. Najnowsze trendy mody, nowa muzyka czy haute nosh (ekskluzywne przekąski o odważnym designie) są trudniej dostępne, ponieważ szablony potrzebne do ich produkcji są szyfrowane i nie mogą być kopiowane. Ochrona przed kopiowaniem tych szablonów wygasa maksymalnie po trzech latach, choć większość habitatów skraca ten czas do roku. Dodatkowo zabezpieczenia te nigdy nie są doskonałe — zawsze znajdzie się ktoś, kto wypuści piracką wersję w ciągu dwóch do sześciu miesięcy. Jednak od momentu stworzenia szablonu do jego zhakowania, przedmioty te są dostępne tylko dla tych, którzy są gotowi i w stanie za nie zapłacić. Popularne nowe szablony osiągają wysokie ceny w nowej gospodarce i wielu transludzi utrzymuje się właśnie z projektowania i sprzedaży takich szablonów.
+

@@ -61,7 +61,7 @@ Bezpośrednio po [Upadku]{pl/ep-upadek}, plany terraformowania Wenus cieszyły s
 
 Każdy, kto przylatuje na Wenus statkiem kosmicznym, musi przejść trudny okres adaptacji. Choć wszystkie współczesne [morfy]{pl/ep-morf} są projektowane tak, aby szybko dostosowywać się do wyższej lub niższej grawitacji, to nieświadome przyzwyczajenia związane z życiem w świecie, gdzie chodzenie odbywa się nieco inaczej, a przedmioty spadają znacznie szybciej niż dotąd, mogą sprawiać poważne problemy.
 
-[Egotransfer](#) w wielu przypadkach tylko pogarsza ten proces. Choć przyodzianie się w morf w pełni przystosowany do wenusjańskiej grawitacji usuwa konieczność adaptacji fizycznej, problemy psychiczne związane z dostosowaniem się do grawitacji od 3 do 50 razy większej niż ta, do której było się przyzwyczajonym, mogą być głębokie.
+[Egotransfer]{pl/ep-egotransfer} w wielu przypadkach tylko pogarsza ten proces. Choć przyodzianie się w morf w pełni przystosowany do wenusjańskiej grawitacji usuwa konieczność adaptacji fizycznej, problemy psychiczne związane z dostosowaniem się do grawitacji od 3 do 50 razy większej niż ta, do której było się przyzwyczajonym, mogą być głębokie.
 
 Typowe błędy popełniane przez nowoprzybyłych to m.in.: upuszczanie przedmiotów podczas ich podnoszenia, zbyt powolna reakcja na coś wypadającego z dłoni, czy próby skakania dalej, niż pozwala na to wenusjańska grawitacja. Są to pomyłki na tyle częste, że stają się źródłem nieustannej uciechy dla Wenusjan, którzy regularnie mają do czynienia z przybyszami z innych światów.
 

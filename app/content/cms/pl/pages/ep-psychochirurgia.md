@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Psychochirurgia
+headerImage: mid-ep-psychosurgery-head.jpg
 excerpt: Sztuka edycji umysłu — od terapii po tortury.
 category: ep-ego
 slots:

@@ -2,9 +2,8 @@
 template: page-default
 title: Nanosocjalizm
 excerpt: Model gospodarczo-społeczny, w którym kluczową rolę odgrywa automatyzacja, nanotechnologia i post-scarcity
-category: ep-encyklopedia
-tags:
-  - TODO-kategoryzacja # ep-ekonomia
+category: ep-ekonomia
+sort: 4
 slots:
   aside:
     - type: static

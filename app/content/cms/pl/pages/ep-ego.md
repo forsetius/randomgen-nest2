@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Ego
+headerImage: mid-ep-ego-head.jpg
 excerpt: Cyfrowa jaźń, możliwa do skopiowania, przesłania i zamieszkania w każdej powłoce.
 category: ep-encyklopedia
 subcategoryName: Ego
@@ -14,7 +15,7 @@ lead: |
 ---
 W erze postludzkiej transludzkości Ego istnieje jako dane, które można dowolnie przesyłać, kopiować, przechowywać i instalować w rozmaitych powłokach, zwanych morfami. Od momentu upowszechnienia technologii transferu umysłu, separacja Ego od ciała stała się czymś powszechnym, a przywiązanie do jednej cielesnej powłoki postrzegane jest raczej jako konserwatywny sentyment niż konieczność.
 
-Tożsamość w świecie Eclipse Phase nie jest zatem nierozłączna z ciałem, lecz stanowi dynamiczny konstrukt, mogący tymczasowo lub na stałe zamieszkiwać dowolną dostępną [powłokę]{pl/ep-morf} — od w pełni [biologicznych form]{pl/ep-biomorf}, przez [zrobotyzowane ciała]{pl/ep-syntmorf}, aż po czystą, [niematerialną egzystencję]{pl/ep-infomorf} w cyfrowym środowisku [Splotu]{pl/ep-splot}. Transfer Ego, zwany [egotransferem](#), umożliwia błyskawiczne przemieszczanie się na międzyplanetarną skalę, podczas gdy tworzenie kopii zapasowych i ich odtwarzanie pozwala przezwyciężyć śmierć w jej tradycyjnym rozumieniu. To również rodzi fundamentalne pytania o ciągłość osobowości: czy kopia Ego nadal jest tą samą osobą, jeśli zawiera jedynie fragment wspomnień oryginału? Czy człowiek, który zginął, ale jego kopia została odtworzona z backupu, faktycznie żyje dalej?
+Tożsamość w świecie Eclipse Phase nie jest zatem nierozłączna z ciałem, lecz stanowi dynamiczny konstrukt, mogący tymczasowo lub na stałe zamieszkiwać dowolną dostępną [powłokę]{pl/ep-morf} — od w pełni [biologicznych form]{pl/ep-biomorf}, przez [zrobotyzowane ciała]{pl/ep-syntmorf}, aż po czystą, [niematerialną egzystencję]{pl/ep-infomorf} w cyfrowym środowisku [Splotu]{pl/ep-splot}. Transfer Ego, zwany [egotransferem]{pl/ep-egotransfer}, umożliwia błyskawiczne przemieszczanie się na międzyplanetarną skalę, podczas gdy tworzenie kopii zapasowych i ich odtwarzanie pozwala przezwyciężyć śmierć w jej tradycyjnym rozumieniu. To również rodzi fundamentalne pytania o ciągłość osobowości: czy kopia Ego nadal jest tą samą osobą, jeśli zawiera jedynie fragment wspomnień oryginału? Czy człowiek, który zginął, ale jego kopia została odtworzona z backupu, faktycznie żyje dalej?
 
 Współistnienie wielu wersji tego samego Ego, znane jako [forking]{pl/ep-fork}, pogłębia filozoficzne i społeczne napięcia. Jednostka może funkcjonować w kilku równoległych instancjach, z których każda rozwija się odrębnie i nierzadko posiada inne wspomnienia oraz przeżycia. W niektórych kulturach transludzkich traktuje się wszystkie kopie jako równorzędne osoby, podczas gdy inne uznają jedynie oryginał za pełnoprawnego obywatela, a jego odgałęzienia za narzędzia bądź własność. Z tego względu pojęcie Ego posiada również wymiar prawny i etyczny — w zależności od polityki danej frakcji, status prawny kopiowanego lub modyfikowanego Ego może się diametralnie różnić.
 

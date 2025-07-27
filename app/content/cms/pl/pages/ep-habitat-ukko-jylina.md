@@ -20,7 +20,7 @@ lead: |
 ---
 Nazwa habitatu pochodzi od charakterystycznej sekwencji [heliosejsmicznych](https://pl.wikipedia.org/wiki/Heliosejsmologia) drgań, przetransponowanej o piętnaście oktaw w górę, do zakresu słyszalnego dla transludzi. [Surjowie](#) uważają tę harmonię za jeden z najpiękniejszych dźwięków, jakie wydaje [Słońce]{pl/ep-atlas-slonce}. 
 
-Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz słonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania zapasów wody, [egotransferów](#) i [przyodziewania]{pl/ep-przyodziewanie}. 
+Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz słonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania zapasów wody, [egotransferów]{pl/ep-egotransfer} i [przyodziewania]{pl/ep-przyodziewanie}. 
 
 Liczba jego mieszkańców waha się od 300 do nawet 3000 (czyli niemal całej populacji surjów) w okresach złej pogody. Surjowie tłoczą się wtedy w osłoniętych modułach hangarowo-użytkowych, spędzając czas w symuloprzestrzeniach [VR]{pl/ep-vr}) i zazwyczaj wysyłając [forki]{pl/ep-fork}, by przyodziać się w morfy typu salamandra, jeśli potrzebne jest działanie w bardziej humanoidalnej formie.
 

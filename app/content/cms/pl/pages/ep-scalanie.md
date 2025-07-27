@@ -2,6 +2,7 @@
 template: page-full-width
 title: Scalanie forków
 subtitle: Merge
+headerImage: mid-ep-merge-head.jpg
 excerpt: Proces reintegracji forków do jednej kopii ego.
 category: ep-ego
 

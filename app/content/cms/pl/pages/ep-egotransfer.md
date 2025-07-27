@@ -2,6 +2,7 @@
 template: page-full-width
 title: Egotransfer
 subtitle: Egocasting
+headerImage: mid-ep-egotransfer-head.jpg
 excerpt: Podróż z prędkością światła i ryzykiem kradzieży tożsamości.
 category: ep-ego
 

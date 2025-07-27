@@ -2,6 +2,7 @@
 template: page-full-width
 title: Przyodziewanie
 subtitle: Resleeving
+headerImage: mid-ep-przyodzianie-head.jpg
 excerpt: Proces transferu ego do nowej powłoki — biologicznej, syntetycznej lub mieszanej.
 category: ep-ego
 
