@@ -14,8 +14,8 @@ slots:
         - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
         - _Główne języki_: angielski, mandaryński
 lead: |
-  PEX to siedziba **Planetarnej Giełdy Papierów Wartościowych** – czołowej elektronicznej sieci handlu akcjami w [wewnętrznym Układzie Słonecznym](#).
+  PEX to siedziba **Planetarnej Giełdy Papierów Wartościowych** – czołowej elektronicznej sieci handlu akcjami w [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze}.
 ---
-To tutaj odbywa się zdecydowana większość obrotu giełdowego z udziałem [hiperkorporacji]{pl/ep-hiperkorporacja} [Konsorcjum](#), co czyni ten habitat jednym z najbardziej ruchliwych i pilnie strzeżonych. Ruch w [Splocie](#) między PEX-em, miastami marsjańskimi a [Progress](#) osiąga jedne z najwyższych zanotowanych wolumenów.
+To tutaj odbywa się zdecydowana większość obrotu giełdowego z udziałem [hiperkorporacji]{pl/ep-hiperkorporacja} [Konsorcjum]{pl/ep-konsorcjum-planetarne}, co czyni ten habitat jednym z najbardziej ruchliwych i pilnie strzeżonych. Ruch w [Splocie]{pl/ep-splot} między PEX-em, miastami marsjańskimi a [Progress](#) osiąga jedne z najwyższych zanotowanych wolumenów.
 
-**Oversight**, organ nadzorczy Konsorcjum, ma tu swoją główną siedzibę i ściśle monitoruje wszelką aktywność giełdową. Mimo wysokiego poziomu zabezpieczeń, w 8 roku po Upadku nieznany sprawca zdołał uwolnić psychotropową broń biologiczną w jednej z sal obrotu. W wyniku tego incydentu doszło do sześciu samobójstw i trzech przypadków samookaleczenia, w których traderzy odgryźli sobie własne ramiona. Giełda została zamknięta na tydzień, a całą sprawę oficjalnie przypisano terrorystom-anarchistom z [zewnętrznego Układu](#).
+**Oversight**, organ nadzorczy Konsorcjum, ma tu swoją główną siedzibę i ściśle monitoruje wszelką aktywność giełdową. Mimo wysokiego poziomu zabezpieczeń, w 8 roku po Upadku nieznany sprawca zdołał uwolnić psychotropową broń biologiczną w jednej z sal obrotu. W wyniku tego incydentu doszło do sześciu samobójstw i trzech przypadków samookaleczenia, w których traderzy odgryźli sobie własne ramiona. Giełda została zamknięta na tydzień, a całą sprawę oficjalnie przypisano terrorystom-anarchistom z [zewnętrznego Układu]{pl/ep-zewnetrze}.

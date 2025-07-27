@@ -11,7 +11,7 @@ Ponieważ tak wielu [info-uchodźców]{pl/ep-info-uchodzcy} zdobyło tanie [synt
 
 Ich wszechobecność budzi dziś niesmak, zwłaszcza w elitarnych kręgach towarzyskich. Nawet ci, którzy dysponują drogimi, eleganckimi, zaprojektowanymi na zamówienie morfami syntetycznymi z najnowszymi ulepszeniami, uważani są za ekscentryków o kiepskim guście.
 
-Piętno społeczne ciążące na morfach syntetycznych jest wzmacniane przez obawę, że w razie kolejnego ataku ze strony [TITAN-ów](#) ich robotyczne powłoki mogłyby zostać błyskawicznie przejęte i przekształcone w śmiercionośną armię kontrolowaną przez TITAN-ów. Doprowadziło to do sytuacji, w której niektóre habitaty posuwają się do aktywnej segregacji populacji morfów syntetycznych, uzasadniając to faktem, że takie powłoki mogą bez problemu funkcjonować w nieogrzewanych i niehermetyzowanych częściach habitatów.
+Piętno społeczne ciążące na morfach syntetycznych jest wzmacniane przez obawę, że w razie kolejnego ataku ze strony [TITAN-ów]{pl/ep-titans} ich robotyczne powłoki mogłyby zostać błyskawicznie przejęte i przekształcone w śmiercionośną armię kontrolowaną przez TITAN-ów. Doprowadziło to do sytuacji, w której niektóre habitaty posuwają się do aktywnej segregacji populacji morfów syntetycznych, uzasadniając to faktem, że takie powłoki mogą bez problemu funkcjonować w nieogrzewanych i niehermetyzowanych częściach habitatów.
 
 Segregacja ta, wraz ze społecznym napiętnowaniem, doprowadziła jednak do powstania zalążków rodzącej się kultury morfów syntetycznych. Istnieje już wiele habitatów, w których wszyscy mieszkańcy są przyodziani w powłoki syntetyczne, a tradycyjne systemy podtrzymywania życia istnieją jedynie dla nielicznych odwiedzających w morfach biologicznych.
 

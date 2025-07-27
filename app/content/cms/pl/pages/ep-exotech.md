@@ -21,9 +21,9 @@ slots:
         - [Starwell](#) ([Pas asteroidów](#)), 
         - Fobos (księżyc [Marsa]{pl/ep-atlas-mars})
 ---
-**Exotech** to jedna z niewielu przed-Upadkowych megakorporacji, która nie tylko przetrwała [Upadek]{pl/ep-upadek} niemal niedraśnięta (wszystkie większe straty zostały przerzucone na zasoby z peryferyjnych segmentów rynku), ale wręcz skorzystała na nim. Niezmordowanie wykupywała konkurencję i think tanki, które miały problemy z dostosowaniem się do wschodzącej [ekonomii przejściowej](#) i narastającej katastrofy poprzedzającej Upadek.
+**Exotech** to jedna z niewielu przed-Upadkowych megakorporacji, która nie tylko przetrwała [Upadek]{pl/ep-upadek} niemal niedraśnięta (wszystkie większe straty zostały przerzucone na zasoby z peryferyjnych segmentów rynku), ale wręcz skorzystała na nim. Niezmordowanie wykupywała konkurencję i think tanki, które miały problemy z dostosowaniem się do wschodzącej [ekonomii przejściowej]{pl/ep-ekonomia-przejsciowa} i narastającej katastrofy poprzedzającej Upadek.
 
-Dziś Exotech zajmuje pozycję przodującego projektanta elektroniki w segmencie high-end, [sztucznych inteligencji]{pl/ep-sztuczna-inteligencja} i systemów operacyjnych obecności [Splotowej]{pl/ep-splot}. Exotech poświęca się też bezkompromisowym badaniom nad [emulacją umysłu](#) i jego [przyodziewaniem](#), jak również symulacjami dla [infomorfów]{pl/ep-infomorf}.
+Dziś Exotech zajmuje pozycję przodującego projektanta elektroniki w segmencie high-end, [sztucznych inteligencji]{pl/ep-sztuczna-inteligencja} i systemów operacyjnych obecności [Splotowej]{pl/ep-splot}. Exotech poświęca się też bezkompromisowym badaniom nad [emulacją umysłu]{pl/ep-ego} i jego [przyodziewaniem]{pl/ep-przyodziewanie}, jak również symulacjami dla [infomorfów]{pl/ep-infomorf}.
 
 Exotechem wciąż - tak jak i przed Upadkiem - żelazną ręką kieruje niesławny magnat medialny Morgan Sterling.
 

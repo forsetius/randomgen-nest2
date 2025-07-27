@@ -13,12 +13,12 @@ slots:
         ## Główna działalność
         - [Kognitywistyka](http://pl.wikipedia.org/wiki/Kognitywistyka)
         - [Implanty umysłowe](#)
-        - [Psychochirurgia](#)
+        - [Psychochirurgia]{pl/ep-psychochirurgia}
         - [Nootropy](http://pl.wikipedia.org/wiki/Leki_nootropowe)
         ## Główne habitaty
         - [Myśl]{pl/ep-habitat-mysl} (orbita [Wenus]{pl/ep-atlas-wenus}), 
         - Fobos (księżyc [Marsa]{pl/ep-atlas-mars})
 ---
-Jako pionier na polu kognitywistyki, **Cognite** poszerza horyzonty wiedzy o umyśle transczłowieka. Najbardziej znani są z [ulepszeń mentalnych](#) oraz z ich sztandarowego modelu [morfa]{pl/ep-morf}: [Mentona]{pl/ep-menton}. Jednak Cognite specjalizuje się również w [psychochirurgii](#) i nootropach.
+Jako pionier na polu kognitywistyki, **Cognite** poszerza horyzonty wiedzy o umyśle transczłowieka. Najbardziej znani są z [ulepszeń mentalnych](#) oraz z ich sztandarowego modelu [morfa]{pl/ep-morf}: [Mentona]{pl/ep-menton}. Jednak Cognite specjalizuje się również w [psychochirurgii]{pl/ep-psychochirurgia} i nootropach.
 
-Nie mają zbyt dobrego PR-u - nie dość, że przylgnął do nich mem elitarności i wyniosłości to jeszcze ciągnie się za nimi zła reputacja związana z ich uwikłaniem w skandal z projektem przyspieszonego wzrostu dzieci, "[Straconym pokoleniem](#)". Utrzymują się też plotki o ich zaangażowaniu w badania nad [sensorycznym hakowaniem umysłu](#) z wykorzystaniem technologii [TITAN-ów](#). Mimo to Cognite pozostaje kluczowym członkiem [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} z dużym wpływem na jego politykę.
+Nie mają zbyt dobrego PR-u - nie dość, że przylgnął do nich mem elitarności i wyniosłości to jeszcze ciągnie się za nimi zła reputacja związana z ich uwikłaniem w skandal z projektem przyspieszonego wzrostu dzieci, "[Straconym pokoleniem](#)". Utrzymują się też plotki o ich zaangażowaniu w badania nad [sensorycznym hakowaniem umysłu]{pl/ep-atak-bazyliszkowy} z wykorzystaniem technologii [TITAN-ów]{pl/ep-titans}. Mimo to Cognite pozostaje kluczowym członkiem [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} z dużym wpływem na jego politykę.

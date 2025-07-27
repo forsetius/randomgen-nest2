@@ -7,7 +7,7 @@ headerImage: mid-cortical-stack-head.jpg
 category: ep-ulepszenia
 
 ---
-**Stos korowy** to cyber-jednostka przechowująca dane w skorupie z syntetycznego diamentu. Jest niewielka (wielkości winogrona) i jest wszczepiana u podstawy czaszki, na styku rdzenia przedłużonego i kręgowego. Zawiera cyfrową kopię zapasową [Ego](#), które rezyduje w tym [morfie]{pl/ep-morf}.
+**Stos korowy** to cyber-jednostka przechowująca dane w skorupie z syntetycznego diamentu. Jest niewielka (wielkości winogrona) i jest wszczepiana u podstawy czaszki, na styku rdzenia przedłużonego i kręgowego. Zawiera cyfrową kopię zapasową [Ego]{pl/ep-ego}, które rezyduje w tym [morfie]{pl/ep-morf}.
 
 W części jest to gniazdo nanobotów monitorujących synapsy i architekturę mózgu, sygnalizując wszelkie zmiany i uaktualniając kopię zapasową w czasie rzeczywistym. Stos przechowuje tylko najbardziej aktualną kopię Ego, każda następna zastępuje poprzednią - w przypadku większości transludzi zrzut kopii następuje co sekundę, 86 400 razy na dobę. Stos kończy pracę w momencie śmierci morfa - gdy to nastąpi, stos może być odzyskany a Ego może być odtworzone z backupu. Stosy są bardzo wytrzymałe - często odzyskuje się je ze zmasakrowanych ciał i mimo to udaje się odzyskać działającą kopię Ego.
 

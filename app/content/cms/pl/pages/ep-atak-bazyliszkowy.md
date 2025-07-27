@@ -1,0 +1,19 @@
+---
+template: page-default
+title: Atak bazyliszkowy
+excerpt: Hakowanie umysłu bodźcami zmysłowymi - broń TITAN-ów oparta na percepcji.
+category: ep-titans
+lead: |
+  Dzięki ogromnym bazom danych wiedzy, które pochłonęli [TITAN-i]{pl/ep-titans}, byli w stanie dogłębnie przeanalizować biologię i funkcjonowanie transludzkich umysłów. W ciągu zaledwie kilku miesięcy dostępu do wszystkich dostępnych badań, inteligencje TITAN-ów dokonały kilku skoków poznawczych w zrozumieniu funkcji mózgu transludzi — przełomów, na które transludzkość będzie potrzebować dekad. Jednym z tych odkryć była metoda użycia bodźców zmysłowych jako broni, wykorzystująca słabości w neurocerebralnym układzie mózgu.
+---
+Znane jako **ataki bazyliszkowe**, techniki te wykorzystują sposób, w jaki biologiczne mózgi transludzi interpretują i przetwarzają dane sensoryczne w korze mózgowej. Podobnie jak osoby z [epilepsją](https://pl.wikipedia.org/wiki/Padaczka) są podatne na wizualizacje migające w określonych częstotliwościach, ataki bazyliszkowe stosują specjalne wzory wizualne i dźwiękowe, które wywołują zakłócenia w przewodzeniu neuronalnym mózgu, powodując nudności, zawroty głowy, dezorientację, a nawet napady — często mylone z udarem mózgu lub incydentem naczyniowym.
+
+Niektóre ataki bazyliszkowe sięgają dalej niż tylko powodowanie awarii mózgu, umożliwiając mechanizm przepisywania kodu neuronalnego u ofiar, które obejrzą lub usłyszą nieodpowiedni sygnał. Ten nieznany mechanizm przeprogramowania umożliwia wirusowi zainfekowanie nawet biologicznego mózgu jednym ze swoich szczepów. Podobne ataki stosowane są przeciwko [syntmorfom]{pl/ep-syntmorf} i [podom]{pl/ep-pod}, wykorzystując sposób, w jaki cybermózgi naśladują biologiczne umysły poprzez wirtualny stan mózgu, a zatem również mogą być manipulowane za pomocą informacji zakodowanej w danych sensorycznych.
+
+Mówiąc wprost, ataki bazyliszkowe to sposób na zhakowanie transludzkiego mózgu wyłącznie poprzez dostarczenie mu określonego wzorca danych sensorycznych — zazwyczaj obrazu lub dźwięku. Powszechne wykorzystanie [rzeczywistości rozszerzonej]{pl/ep-ar} (AR) czyni wdrożenie takich ataków niezwykle łatwym; egzowirus po prostu włamuje się do [ecto](#) lub [wszczepki]{pl/ep-wszczepka} celu i uruchamia strumień sensoryczny. Możliwe są również bardziej tradycyjne metody, takie jak standardowe interaktywne wideo, hologramy, dźwięki, ultradźwięki, a nawet [VR]{pl/ep-vr}.
+
+Ponieważ wiele zapisów z lat towarzyszących Upadkowi zostało utraconych, większość ludzi nie wie, czy ataki bazyliszkowe to cokolwiek więcej niż legenda. Różne oficjalne grupy wiedzą, że technologia ta była faktycznie wykorzystywana przez TITAN-y, ale zachowują tę wiedzę dla siebie, w dużej mierze po to, by ograniczyć liczbę osób próbujących ją odtworzyć.
+
+Gdy postać doświadczy ataku bazyliszkowego, cierpi z powodu stresu psychicznego, a następnie pada ofiarą szeregu zaburzeń neurologicznych, takich jak: [katapleksja](https://pl.wikipedia.org/wiki/Katapleksja), stupor [katatoniczny](https://pl.wikipedia.org/wiki/Katatonia), [napady toniczno-kloniczne](https://pl.wikipedia.org/wiki/Napad_padaczkowy#Napady_pierwotnie_uog%C3%B3lnione) (grand mal), [halucynacje](https://pl.wikipedia.org/wiki/Halucynacje). Lżejsze skutki obejmują upośledzenie funkcji poznawczych, dezorientację, zawroty głowy i sen.
+
+W rzadkich przypadkach postać może być w stanie uniknąć ataku bazyliszkowego, jeśli wie, że taki atak nadchodzi — na przykład, jeśli zauważy, że towarzysz padł jego ofiarą chwilę wcześniej. Oczywiście postać musi wiedzieć, czym są ataki bazyliszkowe, by w ogóle rozważyć taką możliwość. Jeśli natychmiast spróbuje podjąć działania mające na celu zablokowanie napływu danych sensorycznych — zamykając oczy, zatykając uszy, wyłączając AR — ma niewielką szansę na całkowite uniknięcie ataku lub przynajmniej jego częściowe osłabienie.

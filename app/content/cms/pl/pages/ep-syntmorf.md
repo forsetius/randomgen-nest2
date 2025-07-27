@@ -12,7 +12,7 @@ slots:
     - type: category
       category: ep-syntmorf
 ---
-Morfy syntetyczne to powłoki w całości robotyczne. Przed [Upadkiem]{pl/ep-upadek} były najczęściej pilotowane przez [AI]{pl/ep-sztuczna-inteligencja} jednak po Upadku niedobory [biomorfów]{pl/ep-biomorf}, a także miejsca w dostosowanych do potrzeb biomorfów [habitatach]{pl/ep-habitat} spowodowały, że koniecznością stało się [przyodziewanie](#) [info-uchodźców]{pl/ep-info-uchodzcy} w morfy mechaniczne, najczęściej andro- lub gynoidy. Są one tańsze, szybsze w produkcji, szeroko dostępne i niewymagające udogodnień środowiskowych potrzebnych biomorfom.
+Morfy syntetyczne to powłoki w całości robotyczne. Przed [Upadkiem]{pl/ep-upadek} były najczęściej pilotowane przez [AI]{pl/ep-sztuczna-inteligencja} jednak po Upadku niedobory [biomorfów]{pl/ep-biomorf}, a także miejsca w dostosowanych do potrzeb biomorfów [habitatach]{pl/ep-habitat} spowodowały, że koniecznością stało się [przyodziewanie]{pl/ep-przyodziewanie} [info-uchodźców]{pl/ep-info-uchodzcy} w morfy mechaniczne, najczęściej andro- lub gynoidy. Są one tańsze, szybsze w produkcji, szeroko dostępne i niewymagające udogodnień środowiskowych potrzebnych biomorfom.
 
 Syntmorfy w wielu habitatach (w szczególności w [Wewnętrzu]{pl/ep-wewnetrze} są traktowane z pogardą - jako tania, gorsza alternatywa, z której korzystają tylko biedni i zdesperowani. Postawa taka wzięła się stąd, że po Upadku, gdy habitaty były po brzegi wypełnione info-uchodźcami, przestawiono produkcję na tanie, uproszczone modele, które szybko schodziły z taśmy bez szczególnej kontroli jakości. W takie [Blaszaki]{pl/ep-blaszak} masowo odziewano pragnących ciała uchodźców i wkrótce powstała cała nowa klasa społeczna - [szmelcen-proletariat]{pl/ep-szmelcen-proletariat}.
 

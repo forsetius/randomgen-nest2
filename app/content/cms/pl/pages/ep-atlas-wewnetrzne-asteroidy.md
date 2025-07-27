@@ -46,5 +46,5 @@ slots:
         Kilka odległych habitatów znajduje się z dala od jakiegokolwiek ciała planetarnego lub asteroidy. Podobnie, niektóre duże statki kosmiczne pełnią funkcję mobilnych habitatów.
 
 lead: |
-  W [wewnętrznym Układzie Słonecznym](#) krąży niemal 10 000 asteroidów, z czego co najmniej tysiąc ma ponad kilometr średnicy i nadaje się do umieszczenia na nich dużego [habitatu typu Cole](#) lub [ula](#). Wiele z nich posiada mniejsze stacje z kopułami lub w stylu [puszki](#). Większość z tych obiektów zaczynała jako kolonie górnicze, choć niemało zostało założonych przez grupy poszukujące odosobnienia i izolacji.
+  W [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze} krąży niemal 10 000 asteroidów, z czego co najmniej tysiąc ma ponad kilometr średnicy i nadaje się do umieszczenia na nich dużego [habitatu typu Cole]{pl/ep-banka-colea} lub [ula]{pl/ep-ul}. Wiele z nich posiada mniejsze stacje z kopułami lub w stylu [puszki]{pl/ep-puszka}. Większość z tych obiektów zaczynała jako kolonie górnicze, choć niemało zostało założonych przez grupy poszukujące odosobnienia i izolacji.
 ---

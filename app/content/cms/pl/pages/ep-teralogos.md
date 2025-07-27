@@ -21,4 +21,4 @@ slots:
 
 Na pierwszy rzut oka nieco przychylniej na Teralogos patrzy [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}, ale część analityków jest zdania, że wenusjańskie [aerostaty]{pl/ep-aerostaty-wenus} wcale nie pałają miłością do ekstropiańskiego hiperkorpa, po prostu starają się go używać jako pionka w rywalizacji z Konsorcjum.
 
-Zastanawiające jest natomiast dlaczego Teralogos - jako piewca wolności - dziwnie rzadko występuje w swej retoryce przeciw [Juncie Jowiszowej]{pl/ep-republika-jowiszowa}. Na pewno nie jest też rzecznikiem całego Przymierza Autonomistów - to właśnie ta hiperkorporacja lobbowała w imieniu Ekstropistów przeciw rezolucji potępiającej [kontrakty służebne](#).
+Zastanawiające jest natomiast dlaczego Teralogos - jako piewca wolności - dziwnie rzadko występuje w swej retoryce przeciw [Juncie Jowiszowej]{pl/ep-republika-jowiszowa}. Na pewno nie jest też rzecznikiem całego Przymierza Autonomistów - to właśnie ta hiperkorporacja lobbowała w imieniu Ekstropistów przeciw rezolucji potępiającej [kontrakty służebne]{pl/ep-sluzba}.

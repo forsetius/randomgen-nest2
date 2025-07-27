@@ -12,7 +12,7 @@ slots:
     - type: category
       category: ep-biomorf
 ---
-**Biomorfy** to ciała biologiczne, w które może [przyodziać](#) się [Ego](#). Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia]{pl/ep-ulepszenia}, które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku]{pl/ep-upadek}.
+**Biomorfy** to ciała biologiczne, w które może [przyodziać]{pl/ep-przyodziewanie} się [Ego]{pl/ep-ego}. Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia]{pl/ep-ulepszenia}, które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku]{pl/ep-upadek}.
 
 Trzeba zaznaczyć, że biomorfy, w które wcielają się transludzkie Ego nie musi być ludzkie. Dostępne są morfy bazowane na ośmiornicach, waleniach, małpach itd. Wszystkie jednak są kompatybilne z ludzkim umysłem na tyle, że Ego transczłowieka może w nich operować, nawet jeśli czasem wymaga to przyzwyczajenia się do posiadania większej ilości odnóży czy ogona.
 

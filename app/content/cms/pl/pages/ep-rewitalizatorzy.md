@@ -13,7 +13,7 @@ slots:
         ## Memy
         - Rewitalizacja Ziemi 
         ## Główne habitaty
-        - [Vo Nguyen]{pl/habitat-vo-nguyen} ([Orbita Ziemi]{pl/ep-atlas-ziemia-orbita})
+        - [Vo Nguyen]{pl/ep-habitat-vo-nguyen} ([Orbita Ziemi]{pl/ep-atlas-ziemia-orbita})
 ---
 **Rewitalizatorzy** mają jeden, nadrzędny cel: odzyskanie [Ziemi]{pl/ep-atlas-ziemia} jako głównego habitatu transludzkości. Oprócz nawoływania do zniesienia [Interdyktu Ziemi](#) poświęcają się badaniom naukowym i przeprowadzaniem wirtualnych symulacji mającyh określić jak najlepiej oczyścić i zrewitalizować skażony świat.
 

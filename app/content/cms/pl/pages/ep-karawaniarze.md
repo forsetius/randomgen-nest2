@@ -26,6 +26,6 @@ Mimo reputacji kryminalistów i oszustów, ich czasowa obecność jest zwykle to
 
 Karawany różnią się znacznie między sobą. Niektóre są egalitarnymi kolektywami artystycznymi, inne przypominają pływające republiki gangów, a jeszcze inne stanowią mieszankę odłamów filozoficznych, biohakerów i cyfrowych mistyków. Większość z nich to mikrosocjologie funkcjonujące według własnych zasad – czasem chaotycznych, czasem zadziwiająco spójnych.
 
-Technologicznie są samowystarczalni: powszechnie wykorzystują [fabrykatory](#), reaktory fuzyjne, czarnorynkowe [AI](#) i [morfy](#) o wątpliwym pochodzeniu. Ich kultura opiera się na wymianie, adaptacji i celebracji odmienności – z domieszką bezwzględności, gdy wymaga tego przetrwanie.
+Technologicznie są samowystarczalni: powszechnie wykorzystują [fabrykatory](#), reaktory fuzyjne, czarnorynkowe [AI]{pl/ep-sztuczna-inteligencja} i [morfy]{pl/ep-morf} o wątpliwym pochodzeniu. Ich kultura opiera się na wymianie, adaptacji i celebracji odmienności – z domieszką bezwzględności, gdy wymaga tego przetrwanie.
 
-Z powodu intensywnych interakcji Karawaniarzy z innymi habitatami, ich ekonomia to raczej [ekonomia przejściowa](#) niż [nowa](#). Z drugiej strony wśród długoletnich rezydentów większą popularnością cieszy się [nowa ekonomia](#).
+Z powodu intensywnych interakcji Karawaniarzy z innymi habitatami, ich ekonomia to raczej [ekonomia przejściowa]{pl/ep-ekonomia-przejsciowa} niż [nowa]{pl/ep-ekonomia-nowa}. Z drugiej strony wśród długoletnich rezydentów większą popularnością cieszy się nowa ekonomia.

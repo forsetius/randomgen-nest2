@@ -17,9 +17,9 @@ slots:
         - Spedycja
         - Logistyka
         ## Główne habitaty
-        - [Nectar](#) ([Luna]{pl/ep-atlas-luna})
-        - [Olympus](#) ([Mars]{pl/ep-atlas-mars})
-        - [Transix](#) (punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce})
+        - [Nectar]{pl/ep-habitat-nectar} ([Luna]{pl/ep-atlas-luna})
+        - [Olimp]{pl/ep-habitat-olimp} ([Mars]{pl/ep-atlas-mars})
+        - [Transix]{pl/ep-habitat-transix} (punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce})
 ---
 **Comet Express** specjalizuje się w doręczaniu przesyłek, logistyce międzyplanetarnej, łańcuchach dostaw i spedycji. Utrzymują swą obecność w niemal każdym [habitacie]{pl/ep-habitat} w Układzie Słonecznym, zwykle przy pomocy lokalnych podwykonawców.
 

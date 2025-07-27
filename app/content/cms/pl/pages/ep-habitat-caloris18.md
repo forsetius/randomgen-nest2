@@ -22,4 +22,4 @@ Vanya Ilyanovich, [AGI](#) zarządzające placówką, stopiło wszystkie morfy s
 
 Prawdy nigdy się nie pozna, ponieważ **Caloris 18 objęte jest ścisłą kwarantanną**.
 
-Strażnicy są stanowczo ostrzegani przed udawaniem się do Caloris 18. Agenci, którzy złamią kwarantannę, nie zostaną ewakuowani. Nawet jeśli uda się odzyskać ich [stos korowy]{pl/ep-stos-korowy}, nie zostaną [przyodziani](#) ponownie – z powodu ryzyka infekcji. **Caloris 18 to miejsce trwałej śmierci. Nie idź tam.**
+Strażnicy są stanowczo ostrzegani przed udawaniem się do Caloris 18. Agenci, którzy złamią kwarantannę, nie zostaną ewakuowani. Nawet jeśli uda się odzyskać ich [stos korowy]{pl/ep-stos-korowy}, nie zostaną [przyodziani]{pl/ep-przyodziewanie} ponownie – z powodu ryzyka infekcji. **Caloris 18 to miejsce trwałej śmierci. Nie idź tam.**

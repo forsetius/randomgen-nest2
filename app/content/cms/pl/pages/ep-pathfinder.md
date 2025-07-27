@@ -20,6 +20,6 @@ slots:
         ## Główne habitaty
         - Ma'adim Vallis ([Mars]{pl/ep-atlas-mars}), 
 ---
-**Pathfinder** był jedną z pierwszych [hiperkorporacji]{pl/ep-hiperkorporacja}, które zaangażowały się w ekspansję galaktyczną, anektując nowe terytoria poza [Wrotami Pandory](#) i zakładając liczne kolonie. Wyzyskując desperację [info-uchodźców]{pl/ep-info-uchodzcy} i [wrotołazów](#), Pathfinder oferuje transport na egzoplanetę i nowego [morfa]{pl/ep-morf} w zamian za podpisanie [kontraktu służebnego](#).
+**Pathfinder** był jedną z pierwszych [hiperkorporacji]{pl/ep-hiperkorporacja}, które zaangażowały się w ekspansję galaktyczną, anektując nowe terytoria poza [Wrotami Pandory](#) i zakładając liczne kolonie. Wyzyskując desperację [info-uchodźców]{pl/ep-info-uchodzcy} i [wrotołazów](#), Pathfinder oferuje transport na egzoplanetę i nowego [morfa]{pl/ep-morf} w zamian za podpisanie [kontraktu służebnego]{pl/ep-sluzba}.
 
 Korporacja założyła wiele poza-wrotowych projektów związanych z eksploatacją surowców, co nieodmiennie spotyka się z protestami [eko-konserwatystów]{pl/ep-eko-konserwatysci}. I choć Pathfinder utrzymuje raczej niewielką obecność w Układzie Słonecznym, jest dość częstym celem ataków ekoterrorystów.

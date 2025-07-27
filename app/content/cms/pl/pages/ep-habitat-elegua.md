@@ -17,7 +17,7 @@ slots:
           - Zarządzanie środowiskiem
           - Dane środowiskowe
 lead: |
-  Elegua, należąca i zarządzana przez [TerraGenesis](#), to stacja badawcza na orbicie okołoziemskiej, oparta na zmodyfikowanym projekcie [sfery Bernala](#), przypominającym sztuczną [bańkę Cole’a](#). 
+  Elegua, należąca i zarządzana przez [TerraGenesis]{pl/ep-terragenesis}, to stacja badawcza na orbicie okołoziemskiej, oparta na zmodyfikowanym projekcie [sfery Bernala](#), przypominającym sztuczną [bańkę Cole’a]{pl/ep-banka-colea}. 
 ---
 Mieszka tu 120 000 osób, a główną funkcją Elegui jest zbieranie danych środowiskowych z [Ziemi]{pl/ep-atlas-ziemia} na potrzeby badań ekologicznych i terraformingu. Liczne inne [hiperkorpy]{pl/ep-hiperkorporacja} wynajmują tu przestrzeń, często współpracując z kooperatywą TerraGenesis przy wspólnych badaniach i projektach. TerraGenesis chętnie dzieli się danymi z czujników i skanerów z innymi podmiotami, co spotkało się z ostrą krytyką ze strony [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne}. 
 

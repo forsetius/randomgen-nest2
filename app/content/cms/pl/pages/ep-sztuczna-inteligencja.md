@@ -17,6 +17,6 @@ Pierwsze sztuczne inteligencje o możliwościach wykraczających poza realizowan
 
 Kolejnym krokiem były systemy bardziej kompletne jeśli chodzi o kompetencje mentalne, które nazwano **[Ogólnymi Sztucznymi Inteligencjami](#)** - ich rozumność nie była bowiem już ograniczona do jednej, eksperckiej dziedziny ale można ją było przyrównać do rozumności człowieka.
 
-Dalsza ewolucja tych cyfrowych form inteligentnego życia doprowadziła do stworzenia **[Zalążkowych Sztucznych Inteligencji](#)** - systemów zdolnych do inspekcji i w pełni świadomego ulepszania swojego kodu źródłowego. To niestety doprowadziło do stworzenia [TITAN-ów](#) i w konsekwencji do [Upadku]{pl/ep-upadek}.
+Dalsza ewolucja tych cyfrowych form inteligentnego życia doprowadziła do stworzenia **[Zalążkowych Sztucznych Inteligencji](#)** - systemów zdolnych do inspekcji i w pełni świadomego ulepszania swojego kodu źródłowego. To niestety doprowadziło do stworzenia [TITAN-ów]{pl/ep-titans} i w konsekwencji do [Upadku]{pl/ep-upadek}.
 
 Ta katastrofa spowodowała, że wszelkie Sztuczne Inteligencje są traktowane z nieufnością, AGI wręcz doświadczają dyskryminacji a ZSI są zakazane właściwie w całym Układzie.

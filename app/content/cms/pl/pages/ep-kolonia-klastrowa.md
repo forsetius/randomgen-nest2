@@ -10,7 +10,7 @@ subcategory: kosmiczne
 ---
 **Klastry** to najpowszechniejsza forma habitatów mikrograwitacyjnych. Składają się z sieci kulistych lub prostokątnych modułów, wykonanych z lekkich materiałów i połączonych ze sobą za pomocą kanałów dryfowych.
 
-Zazwyczaj moduły mieszkalne i biznesowe skupione są wokół głównych arterii dryfowych, natomiast moduły infrastrukturalne – takie jak farmy, źródła energii czy systemy recyklingu odpadów – rozmieszczone są na obrzeżach. W niektórych klastrach występują ograniczone strefy sztucznej grawitacji – najczęściej są to parki, przestrzenie publiczne lub wyspecjalizowane moduły, takie jak ośrodki [przyodziewania](#), ponieważ przechowywane [morfy]{pl/ep-morf} lepiej znoszą warunki grawitacyjne.
+Zazwyczaj moduły mieszkalne i biznesowe skupione są wokół głównych arterii dryfowych, natomiast moduły infrastrukturalne – takie jak farmy, źródła energii czy systemy recyklingu odpadów – rozmieszczone są na obrzeżach. W niektórych klastrach występują ograniczone strefy sztucznej grawitacji – najczęściej są to parki, przestrzenie publiczne lub wyspecjalizowane moduły, takie jak ośrodki [przyodziewania]{pl/ep-przyodziewanie}, ponieważ przechowywane [morfy]{pl/ep-morf} lepiej znoszą warunki grawitacyjne.
 
 W większych klastrach główne kanały dryfowe mogą posiadać "szybkie pasy ruchu" – ciągłe taśmociągi z uchwytami, które przyspieszają przemieszczanie się osób.
 

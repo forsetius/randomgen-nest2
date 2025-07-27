@@ -21,6 +21,6 @@ slots:
         - [Respirocyty](#), 
         - [Tolerancja temperaturowa](#) (odporność na zimno)
 ---
-[Tytańskie]{pl/ep-wspolnota-tytana} **Hazery** to wysokie, drobnokościste [biomorfy](#) z niewielką muskulaturą ale wyraźniej zaznaczoną powłoką tłuszczową, chroniącą przed wychłodzeniem. Oczywiście nawet ze wszystkimi swoimi standardowymi usprawnieniami Hazery nie mogą przeżyć wystawienia na mroźną atmosferę Tytana, ale mogą znieść ją nieco dłużej niż inne morfy. Ich odporność na zimno jest też przystosowaniem pozwalającym na utrzymywanie w tytańskich [habitatach]{pl/ep-habitat} temperatury ok. 15°C.
+[Tytańskie]{pl/ep-wspolnota-tytana} **Hazery** to wysokie, drobnokościste [biomorfy]{pl/ep-biomorf} z niewielką muskulaturą ale wyraźniej zaznaczoną powłoką tłuszczową, chroniącą przed wychłodzeniem. Oczywiście nawet ze wszystkimi swoimi standardowymi usprawnieniami Hazery nie mogą przeżyć wystawienia na mroźną atmosferę Tytana, ale mogą znieść ją nieco dłużej niż inne morfy. Ich odporność na zimno jest też przystosowaniem pozwalającym na utrzymywanie w tytańskich [habitatach]{pl/ep-habitat} temperatury ok. 15°C.
 
 Hazery są zwykle wysmukłe z ładnie rzeźbionymi, łagodnymi rysami twarzy. Niekiedy ich twarze są wręcz elfie w swej urodzie, co powoduje dyskomfort u innych ludzkich fenotypów.

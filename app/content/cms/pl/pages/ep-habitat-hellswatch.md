@@ -16,7 +16,7 @@ slots:
         - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
         - _Główne języki_: angielski, arabski, urdu
 lead: |
-  Ten niewielki habitat [toroidalny](#) pełni funkcję centrum biurokratycznego i administracyjnego K[onsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} w sprawach dotyczących Merkurego.
+  Ten niewielki habitat [toroidalny]{pl/ep-torus} pełni funkcję centrum biurokratycznego i administracyjnego K[onsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} w sprawach dotyczących Merkurego.
 ---
 Poza drobnymi intrygami [hiperkorpów]{pl/ep-hiperkorporacja} toczącymi się w jego korytarzach, Hellswatch nie ma wiele do zaoferowania i jest powszechnie uważany za prowincję i miejsce zsyłki dla tych, którym przypadło nieszczęście być tam oddelegowanym.
 

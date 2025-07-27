@@ -19,7 +19,7 @@ slots:
         Nazwa pochodzi od greckiej wyspy [Kithiry](https://pl.wikipedia.org/wiki/Kithira), historycznie nazywanej "Cytera". Wg mitologii greckiej nazwa odnosi się też do "gwiazdy miłości" - planety Wenus, nazwanej tak od wyspy Cytery.
         
 lead: |
-  Ta stacja ma populację 50 000 badaczy i działa jako wspólnie zarządzany park badawczy, w którym uczestniczy dziesiątki [hiperkorporacji]{pl/ep-hiperkorporacja} (głównie z [Konstelacji Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}). Większość prac prowadzonych w tym habitacie koncentruje się na badaniach nad terraformowaniem Wenus i rywalizuje z podobnymi projektami prowadzonymi na [Octavii](#) i [Gerlachu](#).
+  Ta stacja ma populację 50 000 badaczy i działa jako wspólnie zarządzany park badawczy, w którym uczestniczy dziesiątki [hiperkorporacji]{pl/ep-hiperkorporacja} (głównie z [Konstelacji Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}). Większość prac prowadzonych w tym habitacie koncentruje się na badaniach nad terraformowaniem Wenus i rywalizuje z podobnymi projektami prowadzonymi na [Octavii]{pl/ep-habitat-octavia} i [Gerlachu]{pl/ep-habitat-gerlach}.
 ---
 W rzeczywistości, niektóre korporacje działające tutaj zdobyły istotne kontrakty terraformacyjne przyznane przez Radę Gwiezdną, w szczególności **Aerial Dynamics** i **Skythe**.
 

@@ -20,4 +20,4 @@ Choć część hiperkorpów jest duża i zdywersyfikowana, większość specjali
 
 Większość hiperkorpów kieruje się tradycyjnym kapitalistycznym podejściem, choć wiele z nich przyjęło alternatywne filozofie biznesowe i modele zarządzania. Mogą one obejmować podejmowanie decyzji na podstawie wewnętrznych prognoz trendów rynkowych, modeli konsensusu grupowego typu „groupthink” albo całkowite odejście od hierarchii zarządzającej na rzecz inicjatyw opartych na głosowaniach i ankietach wśród pracowników, które statystycznie dają lepsze wyniki.
 
-Część to firmy anarchokapitalistyczne lub mutualistyczne, wywodzące się z enklaw [ekstropistów](#). Te jednak często są dyskryminowane w kontaktach handlowych z władzami Systemu Wewnętrznego.
+Część to firmy anarchokapitalistyczne lub mutualistyczne, wywodzące się z enklaw [ekstropistów]{pl/ep-ekstropisci}. Te jednak często są dyskryminowane w kontaktach handlowych z władzami Systemu Wewnętrznego.

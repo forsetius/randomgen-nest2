@@ -28,7 +28,7 @@ Uplifty generalnie źle zniosły Upadek. Wielu nie dano szans ewakuacji z Ziemi 
 
 ## Sytuacja obecna
 
-Po niespełna pół wieku istnienia uplifty rozproszyły się po całym Układzie Słonecznym, stając się rozpoznawalnym elementem transludzkiej kultury. Wiele z nich wciąż odpracowuje [kontrakty służebne](#), podczas gdy inne są praktycznie niewolnikami hiperkorpów, które je stworzyły - pracują jako siła najemna na umowach na czas nieokreślony (czytaj: wieczny).
+Po niespełna pół wieku istnienia uplifty rozproszyły się po całym Układzie Słonecznym, stając się rozpoznawalnym elementem transludzkiej kultury. Wiele z nich wciąż odpracowuje [kontrakty służebne]{pl/ep-sluzba}, podczas gdy inne są praktycznie niewolnikami hiperkorpów, które je stworzyły - pracują jako siła najemna na umowach na czas nieokreślony (czytaj: wieczny).
 
 Ostatnio było kilka fal uwolnionych upliftów opuszczających hiperkorpy, relokujących się na księżyce i do [habitatów]{pl/ep-habitat} [Zewnętrznego Układu]{pl/ep-zewnetrze}. Te rubieże cywilizacji są ostoją niezwykłej różnorodności: uchodźcy, który uciekli przed Upadkiem jako oprogramowanie, stworzenia nurzające się w gorejącym [Słońcu]{pl/ep-solarianie} lub baraszkujące w mroźnych i mrocznych oceanach lodowych księżyców, [Skoczki]{pl/ep-skoczek} gibko przemierzające [habitaty]{pl/ep-habitat} z mikrograwitacją, samotnicy we w pełni syntetycznych morfach żyjący w ogóle poza habitatami w otwartej przestrzeni kosmicznej... W tej czeredzie uplifty nie odstają specjalnie.
 
