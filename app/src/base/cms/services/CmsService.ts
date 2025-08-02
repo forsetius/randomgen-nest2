@@ -74,12 +74,12 @@ export class CmsService {
 
   private linkify(content: string): string {
     return content.replace(
-      /@\{(?<lang>pl|en)\/(?<slug>[\p{L}\d_-]+?)\}/gu,
-      (_match, lang: Lang, slug: string) => {
+      /@\{(?<lang>pl|en)\/(?<slug>[\p{L}\d_-]+?)(?<anchor>#[\p{L}\d_-]+?)?\}/gu,
+      (_match, lang: Lang, slug: string, anchor: string) => {
         const page = this.libraries[lang].getPage(slug);
         const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';
 
-        return `/pages/${lang}/${page.filename}${title}`;
+        return `/pages/${lang}/${page.filename}${anchor}${title}`;
       },
     );
   }

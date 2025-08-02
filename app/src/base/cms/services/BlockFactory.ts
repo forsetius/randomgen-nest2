@@ -7,14 +7,12 @@ import { Block } from '../domain/blocks/Block';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
   ApiCallBlock,
-  CategoryBlock,
   GalleryBlock,
   MediaBlock,
-  PageSetBlock,
   StaticBlock,
-  TagBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
+import { PageGalleryBlock } from '../domain/blocks/PageGalleryBlock';
 
 @Injectable()
 export class BlockFactory {
@@ -49,19 +47,12 @@ export class BlockFactory {
     switch (def.type) {
       case BlockType.API_CALL:
         return new ApiCallBlock(this.templatingService, name, def);
-      case BlockType.CATEGORY:
-        return new CategoryBlock(
-          this.templatingService,
-          this.markdownService,
-          name,
-          def,
-        );
-      case BlockType.GALLERY:
+      case BlockType.MEDIA_GALLERY:
         return new GalleryBlock(this.templatingService, name, def);
       case BlockType.MEDIA:
         return new MediaBlock(this.templatingService, name, def);
-      case BlockType.PAGE_SET:
-        return new PageSetBlock(
+      case BlockType.PAGE_GALLERY:
+        return new PageGalleryBlock(
           this.templatingService,
           this.markdownService,
           name,
@@ -69,13 +60,6 @@ export class BlockFactory {
         );
       case BlockType.STATIC:
         return new StaticBlock(
-          this.templatingService,
-          this.markdownService,
-          name,
-          def,
-        );
-      case BlockType.TAG:
-        return new TagBlock(
           this.templatingService,
           this.markdownService,
           name,

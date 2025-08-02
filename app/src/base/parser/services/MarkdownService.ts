@@ -1,21 +1,31 @@
 import { Injectable } from '@nestjs/common';
 import { marked, Renderer, Tokens } from 'marked';
 import { Lang } from '@shared/types/Lang';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class MarkdownService {
-  public constructor() {
+  public constructor(private readonly configService: AppConfigService) {
     const renderer = new Renderer();
     renderer.link = ({ href, title, text }: Tokens.Link) => {
       const titleAttr = title ? ` title="${title}"` : `test="${href}"`;
 
-      if (href.startsWith('/') || href.startsWith('https://forseti.pl')) {
+      if (
+        href.startsWith('/') ||
+        href.startsWith(this.configService.getInferred('app.host'))
+      ) {
         return `<a href="${href}"${titleAttr} class="internal">${text}</a>`;
-      } else if (href.startsWith('#')) {
+      } else if (href === '#') {
         return `<a href="${href}"${titleAttr} class="self">${text}</a>`;
       } else {
         return `<a href="${href}"${titleAttr} class="external" target="_blank" rel="noopener noreferrer">${text}<i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>`;
       }
+    };
+
+    renderer.heading = ({ text, depth }: Tokens.Heading) => {
+      const id = text.toLowerCase().replace(/\s+/g, '-');
+      const level = depth.toString();
+      return `<h${level} id="h${level}-${id}">${text}</h${level}>`;
     };
 
     marked.use({

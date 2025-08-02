@@ -11,9 +11,9 @@ export const ApiCallBlockZodSchema = CommonBlockZodSchema.extend({
   url: z.string(),
 });
 
-export const GalleryBlockZodSchema = CommonBlockZodSchema.extend({
+export const MediaGalleryBlockZodSchema = CommonBlockZodSchema.extend({
   template: z.string().default('lightbox-gallery'),
-  type: z.literal(BlockType.GALLERY),
+  type: z.literal(BlockType.MEDIA_GALLERY),
   items: z.array(
     z.object({
       template: z.string().default('lightbox-image'),
@@ -36,46 +36,44 @@ export const StaticBlockZodSchema = CommonBlockZodSchema.extend({
   content: z.string(),
 }).catchall(z.string());
 
-const SetBlockZodSchema = CommonBlockZodSchema.extend({
+export const PageGalleryBlockZodSchema = CommonBlockZodSchema.extend({
+  type: z.literal(BlockType.PAGE_GALLERY),
   template: z.string().default('partial-gallery-set'),
   content: z.string().optional(),
   cardTemplate: z.string().default('fragment-img-card'),
   count: z.number().int().default(6),
   columns: z.number().int().min(1).max(6).default(3),
   sortDir: z.enum(['asc', 'desc']).default('asc'),
-});
-
-export const CategoryBlockZodSchema = SetBlockZodSchema.extend({
-  type: z.literal(BlockType.CATEGORY),
-  category: z.string(),
-  subcategory: z.string().optional(),
-});
-
-export const PageSetBlockZodSchema = SetBlockZodSchema.extend({
-  type: z.literal(BlockType.PAGE_SET),
-  items: z.array(z.string()),
-});
-
-export const TagBlockZodSchema = SetBlockZodSchema.extend({
-  type: z.literal(BlockType.TAG),
-  tag: z.string(),
+  sources: z.array(
+    z
+      .object({
+        items: z.array(z.string()),
+      })
+      .or(
+        z.object({
+          category: z.string(),
+          subcategory: z.string().optional(),
+        }),
+      )
+      .or(
+        z.object({
+          tag: z.string(),
+        }),
+      ),
+  ),
 });
 
 export const BlockZodSchema = z.discriminatedUnion('type', [
   ApiCallBlockZodSchema,
-  CategoryBlockZodSchema,
-  GalleryBlockZodSchema,
+  MediaGalleryBlockZodSchema,
   MediaBlockZodSchema,
-  PageSetBlockZodSchema,
+  PageGalleryBlockZodSchema,
   StaticBlockZodSchema,
-  TagBlockZodSchema,
 ]);
 
 export type BlockDef = z.infer<typeof BlockZodSchema>;
 export type ApiCallBlockDef = z.infer<typeof ApiCallBlockZodSchema>;
-export type CategoryBlockDef = z.infer<typeof CategoryBlockZodSchema>;
-export type GalleryBlockDef = z.infer<typeof GalleryBlockZodSchema>;
+export type GalleryBlockDef = z.infer<typeof MediaGalleryBlockZodSchema>;
 export type MediaBlockDef = z.infer<typeof MediaBlockZodSchema>;
-export type PageSetBlockDef = z.infer<typeof PageSetBlockZodSchema>;
 export type StaticBlockDef = z.infer<typeof StaticBlockZodSchema>;
-export type TagBlockDef = z.infer<typeof TagBlockZodSchema>;
+export type PageGalleryBlockDef = z.infer<typeof PageGalleryBlockZodSchema>;

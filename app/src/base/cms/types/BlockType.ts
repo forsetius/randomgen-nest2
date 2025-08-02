@@ -1,9 +1,7 @@
 export enum BlockType {
   API_CALL = 'apiCall',
-  CATEGORY = 'category',
-  GALLERY = 'gallery',
+  MEDIA_GALLERY = 'mediaGallery',
   MEDIA = 'media',
-  PAGE_SET = 'pageSet',
+  PAGE_GALLERY = 'pageGallery',
   STATIC = 'static',
-  TAG = 'tag',
 }
