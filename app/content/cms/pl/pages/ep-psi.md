@@ -1,11 +1,12 @@
 ---
 template: page-default
 title: Zdolności psioniczne
-excerpt: Psi to zdolność ego, nie ciała — ale asynkowie płacą za nią wysoką psychologiczną cenę.
+headerImage: mid-ep-psi-head.jpg
+excerpt: Psi to zdolność ego, nie ciała i asynkowie płacą za nią wysoką psychologiczną cenę.
 category: ep-titans
 lead: |
+  Zdolność psi uznawana jest za wrodzoną cechę [ego]{pl/ep-ego}, a nie biologiczną czy genetyczną predyspozycję [powłoki]{pl/ep-morf}. Choć badacze psi nie rozumieją, jak to możliwe, by zdolność ta przenosiła się za pośrednictwem uploadów, kopii zapasowych i [egotransferów]{pl/ep-egotransfer}, wysuwano spekulacje, że wszystkie komponenty ego asynka są splątane na poziomie kwantowym lub że posiadają zdolność do samodzielnego splątania się lub utworzenia unikalnej konformacji jako całości, nawet po ich skopiowaniu, załadowaniu lub przesłaniu. Uważa się, że właśnie ten spekulowany proces splątania jest przyczyną zaburzeń adaptacyjnych, jakich doświadczają [asynkowie]{pl/ep-asynk} po przyodziewaniu nowej powłoki.
 ---
-Zdolność psi uznawana jest za wrodzoną cechę [ego]{pl/ep-ego}, a nie biologiczną czy genetyczną predyspozycję [powłoki]{pl/ep-morf}. Choć badacze psi nie rozumieją, jak to możliwe, by zdolność ta przenosiła się za pośrednictwem uploadów, kopii zapasowych i egotransferów, wysuwano spekulacje, że wszystkie komponenty ego asynka są splątane na poziomie kwantowym lub że posiadają zdolność do samodzielnego splątania się lub utworzenia unikalnej konformacji jako całości, nawet po ich skopiowaniu, załadowaniu lub przesłaniu. Uważa się, że właśnie ten spekulowany proces splątania jest przyczyną zaburzeń adaptacyjnych, jakich doświadczają [asynkowie]{pl/ep-asynk} po przyodziewaniu nowej powłoki.
 
 ## Powłoki i psi
 Asynkowie potrzebują biologicznego mózgu, aby korzystać ze swoich zdolności (mózgi zwierząt [upliftowanych]{pl/ep-uplift} również się liczą). Asynk, którego ego zostanie załadowane do [infomorfa]{pl/ep-infomorf} lub całkowicie [skomputeryzowanego mózgu]{pl/ep-cybermozg} [synthmorfa]{pl/ep-syntmorf}, nie ma dostępu do swoich zdolności tak długo, jak przebywa w takiej powłoce. Asynkowie przyodziani w powłoki typu [pod]{pl/ep-pod} mogą korzystać z psi, ale ich zdolności są ograniczone, ponieważ mózgi podów są tylko częściowo biologiczne. 

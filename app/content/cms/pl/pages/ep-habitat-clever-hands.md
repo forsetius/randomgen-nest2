@@ -1,7 +1,8 @@
 ---
 template: page-default
 title: Clever Hands
-excerpt: Ściśle strzeżona stacja Omnicor, oskarżenia o badania nad nanoplagami TITAN-ów.
+headerImage: mid-ep-clever-hands-head.jpg
+excerpt: Centrum ulepszania zwierząt, popularne lemurowe uplifty, plotki o projektach wojskowych.
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:

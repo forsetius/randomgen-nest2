@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Atak bazyliszkowy
+headerImage: mid-ep-basilisk-head.jpg
 excerpt: Hakowanie umysłu bodźcami zmysłowymi - broń TITAN-ów oparta na percepcji.
 category: ep-titans
 lead: |

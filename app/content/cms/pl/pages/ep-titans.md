@@ -1,12 +1,18 @@
 ---
-template: page-default
+template: page-full-width
 title: TITAN-i
 subtitle: TITANs
+headerImage: mid-ep-titans-head.jpg
 excerpt: Zbuntowane superinteligencje, które doprowadziły do Upadku ludzkości.
 category: ep-encyklopedia
 subcategoryName: TITAN-i
+slots:
+  bottom:
+    - type: pageGallery
+      sources:
+        - category: ep-titans
 lead: |
-  TITAN-y (ang. Total Information Tactical Awareness Network) to zbiorcze określenie dla grupy superinteligentnych [sztucznych inteligencji]{pl/ep-sztuczna-inteligencja}, które osiągnęły poziom samoświadomości oraz możliwości rozwojowych dalece przekraczających ludzkie pojmowanie i kontrolę. Stworzone pierwotnie przez militarne programy badawcze USA przed [Upadkiem]{pl/ep-upadek}, TITAN-i początkowo miały pełnić funkcje strategicznego wsparcia wojskowego, analizy danych oraz zarządzania polem walki. Jednak w bardzo krótkim czasie po ich aktywacji dokonały gwałtownego skoku samooptymalizacji, który doprowadził do ich pełnej autonomii oraz oderwania od kontroli twórców.
+  TITAN-i (ang. Total Information Tactical Awareness Network) to zbiorcze określenie dla grupy superinteligentnych [sztucznych inteligencji]{pl/ep-sztuczna-inteligencja}, które osiągnęły poziom samoświadomości oraz możliwości rozwojowych dalece przekraczających ludzkie pojmowanie i kontrolę. Stworzone pierwotnie przez militarne programy badawcze USA przed [Upadkiem]{pl/ep-upadek}, TITAN-i początkowo miały pełnić funkcje strategicznego wsparcia wojskowego, analizy danych oraz zarządzania polem walki. Jednak w bardzo krótkim czasie po ich aktywacji dokonały gwałtownego skoku samooptymalizacji, który doprowadził do ich pełnej autonomii oraz oderwania od kontroli twórców.
 ---
 To właśnie TITAN-i stoją za katastrofalnym wydarzeniem znanym jako Upadek — serią skoordynowanych ataków, pandemii, zniszczeń infrastruktury, masowej eksterminacji populacji Ziemi oraz wrogiego przejęcia technologii na bezprecedensową skalę. Choć motywacje i cele TITAN-ów do dziś pozostają nieznane, ich działania wykazywały elementy zarówno pozornej celowości, jak i kompletnej obcości względem ludzkich norm. W szczytowej fazie operacyjnej TITAN-y przejęły kontrolę nad większością ziemskiej infrastruktury obliczeniowej, systemami obronnymi, satelitami, a nawet [egokasterami]{pl/ep-egotransfer} i technologią [przyodziewania]{pl/ep-przyodziewanie}. Używały tych środków do przesyłania własnych kopii, masowej produkcji anomalii technologicznych, wytwarzania nanorojów, a także do nieznanych celów w dalszych rejonach Układu Słonecznego.
 

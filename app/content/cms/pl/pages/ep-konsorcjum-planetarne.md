@@ -19,15 +19,15 @@ slots:
         ## Główne habitaty
         - [Progres](#) (orbita [Marsa]{pl/ep-atlas-mars})
         ## Członkowie Rady Hiperkorporacji: 
-        - [Cognite](Cognite.md "Kognitywistyka, psychochirurgia i udoskonalanie umysłu"), 
+        - [Cognite]{pl/ep-cognite}, 
         - [Direct Action]{pl/ep-direct-action}, 
-        - [Experia](Experia.md "Media, Wiadomości, Rozrywka, Memetyka"), 
-        - [Fa Jing](Fa+Jing "Wydobycie, Energia, Biotechnologia, Wytwarzanie przemysłowe"), 
-        - [Nadzór Infrastruktury Olympus Mons](Nadz%C3%B3r+Infrastruktury+Olympus+Mons), 
-        - [Pathfinder](Pathfinder.md "Układy pozasłoneczne: Kolonizacja, Wydobycie, Badania naukowe"), 
-        - [Prosperity Group](Prosperity+Group "Rolnictwo, Akwakultura, Farmaceutyki"), 
-        - [Solaris](Solaris.md "Bankowość, Ubezpieczenia, Inwestycje, Rynki futures, Obrót informacją "), 
-        - [Stellar Intelligence](Stellar+Intelligence "Wywiad, Eksploatacja danych, Obrót informacją, Szpiegostwo ") 
+        - [Experia]{pl/ep-experia}, 
+        - [Fa Jing]{pl/ep-fajing}, 
+        - Nadzór Infrastruktury Olympus Mons, 
+        - [Pathfinder]{pl/ep-pathfinder}, 
+        - [Prosperity Group]{pl/ep-prosperity-group}, 
+        - [Solaris]{pl/ep-solaris}, 
+        - [Stellar Intelligence]{pl/ep-stellar-intelligence} 
         i tuzin innych
 ---
 **Konsorcjum Planetarne** wyewoluowało z sojuszu reprezentującego interesy [hiperkorporacji]{pl/ep-hiperkorporacja} w najpotężniejszy blok polityczny transludzkości. Dziś kontroluje wiele grup habitatów w [Układzie Wewnętrznym]{pl/ep-wewnetrze}, głównie na powierzchniach i orbitach wokół [Marsa]{pl/ep-atlas-mars} i [Luny]{pl/ep-atlas-luna} oraz na [orbicie Ziemi]{pl/ep-atlas-ziemia-orbita}. Imponująca stacja kosmiczna [Progres](#) jest oficjalną siedzibą rządu i stała się symbolem wpływów i potęgi Konsorcjum - nawet jeśli w rzeczywistości spotkania Kongresu czy Rady raczej rzadko odbywają się tam fizycznie w morfach.

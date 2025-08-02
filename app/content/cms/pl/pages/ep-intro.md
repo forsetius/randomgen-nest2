@@ -12,8 +12,9 @@ lead: |
 
 slots:
   bottom:
-    - type: category
-      category: ep-intro
+    - type: pageGallery
+      sources:
+        - category: ep-intro
 ---
 Akcja gry **Eclipse Phase** rozgrywa się za jakieś 120 lat, po [wojnie]{pl/ep-upadek} ze zbuntowaną [Sztuczną Inteligencją](#), która zgładziła ponad 95% ludzkości. [Ziemia]{pl/ep-atlas-ziemia} leży w ruinie, większość cudów cywilizacji została zniszczona, państwa upadły. Niedobitki ludzi rozproszyły się po całym [Układzie Słonecznym]{pl/ep-diaspora}, a nawet poza niego.
 

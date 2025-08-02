@@ -141,6 +141,7 @@ section.cards .card-title { left: 0; border: 0; padding: 30px 38px; font-size: 2
 .card { border: 0; border-radius: 1rem; }
 .card:hover { border: 0; box-shadow: 0 0 20px #606060;}
 
+aside img {width: 100%;}
 aside .card { border: 0; border-radius: 8px; margin-bottom: 12px;}
 aside .card-body { margin: 5px 10px; padding: 0 12px; }
 aside .card-title {

@@ -3,7 +3,7 @@ template: page-default
 title: Rewitalizatorzy
 subtitle: Reclaimers
 excerpt: Ruch postulujący odzyskanie Ziemi ze szponów TITAN-ów
-headerImage: mid-reclaimers-head.jpg
+headerImage: mid-ep-rewitalizatorzy-head.jpg
 category: ep-stronnictwa
 
 slots:

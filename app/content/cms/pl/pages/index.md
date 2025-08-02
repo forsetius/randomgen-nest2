@@ -6,21 +6,24 @@ langs:
   en: index
 slots:
   aside:
-    - type: category
+    - type: pageGallery
       template: aside-cards
       title: Ostatnie wpisy
-      category: blog
+      sources:
+        - category: blog
       count: 3
       sortDir: desc
+      
   bottom:
-    - type: pageSet
+    - type: pageGallery
       count: 4
       columns: 2
-      items:
-        - prog-umiejetnosci
-        - prog-doswiadczenia
-        - 2022-01-03_generator-technobelkotu
-        - eclipse-phase
+      sources:
+        - items:
+          - prog-umiejetnosci
+          - prog-doswiadczenia
+          - 2022-01-03_generator-technobelkotu
+          - eclipse-phase
 lead: <block id="w-budowie" />
 ---
 

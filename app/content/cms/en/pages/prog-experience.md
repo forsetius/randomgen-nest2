@@ -22,7 +22,8 @@ slots:
         - MySQL, PostgreSQL + PostGIS, MSSQL
         - Shell scripts, Git, Docker
   bottom:
-    - type: category
-      category: prog-experience
+    - type: pageGallery
+      sources:
+        - category: prog-experience
 ---
 Of the more interesting projects:

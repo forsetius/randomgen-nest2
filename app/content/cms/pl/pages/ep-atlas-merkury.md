@@ -19,17 +19,20 @@ slots:
         - **Okres obrotu**: 58d 15h 26m
         - **Przyspieszenie grawitacyjne**: 0,378g
         - **Temperatura**: 100 - 700K
-        
-    - type: category
+        ## Mapa Merkurego
+        <a href="https://i.imgur.com/KrVzZHK.jpg">![Mapa Merkurego](https://i.imgur.com/KrVzZHK.jpg)</a>
+    - type: pageGallery
       template: aside-cards
       title: Chcesz wiedzieć więcej?
-      category: ep-atlas-merkury
-      subcategory: more
+      sources:
+        - category: ep-atlas-merkury
+          subcategory: more
 
   bottom:
-    - type: category
-      category: ep-atlas-merkury
-      subcategory: habitaty
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-merkury
+          subcategory: habitaty
       title: Habitaty
       
 lead: |

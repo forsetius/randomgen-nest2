@@ -18,7 +18,7 @@ slots:
         - Rozrywka
         - [Memetyka](http://pl.wikipedia.org/wiki/Memetyka)        
         ## Główne habitaty
-        - [Elizjum](#) ([Mars]{pl/ep-atlas-mars}), 
+        - [Elizjum]{pl/ep-habitat-elizjum} ([Mars]{pl/ep-atlas-mars}), 
 ---
 Jak wskazuje sama nazwa, **Experia** działa na rynku wiadomości, mediów i rozrywki w [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze}. Wzbudza kontrowersje nie tylko publicznie wygłaszanymi poglądami pro-AI czy umieszczając [AGI](#) w swym zarządzie, ale również przez swoje kampanie marketingu hiperwiralnego i zaawansowane programowanie [XP]{pl/ep-xp}).
 

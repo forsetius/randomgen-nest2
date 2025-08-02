@@ -9,13 +9,16 @@ subcategoryName: Eclipse Phase
 
 slots:
   bottom:
-    - type: pageSet
-      items:
-        - ep-intro
-        - ep-encyklopedia
-        - ep-atlas
-    - type: category
-      category: eclipse-phase
+    - type: pageGallery
+      sources:
+        - items:
+          - ep-intro
+          - ep-encyklopedia
+          - ep-atlas
+
+    - type: pageGallery
+      sources:
+        - category: eclipse-phase
 
   aside:
     - type: static

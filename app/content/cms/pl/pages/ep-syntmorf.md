@@ -9,8 +9,9 @@ subcategoryName: Syntmorfy
 
 slots:
   bottom:
-    - type: category
-      category: ep-syntmorf
+    - type: pageGallery
+      sources:
+        - category: ep-syntmorf
 ---
 Morfy syntetyczne to powłoki w całości robotyczne. Przed [Upadkiem]{pl/ep-upadek} były najczęściej pilotowane przez [AI]{pl/ep-sztuczna-inteligencja} jednak po Upadku niedobory [biomorfów]{pl/ep-biomorf}, a także miejsca w dostosowanych do potrzeb biomorfów [habitatach]{pl/ep-habitat} spowodowały, że koniecznością stało się [przyodziewanie]{pl/ep-przyodziewanie} [info-uchodźców]{pl/ep-info-uchodzcy} w morfy mechaniczne, najczęściej andro- lub gynoidy. Są one tańsze, szybsze w produkcji, szeroko dostępne i niewymagające udogodnień środowiskowych potrzebnych biomorfom.
 

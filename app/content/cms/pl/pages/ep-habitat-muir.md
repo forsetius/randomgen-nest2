@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Muir
-excerpt: Najstarsze i najpiękniejsze miasto górnicze Luny, słynna Wielka Grota, park bambusowy.
+excerpt: Centrum ideologiczne konserwatystów ekologicznych.
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:

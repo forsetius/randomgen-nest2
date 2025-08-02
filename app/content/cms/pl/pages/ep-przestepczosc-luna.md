@@ -1,10 +1,9 @@
 ---
 template: page-default
 title: Przestępczość na Lunie
+headerImage: mid-ep-lunar-crime-head.jpg
 excerpt: Ukryte operacje, czarny rynek, kary za przemoc i sabotaż.
-category: ep-atlas-luna
-subcategory: more
-
+category: ep-przestepczosc
 lead: |
   Luna jest miejscem, gdzie prowadzenie nielegalnej lub ukrytej działalności jest jednocześnie bardzo trudne i bardzo łatwe. Tak jak w innych zamieszkanych miejscach Układu Słonecznego, prywatność i sekretność w miejskich rejonach Luny to w dużej mierze iluzja. Jednak na powierzchni, jeśli ktoś ukryje się w cieniu dużej skały, nie można go zobaczyć z orbity, a monitoring powierzchni jest ograniczony, bo urządzenia trzeba często wymieniać z powodu niszczącego działania promieniowania słonecznego. Tunele w księżycowych skałach, które nie są pełne czujników i elektroniki, należą do najbardziej dyskretnych miejsc w Układzie. Dodatkowo, dzięki niskiej prędkości ucieczki z Luny nawet niewielkie rakiety osobiste umożliwiają prywatnym osobom i małym ładunkom dostanie się na orbitę do czekających statków.
 ---

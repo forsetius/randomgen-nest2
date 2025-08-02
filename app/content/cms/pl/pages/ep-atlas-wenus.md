@@ -21,24 +21,28 @@ slots:
           - 0,907g (na powierzchni)
           - 0,892g (50km nad powierzchnią)
         - **Temperatura**: 737K (464°C)
-        
-    - type: category
+         ## Mapa Wenus
+        <a href="https://i.imgur.com/iNqp25z.jpg">![Mapa Wenus](https://i.imgur.com/iNqp25z.jpg)</a>
+    - type: pageGallery
       template: aside-cards
       title: Chcesz wiedzieć więcej?
-      category: ep-atlas-wenus
-      subcategory: more
+      sources: 
+        - category: ep-atlas-wenus
+          subcategory: more
 
   bottom:
-    - type: category
-      category: ep-atlas-wenus
-      subcategory: aerostaty
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-wenus
+          subcategory: aerostaty
       title: Aerostaty
       content: |
         Najbardziej niezwykłe habitaty Układu Słonecznego i ikoniczny widok na wenusjańskim niebie
     
-    - type: category
-      category: ep-atlas-wenus
-      subcategory: orbitale
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-wenus
+          subcategory: orbitale
       title: Stacje orbitalne
       content: |
         Orbita Wenus to miejsce spotkania pomiędzy Konstelacją Gwiazdy Zarannej a Konsorcjum Planetarnym. Obecnie wokół Wenus mieszka 350 000 przedstawicieli transludzkości. Większość stacji orbitalnych należy do Konstelacji Gwiazdy Zarannej, jednak nieco ponad 100 000 mieszkańców wenusjańskiej orbity wciąż posiada obywatelstwo Konsorcjum Planetarnego.

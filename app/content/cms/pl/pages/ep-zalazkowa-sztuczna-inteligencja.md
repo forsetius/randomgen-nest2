@@ -2,8 +2,8 @@
 template: page-default
 title: Zalążkowa sztuczna inteligencja
 subtitle: Seed AI
+headerImage: mid-ep-seedai-head.jpg
 excerpt: Sztuczna inteligencja zdolna samodoskonalić się bez ograniczeń
-headerImage: mid-ep-seed-ai-head.jpg
 category: ep-sztuczna-inteligencja
 
 ---

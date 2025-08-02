@@ -2,7 +2,7 @@
 template: page-default
 title: Info-uchodźcy
 subtitle: Infugees
-headerImage: mid-infugee-head.jpg
+headerImage: mid-ep-infugee-head.jpg
 excerpt: Wirtualni uchodźcy z Ziemi pozbawieni wszelkich rzeczy materialnych - nawet ciał
 lead: |
     W ostatniej fazie [Upadku]{pl/ep-upadek} i ewakuacji Ziemi ponad czterysta milionów uchodźców zostało załadowanych i [przetransmitowanych](#) do orbitalnych baz danych w całym Układzie Słonecznym. Zmuszeni byli opuścić Ziemię bez jakiegokolwiek dobytku — nawet bez własnych ciał. Stali się [infomorfami]{pl/ep-infomorf}, którzy nie posiadali nic prócz własnego umysłu i wspomnień — była to najbiedniejsza grupa uchodźców w historii transhumanizmu.

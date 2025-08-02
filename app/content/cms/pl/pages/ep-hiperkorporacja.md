@@ -9,8 +9,9 @@ subcategoryName: Hiperkorpy
 
 slots:
   bottom:
-    - type: category
-      category: ep-hiperkorporacja
+    - type: pageGallery
+      sources:
+        - category: ep-hiperkorporacja
 lead: |
   Dla niektórych ekonomistów [Upadek]{pl/ep-upadek} oraz liczne wcześniejsze kryzysy na [Ziemi]{pl/ep-atlas-ziemia} były przykładem masowego wymierania – końcem epoki wielkich, ponadnarodowych megakorporacyjnych dinozaurów: finansowych gigantów opierających swoje monolityczne struktury na przestarzałych modelach gospodarczych i technologiach przemysłowych. Hiperkorpy są ich ewolucyjnymi następcami: zwinniejsze, szybsze, bardziej drapieżne i elastyczne, chętnie przyjmujące nowe technologie i nigdy niewahające się porzucić starych, jeśli nowe dają przewagę. To właśnie hiperkorpy napędzały ekspansję transludzkości w kosmos i to one wciąż przesuwają granice technologii, prowadząc transludzkość ku nowym horyzontom – zawsze z zyskiem jako nadrzędnym celem.
 ---

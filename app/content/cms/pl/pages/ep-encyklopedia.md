@@ -12,6 +12,7 @@ lead: |
 
 slots:
   bottom:
-    - type: category
-      category: ep-encyklopedia
+    - type: pageGallery
+      sources:
+        - category: ep-encyklopedia
 ---

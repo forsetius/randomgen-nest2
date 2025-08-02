@@ -10,7 +10,8 @@ lead: |
 
 slots:
   bottom:
-    - type: tag
-      tag: znowu-baba-mnie-wywlokła
+    - type: pageGallery
+      sources:
+        - tag: znowu-baba-mnie-wywlokła
 ---
 

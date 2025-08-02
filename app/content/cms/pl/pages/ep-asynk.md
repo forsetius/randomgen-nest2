@@ -2,6 +2,7 @@
 template: page-default
 title: Asynk
 subtitle: Async
+headerImage: mid-ep-asynk-head.jpg
 excerpt: Nosiciele szczepu Wattsa-MacLeoda i psionicznych zdolności, których istnienie ukrywa się przed światem.
 category: ep-titans
 lead: |

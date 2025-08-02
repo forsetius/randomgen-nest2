@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Feynman
+headerImage: mid-ep-feynman-head.jpg
 excerpt: Ściśle strzeżona stacja Omnicor, oskarżenia o badania nad nanoplagami TITAN-ów.
 category: ep-atlas-luna
 subcategory: powierzchnia

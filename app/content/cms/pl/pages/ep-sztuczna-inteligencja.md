@@ -3,13 +3,13 @@ template: page-full-width
 title: Sztuczna inteligencja
 excerpt: Różne rodzaje sztucznych inteligencji przyszłości
 headerImage: mid-ep-ai-head.jpg
-category: ep-encyklopedia
+category: ep-technologia
 subcategoryName: Sztuczna inteligencja
-
 slots:
   bottom:
-    - type: category
-      category: ep-sztuczna-inteligencja
+    - type: pageGallery
+      sources:
+        - category: ep-sztuczna-inteligencja
 ---
 **Sztuczne inteligencje** wyewoluowały z programów pomocniczych tworzonych w celu usprawnienia transludzkich możliwości poznawczych.
 

@@ -8,8 +8,9 @@ subcategoryName: Ego
 
 slots:
   bottom:
-    - type: category
-      category: ep-ego
+    - type: pageGallery
+      sources:
+        - category: ep-ego
 lead: |
   Ego stanowi podstawowy konstrukt tożsamości, obejmujący świadomość, osobowość, wspomnienia oraz psychologiczny rdzeń jednostki. Jest to niecielesny, cyfrowy zapis „jaźni” — tego, kim dana osoba jest — niezależny od jakiejkolwiek konkretnej formy biologicznej lub syntetycznej. 
 ---

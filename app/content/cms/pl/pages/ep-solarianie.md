@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Solarianie
+headerImage: mid-ep-venus-life-forms-head.jpg
 excerpt: Transludzie w morfach solarnych zamieszkujący koronę Słońca
 category: ep-stronnictwa
 

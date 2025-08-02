@@ -1,11 +1,9 @@
 ---
 template: page-full-width
 title: Uplift
-subtitle: Uplift
+headerImage: mid-ep-uplift-head.jpg
 excerpt: Podnoszenie zwierząt do rozumności ludzkiego poziomu
-headerImage: mid-uplift-head.jpg
 category: ep-realia
-
 
 ---
 **Uplifting** to proces usprawniania gatunku zwierząt do rozumności ludzkiej. Osobniki wzorcowe dla pierwotnego gatunku powstałe w toku miliardów lat ewolucji są sztucznie przekształcane tak, by ciągu zaledwie kilku pokoleń mówiły, używały narzędzi, a przede wszystkim myślały podobnie jak Homo Sapiens sapiens.

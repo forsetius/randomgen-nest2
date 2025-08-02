@@ -19,24 +19,30 @@ slots:
         - **Okres obrotu**: 27d 7h 43m (synchroniczny)
         - **Przyspieszenie grawitacyjne**: 0,165g (na równiku)
         - **Temperatura**: 40K (-233°C) - 396K (123°C) (średnio 250K, -23°C)
-        
-    - type: category
+        ## Mapa Luny
+        <a href="https://i.imgur.com/GFvzM2v.jpg">![Mapa Luny](https://i.imgur.com/GFvzM2v.jpg)</a>
+    - type: pageGallery
       template: aside-cards
       title: Chcesz wiedzieć więcej?
-      category: ep-atlas-luna
-      subcategory: more
+      sources:
+        - category: ep-atlas-luna
+          subcategory: more
+        - items:
+            - ep-przestepczosc-luna
 
   bottom:
-    - type: category
-      category: ep-atlas-luna
-      subcategory: powierzchnia
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-luna
+          subcategory: powierzchnia
       title: Osadnictwo
       content: |
         Na Lunie istnieje kilkaset osiedli a połowa mieszkańców żyje w trzech największych: Erato, Nectar i Shackle, a kolejną ćwiartkę populacji skupiają trzy następne. Pozostałe to niezależne miasta-państwa, osiedla hiperkorpów, prywatne stacje badawcze oraz enklawy kultów i ultrabogatych; największe z nich mają około 100 tys. mieszkańców, najmniejsze poniżej tysiąca. Większość leży wzdłuż pierścienia skyhooka okalającego Lunę, a te poza nim są bardzo odizolowane. Wiele z tych osiedli należy do hiperkorpów i służy badaniom lub produkcji, a wśród Lunarnych krążą uporczywe plotki o prowadzeniu tam nielegalnych eksperymentów mimo surowych praw – na przykład o próbach stworzenia „mózgu Jowisza” w skorupie Księżyca.
         
-    - type: category
-      category: ep-atlas-luna
-      subcategory: orbitale
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-luna
+          subcategory: orbitale
       title: Stacje orbitalne
       content: |
         Luna posiada typowe satelity monitoringowe i orbitalne stacje badawcze oraz produkcyjne, jednak surowe prawo ogranicza tu liczbę placówek prowadzących zaawansowane badania, a większość z nich należy do hiperkorpów i pozostaje niejawna. Na orbicie Luny mieszka 3,4 miliona osób, głównie na dużej [Stacji Selene]{pl/ep-habitat-selene} przy szczycie skyhooka, a stacje podzielone są równo między Konsorcjum Planetarne i Sojusz Wokółziemski.

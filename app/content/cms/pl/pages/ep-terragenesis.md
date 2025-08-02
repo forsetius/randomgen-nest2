@@ -16,7 +16,7 @@ slots:
         - Dane środowiskowe
         ## Główne habitaty
         - [Caldwell]{pl/ep-habitat-caldwell} ([Wulkanoidy]{pl/ep-atlas-wulkanoidy}), 
-        - Asioka ([Mars]{pl/ep-atlas-mars})
+        - [Aśoka]{pl/ep-habitat-asoka} ([Mars]{pl/ep-atlas-mars})
         - [Elegua]{pl/ep-habitat-elegua} (orbita [Ziemi]{pl/ep-atlas-ziemia})
 ---
 **Terragenesis** zbudowana została z resztek kilku przed-Upadkowych południowo-afrykańskich i południowowschodnio-azjatyckich korporacji zaangażowanych w projekty geoinżynieryjne obliczone na uśmierzenie kryzysów ekologicznych na [Ziemi]{pl/ep-atlas-ziemia}. Po [Upadku]{pl/ep-upadek} Terragenesis wykorzystuje ich dziedzictwo w tworzeniu biosfer i ekosystemów na drodze agresywnego, przemysłowego terraformowania.

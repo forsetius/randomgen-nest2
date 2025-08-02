@@ -16,9 +16,9 @@ slots:
         - Hedonizm
         - Nieśmiertelność
         ## Główne habitaty
-        - Valles-New Shanghai ([Mars]{pl/ep-atlas-mars})
-        - Elysium ([Mars]{pl/ep-atlas-mars})
-        - Noctis-Quinjiao ([Mars]{pl/ep-atlas-mars})
+        - [Valles-Nowy Szanghaj]{pl/ep-habitat-valles-nowy-szanghaj} ([Mars]{pl/ep-atlas-mars})
+        - [Elizjum]{pl/ep-habitat-elizjum} ([Mars]{pl/ep-atlas-mars})
+        - [Noctis-Qianjiao]{pl/ep-habitat-noctis-qianjiao} ([Mars]{pl/ep-atlas-mars})
 ---
 [Kopiowanie umysłu]{pl/ep-ego} i [przyodziewanie]{pl/ep-przyodziewanie} pozwoliło wreszcie uzyskać praktyczną nieśmiertelność - tym, których na to stać. To spowodowało zmianę wśród elit [Wewnętrza]{pl/ep-wewnetrze} - czy to prezesów [hiperkorpów]{pl/ep-hiperkorporacja}, członków starych dynastii czy innych oligarchów. Najbardziej wpływowi i bogaci nie musieli już obawiać się śmierci i mogli planować naprawdę dalekosiężnie. 
 

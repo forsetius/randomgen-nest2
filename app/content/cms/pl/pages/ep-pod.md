@@ -9,7 +9,8 @@ subcategoryName: Pody
 
 slots:
   bottom:
-    - type: category
-      category: ep-pod
+    - type: pageGallery
+      sources:
+        - category: ep-pod
 ---
 **Pod** to rodzaj zaawansowanego biorobota, nie dorównującego jednak złożonością i spójnością [bio-]{pl/ep-biomorf} czy [syntmorfom]{pl/ep-syntmorf}.

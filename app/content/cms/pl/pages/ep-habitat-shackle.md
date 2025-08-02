@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Shackle
+headerImage: mid-ep-shackle-head.jpg
 excerpt: Księżycowe miasto lodu i wody, centrum kultury indyjskiej, rezerwy strategiczne.
 category: ep-atlas-luna
 subcategory: powierzchnia

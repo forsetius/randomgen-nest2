@@ -8,7 +8,8 @@ lead: |
   Sometimes my GF or I turn on the wanderlust. We wander through forests, up hills and sometimes discover a cool pub.
 slots:
   bottom:
-    - type: tag
-      tag: outdoors
+    - type: pageGallery
+      sources:
+        - tag: outdoors
 ---
 

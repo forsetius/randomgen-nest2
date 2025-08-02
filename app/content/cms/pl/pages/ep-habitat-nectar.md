@@ -1,7 +1,8 @@
 ---
 template: page-default
 title: Nectar
-excerpt: Księżycowe miasto lodu i wody, centrum kultury indyjskiej, rezerwy strategiczne.
+headerImage: mid-lunar-city-head.jpg
+excerpt: Największe i najbardziej kosmopolityczne miasto Luny, nowoczesna architektura, napięcia społeczne.
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:

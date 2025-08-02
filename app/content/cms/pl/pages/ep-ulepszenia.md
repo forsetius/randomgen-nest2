@@ -3,13 +3,14 @@ template: page-full-width
 title: Ulepszenia
 excerpt: Bio-, cyber- i nanoulepszenia dla morfów
 headerImage: mid-ep-augmentations-head.jpg
-category: ep-encyklopedia
+category: ep-technologia
 subcategoryName: Ulepszenia
 
 slots:
   bottom:
-    - type: category
-      category: ep-ulepszenia
+    - type: pageGallery
+      sources:
+        - category: ep-ulepszenia
 ---
 ## Biomody
 **Biomodyfikacje** mogą być pozyskane albo jako modyfikacja genetyczna na etapie projektowania i hodowli [morfa]{pl/ep-morf} albo późniejszej ulepszenia istniejącego morfa. W tym ostatnim przypadku modyfikacje wprowadza się albo za pomocą nanomaszyn przekształcających tkanki morfa albo przez hodowlę in vitro potrzebnego organu i wszczepienie go.

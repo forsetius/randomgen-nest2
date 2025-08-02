@@ -12,7 +12,7 @@ lead: |
 ## Argyre Planitia
 > **[Info](https://pl.wikipedia.org/wiki/Argyre_Planitia)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/371)**
 
-Argyre Planitia to wielka niecka uderzeniowa, w którą włożono mnóstwo pracy terraformacyjnej. Jest tak ogromna, że mieszczą się w niej inne kratery — jeden z nich, [Galle](https://planetarynames.wr.usgs.gov/Feature/2080), z orbity wygląda jak wielka uśmiechnięta buźka. Teoretycznie Argyre powinno być rozwinięte na równi z Hellas, ale lokalna polityka mocno spowolniła wzrost populacji — głównie przez fatalną obsługę kolei magnetycznej przez [Nowe Dazhai](#).
+Argyre Planitia to wielka niecka uderzeniowa, w którą włożono mnóstwo pracy terraformacyjnej. Jest tak ogromna, że mieszczą się w niej inne kratery — jeden z nich, [Galle](https://planetarynames.wr.usgs.gov/Feature/2080), z orbity wygląda jak wielka uśmiechnięta buźka. Teoretycznie Argyre powinno być rozwinięte na równi z Hellas, ale lokalna polityka mocno spowolniła wzrost populacji — głównie przez fatalną obsługę kolei magnetycznej przez [Nowe Dazhai]{pl/ep-habitat-nowe-dazhai}.
 
 ## Hellas Planitia
 > **[Info](https://pl.wikipedia.org/wiki/Hellas_Planitia)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/2432)**
@@ -30,7 +30,7 @@ Ten głęboki system kanionów na Marsie skrywa jeden z najcenniejszych skarbów
 
 Najbardziej rozpoznawalnym punktem Marsa jest potężny wulkan tarczowy Olympus Mons, na którego zboczach zbudowano pierwszą — i do dziś główną — marsjańską windę kosmiczną. Powstały w sposób podobny do hawajskich wysp na Ziemi, obecnie wygasły, Olympus Mons jest jednym z najwyższych górskich masywów w Układzie Słonecznym — wznosi się na wysokość 27 kilometrów.
 
-[Olimp]{pl/ep-habitat-olimp}, osiedle znajdujące się w kalderze wulkanu u podstawy windy, było niegdyś głównym miastem Marsa, ale jego popularność jako miejsca do życia zmalała, gdy terraformowanie uczyniło inne regiony bardziej atrakcyjnymi. Kolej magnetyczna z Olympus do [Noctis](#) pokonuje trasę w nieco ponad trzy godziny; loty powietrzne są jeszcze szybsze. Mimo zmniejszonego znaczenia samego miasta, winda kosmiczna nadal jest intensywnie wykorzystywana.
+[Olimp]{pl/ep-habitat-olimp}, osiedle znajdujące się w kalderze wulkanu u podstawy windy, było niegdyś głównym miastem Marsa, ale jego popularność jako miejsca do życia zmalała, gdy terraformowanie uczyniło inne regiony bardziej atrakcyjnymi. Kolej magnetyczna z Olympus do [Noctis]{pl/ep-habitat-noctis-qianjiao} pokonuje trasę w nieco ponad trzy godziny; loty powietrzne są jeszcze szybsze. Mimo zmniejszonego znaczenia samego miasta, winda kosmiczna nadal jest intensywnie wykorzystywana.
 
 ## Południowe wyżyny
 
@@ -45,9 +45,9 @@ Północ to twarda ziemia. Wysokość jest niższa, ale to nie to samo co na po�
 
 Większość wysiłków terraformacyjnych transludzkości koncentruje się wokół wijącego się systemu kanionów Valles Marineris, który rozciąga się na ponad 4 000 kilometrów ze wschodu na zachód wzdłuż równika Marsa. W tych stosunkowo ciepłych nizinach coraz częściej występuje płynna woda, a krajobraz zazielenia się dzięki odpornym gatunkom roślin, takim jak perz, mlecze i ogromne daglezje (które według botaników w niskiej marsjańskiej grawitacji mogą osiągać nawet 180 metrów wysokości). 75% populacji transludzkiej Marsa mieszka w tym regionie, co czyni go najgęściej zaludnionym obszarem transludzkości w całym Układzie Słonecznym.
 
-## Strefa Kwarantanny TITAN-ów
+## Strefa Kwarantanny TITAN-ów (TQZ)
 
-Strefa obejmuje rozległy obszar rozciągający się od równin [Amazonis Planitia](https://en.wikipedia.org/wiki/Amazonis_Planitia) (między rejonami wulkanicznymi [Tharsis](https://pl.wikipedia.org/wiki/Tharsis) i [Elysium](https://pl.wikipedia.org/wiki/Elysium_(region_na_Marsie))) aż na południowy wschód do [Arsia Mons](https://pl.wikipedia.org/wiki/Arsia_Mons) (na zachód od Noctis). Wiadomo, że strefa ta roi się od pozostałości po TITAN-ach: warbotów, nanorojów i innych niebezpiecznych bytów. W regionie tym znajdują się ruiny kilku zniszczonych habitatów, w tym dawnej islamskiej twierdzy Qurain.
+[Strefa]{pl/ep-habitat-tqz} obejmuje rozległy obszar rozciągający się od równin [Amazonis Planitia](https://en.wikipedia.org/wiki/Amazonis_Planitia) (między rejonami wulkanicznymi [Tharsis](https://pl.wikipedia.org/wiki/Tharsis) i [Elysium](https://pl.wikipedia.org/wiki/Elysium_(region_na_Marsie))) aż na południowy wschód do [Arsia Mons](https://pl.wikipedia.org/wiki/Arsia_Mons) (na zachód od Noctis). Wiadomo, że strefa ta roi się od pozostałości po TITAN-ach: warbotów, nanorojów i innych niebezpiecznych bytów. W regionie tym znajdują się ruiny kilku zniszczonych habitatów, w tym dawnej islamskiej twierdzy Qurain.
 
 Mało kto odważa się zapuszczać w te rejony, choć krążą plotki, że przemytnicy Fremenów wykorzystują jaskinie Arsia Mons i nawet próbują odzyskiwać technologię TITAN-ów, mimo ogromnego ryzyka. Drony Konsorcjum Planetarnego nieustannie patrolują granice strefy, choć z nieznanych przyczyn pozostałości po TITAN-ach rzadko przekraczają jej granice.
 

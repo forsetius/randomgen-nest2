@@ -2,8 +2,9 @@
 template: page-default
 title: Wirtualna rzeczywistość
 subtitle: Virtual reality
+headerImage: mid-ep-vr-head.jpg
 excerpt: Symulacyjne imperia, smoki i uchodźcy grający bez ciał.
-category: ep-encyklopedia
+category: ep-technologia
 lead: |
   **Wirtualne rzeczywistości** (VR) to zaawansowane i głęboko immersyjne symulowane środowiska w których główne postacie odgrywane są przez transludzi, a postacie niezależne przez [AI]{pl/ep-sztuczna-inteligencja}. 
 ---

@@ -14,7 +14,7 @@ tags:
   - TODO-assets
 blocks:
   celestiaPics:
-    type: gallery
+    type: mediaGallery
     items: 
       - src: celestia-55-Cancri-e-Janssen.jpg
         title: 55 Cnc e - Janssen, pierwsza planeta w układzie Kopernika

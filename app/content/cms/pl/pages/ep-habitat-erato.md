@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Erato
+headerImage: mid-ep-luna-green-head.jpg
 excerpt: Najstarsze i najpiękniejsze miasto górnicze Luny, słynna Wielka Grota, park bambusowy.
 category: ep-atlas-luna
 subcategory: powierzchnia

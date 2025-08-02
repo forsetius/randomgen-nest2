@@ -7,9 +7,10 @@ category: ep-habitat
 subcategory: more
 slots:
   bottom:
-    - type: category
-      category: ep-habitat
-      subcategory: kosmiczne
+    - type: pageGallery
+      sources:
+        - category: ep-habitat
+          subcategory: kosmiczne
 lead: |
   W pierwszym okresie po [Upadku]{pl/ep-upadek} powstało kilka tysięcy [habitatów torusowych]{pl/ep-torus}, [kolonii klastrowych]{pl/ep-kolonia-klastrowa} i [uli]{pl/ep-ul} rozproszonych po całym Układzie Słonecznym. 
 ---

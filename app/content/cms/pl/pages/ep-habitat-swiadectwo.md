@@ -2,8 +2,7 @@
 template: page-default
 title: Świadectwo
 subtitle: Remembrance
-headerImage: mid-ep-hexagon-head.jpg
-excerpt: Wielka forteca wojskowa Direct Action w punkcie L5 Ziemia-Luna, centrum technologii bojowej.
+excerpt: Przepełniona uchodźcami stolica Sojuszu Wokółziemskiego.
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:

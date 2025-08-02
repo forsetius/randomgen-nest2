@@ -3,7 +3,7 @@ template: page-default
 title: Niedoścignieni
 subtitle: Ultimates
 excerpt: Transludzie uważający się za nadludzi, jednostki alfa i topowych drapieżników
-headerImage: mid-ultimates-head.jpg
+headerImage: mid-ep-ultimates-head.jpg
 category: ep-stronnictwa
 
 slots:

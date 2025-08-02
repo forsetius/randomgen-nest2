@@ -2,8 +2,9 @@
 template: page-default
 title: Odtwarzanie doświadczeń
 subtitle: Experience playback
+headerImage: mid-ep-xp-head.jpg
 excerpt: Od przygód sensorycznych po obsesję – życie przez cudze zmysły.
-category: ep-encyklopedia
+category: ep-technologia
 lead: |
   **XP** (skrót od _Experience Playback_) to specjalistyczna forma mediów, składająca się z nagrań wrażeń sensorycznych jednej osoby. 
 ---

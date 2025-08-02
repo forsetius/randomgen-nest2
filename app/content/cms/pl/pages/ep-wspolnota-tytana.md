@@ -3,7 +3,7 @@ template: page-default
 title: Wspólnota Tytana
 subtitle: Titanian Commonwealth
 excerpt: Cyberdemokracja typu skandynawskiego na Tytanie
-headerImage: mid-titanian-commonwealth-head.jpg
+headerImage: mid-ep-wspolnota-tytana-head.jpg
 category: ep-ustroje
 
 slots:

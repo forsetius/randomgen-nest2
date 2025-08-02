@@ -9,8 +9,9 @@ subcategoryName: Biomorfy
 
 slots:
   bottom:
-    - type: category
-      category: ep-biomorf
+    - type: pageGallery
+      sources:
+        - category: ep-biomorf
 ---
 **Biomorfy** to ciała biologiczne, w które może [przyodziać]{pl/ep-przyodziewanie} się [Ego]{pl/ep-ego}. Niemal wszystkie są owocem zaawansowanej inżynierii genetycznej, dzięki czemu są zdrowsze i sprawniejsze niż niepoprawieni ludzie. Jednak na naprawianiu błędów natury się nie kończy - większość modeli ma różnorakie [Ulepszenia]{pl/ep-ulepszenia}, które w większości umożliwiają im przetrwanie w różnorodnych środowiskach, w jakich przyszło ludziom żyć po [Upadku]{pl/ep-upadek}.
 

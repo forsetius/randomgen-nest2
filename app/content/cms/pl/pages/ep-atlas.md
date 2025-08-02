@@ -12,8 +12,9 @@ lead: |
 
 slots:
   bottom:
-    - type: category
-      category: ep-atlas
+    - type: pageGallery
+      sources:
+        - category: ep-atlas
 ---
 Transludzkie [habitaty]{pl/ep-habitat} istnieją nawet wokół [Słońca]{pl/ep-atlas-slonce} i na spalonych nim [Wulkanoidach]{pl/ep-atlas-wulkanoidy}. Z drugiej strony, pojedyncze bazy dryfują daleko w Obłoku Oorta. Z trzeciej strony, na niektórych z wielu odkrytych lokacji pozasłonecznych, które dostępne są przez Wrota Pandoriańskie.
 

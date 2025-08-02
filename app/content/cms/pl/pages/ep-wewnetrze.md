@@ -1,11 +1,16 @@
 ---
-template: page-full-width
+template: page-default
 title: Wewnętrze
 excerpt: Wewnętrzny Układ Słoneczny - od Słońca do pasa asteroidów
 headerImage: mid-sunward-head.jpg
 category: ep-intro
 sort: 4
-
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Mapa Układu Wewnętrznego
+        <a href="https://i.imgur.com/nCoYJo5.jpg">![Mapa Wewnętrznego Układu](https://i.imgur.com/nCoYJo5.jpg)</a>
 ---
 Choć narody już nie istnieją, zostały zastąpione przez nowe byty polityczno-ekonomiczne, które tak czy inaczej były na najlepszej drodze do dominacji, nawet jeśli [Upadek]{pl/ep-upadek} by nie nastąpił - **[hiperkorporacje]{pl/ep-hiperkorporacja}**. Podczas gdy jest wiele niezależnych [habitatów]{pl/ep-habitat} i osad w Wewnętrznym Układzie Słonecznym, jest on silnie zdominowany przez hiperkorpy. Aby zredukować ilość konfliktów między sobą i wspierać wysiłki mające zapewnić przetrwanie transludzkości, niektóre hiperkorpy założyły sojusz znany jako [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}. Sojusz ten rządzi większością [Marsa]{pl/ep-atlas-mars} i zarządza trwającym projektem terraformowania Marsa. Konsorcjum kontroluje też wiele innych habitatów, w tym sporo baz [lunarnych]{pl/ep-atlas-luna} - zwykle tych, które są w jakiś sposób zaangażowane w monumentalne wysiłki na rzecz terraformowania Marsa.
 

@@ -6,21 +6,23 @@ langs:
 headerImage: index-head.jpg
 slots:
   aside:
-    - type: category
+    - type: pageGallery
       template: aside-cards
       title: Latest posts
-      category: blog
+      sources:
+        - category: blog
       count: 3
       sortDir: desc
   bottom:
-    - type: pageSet
+    - type: pageGallery
       count: 4
       columns: 2
-      items:
-        - prog-skills
-        - prog-experience
-        - 2022-01-03_technobabble-generator
-        - eclipse-phase
+      sources:
+        - items:
+          - prog-skills
+          - prog-experience
+          - 2022-01-03_technobabble-generator
+          - eclipse-phase
 ---
 **My name is Marcin and I don't like to describe myself.**
 

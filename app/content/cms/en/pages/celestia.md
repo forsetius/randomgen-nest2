@@ -13,7 +13,7 @@ tags:
   - astro
 blocks:
   celestiaPics:
-    type: gallery
+    type: mediaGallery
     items: 
       - src: celestia-55-Cancri-e-Janssen.jpg
         title: 55 Cnc e - Janssen, the first planet in the Copernicus system

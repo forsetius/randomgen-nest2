@@ -17,16 +17,18 @@ slots:
         - **GEO**: Orbita geostacjonarna (Geosynchronous Orbit). 35 786 km nad poziomem morza i blisko równika, odpowiadająca okresowi obrotu Ziemi względem gwiazd. Obiekty na orbicie geostacjonarnej (bez nachylenia) wydają się z powierzchni pozostawać w stałym miejscu na niebie.
         - **HEO**: Wysoka orbita okołoziemska (High Earth Orbit). Powyżej 35 786 km nad poziomem morza.
         
-    - type: category
+    - type: pageGallery
       template: aside-cards
       title: Chcesz wiedzieć więcej?
-      category: ep-atlas-ziemia-orbita
-      subcategory: more
+      sources:
+        - category: ep-atlas-ziemia-orbita
+          subcategory: more
 
   bottom:
-    - type: category
-      category: ep-atlas-ziemia-orbita
-      subcategory: habitaty
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-ziemia-orbita
+          subcategory: habitaty
       title: Habitaty
       content: |
         Wokół Ziemi krąży nawet pięćset habitatów o bardzo zróżnicowanych rozmiarach i przeznaczeniu. Większość to ciasne, metalowe [puszki]{pl/ep-puszka} mieszczące najwyżej kilkanaście osób, ale istnieją też ogromne struktury, takie jak [bańki Cole’a]{pl/ep-banka-colea} czy [cylindry O’Neilla]{pl/ep-cylinder-oneilla}, zaprojektowane dla setek tysięcy mieszkańców. Między nimi znajdują się stacje o różnej wielkości, pełniące funkcje laboratoriów, fabryk, portów kosmicznych, hoteli, stacji handlowych oraz instalacji obronnych i komunikacyjnych.

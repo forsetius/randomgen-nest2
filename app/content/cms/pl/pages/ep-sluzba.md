@@ -1,13 +1,15 @@
 ---
 template: page-full-width
 title: Kontrakt służebny
+headerImage: mid-ep-indenture-head.jpg
 excerpt: Przymusowa służba za morfa — nieuczciwe kontrakty, ciężka praca i śledzenie.
 category: ep-realia
 subcategoryName: Służba
 slots:
   bottom:
-    - type: category
-      category: ep-sluzba
+    - type: pageGallery
+      sources:
+        - category: ep-sluzba
 lead: |
   Osoby, które znalazły się w sytuacji tak dramatycznej, że nie stać ich na nowego [morfa]{pl/ep-morf}, mogą zawrzeć umowę na przymusową służbę — „umowę”, która rzadko bywa korzystna dla nowego sługi. 
 ---

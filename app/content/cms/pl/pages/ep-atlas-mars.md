@@ -19,18 +19,32 @@ slots:
         - **Okres obrotu**: 24h 37m
         - **Przyspieszenie grawitacyjne**: 0,379g
         - **Temperatura**: 183K (-90°C) - 298K (25°C)
+        ## Mapa
+        <a href="https://i.imgur.com/YRtt469.jpg">![Mapa Marsa](https://i.imgur.com/YRtt469.jpg)</a>
         
-    - type: category
+    - type: pageGallery
       template: aside-cards
       title: Chcesz wiedzieć więcej?
-      category: ep-atlas-mars
-      subcategory: more
-
+      sources:
+        - category: ep-atlas-mars
+          subcategory: more
+        - items:
+            - ep-przestepczosc-mars
+# terraforming
   bottom:
-    - type: category
-      category: ep-atlas-mars
-      subcategory: habitaty
-      title: Habitaty
+    - type: pageGallery
+      title: Stronnictwa polityczne i ruchy społeczne
+      sources:
+        - items:
+          - ep-konsorcjum-planetarne
+          - ep-liga-tharsis
+          - ep-fremeni
+          # - ep-nomadzi-marsjanscy
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-mars
+          subcategory: habitaty
+      title: Habitaty planetarne
       
 lead: |
   [Ziemia]{pl/ep-atlas-ziemia} była kolebką cywilizacji transludzkiej, ale Mars, z populacją 200 milionów, jest dziś jej sercem. Gdy ludzkość rozpoczęła swoją diasporę w przestrzeń kosmiczną, [Luna]{pl/ep-atlas-luna} była pierwszym przystankiem. Mimo że Luna ma dziś pokaźną populację, to właśnie Mars był pierwszym światem, na którym ludzie mogli przetrwać w pełni opierając się na lokalnych zasobach. 

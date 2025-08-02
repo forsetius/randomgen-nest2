@@ -22,7 +22,8 @@ slots:
         - MySQL, PostgreSQL + PostGIS, MSSQL
         - Skrypty shellowe, Git, Docker
   bottom:
-    - type: category
-      category: prog-doswiadczenia
+    - type: pageGallery
+      sources:
+        - category: prog-doswiadczenia
       title: Wybrane projekty
 ---

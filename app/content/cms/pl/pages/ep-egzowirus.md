@@ -2,6 +2,7 @@
 template: page-default
 title: Egzowirus
 subtitle: Exsurgent virus
+headerImage: mid-ep-egzowirus-head.jpg
 excerpt: Broń informacyjna TITAN-ów, infekująca ciała, maszyny i umysły.
 category: ep-titans
 lead: |

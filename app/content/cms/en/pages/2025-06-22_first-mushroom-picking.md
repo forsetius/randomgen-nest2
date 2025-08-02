@@ -12,7 +12,7 @@ tags:
   - outdoors
 blocks:
   okolicznosciPrzyrody:
-    type: gallery
+    type: mediaGallery
     items:
       - src: 2025-06-22_las.jpg
       - src: 2025-06-22_jagody.jpg
