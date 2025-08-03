@@ -1,9 +1,16 @@
 ---
-template: page-full-width
+template: page-default
 title: randomgen
+headerImage: mid-randomgen.jpg
 langs:
   en: randomgen
 excerpt: Generatory do RPG
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Linki
+        - [Repozytorium projektu](https://github.com/forsetius/randomgen-nest2)
 blocks:
   generators:
     type: pageGallery
@@ -15,7 +22,6 @@ lead: |
 
   <block id="generators" />
 ---
-
 ## Moduły bazowe
 
 Jednak generatory to oczywiście nie wszystko. Oprócz nich, RandomGen zawiera też bazowe moduły takie jak:

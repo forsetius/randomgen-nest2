@@ -1,9 +1,16 @@
 ---
-template: page-full-width
+template: page-default
 title: randomgen
+headerImage: mid-randomgen.jpg
 langs:
   pl: randomgen
 excerpt: A Nest.js framework used for RPG generators and more
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Links
+        - [Project repository](https://github.com/forsetius/randomgen-nest2)
 blocks:
   generators:
     type: pageGallery

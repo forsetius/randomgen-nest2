@@ -28,7 +28,7 @@ slots:
         Only when integrating this generator into some application or tool of yours do I ask for attribution and reporting it to me (in order to stroke my ego and boost my motivation for further work)
   bottom:
     - type: apiCall
-      template: partial-technobabble
+      template: form-technobabble
       url: /api/1.0/startrek/technobabble?lang=en
 ---
 And here comes the **Technobabble Generator**. It creates a random, 5-word phrase that means nothing, but sounds very clever and technical. For example:

@@ -47,7 +47,7 @@
       {% endif %}
     </div>
   </nav>
-  {% block header %} {% include "partial_header.njs" %} {% endblock %}
+  {% block header %} {% include "partial-header.njs" %} {% endblock %}
   <div id="subHeader">
     {% block subHeader %}
       <slot id="preSubheader" />
@@ -83,7 +83,7 @@
   </div>
 </main>
 
-{% block footer %} {% include "partial_footer.njs" %} {% endblock %}
+{% block footer %} {% include "partial-footer.njs" %} {% endblock %}
 
 <!-- compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>

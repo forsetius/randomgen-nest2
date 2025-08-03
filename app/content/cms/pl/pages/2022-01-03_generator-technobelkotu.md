@@ -28,7 +28,7 @@ slots:
         Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
   bottom:
     - type: apiCall
-      template: partial-technobabble
+      template: form-technobabble
       url: /api/1.0/startrek/technobabble?lang=pl
 ---
 I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:

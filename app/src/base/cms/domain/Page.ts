@@ -96,13 +96,6 @@ export class Page {
     };
   }
 
-  public renderBasicData(template: string): string {
-    return this.templatingService.render(
-      template,
-      this.data as unknown as Record<string, unknown>,
-    );
-  }
-
   public async render(library: Library): Promise<RenderedContent[]> {
     const renderedContents: RenderedContent[] = [];
     const headerImage = await this.defaultImage(
@@ -121,28 +114,26 @@ export class Page {
       brand: this.meta.brand,
     };
 
-    this.meta.fragmentTemplates.forEach((template) => {
+    [
+      { template: this.template, seoNaming: true },
+      ...this.meta.fragmentTemplates.map((template) => ({
+        template,
+        seoNaming: false,
+      })),
+    ].forEach(({ template, seoNaming }) => {
+      let content = this.templatingService.render(
+        template,
+        data as unknown as Record<string, unknown>,
+      );
+
+      content = this.insertMenus(content, library);
+      content = this.fillSlots(content, library);
+      content = this.insertBlocks(content, library);
+
       renderedContents.push({
-        filepath: `${template}_${this.slug}.html`,
-        content: this.templatingService.render(
-          template,
-          data as unknown as Record<string, unknown>,
-        ),
+        filepath: seoNaming ? this.filename : `${template}_${this.slug}.html`,
+        content: this.minifyHTML(content),
       });
-    });
-
-    let pageContent = this.templatingService.render(
-      this.template,
-      data as unknown as Record<string, unknown>,
-    );
-
-    pageContent = this.insertMenus(pageContent, library);
-    pageContent = this.fillSlots(pageContent, library);
-    pageContent = this.insertBlocks(pageContent, library);
-    pageContent = this.minifyHTML(pageContent);
-    renderedContents.push({
-      filepath: this.filename,
-      content: pageContent,
     });
 
     return renderedContents;
