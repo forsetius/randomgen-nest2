@@ -1,31 +1,51 @@
+import stopwatch from '@shared/util/stopwatch';
+import { Settings as LuxonSettings } from 'luxon';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { ApiDocService } from './base/apidoc/ApiDocService';
 import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
-import { SecurityService } from './base/security/SecurityService';
+import { SecurityService } from './base/security/services/SecurityService';
 import { Env } from '@shared/types/Env';
+import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
+
+stopwatch.record('after imports');
 
 async function bootstrap(): Promise<void> {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  const configService = app.get(AppConfigService);
+  LuxonSettings.throwOnInvalid = true;
 
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  stopwatch.record('app created');
+
+  const configService = app.get(AppConfigService);
   app.enableVersioning({ type: VersioningType.URI, prefix: false });
   app.enableShutdownHooks();
   app.get(SecurityService).setup(app);
-  app.get(ApiDocService).setup(app);
 
+  app.useGlobalFilters(new NotFoundFilter());
   app.useGlobalPipes(
     new ValidationPipe({
       disableErrorMessages: configService.getInferred('app.env') === Env.PROD,
       transform: true,
       whitelist: true,
+      forbidNonWhitelisted: true,
+      errorHttpStatusCode: 422,
     }),
   );
 
-  await app.init();
-  await app.listen(configService.getInferred('app.port'));
+  try {
+    await app.init();
+    stopwatch.record('app initialized');
+
+    await app.listen(configService.getInferred('app.port'));
+  } catch (error) {
+    console.error('Error while starting the application:', error);
+    stopwatch.record('Exiting with error');
+
+    process.exit(1);
+  } finally {
+    stopwatch.list();
+  }
 }
 
 void bootstrap();

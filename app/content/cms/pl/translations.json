@@ -1,0 +1,19 @@
+{
+  "contactForm": "Formularz kontaktowy",
+  "content": "Treść",
+  "emailRequired": "Pole jest wymagane i musi być poprawnym adresem email",
+  "fieldRequired": "Pole jest wymagane",
+  "lastPosts": "Ostatnie posty",
+  "name": "Imię",
+  "next": "Następne",
+  "messageSent": "Wiadomość wysłana!",
+  "messageError": "Błąd przy wysyłaniu wiadomości",
+  "messageThanks": "Dziękuję za wiadomość, odpowiem najszybciej jak będę mógł.",
+  "messageSorry": "Nie udało się wysłać emaili ale zdarzenie zostało zalogowane.",
+  "previous": "Poprzednie",
+  "search": "Szukaj",
+  "seeMore": "Zobacz więcej",
+  "send": "Wyślij",
+  "subject": "Temat wiadomości",
+  "yourEmail": "Twój email"
+}

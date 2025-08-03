@@ -1,16 +1,14 @@
-import { IsEnum, IsInt, IsOptional, Min } from 'class-validator';
-import { Language } from '@shared/types/Language';
-import { ApiPropertyOptional } from '@nestjs/swagger';
+import { IsEnum, IsInt, IsOptional, Max, Min } from 'class-validator';
+import { Lang } from '@shared/types/Lang';
 
 export class TechnobabbleRequestQueryDto {
-  @ApiPropertyOptional({ enum: Language })
   @IsOptional()
-  @IsEnum(Language)
-  lang?: Language;
+  @IsEnum(Lang)
+  lang?: Lang;
 
-  @ApiPropertyOptional({ enum: Language })
   @IsOptional()
   @IsInt()
   @Min(1)
+  @Max(20)
   repeat?: number;
 }

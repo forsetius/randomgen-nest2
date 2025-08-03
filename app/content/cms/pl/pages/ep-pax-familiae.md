@@ -1,0 +1,20 @@
+---
+template: page-default
+title: Pax Familiae
+subtitle: Pax Familiae
+excerpt: Syndykat zbrodni złożony z kopii jednej osoby, Claudii Ambelliny
+headerImage: mid-pax-familiae-head.jpg
+category: ep-przestepczosc
+
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Główne habitaty
+        - Ambelina ([Wenus]{pl/ep-atlas-wenus})
+---
+Podobnie jak [Nocny Kartel]{pl/ep-nocny-kartel}, również **Pax Familiae** utrzymuje legalne biura i placówki w wielu [habitatach]{pl/ep-habitat} podczas gdy w innych działa w podziemiu. Jednak różnica między tymi organizacjami nie mogłaby być większa: cała Pax Familiae pochodzi od jednej osoby, **Claudii Ambeliny**, założycielki i matriarchini tego syndykatu. Dzięki technologiom klonowania i [forkowania]{pl/ep-fork}, każdy członek tej organizacji jest potomkiem lub wariantem Claudii. [Biomorfy]{pl/ep-biomorf} są sklonowane z oryginalnego genomu założycielki a czasem nawet jest to seksualnie wyprodukowane potomstwo (dzięki biomodowi do zmiany płci. Natomiast [Ego]{pl/ep-ego} to forki Ambeliny.
+
+Wszyscy członkowie syndykatu są bezwarunkowo lojalni względem Claudii i okazują przynależność rodzinną z dumą i arogancją. Indywidualnie, każda jest lekko ale widocznie odmienna, choć wszystkie są wyrachowane i ambitne. Regularna re-asymilacja forków i aktualizacje XP są używane by zapewnić każdemu wariantowi świadomość co do działań innych - kiedy spotkasz jesną wersję Klaudii, inne będą cię znały.
+
+Pax Familiae zajmuje się szerokim asortymentem legalnych, podejrzanych i całkiem nielegalnych operacji - każdy na miarę konkretnego habitatu. Typowe przedsięwzięcia obejmują manipulacje kapitałem podwyższonego ryzyka, oszustwa w sieciach reputacji, doradztwo finansowe, pośrednictwo informacyjne, manipulacje akcjami, oszustwa bankowe oraz pożyczki lichwiarskie i odzyskiwanie długów.

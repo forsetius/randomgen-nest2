@@ -1,0 +1,40 @@
+---
+template: page-default
+title: Celestia
+langs:
+  en: celestia
+excerpt: Celestia jest symulatorem wszechświata, który umożliwia oglądanie go z każdego miejsca, jakie nam się zamarzy
+subtitle: Symulator Wszechświata
+lead: |
+  **Celestia** jest symulatorem Wszechświata. Umożliwia przemieszczanie się po naszym uniwersum i podziwianie widoków - od spojrzenia z niskiej orbity po panoramę galaktyk. 
+headerImage: astro-head.jpg
+subcategoryName: Zasoby do Celestii
+tags:
+  - astro
+  - TODO-assets
+blocks:
+  celestiaPics:
+    type: mediaGallery
+    items: 
+      - src: celestia-55-Cancri-e-Janssen.jpg
+        title: 55 Cnc e - Janssen, pierwsza planeta w układzie Kopernika
+      - src: celestia-Io-Jowisz.jpg
+        title: Io na tle Jowisza
+      - src: celestia-Tytan.jpg
+        title: Powierzchnia Tytana, księżyca Saturna
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Linki
+        - [Celestia Home](https://celestiaproject.space)
+        - [Celestia Origins](https://vk.com/celestiaorigin)
+---
+Posiada obszerny katalog obiektów, zarówno w naszym Układzie Słonecznym (Słońce, planety, księżyce, asteroidy, komety, statki kosmiczne), jak i poza nim (brązowe karły, gwiazdy, mgławice, galaktyki...). Wszystko w ruchu, który pozwala obserwować m.in. zaćmienia czy taniec gwiazd w układach wielokrotnych. Ciała niebieskie mogą mieć przypisane różne tekstury - o różnej rozdzielczości, ale także prezentujące np. powierzchnię w różnych okresach geologicznych.
+
+Celestia tworzy bardzo ładne widoczki. O, proszę:
+<block id="celestiaPics" />
+
+Osobiście lubię się nimi napawać ;) jednak najfajniejszą dla mnie rzeczą jest możliwość customizacji. Dostępne są całe gigabajty dodatków, które dodają ciała niebieskie, lepsze tekstury, dodatkowe statki kosmiczne, itp. Nie tylko zresztą realne - jest cały katalog obiektów fikcyjnych, również ze znanych uniwersów jak np. Babylon 5 czy Star Wars. Dodawanie ich jest bardzo proste  - wystarczy rozpakować dodatek w katalogu `extras` i zrestartować program. Dla tych, którzy chcą mieć wszystko od ręki, bez żmudnego ściągania poszczególnych dodatków jest projekt [Celestia Origins](https://vk.com/celestiaorigin). Ci, których razi ich strona główna w języku orków mogą szukać ogłoszeń o kolejnych wydaniach na [Celestia Forums](https://celestiaproject.space/forum/viewforum.php?f=23).
+
+Nie byłbym sobą, gdybym sam nie popełnił jakiś customizacji. Poniżej ich galeria:

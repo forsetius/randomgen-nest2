@@ -1,0 +1,94 @@
+import { Page } from './Page';
+import { ArrayMap } from '@shared/util/ArrayMap';
+import { NotFoundException } from '@nestjs/common';
+import { Block } from './blocks/Block';
+import { Menu } from './Menu';
+import { Category } from './Category';
+import { Locale } from './Locale';
+
+export class Library {
+  public readonly pages = new Map<string, Page>();
+  public readonly categories = new Map<string, Category>();
+  public readonly tags = new ArrayMap<string, Page>();
+
+  public constructor(
+    public readonly locale: Locale,
+    pages: Page[],
+    public readonly menus: Map<string, Menu>,
+    public readonly blocks: Map<string, Block>,
+  ) {
+    this.addPages(pages);
+  }
+
+  public addPages(pages: Page[]): void {
+    pages.forEach((page) => {
+      this.pages.set(page.slug, page);
+
+      // we search for the category homepages to create all the categories
+      if (page.def.subcategoryName) {
+        this.categories.set(
+          page.slug,
+          new Category(page.def.subcategoryName, page),
+        );
+      }
+
+      // we can sweep for tags while doing this
+      page.def.tags.forEach((tag) => {
+        this.tags.add(tag, page);
+      });
+    });
+
+    // once we have all the categories, we can add the pages to them
+    this.pages.forEach((page) => {
+      if (page.def.category) {
+        const category = this.categories.get(page.def.category);
+        if (!category) {
+          throw new Error(`Category ${page.def.category} not found`);
+        }
+        if (!category.getPages().includes(page)) {
+          category.addPage(page, page.def.subcategory);
+        }
+
+        // if a page is a subcategory homepage and also has a category, it is a parent-child relationship
+        if (page.def.subcategoryName) {
+          const subcategory = this.categories.get(page.slug)!;
+          subcategory.parent = category;
+        }
+      }
+    });
+    this.categories.forEach((category) => {
+      category.constructFullSlug();
+      category.getPages().forEach((page) => {
+        page.category = category;
+      });
+      category.sortPages();
+    });
+    this.categories.forEach((category) => {
+      category.constructBreadcrumbs();
+    });
+  }
+
+  public getPage(slug: string): Page {
+    if (!this.pages.has(slug)) {
+      throw new NotFoundException(`Page ${slug} not found`);
+    }
+
+    return this.pages.get(slug)!;
+  }
+
+  public search(term: string, maxHits?: number): Page[] {
+    let pages = Array.from(this.pages.values())
+      .map((page): [Page, number] => [
+        page,
+        page.searchString.indexOf(term.toLocaleLowerCase()),
+      ])
+      .filter(([, index]) => index > -1)
+      .sort((a, b) => a[1] - b[1]);
+
+    if (maxHits) {
+      pages = pages.slice(0, maxHits);
+    }
+
+    return pages.map(([page]) => page);
+  }
+}

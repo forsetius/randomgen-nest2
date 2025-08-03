@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ThrottlerModule } from '@nestjs/throttler';
-import { SecurityService } from './SecurityService';
+import { SecurityService } from './services/SecurityService';
 import { AppConfigService } from '@config/AppConfigService';
+import { ContentSecurityPolicyRegistry } from './ContentSecurityPolicyRegistry';
+import { AkismetService } from './services/AkismetService';
+import { AkismetInterceptor } from './interceptors/AkismetInterceptor';
 
 @Module({
   imports: [
@@ -19,6 +22,12 @@ import { AppConfigService } from '@config/AppConfigService';
       },
     }),
   ],
-  providers: [SecurityService],
+  providers: [
+    AkismetService,
+    AkismetInterceptor,
+    ContentSecurityPolicyRegistry,
+    SecurityService,
+  ],
+  exports: [AkismetService, ContentSecurityPolicyRegistry],
 })
 export class SecurityModule {}

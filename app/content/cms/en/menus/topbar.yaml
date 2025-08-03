@@ -1,0 +1,80 @@
+template: menu-topbar
+menu:
+  - title: About me
+    columns:
+      - title: <i class="text-warning bi bi-braces-asterisk"></i> Programming
+        items:
+          - title: Skills
+            url: "@{en/prog-skills}"
+            text: What I know, what I can
+          - title: Experience
+            url: "@{en/prog-experience}"
+            text: What I've already done
+
+      - title: <i class="text-warning bi bi-lightbulb"></i> Projects
+        items:
+          - title: RandomGen
+            url: "@{en/randomgen}"
+            text: Various content generators, mainly for RPGs
+
+          - title: PlanetaryNames4Celestia
+            url: "@{en/planetarynames4celestia}"
+            text: An application that pulls the Solar System location names and converts them to the Celestia format
+
+  - title: Blog
+    url: "@{en/blog}"
+
+  - separator: "|"
+
+  - title: Hobbies
+    columns:
+      - title: <i class="text-warning bi bi-globe-europe-africa"></i> Role Playing Games
+        items:
+          - title: Eclipse Phase
+            url: "@{en/eclipse-phase}"
+            text: Hard science-fiction game of conspiracy and horror
+
+      - title: <i class="text-warning bi bi-stars"></i> Astronomy
+        items:
+          - title: Celestia
+            url: "@{en/celestia}"
+            text: |-
+              Nieco zapomniana już aplikacja, Celestia jest symulatorem Kosmosu. 
+              Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
+              które na niebie są tylko kropkami.  
+
+          - title: Lokacje w Układzie Słonecznym
+            url: "@{en/planetary-names-scraper}"
+            text: |-
+              Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
+              i konwertuje je na format symulatora Celestia
+
+      - title: <i class="text-warning bi bi-display"></i> Other
+        items:
+        - title: Dioramas
+          url: "@{en/dioramas}"
+          text: Small, modular dioramas
+
+        - title: Geopolitics
+          url: "@{en/geopolitics}"
+          text: State of the World and other overarching topics
+
+        - title: Outdoors
+          url: "@{en/outdoors}"
+          text: Sometimes my gf or I get struck by the wanderlust...
+
+  - separator: "|"
+
+  - title: Resources
+    columns:
+      - title: <i class="text-warning bi bi-gear-wide-connected"></i> Generators
+        items:
+          - title: Technobabble
+            url: "@{en/2022-01-03_technobabble-generator}"
+            text: Generator of Star Trek pseudo-technical gibberish
+
+      - title: <i class="text-warning bi bi-download"></i> Do pobrania
+        items:
+          - title: Solar System locations
+            url: "@{en/solar-system-locations}"
+            text: International Astronomical Union-approved names for craters, mountains, valleys, and other locations in the Solar System

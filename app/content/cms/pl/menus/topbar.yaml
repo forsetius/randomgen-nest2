@@ -1,0 +1,130 @@
+template: menu-topbar
+menu:
+  - title: O mnie
+    columns:
+      - title: <i class="text-warning bi bi-braces-asterisk"></i> Programowanie
+        items:
+          - title: Umiejętności
+            url: "@{pl/prog-umiejetnosci}"
+            text: Co umiem, co znam, co mogę
+          - title: Doświadczenia
+            url: "@{pl/prog-doswiadczenia}"
+            text: Co już zrobiłem
+
+      - title: <i class="text-warning bi bi-lightbulb"></i> Projekty
+        items:
+          - title: RandomGen
+            url: "@{pl/randomgen}"
+            text: Różnorodne generatory treści, głównie do RPG
+
+          - title: PlanetaryNames4Celestia
+            url: "@{pl/planetarynames4celestia}"
+            text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
+
+  - title: Blog
+    url: "@{pl/blog}"
+
+  - separator: "|"
+
+  - title: RPG
+    columns:
+      - title: <i class="text-warning bi bi-robot"></i> Eclipse Phase
+        items:
+          - title: O grze Eclipse Phase
+            url: "@{pl/eclipse-phase}"
+            text: Gra hard-SF w realiach transhumanistycznego horroru
+
+          - title: Wprowadzenie
+            url: "@{pl/ep-intro}"
+            text: "Historia przyszłości: rozwój w kierunku transludzkości, wojna z AI i Upadek oraz rozproszenie po Układzie Słonecznym i poza nim"
+
+          - title: Encyklopedia settingu
+            url: "@{pl/ep-encyklopedia}"
+            text: "Realia Eclipse Phase: neopaństwa, hiperkorporacje, przestępczość, technologia i cała reszta"
+
+          - title: Atlas
+            url: "@{pl/ep-atlas}"
+            text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
+
+      - title: <i class="text-warning bi bi-plus-square"></i> UniMechanika
+        text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
+        items:
+          - title: Zasady podstawowe
+            url: "@{pl/rpg-unimechanika}"
+            text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
+
+          - title: Dodatki
+            url: "@{pl/rpg-unimechanika-dodatki}"
+            text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
+
+#      - title: Przygody
+#        url: "@{pl/rpg-scenariusze}"
+#        text: Scenariusze do gier fabularnych
+#        items:
+#          - title: Jaskółki [Dungeons & Dragons 5e]
+#            url: "@{pl/dnd-scenariusz-jaskolki}"
+#            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
+#
+#          - title: Krew dla boga krwi [Dungeons & Dragons 5e]
+#            url: "@{pl/dnd-scenariusz-krew-dla-boga-krwi}"
+#            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
+#
+#          - title: Ego Sum [Eclipse Phase]
+#            url: "@{pl/ep-scenariusz-ego-sum}"
+#            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
+
+  - title: Astronomia
+    columns:
+      - title: <i class="text-warning bi bi-globe-europe-africa"></i> Planetologia
+        items:
+          - title: Generowanie układów planetarnych
+            url: "@{pl/generowanie-ukladow-planetarnych}"
+            text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
+
+      - title: <i class="text-warning bi bi-stars"></i> Symulatory Wszechświata
+        items:
+          - title: Celestia
+            url: "@{pl/celestia}"
+            text: |-
+              Nieco zapomniana już aplikacja, Celestia jest symulatorem Kosmosu. 
+              Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
+              które na niebie są tylko kropkami.  
+
+          - title: Lokacje w Układzie Słonecznym
+            url: "@{pl/planetary-names-scraper}"
+            text: |-
+              Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
+              i konwertuje je na format symulatora Celestia
+
+  - title: Inne
+    columns:
+      - title: <i class="text-warning bi bi-display"></i> Kanapowe
+        items:
+        - title: Dioramy
+          url: "@{pl/dioramy}"
+          text: Małe, modularne dioramy
+
+        - title: Geopolityka
+          url: "@{pl/geopolityka}"
+          text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
+      - title: <i class="text-warning bi bi-tree"></i> Terenowe
+        items:
+          - title: Znowu baba mnie wywlokła
+            url: "@{pl/znowu-baba-mnie-wywlokla}"
+            text: Czasami mojej kobiecie albo mnie włącza się szwendacz. Łazimy po lasach, górkach a czasem odkrywamy fajną knajpkę na naszym podwórku
+
+  - separator: "|"
+
+  - title: Zasoby
+    columns:
+      - title: <i class="text-warning bi bi-gear-wide-connected"></i> Generatory
+        items:
+          - title: Technobełkot
+            url: "@{pl/2022-01-03_generator-technobelkotu}"
+            text: Generator startrekowego, pseudotechnicznego bełkotu
+
+      - title: <i class="text-warning bi bi-download"></i> Do pobrania
+        items:
+          - title: Lokacje w Układzie Słonecznym
+            url: "@{pl/lokacje-uklad-slonecznym}"
+            text: Zatwierdzone przez Międzynarodową Unię Astronomiczną nazwy kraterów, gór, dolin i innych lokacji w Układzie Słonecznym

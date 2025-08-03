@@ -1,6 +1,6 @@
 import { ConfigureOptions } from 'nunjucks';
 
 export interface TemplatingModuleOptions {
-  paths: string[];
+  paths: string | string[];
   options?: ConfigureOptions;
 }

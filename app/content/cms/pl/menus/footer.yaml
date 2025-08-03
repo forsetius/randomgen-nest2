@@ -1,0 +1,28 @@
+template: menu-footer
+menu:
+  - title: Kontakt
+    items:
+      - title: Formularz kontaktowy
+        url: "@{pl/kontakt}"
+
+      - title: Zasubskrybuj RSS
+        url: /pages/pl/rss.xml
+
+  - title: Linki
+    items:
+      - title: GitHub
+        url: https://github.com/forsetius
+
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/marcin-paździora-09a94625a
+
+  - title: Projekty
+    items:
+      - title: RandomGen
+        url: "@{pl/randomgen}"
+
+  - title: Blurby
+    items:
+      - title: Polityka prywatności
+        url: "@{pl/polityka-prywatnosci}"
+

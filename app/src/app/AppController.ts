@@ -8,7 +8,7 @@ export class AppController {
 
   @ApiOperation({ description: 'Hello World' })
   @ApiOkResponse()
-  @Get()
+  @Get(`/ping`)
   getHello(): string {
     return this.appService.getHello();
   }

@@ -1,0 +1,30 @@
+---
+template: page-default
+title: Exotech
+subtitle: Exotech
+excerpt: Uploading, AI, Elektronika, Oprogramowanie
+lead: |
+  > Widziałem postmortem z incydentu, jak ktoś przesłał swoje wspomnienia do ich softu edukacyjnego. Sabotaż, ale dzieci nauczyły się jego traumy razem z tabliczką mnożenia.
+headerImage: mid-exotech-head.jpg
+category: ep-hiperkorporacja
+
+slots:
+  aside:
+    - type: static
+      content: |
+        ## Główna działalność
+        - Uploading
+        - Sztuczna inteligencja
+        - Elektronika
+        - Oprogramowanie
+        ## Główne habitaty
+        - [Starwell](#) ([Pas asteroidów](#)), 
+        - Fobos (księżyc [Marsa]{pl/ep-atlas-mars})
+---
+**Exotech** to jedna z niewielu przed-Upadkowych megakorporacji, która nie tylko przetrwała [Upadek]{pl/ep-upadek} niemal niedraśnięta (wszystkie większe straty zostały przerzucone na zasoby z peryferyjnych segmentów rynku), ale wręcz skorzystała na nim. Niezmordowanie wykupywała konkurencję i think tanki, które miały problemy z dostosowaniem się do wschodzącej [ekonomii przejściowej]{pl/ep-ekonomia-przejsciowa} i narastającej katastrofy poprzedzającej Upadek.
+
+Dziś Exotech zajmuje pozycję przodującego projektanta elektroniki w segmencie high-end, [sztucznych inteligencji]{pl/ep-sztuczna-inteligencja} i systemów operacyjnych obecności [Splotowej]{pl/ep-splot}. Exotech poświęca się też bezkompromisowym badaniom nad [emulacją umysłu]{pl/ep-ego} i jego [przyodziewaniem]{pl/ep-przyodziewanie}, jak również symulacjami dla [infomorfów]{pl/ep-infomorf}.
+
+Exotechem wciąż - tak jak i przed Upadkiem - żelazną ręką kieruje niesławny magnat medialny Morgan Sterling.
+
+Krążą plotki, że Exotech wciąż kontynuuje badania nad [AGI](#), a nawet ich produkcję.

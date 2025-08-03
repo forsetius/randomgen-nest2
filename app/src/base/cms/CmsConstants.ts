@@ -1,0 +1,1 @@
+export const CMS_OPTIONS = 'CMS:MODULE_OPTIONS';
