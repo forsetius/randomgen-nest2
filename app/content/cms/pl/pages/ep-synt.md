@@ -2,10 +2,10 @@
 template: page-default
 title: Synt
 subtitle: Synth
+headerImage: mid-ep-synt-head.jpg
 excerpt: Tanie, humanoidalne roboty używane do pracy fizycznej
 lead: |
   > Zbudowaliśmy Synty jako funkcję, a potem obraziliśmy się, że nie mają duszy. To nie ich wina, że odbijają nasze chłodne intencje jak lustro.
-headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 
 slots:

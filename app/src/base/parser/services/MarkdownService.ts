@@ -25,7 +25,8 @@ export class MarkdownService {
     renderer.heading = ({ text, depth }: Tokens.Heading) => {
       const id = text.toLowerCase().replace(/\s+/g, '-');
       const level = depth.toString();
-      return `<h${level} id="h${level}-${id}">${text}</h${level}>`;
+      const html = marked.parseInline(text) as string;
+      return `<h${level} id="h${level}-${id}">${html}</h${level}>`;
     };
 
     marked.use({

@@ -2,9 +2,9 @@
 template: page-default
 title: Lumina
 excerpt: Laboratoria naukowe i kurort dla elit na Merkurym
-headerImage: mid-ep-lumina-head.jpg
+headerImage: mid-ep-mercury-economy-head.jpg
 category: ep-atlas-merkury
-subcategory: aerostaty
+subcategory: habitaty
 
 slots:
   aside:

@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Lucyfer
+headerImage: mid-ep-lucipher-head.jpg
 excerpt: Aerostat wydobywczy
 category: ep-atlas-wenus
 subcategory: aerostaty

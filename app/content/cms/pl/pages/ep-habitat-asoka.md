@@ -2,6 +2,7 @@
 template: page-default
 title: Aśoka
 subtitle: Ashoka
+headerImage: mid-ep-ashoka-head.jpg
 excerpt: Miasto w kraterze, bastion Ruchu Fremenów
 category: ep-atlas-mars
 subcategory: habitaty

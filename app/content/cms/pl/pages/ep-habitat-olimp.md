@@ -1,6 +1,8 @@
 ---
 template: page-default
 title: Olimp
+subtitle: Olympus City
+headerImage: mid-ep-olympus-head.jpg
 excerpt: Winda kosmiczna i podupadłe miasto wokół niej.
 category: ep-atlas-mars
 subcategory: habitaty

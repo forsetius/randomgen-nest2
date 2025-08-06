@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Inne aerostaty
+headerImage: mid-aerostat-head.jpg
 excerpt: Mniejsze aerostaty nad Wenus
 category: ep-atlas-wenus
 subcategory: aerostaty
