@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Afrodyta Prime
+headerImage: mid-ep-afrodite-prime-head.jpg
 excerpt: Aerostat - centrum inżynierii środowiskowej z widokami
 category: ep-atlas-wenus
 subcategory: aerostaty

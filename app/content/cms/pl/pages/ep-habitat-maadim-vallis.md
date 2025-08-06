@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Ma'adim Vallis i miasto Pathfinder
+headerImage: mid-ep-maadim-vallis-head.jpg
 excerpt: Lokalizacja Wrót Marsjańskich w Ma’adim Vallis i miasta Pathfinder
 category: ep-atlas-mars
 subcategory: habitaty

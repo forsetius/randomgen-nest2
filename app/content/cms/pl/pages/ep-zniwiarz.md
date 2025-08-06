@@ -2,10 +2,10 @@
 template: page-default
 title: Żniwiarz
 subtitle: Reaper
+headerImage: mid-ep-reaper-head.jpg
 excerpt: Ciężkozbrojny syntmorf bojowy
 lead: |
   > To tylko morf, mówią. Tylko platforma. Ale kiedy widzisz, jak bezszelestnie zawisa nad dokiem, z karabinem złożonym jak modlitewne dłonie… łatwo zapomnieć, że w środku siedzi ktoś, kto kiedyś miał imię.
-headerImage: mid-ep-reaper-head.jpg
 category: ep-syntmorf
 
 slots:

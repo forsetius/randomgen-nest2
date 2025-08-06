@@ -2,8 +2,8 @@
 template: page-default
 title: Blaszak
 subtitle: Case
+headerImage: mid-ep-case-head.jpg
 excerpt: Tandetne syntetyczne ciała dla biedoty
-headerImage: mid-clanking-masses-head.jpg
 category: ep-syntmorf
 
 slots:

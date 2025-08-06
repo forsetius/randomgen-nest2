@@ -2,6 +2,7 @@
 template: page-default
 title: Strefa Kwarantanny TITAN-ów
 subtitle: TITANs Quarantine Zone
+headerImage: mid-ep-tqz-head.jpg
 excerpt: Strefa wykluczenia wokół terenu zajętego przez pozostałości po TITAN-ach
 category: ep-atlas-mars
 subcategory: habitaty

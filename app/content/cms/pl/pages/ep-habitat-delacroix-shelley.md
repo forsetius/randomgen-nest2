@@ -2,7 +2,7 @@
 template: page-default
 title: Delacroix-Shelley
 excerpt: Tajna baza Fa Jing na Markurym
-headerImage: mid-ep-delacroix-shelley-head.jpg
+headerImage: mid-ep-delacroix-head.jpg
 category: ep-atlas-merkury
 subcategory: habitaty
 

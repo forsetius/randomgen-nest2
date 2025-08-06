@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Parvarti
+headerImage: mid-ep-parvarti-head.jpg
 excerpt: Aerostat - siedlisko hedonizmu, dekadencji i podejrzanych transakcji 
 category: ep-atlas-wenus
 subcategory: aerostaty

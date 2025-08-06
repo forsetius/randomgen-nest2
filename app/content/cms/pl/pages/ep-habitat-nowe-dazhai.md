@@ -2,6 +2,7 @@
 template: page-default
 title: Nowe Dazhai
 subtitle: New Dazhai
+headerImage: mid-ep-new-dazhai-head.jpg
 excerpt: Korporacyjne miasto Fa Jing.
 category: ep-atlas-mars
 subcategory: habitaty

@@ -2,6 +2,7 @@
 template: page-default
 title: Szopa
 subtitle: The Shack
+headerImage: leo-ep-shack-head.jpg
 excerpt: Aerostat - stocznia, budujący nowe aerostaty
 category: ep-atlas-wenus
 subcategory: aerostaty

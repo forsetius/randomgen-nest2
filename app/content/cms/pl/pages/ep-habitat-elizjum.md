@@ -2,6 +2,7 @@
 template: page-default
 title: Elizjum
 subtitle: Eysium City
+headerImage: mid-ep-elysium-head.jpg
 excerpt: Kanionowe miasto show-biznesu i celebrytów
 category: ep-atlas-mars
 subcategory: habitaty
