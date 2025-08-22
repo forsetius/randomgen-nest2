@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Szopa
-        - _Położenie_: atmosfera [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Aerostat]{pl/ep-aerostaty-wenus}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: hindi, portugalski, wu
+        - **Położenie**: atmosfera [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Aerostat]{pl/ep-aerostaty-wenus}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: hindi, portugalski, wu
 lead: |
   Największy z wenusjańskich [aerostatów]{pl/ep-aerostaty-wenus} ma zarazem najmniejszą populację. Znany jest wyłącznie jako Szopa. Mieszka w nim 130 000 osób, a jego jedynym celem istnienia jest budowa kolejnych aerostatów. Konstrukcja obiektów unoszących się w atmosferze to zadanie niełatwe — dopóki aerostat nie zostanie wypełniony powietrzem nadającym się do oddychania i odpowiednio uszczelniony, bardzo łatwo może runąć w ogniste głębiny Wenus.
 ---

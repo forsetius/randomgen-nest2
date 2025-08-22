@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Delacroix-Shelley
-        - _Położenie_: kratery [Delacroix](https://planetarynames.wr.usgs.gov/Feature/1466) i [Shelley](https://planetarynames.wr.usgs.gov/Feature/5483), ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: Habitat planetarny
-        - _Przynależność_: hiperkorp [Fa Jing]{pl/ep-fajing}
+        - **Położenie**: kratery [Delacroix](https://planetarynames.wr.usgs.gov/Feature/1466) i [Shelley](https://planetarynames.wr.usgs.gov/Feature/5483), ([Merkury]{pl/ep-atlas-merkury})
+        - **Typ**: Habitat planetarny
+        - **Przynależność**: hiperkorp [Fa Jing]{pl/ep-fajing}
         - _Główny język_: angielski, mandaryński
 lead: |
   Ten podwójny krater, położony między 42° a 50° szerokości południowej, jest tajną bazą [Fa Jing]{pl/ep-fajing}. Delacroix-Shelley znajduje się w bardzo dogodnej lokalizacji. Leżąc blisko skromnych pokładów lodu polarnego Merkurego, jest jednym z nielicznych habitatów, które mają tanie i wystarczające źródło wody. Co ważniejsze, znajduje się daleko od bardziej rozwiniętej półkuli północnej.

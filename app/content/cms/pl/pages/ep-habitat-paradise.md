@@ -2,6 +2,7 @@
 template: page-default
 title: Raj
 subtitle: Paradise
+headerImage: mid-ep-paradise-head.jpg
 excerpt: Ekskluzywna stacja – kurort odzyskany przez elitę Konsorcjum
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
@@ -10,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Raj
-        - _Położenie_: punkt L1 [Ziemia]{pl/ep-atlas-ziemia-orbita} - [Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski, włoski
+        - **Położenie**: punkt L1 [Ziemia]{pl/ep-atlas-ziemia-orbita} - [Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski, włoski
         - _Główne gałęzie gospodarki_: 
           - Medycyna estetyczna
           - Turystyka

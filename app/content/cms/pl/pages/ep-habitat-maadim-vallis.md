@@ -10,9 +10,9 @@ slots:
     - type: static
       content: |
         ## Pathfinder
-        - _Położenie_: [Ma'adim Vallis](https://planetarynames.wr.usgs.gov/Feature/3772) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Kanion nakryty kopułą
-        - _Przynależność_: [Pathfinder]{pl/ep-pathfinder}
+        - **Położenie**: [Ma'adim Vallis](https://planetarynames.wr.usgs.gov/Feature/3772) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Kanion nakryty kopułą
+        - **Przynależność**: [Pathfinder]{pl/ep-pathfinder}
 
 lead: |
   **Ma’adim Vallis** to kanion mniejszy niż niektóre inne doliny na Marsie, ale wciąż robiący ogromne wrażenie – jego rozmiary przewyższają nawet [Wielki Kanion]() na [Ziemi]{pl/ep-atlas-ziemia}. Około 400 metrów od wejścia do kanionu od strony [krateru Gusev](https://planetarynames.wr.usgs.gov/Feature/2289) znajduje się idealnie cylindryczne wycięcie o średnicy 10 metrów w jednej ze ścian. Wejście do tej struktury ma szerokość około 3 metrów. W samym centrum tej przestrzeni, pod gołym niebem, znajdują się Wrota Marsjańskie, obecnie zarządzana przez [hiperkorporację]{pl/ep-hiperkorporacja} [Pathfinder]{pl/ep-pathfinder}.

@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Memory Hole
-        - _Położenie_: punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Stellar Intelligence]{pl/ep-stellar-intelligence}
-        - _Główne języki_: angielski, mandaryński
+        - **Położenie**: punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Stellar Intelligence]{pl/ep-stellar-intelligence}
+        - **Główne języki**: angielski, mandaryński
 lead: |
   Bazy danych i archiwa przechowywane w bezpieczeństwie przez [Stellar Intelligence]{pl/ep-stellar-intelligence} w tym [torusie]{pl/ep-torus} to ogromne przedsięwzięcie mające na celu gromadzenie i analizowanie informacji przydatnych dla tej korporacji wywiadowczej, [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} lub jego różnych klientów. Archiwa te sięgają czasów sprzed [Upadku]{pl/ep-upadek} i zawierają aktualizowane na bieżąco kopie danych oraz ruchu w [Splocie]{pl/ep-splot} rozproszonych po całym Układzie — a nawet dalej.
 ---

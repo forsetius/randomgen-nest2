@@ -9,9 +9,9 @@ slots:
     - type: static
       content: |
         ## Selene
-        - _Położenie_: orbita [Luny]{pl/ep-atlas-luna}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Położenie**: orbita [Luny]{pl/ep-atlas-luna}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
         - _Główny język_: angielski
 lead: |
   Stacja Selene liczy 3 miliony mieszkańców i jest czwartym co do wielkości osiedlem na [Lunie]{pl/ep-atlas-luna}. Selene to ogromny torus o szerokości 1,5 km i wysokości 1,3 km, tworzący „koło” o średnicy 12 km. 

@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Ra
-        - _Położenie_: [Wulkanoidy]{pl/ep-atlas-wulkanoidy}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Solarianie]{pl/ep-solarianie}
-        - _Główne języki_: angielski, francuski
+        - **Położenie**: [Wulkanoidy]{pl/ep-atlas-wulkanoidy}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Solarianie]{pl/ep-solarianie}
+        - **Główne języki**: angielski, francuski
 lead: |
   Odkryta trzy lata po [Caldwell]{pl/ep-habitat-caldwell}, ta niewielka asteroida nie wyróżnia się niczym szczególnym, poza swoim bliskim położeniem względem Wulkanoidowych [Wrót](#). [Ecologene]{pl/ep-ecologene} jest w trakcie wydrążania Ra, z zamiarem przekształcenia go w [bańkę Cole’a]{pl/ep-banka-colea}.
 ---

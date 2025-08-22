@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Afrodyta Prime
-        - _Położenie_: atmosfera [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Aerostat]{pl/ep-aerostaty-wenus}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: angielski, hiszpański, mandaryński
+        - **Położenie**: atmosfera [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Aerostat]{pl/ep-aerostaty-wenus}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: angielski, hiszpański, mandaryński
 lead: |
   Przy populacji liczącej 300 000 mieszkańców, ten aerostat jest centrum zarówno inżynierii biologicznej, jak i turystyki. To właśnie w Afrodycie Prime bioinżynierowie zaprojektowali i stworzyli większość nowych [form życia]{pl/ep-atlas-wenus-zycie}, które już dziś zasiedlają wenusjańską atmosferę, a także tych, które mają zamieszkiwać bardziej przekształcone wersje przyszłej atmosfery Wenus — tam są projektowane i badane.
 ---

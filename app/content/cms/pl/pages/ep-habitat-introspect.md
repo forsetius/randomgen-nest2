@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Introspect
-        - _Położenie_: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Exotech]{pl/ep-exotech}
-        - _Główne języki_: angielski
+        - **Położenie**: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Exotech]{pl/ep-exotech}
+        - **Główne języki**: angielski
 ---
 Ten [torus]{pl/ep-torus} to jedna z głównych placówek badawczych firmy [Exotech]{pl/ep-exotech}. [Zapora]{pl/ep-zapora} uważnie go monitoruje z powodu doniesień, że neurolodzy ExoTechu prowadzą długoterminowe, przyspieszone czasowo eksperymenty nad rozwojem [AI]{pl/ep-sztuczna-inteligencja}. Badania te obejmują nie tylko ograniczone AI i [AGI](#), ale prawdopodobnie również [infomorfy]{pl/ep-infomorf}. Istnieją przypuszczenia, że mogą to być najdłużej działające (zarówno w czasie rzeczywistym, jak i symulowanym) przyspieszone symulacje znane Zaporze.
 

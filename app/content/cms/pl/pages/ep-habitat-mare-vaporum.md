@@ -9,9 +9,9 @@ slots:
     - type: static
       content: |
         ## Wokółlunarna Ludowa Republika Mare Vaporum
-        - _Położenie_: orbita [Luny]{pl/ep-atlas-luna}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Położenie**: orbita [Luny]{pl/ep-atlas-luna}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
         - _Główny język_: kantoński, mandaryński
 lead: |
   Największy [cylinder O’Neilla]{pl/ep-cylinder-oneilla} na orbicie [Luny]{pl/ep-atlas-luna} znany jest przede wszystkim jako lokalna baza [triady]{pl/ep-triady} Sun Yee On, która skutecznie przeniknęła i skorumpowała tutejsze władze. 

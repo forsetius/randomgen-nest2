@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Aten
-        - _Położenie_: orbita [Słońca]{pl/ep-atlas-slonce}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski, mandaryński
+        - **Położenie**: orbita [Słońca]{pl/ep-atlas-slonce}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski, mandaryński
         
         ## Nazwa 
         Nazwa tego habitatu bynajmniej nie wywodzi się od Aten - stolicy Grecji a od [Atena/Atona](https://pl.wikipedia.org/wiki/Aton) - egipskiego bóstwa słonecznego.

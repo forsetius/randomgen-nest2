@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Elegua
+headerImage: mid-ep-elegua-head.jpg
 excerpt: Stacja badawcza TerraGenesis, centrum badań ekologicznych i terraformingu.
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
@@ -9,9 +10,9 @@ slots:
     - type: static
       content: |
         ## Elegua
-        - _Położenie_: wysoka orbita [Ziemi]{pl/ep-atlas-ziemia-orbita}
-        - _Typ_: Zmodyfikowana [sfera Bernala](#)
-        - _Przynależność_: [TerraGenesis]{pl/ep-terragenesis}
+        - **Położenie**: wysoka orbita [Ziemi]{pl/ep-atlas-ziemia-orbita}
+        - **Typ**: Zmodyfikowana [sfera Bernala](#)
+        - **Przynależność**: [TerraGenesis]{pl/ep-terragenesis}
         - _Główne gałęzie przemysłu_: 
           - Terraforming
           - Zarządzanie środowiskiem

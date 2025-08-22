@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Pola Elizejskie
-        - _Położenie_: punkt L3 [Ziemia]{pl/ep-atlas-ziemia}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
-        - _Przynależność_: [Izolacjoniści]{pl/ep-izolacjonisci}
-        - _Główne języki_: angielski, japoński
+        - **Położenie**: punkt L3 [Ziemia]{pl/ep-atlas-ziemia}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
+        - **Przynależność**: [Izolacjoniści]{pl/ep-izolacjonisci}
+        - **Główne języki**: angielski, japoński
 lead: |
   **Pola Elizejskie** to wyjątkowa kolonia [izolacjonistów]{pl/ep-izolacjonisci} – jedna z najbliżej położonych [Ziemi]{pl/ep-atlas-ziemia}, a zarazem niezwykła przez to, że jej mieszkańcy przybyli tu w poszukiwaniu tego, czego transhumanizm starał się uniknąć: śmierci. 
 ---

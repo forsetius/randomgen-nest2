@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## PEX
-        - _Położenie_: punkt L2 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski, mandaryński
+        - **Położenie**: punkt L2 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski, mandaryński
 lead: |
   PEX to siedziba **Planetarnej Giełdy Papierów Wartościowych** – czołowej elektronicznej sieci handlu akcjami w [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze}.
 ---

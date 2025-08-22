@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Olimp
-        - _Położenie_: kaldera [Olympus Mons](https://planetarynames.wr.usgs.gov/Feature/4453) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Habitat kopułowy
-        - _Przynależność_: Władze Infrastruktury Olimpu
-        - _Główne języki_: mandaryński
+        - **Położenie**: kaldera [Olympus Mons](https://planetarynames.wr.usgs.gov/Feature/4453) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Habitat kopułowy
+        - **Przynależność**: Władze Infrastruktury Olimpu
+        - **Główne języki**: mandaryński
 lead: |
   Miasto w kalderze Olympus Mons, szczególnie widziane przez zawiesinę pyłu podczas burzy, przypomina zwęglony stożek kadzidła otoczony warstwami zanieczyszczeń. Przy lepszej widoczności widać centrum z wysokimi, jasno oświetlonymi wieżowcami o funkcji mieszkalno-biurowej, skupionymi wokół podstawy windy kosmicznej. Otaczają je podupadłe struktury: ciśnieniowe bloki mieszkalne, obiekty przemysłowe oraz tymczasowa zabudowa, w której światła są rozproszone i nieliczne. Lokalne targowiska są uważane za niebezpieczne, a niektóre z ich sekcji są nieogrzewane i tylko częściowo pod ciśnieniem.
 ---

@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Feynman
-        - _Położenie_: krater [Fowler](https://planetarynames.wr.usgs.gov/Feature/2005) ([Luna]{pl/ep-atlas-luna})
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
-        - _Główne języki_: angielski, arabski
+        - **Położenie**: krater [Fowler](https://planetarynames.wr.usgs.gov/Feature/2005) ([Luna]{pl/ep-atlas-luna})
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Główne języki**: angielski, arabski
 lead: |
   Stacja Feynman, należąca do [Omnicor]{pl/ep-omnicor}, liczy 50 000 mieszkańców i jest najlepiej strzeżonym osiedlem na Lunie. 
 ---

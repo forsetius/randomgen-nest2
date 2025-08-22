@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Cannon
-        - _Położenie_: [Caloris Planitia](https://planetarynames.wr.usgs.gov/Feature/979), ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: mobilny Habitat planetarny
-        - _Przynależność_: hiperkorp Jaehon Offworld
+        - **Położenie**: [Caloris Planitia](https://planetarynames.wr.usgs.gov/Feature/979), ([Merkury]{pl/ep-atlas-merkury})
+        - **Typ**: mobilny Habitat planetarny
+        - **Przynależność**: hiperkorp Jaehon Offworld
         - _Główny język_: koreański
 lead: |
   Największa osada powierzchniowa Merkurego to miasto-miotacz masy, przemieszczająca się po nocnej stronie planety i wyrzucająca w przestrzeń kosmiczną sztaby metalu wielkości budynków.

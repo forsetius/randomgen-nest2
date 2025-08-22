@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Qing Long
-        - _Położenie_: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}/[Triady]{pl/ep-triady}
-        - _Główne języki_: kantoński, koreański, mandaryński, wietnamski
+        - **Położenie**: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}/[Triady]{pl/ep-triady}
+        - **Główne języki**: kantoński, koreański, mandaryński, wietnamski
 lead: |
   Największy habitat w trojańczykach marsjańskich i zarazem największy [cylinder O'Neilla]{pl/ep-cylinder-oneilla} w całym Układzie Słonecznym, „Błękitny Smok” (Qing Long) liczy dwa miliony mieszkańców i cechuje się silnym wpływem kultury chińskiej, choć obecne są tu również liczne grupy wietnamskie, koreańskie i z innych krajów Azji Południowo-Wschodniej. 
 ---

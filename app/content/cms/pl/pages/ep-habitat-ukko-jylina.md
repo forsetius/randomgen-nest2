@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Ukko Jylinä
-        - _Położenie_: orbita [Słońca]{pl/ep-atlas-slonce}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Solarianie]{pl/ep-solarianie}
-        - _Główne języki_: fiński, solariański
+        - **Położenie**: orbita [Słońca]{pl/ep-atlas-slonce}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Solarianie]{pl/ep-solarianie}
+        - **Główne języki**: fiński, solariański
 lead: |
   Ukko Jylinä to habitat wyróżniający się tym, że został zaprojektowany przez i dla [Solarian]{pl/ep-solarianie}, którzy uważają się za miejscowych mieszkańców korony słonecznej – a nie przedstawicieli odległych mocarstw. 
 ---

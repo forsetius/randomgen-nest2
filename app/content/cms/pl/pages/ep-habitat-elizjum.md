@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Elizjum
-        - _Położenie_: [Elysium Chasma](https://planetarynames.wr.usgs.gov/Feature/1781) i [Hyblaeus Chasma](https://planetarynames.wr.usgs.gov/Feature/2599) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Kanion pod kopułą
-        - _Przynależność_: Zevi Oaxaca-Maartens
-        - _Główne języki_: angielski, arabski, mandaryński, wu
+        - **Położenie**: [Elysium Chasma](https://planetarynames.wr.usgs.gov/Feature/1781) i [Hyblaeus Chasma](https://planetarynames.wr.usgs.gov/Feature/2599) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Kanion pod kopułą
+        - **Przynależność**: Zevi Oaxaca-Maartens
+        - **Główne języki**: angielski, arabski, mandaryński, wu
         ## Mapa regionu
         <a href="https://eclipsephasemaps.wordpress.com/2021/01/11/elysium-an-eclipse-phase-supplement/">![Mapa regionu](https://eclipsephasemaps.wordpress.com/wp-content/uploads/2020/12/elysium-regionalw.jpg?w=1024)</a>
         ## Mapy miasta

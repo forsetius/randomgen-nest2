@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Nectar
-        - _Położenie_: krater [Daguerre](https://planetarynames.wr.usgs.gov/Feature/1388), [Mare Nectaris](https://planetarynames.wr.usgs.gov/Feature/3683)
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski, hiszpański
+        - **Położenie**: krater [Daguerre](https://planetarynames.wr.usgs.gov/Feature/1388), [Mare Nectaris](https://planetarynames.wr.usgs.gov/Feature/3683)
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski, hiszpański
 lead: |
   **Nectar**, położone wzdłuż trasy mobilnego księżycowego [skyhooka](#), jest największym i najbardziej kosmopolitycznym miastem na Lunie. Ścisłe powiązania osady z [Konsorcjum Planetarnym]{pl/ep-konsorcjum-planetarne} sprawiają, że mieszka tu więcej obcych niż we wszystkich innych miastach Luny razem wziętych, a sami mieszkańcy Nectar są średnio mniej nieufni wobec przybyszów niż pozostali Lunarni. Jest to też jedyna duża osada, gdzie trwa duża rozbudowa.
 ---

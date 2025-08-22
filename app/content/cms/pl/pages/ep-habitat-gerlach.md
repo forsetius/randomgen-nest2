@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Gerlach
+headerImage: mid-ep-gerlach-head.jpg
 excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus" 
 category: ep-atlas-wenus
 subcategory: orbitale
@@ -9,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Gerlach
-        - _Położenie_: orbita [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla} + [Torus]{pl/ep-torus}
-        - _Przynależność_: Niezależny
-        - _Główne języki_: angielski, kantoński, polski
+        - **Położenie**: orbita [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla} + [Torus]{pl/ep-torus}
+        - **Przynależność**: Niezależny
+        - **Główne języki**: angielski, kantoński, polski
 lead: |
   Gerlach to klasyczny cylindryczny [habitat]{pl/ep-habitat} [typu O’Neilla]{pl/ep-cylinder-oneilla}. Ma 1 kilometr średnicy, 4 kilometry długości i liczy niemal 120 000 mieszkańców. Jest głównym wenusjańskim portem kosmicznym, a także najstarszą zamieszkaną lokalizacją na lub wokół [Wenus]{pl/ep-atlas-wenus}. Początkowo był mniejszy, a jego budowę rozpoczęto z zamiarem prowadzenia badań nad atmosferą Wenus, wznoszenia kolejnych habitatów i aerostatów oraz docelowo — terraformowania planety.
 ---

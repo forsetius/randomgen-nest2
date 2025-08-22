@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Hooverman-Geischecker
-        - _Położenie_: orbita [Słońca]{pl/ep-atlas-slonce}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Argonauci]{pl/ep-argonauci}/[Wspólnota Tytana]{pl/ep-wspolnota-tytana}
-        - _Główne języki_: brak
+        - **Położenie**: orbita [Słońca]{pl/ep-atlas-slonce}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Argonauci]{pl/ep-argonauci}/[Wspólnota Tytana]{pl/ep-wspolnota-tytana}
+        - **Główne języki**: brak
 lead: |
   Hooverman-Geischecker to wspólne przedsięwzięcie [Argonautów]{pl/ep-argonauci} i Autonomicznego Uniwersytetu [Tytana](#), które sponsoruje dziesiątki projektów badawczych. Habitat ten zamieszkuje około 4 000 transludzi. W przeciwieństwie do [Atenu]{pl/ep-habitat-aten}, panuje tu stosunkowo otwarta kultura, a zarządzanie odbywa się według zasad [nanosocjalizmu]{pl/ep-nanosocjalizm}.
 ---

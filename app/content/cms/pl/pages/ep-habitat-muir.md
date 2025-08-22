@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Muir
-        - _Położenie_: [Oceanus Procellarum](https://planetarynames.wr.usgs.gov/Feature/4395), między [Mons Rumker](https://planetarynames.wr.usgs.gov/Feature/3994), kraterem [Mairan](https://planetarynames.wr.usgs.gov/Feature/3597) i kraterem [Nielsen](https://planetarynames.wr.usgs.gov/Feature/4256)
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: Niezależne ([Eko-konserwatyści]{pl/ep-eko-konserwatysci})
-        - _Główne języki_: angielski, niemiecki
+        - **Położenie**: [Oceanus Procellarum](https://planetarynames.wr.usgs.gov/Feature/4395), między [Mons Rumker](https://planetarynames.wr.usgs.gov/Feature/3994), kraterem [Mairan](https://planetarynames.wr.usgs.gov/Feature/3597) i kraterem [Nielsen](https://planetarynames.wr.usgs.gov/Feature/4256)
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: Niezależne ([Eko-konserwatyści]{pl/ep-eko-konserwatysci})
+        - **Główne języki**: angielski, niemiecki
 lead: |
   Ta niewielka placówka jest znana jako ideologiczne centrum [eko-konserwatystów]{pl/ep-eko-konserwatysci}. [Habitat]{pl/ep-habitat} stanowi modelowy przykład nieinwazyjnych, bezśladowych technologii i stylu życia na nowych światach. 
 ---
