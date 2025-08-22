@@ -1,7 +1,8 @@
 ---
 template: page-default
 title: Far Reach II
-excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus" 
+headerImage: mid-ep-far-reach-head.jpg
+excerpt: Stacja Omnicoru specjalizująca się w procesach chemicznych i nanofabrykacji 
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
@@ -9,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Far Reach II
-        - _Położenie_: orbita [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
-        - _Przynależność_: [Omnicor]{pl/ep-omnicor}
-        - _Główne języki_: japoński, rosyjski
+        - **Położenie**: orbita [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
+        - **Przynależność**: [Omnicor]{pl/ep-omnicor}
+        - **Główne języki**: japoński, rosyjski
 lead: |
   Największą prywatną stacją na orbicie Wenus jest Far Reach II, należąca do [Omnicor]{pl/ep-omnicor}. Na jej pokładzie pracuje 75 000 badaczy i personelu pomocniczego, prowadząc prace zarówno nad zaawansowaną [nanofabrykacją](#), jak i nad nietypowymi technikami produkcji chemicznej.
 ---

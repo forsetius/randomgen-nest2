@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Octavia
-        - _Położenie_: atmosfera [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Aerostat]{pl/ep-aerostaty-wenus}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: angielski, francuski, kantoński
+        - **Położenie**: atmosfera [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Aerostat]{pl/ep-aerostaty-wenus}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: angielski, francuski, kantoński
 lead: |
   Przy populacji pół miliona mieszkańców, **Octavia** jest o połowę większa od następnego co do wielkości aerostatu. To stolica [Konstelacji Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej} oraz główny port kosmiczny planety. Strukturalnie przypomina ogromny, rozbudowany i stosunkowo szeroki odwrócony stożek. Jej wnętrze jest jeszcze bardziej przestronne niż w innych aerostatach, ponieważ zostało zaprojektowane zarówno z myślą o komforcie, jak i o zrobieniu wrażenia na odwiedzających [Wenus]{pl/ep-atlas-wenus}.
 ---

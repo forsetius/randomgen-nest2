@@ -9,9 +9,9 @@ slots:
     - type: static
       content: |
         ## Stocznia im. Korolowa
-        - _Położenie_: orbita [Luny]{pl/ep-atlas-luna}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Położenie**: orbita [Luny]{pl/ep-atlas-luna}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
         - _Główny język_: rosyjski
 lead: |
   Oficjalnie znana jako **Stocznia im. Korolowa**, ta duża stacja przez wszystkich na [Lunie]{pl/ep-atlas-luna} nazywana jest po prostu „Stocznią”. Stacja w stanie nieważkości należy do firmy [Starware]{pl/ep-starware} i jest drugą co do wielkości placówką budowy statków kosmicznych w Układzie Wewnętrznym, ustępując tylko większemu kompleksowi wokół [Marsa]{pl/ep-atlas-mars}. 

@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Clever Hands
-        - _Położenie_: krater [Grimaldi](https://planetarynames.wr.usgs.gov/Feature/2252) ([Luna]{pl/ep-atlas-luna})
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski
+        - **Położenie**: krater [Grimaldi](https://planetarynames.wr.usgs.gov/Feature/2252) ([Luna]{pl/ep-atlas-luna})
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski
 lead: |
   To osiedle jest centrum działalności [Somateku]{pl/ep-somatek} w zakresie [uplifowania]{pl/ep-uplift} zwierząt. Właśnie tutaj projektuje się i hoduje większość zwierząt genetycznie modyfikowanych, które zamieszkują różne habitaty na Lunie. 
 ---

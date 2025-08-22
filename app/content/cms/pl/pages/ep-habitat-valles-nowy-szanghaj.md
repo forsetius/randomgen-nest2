@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Valles - Nowy Szanghaj
-        - _Położenie_: [Capri Mensa](https://planetarynames.wr.usgs.gov/Feature/1013) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Habitat kopułowy
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}/[Liga Tharsis]{pl/ep-liga-tharsis}
-        - _Główne języki_: angielski, arabski, mandaryński, wu
+        - **Położenie**: [Capri Mensa](https://planetarynames.wr.usgs.gov/Feature/1013) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Habitat kopułowy
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}/[Liga Tharsis]{pl/ep-liga-tharsis}
+        - **Główne języki**: angielski, arabski, mandaryński, wu
         ## Mapa regionu
         <a href="https://eclipsephasemaps.wordpress.com/2021/12/30/region-map-eos-chasma/">![Mapa Capri Mensa i okolic](https://eclipsephasemaps.wordpress.com/wp-content/uploads/2021/12/eos-regional.jpg?w=1568)</a>
 lead: |

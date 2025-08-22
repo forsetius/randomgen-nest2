@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Vo Nguyen
+headerImage: mid-ep-vo-nguyen-head.jpg
 excerpt: Habitat rewitalizatorów i biokonserwatystów na orbicie GEO
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty

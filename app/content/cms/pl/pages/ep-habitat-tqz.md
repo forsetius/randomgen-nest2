@@ -11,8 +11,8 @@ slots:
     - type: static
       content: |
         ## Strefa Kwarantanny TITAN-ów
-        - _Położenie_: trójkąt [Arsia Mons](https://planetarynames.wr.usgs.gov/Feature/3772) - południowe podnóża [Olympus Mons](https://planetarynames.wr.usgs.gov/Feature/4453) - [krater Gale](https://planetarynames.wr.usgs.gov/Feature/2071) ([Mars]{pl/ep-atlas-mars})
-        - _Przynależność_: [TITAN-i]{pl/ep-titans}
+        - **Położenie**: trójkąt [Arsia Mons](https://planetarynames.wr.usgs.gov/Feature/3772) - południowe podnóża [Olympus Mons](https://planetarynames.wr.usgs.gov/Feature/4453) - [krater Gale](https://planetarynames.wr.usgs.gov/Feature/2071) ([Mars]{pl/ep-atlas-mars})
+        - **Przynależność**: [TITAN-i]{pl/ep-titans}
 
 lead: |
 ---

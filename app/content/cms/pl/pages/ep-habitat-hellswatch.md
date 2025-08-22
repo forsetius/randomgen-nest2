@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Hellswatch
-        - _Położenie_: orbita ([Merkurego]{pl/ep-atlas-merkury})
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
-        - _Główne języki_: angielski, arabski, urdu
+        - **Położenie**: orbita ([Merkurego]{pl/ep-atlas-merkury})
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Główne języki**: angielski, arabski, urdu
 lead: |
   Ten niewielki habitat [toroidalny]{pl/ep-torus} pełni funkcję centrum biurokratycznego i administracyjnego K[onsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} w sprawach dotyczących Merkurego.
 ---

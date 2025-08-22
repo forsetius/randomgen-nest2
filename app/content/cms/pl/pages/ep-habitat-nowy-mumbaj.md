@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Nowy Mumbaj
-        - _Położenie_: [Mare Moscoviense](https://planetarynames.wr.usgs.gov/Feature/3682) ([Luna]{pl/ep-atlas-luna})
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [TITAN-i]{pl/ep-titans}
+        - **Położenie**: [Mare Moscoviense](https://planetarynames.wr.usgs.gov/Feature/3682) ([Luna]{pl/ep-atlas-luna})
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [TITAN-i]{pl/ep-titans}
 lead: |
   Zanim został zniszczony przez dwie potężne bomby fuzyjne, **Nowy Mumbaj** był główną księżycową placówką wydobywającą [hel-3](https://en.wikipedia.org/wiki/Helium-3) oraz kwitnącą kolonią liczącą 50&nbsp;000 mieszkańców, która na początku [Upadku]{pl/ep-upadek} przyjęła dodatkowo 380 000 uchodźców. Niestety, przynajmniej jeden z tych uchodźców był zainfekowany [egzowirusem]{pl/ep-egzowirus}. Pomimo procedur kwarantanny pierwszej generacji, zarażona osoba zdołała jakoś je obejść. Kilka tygodni później ponad 70% populacji Nowego Mumbaju było już potajemnie zainfekowanych, nieświadomych zagrożenia. W pewnym momencie wirus uaktywnił się i jednocześnie przejął kontrolę nad wszystkimi ofiarami. Eksperci od aktywności [egzoidów]{pl/ep-egzoid} są pewni, że wirusy wymieniały potajemnie sygnały umożliwiające skoordynowane przejęcie kontroli.
 ---

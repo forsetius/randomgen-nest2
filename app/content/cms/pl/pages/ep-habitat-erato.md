@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Erato
-        - _Położenie_: krater [Eratosthenes](https://planetarynames.wr.usgs.gov/Feature/1820) ([Luna]{pl/ep-atlas-luna})
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
-        - _Główne języki_: angielski, mandaryński
+        - **Położenie**: krater [Eratosthenes](https://planetarynames.wr.usgs.gov/Feature/1820) ([Luna]{pl/ep-atlas-luna})
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Główne języki**: angielski, mandaryński
 lead: |
   To miasto jest jednym z najstarszych i wciąż największym osiedlem górniczym na [Lunie]{pl/ep-atlas-luna}. Jest także najmniejsze spośród trzech największych miast Księżyca, z populacją nieco ponad 5 milionów. Erato uchodzi powszechnie za najbardziej przestronne i najpiękniejsze z miast Luny. Sercem miasta jest ogromna grota wykuta jeszcze przed [Upadkiem]{pl/ep-upadek}. Znana jako **Wielka Grota Erato**, częściej po prostu Wielka Grota, to największa otwarta przestrzeń pod powierzchnią Księżyca – ma 1,5 kilometra wysokości i ponad 2 kilometry średnicy.
 ---

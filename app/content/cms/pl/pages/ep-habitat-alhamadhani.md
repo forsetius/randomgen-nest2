@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Al-Hamadhani
-        - _Położenie_: krater [Al-Hamadhani](https://planetarynames.wr.usgs.gov/Feature/147) ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: Habitat planetarny
-        - _Przynależność_: Pylarze
-        - _Główne języki_: arabski, hindi
+        - **Położenie**: krater [Al-Hamadhani](https://planetarynames.wr.usgs.gov/Feature/147) ([Merkury]{pl/ep-atlas-merkury})
+        - **Typ**: Habitat planetarny
+        - **Przynależność**: Pylarze
+        - **Główne języki**: arabski, hindi
 lead: |
   Ten średniej wielkości krater na północnej półkuli byłby stolicą Pylarzy – gdyby tylko Pylarze potrafili się kiedykolwiek zgodzić co do czegoś tak ważnego, jak wybór stolicy. 
 ---

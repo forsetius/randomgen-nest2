@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Aśoka
-        - _Położenie_: [Argyre Planitia](https://planetarynames.wr.usgs.gov/Feature/371) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Miasto kopułowe
-        - _Przynależność_: [Fa Jing]{pl/ep-fajing}
+        - **Położenie**: [Argyre Planitia](https://planetarynames.wr.usgs.gov/Feature/371) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Miasto kopułowe
+        - **Przynależność**: [Fa Jing]{pl/ep-fajing}
 lead: |
   **Nowe Dazhai** znajduje się u podnóża północnej krawędzi basenu uderzeniowego [Argyre Planitia](https://planetarynames.wr.usgs.gov/Feature/371) i pełni funkcję klasycznego [miasta korporacyjnego](https://en.wikipedia.org/wiki/Company_town). Liczy około 350 000 mieszkańców, którzy żyją pod dużą stałą kopułą o średnicy 800 metrów, kilkoma mniejszymi kopułami ciśnieniowymi (po 100 metrów), a także w prefabrykowanych modułach, kontenerach mieszkalnych i zabudowie tymczasowej.
 ---

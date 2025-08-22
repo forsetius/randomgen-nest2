@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Parvarti
-        - _Położenie_: atmosfera [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Aerostat]{pl/ep-aerostaty-wenus}
-        - _Przynależność_: Niezależny
-        - _Główne języki_: angielski, farsi, japoński
+        - **Położenie**: atmosfera [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Aerostat]{pl/ep-aerostaty-wenus}
+        - **Przynależność**: Niezależny
+        - **Główne języki**: angielski, farsi, japoński
 lead: |
   **Parvarti**, jeden z zaledwie dwóch niezależnych [aerostatów]{pl/ep-aerostaty-wenus}, reklamuje się jako miejsce, gdzie marzenia stają się rzeczywistością. Znany jest z raczej podejrzanej reputacji — jako coś w rodzaju klubu swingersów [Układu Wewnętrznego]{pl/ep-wewnetrze} lub [habitatowej]{pl/ep-habitat} dzielnicy czerwonych latarni, która zaspokaja niemal każdą fantazję, fetysz czy dewiację — z gwarancją dyskrecji.
 ---

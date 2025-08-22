@@ -2,7 +2,8 @@
 template: page-default
 title: Cytera
 subtitle: Cythera
-excerpt: Stacja Cognite mieszczące zaawansowane laboratoria AI
+headerImage: mid-ep-cythera-head.jpg
+excerpt: Stacja specjalizująca się w badaniach nad terroformacją Wenus
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
@@ -10,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Cytera
-        - _Położenie_: orbita [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: bengalski, pundżabi
+        - **Położenie**: orbita [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: bengalski, pundżabi
         
         ## Tłumaczenie
         Nazwa pochodzi od greckiej wyspy [Kithiry](https://pl.wikipedia.org/wiki/Kithira), historycznie nazywanej "Cytera". Wg mitologii greckiej nazwa odnosi się też do "gwiazdy miłości" - planety Wenus, nazwanej tak od wyspy Cytery.

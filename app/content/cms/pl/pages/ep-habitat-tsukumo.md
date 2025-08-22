@@ -9,9 +9,9 @@ slots:
     - type: static
       content: |
         ## Tsukumo
-        - _Położenie_: orbita [Luny]{pl/ep-atlas-luna}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Położenie**: orbita [Luny]{pl/ep-atlas-luna}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
         - _Główny język_: japoński
 lead: |
   **Tsukomo** to główna siedziba [Grupy Go-nin]{pl/ep-gonin}. Położona na orbicie [Luny]{pl/ep-atlas-luna}, korzysta ze swojej bliskości do banków księżycowych. Stacja jest stosunkowo niewielka – zamieszkuje ją tylko 10 000 osób – ale należy do najbogatszych i najbardziej luksusowych osiedli na lub wokół Luny. 

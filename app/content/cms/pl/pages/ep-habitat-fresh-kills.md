@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Fresh Kills
+headerImage: mid-ep-fresh-kills-head.jpg
 excerpt: Centrum recyklingu, a w praktyce piracka baza na obrzeżach L5 Ziemia-Luna.
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty

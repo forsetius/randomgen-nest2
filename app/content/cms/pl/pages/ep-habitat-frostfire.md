@@ -1,6 +1,7 @@
 ---
 template: page-default
 title: Frostfire
+headerImage: mid-ep-frostfire-head.jpg
 excerpt: Transport asteroidów lodowych na Wenus i bombardowanie nimi atmosfery
 category: ep-atlas-wenus
 subcategory: orbitale
@@ -9,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Frostfire
-        - _Położenie_: orbita [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: hiszpański, portugalski
+        - **Położenie**: orbita [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: hiszpański, portugalski
         
 lead: |
   Frostfire ma populację 35 000 mieszkańców i odpowiada za zbieranie oraz dystrybucję wielu lodowych głazów i małych asteroid lodowych, które są transportowane na [Wenus]{pl/ep-atlas-wenus}. Lód ten jest potrzebny, by stopniowo zwiększać ilość pary wodnej w [górnych warstwach atmosfery]{pl/ep-atlas-wenus-chmury}.

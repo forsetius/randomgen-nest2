@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Moustier
-        - _Położenie_: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
-        - _Przynależność_: Niezależny
-        - _Główne języki_: angielski, francuski, niemiecki
+        - **Położenie**: punkt L5 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Cylinder O'Neilla]{pl/ep-cylinder-oneilla}
+        - **Przynależność**: Niezależny
+        - **Główne języki**: angielski, francuski, niemiecki
 lead: |
   Ten niewielki habitat typu [O'Neilla]{pl/ep-cylinder-oneilla} został zbudowany przez tymczasowe konsorcjum interesów [hiperkorpów]{pl/ep-hiperkorporacja] w celu zakwaterowania [info-uchodźców]{pl/ep-info-uchodzcy} i zmniejszenia presji przeludnienia w innych habitatach po [Upadku]{pl/ep-upadek}. 
 ---

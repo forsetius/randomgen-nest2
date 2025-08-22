@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Atira
-        - _Położenie_: [163693 Atira](https://pl.wikipedia.org/wiki/(163693)_Atira)
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [przestępcza]{pl/ep-przestepczosc} (Los Zetas)
-        - _Główne języki_: hiszpański
+        - **Położenie**: [163693 Atira](https://pl.wikipedia.org/wiki/(163693)_Atira)
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [przestępcza]{pl/ep-przestepczosc} (Los Zetas)
+        - **Główne języki**: hiszpański
 lead: |
   Stacja na asteroidzie **163693 Atira** została pierwotnie założona przez spółkę zależną [hiperkorporacji]{pl/ep-hiperkorporacja} farmaceutycznej jeszcze przed [Upadkiem]{pl/ep-upadek}, jako odizolowana placówka do produkcji eksperymentalnych leków i egzotycznych metamateriałów. Niedługo po Upadku ujawniono, że firma macierzysta prowadziła eksperymenty na [morfach]{pl/ep-morf} ludzkich genetycznie zmodyfikowanych tak, by nie odczuwały bólu. W wyniku skandalu Atira została wykupiona przez inną, mało znaną firmę.
 ---

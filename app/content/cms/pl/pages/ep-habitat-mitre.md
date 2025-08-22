@@ -9,9 +9,9 @@ slots:
     - type: static
       content: |
         ## Mitre
-        - _Położenie_: orbita [Luny]{pl/ep-atlas-luna}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Argonauci]{pl/ep-argonauci}
+        - **Położenie**: orbita [Luny]{pl/ep-atlas-luna}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Argonauci]{pl/ep-argonauci}
         - _Główny język_: angielski, mandaryński
 lead: |
   Mitre to siedziba [Argonautów]{pl/ep-argonauci} w [Układzie Wewnętrznym]{pl/ep-wewnetrze} – średniej wielkości stacja naukowa i archiwum. 

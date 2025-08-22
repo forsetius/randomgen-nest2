@@ -10,9 +10,9 @@ slots:
     - type: static
       content: |
         ## Noctis-Qianjiao
-        - _Położenie_: [6,5°S 92°W](https://bit.ly/40F96aH), [Noctis Labirynthus](#)/[Valles Marineris](https://planetarynames.wr.usgs.gov/Feature/1013) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Habitat kopułowy
-        - _Przynależność_: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
+        - **Położenie**: [6,5°S 92°W](https://bit.ly/40F96aH), [Noctis Labirynthus](#)/[Valles Marineris](https://planetarynames.wr.usgs.gov/Feature/1013) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Habitat kopułowy
+        - **Przynależność**: [Konsorcjum Planetarne]{pl/ep-konsorcjum-planetarne}
         ## Mapa regionu
         <a href="https://eclipsephasemaps.wordpress.com/2021/12/17/regional-map-valles-marineris/">![Mapa Valles Marineris i okolic](https://eclipsephasemaps.wordpress.com/wp-content/uploads/2021/12/041.-valles-marineris-regional.jpg?w=1568)</a>
 lead: |

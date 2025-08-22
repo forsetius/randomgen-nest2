@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Transix
-        - _Położenie_: punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: [Comet Express]{pl/ep-comet-express}
-        - _Główne języki_: angielski, rosyjski
+        - **Położenie**: punkt L4 [Mars]{pl/ep-atlas-mars}–[Słońce]{pl/ep-atlas-slonce}
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: [Comet Express]{pl/ep-comet-express}
+        - **Główne języki**: angielski, rosyjski
 lead: |
   **Transix** to główny przystanek i punkt przeładunkowy [Comet Express]{pl/ep-comet-express} pomiędzy [Układem wewnętrznym]{pl/ep-wewnetrze} a [zewnętrznym]{pl/ep-zewnetrze}. Może to być największa stacja towarowa w całym Układzie Słonecznym. Ramiona portowe oferują miejsca dokujące dla licznych dalekobieżnych statków towarowych. Na miejscu operuje flota dronów kurierskich, funkcjonujących w trybie ciągłej rotacji, a duży moduł produkcyjno-naprawczy zapewnia sprawność zarówno statków, jak i botów.
 ---

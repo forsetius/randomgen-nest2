@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Shackle
-        - _Położenie_: krater [Shackleton](https://planetarynames.wr.usgs.gov/Feature/5450) ([Luna]{pl/ep-atlas-luna})
-        - _Typ_: Habitat podpowierzchniowy
-        - _Przynależność_: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
-        - _Główne języki_: angielski, hindi
+        - **Położenie**: krater [Shackleton](https://planetarynames.wr.usgs.gov/Feature/5450) ([Luna]{pl/ep-atlas-luna})
+        - **Typ**: Habitat podpowierzchniowy
+        - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
+        - **Główne języki**: angielski, hindi
 lead: |
   Shackle to drugie co do wielkości i zarazem najważniejsze miasto na [Lunie]{pl/ep-atlas-luna}. Powstało przy niewielkich, lecz kluczowych złożach lodu księżycowego znajdujących się w głębokich kraterach i płytkich jaskiniach w rejonie południowego bieguna. To właśnie Shackle jest źródłem całej wody na Lunie, a osada została założona, by wydobywać i przetwarzać ten lód. 
 ---

@@ -2,6 +2,7 @@
 template: page-default
 title: Świadectwo
 subtitle: Remembrance
+headerImage: mid-ep-remembrance-head.jpg
 excerpt: Przepełniona uchodźcami stolica Sojuszu Wokółziemskiego.
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty

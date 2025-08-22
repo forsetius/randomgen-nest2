@@ -9,10 +9,10 @@ slots:
     - type: static
       content: |
         ## Condor-2
-        - _Położenie_: asteroida rodziny Apollo typu C
-        - _Typ_: [Klaster]{pl/ep-kolonia-klastrowa}
-        - _Przynależność_: nieznana
-        - _Główne języki_: nieznane
+        - **Położenie**: asteroida rodziny Apollo typu C
+        - **Typ**: [Klaster]{pl/ep-kolonia-klastrowa}
+        - **Przynależność**: nieznana
+        - **Główne języki**: nieznane
 lead: |
   Ta stacja została zbudowana wokół niewielkiej asteroidy, którą przekształcono w dużą antenę. Habitat krąży po orbicie o dużym nachyleniu — 75 stopni — wynoszącej go wysoko ponad i poniżej [ekliptyki](https://pl.wikipedia.org/wiki/Ekliptyka).   
 ---

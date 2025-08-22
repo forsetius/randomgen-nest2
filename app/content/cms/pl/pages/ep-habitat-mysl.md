@@ -2,6 +2,7 @@
 template: page-default
 title: Myśl
 subtitle: Thought
+headerImage: mid-ep-thought-head.jpg
 excerpt: Stacja Cognite mieszczące zaawansowane laboratoria AI
 category: ep-atlas-wenus
 subcategory: orbitale
@@ -10,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Myśl
-        - _Położenie_: orbita [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Torus]{pl/ep-torus}
-        - _Przynależność_: [Cognite]{pl/ep-cognite}
-        - _Główne języki_: angielski, niemiecki
+        - **Położenie**: orbita [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Torus]{pl/ep-torus}
+        - **Przynależność**: [Cognite]{pl/ep-cognite}
+        - **Główne języki**: angielski, niemiecki
 lead: |
   Stacja ta, kontrolowana przez [Cognite]{pl/ep-cognite}, jest siedzibą jednych z najnowocześniejszych badań nad [sztuczną inteligencją]{pl/ep-sztuczna-inteligencja} w całym Układzie Słonecznym. Pracujący tu badacze specjalizują się w tworzeniu AI o wysokim poziomie inteligencji ogólnej zbliżonym do [AGI](#), ale wciąż na tyle wyspecjalizowanych i ograniczonych, by nie stanowiły zagrożenia dla użytkowników i nie posiadały zdolności samodoskonalenia się.
 ---

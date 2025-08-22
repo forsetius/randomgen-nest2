@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Lumina
-        - _Położenie_: krater [Aristoxenus](https://planetarynames.wr.usgs.gov/Feature/383) ([Merkury]{pl/ep-atlas-merkury})
-        - _Typ_: Habitat planetarny
-        - _Przynależność_: [hiperkorpy]{pl/ep-hiperkorporacja}
+        - **Położenie**: krater [Aristoxenus](https://planetarynames.wr.usgs.gov/Feature/383) ([Merkury]{pl/ep-atlas-merkury})
+        - **Typ**: Habitat planetarny
+        - **Przynależność**: [hiperkorpy]{pl/ep-hiperkorporacja}
 lead: |
   Położona w kraterze Aristoxenes, w pobliżu bieguna północnego [Merkurego]{pl/ep-atlas-merkury}, Lumina to niezwykła osada [hiperkorpowa]{pl/ep-hiperkorporacja}. Znaczną część kolonii zajmują rozległe pola kolektorów słonecznych, rozmieszczone na grzbiecie licznych szczytów – zarówno naturalnych, jak i sztucznych – które pozostają nieprzerwanie oświetlone przez Słońce.
 ---

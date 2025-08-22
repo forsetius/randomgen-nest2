@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Lucyfer
-        - _Położenie_: atmosfera [Wenus]{pl/ep-atlas-wenus}
-        - _Typ_: [Aerostat]{pl/ep-aerostaty-wenus}
-        - _Przynależność_: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
-        - _Główne języki_: angielski, arabski, francuski, rosyjski
+        - **Położenie**: atmosfera [Wenus]{pl/ep-atlas-wenus}
+        - **Typ**: [Aerostat]{pl/ep-aerostaty-wenus}
+        - **Przynależność**: [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej}
+        - **Główne języki**: angielski, arabski, francuski, rosyjski
 lead: |
   **Lucyfer** to [aerostat]{pl/ep-aerostaty-wenus} odpowiedzialny za większość wydobycia surowców z [powierzchni Wenus]{pl/ep-atlas-wenus-powierzchnia}, a zarazem najbardziej mobilny pod względem wysokości. Został zaprojektowany tak, by móc poruszać się pomiędzy wysokościami 60 a 40 kilometrów, szukając poziomów, na których prędkości wiatrów są wystarczająco niskie, by umożliwić mu łatwe utrzymanie pozycji nad wybranym miejscem. Wtedy opuszcza linę cumowniczą na powierzchnię, by rozmieścić sprzęt i górników, a potem odebrać ich wraz z urobkiem.
 ---

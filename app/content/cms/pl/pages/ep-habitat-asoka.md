@@ -11,10 +11,10 @@ slots:
     - type: static
       content: |
         ## Aśoka
-        - _Położenie_: [Chryse Planitia](https://planetarynames.wr.usgs.gov/Feature/1203) ([Mars]{pl/ep-atlas-mars})
-        - _Typ_: Krater pod kopułą
-        - _Przynależność_: [Liga Tharsis]{pl/ep-liga-tharsis}
-        - _Główne języki_: angielski, arabski, japoński, koreański i mandaryński 
+        - **Położenie**: [Chryse Planitia](https://planetarynames.wr.usgs.gov/Feature/1203) ([Mars]{pl/ep-atlas-mars})
+        - **Typ**: Krater pod kopułą
+        - **Przynależność**: [Liga Tharsis]{pl/ep-liga-tharsis}
+        - **Główne języki**: angielski, arabski, japoński, koreański i mandaryński 
 lead: |
   Aśoka to miasto wbudowane w grunt, sięgające dziesiątki metrów pod wieczną zmarzlinę chaotycznej równiny, na której się znajduje – aż do warstwy litej skały. Miasto odgrywa istotną rolę mimo stosunkowo niewielkich rozmiarów. Stanowi centrum działalności [Ruchu Fremenów]{pl/ep-fremeni}, ekskluzywne miejsce wypoczynku dla zamożnych oraz ważny ośrodek operacyjny **Organizacji Terraformacyjnej Tytana** (TTO). Aśoka łączy funkcje miejskie i pustynne – to przestrzeń na styku oazy, miasta i infrastruktury.
 ---

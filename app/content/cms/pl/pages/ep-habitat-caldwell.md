@@ -10,10 +10,10 @@ slots:
     - type: static
       content: |
         ## Caldwell
-        - _Położenie_: [Wulkanoidy]{pl/ep-atlas-wulkanoidy}
-        - _Typ_: [Kopuła](#)
-        - _Przynależność_: [TerraGenesis]{pl/ep-terragenesis}
-        - _Główne języki_: angielski, holenderski, tamilski
+        - **Położenie**: [Wulkanoidy]{pl/ep-atlas-wulkanoidy}
+        - **Typ**: [Kopuła](#)
+        - **Przynależność**: [TerraGenesis]{pl/ep-terragenesis}
+        - **Główne języki**: angielski, holenderski, tamilski
 lead: |
   Caldwell był pierwszym z nieuchwytnych [Wulkanoidów]{pl/ep-atlas-wulkanoidy}, który został odkryty – choć początkowo nie wzbudził większego zainteresowania. Wszystko zmieniło się, gdy niewielki zespół poszukiwaczy z Wenus odnalazł [Wrota Pandoriańskie](#) w głębokim uskoku niedaleko jednego z wąskich biegunów asteroidy. Ten niepozorny kawałek skały nagle wysunął się na pierwszy plan.
 ---

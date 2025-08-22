@@ -11,9 +11,9 @@ slots:
     - type: static
       content: |
         ## Jajo
-        - _Położenie_: orbita ([Merkurego]{pl/ep-atlas-merkury})
-        - _Typ_: artefakt
-        - _Przynależność_: [Faktorzy](#)
+        - **Położenie**: orbita ([Merkurego]{pl/ep-atlas-merkury})
+        - **Typ**: artefakt
+        - **Przynależność**: [Faktorzy](#)
 lead: |
   „Jajo” to owalna konstrukcja wielkości wieżowca, dryfująca na wysokiej orbicie Merkurego. Nikt nie wie dokładnie, czym ono jest ani do czego służy. [Faktorzy](#) pozostawili Jajo w AF 8, podczas jednej ze swoich wizyt na [Merkurym]{pl/ep-atlas-merkury}, oświadczając transludzkości jedynie, że należy do nich i powinniśmy zostawić je w spokoju.
 ---

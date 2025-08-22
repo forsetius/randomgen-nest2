@@ -1,6 +1,7 @@
 ---
 template: page-full-width
 title: Inne stacje wenusjańskie
+headerImage: mid-ep-other-habs-head.jpg
 excerpt: Mniejsze stacje kosmiczne nad Wenus
 category: ep-atlas-wenus
 subcategory: orbitale
