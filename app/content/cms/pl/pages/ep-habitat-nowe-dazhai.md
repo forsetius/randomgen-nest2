@@ -3,17 +3,19 @@ template: page-default
 title: Nowe Dazhai
 subtitle: New Dazhai
 headerImage: mid-ep-new-dazhai-head.jpg
-excerpt: Korporacyjne miasto Fa Jing.
+excerpt: Korporacyjne miasto Fa Jing
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
   aside:
     - type: static
       content: |
-        ## Aśoka
+        ## Nowe Dazhai
         - **Położenie**: [Argyre Planitia](https://planetarynames.wr.usgs.gov/Feature/371) ([Mars]{pl/ep-atlas-mars})
         - **Typ**: Miasto kopułowe
         - **Przynależność**: [Fa Jing]{pl/ep-fajing}
+        ## Kontekst
+        [Dazhai](https://en.wikipedia.org/wiki/Dazhai) było chińską wioską, którą [Mao Zedong](https://pl.wikipedia.org/wiki/Mao_Zedong) nazwał modelową i uczynił [wzorem dla chińskiego rolnictwa](https://en.wikipedia.org/wiki/Learn_from_Dazhai_in_agriculture). 
 lead: |
   **Nowe Dazhai** znajduje się u podnóża północnej krawędzi basenu uderzeniowego [Argyre Planitia](https://planetarynames.wr.usgs.gov/Feature/371) i pełni funkcję klasycznego [miasta korporacyjnego](https://en.wikipedia.org/wiki/Company_town). Liczy około 350 000 mieszkańców, którzy żyją pod dużą stałą kopułą o średnicy 800 metrów, kilkoma mniejszymi kopułami ciśnieniowymi (po 100 metrów), a także w prefabrykowanych modułach, kontenerach mieszkalnych i zabudowie tymczasowej.
 ---

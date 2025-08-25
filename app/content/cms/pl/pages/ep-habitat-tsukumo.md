@@ -2,6 +2,7 @@
 template: page-default
 title: Tsukumo
 excerpt: Luksusowa stacja Go-nin Group na orbicie Luny, świątynia korporacyjnego bogactwa.
+headerImage: mid-gonin-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:

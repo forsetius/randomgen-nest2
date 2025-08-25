@@ -45,6 +45,11 @@ slots:
         - category: ep-atlas-mars
           subcategory: habitaty
       title: Habitaty planetarne
+    - type: pageGallery
+      sources:
+        - category: ep-atlas-mars
+          subcategory: orbitale
+      title: Habitaty orbitalne
       
 lead: |
   [Ziemia]{pl/ep-atlas-ziemia} była kolebką cywilizacji transludzkiej, ale Mars, z populacją 200 milionów, jest dziś jej sercem. Gdy ludzkość rozpoczęła swoją diasporę w przestrzeń kosmiczną, [Luna]{pl/ep-atlas-luna} była pierwszym przystankiem. Mimo że Luna ma dziś pokaźną populację, to właśnie Mars był pierwszym światem, na którym ludzie mogli przetrwać w pełni opierając się na lokalnych zasobach. 
@@ -57,4 +62,4 @@ Tymczasem Czerwona Planeta to miejsce zaskakujących kontrastów — od surowego
 
 Obecnie na Marsie znajduje się pięć ogromnych, kopułowych miast, głównie w regionach równikowych, a także liczne mniejsze osady. Osiedla te połączone są drogami naziemnymi, siecią niemal naddźwiękowych pociągów magnetycznych oraz portami powietrzno-kosmicznymi, z których regularnie startują suborbitale, sterowce i rakiety bliskiej przestrzeni. Dzięki obfitości metanu i zaledwie jednej trzeciej ziemskiej grawitacji, mieszkańcy Marsa w końcu doczekali się swoich latających samochodów — a każde osiedle ma wyznaczone korytarze powietrzne dla tych pojazdów. Tymczasem w dzikich regionach wyżyn planetolodzy i inżynierowie terraformowania mieszkają w niewielkich wioskach, żyjąc prosto w morfach typu [rdzawy]{pl/ep-rdzawy}, i czuwają nad dalszym rozwojem marsjańskiego klimatu i atmosfery.
 
-Jako częściowo terraformowana planeta z rozległymi połaciami nieużytków, Mars pozostaje jednym z niewielu miejsc, które mogą oferować nowe morfy [info-uchodźcom]{pl/ep-info-uchodzcy}. Marsjańskie domy pośrednictwa prowadzą intensywny handel [kontraktową pracą]{pl/ep-sluzba} info-uchodźców, w ramach umów, które w niektórych przypadkach prowadzą do późniejszego [przyodziewania]{pl/ep-przyodziewanie}. Doprowadziło to jednak do powstania znacznej klasy niższej, która zorganizowała się w rosnący ruch oporu działający pod sztandarem [Fremenów]{pl/ep-fremeni} — choć elity społeczności hiperelit określają ich pogardliwie mianem „wieśniaków”
+Jako częściowo terraformowana planeta z rozległymi połaciami nieużytków, Mars pozostaje jednym z niewielu miejsc, które mogą oferować nowe morfy [info-uchodźcom]{pl/ep-info-uchodzcy}. Marsjańskie domy pośrednictwa prowadzą intensywny handel [kontraktową pracą]{pl/ep-sluzba} info-uchodźców, w ramach umów, które w niektórych przypadkach prowadzą do późniejszego [przyodziewania]{pl/ep-przyodziewanie}. Doprowadziło to jednak do powstania znacznej klasy niższej, która zorganizowała się w rosnący ruch oporu działający pod sztandarem [Fremenów]{pl/ep-fremeni} — choć elity społeczności hiperelit określają ich pogardliwie mianem „wieśniaków”.

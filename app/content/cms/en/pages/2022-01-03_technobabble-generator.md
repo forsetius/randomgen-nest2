@@ -1,6 +1,6 @@
 ---
 template: page-default
-title: Generator technobełkotu
+title: Technobabble generator
 headerImage: startrek-engineers-head.png
 langs:
   pl: 2022-01-03_generator-technobelkotu

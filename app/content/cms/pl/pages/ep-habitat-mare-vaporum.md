@@ -2,6 +2,7 @@
 template: page-default
 title: Wokółlunarna Ludowa Republika Mare Vaporum 
 excerpt: Największy cylinder O’Neilla wokół Luny, siedziba triady Sun Yee On i czarnego rynku.
+headerImage: leo-ep-triads-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:
