@@ -5,6 +5,7 @@ subtitle: Planetary Consortium
 excerpt: Konsorcjum hiperkorporacji w praktyce rządzące Marsem i większością Wewnętrznego Układu Słonecznego
 headerImage: leo-planetary-consortium-head.jpg
 category: ep-ustroje
+subcategoryName: Konsorcjum Planerarne
 
 slots:
   aside:
@@ -17,7 +18,7 @@ slots:
         - Bezpieczeństwo
         - Ekspansja
         ## Główne habitaty
-        - [Progres](#) (orbita [Marsa]{pl/ep-atlas-mars})
+        - [Progres]{pl/ep-habitat-progress} (orbita [Marsa]{pl/ep-atlas-mars})
         ## Członkowie Rady Hiperkorporacji: 
         - [Cognite]{pl/ep-cognite}, 
         - [Direct Action]{pl/ep-direct-action}, 
@@ -29,8 +30,16 @@ slots:
         - [Solaris]{pl/ep-solaris}, 
         - [Stellar Intelligence]{pl/ep-stellar-intelligence} 
         i tuzin innych
+  bottom:
+    - type: pageGallery
+      sources:
+        - category: ep-konsorcjum-planetarne
+          subcategory: organy
+
+lead: |
+  **Konsorcjum Planetarne** wyewoluowało z sojuszu reprezentującego interesy [hiperkorporacji]{pl/ep-hiperkorporacja} w najpotężniejszy blok polityczny transludzkości. Dziś kontroluje wiele grup habitatów w [Układzie Wewnętrznym]{pl/ep-wewnetrze}, głównie na powierzchniach i orbitach wokół [Marsa]{pl/ep-atlas-mars} i [Luny]{pl/ep-atlas-luna} oraz na [orbicie Ziemi]{pl/ep-atlas-ziemia-orbita}. 
 ---
-**Konsorcjum Planetarne** wyewoluowało z sojuszu reprezentującego interesy [hiperkorporacji]{pl/ep-hiperkorporacja} w najpotężniejszy blok polityczny transludzkości. Dziś kontroluje wiele grup habitatów w [Układzie Wewnętrznym]{pl/ep-wewnetrze}, głównie na powierzchniach i orbitach wokół [Marsa]{pl/ep-atlas-mars} i [Luny]{pl/ep-atlas-luna} oraz na [orbicie Ziemi]{pl/ep-atlas-ziemia-orbita}. Imponująca stacja kosmiczna [Progres](#) jest oficjalną siedzibą rządu i stała się symbolem wpływów i potęgi Konsorcjum - nawet jeśli w rzeczywistości spotkania Kongresu czy Rady raczej rzadko odbywają się tam fizycznie w morfach.
+Imponująca stacja kosmiczna [Progres]{pl/ep-habitat-progress} jest oficjalną siedzibą rządu i stała się symbolem wpływów i potęgi Konsorcjum - nawet jeśli w rzeczywistości spotkania Kongresu czy Rady raczej rzadko odbywają się tam fizycznie w morfach.
 
 W Konsorcjum funkcjonują podstawowe zasady demokratyczne wsparte systemem głosowania w czasie rzeczywistym, otwartego dla wszystkich zarejestrowanych obywateli. W Kongresie i ciałach wykonawczych przewija się plejada polityków z hiperelit, [gerontokratów](http://en.wikipedia.org/wiki/Gerontocracy), [celebrytów]{pl/ep-celebryci} i ikon mediów. Jest jednak znanym faktem, że mimo tej politycznej fasady republiki demokratycznej, to członkowie Rady Hiperkorporacji dzierżą prawdziwy ster rządów. Te hiperkorporacje są liczącymi się orędownikami [ekonomii przejściowej]{pl/ep-ekonomia-przejsciowa}, [Interdyktu Ziemi](#) i ekspansji poza [Wrota pandoriańskie](#).
 

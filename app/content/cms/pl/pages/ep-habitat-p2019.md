@@ -2,6 +2,7 @@
 template: page-default
 title: P/2019
 excerpt: Na tej komecie wykryto ślady struktur i emisje podobne do aktywności TITAN-ów.
+headerImage: leo-ep-p2019-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: remote-habs
 lead: |

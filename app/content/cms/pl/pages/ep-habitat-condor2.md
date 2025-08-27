@@ -1,7 +1,8 @@
 ---
 template: page-default
 title: Condor-2
-excerpt: Dawna placówka farmaceutyczna, obecnie baza narkotykowego kartelu Los Zetas.
+excerpt: Niewielka asteroida przekształcona w placówkę nasłuchową
+headerImage: leo-ep-condor2-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: near-earth
 slots:

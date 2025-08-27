@@ -2,6 +2,7 @@
 template: page-default
 title: Moustier
 excerpt: Habitat taniej siły roboczej, info-uchodźców i społeczności neandertalczyków
+headerImage: mid-ep-moustier-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:

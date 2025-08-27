@@ -2,6 +2,7 @@
 template: page-default
 title: Introspect
 excerpt: Habitat ExoTechu w L5 Marsa, znany z badań nad AI i przyspieszonymi symulacjami.
+headerImage: mid-ep-introspect-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:

@@ -16,10 +16,6 @@ slots:
           - ep-encyklopedia
           - ep-atlas
 
-    - type: pageGallery
-      sources:
-        - category: eclipse-phase
-
   aside:
     - type: static
       content: |

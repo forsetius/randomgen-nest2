@@ -4,12 +4,6 @@ title: Ego Sum
 subtitle: Scenariusz do Eclipse Phase
 headerImage: mid-ep-ego-sum-head.jpg
 subcategoryName: Ego Sum
-
-slots:
-  bottom:
-    - type: pageGallery
-      sources:
-        - category: ep-scenariusz-ego-sum
 ---
 Jest to przygoda obliczona na wprowadzanie do świata Eclipse Phase zupełnie zielonych graczy. Postaci, którymi będą grali mają niemal zupełną amnezję - pamiętają tylko jakieś sprzeczne ze sobą urywki wspomnień, w których raz są jakimiś czarodziejami, innym razem wampirami, kiedy indziej barbarzyńskimi wojownikami... Budzą się nie rozpoznając swoich ciał, które buntują się samemu przebywaniu w nowym środowisku. Odarci ze wszystkiego będą musieli przetrwać surowe warunki naturalne, bronić się przed nieznaną im technologią i wreszcie stawić czoła prawdzie, gdy dotrze do nich kim są.
 
