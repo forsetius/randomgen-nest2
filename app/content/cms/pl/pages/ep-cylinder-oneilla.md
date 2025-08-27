@@ -3,10 +3,17 @@ template: page-default
 title: Cylinder O'Nealla
 headerImage: mid-oneill-head.jpg
 excerpt: Klasyczne stacje kosmiczne o kształcie cylindra
-lead: |
-  > Klasyka gatunku. Jakby ktoś zwinął Ziemię w rolkę i puścił ją w obrót. Sześć pasów – trzy zielone, trzy przezroczyste, wszystko obraca się jak karuzela dla bogatych. Można tam żyć całe życie i nigdy nie spojrzeć w prawdziwe niebo. Czasem zapominam, że to w ogóle stacja, nie planeta.
 category: ep-habitat
 subcategory: kosmiczne
+slots:
+  aside:
+    - type: static
+      content: |
+        ## O cylindrach O'Neilla
+        - [Artykuł na en-wiki](https://en.wikipedia.org/wiki/O%27Neill_cylinder)
+        - [Cylinder O'Neilla jest absurdalny](https://youtu.be/5jvMB8mZP1k?si=xlau5-r2ElvzADIL) - materiał wideo nt. sił działających w cylindrze, w tym specyfice grawitacji obrotowej
+lead: |
+  > Klasyka gatunku. Jakby ktoś zwinął Ziemię w rolkę i puścił ją w obrót. Sześć pasów – trzy zielone, trzy przezroczyste, wszystko obraca się jak karuzela dla bogatych. Można tam żyć całe życie i nigdy nie spojrzeć w prawdziwe niebo. Czasem zapominam, że to w ogóle stacja, nie planeta.
 ---
 **Cylindry O’Neilla**, znajdujące się głównie na orbitach [Ziemi]{pl/ep-atlas-ziemia}, [Luny]{pl/ep-atlas-luna}, [Wenus]{pl/ep-atlas-wenus} i [Marsa]{pl/ep-atlas-mars}, były jednymi z pierwszych wielkoskalowych projektów habitatów kosmicznych w historii transludzkości. Obecnie nie są już budowane – zastąpiono je wydajniejszymi konstrukcjami – jednak nadal zamieszkują je dziesiątki milionów ludzi.
 

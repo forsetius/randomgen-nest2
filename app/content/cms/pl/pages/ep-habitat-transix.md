@@ -2,6 +2,7 @@
 template: page-default
 title: Transix
 excerpt: Główny port przeładunkowy Comet Express między Układem wewnętrznym a zewnętrznym.
+headerImage: mid-ep-transix-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:
@@ -18,6 +19,6 @@ lead: |
 ---
 Zespoły miotaczy masy są gotowe do wystrzeliwania dronów — lub ładunków — w przestrzeń, by mogły zostać przechwycone przez przelatujące w pobliżu statki bez konieczności zużywania paliwa na manewr hamowania.
 
-Comet Express wynajmuje tu również przestrzeń mniejszym [hiperkorporacjom]{pl/ep-hiperkorporacja} zajmującym się transportem i logistyką, a kilka firm z branży rozrywkowej prowadzi moduły wypoczynkowe dla odwiedzających [hibernoidów]{pl/ep-hibernoid} i innych pracowników próżniowych. Na miejscu znajduje się także biuro kontroli importu/eksportu [Oversight](#), monitorujące ruch i dokonujące inspekcji przesyłek do i z habitatów Konsorcjum.
+Comet Express wynajmuje tu również przestrzeń mniejszym [hiperkorporacjom]{pl/ep-hiperkorporacja} zajmującym się transportem i logistyką, a kilka firm z branży rozrywkowej prowadzi moduły wypoczynkowe dla odwiedzających [hibernoidów]{pl/ep-hibernoid} i innych pracowników próżniowych. Na miejscu znajduje się także biuro kontroli importu/eksportu [Nadzór](#), monitorujące ruch i dokonujące inspekcji przesyłek do i z habitatów Konsorcjum.
 
-Ze względu na to, że przez stację przepływa wszelkiego rodzaju towar, zarówno [Zapora]{pl/ep-zapora}, jak i Oversight (a być może i inne podmioty) posiadają tu aparaturę wykrywającą potencjalnie niebezpieczne ładunki, takie jak materiały radioaktywne.
+Ze względu na to, że przez stację przepływa wszelkiego rodzaju towar, zarówno [Zapora]{pl/ep-zapora}, jak i Nadzór (a być może i inne podmioty) posiadają tu aparaturę wykrywającą potencjalnie niebezpieczne ładunki, takie jak materiały radioaktywne.

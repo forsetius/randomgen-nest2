@@ -20,6 +20,10 @@ menu:
     items:
       - title: RandomGen
         url: "@{en/randomgen}"
+      - title: Mod_CMS
+        url: "@{en/mod_cms}"
+      - title: Web-pane
+        url: "@{en/web-pane}"
 
   - title: Blurb
     items:

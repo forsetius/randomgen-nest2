@@ -2,6 +2,7 @@
 template: page-default
 title: Stocznia im. Korolowa
 excerpt: Wielka stocznia, spory związkowe i robotyzacja na orbicie Luny.
+headerImage: mid-ep-korolev-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:

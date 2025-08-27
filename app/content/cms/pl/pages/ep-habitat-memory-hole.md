@@ -2,6 +2,7 @@
 template: page-default
 title: Memory Hole
 excerpt: Archiwa Stellar Intelligence - magazyn wiedzy i narzędzie memetycznej wojny
+headerImage: mid-ep-memory-hole-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:

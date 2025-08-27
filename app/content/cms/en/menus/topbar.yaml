@@ -16,10 +16,16 @@ menu:
           - title: RandomGen
             url: "@{en/randomgen}"
             text: Various content generators, mainly for RPGs
+          - title: Mod_CMS
+            url: "@{en/mod_cms}"
+            text: CMS module that generates the static HTML pages
+          - title: Web-pane
+            url: "@{en/web-pane}"
+            text: Handy, always-on-top "helper windows" for web-apps
 
-          - title: PlanetaryNames4Celestia
-            url: "@{en/planetarynames4celestia}"
-            text: An application that pulls the Solar System location names and converts them to the Celestia format
+#          - title: PlanetaryNames4Celestia
+#            url: "@{en/planetarynames4celestia}"
+#            text: An application that pulls the Solar System location names and converts them to the Celestia format
 
   - title: Blog
     url: "@{en/blog}"

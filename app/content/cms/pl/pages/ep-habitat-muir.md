@@ -2,6 +2,7 @@
 template: page-default
 title: Muir
 excerpt: Centrum ideologiczne konserwatystów ekologicznych.
+headerImage: mid-ep-muir-head.jpg
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:

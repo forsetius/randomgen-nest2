@@ -2,6 +2,7 @@
 template: page-default
 title: Qing Long
 excerpt: Największy cylinder O’Neilla i centrum wpływów triad w Trojańczykach Marsjańskich
+headerImage: leo-ep-quin-long-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:

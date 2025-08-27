@@ -2,6 +2,7 @@
 template: page-default
 title: Atira
 excerpt: Dawna placówka farmaceutyczna, obecnie baza narkotykowego kartelu Los Zetas.
+headerImage: leo-ep-atira-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: near-earth
 slots:
@@ -16,6 +17,6 @@ slots:
 lead: |
   Stacja na asteroidzie **163693 Atira** została pierwotnie założona przez spółkę zależną [hiperkorporacji]{pl/ep-hiperkorporacja} farmaceutycznej jeszcze przed [Upadkiem]{pl/ep-upadek}, jako odizolowana placówka do produkcji eksperymentalnych leków i egzotycznych metamateriałów. Niedługo po Upadku ujawniono, że firma macierzysta prowadziła eksperymenty na [morfach]{pl/ep-morf} ludzkich genetycznie zmodyfikowanych tak, by nie odczuwały bólu. W wyniku skandalu Atira została wykupiona przez inną, mało znaną firmę.
 ---
-Zapora ustaliła, że ta „hiperkorporacja” — **Empresas Del Golfo** — to jedynie fasada, za którą stoi **[[Los Zetas](https://pl.wikipedia.org/wiki/Los_Zetas)]**, wpływowy meksykański kartel narkotykowy wyparty z [Ziemi]{pl/ep-atlas-ziemia}. Stacja jest w pełni obsadzona i operacyjna, a jej działalność koncentruje się na produkcji projektowanych narkotyków i nietypowej chemotechnologii. W rzeczywistości jest to jedno z głównych źródeł zaopatrzenia Los Zetas w ich działalności przemytniczej.
+Zapora ustaliła, że ta „hiperkorporacja” — **Empresas Del Golfo** — to jedynie fasada, za którą stoi **[Los Zetas](https://pl.wikipedia.org/wiki/Los_Zetas)**, wpływowy meksykański kartel narkotykowy wyparty z [Ziemi]{pl/ep-atlas-ziemia}. Stacja jest w pełni obsadzona i operacyjna, a jej działalność koncentruje się na produkcji projektowanych narkotyków i nietypowej chemotechnologii. W rzeczywistości jest to jedno z głównych źródeł zaopatrzenia Los Zetas w ich działalności przemytniczej.
 
 W ostatnim czasie presja ze strony [Nocnego Kartelu]{pl/ep-nocny-kartel}, by przyłączyć Los Zetas do większego syndykatu, doprowadziła do aktów przemocy w niektórych habitatowych enklawach.

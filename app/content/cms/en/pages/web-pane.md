@@ -4,7 +4,9 @@ title: web-pane
 headerImage: mid-web-pane.jpg
 langs:
   pl: web-pane
-excerpt: Handy, always-on-top "helper windows" for web-apps
+excerpt: Handy, always-on-top 'helper windows' for web-apps
+tags:
+  - projects
 slots:
   aside:
     - type: static

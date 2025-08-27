@@ -16,10 +16,16 @@ menu:
           - title: RandomGen
             url: "@{pl/randomgen}"
             text: Różnorodne generatory treści, głównie do RPG
+          - title: Mod_CMS
+            url: "@{pl/mod_cms}"
+            text: Moduł CMS generujący statyczne strony HTML
+          - title: Web-pane
+            url: "@{pl/web-pane}"
+            text: Podręczne "okienka-ściągawki" dla web-apek nad innymi oknami
 
-          - title: PlanetaryNames4Celestia
-            url: "@{pl/planetarynames4celestia}"
-            text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
+#          - title: PlanetaryNames4Celestia
+#            url: "@{pl/planetarynames4celestia}"
+#            text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
 
   - title: Blog
     url: "@{pl/blog}"

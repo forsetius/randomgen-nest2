@@ -2,6 +2,7 @@
 template: page-default
 title: Marsjanskie cyklery
 excerpt: Wielkie statki na trajektorii Ziemia–Mars, niektóre dziś to bastiony przestępczości i niezależności.
+headerImage: leo-ep-cycler-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: remote-habs
 lead: |

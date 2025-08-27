@@ -4,7 +4,9 @@ title: web-pane
 headerImage: mid-web-pane.jpg
 langs:
   en: web-pane
-excerpt: Podręczne "okienka ściągawki" dla web-apek nad innymi oknami
+excerpt: Podręczne 'okienka-ściągawki' dla web-apek nad innymi oknami
+tags:
+  - projekty
 slots:
   aside:
     - type: static
