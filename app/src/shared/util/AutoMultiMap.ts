@@ -1,4 +1,4 @@
-export class ArrayMap<N, T> extends Map<N, T[]> {
+export class AutoMultiMap<N, T> extends Map<N, T[]> {
   private addMissingCollection(key: N): void {
     if (!this.has(key)) {
       this.set(key, []);

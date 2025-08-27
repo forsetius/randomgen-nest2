@@ -11,6 +11,7 @@ import { PageFactory } from './PageFactory';
 import { ParserService } from '../../parser/services/ParserService';
 import stopwatch from '@shared/util/stopwatch';
 import { Injectable } from '@nestjs/common';
+import { RenderingException } from '../exceptions/RenderingException';
 
 @Injectable()
 export class LibraryFactory {
@@ -41,10 +42,18 @@ export class LibraryFactory {
     const library = new Library(locale, pages, menus, blocks);
 
     library.menus.forEach((menu) => {
-      menu.render();
+      try {
+        menu.render();
+      } catch (e) {
+        throw new RenderingException('menu', menu.name, lang, e);
+      }
     });
     library.blocks.forEach((block) => {
-      block.render(library);
+      try {
+        block.render(library);
+      } catch (e) {
+        throw new RenderingException('block', block.name, lang, e);
+      }
     });
 
     stopwatch.record(

@@ -84,6 +84,9 @@ export class CmsService {
     );
   }
 
+  /**
+   * @throws Error if the file cannot be written
+   */
   private async saveContent(
     renderedContents: RenderedContent[],
     lang: Lang,

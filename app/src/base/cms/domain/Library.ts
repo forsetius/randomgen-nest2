@@ -1,15 +1,16 @@
 import { Page } from './Page';
-import { ArrayMap } from '@shared/util/ArrayMap';
-import { NotFoundException } from '@nestjs/common';
+import { AutoMultiMap } from '@shared/util/AutoMultiMap';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 import { Category } from './Category';
 import { Locale } from './Locale';
+import { CategoryNotFoundException } from '../exceptions/CategoryNotFoundException';
+import { PageNotFoundException } from '../exceptions/PageNotFoundException';
 
 export class Library {
   public readonly pages = new Map<string, Page>();
   public readonly categories = new Map<string, Category>();
-  public readonly tags = new ArrayMap<string, Page>();
+  public readonly tags = new AutoMultiMap<string, Page>();
 
   public constructor(
     public readonly locale: Locale,
@@ -20,17 +21,12 @@ export class Library {
     this.addPages(pages);
   }
 
+  /**
+   * @throws {CategoryNotFoundException} if the category page is not found
+   */
   public addPages(pages: Page[]): void {
     pages.forEach((page) => {
       this.pages.set(page.slug, page);
-
-      // we search for the category homepages to create all the categories
-      if (page.def.subcategoryName) {
-        this.categories.set(
-          page.slug,
-          new Category(page.def.subcategoryName, page),
-        );
-      }
 
       // we can sweep for tags while doing this
       page.def.tags.forEach((tag) => {
@@ -38,24 +34,17 @@ export class Library {
       });
     });
 
-    // once we have all the categories, we can add the pages to them
     this.pages.forEach((page) => {
       if (page.def.category) {
-        const category = this.categories.get(page.def.category);
-        if (!category) {
-          throw new Error(`Category ${page.def.category} not found`);
-        }
-        if (!category.getPages().includes(page)) {
-          category.addPage(page, page.def.subcategory);
+        if (!this.pages.has(page.def.category)) {
+          throw new CategoryNotFoundException(page.slug, this.locale.lang);
         }
 
-        // if a page is a subcategory homepage and also has a category, it is a parent-child relationship
-        if (page.def.subcategoryName) {
-          const subcategory = this.categories.get(page.slug)!;
-          subcategory.parent = category;
-        }
+        const category = this.getCategory(page.def.category);
+        category.addPage(page);
       }
     });
+
     this.categories.forEach((category) => {
       category.constructFullSlug();
       category.getPages().forEach((page) => {
@@ -68,9 +57,26 @@ export class Library {
     });
   }
 
+  private getCategory(slug: string): Category {
+    if (!this.categories.has(slug)) {
+      const categoryPage = this.pages.get(slug)!;
+      const category = new Category(categoryPage);
+
+      if (categoryPage.def.category) {
+        category.parent = this.getCategory(categoryPage.def.category);
+      }
+      this.categories.set(slug, category);
+    }
+
+    return this.categories.get(slug)!;
+  }
+
+  /**
+   * @throws {PageNotFoundException} if the page is not found
+   */
   public getPage(slug: string): Page {
     if (!this.pages.has(slug)) {
-      throw new NotFoundException(`Page ${slug} not found`);
+      throw new PageNotFoundException(slug, this.locale.lang);
     }
 
     return this.pages.get(slug)!;

@@ -3,6 +3,7 @@ import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from '../Library';
 import { MarkdownService } from '../../../parser/services/MarkdownService';
 import { PageGalleryBlockDef } from '../../types';
+import { CategoryNotFoundException } from '../../exceptions/CategoryNotFoundException';
 
 export class PageGalleryBlock extends Block {
   public constructor(
@@ -14,7 +15,12 @@ export class PageGalleryBlock extends Block {
     super(name, def);
   }
 
-  render(library: Library): void {
+  /**
+   * @throws {Error} if the block is not rendered yet
+   * @throws {Error} if the category is not found in the library
+   * @throws {Error} if the tag is not found in the library
+   */
+  public render(library: Library): void {
     const sources = this.def.sources;
     const items = sources
       .map((sourceDef) => {
@@ -50,6 +56,10 @@ export class PageGalleryBlock extends Block {
     });
   }
 
+  /**
+   *
+   * @throws {Error} if the category is not found in the library
+   */
   private getCategoryData(
     categoryName: string,
     subcategoryName: string | undefined,
@@ -57,17 +67,16 @@ export class PageGalleryBlock extends Block {
   ) {
     const category = library.categories.get(categoryName);
     if (!category) {
-      throw new Error(`Category ${categoryName} not found`);
+      throw new CategoryNotFoundException(categoryName, library.locale.lang);
     }
     const items = category.getPages(subcategoryName).map((page) => page.slug);
 
-    if (this.def.sortDir === 'desc') {
-      items.reverse();
-    }
-
-    return items;
+    return this.def.sortDir === 'desc' ? items.reverse() : items;
   }
 
+  /**
+   * @throws {Error} if the tag is not found in the library
+   */
   private getTagData(tag: string, library: Library) {
     const tagPages = library.tags.get(tag);
     if (!tagPages) {

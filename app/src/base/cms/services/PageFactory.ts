@@ -20,6 +20,9 @@ export class PageFactory {
     @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
   ) {}
 
+  /**
+   * @throws {SourceFileValidationException}
+   */
   public validate(filename: string, def: unknown): PageDef {
     try {
       return PageZodSchema.parse(def);

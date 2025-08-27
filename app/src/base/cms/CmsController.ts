@@ -10,15 +10,12 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
-import { CmsService } from './services/CmsService';
+import { CmsService } from './services';
 import type { Response } from 'express';
-import { SearchParamsDto, SearchQueryDto } from './dtos/SearchDto';
-import { TagParamDto } from './dtos/TagParamDto';
-import { LangQueryDto } from './dtos/LangQueryDto';
-import { ContactDto } from './dtos/ContactDto';
 import { MailService } from '../../io/mail';
 import { AppConfigService } from '@config/AppConfigService';
 import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor';
+import * as Dto from './dtos';
 
 @Controller()
 export class CmsController {
@@ -38,8 +35,8 @@ export class CmsController {
 
   @Get('/search/:count')
   public search(
-    @Param() params: SearchParamsDto,
-    @Query() query: SearchQueryDto,
+    @Param() params: Dto.SearchParamsDto,
+    @Query() query: Dto.SearchQueryDto,
   ) {
     const { count } = params;
     const { term, lang } = query;
@@ -48,14 +45,17 @@ export class CmsController {
   }
 
   @Get('/search')
-  public searchAll(@Query() query: SearchQueryDto) {
+  public searchAll(@Query() query: Dto.SearchQueryDto) {
     const { term, lang } = query;
 
     return this.contentService.search(term, lang, 'fragment-img-card');
   }
 
   @Get('/tag/:tag')
-  public getTag(@Param() params: TagParamDto, @Query() query: LangQueryDto) {
+  public getTag(
+    @Param() params: Dto.TagParamDto,
+    @Query() query: Dto.LangQueryDto,
+  ) {
     return this.contentService.getTag(
       params.tag,
       query.lang,
@@ -64,13 +64,13 @@ export class CmsController {
   }
 
   @Get('/tag')
-  public getTags(@Query() query: LangQueryDto) {
+  public getTags(@Query() query: Dto.LangQueryDto) {
     return this.contentService.getTags(query.lang, 'fragment-list-item');
   }
 
   @Post('/contact')
-  @UseInterceptors(AkismetInterceptor<ContactDto>)
-  public async submitContactForm(@Body() dto: ContactDto) {
+  @UseInterceptors(AkismetInterceptor<Dto.ContactDto>)
+  public async submitContactForm(@Body() dto: Dto.ContactDto) {
     const config = this.configService.getInferred('mail');
     try {
       await this.mailService.sendMail({
