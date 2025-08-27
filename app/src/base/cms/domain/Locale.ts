@@ -6,6 +6,9 @@ import { Lang } from '@shared/types/Lang';
 export class Locale {
   public readonly translations: Record<string, string>;
 
+  /**
+   * @throws Error if the translation file is invalid
+   */
   public constructor(public readonly lang: Lang) {
     const filename = join(cwd(), 'content', 'cms', lang, 'translations.json');
     try {
@@ -35,9 +38,14 @@ export class Locale {
     return translations as Record<string, string>;
   }
 
+  /**
+   * @throws Error if the translation is not found
+   */
   public translate(term: string): string {
     if (!(term in this.translations)) {
-      throw new Error(`No translation found for ${term}`);
+      throw new Error(
+        `No translation found for ${term} in ${this.lang} language.`,
+      );
     }
 
     return this.translations[term]!;

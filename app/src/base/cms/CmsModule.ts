@@ -14,7 +14,7 @@ import { CMS_OPTIONS } from './CmsConstants';
 import { MailModule } from '../../io/mail';
 import { AppConfigModule } from '@config/AppConfigModule';
 import { AppConfigService } from '@config/AppConfigService';
-import { LibraryFactory } from './services/LibraryFactory';
+import { LibraryFactory } from './services';
 
 @Module({
   controllers: [CmsController],

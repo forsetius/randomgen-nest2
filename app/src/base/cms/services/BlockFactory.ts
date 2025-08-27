@@ -9,10 +9,10 @@ import {
   ApiCallBlock,
   GalleryBlock,
   MediaBlock,
+  PageGalleryBlock,
   StaticBlock,
 } from '../domain/blocks';
 import { fromZodError } from '@shared/util/fromZodError';
-import { PageGalleryBlock } from '../domain/blocks/PageGalleryBlock';
 
 @Injectable()
 export class BlockFactory {
@@ -21,6 +21,9 @@ export class BlockFactory {
     private templatingService: TemplatingService,
   ) {}
 
+  /**
+   * @throws {SourceFileValidationException}
+   */
   public validate(source: string, def: unknown): BlockDef {
     try {
       return BlockZodSchema.parse(def);

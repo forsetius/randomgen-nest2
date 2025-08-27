@@ -4,7 +4,7 @@ import { Library } from '../Library';
 export abstract class Block {
   protected _content?: string;
 
-  public constructor(
+  protected constructor(
     public readonly name: string,
     public readonly def: BlockDef,
   ) {}
@@ -13,9 +13,14 @@ export abstract class Block {
     return this.def.template;
   }
 
+  /**
+   * @throws {Error} if the block is not rendered yet
+   */
   get content(): string {
     if (typeof this._content === 'undefined') {
-      throw new Error(`Page ${this.name} is not rendered yet`);
+      throw new Error(
+        `Tried to get content of page ${this.name} that's not rendered yet`,
+      );
     }
     return this._content;
   }

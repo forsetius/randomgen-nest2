@@ -1,13 +1,17 @@
 import { Page } from './Page';
 import { slugify } from '@shared/util/string';
-import { ArrayMap } from '@shared/util/ArrayMap';
+import { AutoMultiMap } from '@shared/util/AutoMultiMap';
 
 export class Category {
+  public readonly name: string;
   public parent: Category | undefined = undefined;
   private _fullSlug: string | undefined;
   private _breadcrumbs: string | undefined;
-  private readonly subcategories = new ArrayMap<string, Page>([['_', []]]);
+  private readonly subcategories = new AutoMultiMap<string, Page>([['_', []]]);
 
+  /**
+   * @throws {Error} if the category is not constructed yet
+   */
   get fullSlug(): string {
     if (typeof this._fullSlug === 'undefined') {
       throw new Error(
@@ -18,6 +22,9 @@ export class Category {
     return this._fullSlug;
   }
 
+  /**
+   * @throws {Error} if the category is not constructed yet
+   */
   get breadcrumbs(): string {
     if (typeof this._breadcrumbs === 'undefined') {
       throw new Error(
@@ -38,10 +45,9 @@ export class Category {
     };
   }
 
-  public constructor(
-    public readonly name: string,
-    public readonly categoryPage: Page,
-  ) {}
+  public constructor(public readonly categoryPage: Page) {
+    this.name = categoryPage.def.subcategoryName ?? categoryPage.def.title;
+  }
 
   public constructFullSlug(): void {
     const fullSlug: string[] = [slugify(this.name)];
@@ -70,10 +76,14 @@ export class Category {
     this._breadcrumbs = breadcrumbs.join(' › ');
   }
 
-  public addPage(page: Page, subcategory?: string): void {
+  public addPage(page: Page): void {
+    if (this.subcategories.get('_')!.includes(page)) {
+      return;
+    }
+
     this.subcategories.get('_')!.push(page);
-    if (subcategory) {
-      this.subcategories.getCollection(subcategory).push(page);
+    if (page.def.subcategory) {
+      this.subcategories.add(page.def.subcategory, page);
     }
   }
 
@@ -90,6 +100,9 @@ export class Category {
     });
   }
 
+  /**
+   * @throws {Error} if the subcategory is not found
+   */
   public getPages(subcategory?: string): Page[] {
     if (!subcategory) {
       return this.subcategories.getCollection('_');

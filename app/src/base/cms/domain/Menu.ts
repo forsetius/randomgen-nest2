@@ -16,6 +16,9 @@ export class Menu {
     return this._content;
   }
 
+  /**
+   * @throws {Error}
+   */
   public render(): void {
     try {
       this._content = this.templatingService.render(this.def.template, {

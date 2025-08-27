@@ -14,12 +14,19 @@ import { RenderedContent } from '../types/RenderedContent';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { Category } from './Category';
 import { Locale } from './Locale';
+import { BlockWithNoIdException } from '../exceptions/BlockWithNoIdException';
+import { SlotWithNoIdException } from '../exceptions/SlotWithNoIdException';
+import { RenderingException } from '../exceptions/RenderingException';
+import { MenuWithNoIdException } from '../exceptions/MenuWithNoIdException';
 
 export class Page {
   public category: Category | undefined = undefined;
   public readonly date: DateTime | undefined = undefined;
   public searchString = '';
 
+  /**
+   * @throws {InvalidDateTimeException} If the date is invalid
+   */
   public constructor(
     private blockFactory: BlockFactory,
     private markdownService: MarkdownService,
@@ -38,7 +45,7 @@ export class Page {
         this.date = DateTime.fromSQL(def.date);
       } catch (e: unknown) {
         throw new InvalidDateTimeException(
-          `Invalid date: ${def.date} in ${this.slug}`,
+          `Invalid date: ${def.date} in ${this.slug} in "${this.locale.lang}" library`,
           e,
         );
       }
@@ -139,6 +146,9 @@ export class Page {
     return renderedContents;
   }
 
+  /**
+   * @throws {Error} If a menu with no id is found in the page or if the menu is unknown
+   */
   private insertMenus(content: string, library: Library): string {
     const menuMatches = content.matchAll(
       /<menu id="(?<id>[a-zA-Z0-9]+)" \/>/gm,
@@ -146,7 +156,7 @@ export class Page {
 
     for (const [match, id] of menuMatches) {
       if (typeof id === 'undefined') {
-        throw new Error(`Menu without id in ${this.template}`);
+        throw new MenuWithNoIdException(this.slug, this.locale.lang);
       }
       if (!library.menus.has(id)) {
         throw new Error(`Unknown menu "${id}" in ${this.template}`);
@@ -157,12 +167,16 @@ export class Page {
     return content;
   }
 
+  /**
+   * @throws {Error} If a slot with no id is found in the page
+   * @throws {Error} If rendering a block throws
+   */
   private fillSlots(content: string, library: Library): string {
     const slotTagRegex = /<slot id="(?<id>[a-zA-Z0-9-_]+)" ?\/>/g;
 
     for (const [slotTag, id] of content.matchAll(slotTagRegex)) {
       if (typeof id === 'undefined') {
-        throw new Error(`Slot without id in ${this.template}`);
+        throw new SlotWithNoIdException(this.slug, this.locale.lang);
       }
 
       if (this.def.slots && id in this.def.slots) {
@@ -171,9 +185,19 @@ export class Page {
           const blockId = `slot-${id}_block-${i.toString()}`;
           const block = this.blockFactory.create(blockId, blockDef);
 
-          block.render(library);
+          try {
+            block.render(library);
 
-          return block.content;
+            return block.content;
+          } catch (e: unknown) {
+            throw new RenderingException(
+              'slot',
+              id,
+              this.locale.lang,
+              e,
+              this.slug,
+            );
+          }
         });
 
         content = content.replace(slotTag, slotContent.join('\n'));
@@ -183,6 +207,10 @@ export class Page {
     return content;
   }
 
+  /**
+   * @throws {Error} If a block with no id is found in the page
+   * @throws {Error} If the block is not rendered yet
+   */
   private insertBlocks(content: string, library: Library): string {
     const blockTagRegex =
       /<block (?<attrs>[^>]*?)(?:\/>|>(?<content>.*?)<\/block>)/gs;
@@ -205,7 +233,7 @@ export class Page {
 
       const id = args['id'];
       if (typeof id !== 'string') {
-        throw new Error(`Block with no id found in page ${this.slug}`);
+        throw new BlockWithNoIdException(this.slug, this.locale.lang);
       }
 
       if (this.def.blocks && id in this.def.blocks) {
@@ -220,7 +248,17 @@ export class Page {
         block = this.blockFactory.create(id, blockArgs);
       }
 
-      block.render(library);
+      try {
+        block.render(library);
+      } catch (e: unknown) {
+        throw new RenderingException(
+          'block',
+          id,
+          this.locale.lang,
+          e,
+          this.slug,
+        );
+      }
       content = content.replace(blockTag, block.content);
     }
 
@@ -237,7 +275,10 @@ export class Page {
         removeScriptTypeAttributes: true,
       });
     } catch (err) {
-      console.error('❌ Error while minifying the HTML:\n', err);
+      console.error(
+        `❌ Error on page ${this.slug} while minifying the HTML:\n`,
+        err,
+      );
 
       return content;
     }
