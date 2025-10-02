@@ -1,6 +1,10 @@
 import { z } from 'zod';
 import { BlockType } from './BlockType';
 
+export const SharedBlockZodSchema = z.strictObject({
+  id: z.string(),
+});
+
 const CommonBlockZodSchema = z.object({
   title: z.string().optional(),
 });

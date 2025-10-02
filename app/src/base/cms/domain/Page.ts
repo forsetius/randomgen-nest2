@@ -9,7 +9,7 @@ import { BlockFactory } from '../services';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from './Library';
 import { Block } from './blocks/Block';
-import type { PageDef } from '../types';
+import type { BlockDef, PageDef } from '../types';
 import { RenderedContent } from '../types/RenderedContent';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { Category } from './Category';
@@ -182,8 +182,12 @@ export class Page {
       if (this.def.slots && id in this.def.slots) {
         const blockDefs = this.def.slots[id]!;
         const slotContent = blockDefs.map((blockDef, i) => {
+          if ('id' in blockDef && library.blocks.has(blockDef.id)) {
+            return library.blocks.get(blockDef.id)!.content;
+          }
+
           const blockId = `slot-${id}_block-${i.toString()}`;
-          const block = this.blockFactory.create(blockId, blockDef);
+          const block = this.blockFactory.create(blockId, blockDef as BlockDef);
 
           try {
             block.render(library);
