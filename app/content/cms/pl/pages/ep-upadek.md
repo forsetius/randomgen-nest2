@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Upadek
 headerImage: mid-fall-head.jpg
 category: ep-intro
@@ -38,4 +38,3 @@ Jednak nagle ataki ustały. Maszyny się wycofały, przestały atakować poza Zi
 Wkrótce na [Pandorze](#), malutkim księżycu [Saturna](#), odkryto pierwsze z [Wrót pandoriańskich](#), bramę międzywymiarową przenoszącą do różnych pozasłonecznych układów planetarnych. Przyjęto, że TITAN-i wycofali się z Układu Słonecznego przez tego typu Wrota, pozostawiając jedynie osierocone resztki swojej machiny zagłady.
 
 Wojna jest zakończona. Pytanie, które zadaje sobie transludzkość brzmi: “na jak długo?”
-

@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Ego Sum
 subtitle: Scenariusz do Eclipse Phase
 headerImage: mid-ep-ego-sum-head.jpg

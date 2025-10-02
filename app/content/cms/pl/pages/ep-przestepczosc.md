@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Przestępczość
 excerpt: Kryminaliści w świecie Eclipse Phase
 headerImage: mid-ep-criminals-head.jpg

@@ -1,6 +1,6 @@
 ---
 title: Pages tagged with
-template: page-tag-full-width
+template: page-tag-3-cols
 searchable: false
 slots:
   bottom:

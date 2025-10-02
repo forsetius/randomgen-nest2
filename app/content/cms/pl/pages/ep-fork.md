@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Forkowanie
 subtitle: Forking
 headerImage: mid-ep-fork-head.jpg

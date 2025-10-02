@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Życie sługi kontraktowego
 excerpt: "Codzienność sług kontraktowych: od nudnych prac w VR po wyzysk i niewolę."
 category: ep-sluzba
@@ -14,4 +14,3 @@ Podobnie samo zajęcie rzadko bywa szczególnie uciążliwe — najczęściej je
 Istnieją jednak także kontrakty obejmujące znacznie mniej łagodne stanowiska, w dziedzinach niebezpiecznych takich jak praca najemnika, ochroniarza, górnika asteroid czy personelu w odizolowanych habitatach. Ze względu na zwiększone ryzyko, stawki za takie kontrakty są wyższe, a czas ich trwania krótszy, lecz znacznie więcej zależy tu od sukcesu danej misji lub przedsięwzięcia. Choć nie zawsze są to zadania fizycznie niebezpieczne, również psychicznie i emocjonalnie obciążające zajęcia — takie jak prostytucja — często podlegają podobnym warunkom. Umowy tego rodzaju stosowane są głównie przez [organizacje przestępcze]{pl/ep-przestepczosc} i podmioty o statusie półlegalnym. Są one szczególnie podatne na nadużycia, ponieważ realizowane są zazwyczaj poza zasięgiem głównych habitatów i tym samym poza systemami sądowymi i prawnymi, które nadzorują większość kontraktów.
 
 W skrajnych przypadkach kontrakt służebny niewiele różni się od niewolnictwa. Niektóre umowy stanowią jedynie sformalizowane uzasadnienie dla trwałego zniewolenia. Dotyczy to górników pracujących w niebezpiecznych warunkach, którzy za leczenie i naprawy powłoki płacą więcej, niż są w stanie zarobić. Ego pracujące w [VR]{pl/ep-vr} mogą być wyłączane i odkładane z powrotem do przechowalni, gdy tylko projekt zostaje „wstrzymany”. Zdarza się też, że posiadacze kontraktów tworzą wiele kopii jednego ego i uruchamiają je dopiero wtedy, gdy dysponują zapasowym oryginałem. I są jeszcze gorsze przypadki. Takie nadużycia są publicznie potępiane przez większość podmiotów prowadzących kontrakty służebne, jako działania kilku „czarnych owiec”, lecz historie o tych okropnościach regularnie pojawiają się w mediach i błyskawicznie trafiają na sztandary ruchów abolicjonistycznych. Jak dotąd wielkim hiperkorpom udało się uniknąć skandalu na tym polu, ale gdyby do takiego doszło, mogłoby to stać się punktem zwrotnym w debacie publicznej.
-

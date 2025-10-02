@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Technologia
 headerImage: mid-ep-technologia-head.jpg
 excerpt: Technologia w świecie Eclipse Phase

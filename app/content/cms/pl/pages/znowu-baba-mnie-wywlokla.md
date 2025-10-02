@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: "Znowu baba<small>*</small> mnie wywlokła"
 subtitle: "<small>*sama kazała tak napisać</small>"
 langs:
@@ -14,4 +14,3 @@ slots:
       sources:
         - tag: znowu-baba-mnie-wywlokła
 ---
-

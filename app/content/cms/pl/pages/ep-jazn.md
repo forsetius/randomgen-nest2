@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Jaźń
 headerImage: mid-ep-ego-head.jpg
 excerpt: "Jaźń i forki: między codzienną praktyką a moralnym tabu w społeczeństwie transludzi."

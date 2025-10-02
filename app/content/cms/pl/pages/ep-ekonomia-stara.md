@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Stara ekonomia
 headerImage: mid-ep-old-economy-head.jpg
 excerpt: Gospodarka oparta na klasycznym kapitalizmie przemysłowym
@@ -15,4 +15,3 @@ W obecnych czasach prawie nikt nie decyduje się dobrowolnie na życie w społec
 Mieszkańcy społeczeństw starej gospodarki często patrzą z zazdrością na ludzi żyjących w systemach [gospodarki przejściowej]{pl/ep-ekonomia-przejsciowa} lub [nowej]{pl/ep-ekonomia-nowa}, podczas gdy ci ostatni spoglądają na społeczności starego typu z mieszaniną przerażenia i współczucia. Od [Upadku]{pl/ep-upadek} prawie jedna trzecia pozostałych społeczności opartych na starej gospodarce przeszła przemianę w gospodarki przejściowe lub nowe — często za sprawą gwałtownej rewolucji. Większość socjologów przewiduje, że o ile nie nastąpią kolejne katastrofy, niemal wszystkie społeczeństwa starej gospodarki (z wyjątkiem najbardziej represyjnych) zreformują się w ciągu najbliższych 20–30 lat.
 
 Społeczności starej gospodarki są wyjątkowe pod tym względem, że pieniądz jest jedynym akceptowanym środkiem wymiany. Choć istnieją s[ieci reputacji](#), mają one charakter nieformalny i służą jako nieoficjalne narzędzie wymiany przysług.
-

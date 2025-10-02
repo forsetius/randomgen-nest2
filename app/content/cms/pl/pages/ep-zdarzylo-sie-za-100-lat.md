@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Zdarzyło się za 100 lat...
 excerpt: "Najbliższe dekady to galopujący rozwój technologii i społeczeństwa, które usiłują za nim nadążyć"
 headerImage: mid-happened-in-100-years-head.jpg
@@ -18,4 +18,3 @@ Wracając do ciał: nie mówi się już nawet "ciała" lecz "[morfy]{pl/ep-morf}
 Czymże byłaby jednak nieśmiertelność w znanej nam [gospodarce niedoborów](https://en.wikipedia.org/wiki/Scarcity)? Więc nie ma już niedoborów! Nanofabrykatory są w stanie zrobić wszystko, pod warunkiem, że dostarczysz projekt i surowce. Jedzenie będzie nawet gorące a ubrania poskładane w schludną kosteczkę.
 
 Jednak cóż to za gra w utopii? Dobrobyt jest przecież taki nudny, nie będziemy chyba grać w jakiegoś sitcoma! Nie, nie będziemy. Eclipse Phase to rzeczywistość konspiracji i grozy, świat po apokalipsie, lękający się kolejnej. Co więc poszło nie tak?
-

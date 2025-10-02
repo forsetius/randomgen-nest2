@@ -1,28 +1,63 @@
 template: menu-topbar
 menu:
-  - title: O mnie
+  - title: Moje kompetencje
     columns:
-      - title: <i class="text-warning bi bi-braces-asterisk"></i> Programowanie
+      - title: <i class="text-warning bi bi-code-slash"></i> Programowanie
         items:
           - title: Umiejętności
             url: "@{pl/prog-umiejetnosci}"
-            text: Co umiem, co znam, co mogę
-          - title: Doświadczenia
-            url: "@{pl/prog-doswiadczenia}"
-            text: Co już zrobiłem
+            text: "Moje umiejętności programistyczne"
+      - title: <i class="text-warning bi bi-code-slash"></i> Doświadczenia
+        url: "@{pl/prog-doswiadczenia}"
+        text: "Miałem okazję pracować z dość różnorodnymi projektami: od backendów w Symfony czy Nest.js przez chat na websocketach, po API komunikujące czujniki i kamery z wyświetlaczami, systemami biletowymi i szlabanami."
+        colspan: 2
+        repeatTitle: false
+        items:
+          - title: Systemy parkingowe
+            url: "@{pl/prog-systemy-parkingowe}"
+            text: "Systemy integrujące czujniki, kamery, wyświetlacze i aplikacje backoffice do zarządzania parkingami"
+          - title: Kasyna
+            url: "@{pl/prog-kasyna}"
+            text: "Platforma obsługująca kasyna, gry, płatności oraz wszelkie działania związane z graczami"
+          - title: Rozmowy 1-na-1
+            url: "@{pl/prog-1on1}"
+            text: "Narzędzie dla działów HR do rozmów 1-na-1 z pracownikami"
+          - title: Pośrednictwo pracy
+            url: "@{pl/prog-posrednictwo-pracy}"
+            text: "Rozbudowany system rozgłaszania ogłoszeń o pracę i zbierania aplikacji"
+          - title: Zapotrzebowanie na narzędzia
+            url: "@{pl/prog-requisitions}"
+            text: "Aplikacja mobilna pozwalająca pracownikom wnioskować o zakup narzędzi"
+          - title: Aplikacja dla producenta okien
+            url: "@{pl/prog-okna}"
+            text: "Aplikacja z przeglądem zamówień, dokumentów i wypożyczeń stojaków okiennych"
 
-      - title: <i class="text-warning bi bi-lightbulb"></i> Projekty
+  - title: Projekty
+    columns:
+      - title: <i class="text-warning bi bi-layout-wtf"></i> Mod_CMS
+        items:
+          - title: Prezentacja
+            url: "@{pl/mod_cms}"
+            text: Moduł CMS generujący statyczne strony HTML
+          # - title: Technikalia
+          #   url: "@{pl/mod_cms-technikalia}"
+          #   text: Implementacja i integracja w NestJS
+      - title: <i class="text-warning bi bi-layout-sidebar-inset-reverse"></i> Web-pane
+        items:
+          - title: Prezentacja i pobieranie
+            url: "@{pl/web-pane}"
+            text: Podręczne "okienka-ściągawki" wiszące nad innymi oknami
+          - title: Instrukcja
+            url: "@{pl/web-pane-instrukcja}"
+            text: Jak używać i w pełni wykorzystać `web-pane`
+          - title: Technikalia
+            url: "@{pl/web-pane-technikalia}"
+            text: Aspekty implementacyjne `web-pane`
+      - title: <i class="text-warning bi bi-easel"></i> Inne projekty
         items:
           - title: RandomGen
             url: "@{pl/randomgen}"
             text: Różnorodne generatory treści, głównie do RPG
-          - title: Mod_CMS
-            url: "@{pl/mod_cms}"
-            text: Moduł CMS generujący statyczne strony HTML
-          - title: Web-pane
-            url: "@{pl/web-pane}"
-            text: Podręczne "okienka-ściągawki" dla web-apek nad innymi oknami
-
 #          - title: PlanetaryNames4Celestia
 #            url: "@{pl/planetarynames4celestia}"
 #            text: Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego i konwertuje je na format symulatora Celestia
@@ -31,6 +66,8 @@ menu:
     url: "@{pl/blog}"
 
   - separator: "|"
+
+  - label: "Hobby: "
 
   - title: RPG
     columns:
@@ -52,16 +89,16 @@ menu:
             url: "@{pl/ep-atlas}"
             text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
 
-      - title: <i class="text-warning bi bi-plus-square"></i> UniMechanika
-        text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
-        items:
-          - title: Zasady podstawowe
-            url: "@{pl/rpg-unimechanika}"
-            text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
+      # - title: <i class="text-warning bi bi-plus-square"></i> UniMechanika
+      #   text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
+      #   items:
+      #     - title: Zasady podstawowe
+      #       url: "@{pl/rpg-unimechanika}"
+      #       text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
 
-          - title: Dodatki
-            url: "@{pl/rpg-unimechanika-dodatki}"
-            text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
+          # - title: Dodatki
+          #   url: "@{pl/rpg-unimechanika-dodatki}"
+          #   text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
 
 #      - title: Przygody
 #        url: "@{pl/rpg-scenariusze}"
@@ -81,11 +118,11 @@ menu:
 
   - title: Astronomia
     columns:
-      - title: <i class="text-warning bi bi-globe-europe-africa"></i> Planetologia
-        items:
-          - title: Generowanie układów planetarnych
-            url: "@{pl/generowanie-ukladow-planetarnych}"
-            text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
+      # - title: <i class="text-warning bi bi-globe-europe-africa"></i> Planetologia
+      #   items:
+      #     - title: Generowanie układów planetarnych
+      #       url: "@{pl/generowanie-ukladow-planetarnych}"
+      #       text: Jak stworzyć fikcyjny ale wiarygodny układ planetarny?
 
       - title: <i class="text-warning bi bi-stars"></i> Symulatory Wszechświata
         items:
@@ -96,11 +133,11 @@ menu:
               Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
               które na niebie są tylko kropkami.  
 
-          - title: Lokacje w Układzie Słonecznym
-            url: "@{pl/planetary-names-scraper}"
-            text: |-
-              Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
-              i konwertuje je na format symulatora Celestia
+          # - title: Lokacje w Układzie Słonecznym
+          #   url: "@{pl/planetary-names-scraper}"
+          #   text: |-
+          #     Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
+          #     i konwertuje je na format symulatora Celestia
 
   - title: Inne
     columns:
@@ -110,9 +147,9 @@ menu:
           url: "@{pl/dioramy}"
           text: Małe, modularne dioramy
 
-        - title: Geopolityka
-          url: "@{pl/geopolityka}"
-          text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
+        # - title: Geopolityka
+        #   url: "@{pl/geopolityka}"
+        #   text: Czy Chińczyki dalej trzymają się mocno i inne tematy ponad bieżącą polityką
       - title: <i class="text-warning bi bi-tree"></i> Terenowe
         items:
           - title: Znowu baba mnie wywlokła
@@ -129,8 +166,8 @@ menu:
             url: "@{pl/2022-01-03_generator-technobelkotu}"
             text: Generator startrekowego, pseudotechnicznego bełkotu
 
-      - title: <i class="text-warning bi bi-download"></i> Do pobrania
-        items:
-          - title: Lokacje w Układzie Słonecznym
-            url: "@{pl/lokacje-uklad-slonecznym}"
-            text: Zatwierdzone przez Międzynarodową Unię Astronomiczną nazwy kraterów, gór, dolin i innych lokacji w Układzie Słonecznym
+      # - title: <i class="text-warning bi bi-download"></i> Do pobrania
+      #   items:
+      #     - title: Lokacje w Układzie Słonecznym
+      #       url: "@{pl/lokacje-uklad-slonecznym}"
+      #       text: Zatwierdzone przez Międzynarodową Unię Astronomiczną nazwy kraterów, gór, dolin i innych lokacji w Układzie Słonecznym

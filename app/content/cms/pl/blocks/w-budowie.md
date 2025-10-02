@@ -1,4 +1,5 @@
 ---
+id: w-budowie
 type: static
 template: partial-alert-warning
 ---

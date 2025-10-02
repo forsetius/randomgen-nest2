@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Cena służby
 excerpt: "Społeczna cena kontraktu służebnego: pętla ubóstwa, VR-przynęty i opór abolicjonistów."
 category: ep-sluzba
@@ -19,4 +19,3 @@ Posiadacze kontraktów stali się również znacznie bardziej wyrafinowani w kon
 Podobne podejście stosowane jest w przypadku fizycznych sług kontraktowych. Właściciele kontraktów są zazwyczaj zobowiązani do zapewnienia minimalnych warunków mieszkaniowych i dostępu do pożywienia oraz powietrza, ale poprawa tych warunków może być łatwo wykorzystana do wydłużenia okresu służby lub obniżenia zapłaty. Fizycznie obecni słudzy są też często kierowani do pracy niebezpiecznej i izolowanej. Środki łagodzące stres i rozrywki, takie jak VR, [XP]{pl/ep-xp}, narkotyki, prostytucja i szeroki dostęp do Splotu, są zazwyczaj dostępne wyłącznie za pośrednictwem korporacji — i za dodatkową opłatą. Choć wiele firm zadowala się zyskami z tych „dodatków”, istnieją również takie, które działają znacznie bardziej perfidnie. Używają nieuczciwych metod, by dorzucać ukryte koszty lub zobowiązania, które potrafią uwięzić sługę w kontrakcie na wypadek uszkodzenia powłoki lub niepowodzenia projektu, nad którym pracuje.
 
 Rozrastający się ruch abolicjonistyczny w całym Układzie wskazuje na wszystkie te czynniki jako dowód, że zyski z kontraktów służebnych trafiają do posiadaczy kontraktów, nie zaś do samych sług. Jeśli korzyści ekonomiczne nie przypadają służebnym, to cały system należy postrzegać wyłącznie jako narzędzie ucisku i nierówności. Nawet argument, że nikt nie wchodzi w kontrakt służebny wbrew swojej woli, jest krytykowany — większość sług to info-uchodźcy, którzy w rzeczywistości nie mają wyboru, ponieważ alternatywą dla służby jest tylko trwanie w nieaktywności zamrożonego przechowywania. Choć abolicjoniści wciąż są w mniejszości, zyskują coraz większe poparcie, a debata wokół kontraktów służebnych zapowiada się jako jeden z najgorętszych tematów społecznych najbliższych lat.
-

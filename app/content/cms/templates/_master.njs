@@ -65,7 +65,7 @@
   {% block asideOuter %}
     {% if slots and slots.aside %}
       <div id="aside-outer" class="order-1 order-lg-2 col-12 col-lg-4">
-        <aside class="bg-body-secondary text-light pb-4 rounded-4" data-bs-theme="dark">
+        <aside class="bg-body-secondary text-light pb-4 rounded-4 shadow" data-bs-theme="dark">
           {% block aside %} <slot id="aside" /> {% endblock %}
         </aside>
       </div>

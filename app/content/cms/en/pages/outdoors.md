@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Outdoor wanderlust
 langs: 
   pl: znowu-baba-mnie-wywlokla
@@ -12,4 +12,3 @@ slots:
       sources:
         - tag: outdoors
 ---
-

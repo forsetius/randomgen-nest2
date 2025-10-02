@@ -1,70 +1,58 @@
 ---
-template: page-default
-title: web-pane
+template: page-wide+aside
+title: Web-pane
 headerImage: mid-web-pane.jpg
 langs:
   en: web-pane
-excerpt: Podręczne 'okienka-ściągawki' dla web-apek nad innymi oknami
+excerpt: Podręczne 'okienka-ściągawki' utrzymywane nad innymi oknami
+subcategoryName: Web-pane
 tags:
   - projekty
+  - web-pane
 slots:
   aside:
-    - type: static
-      content: |
-        ## Link
-        - [Repozytorium projektu](https://github.com/forsetius/web-pane)
-
+    - id: web-pane-pliki
+  bottom:
+    - type: pageGallery
+      title: Chcesz wiedzieć więcej?
+      sources:
+        - category: web-pane
+        
 lead: |
-  `web-pane` to mały program w [Electronie](https://www.electronjs.org/), który pozwala przypiąć na krawędziach ekranu lekkie okna typu always-on-top i w każdym z nich trzymać kilka „web-apek” (karty). Przełączasz je skrótami (`Ctrl+Tab`/` Ctrl+Shift+Tab`) lub kliknięciem w ikony na doku. Efekt: podczas pracy w IDE albo w terminalu masz pod ręką stałą ściągę — ChatGPT, dokumentację, tablice skrótów, co potrzebne — bez żonglowania oknami.
+  **Web-pane** to mała aplikacja pozwalająca otwierać lekkie okienka, które pozostają zawsze na wierzchu, ponad innymi oknami. W oknach tych można otworzyć różne strony internetowe, po kilka w każdym oknie i wygodnie przełączać się między nimi. W zamierzeniu jest to narzędzie, które pozwala utrzymywać na widoku tekst referencyjny (np. dokumentację, logi, ChatGPT) podczas pracy w innych oknach. Może też mieć jednak inne zastosowania, np. utrzymywać otwarte niewielkie okienko translatora czy komunikatora.
 ---
-
-`web-pane` nie jest pełnoprawną przeglądarką i nie próbuje nią być. To podpórka do pracy: kilka źródeł referencyjnych zawsze pod ręką. Zamiast zarządzać oknami i kartami użytkownika, aplikacja utrzymuje stałe panele i szybkie przełączanie „predefiniowanych” web-apek.
+`web-pane` nie jest pełnoprawną przeglądarką i nie próbuje nią być. To podpórka do pracy: kilka źródeł referencyjnych zawsze pod ręką. Zamiast zarządzać oknami i kartami, aplikacja utrzymuje stałe panele i szybkie przełączanie stron internetowych.
 
 ## Dla kogo i po co
 
 - **Programiści**: szybki podgląd dokumentacji, logów, ChatGPT.
 - **Twórcy**: moodboardy, palety kolorów, podgląd CMS.
-- Każdy, kto woli zaglądać do informacji niż dzielić ekran.
+- Każdy, kto woli zaglądać do informacji niż dzielić ekran lub przełączać się między oknami.
 
-Panele pozostają „na wierzchu”, ale nie kradną fokusu Twojej głównej aplikacji; minimalizacja i przywracanie jednym kliknięciem utrzymuje porządek.
+## Jak to działa?
 
-## Jak to działa od strony użytkownika
+Uruchomienie aplikacji pokazuje okienko, w którym otwiera się wskazana strona internetowa. Okienko pozostaje zawsze na wierzchu, ale można je zminimalizować i w razie potrzeby przywrócić. Można je też przesunąć w bardziej odpowiednie miejsce lu zmienić jego rozmiar.
 
-1. Integracja z **[Plank (Reloaded)](https://news.itsfoss.com/plank-reloaded/)** (lub innym dokiem): do autostartu dodajesz dwa doki i przypinasz do nich własne skróty `.desktop`. Każdy skrót uruchamia panel po lewej lub prawej stronie.
-2. Uruchamianie web-apek: Aplikacja udostępnia prosty interfejs CLI do otwierania/wybierania web-apek w danym panelu. Dzięki temu wpis `.desktop` jest krótki i stabilny. README zawiera gotowy przykład pliku a przykładowy minimalny wpis `.desktop` wygląda tak:
-```
-Exec=web-pane show chatgpt https://www.chatgpt.com --target left
-StartupWMClass=web-panes
-```
-3. Skróty klawiaturowe (najważniejsze):
-- `Ctrl+Tab`/`Ctrl+Shift+Tab` – następna/poprzednia web-apka w panelu
-- `Alt+Left`/`Alt+Right` – wstecz/dalej w historii
-- `Ctrl+R`/`Ctrl+Shift+R` – przeładowanie / twarde przeładowanie
-- `Ctrl+Shift+=`, `Ctrl+Shift+-`, `Ctrl+0` – powiększ, pomniejsz, reset zoomu
-- `Ctrl+F4` – zamknij kartę, `Alt+F4` – wyjdź z aplikacji
-- `Alt+Down` – zminimalizuj panel (przywrócisz klikając jego aktywator)
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane.png" title="Po prawej stronie wiszące okienko Web-pane, po bokach doki Planka pokazujące w tym okienku zdefiniowane strony internetowe" />
 
-Wszystkie skróty są spisane w README.
+Wywołanie komendy (lub skrótu) otwierającej inną stronę w tym samym okienku powoduje zamienienie w nim widoku - pokazuje się w nim druga strona ale pierwsza jest "pod spodem" i można ją przywołać z powrotem. Można tak otwierać wiele stron w tym samym okienku a następnie przełączać się między nimi - pokazują się ikonki wszystkich otwartych stron i można między nimi przechodzić.
 
-## Przegląd implementacji
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-switcher.png" title="Po prawej stronie wiszące okienko Web-pane, po bokach doki Planka pokazujące w tym okienku zdefiniowane strony internetowe" />
 
-web-pane jest napisany w TypeScript na Electronie. Architektura opiera się na rozdzieleniu okien paneli od widoków z treścią webową.
+Okienek można otworzyć kilka, porozmieszczać je po ekranie według uznania i w każdym z nich przechowywać inny zestaw stron internetowych.
 
-### Okna paneli
-Każdy panel (lewy/prawy) to okno w Electronie skonfigurowane na tryb always-on-top. Na macOS warto ustawić poziom „screen-saver”, żeby okno było nad aplikacjami pełnoekranowymi; dodatkowo można włączyć all workspaces, by panel był widoczny na wszystkich pulpitach.
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-2-panes.png" title="Po prawej stronie wiszące okienko Web-pane, po bokach doki Planka pokazujące w tym okienku zdefiniowane strony internetowe" />
 
-### Widoki z treścią: `WebContentsView`
+Panele pozostają „na wierzchu”, ale nie kradną fokusu Twojej głównej aplikacji; minimalizacja i przywracanie jednym skrótem klawiszowym utrzymuje porządek.
 
-Wewnątrz okna panelu aplikacja nie otwiera kolejnych okien dla każdej strony. Zamiast tego tworzy kilka `WebContentsView` i przełącza je w tym samym oknie. To współczesny, zalecany mechanizm osadzania treści web w Electronie (następca przestarzałego `BrowserView`).
+## Integracje
 
-### Dlaczego tak?
-- Jeden panel może trzymać kolekcję widoków, a aktywny widok jest dołączany do `contentView` okna i dostaje pełne wymiary panelu.
-- Przełączanie jest natychmiastowe (bez tworzenia okna); historia, zoom i przeładowanie działają przez `view.webContents`.
+Choć aplikację można otwierać z menu systemowego, można ją też uruchamiać na inne sposoby. Komenda, która ją wywołuje może zostać rozszerzona tak, by od razu otwierała wskazaną stronę w wybranym oknie. W normalnej pracy taki sposób uruchamiania byłby kłopotliwy, ale jest przydatny w integracji z systemem. Można to zrobić na kilka sposobów:
+1. **Skróty** (windowsowy skrót, linuksowy aktywator `.desktop`, element doku na macOS) - można stworzyć na pulpicie zwykłe skróty systemowe, które odpalają pożądaną stronę w określonym oknie. Kolejne kliknięcie skrótu albo przełączy widok w okienku na tą stronę albo (jeśli już ją widać) zminimalizuje okienko.
+2. **Doki** lub **listy okien** - można przypiąć do nich stworzone skróty dla łatwego dostępu i ew. ukrycia gdy są niepotrzebne (jeśli dok się chowa)
+3. **Skróty klawiszowe** - w systemie można zdefiniować skróty, które wywołają/przywrócą okienko bądź pokażą w nim odpowiednią stronę.
+4. **Skrypty** - mogą definiować cały złożony układ okienek ze stronami (np. do pracy programistycznej, redagowania tekstów itp.). Oczywiście takie skrypty można również podpiąć do skrótów, doków czy kombinacji klawiszy.
 
-## Jak zacząć
+Po tego rodzaju konfiguracjach uruchamianie i sterowanie aplikacją sprowadza się do klikania w skróty pulpitu lub doku i/lub używania skrótów klawiszowych.
 
-1. Zainstaluj **Plank**, dodaj dwa doki do autostartu i ustaw je po lewej/prawej.
-2. Stwórz pliki `.desktop` dla wybranych web-apek.
-3. Zainstaluj web-pane i dodaj skróty `.desktop` z komendą `web-pane show <id> <url> [--target left|right]`.
-
-Instrukcja krok po kroku (wraz z listą skrótów) jest w [README](https://github.com/forsetius/web-pane/) repozytorium.
+Szczegóły na [stronie z instrukcjami]{pl/web-pane-instrukcja}

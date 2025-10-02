@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Ulepszenia
 excerpt: Bio-, cyber- i nanoulepszenia dla morfów
 headerImage: mid-ep-augmentations-head.jpg
