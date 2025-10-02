@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Przycinanie neuronowe
 headerImage: mid-ep-neural-pruning-head.jpg
 excerpt: Tworzenie ograniczonych forków i zarządzanie sobą jak oprogramowaniem.
@@ -18,4 +18,3 @@ Zrozumienie działania mózgu przez transludzi pozwala na jego skanowanie i kopi
 Zamiast tworzyć forki na bieżąco, niektóre postacie preferują posiadanie starannie przyciętych forków, przechowywanych jako pliki nieaktywne, gotowe do aktywacji i skopiowania w razie potrzeby. Takie forki przygotowuje się w ramach długoterminowej psychochirurgii, co zmniejsza ich wady i pozwala na precyzyjniejsze dostrojenie wspomnień.
 
 Warto zauważyć, że niektórzy wolą korzystać z forków siebie lub bliskich zamiast z [muz]{pl/ep-muza}. Z kolei niektórzy zamożni członkowie hiperelit znani są z przechowywania kopii zapasowych swoich młodszych wersji nawet przez dekady i przywracania ich, gdy główne ego osiągnie taki poziom umiejętności i doświadczenia, że w pełni je przewyższy. Choć technicznie są to forki alfa, ich opóźnienie względem głównego ego jest porównywalne z różnicą między forkiem beta a oryginałem. Według plotek, właśnie tą metodą [Pax Familae]{pl/ep-pax-familiae} instancjonuje swoją armię klonów samej siebie.
-

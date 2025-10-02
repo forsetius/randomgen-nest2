@@ -1,73 +1,59 @@
 ---
-template: page-default
-title: web-pane
+template: page-wide+aside
+title: Web-pane
 headerImage: mid-web-pane.jpg
 langs:
   pl: web-pane
-excerpt: Handy, always-on-top 'helper windows' for web-apps
+excerpt: Handy cheat-sheet windows kept above other windows
+subcategoryName: Web-pane
 tags:
   - projects
+  - web-pane
 slots:
   aside:
-    - type: static
-      content: |
-        ## Link
-        - [Project repository](https://github.com/forsetius/web-pane)
-
+    - id: web-pane-downloads
+    
+  bottom:
+    - type: pageGallery
+      title: Want to know more?
+      sources:
+        - category: web-pane
+        
 lead: |
-  `web-pane` is a small [Electron](https://www.electronjs.org/) app that pins lightweight always-on-top windows to your screen edges, each holding several web apps (tabs). Switch between them with shortcuts (`Ctrl+Tab`/`Ctrl+Shift+Tab`) or by clicking dock icons. Result: while you’re working in an IDE or terminal, you’ve got a steady reference at hand—ChatGPT, docs, cheat sheets, whatever you need—without juggling windows.
+  **Web-pane** is a small app that lets you open lightweight windows that stay always on top of other windows. Each window can host multiple websites so you can switch between them comfortably. The goal is to keep reference text (documentation, logs, ChatGPT) visible while you work elsewhere, but it also suits other uses, like keeping a compact translator or messenger window handy.
 ---
-`web-pane` isn’t a full browser and doesn’t try to be. It’s a work helper: a few reference sources always within reach. Instead of managing user windows and tabs, the app keeps steady panels and fast switching between your “predefined” web apps.
+`web-pane` is not a full-fledged browser and does not try to be one. It is a work support tool: a handful of reference sources always within reach. Instead of managing windows and tabs, the app maintains fixed panes and fast switching between web pages.
 
-## Who it’s for - and why
+## Who is it for?
 
-* **Developers**: quick peek at documentation, logs, ChatGPT.
-* **Creators**: moodboards, color palettes, CMS preview.
-* Anyone who prefers to *glance* at information rather than split the screen.
+- **Developers**: quick access to docs, logs, ChatGPT.
+- **Creators**: mood boards, color palettes, CMS previews.
+- Anyone who prefers peeking at information over splitting the screen or juggling windows.
 
-Panels stay “on top” but don’t steal focus from your main app; minimizing and restoring with a single click keeps things tidy.
+## How does it work?
 
-## How it works (user view)
+Launching the app shows a window with the requested webpage. The window stays always on top, but you can minimize it and restore it whenever you need. You can also move it to a better spot or resize it.
 
-1. Integrate with **[Plank](https://news.itsfoss.com/plank-reloaded/)** (or another dock): add two docks to autostart and pin your own `.desktop` shortcuts to them. Each shortcut launches a left or right panel.
-2. Launching web apps: The app provides a simple CLI to open/select web apps in a given panel, which keeps the `.desktop` entry short and stable. The README includes a ready-to-use example; a minimal entry looks like:
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
-   ```
-   Exec=web-pane show chatgpt https://www.chatgpt.com --target left
-   StartupWMClass=web-panes
-   ```
-3. Keyboard shortcuts (the essentials):
+Running a command (or shortcut) that opens another page in the same window replaces the view - the second page appears, but the first stays underneath and you can bring it back. You can open many pages within the same window and switch between them; icons of all open pages appear, and you can cycle through them.
 
-    * `Ctrl+Tab`/`Ctrl+Shift+Tab` – next/previous web app in the panel
-    * `Alt+Left`/`Alt+Right` – back/forward in history
-    * `Ctrl+R`/`Ctrl+Shift+R` – reload / hard reload
-    * `Ctrl+Shift+=`, `Ctrl+Shift+-`, `Ctrl+0` – zoom in, zoom out, reset zoom
-    * `Ctrl+F4` – close tab, `Alt+F4` – quit the app
-    * `Alt+Down` – minimize the panel (restore by clicking its activator)
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
-All shortcuts are listed in the README.
+You can open several windows, place them around the screen however you like, and keep a different set of web pages in each of them.
 
-## Implementation overview
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
-`web-pane` is written in TypeScript on Electron. The architecture separates **panel windows** from **content views** that render web pages.
+The panes stay "on top" but do not steal focus from your main app; minimizing and restoring them with a single shortcut keeps things tidy.
 
-### Panel windows
+## Integrations
 
-Each panel (left/right) is an Electron window configured as always-on-top. On macOS it’s worth using the “screen-saver” level so the window sits above fullscreen apps; you can also enable *all workspaces* so the panel is visible on every desktop.
+You can launch the app from the system menu, but there are other ways too. The command that triggers it can be extended so it immediately opens a specific page in a chosen window. That would be clumsy in everyday usage, yet it shines when you integrate it with the system. You can do that in several ways:
+1. **Shortcuts** (Windows shortcuts, Linux `.desktop` launchers, macOS dock items) - create ordinary system shortcuts that open the desired page in a particular window. Clicking the shortcut again either switches the pane to that page or, if it is already visible, minimizes the pane.
+2. **Docks or window lists** - pin the shortcuts there for easy access and hide them when they are not needed (if the dock auto-hides).
+3. **Keyboard shortcuts** - define system shortcuts that summon or restore a pane, or show a specific page inside it.
+4. **Scripts** - script the entire layout of panes and pages (for coding, editing, and so on). You can tie those scripts to shortcuts, dock items, or key combinations as well.
 
-### Content views: `WebContentsView`
+Once configured this way, running and managing the app becomes a matter of clicking desktop or dock shortcuts and/or using key combinations.
 
-Inside a panel window, the app doesn’t open more windows for each site. Instead, it creates several `WebContentsView` instances and switches them within the same window. This is the modern, recommended way to embed web content in Electron (the successor to the now-dated `BrowserView`).
-
-### Why this approach?
-
-* A single panel can hold a **collection of views**; the active view is attached to the window’s `contentView` and gets the panel’s full size.
-* Switching is instant (no new window creation); history, zoom, and reload are handled via `view.webContents`.
-
-## Getting started
-
-1. Install **Plank**, add two docks to autostart, and place them on the left/right edges.
-2. Create `.desktop` files for your chosen web apps.
-3. Install `web-pane` and add `.desktop` shortcuts that run `web-pane show <id> <url> [--target left|right]`.
-
-Step-by-step instructions (plus the full shortcut list) are in the repository README.
+Details are on the [user guide page]{en/web-pane-user-guide}

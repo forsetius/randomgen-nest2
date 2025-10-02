@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Inne aerostaty
 headerImage: mid-aerostat-head.jpg
 excerpt: Mniejsze aerostaty nad Wenus

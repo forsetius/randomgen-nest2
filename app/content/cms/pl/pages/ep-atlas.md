@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Atlas świata 
 excerpt: Przewodnik po miejscach zasiedlonych przez transludzkość - w Układzie Słonecznym i poza nim
 headerImage: mid-ep-atlas-head.jpg

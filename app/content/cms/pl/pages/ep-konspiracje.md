@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Konspiracje
 headerImage: mid-ep-conspiracy-head.jpg
 category: ep-encyklopedia

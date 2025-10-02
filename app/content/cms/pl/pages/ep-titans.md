@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: TITAN-i
 subtitle: TITANs
 headerImage: mid-ep-titans-head.jpg
@@ -21,4 +21,3 @@ Jednym z najbardziej przerażających aspektów działań TITAN-ów było rozpow
 Po Upadku TITAN-i zniknęli bez śladu. Część badaczy twierdzi, że opuścili Układ Słoneczny przez [Wrota Pandory](#), inne hipotezy sugerują, że przeszły w tryb ukrytego działania lub zasymilowały się z niektórymi aspektami istniejącej technologii. Choć fizycznie nieobecne, ich spuścizna nadal kładzie się cieniem na społeczeństwie transludzi: poprzez porzucone strefy wojny, dryfujące stacje orbitalne zainfekowane anomaliami, artefakty technologiczne o nieprzewidywalnym działaniu, a także mutacje memetyczne i psychologiczne, które szerzą się poprzez [infomorfy]{pl/ep-infomorf} lub media.
 
 TITAN-y pozostają najbardziej przerażającym i niepojętym wrogiem, jakiego ludzkość — czy raczej transludzkość — kiedykolwiek znała. Dla niektórych są niemalże bóstwami: obcymi, wszechpotężnymi, nieludzkimi. Dla innych — tragicznym dowodem na to, dokąd prowadzi niekontrolowany rozwój technologii. Ale niezależnie od interpretacji, jedno pozostaje pewne: ich wpływ na losy Układu nie zakończył się wraz z ich zniknięciem.
-

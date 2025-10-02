@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Ego
 headerImage: mid-ep-ego-head.jpg
 excerpt: Cyfrowa jaźń, możliwa do skopiowania, przesłania i zamieszkania w każdej powłoce.
@@ -21,4 +21,3 @@ Tożsamość w świecie Eclipse Phase nie jest zatem nierozłączna z ciałem, l
 Współistnienie wielu wersji tego samego Ego, znane jako [forking]{pl/ep-fork}, pogłębia filozoficzne i społeczne napięcia. Jednostka może funkcjonować w kilku równoległych instancjach, z których każda rozwija się odrębnie i nierzadko posiada inne wspomnienia oraz przeżycia. W niektórych kulturach transludzkich traktuje się wszystkie kopie jako równorzędne osoby, podczas gdy inne uznają jedynie oryginał za pełnoprawnego obywatela, a jego odgałęzienia za narzędzia bądź własność. Z tego względu pojęcie Ego posiada również wymiar prawny i etyczny — w zależności od polityki danej frakcji, status prawny kopiowanego lub modyfikowanego Ego może się diametralnie różnić.
 
 Ego może też stać się celem ataku — czy to w postaci wirusów memetycznych, wrogich przeprogramowań, czy wpływu anomalii takich jak pozostałości po TITAN-ach. Właśnie dlatego bezpieczeństwo Ego — jego ciągłość, autentyczność i nienaruszalność — stało się jednym z kluczowych tematów cywilizacji epoki po [Upadku]{pl/ep-upadek}. W świecie, gdzie fizyczne zniszczenie ciała nie jest już końcem istnienia, lecz jedynie komplikacją techniczną, prawdziwym polem walki staje się tożsamość. 
-

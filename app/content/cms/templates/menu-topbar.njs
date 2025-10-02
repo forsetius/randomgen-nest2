@@ -17,29 +17,61 @@
             {% elif topMenuItem.columns %}
               {# RichSubMenu #}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ loop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#"
+                   id="navbarDropdown{{ loop.index }}"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{ topMenuItem.title }}
                 </a>
-                <ul class="dropdown-menu dropdown-menu-custom p-3" aria-labelledby="navbarDropdown{{ loop.index }}">
-                  <div class="d-flex row">
-                  {% for column in topMenuItem.columns %}
-                    <li class="dropdown-item-column col">
-                      <h5>{{ column.title }}</h5>
-                      <ul class="list-unstyled">
-                        {% for subitem in column.items %}
-                          <li>
-                            <h6><a href="{{ subitem.url }}">{{ subitem.title }}</a></h6>
-                            <p>{{ subitem.text }}</p>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                  {% endfor %}
+                
+                <div class="dropdown-menu dropdown-menu-custom p-3"
+                     aria-labelledby="navbarDropdown{{ loop.index }}">
+                  <div class="row g-3">
+                    
+                    {% set totalUnits = 0 %}
+                    {% for c in topMenuItem.columns %}
+                      {% set totalUnits = totalUnits + (c.colspan or 1) %}
+                    {% endfor %}
+                    
+                    {% for column in topMenuItem.columns %}
+                      {% set span = column.colspan or 1 %}
+                      {% set basis = "(100% / " ~ totalUnits ~ ") * " ~ span %}
+                      <div class="col dropdown-item-column"
+                        {% if span == 1 %}
+                          style="flex:0 0 calc(100% / {{ totalUnits }}); max-width:calc(100% / {{ totalUnits }});"
+                        {% else %}
+                          style="flex:0 0 calc({{ basis }}); max-width:calc({{ basis }});"
+                        {% endif %}
+                      >
+                          <h5 class="mb-2">
+                            {% if column.url %}
+                            <a href="{{ column.url }}">{{ column.title | safe }}</a>
+                            {% else %}
+                              {{ column.title | safe }}
+                            {% endif %}
+                          </h5>
+                          {% if column.text %}<p class="mb-0 small text-body-secondary">{{ column.text }}</p>{% endif %}
+                          <div class="row g-3">
+                            {% set groups = column.items | splitToColumns(span) %}
+                            {% for group in groups %}
+                              <div class="col dropdown-item-subcolumn g-3">
+                                <ul class="list-unstyled mb-0">
+                                  {% for subitem in group %}
+                                    <li class="mb-2">
+                                      <h6 class="mb-1"><a class="text-decoration-none" href="{{ subitem.url }}">{{ subitem.title }}</a></h6>
+                                      {% if subitem.text %}<p class="mb-0 small text-body-secondary">{{ subitem.text }}</p>{% endif %}
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                    {% endfor %}
                   </div>
-                </ul>
+                </div>
               </li>
-            
-            {% elif topMenuItem.separator %}
+              
+              {% elif topMenuItem.separator %}
                 {# SeparatorMenuItem #}
                 <li class="nav-item d-flex align-items-center px-2 text-muted only-web">{{ topMenuItem.separator }}</li>
                 

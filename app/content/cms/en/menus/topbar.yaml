@@ -1,31 +1,64 @@
 template: menu-topbar
 menu:
-  - title: About me
+  - title: My expertise
     columns:
       - title: <i class="text-warning bi bi-braces-asterisk"></i> Programming
         items:
           - title: Skills
             url: "@{en/prog-skills}"
-            text: What I know, what I can
-          - title: Experience
-            url: "@{en/prog-experience}"
-            text: What I've already done
+            text: My coding skills
 
-      - title: <i class="text-warning bi bi-lightbulb"></i> Projects
+      - title: <i class="text-warning bi bi-code-slash"></i> Experience
+        url: "@{en/prog-experience}"
+        text: "I have had the opportunity to work with quite a variety of projects: from backends in Symfony or Nest.js, through chat over websockets, to APIs connecting sensors and cameras with displays, ticketing systems, and barriers."   
+        colspan: 2
+        repeatTitle: false
+        items:
+          - title: Parking systems
+            url: "@{en/prog-parking-systems}"
+            text: "Systems integrating sensors, cameras, displays, and backoffice applications for parking management"
+          - title: Casinos
+            url: "@{en/prog-casinos}"
+            text: "Platform supporting casinos, games, payments, and all player-related activities"
+          - title: 1-on-1 Conversations
+            url: "@{en/prog-1on1}"
+            text: "A tool for HR departments for 1-on-1 conversations with employees"
+          - title: Job placement
+            url: "@{en/prog-job-placement}"
+            text: "Advanced system for broadcasting job offers and collecting applications"
+          - title: Tool requisition
+            url: "@{en/prog-requisitions}"
+            text: "Mobile app allowing employees to request tool purchases"
+          - title: Application for a window manufacturer
+            url: "@{en/prog-windows}"
+            text: "Application with an overview of orders, documents, and window rack rentals"
+
+  - title: Projects
+    columns:
+      - title: <i class="text-warning bi bi-layout-wtf"></i> Mod_CMS
+        items:
+          - title: Presentation
+            url: "@{en/mod_cms}"
+            text: CMS module generating static HTML pages
+            # - title: Technical details
+            #   url: "@{en/mod_cms-technikalia}"
+            #   text: Implementation and integration in NestJS
+      - title: <i class="text-warning bi bi-layout-sidebar-inset-reverse"></i> Web-pane
+        items:
+          - title: Presentation and download
+            url: "@{en/web-pane}"
+            text: Handy "cheat sheet windows" floating above other windows
+          - title: Instructions
+            url: "@{en/web-pane-user-guide}"
+            text: How to use and fully utilize `web-pane`
+          - title: Technica l details
+            url: "@{en/web-pane-technical}"
+            text: Implementation aspects of `web-pane`
+      - title: <i class="text-warning bi bi-easel"></i> Other projects
         items:
           - title: RandomGen
             url: "@{en/randomgen}"
             text: Various content generators, mainly for RPGs
-          - title: Mod_CMS
-            url: "@{en/mod_cms}"
-            text: CMS module that generates the static HTML pages
-          - title: Web-pane
-            url: "@{en/web-pane}"
-            text: Handy, always-on-top "helper windows" for web-apps
-
-#          - title: PlanetaryNames4Celestia
-#            url: "@{en/planetarynames4celestia}"
-#            text: An application that pulls the Solar System location names and converts them to the Celestia format
 
   - title: Blog
     url: "@{en/blog}"

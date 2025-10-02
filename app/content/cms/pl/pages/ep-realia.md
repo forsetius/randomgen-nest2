@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Realia świata
 excerpt: Różnorodne aspekty settingu Eclipse Phase 
 headerImage: leo-ep-reality-head.jpg

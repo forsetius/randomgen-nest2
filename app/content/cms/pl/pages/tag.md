@@ -1,5 +1,5 @@
 ---
-template: page-tag-full-width
+template: page-tag-3-cols
 title: Strony z tagiem
 langs:
   en: tag

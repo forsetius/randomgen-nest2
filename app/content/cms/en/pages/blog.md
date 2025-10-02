@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Suddenly, on the blog!
 langs:
   pl: blog

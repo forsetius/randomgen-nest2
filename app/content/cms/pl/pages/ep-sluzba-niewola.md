@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Powrót do niewoli
 excerpt: Powrót kontraktów służebnych — jak korporacje przywróciły nowoczesne niewolnictwo.
 category: ep-sluzba
@@ -22,4 +22,3 @@ Nawet jeśli katalogowanie trwało, oczywiste było, że nie starczy morfów, by
 Wraz z tworzeniem nowych porządków prawnych po Upadku, kontrakty służebne zostały wplecione w nowy system kar. Jedną z kluczowych zmian było odejście od kar więzienia na rzecz grzywien i rekompensat. Habitaty nie miały miejsca ani zasobów na utrzymywanie populacji więziennej. Skoro większość rzeczy — umysłów, ciał, obiektów — można było naprawić, prawo skupiło się na finansowym wynagrodzeniu szkód. W obliczu praktycznej nieśmiertelności większości transludzi, zaczęto powszechnie stosować potrącenia z dochodu lub kontrakty służebne jako sposób spłaty nawet ogromnych odszkodowań. Dla biednych lub tych bez cennych umiejętności zawodowych, koszty rekompensaty mogły oznaczać lata lub dekady pracy, a sprzedanie się w służbę kontraktową często było jedyną realną opcją. Paradoksalnie to właśnie organizacje przestępcze lub półlegalne najczęściej oferują kontrakty służebne skazanym, a [Nocny Kartel]{pl/ep-nocny-kartel} czy [triady]{pl/ep-triady} czynią to regularnie.
 
 Praktyka ta rozprzestrzeniła się nawet poza Układ Wewnętrzny. Większość wypraw [wrotołazów](#) i działań kolonizacyjnych opiera się na umowach, które formalnie „posiadają” pracę zatrudnionych i umożliwiają im stopniowe wykupywanie udziałów w zyskach lub dostępie do zasobów. Kontrakty zawodowe u [ekstropian]{pl/ep-ekstropisci} często zawierają klauzule kontraktu służebnego jako jedną z sankcji za niedopełnienie warunków. Zdarza się również, że ludzie podpisują kontrakty służebne dla swoich forków beta, ponieważ wiele habitatów i lokalnych systemów prawnych traktuje forki niższego rzędu jako własność.
-

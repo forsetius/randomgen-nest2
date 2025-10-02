@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Pod
 subtitle: Pod
 headerImage: mid-pod-head.jpg

@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-3-cols
 title: Scalanie forków
 subtitle: Merge
 headerImage: mid-ep-merge-head.jpg
