@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { BlockZodSchema } from './BlockZodSchema';
+import { BlockZodSchema, SharedBlockZodSchema } from './BlockZodSchema';
 
 export const PageZodSchema = z
   .object({
@@ -20,7 +20,9 @@ export const PageZodSchema = z
       .regex(/^\d{4}-\d{2}-\d{2}(?: \d{2}:\d{2}(?::\d{2})?)?$/)
       .optional(),
     template: z.string().default('page-default'),
-    slots: z.record(z.string(), z.array(BlockZodSchema)).optional(),
+    slots: z
+      .record(z.string(), z.array(BlockZodSchema.or(SharedBlockZodSchema)))
+      .optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
     searchable: z.boolean().default(true),
     langs: z.record(z.string()).optional(),

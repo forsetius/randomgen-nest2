@@ -19,6 +19,8 @@ export const RichSubMenuZodSchema = z.object({
       title: z.string(),
       url: z.string().optional(),
       text: z.string().optional(),
+      colspan: z.number().int().min(1).max(6).default(1),
+      repeatTitle: z.boolean().default(false),
       items: z.array(
         z.object({
           title: z.string(),
