@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Wyszukiwanie
 langs:
   en: search

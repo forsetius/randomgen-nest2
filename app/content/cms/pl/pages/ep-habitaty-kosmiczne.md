@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Habitaty kosmiczne
 excerpt: Kosmiczne środowiska mieszkalne
 headerImage: mid-space-habitats-head.jpg

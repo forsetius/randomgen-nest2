@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Diaspora
 headerImage: mid-diaspora-head.jpg
 thumbnailImage: mid-diaspora-card.jpg

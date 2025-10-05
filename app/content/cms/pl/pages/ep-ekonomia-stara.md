@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Stara ekonomia
 headerImage: mid-ep-old-economy-head.jpg
 excerpt: Gospodarka oparta na klasycznym kapitalizmie przemysłowym

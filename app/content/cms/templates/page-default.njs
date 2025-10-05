@@ -18,7 +18,3 @@
         {% include "partial-pager.njs" %}
     {% endif %}
 {% endblock %}
-
-{% if not slots or not slots.aside %}
-    {% block asideOuter %}{% endblock %}
-{% endif %}

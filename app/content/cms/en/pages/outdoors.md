@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Outdoor wanderlust
 langs: 
   pl: znowu-baba-mnie-wywlokla

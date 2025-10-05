@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: IndEX
 excerpt: Giełda kontraktów służebnych – systemowy handel ego i pracą przymusową.
 category: ep-sluzba

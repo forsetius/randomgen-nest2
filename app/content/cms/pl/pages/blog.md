@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Wtem, na blogu!
 langs:
   en: blog

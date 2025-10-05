@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Przyodziewanie
 subtitle: Resleeving
 headerImage: mid-ep-przyodzianie-head.jpg

@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Nowa ekonomia
 headerImage: mid-ep-new-economy-head.jpg
 excerpt: Zdecentralizowana produkcja dóbr i dostęp warunkowany obywatelstwem lub pracą

@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Powierzchnia Wenus
 excerpt: Piekło na powierzchni Wenus
 headerImage: mid-ep-venus-surface-head.jpg

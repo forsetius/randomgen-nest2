@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Życie sługi kontraktowego
 excerpt: "Codzienność sług kontraktowych: od nudnych prac w VR po wyzysk i niewolę."
 category: ep-sluzba

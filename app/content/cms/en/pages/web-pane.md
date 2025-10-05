@@ -34,15 +34,15 @@ lead: |
 
 Launching the app shows a window with the requested webpage. The window stays always on top, but you can minimize it and restore it whenever you need. You can also move it to a better spot or resize it.
 
-<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
 Running a command (or shortcut) that opens another page in the same window replaces the view - the second page appears, but the first stays underneath and you can bring it back. You can open many pages within the same window and switch between them; icons of all open pages appear, and you can cycle through them.
 
-<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-switcher.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
 You can open several windows, place them around the screen however you like, and keep a different set of web pages in each of them.
 
-<block id="web-pane" type="media" template="lightbox-image" src="web-pane-screenshot.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
+<block id="web-pane" type="media" template="lightbox-image" src="web-pane-2-panes.png" title="On the right, a floating Web-pane window with Plank docks on the sides showing the pages defined for that pane" />
 
 The panes stay "on top" but do not steal focus from your main app; minimizing and restoring them with a single shortcut keeps things tidy.
 

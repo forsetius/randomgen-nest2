@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: "Znowu baba<small>*</small> mnie wywlokła"
 subtitle: "<small>*sama kazała tak napisać</small>"
 langs:

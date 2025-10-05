@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Upadek
 headerImage: mid-fall-head.jpg
 category: ep-intro

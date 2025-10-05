@@ -1,6 +1,6 @@
 ---
 title: Search
-template: page-full-width
+template: page-default
 headerImage: mid-search-head.jpg
 searchable: false
 slots:

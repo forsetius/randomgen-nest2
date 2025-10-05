@@ -1,5 +1,5 @@
 ---
-template: page-full-width
+template: page-default
 title: Stronnictwa
 excerpt: Ruchy społeczne i ideologiczne odłamy transludzkości 
 headerImage: mid-ep-factions-head.jpg
