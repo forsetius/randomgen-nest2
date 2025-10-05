@@ -1,6 +1,6 @@
 ---
 title: Search
-template: page-3-cols
+template: page-default
 headerImage: mid-search-head.jpg
 searchable: false
 slots:

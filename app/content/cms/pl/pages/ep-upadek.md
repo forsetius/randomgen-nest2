@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Upadek
 headerImage: mid-fall-head.jpg
 category: ep-intro

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Pod
 subtitle: Pod
 headerImage: mid-pod-head.jpg

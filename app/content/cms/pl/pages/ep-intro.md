@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Wprowadzenie do świata 
 headerImage: mid-ep-intro-head.jpg
 category: eclipse-phase

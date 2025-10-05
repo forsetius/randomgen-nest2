@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Powierzchnia Wenus
 excerpt: Piekło na powierzchni Wenus
 headerImage: mid-ep-venus-surface-head.jpg

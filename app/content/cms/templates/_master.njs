@@ -74,7 +74,7 @@
   
   {% block articleOuter %}
     {% if lead or content|trim|length > 0 %}
-    <article class="order-2 order-lg-1 col-12 col-lg-8">
+    <article class="order-2 order-lg-1 col-12 {{ 'col-lg-8' if slots and slots.aside }}">
       {% block article %} {% endblock %}
     </article>
     {% endif %}

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Ustroje
 excerpt: Poupadkowe państwa i sojusze polityczne
 headerImage: leo-ep-political-blocks-head.jpg

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Wyszukiwanie
 langs:
   en: search

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Diaspora
 headerImage: mid-diaspora-head.jpg
 thumbnailImage: mid-diaspora-card.jpg

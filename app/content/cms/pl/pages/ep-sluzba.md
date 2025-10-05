@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Kontrakt służebny
 headerImage: mid-ep-indenture-head.jpg
 excerpt: Przymusowa służba za morfa — nieuczciwe kontrakty, ciężka praca i śledzenie.

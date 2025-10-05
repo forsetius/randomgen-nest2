@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Sztuczna inteligencja
 excerpt: Różne rodzaje sztucznych inteligencji przyszłości
 headerImage: mid-ep-ai-head.jpg

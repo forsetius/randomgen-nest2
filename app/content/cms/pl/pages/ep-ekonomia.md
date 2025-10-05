@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Ekonomia
 headerImage: mid-ep-gospodarka-head.jpg
 excerpt: "Trzy modele gospodarki w erze nanotechnologii: stara, przejściowa i nowa"

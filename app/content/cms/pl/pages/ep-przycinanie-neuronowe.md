@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: Przycinanie neuronowe
 headerImage: mid-ep-neural-pruning-head.jpg
 excerpt: Tworzenie ograniczonych forków i zarządzanie sobą jak oprogramowaniem.

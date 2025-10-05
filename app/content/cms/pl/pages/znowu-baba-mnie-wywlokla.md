@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-default
 title: "Znowu baba<small>*</small> mnie wywlokła"
 subtitle: "<small>*sama kazała tak napisać</small>"
 langs:

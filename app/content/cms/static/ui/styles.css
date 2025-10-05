@@ -248,12 +248,12 @@ article .lead p {
 }
 
 article .content h2,
-article .content3 h2 {
+article .content-wide h2 {
     break-after: avoid;
 }
 
 article .content p,
-article .content3 p {
+article .content-wide p {
     widows: 2;
     orphans: 2;
 }
@@ -495,8 +495,7 @@ article .gallery-set h2~.card-container {
         padding: 0 7% !important;
     }
 
-    article .content,
-    article .content3 {
+    article .content-wide {
         column-count: 1;
     }
 
@@ -539,8 +538,7 @@ article .gallery-set h2~.card-container {
         padding: 0 7% !important;
     }
 
-    article .content,
-    article .content3 {
+    article .content-wide {
         column-count: 1;
     }
 
@@ -594,8 +592,7 @@ article .gallery-set h2~.card-container {
         padding-right: 7% !important;
     }
 
-    article .content,
-    article .content3 {
+    article .content-wide {
         column-count: 1
     }
 
@@ -640,13 +637,8 @@ article .gallery-set h2~.card-container {
         padding-right: 7% !important;
     }
 
-    article .content {
+    article .content-wide {
         column-count: 2;
-        column-gap: 75px;
-    }
-
-    article .content3 {
-        column-count: 3;
         column-gap: 75px;
     }
 

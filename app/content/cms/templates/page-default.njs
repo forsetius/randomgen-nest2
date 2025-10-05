@@ -4,7 +4,11 @@
     {% if lead %}
     <div class="lead">{{ lead }}</div>
     {% endif %}
+    {% if slots and slots.aside %}
     <div class="content">
+    {% else %}
+    <div class="content-wide">
+    {% endif %}
         {{ content }}
     </div>
     
