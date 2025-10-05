@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Inne stacje wenusjańskie
 headerImage: mid-ep-other-habs-head.jpg
 excerpt: Mniejsze stacje kosmiczne nad Wenus

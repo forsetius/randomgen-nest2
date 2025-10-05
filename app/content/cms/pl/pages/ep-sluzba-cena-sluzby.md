@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Cena służby
 excerpt: "Społeczna cena kontraktu służebnego: pętla ubóstwa, VR-przynęty i opór abolicjonistów."
 category: ep-sluzba

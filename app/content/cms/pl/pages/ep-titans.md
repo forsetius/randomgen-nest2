@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: TITAN-i
 subtitle: TITANs
 headerImage: mid-ep-titans-head.jpg

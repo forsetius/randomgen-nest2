@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Ego
 headerImage: mid-ep-ego-head.jpg
 excerpt: Cyfrowa jaźń, możliwa do skopiowania, przesłania i zamieszkania w każdej powłoce.

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Zewnętrze
 excerpt: Zewnętrzny Układ Słoneczny - za pasem asteroid
 lead: |

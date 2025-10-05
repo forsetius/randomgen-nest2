@@ -1,4 +1,4 @@
-{% extends "page-3-cols.njs" %}
+{% extends "page-full-width.njs" %}
 
 {% block javascripts %}
     <script>

@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Społeczeństwo i kultura orbity wokółziemskiej
 excerpt: "Społeczeństwo i kultura orbity wokółziemskiej: życie, różnorodność, wykluczenie"
 headerImage: mid-torus-head.jpg

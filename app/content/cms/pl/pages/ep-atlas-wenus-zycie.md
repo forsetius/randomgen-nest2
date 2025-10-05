@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Wenusjańskie formy życia
 headerImage: mid-ep-venus-life-forms-head.jpg
 excerpt: Eksperymentalna wenusjańska biosfera i rodzime formy życia.

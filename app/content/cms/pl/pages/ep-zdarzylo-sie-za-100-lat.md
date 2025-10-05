@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Zdarzyło się za 100 lat...
 excerpt: "Najbliższe dekady to galopujący rozwój technologii i społeczeństwa, które usiłują za nim nadążyć"
 headerImage: mid-happened-in-100-years-head.jpg

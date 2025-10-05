@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Egotransfer
 subtitle: Egocasting
 headerImage: mid-ep-egotransfer-head.jpg

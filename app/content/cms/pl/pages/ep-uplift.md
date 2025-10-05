@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Uplift
 headerImage: mid-ep-uplift-head.jpg
 excerpt: Podnoszenie zwierząt do rozumności ludzkiego poziomu

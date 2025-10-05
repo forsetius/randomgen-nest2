@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Górne warstwy atmosfery Wenus
 headerImage: mid-ep-upper-venus-head.jpg
 excerpt: Życie w obłokach nad Wenus

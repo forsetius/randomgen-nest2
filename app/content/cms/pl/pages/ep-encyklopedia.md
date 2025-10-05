@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Encyklopedia 
 headerImage: mid-ency-head.jpg
 excerpt: Wikipedyczny opis świata Eclipse Phase

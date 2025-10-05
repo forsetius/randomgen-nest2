@@ -1,5 +1,5 @@
 ---
-template: page-3-cols
+template: page-full-width
 title: Za Wrotami Pandory
 excerpt: Odkryte wkrótce po Upadku Wrota Pandoriańskie wiodą ku światom poza Układem Słonecznym
 headerImage: mid-gate-head.jpg
