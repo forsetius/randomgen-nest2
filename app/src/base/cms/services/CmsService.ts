@@ -148,6 +148,9 @@ export class CmsService {
     return JSON.stringify(pages.map((page) => `${template}_${page.slug}.html`));
   }
 
+  /**
+   * Returns a JSON string containing the URLs of all tags in the given language.
+   */
   public getTags(lang: Lang, template: string): string {
     const tags = Array.from(this.libraries[lang].tags.keys());
 

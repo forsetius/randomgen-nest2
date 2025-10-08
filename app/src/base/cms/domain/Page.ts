@@ -1,6 +1,6 @@
 import * as fs from 'node:fs/promises';
 import { join } from 'node:path';
-import { minify } from 'html-minifier';
+import { minify } from 'html-minifier-next';
 import { DateTime } from 'luxon';
 import { PageProps } from '../types/PageMeta';
 import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
@@ -121,13 +121,15 @@ export class Page {
       brand: this.meta.brand,
     };
 
-    [
+    const templates = [
       { template: this.template, seoNaming: true },
       ...this.meta.fragmentTemplates.map((template) => ({
         template,
         seoNaming: false,
       })),
-    ].forEach(({ template, seoNaming }) => {
+    ];
+
+    for (const { template, seoNaming } of templates) {
       let content = this.templatingService.render(
         template,
         data as unknown as Record<string, unknown>,
@@ -139,9 +141,9 @@ export class Page {
 
       renderedContents.push({
         filepath: seoNaming ? this.filename : `${template}_${this.slug}.html`,
-        content: this.minifyHTML(content),
+        content: await this.minifyHTML(content),
       });
-    });
+    }
 
     return renderedContents;
   }
@@ -269,9 +271,9 @@ export class Page {
     return content;
   }
 
-  private minifyHTML(content: string): string {
+  private async minifyHTML(content: string): Promise<string> {
     try {
-      return minify(content, {
+      return await minify(content, {
         caseSensitive: true,
         collapseWhitespace: true,
         removeComments: true,

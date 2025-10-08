@@ -41,6 +41,9 @@ export class SmtpProvider implements MailProviderInterface {
 
   private getMailTransport(): Transporter<SMTPTransport.SentMessageInfo> {
     const config = this.configService.getInferred('mail.credentials.smtp');
+    if (!config) {
+      throw new InternalServerErrorException('SMTP mail is not configured');
+    }
 
     return createTransport({
       host: config.host,

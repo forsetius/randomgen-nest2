@@ -6,7 +6,6 @@ import { PageDef, PageZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { BlockFactory } from './BlockFactory';
-import { fromZodError } from '@shared/util/fromZodError';
 import { Locale } from '../domain/Locale';
 import { CMS_OPTIONS } from '../CmsConstants';
 import type { SitewideData } from '../types/CmsModuleOptions';
@@ -28,7 +27,7 @@ export class PageFactory {
       return PageZodSchema.parse(def);
     } catch (e) {
       if (e instanceof ZodError) {
-        throw new SourceFileValidationException(filename, fromZodError(e));
+        throw new SourceFileValidationException(filename, e);
       }
 
       throw e;
@@ -42,7 +41,7 @@ export class PageFactory {
   }
 
   public create(filename: string, def: unknown, locale: Locale): Page {
-    const pageDef: PageDef = this.validate(filename, def);
+    const pageDef: PageDef = this.validate(`${locale.lang}/${filename}`, def);
 
     return new Page(
       this.blockFactory,

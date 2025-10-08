@@ -1,24 +1,14 @@
-import { IsString, IsNotEmpty, IsEmail, IsEmpty } from 'class-validator';
+import { z } from 'zod';
 
-export class ContactDto {
-  // Honeypot field. Invisible in the UI but some bots will fill it.
-  @IsString()
-  @IsEmpty()
-  catcher: string | undefined;
+export const ContactRequestSchema = z.object({
+  catcher: z
+    .string()
+    .optional()
+    .refine((val) => typeof val === 'undefined' || val === ''),
+  name: z.string().min(1),
+  email: z.email(),
+  title: z.string().min(1),
+  content: z.string().min(1),
+});
 
-  @IsString()
-  @IsNotEmpty()
-  name!: string;
-
-  @IsEmail()
-  @IsNotEmpty()
-  email!: string;
-
-  @IsString()
-  @IsNotEmpty()
-  title!: string;
-
-  @IsString()
-  @IsNotEmpty()
-  content!: string;
-}
+export type ContactDto = z.infer<typeof ContactRequestSchema>;

@@ -1,8 +1,8 @@
-import { EnvVarValidator } from '@config/EnvVarValidator';
+import type { EnvVarSchemaType } from '@config/EnvVarSchema';
 import { Lang } from '@shared/types/Lang';
 import { MailProvider } from './io/mail/types';
 
-export const config = (envVars: EnvVarValidator) => ({
+export const config = (envVars: EnvVarSchemaType) => ({
   app: {
     title: 'RandomGen',
     description: 'Random generators for RPGs',
@@ -18,14 +18,16 @@ export const config = (envVars: EnvVarValidator) => ({
     },
   },
   mail: {
-    provider: MailProvider.SMTP,
+    provider: envVars.MAIL_PROVIDER,
     credentials: {
-      smtp: {
-        host: envVars.SMTP_HOST,
-        port: envVars.SMTP_PORT,
-        user: envVars.SMTP_USER,
-        pass: envVars.SMTP_PASSWORD,
-      },
+      ...(envVars.MAIL_PROVIDER === MailProvider.SMTP && {
+        smtp: {
+          host: envVars.SMTP_HOST,
+          port: envVars.SMTP_PORT,
+          user: envVars.SMTP_USER,
+          pass: envVars.SMTP_PASSWORD,
+        },
+      }),
     },
     sender: {
       name: envVars.MAIL_SENDER_NAME,

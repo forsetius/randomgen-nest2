@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page-wide-noaside
 title: Kontakt
 langs:
   en: contact

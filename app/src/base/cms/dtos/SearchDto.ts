@@ -1,16 +1,12 @@
-import { Type } from 'class-transformer';
-import { IsInt, Matches, Max, Min } from 'class-validator';
-import { LangQueryDto } from './LangQueryDto';
+import z from 'zod';
+import type { AppConfigService } from '@config/AppConfigService';
+import { LangSchema } from '@shared/validation/LangDto';
 
-export class SearchParamsDto {
-  @Type(() => Number)
-  @IsInt()
-  @Min(1)
-  @Max(10)
-  count!: number;
-}
+export const SearchQuerySchema = (config: AppConfigService) =>
+  LangSchema(config).extend({
+    count: z.coerce.number().int().min(1).max(10).optional(),
+    term: z.string().regex(/^[\p{L}\d\s-]+$/u),
+    brief: z.coerce.boolean().default(false),
+  });
 
-export class SearchQueryDto extends LangQueryDto {
-  @Matches(/^[\p{L}\d\s-]+$/u)
-  term!: string;
-}
+export type SearchDto = z.infer<ReturnType<typeof SearchQuerySchema>>;
