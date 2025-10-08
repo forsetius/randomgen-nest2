@@ -57,7 +57,6 @@ export class ZodRequestInterceptor implements NestInterceptor {
           return await schema.parseAsync(value);
         } catch (err) {
           if (err instanceof z.ZodError) {
-            console.log(err);
             throw new BadRequestException(err);
           }
           throw err;

@@ -40,8 +40,6 @@ export class CmsController {
   public search(@ParsedArgs() params: Dto.SearchDto) {
     const { term, count, lang, brief } = params;
     const template = brief ? 'fragment-list-item' : 'fragment-img-card';
-    console.log(params);
-    console.log('de', { term, count, lang, brief });
 
     return this.contentService.search(term, lang, template, count);
   }
