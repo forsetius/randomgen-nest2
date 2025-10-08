@@ -12,7 +12,6 @@ import {
   PageGalleryBlock,
   StaticBlock,
 } from '../domain/blocks';
-import { fromZodError } from '@shared/util/fromZodError';
 
 @Injectable()
 export class BlockFactory {
@@ -29,7 +28,7 @@ export class BlockFactory {
       return BlockZodSchema.parse(def);
     } catch (e) {
       if (e instanceof ZodError) {
-        throw new SourceFileValidationException(source, fromZodError(e));
+        throw new SourceFileValidationException(source, e);
       }
 
       throw e;

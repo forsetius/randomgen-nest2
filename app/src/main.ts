@@ -1,13 +1,13 @@
 import stopwatch from '@shared/util/stopwatch';
 import { Settings as LuxonSettings } from 'luxon';
-import { ValidationPipe, VersioningType } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
+import { VersioningType } from '@nestjs/common';
+import { NestFactory, Reflector } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppConfigService } from '@config/AppConfigService';
 import { AppModule } from './app/AppModule';
 import { SecurityService } from './base/security/services/SecurityService';
-import { Env } from '@shared/types/Env';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
+import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
 
 stopwatch.record('after imports');
 
@@ -22,16 +22,11 @@ async function bootstrap(): Promise<void> {
   app.enableShutdownHooks();
   app.get(SecurityService).setup(app);
 
-  app.useGlobalFilters(new NotFoundFilter());
-  app.useGlobalPipes(
-    new ValidationPipe({
-      disableErrorMessages: configService.getInferred('app.env') === Env.PROD,
-      transform: true,
-      whitelist: true,
-      forbidNonWhitelisted: true,
-      errorHttpStatusCode: 422,
-    }),
+  const reflector = app.get(Reflector);
+  app.useGlobalInterceptors(
+    new ZodRequestInterceptor(configService, reflector),
   );
+  app.useGlobalFilters(new NotFoundFilter());
 
   try {
     await app.init();

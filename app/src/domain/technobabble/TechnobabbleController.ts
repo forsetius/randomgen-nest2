@@ -1,13 +1,18 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import type { BaseGenerator } from './generators/BaseGenerator';
 import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
 import { Lang } from '@shared/types/Lang';
 import { AppConfigService } from '@config/AppConfigService';
-import { TechnobabbleRequestQueryDto } from './dto/TechnobabbleRequestQueryDto';
+import {
+  TechnobabbleRequestSchema,
+  type TechnobabbleRequestDto,
+} from './dto/TechnobabbleRequestDto';
 import { ApiOperation } from '@nestjs/swagger';
 import { SourceTemplateName } from './types/SourceTemplateName';
 import { BaseSource } from './types/SourceData';
+import { ZodSchema } from '@shared/validation/ZodSchemaDecorator';
+import { ParsedArgs } from '@shared/validation/ParsedArgsDecorator';
 
 @Controller()
 export class TechnobabbleController {
@@ -21,10 +26,13 @@ export class TechnobabbleController {
     description: 'Generate raw array of Star Trek technobabble phrases',
   })
   @Get(['/technobabble', '/api/1.0/startrek/technobabble'])
-  public generateRaw(@Query() query: TechnobabbleRequestQueryDto): string {
-    const service = this.chooseGenerator(query.lang);
+  @ZodSchema((configService) => ({
+    query: TechnobabbleRequestSchema(configService),
+  }))
+  public generateRaw(@ParsedArgs() params: TechnobabbleRequestDto): string {
+    const service = this.chooseGenerator(params.lang);
 
-    return this.generate(service, SourceTemplateName.STAR_TREK, query).join(
+    return this.generate(service, SourceTemplateName.STAR_TREK, params).join(
       '\n',
     );
   }
@@ -32,9 +40,9 @@ export class TechnobabbleController {
   private generate(
     service: BaseGenerator<BaseSource>,
     templateName: SourceTemplateName,
-    query: TechnobabbleRequestQueryDto,
+    query: TechnobabbleRequestDto,
   ): string[] {
-    return Array(query.repeat ?? 1)
+    return Array(query.repeat)
       .fill(undefined)
       .map(() => service.generate(templateName));
   }

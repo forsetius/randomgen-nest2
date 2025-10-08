@@ -1,6 +1,6 @@
 ---
-template: page-default
-title: Kontakt
+template: page-wide-noaside
+title: Contact
 langs:
   pl: kontakt
 headerImage: mid-contact-head.jpg

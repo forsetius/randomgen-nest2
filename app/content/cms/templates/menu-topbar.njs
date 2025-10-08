@@ -91,7 +91,7 @@
   <form
       id="searchForm"
       class="d-flex ms-auto"
-      action="/pages/pl/search.html?term={value}"
+      action="/pages/{{ lang }}/search.html?term={value}"
       method="GET"
       autocomplete="off"
   >
@@ -104,7 +104,7 @@
             placeholder="{{ translations.search }}..."
             aria-label="Search"
             autocomplete="off"
-            hx-get="/search/7"
+            hx-get="/search?count=7&brief=true"
             hx-trigger="keyup[this.value.length >= 3] delay:300ms"
             hx-target="#searchResults"
             hx-on:htmx:after-request="handleSearchResponse(event, 'searchResults')"

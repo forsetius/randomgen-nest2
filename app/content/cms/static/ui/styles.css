@@ -363,11 +363,11 @@ section.cards .card-title {
 .card {
     border: 0;
     border-radius: 1rem;
+    transition: box-shadow 0.25s ease-in-out;
 }
 
 .card:hover {
-    border: 0;
-    box-shadow: 0 0 20px #606060;
+    box-shadow: 0 16px 32px -4px #4b4b4b;
 }
 
 aside img {

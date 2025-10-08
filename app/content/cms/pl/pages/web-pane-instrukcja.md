@@ -1,5 +1,5 @@
 ---
-template: page-wide+aside
+template: page-default
 title: Web-pane - instrukcja użytkownika
 headerImage: mid-web-pane.jpg
 langs:

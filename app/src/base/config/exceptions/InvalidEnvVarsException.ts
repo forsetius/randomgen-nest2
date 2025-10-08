@@ -1,9 +1,9 @@
-import { ValidationError } from 'class-validator';
+import { z, type ZodError } from 'zod';
 
 export class InvalidEnvVarsException extends Error {
-  public constructor(errors: ValidationError[]) {
+  public constructor(error: ZodError) {
     super();
 
-    this.message = errors.toString();
+    this.message = z.prettifyError(error);
   }
 }

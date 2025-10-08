@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { BlockZodSchema, SharedBlockZodSchema } from './BlockZodSchema';
+import { Lang } from '@shared/types/Lang';
 
 export const PageZodSchema = z
   .object({
@@ -25,7 +26,7 @@ export const PageZodSchema = z
       .optional(),
     blocks: z.record(z.string(), BlockZodSchema).optional(),
     searchable: z.boolean().default(true),
-    langs: z.record(z.string()).optional(),
+    langs: z.partialRecord(z.enum(Lang), z.string()).optional(),
     meta: z
       .object({
         title: z.string().optional(),
