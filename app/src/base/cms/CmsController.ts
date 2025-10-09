@@ -14,7 +14,7 @@ import { AppConfigService } from '@config/AppConfigService';
 import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor';
 import * as Dto from './dtos';
 import { ZodSchema } from '@shared/validation/ZodSchemaDecorator';
-import { LangSchema } from '@shared/validation/LangDto';
+import { LangSchema, OptionalLangSchema } from '@shared/validation/LangDto';
 import { ParsedArgs } from '@shared/validation/ParsedArgsDecorator';
 
 @Controller()
@@ -25,12 +25,15 @@ export class CmsController {
     private mailService: MailService,
   ) {}
 
-  @Get('/')
+  @Get(['/', '/:lang'])
+  @ZodSchema({ params: OptionalLangSchema, query: OptionalLangSchema })
   public index(
-    @ParsedArgs('lang') lang: Lang = Lang.PL,
+    @ParsedArgs('lang') lang: Lang | undefined,
     @Res() res: Response,
   ): void {
-    res.redirect(302, `/pages/${lang}/index.html`);
+    const language =
+      lang ?? this.configService.getInferred('app.defaultLanguage');
+    res.redirect(302, `/pages/${language}/index.html`);
   }
 
   @Get('/search')

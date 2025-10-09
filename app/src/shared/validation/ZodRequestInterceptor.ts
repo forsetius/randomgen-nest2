@@ -16,6 +16,7 @@ import {
   type ZodSchemaFactory,
 } from './ZodSchemaDecorator';
 import type { ParsedRequest } from './express-augmentations';
+import { Env } from '@shared/types/Env';
 
 const mergeRecords = (sources: unknown[]): Record<string, unknown> => {
   const args = sources
@@ -56,10 +57,14 @@ export class ZodRequestInterceptor implements NestInterceptor {
         try {
           return await schema.parseAsync(value);
         } catch (err) {
-          if (err instanceof z.ZodError) {
+          if (
+            this.configService.getInferred('app.env') !== Env.PROD &&
+            err instanceof z.ZodError
+          ) {
             throw new BadRequestException(err);
           }
-          throw err;
+
+          throw new BadRequestException();
         }
       };
 
