@@ -2,5 +2,11 @@
   "rootDir": "src",
   "testRegex": ".*\\.test\\.ts$",
   "preset": "ts-jest",
-  "testEnvironment": "node"
+  "testEnvironment": "node",
+  "moduleNameMapper": {
+    "^@config/(.*)$": "<rootDir>/base/config/$1",
+    "^@domain/(.*)$": "<rootDir>/domain/$1",
+    "^@shared/(.*)$": "<rootDir>/shared/$1",
+    "^@templating/(.*)$": "<rootDir>/base/templating/$1"
+  }
 }

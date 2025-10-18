@@ -8,11 +8,7 @@ const MAX_PORT_NUMBER = 65535;
 const BaseEnvVarSchema = z.object({
   ENV: z.enum(Env),
   AKISMET_KEY: z.string().nonempty(),
-  APP_HOST: z.url({
-    protocol: /^https?$/,
-    hostname: z.regexes.domain,
-    normalize: true,
-  }),
+  APP_HOST: z.httpUrl({ normalize: true }).or(z.literal('localhost')),
   APP_PORT: z.coerce.number().int().min(MIN_PORT_NUMBER).max(MAX_PORT_NUMBER),
 });
 
