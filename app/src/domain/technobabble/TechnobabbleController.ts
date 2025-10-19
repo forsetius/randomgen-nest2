@@ -3,10 +3,9 @@ import type { BaseGenerator } from './generators/BaseGenerator';
 import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
 import { Lang } from '@shared/types/Lang';
-import { AppConfigService } from '@config/AppConfigService';
 import {
-  TechnobabbleRequestSchema,
   type TechnobabbleRequestDto,
+  TechnobabbleRequestSchema,
 } from './dto/TechnobabbleRequestDto';
 import { ApiOperation } from '@nestjs/swagger';
 import { SourceTemplateName } from './types/SourceTemplateName';
@@ -19,7 +18,6 @@ export class TechnobabbleController {
   constructor(
     private polishGeneratorService: PolishGenerator,
     private englishGeneratorService: EnglishGenerator,
-    private configService: AppConfigService,
   ) {}
 
   @ApiOperation({
@@ -30,7 +28,10 @@ export class TechnobabbleController {
     query: TechnobabbleRequestSchema(configService),
   }))
   public generateRaw(@ParsedArgs() params: TechnobabbleRequestDto): string {
-    const service = this.chooseGenerator(params.lang);
+    const service =
+      params.lang === Lang.PL
+        ? this.polishGeneratorService
+        : this.englishGeneratorService;
 
     return this.generate(service, SourceTemplateName.STAR_TREK, params).join(
       '\n',
@@ -45,14 +46,5 @@ export class TechnobabbleController {
     return Array(query.repeat)
       .fill(undefined)
       .map(() => service.generate(templateName));
-  }
-
-  private chooseGenerator(lang?: Lang): BaseGenerator<BaseSource> {
-    const language =
-      lang ?? this.configService.getInferred('app.defaultLanguage');
-
-    return language === Lang.PL
-      ? this.polishGeneratorService
-      : this.englishGeneratorService;
   }
 }

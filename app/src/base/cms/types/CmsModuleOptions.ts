@@ -1,4 +1,5 @@
 export interface CmsModuleOptions {
+  appHost: string;
   fragmentTemplates: string[];
   paths: {
     mediaDir: string;

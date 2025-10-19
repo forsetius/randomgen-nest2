@@ -27,12 +27,14 @@
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,test}/**/*.ts\" --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --report-unused-disable-directives --max-warnings 0 --fix",
-    "test": "npm run tsc && jest",
+    "test": "npm run build && jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "npm run tsc && jest --config ./jest-e2e.config.json --runInBand --detectOpenHandles",
-    "tsc": "tsc"
+    "test:e2e": "npm run build && jest --config ./jest-e2e.config.json --runInBand --detectOpenHandles",
+    "build:pre": "tsc --outDir dist src/preBuild.ts && node dist/preBuild.js",
+    "build:app": "tsc",
+    "build": "npm run build:pre && npm run build:app"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.1",

@@ -11,7 +11,7 @@ import { AkismetInterceptor } from './interceptors/AkismetInterceptor';
     ThrottlerModule.forRootAsync({
       inject: [AppConfigService],
       useFactory: (configService: AppConfigService) => {
-        const securityConfig = configService.getInferred('security');
+        const securityConfig = configService.get('security');
 
         return [
           {

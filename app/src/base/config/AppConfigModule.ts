@@ -1,16 +1,16 @@
 import { Global, Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
-import { config } from '../../config';
+import { ConfigModule, type ConfigFactory } from '@nestjs/config';
+import z from 'zod';
 import { AppConfigService } from './AppConfigService';
 import { InvalidEnvVarsException } from './exceptions/InvalidEnvVarsException';
 import { EnvVarSchema, type EnvVarSchemaType } from './EnvVarSchema';
-import z from 'zod';
+import { moduleConfigLoaders } from './moduleConfigLoaders';
 
-let validatedEnvVars: EnvVarSchemaType | undefined;
+let parsedEnvVars: EnvVarSchemaType | undefined;
 
 function validateEnvVars(envVars: Record<string, unknown>) {
   try {
-    validatedEnvVars = EnvVarSchema.parse(envVars);
+    parsedEnvVars = EnvVarSchema.parse(envVars);
   } catch (error) {
     if (error instanceof z.ZodError) {
       throw new InvalidEnvVarsException(error);
@@ -19,16 +19,18 @@ function validateEnvVars(envVars: Record<string, unknown>) {
     throw new Error('Unknown error during environment variables validation');
   }
 
-  return validatedEnvVars;
+  return parsedEnvVars;
 }
 
-const configuration = () => {
-  if (typeof validatedEnvVars === 'undefined') {
+function getConfigs(): ConfigFactory[] {
+  if (typeof parsedEnvVars === 'undefined') {
     throw new Error();
   }
 
-  return config(validatedEnvVars);
-};
+  return moduleConfigLoaders.map((configFactory) =>
+    configFactory(parsedEnvVars!),
+  ) as ConfigFactory[];
+}
 
 @Global()
 @Module({
@@ -36,10 +38,14 @@ const configuration = () => {
     ConfigModule.forRoot({
       isGlobal: true,
       validate: validateEnvVars,
-      load: [configuration],
+      load: getConfigs(),
     }),
   ],
   providers: [AppConfigService],
   exports: [AppConfigService],
 })
 export class AppConfigModule {}
+
+export type EnvAwareConfigFactory = (
+  envVars: EnvVarSchemaType,
+) => ConfigFactory & { KEY: string | symbol };

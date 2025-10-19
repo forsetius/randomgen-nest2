@@ -10,7 +10,7 @@ import { MailService } from './MailService';
       provide: 'MAIL_PROVIDER',
       inject: [AppConfigService],
       useFactory: (configService: AppConfigService) => {
-        const providerName = configService.getInferred('mail.provider');
+        const providerName = configService.get('mail.provider');
         switch (providerName) {
           case MailProvider.DUMMY:
             return new DummyMailProvider(configService);

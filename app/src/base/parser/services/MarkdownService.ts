@@ -12,7 +12,7 @@ export class MarkdownService {
 
       if (
         href.startsWith('/') ||
-        href.startsWith(this.configService.getInferred('app.host'))
+        href.startsWith(this.configService.get('app.host'))
       ) {
         return `<a href="${href}"${titleAttr} class="internal">${text}</a>`;
       } else if (href === '#') {

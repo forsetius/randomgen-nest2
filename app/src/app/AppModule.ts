@@ -1,4 +1,3 @@
-import * as path from 'path';
 import { Module } from '@nestjs/common';
 import { AppController } from './AppController';
 import { AppService } from './services/AppService';
@@ -10,34 +9,13 @@ import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
 import { MailModule } from '../io/mail';
 
-const appRoot = path.join(__dirname, '..', '..');
-
 @Module({
   imports: [
     AppConfigModule,
     SecurityModule,
-    TemplatingModule.forRoot({
-      paths: path.join(appRoot, 'content', 'cms', 'templates'),
-      options: {
-        autoescape: false,
-        throwOnUndefined: true,
-      },
-    }),
+    TemplatingModule,
     MailModule,
-    CmsModule.forRoot({
-      fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
-      paths: {
-        mediaDir: path.join(appRoot, 'content', 'cms', 'static', 'media'),
-      },
-      defaults: {
-        headerImage: 'index-head.jpg',
-      },
-      brand: {
-        name: 'Forseti: Abstract Works',
-        copyright: '© 2025 by Marcin "Forseti" Paździora',
-        logo: 'logo-w.png',
-      },
-    }),
+    CmsModule,
     TechnobabbleModule,
     ParserModule,
   ],

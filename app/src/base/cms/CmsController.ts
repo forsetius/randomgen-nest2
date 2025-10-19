@@ -31,8 +31,7 @@ export class CmsController {
     @ParsedArgs('lang') lang: Lang | undefined,
     @Res() res: Response,
   ): void {
-    const language =
-      lang ?? this.configService.getInferred('app.defaultLanguage');
+    const language = lang ?? this.configService.get('app.defaultLanguage');
     res.redirect(302, `/pages/${language}/index.html`);
   }
 
@@ -72,7 +71,7 @@ export class CmsController {
   @UseInterceptors(AkismetInterceptor<Dto.ContactDto>)
   @ZodSchema({ body: Dto.ContactRequestSchema })
   public async submitContactForm(@ParsedArgs() dto: Dto.ContactDto) {
-    const config = this.configService.getInferred('mail');
+    const config = this.configService.get('mail');
     try {
       await this.mailService.sendMail({
         from: config.sender,
