@@ -14,7 +14,6 @@ slots:
       content: |
         ## Links
         - [more technical description]{en/randomgen}
-        - [Project repository](https://github.com/forsetius/randomgen-nest2)
 lead: |
   Hooray! The first version of the CMS module is complete!
 

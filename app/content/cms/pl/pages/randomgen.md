@@ -7,12 +7,6 @@ langs:
 excerpt: Framework w Nest.js użyty do implementacji m.in. generatorów do RPG
 tags:
   - projekty
-slots:
-  aside:
-    - type: static
-      content: |
-        ## Linki
-        - [Repozytorium projektu](https://github.com/forsetius/randomgen-nest2)
 blocks:
   generators:
     type: pageGallery
