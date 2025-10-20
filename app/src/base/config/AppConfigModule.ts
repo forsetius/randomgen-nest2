@@ -5,30 +5,27 @@ import { AppConfigService } from './AppConfigService';
 import { InvalidEnvVarsException } from './exceptions/InvalidEnvVarsException';
 import { EnvVarSchema, type EnvVarSchemaType } from './EnvVarSchema';
 import { moduleConfigLoaders } from './moduleConfigLoaders';
+import { loadEnvFile } from '@shared/util/loadEnvFile';
 
-let parsedEnvVars: EnvVarSchemaType | undefined;
-
-function validateEnvVars(envVars: Record<string, unknown>) {
-  try {
-    parsedEnvVars = EnvVarSchema.parse(envVars);
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      throw new InvalidEnvVarsException(error);
-    }
-
-    throw new Error('Unknown error during environment variables validation');
-  }
-
-  return parsedEnvVars;
-}
+let cachedEnvVars: EnvVarSchemaType | undefined = undefined;
 
 function getConfigs(): ConfigFactory[] {
-  if (typeof parsedEnvVars === 'undefined') {
-    throw new Error();
+  if (typeof cachedEnvVars === 'undefined') {
+    loadEnvFile();
+
+    try {
+      cachedEnvVars = EnvVarSchema.parse(process.env);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        throw new InvalidEnvVarsException(error);
+      }
+
+      throw new Error('Unknown error during environment variables validation');
+    }
   }
 
   return moduleConfigLoaders.map((configFactory) =>
-    configFactory(parsedEnvVars!),
+    configFactory(cachedEnvVars!),
   ) as ConfigFactory[];
 }
 
@@ -37,7 +34,6 @@ function getConfigs(): ConfigFactory[] {
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      validate: validateEnvVars,
       load: getConfigs(),
     }),
   ],
@@ -45,7 +41,3 @@ function getConfigs(): ConfigFactory[] {
   exports: [AppConfigService],
 })
 export class AppConfigModule {}
-
-export type EnvAwareConfigFactory = (
-  envVars: EnvVarSchemaType,
-) => ConfigFactory & { KEY: string | symbol };

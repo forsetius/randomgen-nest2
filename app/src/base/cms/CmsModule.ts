@@ -1,16 +1,16 @@
 import { join } from 'node:path';
+import * as express from 'express';
 import { HttpModule } from '@nestjs/axios';
 import { Logger, Module, OnModuleInit } from '@nestjs/common';
 import { HttpAdapterHost } from '@nestjs/core';
+import { AppConfigModule } from '@config/AppConfigModule';
+import { MailModule } from '../../io/mail';
 import { ParserModule } from '../parser/ParserModule';
+import { SecurityModule } from '../security/SecurityModule';
 import { TemplatingModule } from '@templating/TemplatingModule';
 import { CmsController } from './CmsController';
 import { BlockFactory, CmsService, MenuFactory, PageFactory } from './services';
 import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicyRegistry';
-import { SecurityModule } from '../security/SecurityModule';
-import * as express from 'express';
-import { MailModule } from '../../io/mail';
-import { AppConfigModule } from '@config/AppConfigModule';
 import { LibraryFactory } from './services';
 
 @Module({

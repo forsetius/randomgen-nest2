@@ -1,12 +1,12 @@
 import z from 'zod';
-import { Lang } from '@shared/types/Lang';
 import { AppConfigService } from '@config/AppConfigService';
 
 export const TechnobabbleRequestSchema = (config: AppConfigService) => {
   const defaultLang = config.get('app.defaultLanguage');
+  const supportedLangs = config.get('technobabble.supportedLangs');
 
   return z.object({
-    lang: z.enum(Lang).default(defaultLang),
+    lang: z.enum(supportedLangs).prefault(defaultLang),
     repeat: z.coerce
       .number()
       .int()

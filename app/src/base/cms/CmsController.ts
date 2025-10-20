@@ -14,7 +14,6 @@ import { AppConfigService } from '@config/AppConfigService';
 import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor';
 import * as Dto from './dtos';
 import { ZodSchema } from '@shared/validation/ZodSchemaDecorator';
-import { LangSchema, OptionalLangSchema } from '@shared/validation/LangDto';
 import { ParsedArgs } from '@shared/validation/ParsedArgsDecorator';
 
 @Controller()
@@ -25,14 +24,12 @@ export class CmsController {
     private mailService: MailService,
   ) {}
 
-  @Get(['/', '/:lang'])
-  @ZodSchema({ params: OptionalLangSchema, query: OptionalLangSchema })
-  public index(
-    @ParsedArgs('lang') lang: Lang | undefined,
-    @Res() res: Response,
-  ): void {
-    const language = lang ?? this.configService.get('app.defaultLanguage');
-    res.redirect(302, `/pages/${language}/index.html`);
+  @Get()
+  @ZodSchema((configService) => ({
+    query: Dto.LangSchema(configService),
+  }))
+  public index(@ParsedArgs('lang') lang: Lang, @Res() res: Response): void {
+    res.redirect(302, `/pages/${lang}/index.html`);
   }
 
   @Get('/search')
@@ -49,7 +46,7 @@ export class CmsController {
   @Get('/tag/:tag')
   @ZodSchema((configService) => ({
     params: Dto.TagParamSchema,
-    query: LangSchema(configService),
+    query: Dto.LangSchema(configService),
   }))
   public getTag(@ParsedArgs() params: Dto.TagDto) {
     return this.contentService.getTag(
@@ -61,7 +58,7 @@ export class CmsController {
 
   @Get('/tag')
   @ZodSchema((configService) => ({
-    query: LangSchema(configService),
+    query: Dto.LangSchema(configService),
   }))
   public getTags(@ParsedArgs('lang') lang: Lang) {
     return this.contentService.getTags(lang, 'fragment-list-item');
@@ -93,5 +90,14 @@ ${dto.content}
         `Could not send an email${reason}`,
       );
     }
+  }
+
+  /* Has to be last so that it won't catch `/tag/:tag`, `/tag`, `/search` and `/contact` */
+  @Get('/:lang')
+  @ZodSchema((configService) => ({
+    params: Dto.LangSchema(configService),
+  }))
+  public indexLang(@ParsedArgs('lang') lang: Lang, @Res() res: Response): void {
+    res.redirect(302, `/pages/${lang}/index.html`);
   }
 }

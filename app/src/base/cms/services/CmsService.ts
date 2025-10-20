@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { Lang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { Library } from '../domain/Library';
@@ -9,20 +9,22 @@ import { Locale } from '../domain/Locale';
 import { RenderedContent } from '../types/RenderedContent';
 import { TemplatingService } from '@templating/TemplatingService';
 import type { SitewideData } from '../types/CmsModuleOptions';
-import { CMS_OPTIONS } from '../CmsConstants';
 import { LibraryFactory } from './LibraryFactory';
 import { cwd } from 'node:process';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class CmsService {
   private readonly baseOutputPath: string;
   private libraries!: Record<Lang, Library>;
+  private readonly metadata: SitewideData;
 
   public constructor(
     private readonly templatingService: TemplatingService,
     private readonly libraryFactory: LibraryFactory,
-    @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
+    configService: AppConfigService,
   ) {
+    this.metadata = configService.get('cms');
     this.baseOutputPath = join(cwd(), 'content', 'cms', 'static');
   }
 

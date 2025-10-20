@@ -1,6 +1,9 @@
+import { Lang } from '@shared/types/Lang';
+
 export interface CmsModuleOptions {
-  appHost: string;
+  appOrigin: string;
   fragmentTemplates: string[];
+  supportedLangs: Lang[];
   paths: {
     mediaDir: string;
   };

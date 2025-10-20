@@ -2,15 +2,17 @@ import path from 'path';
 import { CmsModuleOptions } from '../../base/cms/types/CmsModuleOptions';
 import { EnvVarSchemaType } from '@config/EnvVarSchema';
 import { registerAsTyped } from '@config/registerAsTyped';
+import { Lang } from '@shared/types/Lang';
 
-const appRoot = path.join(__dirname, '..', '..', '..', '..');
+const appRoot = path.join(__dirname, '..', '..', '..');
 
 export default (envVars: EnvVarSchemaType) =>
   registerAsTyped(
     'cms',
     () =>
       ({
-        appHost: envVars.APP_HOST,
+        appOrigin: envVars.APP_HOST,
+        supportedLangs: [Lang.EN, Lang.PL],
         fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
         paths: {
           mediaDir: path.join(appRoot, 'content', 'cms', 'static', 'media'),

@@ -15,4 +15,3 @@ export const OptionalLangSchema = z.object({
 });
 
 export type LangDto = z.infer<ReturnType<typeof LangSchema>>;
-export type OptionalLangDto = z.infer<typeof OptionalLangSchema>;
