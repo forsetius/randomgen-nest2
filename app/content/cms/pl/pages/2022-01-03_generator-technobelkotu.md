@@ -26,9 +26,7 @@ slots:
     - type: static
       content: |
         ## Źródła
-        - Repozytorium kodu: [technobabble](https://github.com/forsetius/randomgen)
         - Endpointy API: [polski](https://forseti.pl/api/1.0/startrek/technobabble?lang=pl), [angielski](https://forseti.pl/api/1.0/startrek/technobabble?lang=en)
-        - Źródło fraz: [polskich](https://github.com/forsetius/randomgen/blob/dev/dict/technobabble-pl.json), [angielskich](https://github.com/forsetius/randomgen/blob/dev/dict/technobabble-en.json)
         ## Warunki użycia
         Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. 
         

@@ -12,7 +12,6 @@ slots:
     - type: static
       content: |
         ## Linki
-        - [Project repository](https://github.com/forsetius/randomgen-nest2)
         - [Less technical description]{en/2025-08-06_cms-module}
 
 lead: |

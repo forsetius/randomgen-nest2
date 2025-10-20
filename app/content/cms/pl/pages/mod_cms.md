@@ -12,7 +12,6 @@ slots:
     - type: static
       content: |
         ## Linki
-        - [Repozytorium projektu](https://github.com/forsetius/randomgen-nest2)
         - [Mniej techniczny opis]{pl/2025-08-06_modul-cms}
 
 lead: |
