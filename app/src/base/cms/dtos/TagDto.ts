@@ -1,5 +1,5 @@
-import type { LangDto } from '@shared/validation/LangDto';
 import z from 'zod';
+import { LangDto } from './LangDto';
 
 export const TagParamSchema = z.object({
   tag: z.string().regex(/^[\p{L}\d\s-]+$/u),

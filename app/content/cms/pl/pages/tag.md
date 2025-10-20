@@ -1,8 +1,6 @@
 ---
 template: page-tag-full-width
 title: Strony z tagiem
-langs:
-  en: tag
 searchable: false
 slots:
   bottom:

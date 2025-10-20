@@ -9,6 +9,6 @@ slots:
   bottom:
     - type: static
       template: form-full-search
-      content: ""
+      content: "Znaleziono następujące strony:"
 ---
-Znaleziono następujące strony:
+Wprowadź frazę, by wyszukać strony:

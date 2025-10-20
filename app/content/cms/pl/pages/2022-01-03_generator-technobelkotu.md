@@ -14,6 +14,13 @@ tags:
   - generator
   - startrek
   - fantastyka
+
+blocks:
+  technobabbleGenerator:
+    type: apiCall
+    template: form-technobabble
+    url: /api/1.0/startrek/technobabble?lang=pl
+    
 slots:
   aside:
     - type: static
@@ -26,10 +33,6 @@ slots:
         Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. 
         
         Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
-  bottom:
-    - type: apiCall
-      template: form-technobabble
-      url: /api/1.0/startrek/technobabble?lang=pl
 ---
 I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:
 
@@ -42,6 +45,7 @@ No dobrze, jest to dość prosty generator, szczególnie w wersji angielskiej. W
 ## Użycie
 
 A więc jesteś np. w środku sesji Star Trek Adventures RPG i chcesz błysnąć jako inżynier czy inny jajogłowy? Nic prostszego, kliknij przycisk poniżej:
+<block id="technobabbleGenerator" />
 
 ## Dostęp przez API
 

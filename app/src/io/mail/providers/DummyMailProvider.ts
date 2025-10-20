@@ -8,7 +8,7 @@ export class DummyMailProvider implements MailProviderInterface {
   constructor(private configService: AppConfigService) {}
 
   async send({ from, to, subject, text }: MailProviderData): Promise<void> {
-    if (this.configService.getInferred('app.env') !== Env.TEST) {
+    if (this.configService.get('app.env') !== Env.TEST) {
       console.info(
         `Dummy call to send an email as ${from.name}<${from.address}> to ${[to].flat().join(', ')}:`,
       );

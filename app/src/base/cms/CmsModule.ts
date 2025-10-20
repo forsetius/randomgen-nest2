@@ -1,23 +1,35 @@
 import { join } from 'node:path';
+import * as express from 'express';
 import { HttpModule } from '@nestjs/axios';
 import { Logger, Module, OnModuleInit } from '@nestjs/common';
 import { HttpAdapterHost } from '@nestjs/core';
+import { AppConfigModule } from '@config/AppConfigModule';
+import { MailModule } from '../../io/mail';
 import { ParserModule } from '../parser/ParserModule';
+import { SecurityModule } from '../security/SecurityModule';
 import { TemplatingModule } from '@templating/TemplatingModule';
 import { CmsController } from './CmsController';
 import { BlockFactory, CmsService, MenuFactory, PageFactory } from './services';
 import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicyRegistry';
-import { SecurityModule } from '../security/SecurityModule';
-import * as express from 'express';
-import { CmsModuleOptions, SitewideData } from './types/CmsModuleOptions';
-import { CMS_OPTIONS } from './CmsConstants';
-import { MailModule } from '../../io/mail';
-import { AppConfigModule } from '@config/AppConfigModule';
-import { AppConfigService } from '@config/AppConfigService';
 import { LibraryFactory } from './services';
 
 @Module({
+  imports: [
+    AppConfigModule,
+    HttpModule,
+    ParserModule,
+    SecurityModule,
+    TemplatingModule,
+    MailModule,
+  ],
   controllers: [CmsController],
+  providers: [
+    BlockFactory,
+    MenuFactory,
+    PageFactory,
+    LibraryFactory,
+    CmsService,
+  ],
 })
 export class CmsModule implements OnModuleInit {
   private readonly logger = new Logger(CmsModule.name);
@@ -45,34 +57,5 @@ export class CmsModule implements OnModuleInit {
     useStatic('ui');
     useStatic('media');
     useStatic('pages');
-  }
-
-  static forRoot(options: CmsModuleOptions) {
-    return {
-      module: CmsModule,
-      imports: [
-        AppConfigModule,
-        HttpModule,
-        ParserModule,
-        SecurityModule,
-        TemplatingModule,
-        MailModule,
-      ],
-      providers: [
-        BlockFactory,
-        MenuFactory,
-        PageFactory,
-        LibraryFactory,
-        CmsService,
-        {
-          provide: CMS_OPTIONS,
-          useFactory: (configService: AppConfigService): SitewideData => ({
-            ...options,
-            appOrigin: configService.getInferred('app.host'),
-          }),
-          inject: [AppConfigService],
-        },
-      ],
-    };
   }
 }

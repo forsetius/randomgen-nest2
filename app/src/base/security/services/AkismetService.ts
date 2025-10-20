@@ -10,8 +10,8 @@ export class AkismetService {
 
   constructor(configService: AppConfigService) {
     this.client = new AkismetClient({
-      key: configService.getInferred('security.akismet.key'),
-      blog: configService.getInferred('security.akismet.siteUrl'),
+      key: configService.get('security.akismet.key'),
+      blog: configService.get('security.akismet.siteUrl'),
       lang: Object.values(Lang).join(', '),
     });
   }

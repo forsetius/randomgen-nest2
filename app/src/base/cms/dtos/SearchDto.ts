@@ -1,6 +1,6 @@
 import z from 'zod';
 import type { AppConfigService } from '@config/AppConfigService';
-import { LangSchema } from '@shared/validation/LangDto';
+import { LangSchema } from './LangDto';
 
 export const SearchQuerySchema = (config: AppConfigService) =>
   LangSchema(config).extend({

@@ -13,7 +13,7 @@
       window.location.href="/error-404.html";
     }
     const container = document.getElementById('tagResults');
-    container.setAttribute('hx-get', `/tag/${encodeURIComponent(qs.tag)}`);
+    container.setAttribute('hx-get', `/tag/${encodeURIComponent(qs.tag)}?lang={{ lang }}`);
     htmx.trigger(container, 'load');
   })();
 </script>

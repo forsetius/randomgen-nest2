@@ -28,17 +28,14 @@ export class LibraryFactory {
 
   public async create(locale: Locale): Promise<Library> {
     const lang = locale.lang;
-    const [blocks, menus, pages] = await Promise.all([
-      this.blockFactory.createAll(await this.getSources(SourceDir.BLOCK, lang)),
-      this.menuFactory.createAll(
-        await this.getSources(SourceDir.MENU, lang),
-        locale,
-      ),
-      this.pageFactory.createAll(
-        await this.getSources(SourceDir.PAGE, lang),
-        locale,
-      ),
+    const [blockSources, menuSources, pageSources] = await Promise.all([
+      this.getSources(SourceDir.BLOCK, lang),
+      this.getSources(SourceDir.MENU, lang),
+      this.getSources(SourceDir.PAGE, lang),
     ]);
+    const blocks = this.blockFactory.createAll(blockSources);
+    const menus = this.menuFactory.createAll(menuSources, locale);
+    const pages = this.pageFactory.createAll(pageSources, locale);
     const library = new Library(locale, pages, menus, blocks);
 
     library.menus.forEach((menu) => {

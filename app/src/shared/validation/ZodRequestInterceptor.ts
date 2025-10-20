@@ -58,7 +58,7 @@ export class ZodRequestInterceptor implements NestInterceptor {
           return await schema.parseAsync(value);
         } catch (err) {
           if (
-            this.configService.getInferred('app.env') !== Env.PROD &&
+            this.configService.get('app.env') !== Env.PROD &&
             err instanceof z.ZodError
           ) {
             throw new BadRequestException(err);

@@ -1,13 +1,24 @@
-import { config } from '../../config';
 import { ConfigService, Path, PathValue } from '@nestjs/config';
+import type { moduleConfigLoaders } from './moduleConfigLoaders';
 
-type ConfigType = ReturnType<typeof config>;
+type ModuleConfigLoadersTuple = typeof moduleConfigLoaders;
+type ModuleConfigs = {
+  [Loader in ModuleConfigLoadersTuple[number] as ReturnType<Loader>['KEY'] extends
+    | string
+    | symbol
+    ? ReturnType<Loader>['KEY']
+    : never]: Awaited<ReturnType<ReturnType<Loader>>>;
+};
+
 type WasValidated = true;
 
-export class AppConfigService extends ConfigService<ConfigType, WasValidated> {
-  getInferred<P extends Path<ConfigType>>(
+export class AppConfigService extends ConfigService<
+  ModuleConfigs,
+  WasValidated
+> {
+  override get<P extends Path<ModuleConfigs>>(
     propertyPath: P,
-  ): PathValue<ConfigType, P> {
-    return this.get(propertyPath, { infer: true });
+  ): PathValue<ModuleConfigs, P> {
+    return super.get(propertyPath, { infer: true });
   }
 }

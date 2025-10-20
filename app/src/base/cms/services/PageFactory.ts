@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Page } from '../domain/Page';
@@ -7,17 +7,21 @@ import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { BlockFactory } from './BlockFactory';
 import { Locale } from '../domain/Locale';
-import { CMS_OPTIONS } from '../CmsConstants';
 import type { SitewideData } from '../types/CmsModuleOptions';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class PageFactory {
+  private readonly metadata: SitewideData;
+
   public constructor(
     private readonly blockFactory: BlockFactory,
     private readonly markdownService: MarkdownService,
     private readonly templatingService: TemplatingService,
-    @Inject(CMS_OPTIONS) private readonly metadata: SitewideData,
-  ) {}
+    configService: AppConfigService,
+  ) {
+    this.metadata = configService.get('cms');
+  }
 
   /**
    * @throws {SourceFileValidationException}

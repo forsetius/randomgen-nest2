@@ -3,8 +3,8 @@ import { Settings as LuxonSettings } from 'luxon';
 import { VersioningType } from '@nestjs/common';
 import { NestFactory, Reflector } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
+import { AppModule } from '@app/AppModule';
 import { AppConfigService } from '@config/AppConfigService';
-import { AppModule } from './app/AppModule';
 import { SecurityService } from './base/security/services/SecurityService';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
@@ -32,7 +32,7 @@ async function bootstrap(): Promise<void> {
     await app.init();
     stopwatch.record('app initialized');
 
-    await app.listen(configService.getInferred('app.port'));
+    await app.listen(configService.get('app.port'));
   } catch (error) {
     console.error('Error while starting the application:', error);
     stopwatch.record('Exiting with error');

@@ -104,7 +104,7 @@
             placeholder="{{ translations.search }}..."
             aria-label="Search"
             autocomplete="off"
-            hx-get="/search?count=7&brief=true"
+            hx-get="/search?count=7&brief=true&lang={{ lang }}"
             hx-trigger="keyup[this.value.length >= 3] delay:300ms"
             hx-target="#searchResults"
             hx-on:htmx:after-request="handleSearchResponse(event, 'searchResults')"
