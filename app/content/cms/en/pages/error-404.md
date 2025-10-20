@@ -1,6 +1,5 @@
 ---
-title: "404: Nie znaleziono"
-subtitle: ...choć szukano
+title: "404: Not found"
 lead: |
   The page with the specified address could not be found.
 ---

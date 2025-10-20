@@ -1,5 +1,7 @@
 ---
 title: Search
+langs:
+  pl: search
 template: page-default
 headerImage: mid-search-head.jpg
 searchable: false
@@ -7,6 +9,6 @@ slots:
   bottom:
     - type: static
       template: form-full-search
-      content: ""
+      content: "The following pages have been found:"
 ---
-The following pages have been found:
+Enter a phrase to search for pages:

@@ -14,6 +14,13 @@ tags:
   - generator
   - startrek
   - sf
+  
+blocks:
+  technobabbleGenerator:
+    type: apiCall
+    template: form-technobabble
+    url: /api/1.0/startrek/technobabble?lang=en
+    
 slots:
   aside:
     - type: static
@@ -26,10 +33,6 @@ slots:
         The use is of course free, and I do not use any of your data.
 
         Only when integrating this generator into some application or tool of yours do I ask for attribution and reporting it to me (in order to stroke my ego and boost my motivation for further work)
-  bottom:
-    - type: apiCall
-      template: form-technobabble
-      url: /api/1.0/startrek/technobabble?lang=en
 ---
 And here comes the **Technobabble Generator**. It creates a random, 5-word phrase that means nothing, but sounds very clever and technical. For example:
 
@@ -42,6 +45,8 @@ Okay, it's a fairly simple generator, especially in the English version. In Poli
 ## Use
 
 So you're in the middle of a Star Trek Adventures RPG session and you want to shine as an engineer or other egghead? It's easy, click the button below:
+
+<block id="technobabbleGenerator" />
 
 ## API access
 

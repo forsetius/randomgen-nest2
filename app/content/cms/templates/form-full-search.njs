@@ -9,7 +9,7 @@
             placeholder="{{ translations.search }}..."
             aria-label="Search"
             autocomplete="off"
-            hx-get="/search"
+            hx-get="/search?lang={{ lang }}"
             hx-trigger="load[this.value.length >= 3], keyup[this.value.length >= 3] delay:300ms"
             hx-include="#fullSearchInput"
             hx-on:htmx:after-request="handleSearchResponse(event, 'fullSearchResults')"
@@ -29,12 +29,14 @@
             <i class="bi bi-x-lg"></i>
         </button>
     </div>
-    
+    {% if content %}
+    <h2>{{ content }}</h2>
+    {% endif %}
     <div id="fullSearchResults" class="w-100 mt-1 row row-cols-1 row-cols-md-3 g-5"></div>
 </div>
 
 {% block javascript %}
 <script>
-    document.getElementById('fullSearchInput').value = qs.term
+    document.getElementById('fullSearchInput').value = qs.term ?? ''
 </script>
 {% endblock %}
