@@ -4,6 +4,7 @@
   "preset": "ts-jest",
   "testEnvironment": "node",
   "moduleNameMapper": {
+    "^@app/(.*)$": "<rootDir>/app/$1",
     "^@config/(.*)$": "<rootDir>/base/config/$1",
     "^@domain/(.*)$": "<rootDir>/domain/$1",
     "^@shared/(.*)$": "<rootDir>/shared/$1",

@@ -5,10 +5,11 @@
   "keywords": [
     "rpg",
     "random",
-    "generators"
+    "generators",
+    "cms"
   ],
   "author": "Marcin Forseti Paździora",
-  "license": "ISC",
+  "license": "Custom",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/forsetius/randomgen-nest2.git"
@@ -31,10 +32,12 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "npm run build && jest --config ./jest-e2e.config.json --runInBand --detectOpenHandles",
-    "build:pre": "tsc --outDir dist src/preBuild.ts && node dist/preBuild.js",
-    "build:app": "tsc",
-    "build": "npm run build:pre && npm run build:app"
+    "test:e2e": "bash -lc 'npm run build || exit 1; npm run test:e2e:parallel; PAR=$?; npm run test:e2e:serial; SER=$?; exit $((PAR || SER))'",
+      "test:e2e:parallel": "jest --config ./test/jest-e2e-parallel.config.js",
+      "test:e2e:serial": "jest --config ./test/jest-e2e-serial.config.js",
+    "build": "npm run build:pre && npm run build:app",
+      "build:pre": "tsc --outDir dist src/preBuild.ts && node dist/preBuild.js",
+      "build:app": "tsc"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.1",
