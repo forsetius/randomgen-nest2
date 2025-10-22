@@ -5,15 +5,16 @@ import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class MarkdownService {
-  public constructor(private readonly configService: AppConfigService) {
+  private readonly appHost: string;
+
+  public constructor(configService: AppConfigService) {
+    this.appHost = configService.get('app.host');
+
     const renderer = new Renderer();
     renderer.link = ({ href, title, text }: Tokens.Link) => {
-      const titleAttr = title ? ` title="${title}"` : `test="${href}"`;
+      const titleAttr = title ? ` title="${title}"` : `test="${href}"`; // FIXME check if this "test" is correct
 
-      if (
-        href.startsWith('/') ||
-        href.startsWith(this.configService.get('app.host'))
-      ) {
+      if (href.startsWith('/') || href.startsWith(this.appHost)) {
         return `<a href="${href}"${titleAttr} class="internal">${text}</a>`;
       } else if (href === '#') {
         return `<a href="${href}"${titleAttr} class="self">${text}</a>`;

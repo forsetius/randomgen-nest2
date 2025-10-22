@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { Reflector } from '@nestjs/core';
 import { Test, TestingModule } from '@nestjs/testing';
 import { NestExpressApplication } from '@nestjs/platform-express';
@@ -6,7 +7,6 @@ import { AppConfigService } from '@config/AppConfigService';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
 import { SecurityService } from '../../src/base/security/services/SecurityService';
-import path from 'node:path';
 
 export const buildApp = async (): Promise<NestExpressApplication> => {
   const moduleFixture: TestingModule = await Test.createTestingModule({
