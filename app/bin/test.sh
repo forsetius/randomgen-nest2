@@ -49,9 +49,9 @@ run_step "test:e2e:serial" npm run -s test:e2e:serial || SER=$?
 EXIT=$(( UNIT || PAR || SER ))
 
 echo -e "\n\033[1mSummary:\033[0m"
-printf "  unit:          %s\n"  "$([[ $UNIT -eq 0 ]] && echo OK || echo FAIL)"
-printf "  e2e-parallel:  %s\n"  "$([[ $PAR  -eq 0 ]] && echo OK || echo FAIL)"
-printf "  e2e-serial:    %s\n"  "$([[ $SER  -eq 0 ]] && echo OK || echo FAIL)"
-echo "  cleanup:   dist-test deleted"
+printf "  unit:          %s\n"  "$([[ $UNIT -eq 0 ]] && echo -e "\033[1;32m✔ OK\033[0m" || echo -e "\033[1;31m✖ FAIL\033[0m")"
+printf "  e2e-parallel:  %s\n"  "$([[ $PAR  -eq 0 ]] && echo -e "\033[1;32m✔ OK\033[0m" || echo -e "\033[1;31m✖ FAIL\033[0m")"
+printf "  e2e-serial:    %s\n"  "$([[ $SER  -eq 0 ]] && echo -e "\033[1;32m✔ OK\033[0m" || echo -e "\033[1;31m✖ FAIL\033[0m")"
+echo "  cleanup:         dist-test deleted"
 
 exit $EXIT

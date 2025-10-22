@@ -22,4 +22,4 @@ ${arrayItems}
 ] as const;
 `;
 
-writeFileSync('src/base/config/moduleConfigLoaders.ts', `${output}\n`);
+writeFileSync('src/base/config/moduleConfigLoaders.ts', `${output}\n\n`);
