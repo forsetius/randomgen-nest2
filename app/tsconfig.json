@@ -36,7 +36,7 @@
       "@shared/*": ["./src/shared/*"],
       "@templating/*": ["./src/base/templating/*"]
     },
-    "types": ["node"]
+    "types": ["node", "jest"]
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*.ts", "src/**/*.json", "test/**/*.ts", "test/**/*.json"]

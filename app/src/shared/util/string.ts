@@ -12,6 +12,7 @@ export function slugify(value: string): string {
   return value
     .normalize('NFD')
     .replace(/[\s-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
     .replace(/[\u0300-\u036f]|[^a-zA-Z0-9-_]/g, '')
     .toLowerCase();
 }

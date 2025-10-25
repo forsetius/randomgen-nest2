@@ -1,7 +1,18 @@
+/**
+ * Roll a n-sided die
+ *
+ * @param n number of sides on the die
+ * @returns random integer between 1 and n (inclusive)
+ */
 export function roll(n: number): number {
   return Math.floor(Math.random() * n) + 1;
 }
 
+/**
+ * Flip a coin
+ *
+ * @returns true for heads, false for tails
+ */
 export function flipCoin(): boolean {
   return Math.random() >= 0.5;
 }
@@ -25,17 +36,13 @@ export function shuffle<T>(originalArray: T[]): T[] {
   return arr;
 }
 
+/**
+ * Pick a random element from an array
+ */
 export function pickRandomly<T>(arr: T[]): T {
   if (arr.length === 0) {
     throw new Error('Passed array must have at least 1 element');
   }
 
   return arr[roll(arr.length) - 1]!;
-}
-
-export function* shuffledIter<T>(arr: T[]): Generator<T, undefined, undefined> {
-  const shuffled = shuffle(arr);
-  yield* shuffled;
-
-  return undefined;
 }
