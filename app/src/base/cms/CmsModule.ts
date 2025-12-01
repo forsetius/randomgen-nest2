@@ -1,4 +1,3 @@
-import { join } from 'node:path';
 import * as express from 'express';
 import { HttpModule } from '@nestjs/axios';
 import { Logger, Module, OnModuleInit } from '@nestjs/common';
@@ -12,6 +11,7 @@ import { CmsController } from './CmsController';
 import { BlockFactory, CmsService, MenuFactory, PageFactory } from './services';
 import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicyRegistry';
 import { LibraryFactory } from './services';
+import { AppConfigService } from '@config/AppConfigService';
 
 @Module({
   imports: [
@@ -36,6 +36,7 @@ export class CmsModule implements OnModuleInit {
 
   constructor(
     private readonly adapterHost: HttpAdapterHost,
+    private readonly configService: AppConfigService,
     cspRegistry: ContentSecurityPolicyRegistry,
   ) {
     // FIXME: czy potrzebne?
@@ -48,14 +49,13 @@ export class CmsModule implements OnModuleInit {
     const expressApp: express.Express =
       this.adapterHost.httpAdapter.getInstance();
 
-    const useStatic = (dir: string) => {
-      const path = join(process.cwd(), `content/cms/static/${dir}`);
+    const useStatic = (dir: string, path: string) => {
       expressApp.use(`/${dir}`, express.static(path));
       this.logger.log(`Serving ${dir} from: ${path}`);
     };
 
-    useStatic('ui');
-    useStatic('media');
-    useStatic('pages');
+    useStatic('ui', this.configService.get('cms.paths.uiDir'));
+    useStatic('media', this.configService.get('cms.paths.mediaDir'));
+    useStatic('pages', this.configService.get('cms.paths.outputDir'));
   }
 }

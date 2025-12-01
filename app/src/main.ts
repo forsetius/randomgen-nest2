@@ -1,4 +1,3 @@
-import stopwatch from '@shared/util/stopwatch';
 import { Settings as LuxonSettings } from 'luxon';
 import { VersioningType } from '@nestjs/common';
 import { NestFactory, Reflector } from '@nestjs/core';
@@ -7,6 +6,7 @@ import { AppModule } from '@app/AppModule';
 import { AppConfigService } from '@config/AppConfigService';
 import { SecurityService } from './base/security/services/SecurityService';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
+import stopwatch from '@shared/util/stopwatch';
 import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
 
 stopwatch.record('after imports');

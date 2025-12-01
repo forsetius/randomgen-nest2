@@ -1,5 +1,6 @@
 import { resolve } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
+import { APP_ROOT } from '../../appRoot';
 
 let isEnvVarsLoaded = false;
 
@@ -9,9 +10,9 @@ export function loadEnvFile(envFile = '.env'): void {
   }
   isEnvVarsLoaded = true;
 
-  const envFilePath = resolve(process.cwd(), envFile);
+  const envFilePath = resolve(APP_ROOT, envFile);
   if (!existsSync(envFilePath)) {
-    return;
+    throw new Error(`Env file ${envFilePath} does not exist`);
   }
 
   const content = readFileSync(envFilePath, 'utf8');

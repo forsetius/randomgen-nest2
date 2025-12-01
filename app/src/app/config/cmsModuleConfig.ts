@@ -4,8 +4,6 @@ import { EnvVarSchemaType } from '@config/EnvVarSchema';
 import { registerAsTyped } from '@config/registerAsTyped';
 import { Lang } from '@shared/types/Lang';
 
-const appRoot = path.join(__dirname, '..', '..', '..');
-
 export default (envVars: EnvVarSchemaType) =>
   registerAsTyped(
     'cms',
@@ -15,7 +13,10 @@ export default (envVars: EnvVarSchemaType) =>
         supportedLangs: [Lang.EN, Lang.PL],
         fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
         paths: {
-          mediaDir: path.join(appRoot, 'content', 'cms', 'static', 'media'),
+          sourceDir: path.join(envVars.CMS_SOURCE_DIR, 'sources'),
+          outputDir: path.join(envVars.CMS_SOURCE_DIR, 'static', 'pages'),
+          mediaDir: path.join(envVars.CMS_SOURCE_DIR, 'static', 'media'),
+          uiDir: path.join(envVars.CMS_SOURCE_DIR, 'static', 'ui'),
         },
         defaults: {
           headerImage: 'index-head.jpg',

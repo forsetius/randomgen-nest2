@@ -3,13 +3,14 @@ import * as path from 'node:path';
 import { Lang } from '@shared/types/Lang';
 import { SourceKeys, SourceData, BaseSource } from '../types/SourceData';
 import { Dataset } from './Dataset';
+import { APP_ROOT } from '../../../appRoot';
 
 export abstract class BaseGenerator<S extends BaseSource> {
   protected datasets: Record<string, Dataset<S>> = {};
 
   protected constructor(language: Lang) {
     const dataFiles = fs.globSync(
-      `${__dirname}/../../../../content/technobabble/*-${language}.json`,
+      `${APP_ROOT}/content/technobabble/*-${language}.json`,
     );
     dataFiles.forEach((dataFile) => {
       const datasetName = path.basename(dataFile, `-${language}.json`);

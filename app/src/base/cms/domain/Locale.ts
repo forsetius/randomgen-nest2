@@ -1,5 +1,4 @@
 import { join } from 'node:path';
-import { cwd } from 'node:process';
 import fs from 'node:fs';
 import { Lang } from '@shared/types/Lang';
 
@@ -9,8 +8,11 @@ export class Locale {
   /**
    * @throws Error if the translation file is invalid
    */
-  public constructor(public readonly lang: Lang) {
-    const filename = join(cwd(), 'content', 'cms', lang, 'translations.json');
+  public constructor(
+    sourceDir: string,
+    public readonly lang: Lang,
+  ) {
+    const filename = join(sourceDir, lang, 'translations.json');
     try {
       this.translations = this.validateTranslation(
         JSON.parse(fs.readFileSync(filename, 'utf-8')),

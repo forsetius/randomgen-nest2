@@ -1,6 +1,8 @@
 import z from 'zod';
 import { Env } from '@shared/types/Env';
 import { MailProvider } from '../../io/mail/types';
+import { isInsideProject, resolveAppRelativePath } from '@shared/util/path';
+import fs from 'node:fs';
 
 const MIN_PORT_NUMBER = 0;
 const MAX_PORT_NUMBER = 65535;
@@ -10,6 +12,24 @@ const BaseEnvVarSchema = z.object({
   AKISMET_KEY: z.string().nonempty(),
   APP_HOST: z.httpUrl({ normalize: true }).or(z.literal('localhost')),
   APP_PORT: z.coerce.number().int().min(MIN_PORT_NUMBER).max(MAX_PORT_NUMBER),
+  CMS_SOURCE_DIR: z
+    .string()
+    .min(1)
+    .transform((rawPath: string) => resolveAppRelativePath(rawPath))
+    .refine((absolutePath: string) => isInsideProject(absolutePath), {
+      message: 'Directory must be inside project root',
+    })
+    .refine(
+      (absolutePath: string) => {
+        try {
+          fs.accessSync(absolutePath, fs.constants.R_OK);
+          return fs.statSync(absolutePath).isDirectory();
+        } catch {
+          return false;
+        }
+      },
+      { message: 'No such directory' },
+    ),
 });
 
 const MailProviderSchema = z.discriminatedUnion('MAIL_PROVIDER', [
