@@ -7,6 +7,7 @@ import { AppConfigService } from '@config/AppConfigService';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
 import { SecurityService } from '../../src/base/security/services/SecurityService';
+import { APP_ROOT } from '../../src/appRoot';
 
 export const buildApp = async (): Promise<NestExpressApplication> => {
   const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -34,9 +35,4 @@ export interface ServerMeta {
   fileVersion: 1;
 }
 
-export const metaFile = path.join(
-  process.cwd(),
-  'test',
-  'e2e',
-  '.e2e-server.json',
-);
+export const metaFile = path.join(APP_ROOT, 'test', 'e2e', '.e2e-server.json');
