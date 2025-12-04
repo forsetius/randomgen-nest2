@@ -126,6 +126,16 @@ export class CmsService {
         ?.getPages()
         .map((page) => page.data) ?? [];
 
+    const errors = blogPages
+      .filter((page) => page.dateTime === undefined)
+      .map((page) => page.slug);
+
+    if (errors.length > 0) {
+      throw new Error(
+        `Page(s) ${errors.join(', ')} in "${library.locale.lang}" library have no date set`,
+      );
+    }
+
     return this.templatingService.render('rss-feed', {
       pages: blogPages,
       metadata: this.metadata,

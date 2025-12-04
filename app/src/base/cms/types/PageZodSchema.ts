@@ -43,7 +43,6 @@ export const PageZodSchema = z
   .strict()
   .transform((data) => ({
     ...data,
-    excerpt: data.excerpt,
     thumbnailImage: data.thumbnailImage ?? data.headerImage,
     meta: {
       title: data.meta?.title ?? data.title,

@@ -37,7 +37,11 @@ export class Library {
     this.pages.forEach((page) => {
       if (page.def.category) {
         if (!this.pages.has(page.def.category)) {
-          throw new CategoryNotFoundException(page.slug, this.locale.lang);
+          throw new CategoryNotFoundException(
+            page.def.category,
+            this.locale.lang,
+            page.slug,
+          );
         }
 
         const category = this.getCategory(page.def.category);
