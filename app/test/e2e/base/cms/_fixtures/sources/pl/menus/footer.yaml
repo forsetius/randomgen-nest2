@@ -1,0 +1,15 @@
+template: menu-footer
+menu:
+  - title: Kontakt
+    items:
+      - title: Zasubskrybuj RSS
+        url: /pages/pl/rss.xml
+
+  - title: Linki
+    items:
+      - title: GitHub
+        url: https://github.com/forsetius
+
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/marcin-paździora-09a94625a
+

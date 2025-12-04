@@ -2,7 +2,7 @@
 template: page-index
 title: Hello, Test!
 langs:
-  pl: index
+  en: index
 headerImage: test.jpg
 slots:
   aside:

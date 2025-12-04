@@ -37,3 +37,4 @@ lerna-debug.log*
 !.gitkeep
 .env
 /content/cms/static/pages/*
+/test/e2e/base/cms/_fixtures/static/pages/*

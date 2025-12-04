@@ -1,8 +1,8 @@
 ---
 template: page-default
-title: E2E Item B Subitem 1 Title
+title: E2E PL Poz B Podpoz 1 Title
 langs: 
-  pl: poz-b_podpoz-1
+  en: item-b_subitem-1
 excerpt: Sample excerpt
 date: 2025-01-01
 lead: |

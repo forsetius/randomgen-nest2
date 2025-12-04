@@ -1,8 +1,8 @@
 ---
 template: page-default
-title: E2E Item C Column 1 Item 2 Title
+title: E2E PL Poz C Kol1 Poz2 Title
 langs: 
-  pl: poz-c_kol1_poz2
+  en: item-c_column1_item2
 excerpt: Test excerpt C/1/2
 tags:
   - testTagA

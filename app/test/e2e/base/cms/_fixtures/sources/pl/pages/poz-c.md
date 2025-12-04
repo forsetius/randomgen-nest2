@@ -1,8 +1,8 @@
 ---
 template: page-default
-title: E2E Item C Root Title
+title: E2E PL Poz C Root Title
 langs: 
-  pl: poz-c
+  en: item-c
 excerpt: An excerpt, brief by design
 lead: |
   Another lead text
