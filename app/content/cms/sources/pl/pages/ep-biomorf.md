@@ -2,7 +2,7 @@
 template: page-default
 title: Biomorf
 subtitle: Biomorph
-headerImage: mid-biomorph-head.jpg
+headerImage: leo-biomorph-head.jpg
 excerpt: Biologiczne ciała dla transludzkich Ego
 category: ep-morf
 subcategoryName: Biomorfy

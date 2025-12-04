@@ -3,7 +3,7 @@ title: CMS module
 langs:
   pl: 2025-08-06_modul-cms
 excerpt: Work on CMS module of RandomGen is finished!
-headerImage: mid-cms-module.jpg
+headerImage: leo-cms-module.jpg
 category: blog
 date: 2025-08-06
 tags:

@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: Dynastie ultrabogaczy
-headerImage: mid-ep-dynasty-head.jpg
+headerImage: leo-ep-dynasty-head.jpg
 excerpt: Obrzydliwie bogata arystokracja nieśmiertelnych
 category: ep-realia
 

@@ -1,7 +1,7 @@
 ---
 template: page-default
 title: mod_cms
-headerImage: mid-cms-module.jpg
+headerImage: leo-cms-module.jpg
 langs:
   en: mod_cms
 excerpt: Moduł CMS generujący statyczne strony HTML
