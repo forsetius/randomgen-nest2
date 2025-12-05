@@ -1,7 +1,7 @@
 import { Library } from '../domain/Library';
 import { join } from 'node:path';
-import { cwd } from 'node:process';
 import fsAsync from 'node:fs/promises';
+import { AppConfigService } from '@config/AppConfigService';
 import { Lang } from '@shared/types/Lang';
 import { getBasename } from '@shared/util/string';
 import { Locale } from '../domain/Locale';
@@ -22,8 +22,9 @@ export class LibraryFactory {
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
+    configService: AppConfigService,
   ) {
-    this.baseSourcePath = join(cwd(), 'content', 'cms');
+    this.baseSourcePath = configService.get('cms.paths.sourceDir');
   }
 
   public async create(locale: Locale): Promise<Library> {

@@ -5,7 +5,10 @@ export interface CmsModuleOptions {
   fragmentTemplates: string[];
   supportedLangs: Lang[];
   paths: {
+    sourceDir: string;
+    outputDir: string;
     mediaDir: string;
+    uiDir: string;
   };
   defaults: {
     headerImage: string;

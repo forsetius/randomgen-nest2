@@ -10,12 +10,12 @@ import { RenderedContent } from '../types/RenderedContent';
 import { TemplatingService } from '@templating/TemplatingService';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { LibraryFactory } from './LibraryFactory';
-import { cwd } from 'node:process';
 import { AppConfigService } from '@config/AppConfigService';
 
 @Injectable()
 export class CmsService {
-  private readonly baseOutputPath: string;
+  private readonly sourceDir: string;
+  private readonly outputDir: string;
   private libraries!: Record<Lang, Library>;
   private readonly metadata: SitewideData;
 
@@ -25,7 +25,8 @@ export class CmsService {
     configService: AppConfigService,
   ) {
     this.metadata = configService.get('cms');
-    this.baseOutputPath = join(cwd(), 'content', 'cms', 'static');
+    this.sourceDir = configService.get('cms.paths.sourceDir');
+    this.outputDir = configService.get('cms.paths.outputDir');
   }
 
   async onModuleInit(): Promise<void> {
@@ -39,7 +40,7 @@ export class CmsService {
         Object.values(Lang).map(
           async (lang): Promise<[Lang, Library]> => [
             lang,
-            await this.libraryFactory.create(new Locale(lang)),
+            await this.libraryFactory.create(new Locale(this.sourceDir, lang)),
           ],
         ),
       ),
@@ -93,7 +94,7 @@ export class CmsService {
     renderedContents: RenderedContent[],
     lang: Lang,
   ): Promise<void> {
-    const pagesDir = join(this.baseOutputPath, 'pages', lang);
+    const pagesDir = join(this.outputDir, lang);
     const pagesTempDir = await fsAsync.mkdtemp(`${pagesDir}-`);
 
     try {
@@ -124,6 +125,16 @@ export class CmsService {
         .get('blog')
         ?.getPages()
         .map((page) => page.data) ?? [];
+
+    const errors = blogPages
+      .filter((page) => page.dateTime === undefined)
+      .map((page) => page.slug);
+
+    if (errors.length > 0) {
+      throw new Error(
+        `Page(s) ${errors.join(', ')} in "${library.locale.lang}" library have no date set`,
+      );
+    }
 
     return this.templatingService.render('rss-feed', {
       pages: blogPages,

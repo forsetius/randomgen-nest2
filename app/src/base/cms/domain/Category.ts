@@ -1,6 +1,6 @@
 import { Page } from './Page';
 import { slugify } from '@shared/util/string';
-import { AutoMultiMap } from '@shared/util/AutoMultiMap';
+import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
 
 export class Category {
   public readonly name: string;
@@ -110,7 +110,7 @@ export class Category {
 
     if (!this.subcategories.has(subcategory)) {
       throw new Error(
-        `No such subcategory ${subcategory} for category ${this.name}`,
+        `No such subcategory "${subcategory}" for category ${this.name}`,
       );
     }
 

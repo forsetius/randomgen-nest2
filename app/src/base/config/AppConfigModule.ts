@@ -19,6 +19,12 @@ function getConfigs(): ConfigFactory[] {
       if (error instanceof z.ZodError) {
         throw new InvalidEnvVarsException(error);
       }
+      if (error instanceof Error) {
+        throw new Error(
+          'An error during environment variables validation: \n' +
+            error.toString(),
+        );
+      }
 
       throw new Error('Unknown error during environment variables validation');
     }

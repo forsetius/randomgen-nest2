@@ -1,0 +1,46 @@
+template: menu-topbar
+class: test-menu
+menu:
+  # SimpleMenuPoz
+  - title: PozA
+    url: "@{pl/index}"
+
+  # SimpleSubMenu
+  - title: PozB
+    items:
+      - title: PozB_Podpoz1
+        url: "@{pl/poz-b_podpoz-1}"
+      - title: PozB_Podpoz2
+        url: "@{pl/poz-b_podpoz-2}"
+
+  # RichSubMenu
+  - title: PozC
+    url: "@{pl/poz-c}"
+    text: "PozC summary text"
+    columns:
+      - title: PozC_Kol1
+        text: "PozC column 1 lead"
+        items:
+          - title: PozC_Kol1_Poz1
+            url: "@{pl/poz-c_kol1_poz1}"
+            text: "PozC_Kol1_Poz1 opis"
+          - title: PozC_Kol1_Poz2
+            url: "@{pl/poz-c_kol1_poz2}"
+      - title: PozC_Kol2
+        url: "@{pl/poz-c_kol2}"
+        text: "PozC column 2 lead"
+        colspan: 2
+        repeatTitle: true
+        items:
+          - title: PozC_Kol2_Poz1
+            url: "@{pl/poz-c_kol2_poz1}"
+
+  # SeparatorMenuPoz
+  - separator: "|"
+
+  # LabelMenuPoz
+  - label: "PozLabel"
+
+  # Another SimpleMenuPoz to follow label/separator
+  - title: PozD
+    url: "@{pl/poz-d}"

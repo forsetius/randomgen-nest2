@@ -1,16 +1,26 @@
 {
-  "extends": [
-    "@tsconfig/strictest/tsconfig.json",
-    "@tsconfig/node22/tsconfig.json"
-  ],
+  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
     "outDir": "./dist",
     "baseUrl": "./",
     "checkJs": false,
     "declaration": true,
     "declarationMap": true,
     "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
     "experimentalDecorators": true,
     "noFallthroughCasesInSwitch": false,
     "noLib": false,
@@ -25,13 +35,9 @@
       "@domain/*": ["./src/domain/*"],
       "@shared/*": ["./src/shared/*"],
       "@templating/*": ["./src/base/templating/*"]
-    }
+    },
+    "types": ["node", "jest"]
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "src/**/*.json", "test/**/*.ts"],
-  "ts-node": {
-    "transpileOnly": true,
-    "files": true,
-    "pretty": true
-  }
+  "include": ["src/**/*.ts", "src/**/*.json", "test/**/*.ts", "test/**/*.json"]
 }
