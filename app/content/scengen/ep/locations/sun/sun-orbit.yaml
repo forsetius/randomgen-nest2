@@ -1,0 +1,31 @@
+kind: location
+id: sun-orbit
+name:
+  pl: Orbita Słońca
+  en: Sun orbit
+importance: -2
+
+description:
+  pl: |
+    Słońce jest gwiazdą centralną Układu Słonecznego i głównym źródłem energii dla wszystkich jego ciał 
+    niebieskich. W świecie Eclipse Phase jest także domem frakcji Solarian przyodzianych w morfy Suria.
+  en: |
+    The Sun is the central star of the Solar System and the main source of energy for all its celestial 
+    bodies. In the world of Eclipse Phase, it is also home to the Solarian faction clad in Surya morphs.
+
+resources:
+  consumables:
+    antimatter: 3
+    energy: 3
+    goods: -1
+    food: -2
+    water: -3
+  research:
+    energy: 1
+    physics: 1
+  tourism: 1
+
+children:
+  - aten
+  - hooverman-geischecker
+  - ukko-jylina

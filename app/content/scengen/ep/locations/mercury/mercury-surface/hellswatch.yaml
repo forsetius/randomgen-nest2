@@ -1,0 +1,16 @@
+kind: location
+id: hellswatch
+name:
+  pl: Hellswatch
+  en: Hellswatch
+
+description:
+  pl: |
+    Centrum działalności Konsorcjum Planetarnego na Merkurym, często jest
+    ofiarą sabotaży.
+  en: |
+    Center of Planetary Consortium concerns on the Mercury, frequently 
+    the victim of sabotages.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-hellswatch.html

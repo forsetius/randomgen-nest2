@@ -1,0 +1,26 @@
+kind: location
+id: lumina
+name:
+  pl: Lumina
+  en: Lumina
+
+description:
+  pl: |
+    Ogromna kolonia z panelami solarnymi niedaleko bieguna północnego, która 
+    mieści również niewielki, ale luksusowy ośrodek wypoczynkowy dla hiperelit.
+  en: |
+    A massive solar array colony near the north pole which also houses a small 
+    but luxurious resort facility for hyperelites.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-lumina.html
+
+features:
+  - particle-accelerator
+
+resources:
+  research:
+    physics: 2
+  energy: 3
+  tourism:
+    hyperelite: 1

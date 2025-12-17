@@ -1,0 +1,19 @@
+kind: location
+id: delacroix-shelley
+name:
+  pl: Delacroix-Shelley
+  en: Delacroix-Shelley
+security: 3
+
+description:
+  pl: |
+    Tajna baza Fa Jing na południowej półkuli prowadząca tajemnicze badania.
+  en: |
+    A secret Fa Jing base in the southern hemisphere conducting secretive research.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-delacroix-shelley.html
+
+resources:
+  water: 2
+  research: 1

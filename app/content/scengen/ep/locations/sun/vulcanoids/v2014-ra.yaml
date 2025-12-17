@@ -1,0 +1,24 @@
+kind: location
+id: v2014-ra
+name:
+  pl: V/2014 Ra
+  en: V/2014 Ra
+importance: -2
+security: 2
+
+description:
+  pl: |
+    Ta niewielka asteroida nie wyróżnia się niczym szczególnym, poza bliskim położeniem 
+    względem Wrót Wulkanoidowych. Ecologene jest w trakcie wydrążania Ra, z zamiarem 
+    przekształcenia go w bańkę Cole’a
+  en: |
+    This small asteroid is not particularly remarkable, except for its proximity to the 
+    Vulcanoid Gate. Ecologene is in the process of hollowing out Ra, with the intention 
+    of transforming it into a Cole bubble.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wulkanoidy_ep-habitat-ra.html
+
+connections:
+  watches:
+    - v2011-caldwell

@@ -1,0 +1,13 @@
+kind: location
+id: surface
+name:
+  pl: Powierzchnia Merkurego
+  en: Mercury surface
+
+children:
+  - al-hamadhani
+  - caloris-18
+  - cannon
+  - delacroix-shelley
+  - hellswatch
+  - lumina

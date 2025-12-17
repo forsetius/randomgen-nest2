@@ -1,0 +1,92 @@
+events:
+  - id: society
+
+  - id: environment
+    name:
+      pl: Środowisko
+      en: Environment
+    items:
+      - id: pollution-crisis
+        name:
+          pl: Kryzys zanieczyszczeń
+          en: Pollution Crisis
+      - id: resource-depletion
+        name:
+          pl: Wyczerpywanie zasobów
+          en: Resource Depletion
+
+  - id: technology
+    name:
+      pl: Technologia
+      en: Technology
+    items:
+      - id: ai-uprising
+        name:
+          pl: Powstanie SI
+          en: AI Uprising
+      - id: cyberattack
+        name:
+          pl: Cyberatak
+          en: Cyberattack
+      - id: data-breach
+        name:
+          pl: Naruszenie danych
+          en: Data Breach
+      - id: tech-innovation
+        name:
+          pl: Innowacja technologiczna
+          en: Tech Innovation
+
+  - id: politics
+    name:
+      pl: Polityka
+      en: Politics
+    items:
+      - id: election
+        name:
+          pl: Wybory
+          en: Election
+      - id: protest
+        name:
+          pl: Protest
+          en: Protest
+      - id: policy-change
+        name:
+          pl: Zmiana polityki
+          en: Policy Change
+
+  - id: economy
+    name:
+      pl: Ekonomia
+      en: Economy
+    items:
+      - id: market-crash
+        name:
+          pl: Krach na rynku
+          en: Market Crash
+      - id: trade-dispute
+        name:
+          pl: Spór handlowy
+          en: Trade Dispute
+      - id: economic-boom
+        name:
+          pl: Boom gospodarczy
+          en: Economic Boom
+
+  - id: personal
+    name:
+      pl: Osobiste
+      en: Personal
+    items:
+      - id: achievement
+        name:
+          pl: Osiągnięcie
+          en: Achievement
+      - id: setback
+        name:
+          pl: Niepowodzenie
+          en: Setback
+      - id: relationship-change
+        name:
+          pl: Zmiana w relacjach
+          en: Relationship Change

@@ -1,0 +1,16 @@
+kind: location
+id: caloris-18
+name:
+  pl: Caloris 18
+  en: Caloris 18
+
+description:
+  pl: |
+    Stacja przekaźnikowa utracona podczas Upadku i jedyne znane miejsce aktywności 
+    TITAN-ów na Merkurym.
+  en: |
+    A solar relay station lost during the Fall and the only known site of TITAN 
+    activity on Mercury.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-caloris18.html

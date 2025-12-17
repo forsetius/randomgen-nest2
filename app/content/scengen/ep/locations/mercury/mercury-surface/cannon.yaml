@@ -1,0 +1,19 @@
+kind: location
+id: cannon
+name:
+  pl: Cannon
+  en: Cannon
+
+description:
+  pl: |
+    Mobilny miotacz masy wielkości małego miasta do wysyłania rafinowanego metalu w 
+    przestrzeń kosmiczną w celu transportu.
+  en: |
+    A city-scaled mobile mass driver for sending refined metal into space for transport.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-cannon.html
+
+interests:
+  - production:mining
+  - mass-driver

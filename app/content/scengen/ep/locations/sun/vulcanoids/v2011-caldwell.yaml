@@ -1,0 +1,19 @@
+kind: location
+id: v2011-caldwell
+name:
+  pl: V/2011 Caldwell
+  en: V/2011 Caldwell
+importance: 3
+security: 3
+
+description:
+  pl: |
+    Lokacja Wulkanaidowych Wrót Pandoriańskich.
+  en: |
+    Location of the Vulcanoid Pandoran Gate.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wulkanoidy_ep-habitat-v2011-caldwell.html
+
+features:
+  - vulcanoid-gate

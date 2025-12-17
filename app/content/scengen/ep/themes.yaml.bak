@@ -1,0 +1,291 @@
+themes:
+  - id: conspiration
+    name:
+      pl: Konspiracja
+      en: Conspiration
+    description:
+      pl: |
+        W Eclipse Phase istnieją zarówno realnych spisków jak i mnogość teorii spiskowych. Swoje ukryte agendy mają 
+        zarówno konspiracje pokroju Zapory czy Projektu Ozma, służby specjalne poszczególnych ustrojów Układu Słonecznego 
+        ale również hiperkorporacje czy różne ruchy społeczne.
+      en: |
+        In Eclipse Phase, there are both real conspiracies and a multitude of conspiracy theories. Conspiracies such as 
+        the Firewall and Project Ozma, the secret services of individual Solar System powers, as well as 
+        hypercorporations and various social movements all have their hidden agendas.
+    items:
+      - id: corporate-wars
+        name:
+          pl: Wojny korporacyjne
+          en: Corporate wars
+        relations:
+          parties:
+            - hypercorp:*
+      - id: false-flag-ops
+        name:
+          en: False flag ops
+          pl: Pod fałszywą flagą
+        relations:
+          parties:
+            - polity:*
+            - hypercorp:*
+            - conspiracy:*
+            - criminal:*
+            - movement:*
+      - id: asi-interplay
+        name:
+          en: ASI interplay
+          pl: Rozgrywki między ASI
+        relations:
+          parties:
+            - aliens:titans
+            - aliens:prometheans
+            - aliens:medeans
+      - id: industrial-espionage
+        name:
+          en: Industrial espionage
+          pl: Szpiegostwo przemysłowe
+        relations:
+          parties:
+            - hypercorp:*
+            - polity:*
+      - id: big-stick-diplomacy
+        name:
+          en: Big stick diplomacy
+          pl: Twarda dyplomacja
+        relations:
+          parties:
+            - polity:*
+            - hypercorp:*
+  - id: terror
+    name:
+      pl: Groza
+      en: Terror
+    description:
+      pl: |
+        Groza przyjmuje wiele form, jednak w Eclipse Phase najczęściej jest to groza psychologiczna. Postaci w tym 
+        świecie stają przecież czoła niepewności przetrwania (zarówno własnego, jak i przetrwania całego gatunku), 
+        strachu przed nieznanym, poczuciu przejmującej pustki i obojętności Wszechświata... Czasem strachy przyjmują 
+        formę realną i postaci spotykają pośród gwiazd Rzeczy i Istoty, których być nie powinno czy odpychających Obcych.
+        A przede wszystkim są świadkami krzywd i niesprawiedliwości, jakie transludzie są w stanie wyrządzić sobie 
+        nawzajem - a pośród pustki Kosmosu, gdy wydaje się, że żadne społeczeństwo nie patrzy i nie ocenia, są to rzeczy 
+        przejmujące i straszne.
+
+        Mimo wszystkich zdobyczy nauki i techniki, którymi rozporządzają transludzie, wciąż nieobca jest im groza 
+        dopadająca ich, gdy ktoś odbierze im kontrolę nad własną tożsamością - co nie jest rzadkie w dobie kopiowania 
+        Ego i chaosu Upadku. Wielu transludzi odchodzi od zmysłów, gdy przemiany kulturowe i technologiczne wstrząsną 
+        ich postrzeganiem świata - a to przecież przy tym tempie rozwoju zdarza się coraz częściej. Są też tacy, którzy 
+        zbyt głęboko wzięli sobie do serca maksymę "umysł to software - zaprogramuj go" i przeholowali z edycją, gubiąc 
+        swoją osobowość.
+      en: |
+        Horror takes many forms, but in Eclipse Phase it is most often psychological horror. After all, the characters 
+        in this world face uncertainty about survival (both their own and that of the entire species), fear of the 
+        unknown, a sense of poignant emptiness and the indifference of the Universe... Sometimes these fears take on a 
+        real form, and characters encounter Things and Beings among the stars that should not exist, or repulsive Aliens. 
+        Above all, they witness the harm and injustice that transhumans are capable of inflicting on each other – and in 
+        the emptiness of space, when it seems that no society is watching or judging, these things are poignant and 
+        terrifying.
+
+        Despite all the scientific and technological advances at their disposal, transhumans are still familiar with the 
+        terror that befalls them when someone takes away their control over their own identity – which is not uncommon 
+        in the age of Ego copying and the chaos of the Fall. Many transhumans lose their minds when cultural and 
+        technological changes shake their perception of the world – and at this rate of development, this is happening 
+        more and more often. There are also those who have taken the maxim "the mind is software – program it" too 
+        deeply to heart and have gone too far with editing, losing their personality.
+    items:
+      - id: horrific-experiments
+        name:
+          pl: Potworne eksperymenty
+          en: Horrific experiments
+      - id: alien-artifacts
+        name:
+          pl: Artefakty Obcych
+          en: Alien artifacts
+      - id: war-atrocities
+        name:
+          pl: Zbrodnie wojenne
+          en: War atrocities
+      - id: plagues
+        name:
+          pl: Plagi
+          en: Plagues
+      - id: thought-control
+        name:
+          pl: Kontrola umysłów
+          en: Thought control
+      - id: the-hunt
+        name:
+          pl: Polowanie
+          en: The hunt
+      - id: madness
+        name:
+          pl: Szaleństwo
+          en: Madness
+      - id: doomsday-machines
+        name:
+          pl: Machiny zagłady
+          en: Doomsday Machines
+      - id: titans-invasion
+        name:
+          pl: Inwazja TITAN-ów
+          en: TITANs invasion
+  - id: transhumanism
+    name:
+      pl: Transhumanizm
+      en: Transhumanism
+    description:
+      pl: |
+        Transhumanizm to pojęcie używane zamiennie z "ulepszaniem człowieka". Jest to światowy ruch kulturalno-
+        intelektualny popierający rozwój nauki i techniki oraz używanie ich w celu poprawy kondycji ludzkiej. 
+        Poprawa ta wyrażałaby się w eliminacji chorób, starości, niedostatku przy jednoczesnym rozszerzaniu możliwości 
+        fizycznych i umysłowych istoty transludzkiej. Umożliwiło by to transczłowiekowi pełniejsze życie wolne od trosk, 
+        znosząc przy tym ograniczenia, które przykuwają go do Starego Globu.
+      en: |
+        Transhumanism is a term used interchangeably with "human enhancement". It is a global cultural and intellectual 
+        movement that supports the development of science and technology and their use to improve the human condition. 
+        This improvement would be expressed in the elimination of disease, old age and deprivation, while expanding the 
+        physical and mental capabilities of the transhuman being. This would enable the transhuman to live a fuller life 
+        free from worries, while removing the limitations that bind them to the Old Globe.
+    items:
+      - id: ego-sleeving
+        name:
+          pl: Przyodziewanie Ego
+          en: Ego Sleeving
+      - id: ego-forking
+        name:
+          pl: Forkowanie Ego
+          en: Ego Forking
+      - id: memory-continuity
+        name:
+          pl: Ciągłość pamięci
+          en: Memory continuity
+      - id: morphs
+        name:
+          pl: Morfy
+          en: Morphs
+      - id: old-new-economy
+        name:
+          pl: Stara/Nowa gospodarka
+          en: Old/New Economy
+      - id: clanking-masses
+        name:
+          pl: Szmelcen-proletariat
+          en: Clanking masses
+      - id: uplifts
+        name:
+          pl: Uplifty
+          en: Uplifts
+      - id: agi
+        name:
+          pl: AGI
+          en: AGI
+      - id: indenture
+        name:
+          pl: Służebność
+          en: Indenture
+  - id: postapocalyptic
+    name:
+      pl: Postapokalipsa
+      en: Postapocalyptic
+    description:
+      pl: |
+        Świat Eclipse Phase to świat po apokalipsie. Upadek ludzkości i niemal całkowite zniszczenie cywilizacji 
+        transludzkiej przez TITAN-ów to wydarzenie o skali porównywalnej jedynie do wymierania dinozaurów. Choć 
+        ludzkość przetrwała, to jednak świat, jaki znała, przestał istnieć. Wiele regionów Układu Słonecznego 
+        wciąż nosi blizny po Upadku, a odbudowa cywilizacji trwa w najlepsze.
+      en: |
+        The world of Eclipse Phase is a post-apocalyptic world. The Fall of humanity and the near-total destruction 
+        of transhuman civilization by the TITANs is an event comparable only to the extinction of the dinosaurs. 
+        Although humanity survived, the world it knew ceased to exist. Many regions of the Solar System still bear 
+        the scars of the Fall, and the rebuilding of civilization is in full swing.
+    items:
+      - id: shortages
+        name:
+          pl: Niedobory
+          en: Shortages
+      - id: mass-graves
+        name:
+          pl: Masowe groby
+          en: Mass graves
+      - id: soul-banks
+        name:
+          pl: Banki dusz
+          en: Soul banks
+      - id: lost-heritage
+        name:
+          pl: Utracone dziedzictwo
+          en: Lost heritage
+      - id: cut-off-from-civilization
+        name:
+          pl: Odcięcie od cywilizacji
+          en: Cut off from civilization
+      - id: draconian-survival-methods
+        name:
+          pl: Drakońskie sposoby na przetrwanie
+          en: Draconian survival methods
+      - id: slavery
+        name:
+          pl: Niewolnictwo
+          en: Slavery
+      - id: devolution
+        name:
+          pl: Zdziczenie
+          en: Devolution
+  - id: timeless-future
+    name:
+      pl: Ponadczasowa przyszłość
+      en: Timeless future
+    description:
+      pl: |
+        Mimo że akcja Eclipse Phase toczy się w odległej przyszłości, wiele elementów tego świata jest 
+        znajomych i nawiązuje do współczesnej kultury. W świecie tym istnieje wiele odniesień do popkultury 
+        XX i XXI wieku, a także do historii ludzkości. Dzięki temu świat ten wydaje się bardziej realny i 
+        przystępny dla graczy.
+      en: |
+        Although the action of Eclipse Phase takes place in the distant future, many elements of this world are 
+        familiar and refer to contemporary culture. This world contains many references to 20th and 21st century 
+        pop culture, as well as to human history. This makes the world feel more real and accessible to players.
+    items:
+      - id: loyalty-and-betrayal
+        name:
+          pl: Lojalność i zdrada
+          en: Loyalty and betrayal
+      - id: honor-and-disgrace
+        name:
+          pl: Honor i hańba
+          en: Honor and disgrace
+      - id: lesser-evil
+        name:
+          pl: Mniejsze zło
+          en: Lesser evil
+      - id: greater-good
+        name:
+          pl: Większe dobro
+          en: Greater good
+      - id: pursuit-of-profit
+        name:
+          pl: Pogoń za zyskiem
+          en: Pursuit of profit
+      - id: assessment-of-usefulness
+        name:
+          pl: Ocena przydatności
+          en: Assessment of usefulness
+      - id: humanity
+        name:
+          pl: Człowieczeństwo
+          en: Humanity
+      - id: loss-of-innocence
+        name:
+          pl: Utrata niewinności
+          en: Loss of innocence
+      - id: prejudice
+        name:
+          pl: Uprzedzenia
+          en: Prejudice
+      - id: technocratization-of-life
+        name:
+          pl: Technokratyzacja życia
+          en: Technocratization of life
+      - id: freedom-of-expression
+        name:
+          pl: Wolność ekspresji
+          en: Freedom of expression

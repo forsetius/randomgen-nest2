@@ -1,0 +1,21 @@
+kind: location
+id: al-hamadhani
+name:
+  pl: Al-Hamadhani
+  en: Al-Hamadhani
+
+description:
+  pl: |
+    Największa osada przesiewaczy na planecie i miejsce, gdzie Pylarze przybywają, 
+    by handlować towarami i informacjami.
+  en: |
+    The largest sifter settlement on the planet and the location where sifters come to 
+    trade goods and information.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-alhamadhani.html
+
+resources:
+  trade:
+    - goods
+    - information

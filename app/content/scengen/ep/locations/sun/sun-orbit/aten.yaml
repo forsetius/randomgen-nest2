@@ -1,0 +1,30 @@
+kind: location
+id: aten
+name:
+  pl: Aton
+  en: Aten
+importance: 1
+security: 3
+
+description:
+  pl: |
+    Silnie chroniony habitat słoneczny powiązany m.in. z Cognite, Direct Action oraz syndykatem 
+    przestępczym Nine Lives. Oficjalnie Aten deklaruje prace nad przełomowymi systemami napędu 
+    oraz nowymi technikami pozyskiwania energii słonecznej, jednak krążą pogłoski, że habitat jest 
+    głęboko zaangażowany w badania militarne.
+  en: |
+    A heavily guarded solar habitat associated with, among others, Cognite, Direct Action, and the 
+    Nine Lives criminal syndicate. Officially, Aten declares work on breakthrough propulsion systems 
+    and new solar energy harvesting techniques, but there are rumors that the habitat is deeply 
+    involved in military research.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-slonce.html
+
+resources:
+  research:
+    energy: 1
+    propulsion: 1
+    military: 2
+    neurosciences: 2
+    titans: 2

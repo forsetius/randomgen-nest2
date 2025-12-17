@@ -1,0 +1,20 @@
+kind: location
+id: vulcanoids
+name:
+  pl: Wulkanoidy
+  en: Vulcanoids
+importance: -3
+
+description:
+  pl: |
+    Pas Wulkanoidów to pas małych asteroid krążących wewnątrz orbity Merkurego.
+  en: |
+    The Vulcanoid belt is a belt of small asteroids orbiting inside Mercury's orbit.
+
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-wulkanoidy.html
+
+children:
+  - quartet
+  - v2011-caldwell
+  - v2014-ra

@@ -9,6 +9,7 @@ import { LoaderService } from '../../../base/parser/services/LoaderService';
 import { BasePattern } from '@domain/scengen/services/generators/BasePattern';
 import { Requirements } from '@domain/scengen/types/Requirements';
 import { throwOnUndefined } from '@shared/util/isType';
+import path from 'path';
 
 @Injectable()
 export class ScenGenService {
@@ -45,8 +46,10 @@ export class ScenGenService {
 
   private async loadSettings(sourceDir: string): Promise<void> {
     const settingDirs = this.loaderService.getDirectoryList(sourceDir, false);
-    for (const dir of settingDirs) {
+    for (const settingDir of settingDirs) {
+      const dir = path.join(sourceDir, settingDir);
       const setting = await this.settingFactory.createFromDirectory(dir);
+      console.log({ dir, setting });
       this.settings.set(setting.name, setting);
     }
   }
@@ -63,7 +66,7 @@ export class ScenGenService {
       this.settings.get(dto.setting),
       new BadRequestException(`No such setting: "${dto.setting}"`),
     );
-
+    console.log(setting);
     const location = dto.location
       ? setting.locations.get(
           throwOnUndefined(
