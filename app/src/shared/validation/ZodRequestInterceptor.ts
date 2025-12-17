@@ -59,11 +59,10 @@ export class ZodRequestInterceptor implements NestInterceptor {
         } catch (err) {
           if (
             this.configService.get('app.env') !== Env.PROD &&
-            err instanceof z.ZodError
+            err instanceof Error
           ) {
-            throw new BadRequestException(err);
+            throw new BadRequestException(err.message);
           }
-
           throw new BadRequestException();
         }
       };

@@ -5,21 +5,34 @@ import YAML from 'yaml';
 
 @Injectable()
 export class ParserService {
-  private supports = ['.json', '.md', '.yaml', '.yml'];
+  private supportedFormats: Record<string, SupportedFormat> = {
+    '.json': SupportedFormat.JSON,
+    '.md': SupportedFormat.MARKDOWN,
+    '.yaml': SupportedFormat.YAML,
+    '.yml': SupportedFormat.YAML,
+  };
 
   isSupported(filename: string): boolean {
-    return this.supports.includes(path.extname(filename));
+    return path.extname(filename) in this.supportedFormats;
   }
 
   public async parseFile(filename: string): Promise<unknown> {
     const extension = path.extname(filename);
+    const format = this.supportedFormats[extension];
+    if (!format) throw new Error(`Unsupported file extension "${extension}"`);
+
     const fileContent = await fs.readFile(filename, { encoding: 'utf8' });
-    switch (extension) {
-      case '.json':
-        return JSON.parse(fileContent);
-      case '.md': {
+
+    return this.parseContent(fileContent, format);
+  }
+
+  public parseContent(content: string, format: SupportedFormat): unknown {
+    switch (format) {
+      case SupportedFormat.JSON:
+        return JSON.parse(content);
+      case SupportedFormat.MARKDOWN: {
         const data = /^---(?<frontmatter>.*?)---(?<content>.*)$/msu.exec(
-          fileContent,
+          content,
         );
         if (data?.groups) {
           const frontmatter = data.groups['frontmatter']
@@ -37,14 +50,19 @@ export class ParserService {
 
         return {
           frontmatter: {},
-          content: fileContent,
+          content,
         };
       }
-      case '.yaml':
-      case '.yml':
-        return YAML.parse(fileContent);
+      case SupportedFormat.YAML:
+        return YAML.parse(content);
       default:
         throw new Error('Unsupported extension');
     }
   }
+}
+
+enum SupportedFormat {
+  JSON = 'json',
+  MARKDOWN = 'md',
+  YAML = 'yaml',
 }

@@ -44,5 +44,5 @@ export function pickRandomly<T>(arr: T[]): T {
     throw new Error('Passed array must have at least 1 element');
   }
 
-  return arr[roll(arr.length) - 1]!;
+  return shuffle(arr)[0]!;
 }

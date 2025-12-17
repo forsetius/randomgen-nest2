@@ -1,5 +1,8 @@
 import path from 'node:path';
 
+/**
+ * Get the filename without extension
+ */
 export function getBasename(filename: string): string {
   return path.basename(filename, path.extname(filename));
 }

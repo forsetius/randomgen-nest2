@@ -8,6 +8,7 @@ import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
 import { ParserModule } from '../base/parser/ParserModule';
 import { MailModule } from '../io/mail';
+import { ScenGenModule } from '@domain/scengen/ScenGenModule';
 
 @Module({
   imports: [
@@ -16,8 +17,9 @@ import { MailModule } from '../io/mail';
     TemplatingModule,
     MailModule,
     CmsModule,
-    TechnobabbleModule,
     ParserModule,
+    ScenGenModule,
+    TechnobabbleModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -6,11 +6,15 @@ import mailModuleConfig from '@app/config/mailModuleConfig';
 import securityModuleConfig from '@app/config/securityModuleConfig';
 import technobabbleModuleConfig from '@app/config/technobabbleModuleConfig';
 import templatingModuleConfig from '@app/config/templatingModuleConfig';
+import scenGenModuleConfig from '@app/config/scenGenModuleConfig';
+import parserModuleConfig from '@app/config/parserModuleConfig';
 
 export const moduleConfigLoaders = [
   appModuleConfig,
   cmsModuleConfig,
   mailModuleConfig,
+  parserModuleConfig,
+  scenGenModuleConfig,
   securityModuleConfig,
   technobabbleModuleConfig,
   templatingModuleConfig,

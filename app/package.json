@@ -56,6 +56,7 @@
     "marked": "^15.0.12",
     "nodemailer": "^7.0.11",
     "nunjucks": "^3.2.4",
+    "p-map": "^7.0.4",
     "reflect-metadata": "0.1.14",
     "rxjs": "^7.8.2",
     "zod": "^4.1.13"
