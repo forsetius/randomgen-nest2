@@ -1,0 +1,7 @@
+kind: location
+id: venus-orbit
+name:
+  pl: Orbita Wenus
+  en: Venus orbit
+parentId: venus
+importance: 1

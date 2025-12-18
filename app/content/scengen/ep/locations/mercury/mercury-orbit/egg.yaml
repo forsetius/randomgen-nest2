@@ -1,0 +1,19 @@
+kind: location
+id: egg
+name:
+  pl: Jajo
+  en: The Egg
+parentId: mercury-orbit
+importance: 1
+description:
+  pl: "Dziwny artefakt Faktorów na orbicie Merkurego pozostawiony w AF 8 bez wskazówek\
+    \ co do \njego przeznaczenia.\n"
+  en: |
+    A strange Factor artifact in Mercury orbit left in AF 8 with no indication as to its purpose.
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-egg.html
+relations:
+  owners:
+    - aliens:factors
+  interests:
+    - alien-artifact

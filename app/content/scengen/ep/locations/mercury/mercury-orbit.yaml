@@ -1,0 +1,7 @@
+kind: location
+id: mercury-orbit
+name:
+  pl: Orbita Merkurego
+  en: Mercury orbit
+parentId: mercury
+importance: 1

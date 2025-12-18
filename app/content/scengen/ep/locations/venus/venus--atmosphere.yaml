@@ -1,0 +1,7 @@
+kind: location
+id: venus-atmosphere
+name:
+  pl: Atmosfera Wenus
+  en: Venus atmosphere
+parentId: venus
+importance: 1

@@ -1,0 +1,24 @@
+kind: location
+id: cythera
+name:
+  pl: Stacja Cytera
+  en: Cythera Station
+parentId: venus-orbit
+importance: 1
+description:
+  pl:
+    "Orbitalny ośrodek głównych badań nad terraformowaniem, a także tworzeniem transgeników\
+    \ \nzdolnych do przetrwania w obecnej atmosferze wenusjańskiej.\n"
+  en:
+    "The orbital site of major terraforming research, as well as creating transgenics\
+    \ that \ncan survive in the current Venusian atmosphere.\n"
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wenus_ep-habitat-cytera.html
+relations:
+  owners:
+    - polity:morningstar-constellation
+  stakeholders:
+    - hypercorp:ecologene
+  interests:
+    - research:terraforming
+    - research:genetics

@@ -1,0 +1,27 @@
+kind: location
+id: hooverman-geischecker
+name:
+  pl: Hooverman-Geischecker
+  en: Hooverman-Geischecker
+parentId: sun-orbit
+importance: 1
+description:
+  pl:
+    "Solarne centrum otwartych badań nad Słońcem. Hooverman-Geischecker to wspólne\
+    \ przedsięwzięcie \nArgonautów i Autonomicznego Uniwersytetu Tytana, które sponsoruje\
+    \ dziesiątki projektów badawczych. \nW przeciwieństwie do Atenu, panuje tu stosunkowo\
+    \ otwarta kultura, a zarządzanie odbywa się według \nzasad nanosocjalizmu.\n"
+  en:
+    "A solar center for open research on the Sun. Hooverman-Geischecker is a joint\
+    \ venture of the \nArgonauts and the Autonomous University of Titan, sponsoring\
+    \ dozens of research projects. Unlike \nAten, it has a relatively open culture,\
+    \ and governance is based on the principles of nanosocialism.\n"
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-slonce.html
+relations:
+  stakeholders:
+    - movement:argonauts
+    - polity:titanian-commonwealth
+  interests:
+    - research:physics
+    - tourism
