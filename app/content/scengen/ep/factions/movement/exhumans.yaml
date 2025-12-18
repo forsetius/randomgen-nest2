@@ -1,0 +1,7 @@
+kind: faction
+id: exhumans
+name:
+  pl: Eksludzie
+  en: Exhumans
+parentId: movement
+importance: 1

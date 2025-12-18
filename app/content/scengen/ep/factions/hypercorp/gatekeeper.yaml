@@ -1,0 +1,7 @@
+kind: faction
+id: gatekeeper
+name:
+  pl: Gatekeeper
+  en: Gatekeeper
+parentId: hypercorp
+importance: 1

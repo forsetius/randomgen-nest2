@@ -1,0 +1,7 @@
+kind: faction
+id: triads
+name:
+  pl: Triady
+  en: Triads
+parentId: criminal
+importance: 1

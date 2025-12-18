@@ -1,0 +1,7 @@
+kind: faction
+id: skinaesthesia
+name:
+  pl: Skinaesthesia
+  en: Skinaesthesia
+parentId: hypercorp
+importance: 1

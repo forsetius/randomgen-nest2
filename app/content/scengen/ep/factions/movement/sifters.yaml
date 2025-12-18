@@ -1,0 +1,7 @@
+kind: faction
+id: sifters
+name:
+  pl: Pylarze
+  en: Sifters
+parentId: movement
+importance: 1

@@ -1,0 +1,19 @@
+kind: theme
+id: postapocalyptic
+name:
+  pl: Postapokalipsa
+  en: Postapocalyptic
+parentId: null
+importance: 1
+description:
+  pl: "Świat Eclipse Phase to świat po apokalipsie. Upadek ludzkości i niemal całkowite\
+    \ zniszczenie cywilizacji \ntransludzkiej przez TITAN-ów to wydarzenie o skali\
+    \ porównywalnej jedynie do wymierania dinozaurów. Choć \nludzkość przetrwała,\
+    \ to jednak świat, jaki znała, przestał istnieć. Wiele regionów Układu Słonecznego\
+    \ \nwciąż nosi blizny po Upadku, a odbudowa cywilizacji trwa w najlepsze.\n"
+  en: "The world of Eclipse Phase is a post-apocalyptic world. The Fall of humanity\
+    \ and the near-total destruction \nof transhuman civilization by the TITANs is\
+    \ an event comparable only to the extinction of the dinosaurs. \nAlthough humanity\
+    \ survived, the world it knew ceased to exist. Many regions of the Solar System\
+    \ still bear \nthe scars of the Fall, and the rebuilding of civilization is in\
+    \ full swing.\n"

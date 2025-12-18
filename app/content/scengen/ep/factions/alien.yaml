@@ -1,0 +1,7 @@
+kind: faction
+id: alien
+name:
+  pl: Obcy
+  en: Alien
+parentId: null
+importance: 1

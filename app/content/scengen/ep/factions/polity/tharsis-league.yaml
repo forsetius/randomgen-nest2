@@ -1,0 +1,7 @@
+kind: faction
+id: tharsis-league
+name:
+  pl: Liga Tharsis
+  en: Tharsis League
+parentId: polity
+importance: 1

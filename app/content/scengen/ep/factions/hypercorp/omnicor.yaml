@@ -1,0 +1,7 @@
+kind: faction
+id: omnicor
+name:
+  pl: Omnicor
+  en: Omnicor
+parentId: hypercorp
+importance: 1

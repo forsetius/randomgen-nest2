@@ -1,0 +1,7 @@
+kind: faction
+id: ultimates
+name:
+  pl: Niedoścignieni
+  en: Ultimates
+parentId: movement
+importance: 1

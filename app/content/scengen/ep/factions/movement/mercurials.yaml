@@ -1,0 +1,7 @@
+kind: faction
+id: mercurials
+name:
+  pl: Proteusze
+  en: Mercurials
+parentId: movement
+importance: 1

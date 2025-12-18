@@ -1,0 +1,7 @@
+kind: theme
+id: ego-forking
+name:
+  pl: Forkowanie Ego
+  en: Ego Forking
+parentId: transhumanism
+importance: 1

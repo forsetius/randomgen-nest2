@@ -1,0 +1,7 @@
+kind: faction
+id: teralogos-news
+name:
+  pl: Teralogos News
+  en: Teralogos News
+parentId: hypercorp
+importance: 1

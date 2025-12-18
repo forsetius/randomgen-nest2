@@ -1,0 +1,7 @@
+kind: faction
+id: conspiracy
+name:
+  pl: Tajne stowarzyszenie
+  en: Secret Society
+parentId: null
+importance: 2

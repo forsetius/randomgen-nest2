@@ -1,0 +1,7 @@
+kind: theme
+id: devolution
+name:
+  pl: Zdziczenie
+  en: Devolution
+parentId: postapocalyptic
+importance: 1

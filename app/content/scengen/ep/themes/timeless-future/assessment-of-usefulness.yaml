@@ -1,0 +1,7 @@
+kind: theme
+id: assessment-of-usefulness
+name:
+  pl: Ocena przydatności
+  en: Assessment of usefulness
+parentId: timeless-future
+importance: 1

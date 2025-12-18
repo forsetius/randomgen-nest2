@@ -1,0 +1,7 @@
+id: titans
+kind: faction
+parentId: alien
+importance: 1
+name:
+  pl: TITAN-i
+  en: TITANs

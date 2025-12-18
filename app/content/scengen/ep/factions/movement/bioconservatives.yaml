@@ -1,0 +1,7 @@
+kind: faction
+id: bioconservatives
+name:
+  pl: Biokonserwatyści
+  en: Bioconservatives
+parentId: movement
+importance: 1

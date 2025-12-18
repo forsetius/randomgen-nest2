@@ -1,0 +1,7 @@
+kind: faction
+id: criminal
+name:
+  pl: Przestępca
+  en: Criminal
+parentId: null
+importance: 5

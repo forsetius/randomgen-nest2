@@ -1,0 +1,7 @@
+kind: theme
+id: lesser-evil
+name:
+  pl: Mniejsze zło
+  en: Lesser evil
+parentId: timeless-future
+importance: 1

@@ -1,0 +1,7 @@
+kind: faction
+id: religion
+name:
+  pl: Religia
+  en: Religion
+parentId: null
+importance: 2

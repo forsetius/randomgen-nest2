@@ -1,0 +1,7 @@
+kind: theme
+id: the-hunt
+name:
+  pl: Polowanie
+  en: The hunt
+parentId: terror
+importance: 1

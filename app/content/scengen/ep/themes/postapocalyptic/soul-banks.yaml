@@ -1,0 +1,7 @@
+kind: theme
+id: soul-banks
+name:
+  pl: Banki dusz
+  en: Soul banks
+parentId: postapocalyptic
+importance: 1

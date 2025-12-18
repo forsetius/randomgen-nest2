@@ -1,0 +1,10 @@
+kind: theme
+id: corporate-wars
+name:
+  pl: Wojny korporacyjne
+  en: Corporate wars
+parentId: conspiration
+importance: 1
+relations:
+  parties:
+    - hypercorp:*

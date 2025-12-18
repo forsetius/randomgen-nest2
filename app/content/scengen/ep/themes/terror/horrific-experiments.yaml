@@ -1,0 +1,7 @@
+kind: theme
+id: horrific-experiments
+name:
+  pl: Potworne eksperymenty
+  en: Horrific experiments
+parentId: terror
+importance: 1

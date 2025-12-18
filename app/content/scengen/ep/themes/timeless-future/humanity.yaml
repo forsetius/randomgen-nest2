@@ -1,0 +1,7 @@
+kind: theme
+id: humanity
+name:
+  pl: Człowieczeństwo
+  en: Humanity
+parentId: timeless-future
+importance: 1

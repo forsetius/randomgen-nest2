@@ -1,0 +1,7 @@
+kind: faction
+id: go-nin
+name:
+  pl: Go-nin
+  en: Go-nin
+parentId: hypercorp
+importance: 1

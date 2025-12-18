@@ -1,0 +1,7 @@
+kind: theme
+id: cut-off-from-civilization
+name:
+  pl: Odcięcie od cywilizacji
+  en: Cut off from civilization
+parentId: postapocalyptic
+importance: 1

@@ -1,0 +1,7 @@
+kind: faction
+id: starware
+name:
+  pl: Starware
+  en: Starware
+parentId: hypercorp
+importance: 1

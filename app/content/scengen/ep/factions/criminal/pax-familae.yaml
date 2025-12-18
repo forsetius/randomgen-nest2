@@ -1,0 +1,7 @@
+kind: faction
+id: pax-familae
+name:
+  pl: Pax Familae
+  en: Pax Familae
+parentId: criminal
+importance: 1

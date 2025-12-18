@@ -1,0 +1,7 @@
+kind: faction
+id: solaris
+name:
+  pl: Solaris
+  en: Solaris
+parentId: hypercorp
+importance: 1

@@ -1,0 +1,7 @@
+kind: theme
+id: titans-invasion
+name:
+  pl: Inwazja TITAN-ów
+  en: TITANs invasion
+parentId: terror
+importance: 1

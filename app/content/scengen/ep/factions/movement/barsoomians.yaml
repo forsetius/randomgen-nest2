@@ -1,0 +1,7 @@
+kind: faction
+id: barsoomians
+name:
+  pl: Fremeni
+  en: Barsoomians
+parentId: movement
+importance: 1

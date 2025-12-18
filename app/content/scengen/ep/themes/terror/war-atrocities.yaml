@@ -1,0 +1,7 @@
+kind: theme
+id: war-atrocities
+name:
+  pl: Zbrodnie wojenne
+  en: War atrocities
+parentId: terror
+importance: 1

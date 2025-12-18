@@ -1,0 +1,7 @@
+kind: faction
+id: night-cartel
+name:
+  pl: Nocny Kartel
+  en: Night Cartel
+parentId: criminal
+importance: 1

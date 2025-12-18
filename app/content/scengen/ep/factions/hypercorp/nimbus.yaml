@@ -1,0 +1,7 @@
+kind: faction
+id: nimbus
+name:
+  pl: Nimbus
+  en: Nimbus
+parentId: hypercorp
+importance: 1

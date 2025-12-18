@@ -1,0 +1,7 @@
+kind: faction
+id: eco-conservatives
+name:
+  pl: Eko-konserwatyści
+  en: Eco-conservatives
+parentId: movement
+importance: 1

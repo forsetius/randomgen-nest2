@@ -1,0 +1,7 @@
+kind: faction
+id: id-crew
+name:
+  pl: Załoga IP
+  en: ID Crew
+parentId: criminal
+importance: 1

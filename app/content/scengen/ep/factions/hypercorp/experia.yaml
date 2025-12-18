@@ -1,0 +1,7 @@
+kind: faction
+id: experia
+name:
+  pl: Experia
+  en: Experia
+parentId: hypercorp
+importance: 1

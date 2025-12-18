@@ -1,0 +1,11 @@
+kind: theme
+id: industrial-espionage
+name:
+  en: Industrial espionage
+  pl: Szpiegostwo przemysłowe
+parentId: conspiration
+importance: 1
+relations:
+  parties:
+    - hypercorp:*
+    - polity:*

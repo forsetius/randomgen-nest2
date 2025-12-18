@@ -1,0 +1,7 @@
+kind: theme
+id: freedom-of-expression
+name:
+  pl: Wolność ekspresji
+  en: Freedom of expression
+parentId: timeless-future
+importance: 1

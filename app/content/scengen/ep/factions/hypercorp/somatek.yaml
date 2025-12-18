@@ -1,0 +1,7 @@
+kind: faction
+id: somatek
+name:
+  pl: Somatek
+  en: Somatek
+parentId: hypercorp
+importance: 1

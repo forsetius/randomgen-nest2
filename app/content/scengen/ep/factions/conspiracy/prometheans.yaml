@@ -1,0 +1,7 @@
+kind: faction
+id: prometheans
+name:
+  pl: Prometeusze
+  en: Prometheans
+parentId: conspiracy
+importance: 1

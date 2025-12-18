@@ -1,0 +1,7 @@
+kind: theme
+id: lost-heritage
+name:
+  pl: Utracone dziedzictwo
+  en: Lost heritage
+parentId: postapocalyptic
+importance: 1

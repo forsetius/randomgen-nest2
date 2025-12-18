@@ -1,0 +1,7 @@
+kind: faction
+id: pirates
+name:
+  pl: Piraci
+  en: Pirates
+parentId: criminal
+importance: 1

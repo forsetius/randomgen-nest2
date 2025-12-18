@@ -1,0 +1,7 @@
+kind: faction
+id: argonauts
+name:
+  pl: Argonauci
+  en: Argonauts
+parentId: movement
+importance: 1

@@ -1,0 +1,7 @@
+kind: faction
+id: pathfinder
+name:
+  pl: Pathfinder
+  en: Pathfinder
+parentId: hypercorp
+importance: 1

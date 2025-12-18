@@ -1,0 +1,7 @@
+kind: theme
+id: indenture
+name:
+  pl: Służebność
+  en: Indenture
+parentId: transhumanism
+importance: 1

@@ -1,0 +1,16 @@
+kind: faction
+id: titanian-commonwealth
+name:
+  pl: Wspólnota Tytana
+  en: Titanian Commonwealth
+parentId: polity
+importance: 1
+relations:
+  owns:
+    - location:saturn:titan
+  adversaries:
+    - polity:planetary-consortium
+  allies:
+    - polity:anarchists
+    - polity:extropians
+    - polity:scum

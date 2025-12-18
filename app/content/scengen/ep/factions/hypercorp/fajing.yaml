@@ -1,0 +1,7 @@
+kind: faction
+id: fajing
+name:
+  pl: Fa Jing
+  en: Fa Jing
+parentId: hypercorp
+importance: 1

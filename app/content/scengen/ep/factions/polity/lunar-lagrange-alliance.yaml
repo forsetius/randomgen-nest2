@@ -1,6 +1,7 @@
 kind: faction
 id: lunar-lagrange-alliance
 name:
-  pl: Sojusz Wokółziemski
-  en: Lunar Lagrange Alliance
+  pl: Sojusz Księżycowo-Lagrange'owski
+  en: Lunar-Lagrange Alliance
 parentId: polity
+importance: 1

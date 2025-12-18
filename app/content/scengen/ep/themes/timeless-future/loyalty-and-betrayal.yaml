@@ -1,0 +1,7 @@
+kind: theme
+id: loyalty-and-betrayal
+name:
+  pl: Lojalność i zdrada
+  en: Loyalty and betrayal
+parentId: timeless-future
+importance: 1

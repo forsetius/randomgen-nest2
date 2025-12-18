@@ -1,0 +1,7 @@
+kind: faction
+id: celebrities
+name:
+  pl: Celebryci
+  en: Glitterati
+parentId: movement
+importance: 1

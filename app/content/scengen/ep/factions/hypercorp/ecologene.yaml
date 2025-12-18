@@ -1,0 +1,7 @@
+kind: faction
+id: ecologene
+name:
+  pl: Ecologene
+  en: Ecologene
+parentId: hypercorp
+importance: 1

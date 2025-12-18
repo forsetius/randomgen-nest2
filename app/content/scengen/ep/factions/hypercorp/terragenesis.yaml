@@ -1,0 +1,7 @@
+kind: faction
+id: terragenesis
+name:
+  pl: Terragenesis
+  en: Terragenesis
+parentId: hypercorp
+importance: 1

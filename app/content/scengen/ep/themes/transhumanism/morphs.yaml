@@ -1,0 +1,7 @@
+kind: theme
+id: morphs
+name:
+  pl: Morfy
+  en: Morphs
+parentId: transhumanism
+importance: 1

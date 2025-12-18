@@ -1,0 +1,7 @@
+kind: theme
+id: clanking-masses
+name:
+  pl: Szmelcen-proletariat
+  en: Clanking masses
+parentId: transhumanism
+importance: 1

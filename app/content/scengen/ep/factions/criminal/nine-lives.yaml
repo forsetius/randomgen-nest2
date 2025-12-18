@@ -1,0 +1,7 @@
+kind: faction
+id: nine-lives
+name:
+  pl: Dziewięć żyć
+  en: Nine Lives
+parentId: criminal
+importance: 1

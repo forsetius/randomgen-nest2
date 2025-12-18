@@ -1,0 +1,7 @@
+kind: theme
+id: slavery
+name:
+  pl: Niewolnictwo
+  en: Slavery
+parentId: postapocalyptic
+importance: 1

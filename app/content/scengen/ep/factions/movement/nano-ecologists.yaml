@@ -1,0 +1,7 @@
+kind: faction
+id: nano-ecologists
+name:
+  pl: Nanoekolodzy
+  en: Nano-ecologists
+parentId: movement
+importance: 1

@@ -1,0 +1,29 @@
+kind: faction
+id: comet-express
+name:
+  pl: Comet Express
+  en: Comet Express
+parentId: hypercorp
+importance: 1
+description:
+  pl: |
+    Comet Express to hiperkorporacja specjalizująca się w transporcie kosmicznym i logistyce. 
+    Firma oferuje szeroki zakres usług, od przewozu ładunków po transport pasażerski, 
+    obsługując zarówno klientów indywidualnych, jak i korporacyjnych.
+  en: |
+    Comet Express is a hypercorporation specializing in space transportation and logistics. 
+    The company offers a wide range of services, from cargo transport to passenger transport, 
+    serving both individual and corporate clients.
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_encyklopedia_hiperkorpy_ep-comet-express.html
+relations:
+  allies:
+    - hypercorp
+  adversaries:
+    - polity:jovian-republic
+  bases:
+    - location:luna:surface:nectar
+    - location:mars:surface:olympus
+    - location:mars:trojans:transix
+  interests:
+    - services:logistics

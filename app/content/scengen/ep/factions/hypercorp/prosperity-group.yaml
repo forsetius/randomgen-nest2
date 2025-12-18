@@ -1,0 +1,7 @@
+kind: faction
+id: prosperity-group
+name:
+  pl: Prosperity Group
+  en: Prosperity Group
+parentId: hypercorp
+importance: 1

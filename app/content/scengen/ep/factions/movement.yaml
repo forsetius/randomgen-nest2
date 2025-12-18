@@ -1,0 +1,7 @@
+kind: faction
+id: movement
+name:
+  pl: Ruch społeczny
+  en: Social Movement
+parentId: null
+importance: 3

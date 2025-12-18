@@ -1,0 +1,7 @@
+kind: theme
+id: loss-of-innocence
+name:
+  pl: Utrata niewinności
+  en: Loss of innocence
+parentId: timeless-future
+importance: 1

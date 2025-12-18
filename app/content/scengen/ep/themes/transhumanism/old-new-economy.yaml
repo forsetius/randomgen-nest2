@@ -1,0 +1,7 @@
+kind: theme
+id: old-new-economy
+name:
+  pl: Stara/Nowa gospodarka
+  en: Old/New Economy
+parentId: transhumanism
+importance: 1

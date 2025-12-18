@@ -1,0 +1,7 @@
+kind: faction
+id: ozma
+name:
+  pl: Projekt Ozma
+  en: Project Ozma
+parentId: conspiracy
+importance: 1

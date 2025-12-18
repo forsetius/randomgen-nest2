@@ -1,0 +1,7 @@
+kind: faction
+id: reclaimers
+name:
+  pl: Rewitalizatorzy
+  en: Reclaimers
+parentId: movement
+importance: 1

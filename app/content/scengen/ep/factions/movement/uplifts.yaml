@@ -1,0 +1,7 @@
+kind: faction
+id: uplifts
+name:
+  pl: Uplifty
+  en: Uplifts
+parentId: movement
+importance: 1

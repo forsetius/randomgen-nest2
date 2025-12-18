@@ -1,0 +1,7 @@
+id: factors
+kind: faction
+parentId: alien
+importance: 1
+name:
+  pl: Faktorzy
+  en: Factors

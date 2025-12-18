@@ -1,0 +1,7 @@
+kind: theme
+id: thought-control
+name:
+  pl: Kontrola umysłów
+  en: Thought control
+parentId: terror
+importance: 1

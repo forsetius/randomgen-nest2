@@ -1,0 +1,7 @@
+kind: theme
+id: honor-and-disgrace
+name:
+  pl: Honor i hańba
+  en: Honor and disgrace
+parentId: timeless-future
+importance: 1

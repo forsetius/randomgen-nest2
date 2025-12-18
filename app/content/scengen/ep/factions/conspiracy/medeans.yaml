@@ -1,0 +1,7 @@
+kind: faction
+id: medeans
+name:
+  pl: Medee
+  en: Medeans
+parentId: conspiracy
+importance: 1

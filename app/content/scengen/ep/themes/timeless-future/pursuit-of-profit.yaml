@@ -1,0 +1,7 @@
+kind: theme
+id: pursuit-of-profit
+name:
+  pl: Pogoń za zyskiem
+  en: Pursuit of profit
+parentId: timeless-future
+importance: 1

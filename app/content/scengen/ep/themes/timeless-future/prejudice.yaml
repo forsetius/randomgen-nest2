@@ -1,0 +1,7 @@
+kind: theme
+id: prejudice
+name:
+  pl: Uprzedzenia
+  en: Prejudice
+parentId: timeless-future
+importance: 1

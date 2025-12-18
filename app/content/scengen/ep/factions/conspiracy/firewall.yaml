@@ -1,0 +1,7 @@
+kind: faction
+id: firewall
+name:
+  pl: Zapora
+  en: Firewall
+parentId: conspiracy
+importance: 1

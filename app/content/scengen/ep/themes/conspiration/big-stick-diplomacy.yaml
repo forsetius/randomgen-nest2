@@ -1,0 +1,11 @@
+kind: theme
+id: big-stick-diplomacy
+name:
+  en: Big stick diplomacy
+  pl: Twarda dyplomacja
+parentId: conspiration
+importance: 1
+relations:
+  parties:
+    - polity:*
+    - hypercorp:*

@@ -1,0 +1,7 @@
+kind: faction
+id: stellar-intelligence
+name:
+  pl: Stellar Intelligence
+  en: Stellar Intelligence
+parentId: hypercorp
+importance: 1

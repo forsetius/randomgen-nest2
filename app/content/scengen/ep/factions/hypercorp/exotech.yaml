@@ -1,0 +1,7 @@
+kind: faction
+id: exotech
+name:
+  pl: Exotech
+  en: Exotech
+parentId: hypercorp
+importance: 1

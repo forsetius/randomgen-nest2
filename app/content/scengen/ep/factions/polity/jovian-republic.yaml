@@ -1,0 +1,7 @@
+kind: faction
+id: jovian-republic
+name:
+  pl: Republika Jowiszowa
+  en: Jovian Republic
+parentId: polity
+importance: 1

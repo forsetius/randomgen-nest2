@@ -1,0 +1,7 @@
+kind: theme
+id: shortages
+name:
+  pl: Niedobory
+  en: Shortages
+parentId: postapocalyptic
+importance: 1

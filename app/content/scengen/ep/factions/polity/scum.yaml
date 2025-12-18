@@ -1,0 +1,7 @@
+kind: faction
+id: scum
+name:
+  pl: Męty
+  en: Scum
+parentId: polity
+importance: 1

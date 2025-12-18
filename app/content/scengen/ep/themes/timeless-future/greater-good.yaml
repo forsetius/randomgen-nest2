@@ -1,0 +1,7 @@
+kind: theme
+id: greater-good
+name:
+  pl: Większe dobro
+  en: Greater good
+parentId: timeless-future
+importance: 1
