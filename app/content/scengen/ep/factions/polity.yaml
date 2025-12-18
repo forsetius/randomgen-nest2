@@ -1,0 +1,6 @@
+kind: faction
+id: polity
+name:
+  pl: Ustrój
+  en: Polity
+parentId: null

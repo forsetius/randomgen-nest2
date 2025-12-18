@@ -3,6 +3,8 @@ id: caloris-18
 name:
   pl: Caloris 18
   en: Caloris 18
+parentId: mercury-surface
+importance: 4
 
 description:
   pl: |

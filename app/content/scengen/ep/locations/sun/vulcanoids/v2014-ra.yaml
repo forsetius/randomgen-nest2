@@ -3,8 +3,9 @@ id: v2014-ra
 name:
   pl: V/2014 Ra
   en: V/2014 Ra
-importance: -2
-security: 2
+parentId: vulcanoids
+importance: 2
+security: 3
 
 description:
   pl: |

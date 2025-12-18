@@ -3,6 +3,8 @@ id: hellswatch
 name:
   pl: Hellswatch
   en: Hellswatch
+parentId: mercury-surface
+importance: 2
 
 description:
   pl: |

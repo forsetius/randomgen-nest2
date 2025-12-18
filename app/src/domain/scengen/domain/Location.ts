@@ -12,7 +12,6 @@ import { BadRequestException } from '@nestjs/common';
 export class Location extends Entity {
   public readonly factions = new Map<string, EntityRelation<Faction>>();
   public readonly locations = new Map<string, EntityRelation<Location>>();
-  public readonly resources: Record<string, Level>;
   public readonly securityLevel: Level;
   public parent: Location | null = null;
   public readonly subItems: Location[] = [];
@@ -26,7 +25,6 @@ export class Location extends Entity {
     super(id, data);
 
     this.securityLevel = data.securityLevel;
-    this.resources = data.resources ?? {};
     this.toHydrate = {
       parent: data.parentId,
       relations: data.relations ?? {},

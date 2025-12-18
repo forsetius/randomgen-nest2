@@ -3,6 +3,8 @@ id: cannon
 name:
   pl: Cannon
   en: Cannon
+parentId: mercury-surface
+importance: 2
 
 description:
   pl: |

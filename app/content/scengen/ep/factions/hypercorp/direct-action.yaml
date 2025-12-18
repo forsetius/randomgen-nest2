@@ -1,0 +1,6 @@
+kind: faction
+id: direct-action
+name:
+  pl: Direct Action
+  en: Direct Action
+parentId: hypercorp

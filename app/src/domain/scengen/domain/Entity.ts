@@ -1,11 +1,10 @@
 import { LangString } from '@shared/types/LangString';
-import { EntityData, EntityKind } from '@domain/scengen/types/SettingModel';
+import { EntityData } from '@domain/scengen/types/SettingModel';
 import { Setting } from '@domain/scengen/domain/Setting';
 import { Level } from '@domain/scengen/types/Level';
 import { RelationTag } from '@domain/scengen/types/RelationTag';
 
 export abstract class Entity {
-  public readonly kind: EntityKind;
   public readonly name: LangString;
   public readonly description: LangString | undefined;
   public readonly url: Partial<LangString>;
@@ -18,7 +17,6 @@ export abstract class Entity {
     public readonly id: string,
     data: EntityData,
   ) {
-    this.kind = data.kind;
     this.name = data.name;
     this.description = data.description;
     this.url = data.url ?? {};

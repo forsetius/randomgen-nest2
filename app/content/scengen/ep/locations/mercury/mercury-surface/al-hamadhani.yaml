@@ -3,6 +3,8 @@ id: al-hamadhani
 name:
   pl: Al-Hamadhani
   en: Al-Hamadhani
+parentId: mercury-surface
+importance: 2
 
 description:
   pl: |

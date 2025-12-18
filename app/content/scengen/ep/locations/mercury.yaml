@@ -3,6 +3,9 @@ id: mercury
 name:
   pl: Merkury
   en: Mercury
+parentId: null
+importance: 1
+
 description:
   pl: |
     Merkury to prawdziwa kwintesencja pustyni: zakurzona, sucha i nieustannie prażona przez 
@@ -14,7 +17,3 @@ description:
     The main pillars of economic activity are mining and solar energy. Since Mercury is 
     desolate and sparsely populated, it is also well suited for hiding activities that 
     curious eyes should not see.
-
-children:
-  - mercury-orbit
-  - mercury-surface

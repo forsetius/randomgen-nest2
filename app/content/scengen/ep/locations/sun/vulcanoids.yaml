@@ -3,7 +3,8 @@ id: vulcanoids
 name:
   pl: Wulkanoidy
   en: Vulcanoids
-importance: -3
+parentId: sun
+importance: 2
 
 description:
   pl: |
@@ -13,8 +14,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-wulkanoidy.html
-
-children:
-  - quartet
-  - v2011-caldwell
-  - v2014-ra

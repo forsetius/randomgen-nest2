@@ -1,0 +1,6 @@
+kind: faction
+id: planetary-consortium
+name:
+  pl: Konsorcjum Planetarne
+  en: Planetary Consortium
+parentId: null

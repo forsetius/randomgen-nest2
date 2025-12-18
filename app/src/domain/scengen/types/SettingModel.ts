@@ -1,8 +1,7 @@
 import { Level } from '@domain/scengen/types/Level';
 import { LangString } from '@shared/types/LangString';
 import { RelationTag } from '@domain/scengen/types/RelationTag';
-
-export type EntityKind = 'faction' | 'location' | 'event' | 'theme';
+import { EntityKind } from '@domain/scengen/types/EntityKind';
 
 export interface EntityData {
   kind: EntityKind;
@@ -21,7 +20,6 @@ export interface FactionData extends EntityData {
 
 export interface LocationData extends EntityData {
   securityLevel: Level;
-  resources?: Record<string, Level>;
   relations?: Partial<Record<RelationTag, Record<string, number>>>;
 }
 

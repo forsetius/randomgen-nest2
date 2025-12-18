@@ -38,3 +38,4 @@ lerna-debug.log*
 .env
 /content/cms/static/pages/*
 /test/e2e/base/cms/_fixtures/static/pages/*
+*.bak

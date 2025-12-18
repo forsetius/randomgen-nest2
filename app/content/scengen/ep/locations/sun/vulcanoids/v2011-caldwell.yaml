@@ -3,8 +3,9 @@ id: v2011-caldwell
 name:
   pl: V/2011 Caldwell
   en: V/2011 Caldwell
-importance: 3
-security: 3
+parentId: vulcanoids
+importance: 5
+security: 4
 
 description:
   pl: |

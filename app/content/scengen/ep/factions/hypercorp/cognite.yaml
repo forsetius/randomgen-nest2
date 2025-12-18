@@ -1,0 +1,6 @@
+kind: faction
+id: cognite
+name:
+  pl: Cognite
+  en: Cognite
+parentId: hypercorp

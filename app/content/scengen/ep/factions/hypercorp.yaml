@@ -1,0 +1,6 @@
+kind: faction
+id: hypercorp
+name:
+  pl: Hiperkorporacja
+  en: Hypercorporation
+parentId: null

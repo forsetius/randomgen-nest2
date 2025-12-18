@@ -3,7 +3,8 @@ id: sun-orbit
 name:
   pl: Orbita Słońca
   en: Sun orbit
-importance: -2
+parentId: sun
+importance: 1
 
 description:
   pl: |
@@ -24,8 +25,3 @@ resources:
     energy: 1
     physics: 1
   tourism: 1
-
-children:
-  - aten
-  - hooverman-geischecker
-  - ukko-jylina

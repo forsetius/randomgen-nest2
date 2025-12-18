@@ -3,6 +3,8 @@ id: lumina
 name:
   pl: Lumina
   en: Lumina
+parentId: mercury-surface
+importance: 3
 
 description:
   pl: |

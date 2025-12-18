@@ -5,6 +5,7 @@ import { pMapIterable } from 'p-map';
 import { AppConfigService } from '@config/AppConfigService';
 import { ParserService } from './ParserService';
 import { ParsedFile } from '../types/ParsedFile';
+import type { ZodType } from 'zod';
 
 @Injectable()
 export class LoaderService {
@@ -60,12 +61,16 @@ export class LoaderService {
    *
    * Returns an iterable of parsed files.
    */
-  public loadAndParse(directory: string): AsyncIterable<ParsedFile> {
+  public loadAndParse(
+    directory: string,
+    zodSchema: ZodType,
+  ): AsyncIterable<ParsedFile> {
     return pMapIterable(
       this.walkDirectory(directory),
       async (filename): Promise<ParsedFile> => {
         try {
-          const data = await this.parser.parseFile(filename);
+          const rawData = await this.parser.parseFile(filename);
+          const data = zodSchema.parse(rawData);
 
           return { filename, data };
         } catch (error) {

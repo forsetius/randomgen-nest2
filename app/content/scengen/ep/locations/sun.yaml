@@ -3,8 +3,8 @@ id: sun
 name:
   pl: Słońce
   en: The Sun
-importance: -3
-playable: false
+parentId: null
+importance: 1
 
 description:
   pl: |
@@ -16,7 +16,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-slonce.html
-
-children:
-  - sun-orbit
-  - vulcanoids

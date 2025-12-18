@@ -10,6 +10,7 @@ import { BasePattern } from '@domain/scengen/services/generators/BasePattern';
 import { Requirements } from '@domain/scengen/types/Requirements';
 import { throwOnUndefined } from '@shared/util/isType';
 import path from 'path';
+import { SourceDataZodSchema } from '@domain/scengen/validation/SourceDataZodSchema';
 
 @Injectable()
 export class ScenGenService {
@@ -48,7 +49,10 @@ export class ScenGenService {
     const settingDirs = this.loaderService.getDirectoryList(sourceDir, false);
     for (const settingDir of settingDirs) {
       const dir = path.join(sourceDir, settingDir);
-      const setting = await this.settingFactory.createFromDirectory(dir);
+      const setting = await this.settingFactory.createFromDirectory(
+        dir,
+        SourceDataZodSchema,
+      );
       console.log({ dir, setting });
       this.settings.set(setting.name, setting);
     }

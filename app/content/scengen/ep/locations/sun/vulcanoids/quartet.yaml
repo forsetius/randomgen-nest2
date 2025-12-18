@@ -3,7 +3,9 @@ id: quartet
 name:
   pl: Kwartet
   en: Quartet
-importance: 1
+parentId: vulcanoids
+importance: 2
+security: 3
 
 description:
   pl: |

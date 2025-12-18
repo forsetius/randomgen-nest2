@@ -1,0 +1,6 @@
+kind: faction
+id: morningstar-constellation
+name:
+  pl: Konstelacja Gwiazdy Zarannej
+  en: Morningstar Constellation
+parentId: polity

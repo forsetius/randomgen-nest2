@@ -1,0 +1,6 @@
+kind: faction
+id: lunar-lagrange-alliance
+name:
+  pl: Sojusz Wokółziemski
+  en: Lunar Lagrange Alliance
+parentId: polity

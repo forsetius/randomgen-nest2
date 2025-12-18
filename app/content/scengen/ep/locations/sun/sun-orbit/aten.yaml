@@ -3,8 +3,9 @@ id: aten
 name:
   pl: Aton
   en: Aten
-importance: 1
-security: 3
+parentId: sun-orbit
+importance: 2
+security: 4
 
 description:
   pl: |

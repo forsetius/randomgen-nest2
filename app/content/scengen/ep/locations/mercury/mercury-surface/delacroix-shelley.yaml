@@ -3,7 +3,9 @@ id: delacroix-shelley
 name:
   pl: Delacroix-Shelley
   en: Delacroix-Shelley
-security: 3
+parentId: mercury-surface
+importance: 3
+security: 4
 
 description:
   pl: |
