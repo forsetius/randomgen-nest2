@@ -6,11 +6,11 @@ name:
 parentId: null
 importance: 1
 description:
-  pl: "Wenus to piekielnie gorąca planeta z gęstą, toksyczną atmosferą i powierzchnią\
-    \ pokrytą \nlawą. Mimo tych ekstremalnych warunków, na wysokości ok. 50km nad\
-    \ powierzchnią unosi się \nkilkanaście aerostatów a na powierzchni prowadzone\
-    \ są prace wydobybwcze.\n"
-  en: "Venus is a hellishly hot planet with a dense, toxic atmosphere and a surface\
-    \ covered \nin lava. Despite these extreme conditions, several aerostats float\
-    \ at an altitude of \nabout 50 km above the surface, and mining operations are\
-    \ carried out on the surface.\n"
+  pl: |
+    Wenus to piekielnie gorąca planeta z gęstą, toksyczną atmosferą i powierzchnią pokrytą
+    lawą. Mimo tych ekstremalnych warunków, na wysokości ok. 50km nad powierzchnią unosi się
+    kilkanaście aerostatów a na powierzchni prowadzone są prace wydobybwcze.
+  en: |
+    Venus is a hellishly hot planet with a dense, toxic atmosphere and a surface covered
+    in lava. Despite these extreme conditions, several aerostats float at an altitude of
+    about 50 km above the surface, and mining operations are carried out on the surface.

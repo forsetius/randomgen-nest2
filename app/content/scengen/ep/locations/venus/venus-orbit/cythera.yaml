@@ -6,12 +6,12 @@ name:
 parentId: venus-orbit
 importance: 1
 description:
-  pl:
-    "Orbitalny ośrodek głównych badań nad terraformowaniem, a także tworzeniem transgeników\
-    \ \nzdolnych do przetrwania w obecnej atmosferze wenusjańskiej.\n"
-  en:
-    "The orbital site of major terraforming research, as well as creating transgenics\
-    \ that \ncan survive in the current Venusian atmosphere.\n"
+  pl: |
+    Orbitalny ośrodek głównych badań nad terraformowaniem, a także tworzeniem transgeników
+    zdolnych do przetrwania w obecnej atmosferze wenusjańskiej.
+  en: |
+    The orbital site of major terraforming research, as well as creating transgenics that
+    can survive in the current Venusian atmosphere.
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wenus_ep-habitat-cytera.html
 relations:

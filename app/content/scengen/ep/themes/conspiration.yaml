@@ -6,11 +6,11 @@ name:
 parentId: null
 importance: 1
 description:
-  pl: "W Eclipse Phase istnieją zarówno realnych spisków jak i mnogość teorii spiskowych.\
-    \ Swoje ukryte agendy mają \nzarówno konspiracje pokroju Zapory czy Projektu Ozma,\
-    \ służby specjalne poszczególnych ustrojów Układu Słonecznego \nale również hiperkorporacje\
-    \ czy różne ruchy społeczne.\n"
-  en: "In Eclipse Phase, there are both real conspiracies and a multitude of conspiracy\
-    \ theories. Conspiracies such as \nthe Firewall and Project Ozma, the secret services\
-    \ of individual Solar System powers, as well as \nhypercorporations and various\
-    \ social movements all have their hidden agendas.\n"
+  pl: |
+    W Eclipse Phase istnieją zarówno realnych spisków jak i mnogość teorii spiskowych. Swoje ukryte agendy mają
+    zarówno konspiracje pokroju Zapory czy Projektu Ozma, służby specjalne poszczególnych ustrojów Układu Słonecznego
+    ale również hiperkorporacje czy różne ruchy społeczne.
+  en: |
+    In Eclipse Phase, there are both real conspiracies and a multitude of conspiracy theories. Conspiracies such as
+    the Firewall and Project Ozma, the secret services of individual Solar System powers, as well as
+    hypercorporations and various social movements all have their hidden agendas.

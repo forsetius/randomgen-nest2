@@ -6,8 +6,9 @@ name:
 parentId: mercury-orbit
 importance: 1
 description:
-  pl: "Dziwny artefakt Faktorów na orbicie Merkurego pozostawiony w AF 8 bez wskazówek\
-    \ co do \njego przeznaczenia.\n"
+  pl: |
+    Dziwny artefakt Faktorów na orbicie Merkurego pozostawiony w AF 8 bez wskazówek co do
+    jego przeznaczenia.
   en: |
     A strange Factor artifact in Mercury orbit left in AF 8 with no indication as to its purpose.
 url:

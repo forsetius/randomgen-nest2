@@ -6,17 +6,15 @@ name:
 parentId: null
 importance: 1
 description:
-  pl: "Transhumanizm to pojęcie używane zamiennie z \"ulepszaniem człowieka\". Jest\
-    \ to światowy ruch kulturalno-\nintelektualny popierający rozwój nauki i techniki\
-    \ oraz używanie ich w celu poprawy kondycji ludzkiej. \nPoprawa ta wyrażałaby\
-    \ się w eliminacji chorób, starości, niedostatku przy jednoczesnym rozszerzaniu\
-    \ możliwości \nfizycznych i umysłowych istoty transludzkiej. Umożliwiło by to\
-    \ transczłowiekowi pełniejsze życie wolne od trosk, \nznosząc przy tym ograniczenia,\
-    \ które przykuwają go do Starego Globu.\n"
-  en: "Transhumanism is a term used interchangeably with \"human enhancement\". It\
-    \ is a global cultural and intellectual \nmovement that supports the development\
-    \ of science and technology and their use to improve the human condition. \nThis\
-    \ improvement would be expressed in the elimination of disease, old age and deprivation,\
-    \ while expanding the \nphysical and mental capabilities of the transhuman being.\
-    \ This would enable the transhuman to live a fuller life \nfree from worries,\
-    \ while removing the limitations that bind them to the Old Globe.\n"
+  pl: |
+    Transhumanizm to pojęcie używane zamiennie z "ulepszaniem człowieka". Jest to światowy ruch kulturalno-
+    intelektualny popierający rozwój nauki i techniki oraz używanie ich w celu poprawy kondycji ludzkiej.
+    Poprawa ta wyrażałaby się w eliminacji chorób, starości, niedostatku przy jednoczesnym rozszerzaniu możliwości
+    fizycznych i umysłowych istoty transludzkiej. Umożliwiło by to transczłowiekowi pełniejsze życie wolne od trosk,
+    znosząc przy tym ograniczenia, które przykuwają go do Starego Globu.
+  en: |
+    Transhumanism is a term used interchangeably with "human enhancement". It is a global cultural and intellectual
+    movement that supports the development of science and technology and their use to improve the human condition.
+    This improvement would be expressed in the elimination of disease, old age and deprivation, while expanding the
+    physical and mental capabilities of the transhuman being. This would enable the transhuman to live a fuller life
+    free from worries, while removing the limitations that bind them to the Old Globe.

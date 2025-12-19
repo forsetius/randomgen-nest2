@@ -6,14 +6,14 @@ name:
 parentId: sun-orbit
 importance: 1
 description:
-  pl:
-    "Główna baza Solarian. Habitat służy jako bezpieczna przystań dla surjów podczas\
-    \ silnych burz \nsłonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania\
-    \ zapasów wody, egotransferów \ni przyodziewania.\n"
-  en:
-    "The main base of the Solarians. The habitat serves as a safe haven for Surya\
-    \ morphs during \nstrong solar storms, as well as a place for meetings, reproduction,\
-    \ water replenishment, \negotransfers, and sleeving.\n"
+  pl: |
+    Główna baza Solarian. Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz
+    słonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania zapasów wody, egotransferów
+    i przyodziewania.
+  en: |
+    The main base of the Solarians. The habitat serves as a safe haven for Surya morphs during
+    strong solar storms, as well as a place for meetings, reproduction, water replenishment,
+    egotransfers, and sleeving.
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_sonce_ep-habitat-ukko-jylina.html
 relations:

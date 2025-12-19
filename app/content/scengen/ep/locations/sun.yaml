@@ -6,9 +6,9 @@ name:
 parentId: null
 importance: 1
 description:
-  pl: "Słońce jest gwiazdą centralną Układu Słonecznego i głównym źródłem energii\
-    \ dla wszystkich jego ciał \nniebieskich. W świecie Eclipse Phase jest także domem\
-    \ frakcji Solarian przyodzianych w morfy Suria.\n"
-  en: "The Sun is the central star of the Solar System and the main source of energy\
-    \ for all its celestial \nbodies. In the world of Eclipse Phase, it is also home\
-    \ to the Solarian faction clad in Surya morphs.\n"
+  pl: |
+    Słońce jest gwiazdą centralną Układu Słonecznego i głównym źródłem energii dla wszystkich jego ciał
+    niebieskich. W świecie Eclipse Phase jest także domem frakcji Solarian przyodzianych w morfy Suria.
+  en: |
+    The Sun is the central star of the Solar System and the main source of energy for all its celestial
+    bodies. In the world of Eclipse Phase, it is also home to the Solarian faction clad in Surya morphs.

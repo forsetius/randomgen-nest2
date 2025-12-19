@@ -6,9 +6,9 @@ name:
 parentId: venus-atmosphere
 importance: 1
 description:
-  pl:
-    "Centrum turystyki wenusjańskiej i ważny ośrodek badawczy do testowania transgenicznych\
-    \ \ngatunków wenusjańskich.\n"
+  pl: |
+    Centrum turystyki wenusjańskiej i ważny ośrodek badawczy do testowania transgenicznych
+    gatunków wenusjańskich.
   en: |
     The center for Venusian tourism and a major research hub for testing transgenic Venusian species.
 url:
