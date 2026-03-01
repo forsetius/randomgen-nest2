@@ -1,0 +1,12 @@
+id: hazard
+category: core
+description:
+  pl: >
+    Zagrożenia środowiskowe i techniczne: awarie,
+    katastrofy, skażenia i ryzyka systemowe.
+  en: >
+    Environmental and technical hazards: failures,
+    disasters, contamination, and systemic risks.
+usedBy:
+  - scene
+  - site

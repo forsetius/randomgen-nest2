@@ -4,4 +4,4 @@ name:
   pl: Masowe groby
   en: Mass graves
 parentId: postapocalyptic
-importance: 1
+baseWeight: 2

@@ -1,4 +1,4 @@
-import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
+import { AutoArrayMap } from '@shared/util/collections/AutoArrayMap';
 
 describe('AutoMultiMap', () => {
   describe('getCollection', () => {
@@ -7,7 +7,7 @@ describe('AutoMultiMap', () => {
       ['empty string key', ''],
       ['numeric key', 0],
     ])('auto-creates collection for %s', (_, key) => {
-      const map = new AutoMultiMap<string | number, number>();
+      const map = new AutoArrayMap<string | number, number>();
 
       const collection = map.getCollection(key);
 
@@ -16,7 +16,7 @@ describe('AutoMultiMap', () => {
     });
 
     it('returns same collection reference when accessed repeatedly', () => {
-      const map = new AutoMultiMap<string, number>();
+      const map = new AutoArrayMap<string, number>();
 
       const first = map.getCollection('shared');
       first.push(1);
@@ -33,7 +33,7 @@ describe('AutoMultiMap', () => {
       ['multiple values preserve order', 'beta', [3, 1, 4]],
       ['duplicate values are stored', 'gamma', [2, 2, 2]],
     ])('%s', (_, key, values) => {
-      const map = new AutoMultiMap<string, number>();
+      const map = new AutoArrayMap<string, number>();
 
       values.forEach((value) => {
         map.add(key, value);
@@ -44,7 +44,7 @@ describe('AutoMultiMap', () => {
     });
 
     it('keeps collections isolated per key', () => {
-      const map = new AutoMultiMap<string, number>();
+      const map = new AutoArrayMap<string, number>();
 
       map.add('primary', 1);
       map.add('secondary', 5);

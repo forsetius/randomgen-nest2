@@ -4,4 +4,8 @@ name:
   pl: Medee
   en: Medeans
 parentId: conspiracy
-importance: 1
+baseWeight: NEGLIGIBLE
+profileModifiers:
+  moral_pressure: LOW
+  hidden_truth: MEDIUM
+  complexity: LOW

@@ -4,7 +4,7 @@ name:
   pl: Ukko-Jylina
   en: Ukko-Jylina
 parentId: sun-orbit
-importance: 1
+baseWeight: 1
 description:
   pl: |
     Główna baza Solarian. Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz
@@ -17,5 +17,5 @@ description:
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_sonce_ep-habitat-ukko-jylina.html
 relations:
-  owners:
-    - movement:solarians
+  owned_by:
+    faction:solarians: 5

@@ -135,6 +135,6 @@ The application offers the following keyboard shortcuts:
   - `Ctrl+Shift+=`/`Ctrl+Shift+-`/`Ctrl+0` - zoom in, zoom out, reset zoom
   - `F10` - preferences window
 
-These shortcuts are assigned to this application, so they only work when a Web-pane window is active (has focus). When a Web-pane window is open it is visible and placed above other windows, but if you are typing in an editor or using a regular browser underneath, it loses focus to the application you are actively working with.
+These shortcuts are assigned to this application, so they only work when a Web-pane window is active (hasValue focus). When a Web-pane window is open it is visible and placed above other windows, but if you are typing in an editor or using a regular browser underneath, it loses focus to the application you are actively working with.
 
 That is why it is good to define global shortcuts - ones that work regardless of which application is active. For example, in Linux Mint you can do this in `System settings > Keyboard > Shortcuts`.

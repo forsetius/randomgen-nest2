@@ -1,7 +1,0 @@
-kind: theme
-id: alien-artifacts
-name:
-  pl: Artefakty Obcych
-  en: Alien artifacts
-parentId: terror
-importance: 1

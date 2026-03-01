@@ -4,4 +4,4 @@ name:
   pl: Orbita Merkurego
   en: Mercury orbit
 parentId: mercury
-importance: 1
+baseWeight: 1

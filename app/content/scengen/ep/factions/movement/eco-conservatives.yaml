@@ -4,4 +4,4 @@ name:
   pl: Eko-konserwatyści
   en: Eco-conservatives
 parentId: movement
-importance: 1
+baseWeight: LOW

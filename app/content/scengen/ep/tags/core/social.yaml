@@ -1,0 +1,13 @@
+id: social
+category: core
+description:
+  pl: >
+    Relacje społeczne, reputacja, normy kulturowe,
+    status i interakcje międzyludzkie.
+  en: >
+    Social relations, reputation, cultural norms,
+    status, and interpersonal interaction.
+usedBy:
+  - profile
+  - goal
+  - scene

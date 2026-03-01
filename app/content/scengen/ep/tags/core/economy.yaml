@@ -1,0 +1,12 @@
+id: economy
+category: core
+description:
+  pl: >
+    Modele gospodarcze, zasoby, własność oraz przepływ
+    wartości ekonomicznej.
+  en: >
+    Economic models, resources, ownership,
+    and the flow of economic value.
+usedBy:
+  - profile
+  - goal

@@ -1,7 +1,0 @@
-kind: theme
-id: doomsday-machines
-name:
-  pl: Machiny zagłady
-  en: Doomsday Machines
-parentId: terror
-importance: 1

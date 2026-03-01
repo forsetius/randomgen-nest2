@@ -5,7 +5,7 @@ import { pMapIterable } from 'p-map';
 import { AppConfigService } from '@config/AppConfigService';
 import { ParserService } from './ParserService';
 import { ParsedFile } from '../types/ParsedFile';
-import type { ZodType } from 'zod';
+import { ZodError, ZodType } from 'zod';
 
 @Injectable()
 export class LoaderService {
@@ -74,10 +74,10 @@ export class LoaderService {
 
           return { filename, data };
         } catch (error) {
-          this.logger.error(
-            `Failed to parse file: ${filename}`,
-            (error as Error).stack,
-          );
+          this.logger.error(`Failed to parse file: ${filename}`);
+          if (error instanceof ZodError) {
+            console.log(error.issues);
+          }
 
           throw error;
         }

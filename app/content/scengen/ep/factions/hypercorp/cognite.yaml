@@ -4,4 +4,40 @@ name:
   pl: Cognite
   en: Cognite
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - mind
+  - bio:morph:menton
+  - info:research
+  - info:surveillance
+  - corp:ip
+  - corp:pr
+  - corp:culture:elite
+  - politics:influence
+  - weird:tech
+  - lore:lost-generation
+
+profileModifiers:
+  horror: NEGLIGIBLE
+  weirdness: LOW
+  hidden_truth: LOW
+  escalation: LOW
+
+relations:
+  stakeholder:
+    faction:planetary-consortium: HIGH
+
+  provides:
+    mind:augmentation: HIGH
+    mind:alteration: HIGH
+    product:nootropics: HIGH
+    product:menton: MEDIUM
+
+  requires:
+    resource:research-subjects: HIGH
+    resource:computing: MEDIUM
+
+  adversary:
+    faction:bio-conservatives: HIGH
+    faction:autonomists: MEDIUM
+

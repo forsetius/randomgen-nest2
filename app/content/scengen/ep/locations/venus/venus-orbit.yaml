@@ -4,4 +4,4 @@ name:
   pl: Orbita Wenus
   en: Venus orbit
 parentId: venus
-importance: 1
+baseWeight: 5

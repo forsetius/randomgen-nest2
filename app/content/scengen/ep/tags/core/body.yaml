@@ -1,0 +1,14 @@
+id: body
+category: core
+description:
+  pl: >
+    Fizyczne ciało i jego modyfikacje: medycyna, biomodyfikacje,
+    morfy oraz ingerencje somatyczne.
+  en: >
+    The physical body and its modification: medicine, biomods,
+    morphs, and somatic alteration.
+usedBy:
+  - profile
+  - goal
+  - scene
+  - site

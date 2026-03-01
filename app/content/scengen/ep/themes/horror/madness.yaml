@@ -1,0 +1,12 @@
+kind: theme
+id: madness
+name:
+  pl: Szaleństwo
+  en: Madness
+parentId: horror
+baseWeight: MEDIUM
+profileModifiers:
+  weirdness: HIGH
+  escalation: MEDIUM
+  scope: NEGLIGIBLE
+  complexity: MEDIUM

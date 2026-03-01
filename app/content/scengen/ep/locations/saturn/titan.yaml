@@ -1,0 +1,7 @@
+kind: location
+id: titan
+name:
+  pl: Tytan
+  en: Titan
+parentId: saturn
+baseWeight: 5

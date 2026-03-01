@@ -4,4 +4,14 @@ name:
   pl: Stellar Intelligence
   en: Stellar Intelligence
 parentId: hypercorp
-importance: 1
+baseWeight: HIGH
+tags:
+  - info:data
+  - info:espionage
+  - info:intelligence
+
+profileModifiers:
+  hidden_truth: HIGH
+  complexity: MEDIUM
+
+relations:

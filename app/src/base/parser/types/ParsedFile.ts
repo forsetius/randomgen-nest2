@@ -1,4 +1,4 @@
-export interface ParsedFile {
+export interface ParsedFile<T = unknown> {
   filename: string;
-  data: unknown;
+  data: T;
 }

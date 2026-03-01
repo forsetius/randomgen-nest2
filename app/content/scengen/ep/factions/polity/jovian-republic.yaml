@@ -4,4 +4,4 @@ name:
   pl: Republika Jowiszowa
   en: Jovian Republic
 parentId: polity
-importance: 1
+baseWeight: LOW

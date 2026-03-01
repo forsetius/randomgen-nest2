@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
-import { ScenGenController } from '@domain/scengen/ScenGenController';
-import { ScenGenService } from '@domain/scengen/services/ScenGenService';
 import { DiscoveryModule } from '@nestjs/core';
-import { ConflictOfInterestsPattern } from './services/generators/ConflictOfInterestsPattern';
+import { ScenGenController } from '@domain/scengen/ScenGenController';
 import { ParserModule } from '../../base/parser/ParserModule';
-import { SettingFactory } from '@domain/scengen/services/SettingFactory';
+import * as Generator from '@domain/scengen/generators/scenarioPatterns';
+import { PickerService } from '@domain/scengen/services/PickerService';
+import { SettingService } from '@domain/scengen/services/SettingService';
 
 @Module({
   imports: [DiscoveryModule, ParserModule],
   controllers: [ScenGenController],
-  providers: [ScenGenService, SettingFactory, ConflictOfInterestsPattern],
+  providers: [PickerService, SettingService, Generator.MissionGenerator],
 })
 export class ScenGenModule {}

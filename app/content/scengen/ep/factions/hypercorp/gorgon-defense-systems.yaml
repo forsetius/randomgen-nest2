@@ -4,7 +4,7 @@ name:
   pl: Gorgon Defense Systems
   en: Gorgon Defense Systems
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
 description:
   pl: |
     Gorgon Defense Systems to hiperkorporacja specjalizująca się w produkcji zaawansowanych 
@@ -12,4 +12,14 @@ description:
   en: |
     Gorgon Defense Systems is a hypercorporation specializing in the production of advanced 
     defense systems and weapons for military and paramilitary clients.
-url: null
+tags:
+  - security:weapons
+  - security:police
+  - tech:defense
+  - corp:operations
+
+profileModifiers:
+  violence_pressure: HIGH
+  surveillance: MEDIUM
+
+relations:

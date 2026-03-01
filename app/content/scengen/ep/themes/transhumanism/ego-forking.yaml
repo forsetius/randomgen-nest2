@@ -4,4 +4,4 @@ name:
   pl: Forkowanie Ego
   en: Ego Forking
 parentId: transhumanism
-importance: 1
+baseWeight: 3

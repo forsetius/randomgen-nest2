@@ -4,4 +4,15 @@ name:
   pl: Skinthetic
   en: Skinthetic
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - bio:morph:pod
+  - bio:tech
+  - corp:services
+  - science:genetics
+
+profileModifiers:
+  intimacy: MEDIUM
+  moral_pressure: HIGH
+
+relations:

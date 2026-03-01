@@ -4,4 +4,8 @@ name:
   pl: Zapora
   en: Firewall
 parentId: conspiracy
-importance: 1
+baseWeight: LOW
+profileModifiers:
+  grit: LOW
+  moral_pressure: NEGLIGIBLE
+  hidden_truth: LOW

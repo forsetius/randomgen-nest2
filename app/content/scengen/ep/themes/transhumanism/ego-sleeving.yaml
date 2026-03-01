@@ -4,4 +4,4 @@ name:
   pl: Przyodziewanie Ego
   en: Ego Sleeving
 parentId: transhumanism
-importance: 1
+baseWeight: 3

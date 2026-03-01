@@ -4,4 +4,4 @@ name:
   pl: Biokonserwatyści
   en: Bioconservatives
 parentId: movement
-importance: 1
+baseWeight: HIGH

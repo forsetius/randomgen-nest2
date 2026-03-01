@@ -4,7 +4,7 @@ name:
   pl: Kwartet
   en: Quartet
 parentId: vulcanoids
-importance: 2
+baseWeight: 2
 security: 3
 
 description:
@@ -15,7 +15,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wulkanoidy_ep-habitat-kwartet.html
-
-connections:
-  guards:
-    - v2011-caldwell

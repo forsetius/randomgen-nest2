@@ -4,4 +4,4 @@ name:
   pl: Technokratyzacja życia
   en: Technocratization of life
 parentId: timeless-future
-importance: 1
+baseWeight: 8

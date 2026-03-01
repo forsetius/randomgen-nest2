@@ -4,7 +4,7 @@ name:
   pl: Postapokalipsa
   en: Postapocalyptic
 parentId: null
-importance: 1
+baseWeight: LOW
 description:
   pl: |
     Świat Eclipse Phase to świat po apokalipsie. Upadek ludzkości i niemal całkowite zniszczenie cywilizacji

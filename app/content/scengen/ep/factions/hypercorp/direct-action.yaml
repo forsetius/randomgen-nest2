@@ -4,4 +4,17 @@ name:
   pl: Direct Action
   en: Direct Action
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - security:military
+  - security:police
+  - corp:operations
+  - corp:outsourcing
+
+profileModifiers:
+  grit: HIGH
+  social_pressure: MEDIUM
+  violence_pressure: HIGH
+  escalation: MEDIUM
+
+relations:

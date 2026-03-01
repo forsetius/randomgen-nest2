@@ -4,7 +4,7 @@ name:
   pl: Wulkanoidy
   en: Vulcanoids
 parentId: sun
-importance: 2
+baseWeight: 2
 
 description:
   pl: |

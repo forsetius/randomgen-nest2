@@ -4,7 +4,7 @@ name:
   pl: Afrodyta Prim
   en: Aphrodite Prime
 parentId: venus-atmosphere
-importance: 1
+baseWeight: 5
 description:
   pl: |
     Centrum turystyki wenusjańskiej i ważny ośrodek badawczy do testowania transgenicznych
@@ -14,11 +14,7 @@ description:
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wenus_ep-habitat-afrodyta-prime.html
 relations:
-  owners:
-    - polity:morningstar-constellation
-  connections:
-    - movement:uplifts
-  interests:
-    - research:genetics
-    - research:terraforming
-    - tourism
+  owned_by:
+    faction:morningstar-constellation: 5
+  stakeholder:
+    faction:uplifts: 2

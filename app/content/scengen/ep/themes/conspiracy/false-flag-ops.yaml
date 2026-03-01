@@ -1,0 +1,14 @@
+kind: theme
+id: false-flag-ops
+name:
+  en: False flag ops
+  pl: Pod fałszywą flagą
+parentId: conspiration
+baseWeight: 2
+relations:
+  stakeholder:
+    faction:polity/*: 5
+    faction:hypercorp/*: 5
+    faction:conspiracy/*: 8
+    faction:criminal/*: 3
+    faction:movement/*: 2

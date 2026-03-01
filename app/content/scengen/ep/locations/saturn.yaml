@@ -1,0 +1,9 @@
+kind: location
+id: saturn
+name:
+  pl: Saturn
+  en: Saturn
+parentId: null
+baseWeight: 8
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-saturn.html

@@ -4,7 +4,7 @@ name:
   pl: Hooverman-Geischecker
   en: Hooverman-Geischecker
 parentId: sun-orbit
-importance: 1
+baseWeight: 1
 description:
   pl: |
     Solarne centrum otwartych badań nad Słońcem. Hooverman-Geischecker to wspólne przedsięwzięcie
@@ -18,9 +18,6 @@ description:
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-slonce.html
 relations:
-  stakeholders:
-    - movement:argonauts
-    - polity:titanian-commonwealth
-  interests:
-    - research:physics
-    - tourism
+  stakeholder:
+    faction:argonauts: 8
+    faction:titanian-commonwealth: 5

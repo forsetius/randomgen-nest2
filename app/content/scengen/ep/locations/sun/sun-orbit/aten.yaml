@@ -4,7 +4,7 @@ name:
   pl: Aton
   en: Aten
 parentId: sun-orbit
-importance: 2
+baseWeight: 2
 security: 5
 
 description:
@@ -21,11 +21,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-slonce.html
-
-resources:
-  research:
-    energy: 1
-    propulsion: 1
-    military: 2
-    neurosciences: 2
-    titans: 2

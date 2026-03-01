@@ -1,0 +1,12 @@
+kind: theme
+id: plagues
+name:
+  pl: Plagi
+  en: Plagues
+parentId: horror
+baseWeight: LOW
+profileModifiers:
+  social: NEGLIGIBLE
+  escalation: HIGH
+  scope: NEGLIGIBLE
+  complexity: MEDIUM

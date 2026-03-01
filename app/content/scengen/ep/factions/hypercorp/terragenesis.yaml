@@ -4,4 +4,14 @@ name:
   pl: Terragenesis
   en: Terragenesis
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - science:terraforming
+  - bio:ecosystem
+  - logistics:environmental-data
+
+profileModifiers:
+  scope: HIGH
+  moral_pressure: MEDIUM
+
+relations:

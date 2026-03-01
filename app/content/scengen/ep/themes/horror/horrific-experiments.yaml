@@ -1,0 +1,14 @@
+kind: theme
+id: horrific-experiments
+name:
+  pl: Potworne eksperymenty
+  en: Horrific experiments
+parentId: horror
+baseWeight: MEDIUM
+profileModifiers:
+  weirdness: MEDIUM
+  grit: NEGLIGIBLE
+  hidden_truth: MEDIUM
+  escalation: LOW
+  scope: LOW
+  complexity: LOW

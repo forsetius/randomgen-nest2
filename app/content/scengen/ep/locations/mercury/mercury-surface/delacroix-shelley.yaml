@@ -4,7 +4,7 @@ name:
   pl: Delacroix-Shelley
   en: Delacroix-Shelley
 parentId: mercury-surface
-importance: 3
+baseWeight: 3
 security: 5
 
 description:
@@ -15,7 +15,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-delacroix-shelley.html
-
-resources:
-  water: 2
-  research: 1

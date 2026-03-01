@@ -1,7 +1,0 @@
-kind: theme
-id: madness
-name:
-  pl: Szaleństwo
-  en: Madness
-parentId: terror
-importance: 1

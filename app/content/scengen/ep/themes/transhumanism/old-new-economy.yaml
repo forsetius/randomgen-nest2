@@ -4,4 +4,4 @@ name:
   pl: Stara/Nowa gospodarka
   en: Old/New Economy
 parentId: transhumanism
-importance: 1
+baseWeight: 2

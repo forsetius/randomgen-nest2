@@ -4,4 +4,14 @@ name:
   pl: Nimbus
   en: Nimbus
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - tech:electronics
+  - info:communications
+  - info:network-operations
+
+profileModifiers:
+  complexity: MEDIUM
+  mobility: MEDIUM
+
+relations:

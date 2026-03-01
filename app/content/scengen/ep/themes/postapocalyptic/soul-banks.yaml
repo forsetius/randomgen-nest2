@@ -4,4 +4,4 @@ name:
   pl: Banki dusz
   en: Soul banks
 parentId: postapocalyptic
-importance: 1
+baseWeight: 5

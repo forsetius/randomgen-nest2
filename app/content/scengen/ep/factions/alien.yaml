@@ -4,4 +4,9 @@ name:
   pl: Obcy
   en: Alien
 parentId: null
-importance: 1
+baseWeight: NEGLIGIBLE
+tags:
+  - alien
+profileModifiers:
+  weirdness: HIGH
+relations:

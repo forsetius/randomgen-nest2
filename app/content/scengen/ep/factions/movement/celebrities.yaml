@@ -4,4 +4,4 @@ name:
   pl: Celebryci
   en: Glitterati
 parentId: movement
-importance: 1
+baseWeight: HIGH

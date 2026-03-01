@@ -1,0 +1,54 @@
+kind: seed
+id: subverted-critters
+name:
+  en: "Subverted Critters"
+  pl: "Zhackowane stworzenia"
+description:
+  en: "Subverted creatures."
+  pl: "Zhackowane stworzenia."
+url:
+  pl: "https://www.kongregate.com/games/SirWolfenstein/subverted-critters"
+
+themes:
+  - conspiracy: -2
+  - corporate-wars: 2
+  - postapocalyptic: 3
+  - lost-heritage: -1
+  - slavery: -2
+  - soul-banks: -3
+  - terror: 3
+  - doomsday-machines: -2
+  - horrific-experiments: 3
+  - thought-control: -3
+  - war-atrocities: -1
+  - timeless-future: -3
+  - assessment-of-usefulness: 2
+  - humanity: 1
+  - loyalty-and-betrayal: 1
+  - pursuit-of-profit: 2
+  - transhumanism: -3
+
+locations:
+  - sun: -3
+  - mercury: -2
+  - earth: 2
+  - luna: -1
+  - mars: 1
+  - asteroid: -2
+  - jupiter: -1
+  - saturn: -2
+  - titan: -3
+  - uranus: -2
+  - neptune: -2
+  - trans-neptune: -3
+  - pandora-gates: 0
+
+sites:
+  - city: -2
+  - town: -1
+  - wilderness: 1
+
+tags:
+  - artificial-life
+  - hacking
+  - mutation

@@ -4,4 +4,4 @@ name:
   pl: Morfy
   en: Morphs
 parentId: transhumanism
-importance: 1
+baseWeight: 3

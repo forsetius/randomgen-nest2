@@ -4,4 +4,14 @@ name:
   pl: Pathfinder
   en: Pathfinder
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - space:exoplanets
+  - space:pandora-gates
+
+profileModifiers:
+  mobility: HIGH
+  scope: EXTREME
+  hidden_truth: LOW
+
+relations:

@@ -4,12 +4,12 @@ name:
   pl: Wenus
   en: Venus
 parentId: null
-importance: 1
+baseWeight: 5
 description:
   pl: |
     Wenus to piekielnie gorąca planeta z gęstą, toksyczną atmosferą i powierzchnią pokrytą
     lawą. Mimo tych ekstremalnych warunków, na wysokości ok. 50km nad powierzchnią unosi się
-    kilkanaście aerostatów a na powierzchni prowadzone są prace wydobybwcze.
+    kilkanaście aerostatów a na powierzchni prowadzone są prace wydobywcze.
   en: |
     Venus is a hellishly hot planet with a dense, toxic atmosphere and a surface covered
     in lava. Despite these extreme conditions, several aerostats float at an altitude of

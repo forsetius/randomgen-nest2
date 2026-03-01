@@ -1,0 +1,11 @@
+kind: theme
+id: alien-artifacts
+name:
+  pl: Artefakty Obcych
+  en: Alien artifacts
+parentId: horror
+baseWeight: NEGLIGIBLE
+profileModifiers:
+  hidden_truth: MEDIUM
+  weirdness: HIGH
+  escalation: LOW

@@ -1,7 +1,0 @@
-kind: faction
-id: anarchists
-name:
-  pl: Anarchiści
-  en: Anarchists
-parentId: polity
-importance: 1

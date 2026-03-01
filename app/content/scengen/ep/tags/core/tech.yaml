@@ -1,0 +1,12 @@
+id: tech
+category: core
+description:
+  pl: >
+    Technologia ogólna nieobjęta innymi kategoriami,
+    w tym systemy techniczne i inżynieryjne.
+  en: >
+    General technology not covered by other categories,
+    including technical and engineering systems.
+usedBy:
+  - profile
+  - site

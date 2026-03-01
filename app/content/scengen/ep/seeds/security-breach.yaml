@@ -1,0 +1,12 @@
+kind: seed
+id: security-breach
+name:
+  en: Security Breach
+  pl: Przełamanie zabezpieczeń
+description:
+  en: "Security breach"
+  pl: "Przełamanie zabezpieczeń"
+url:
+  pl: "/pl/security-breach"
+tags:
+  - security

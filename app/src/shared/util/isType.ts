@@ -16,12 +16,3 @@ export const isStringNumber = (value?: string) => {
 
   return !Number.isNaN(Number(trimmed));
 };
-
-export function throwOnUndefined<T>(
-  value: T | undefined,
-  error: Error,
-): T | never {
-  if (typeof value === 'undefined') throw error;
-
-  return value;
-}

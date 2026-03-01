@@ -1,0 +1,13 @@
+id: space
+category: core
+description:
+  pl: >
+    Środowisko kosmiczne i infrastruktura pozaziemska:
+    orbitale, stacje, loty, delta-v i EVA.
+  en: >
+    The space environment and off-world infrastructure:
+    orbitals, stations, spaceflight, delta-v, and EVA.
+usedBy:
+  - profile
+  - scene
+  - site

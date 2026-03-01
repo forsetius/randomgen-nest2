@@ -4,4 +4,10 @@ name:
   pl: Tajne stowarzyszenie
   en: Secret Society
 parentId: null
-importance: 2
+baseWeight: NEGLIGIBLE
+tags:
+  - conspiracy
+profileModifiers:
+  complexity: LOW
+  hidden_truth: MEDIUM
+relations:

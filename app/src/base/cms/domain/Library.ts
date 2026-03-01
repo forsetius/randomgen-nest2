@@ -1,5 +1,5 @@
 import { Page } from './Page';
-import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
+import { AutoArrayMap } from '@shared/util/collections/AutoArrayMap';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 import { Category } from './Category';
@@ -10,7 +10,7 @@ import { PageNotFoundException } from '../exceptions/PageNotFoundException';
 export class Library {
   public readonly pages = new Map<string, Page>();
   public readonly categories = new Map<string, Category>();
-  public readonly tags = new AutoMultiMap<string, Page>();
+  public readonly tags = new AutoArrayMap<string, Page>();
 
   public constructor(
     public readonly locale: Locale,

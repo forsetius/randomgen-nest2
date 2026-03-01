@@ -4,11 +4,11 @@ name:
   pl: Konstelacja Gwiazdy Zarannej
   en: Morningstar Constellation
 parentId: polity
-importance: 1
+baseWeight: MEDIUM
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_encyklopedia_ustroje_ep-konstelacja-gwiazdy-zarannej.html
 relations:
-  owns:
-    - location:venus
-  adversaries:
-    - polity:planetary-consortium
+  presence:
+    location:venus: 8
+  adversary:
+    faction:planetary-consortium: 5

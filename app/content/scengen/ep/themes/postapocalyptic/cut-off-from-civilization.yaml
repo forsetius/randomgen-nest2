@@ -4,4 +4,4 @@ name:
   pl: Odcięcie od cywilizacji
   en: Cut off from civilization
 parentId: postapocalyptic
-importance: 1
+baseWeight: 2

@@ -4,4 +4,4 @@ name:
   pl: Rewitalizatorzy
   en: Reclaimers
 parentId: movement
-importance: 1
+baseWeight: LOW

@@ -4,4 +4,15 @@ name:
   pl: Exotech
   en: Exotech
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - tech:software
+  - tech:ai
+  - info:mesh-infrastructure
+
+profileModifiers:
+  complexity: HIGH
+  hidden_truth: MEDIUM
+  weirdness: MEDIUM
+
+relations:

@@ -4,4 +4,4 @@ name:
   pl: Utrata niewinności
   en: Loss of innocence
 parentId: timeless-future
-importance: 1
+baseWeight: 2

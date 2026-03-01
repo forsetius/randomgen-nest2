@@ -4,4 +4,4 @@ name:
   pl: Piraci
   en: Pirates
 parentId: criminal
-importance: 1
+baseWeight: NEGLIGIBLE

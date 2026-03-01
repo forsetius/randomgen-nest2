@@ -1,0 +1,13 @@
+id: corp
+category: core
+description:
+  pl: >
+    Podmioty korporacyjne, logika rynkowa, kontrakty, outsourcing,
+    zarządzanie własnością i wpływami gospodarczymi.
+  en: >
+    Corporate entities, market logic, contracts, outsourcing,
+    and management of economic power.
+usedBy:
+  - profile
+  - goal
+  - relation

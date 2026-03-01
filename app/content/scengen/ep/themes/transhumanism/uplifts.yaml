@@ -4,4 +4,4 @@ name:
   pl: Uplifty
   en: Uplifts
 parentId: transhumanism
-importance: 1
+baseWeight: 3

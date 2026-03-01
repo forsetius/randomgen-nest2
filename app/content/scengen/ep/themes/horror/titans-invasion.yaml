@@ -1,0 +1,13 @@
+kind: theme
+id: titans-invasion
+name:
+  pl: Inwazja TITAN-ów
+  en: TITANs invasion
+parentId: horror
+baseWeight: NEGLIGIBLE
+profileModifiers:
+  adventure: LOW
+  grit: LOW
+  escalation: MEDIUM
+  scope: LOW
+  complexity: LOW

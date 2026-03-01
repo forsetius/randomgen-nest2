@@ -4,7 +4,7 @@ name:
   pl: Wulkanoidy
   en: Vulcanoids
 parentId: null
-importance: 1
+baseWeight: 2
 description:
   pl: |
     Pas Wulkanoidów to pas małych asteroid krążących wewnątrz orbity Merkurego.

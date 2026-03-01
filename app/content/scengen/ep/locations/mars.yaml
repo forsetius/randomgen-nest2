@@ -1,0 +1,9 @@
+kind: location
+id: mars
+name:
+  pl: Mars
+  en: Mars
+parentId: null
+baseWeight: 8
+url:
+  pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_ep-atlas-mars.html

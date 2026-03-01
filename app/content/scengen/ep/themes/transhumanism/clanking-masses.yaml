@@ -4,4 +4,4 @@ name:
   pl: Szmelcen-proletariat
   en: Clanking masses
 parentId: transhumanism
-importance: 1
+baseWeight: 5

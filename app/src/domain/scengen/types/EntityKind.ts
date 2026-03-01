@@ -1,6 +1,7 @@
 export enum EntityKind {
   FACTION = 'faction',
+  GOAL = 'goal',
   LOCATION = 'location',
-  EVENT = 'event',
+  TARGET = 'target',
   THEME = 'theme',
 }

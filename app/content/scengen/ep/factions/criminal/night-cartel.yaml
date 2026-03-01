@@ -4,4 +4,4 @@ name:
   pl: Nocny Kartel
   en: Night Cartel
 parentId: criminal
-importance: 1
+baseWeight: MEDIUM

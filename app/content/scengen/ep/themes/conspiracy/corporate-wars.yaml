@@ -1,0 +1,10 @@
+kind: theme
+id: corporate-wars
+name:
+  pl: Wojny korporacyjne
+  en: Corporate wars
+parentId: conspiration
+baseWeight: 5
+relations:
+  stakeholder:
+    faction:hypercorp/*: 8

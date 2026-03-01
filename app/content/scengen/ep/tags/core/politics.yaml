@@ -1,0 +1,13 @@
+id: politics
+category: core
+description:
+  pl: >
+    Władza polityczna, instytucje, frakcje, prawo oraz procesy decyzyjne
+    wpływające na całe społeczeństwa.
+  en: >
+    Political power, institutions, factions, law, and decision-making
+    processes affecting societies.
+usedBy:
+  - profile
+  - goal
+  - relation

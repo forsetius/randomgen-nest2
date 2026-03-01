@@ -4,7 +4,7 @@ name:
   pl: Słońce
   en: The Sun
 parentId: null
-importance: 1
+baseWeight: 1
 description:
   pl: |
     Słońce jest gwiazdą centralną Układu Słonecznego i głównym źródłem energii dla wszystkich jego ciał

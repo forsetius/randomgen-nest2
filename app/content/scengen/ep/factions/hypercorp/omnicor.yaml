@@ -4,4 +4,16 @@ name:
   pl: Omnicor
   en: Omnicor
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - tech:energy-systems
+  - tech:nanofabrication
+  - science:chemical-engineering
+  - space:infrastructure
+
+profileModifiers:
+  scarcity: MEDIUM
+  scope: HIGH
+  grit: MEDIUM
+
+relations:

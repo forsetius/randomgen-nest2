@@ -4,4 +4,4 @@ name:
   pl: Liga Tharsis
   en: Tharsis League
 parentId: polity
-importance: 1
+baseWeight: LOW

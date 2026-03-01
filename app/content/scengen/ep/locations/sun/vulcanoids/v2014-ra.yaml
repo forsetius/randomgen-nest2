@@ -4,7 +4,7 @@ name:
   pl: V/2014 Ra
   en: V/2014 Ra
 parentId: vulcanoids
-importance: 2
+baseWeight: 2
 security: 3
 
 description:
@@ -19,7 +19,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wulkanoidy_ep-habitat-ra.html
-
-connections:
-  watches:
-    - v2011-caldwell

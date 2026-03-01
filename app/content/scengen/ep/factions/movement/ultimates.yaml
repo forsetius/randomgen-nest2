@@ -4,4 +4,4 @@ name:
   pl: Niedoścignieni
   en: Ultimates
 parentId: movement
-importance: 1
+baseWeight: LOW

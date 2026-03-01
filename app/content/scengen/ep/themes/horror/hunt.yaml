@@ -1,0 +1,12 @@
+kind: theme
+id: hunt
+name:
+  pl: Polowanie
+  en: The hunt
+parentId: horror
+baseWeight: LOW
+profileModifiers:
+  adventure: LOW
+  escalation: LOW
+  scope: LOW
+  complexity: HIGH

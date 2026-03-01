@@ -4,4 +4,15 @@ name:
   pl: Go-nin
   en: Go-nin
 parentId: hypercorp
-importance: 1
+baseWeight: HIGH
+tags:
+  - economy:banking
+  - tech:robotics
+  - bio:agriculture
+  - corp:services
+
+profileModifiers:
+  social_pressure: MEDIUM
+  economy: MEDIUM
+
+relations:

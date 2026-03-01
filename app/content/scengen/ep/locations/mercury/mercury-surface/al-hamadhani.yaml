@@ -4,7 +4,7 @@ name:
   pl: Al-Hamadhani
   en: Al-Hamadhani
 parentId: mercury-surface
-importance: 2
+baseWeight: 2
 
 description:
   pl: |
@@ -17,7 +17,3 @@ description:
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-alhamadhani.html
 
-resources:
-  trade:
-    - goods
-    - information

@@ -4,4 +4,14 @@ name:
   pl: Starware
   en: Starware
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - space:infrastructure
+  - tech:aerospace
+  - tech:robotics
+
+profileModifiers:
+  mobility: HIGH
+  complexity: HIGH
+
+relations:

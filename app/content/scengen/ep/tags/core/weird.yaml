@@ -1,0 +1,12 @@
+id: weird
+category: core
+description:
+  pl: >
+    Anomalie i zjawiska trudne do sklasyfikowania,
+    wykraczające poza standardowe modele rzeczywistości.
+  en: >
+    Anomalies and phenomena that defy standard
+    models of reality.
+usedBy:
+  - profile
+  - scene

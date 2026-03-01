@@ -1,7 +1,0 @@
-kind: faction
-id: jaehon-offworld
-name:
-  pl: Jaehon Offworld
-  en: Jaehon Offworld
-parentId: hypercorp
-importance: 1

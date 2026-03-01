@@ -1,0 +1,12 @@
+kind: theme
+id: asi-interplay
+name:
+  en: ASI interplay
+  pl: Rozgrywki między ASI
+parentId: conspiration
+baseWeight: 1
+relations:
+  stakeholder:
+    faction:titans: 2
+    faction:prometheans: 1
+    faction:medeans: 1

@@ -4,4 +4,4 @@ name:
   pl: Zdziczenie
   en: Devolution
 parentId: postapocalyptic
-importance: 1
+baseWeight: 5

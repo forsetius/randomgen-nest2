@@ -1,0 +1,7 @@
+kind: faction
+id: extropians
+name:
+  pl: Ekstropiści
+  en: Extropians
+parentId: autonomists
+baseWeight: MEDIUM

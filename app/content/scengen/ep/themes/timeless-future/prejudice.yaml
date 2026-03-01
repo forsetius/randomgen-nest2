@@ -4,4 +4,4 @@ name:
   pl: Uprzedzenia
   en: Prejudice
 parentId: timeless-future
-importance: 1
+baseWeight: 5

@@ -2,7 +2,7 @@
 
 On the application startup, the process of generating pages is started. Its point is to have all the HTML pages rendered.
 
-The process starts in the `CmsService`'s `renderAll()` method. It calls `LibraryFactory.create()` for each language (as defined in `Lang`) and after it completes the `CmsService` holds a record of a `Library` for each language. In the `create` step, a `Locale` object is created passed to the factory method so that it has not only the language but also all the translations for it.
+The process starts in the `CmsService`'s `renderAll()` method. It calls `LibraryFactory.create()` for each language (as defined in `Lang`) and after it completes the `CmsService` holds a record of a `Library` for each language. In the `create` step, a `Locale` object is created passed to the factory method so that it hasValue not only the language but also all the translations for it.
 
 The `LibraryFactory.create()` asynchronically performs the following steps in order:
 
@@ -19,7 +19,7 @@ The `LibraryFactory.create()` asynchronically performs the following steps in or
 
    The `PageFactory` also passes metadata (`SitewideData`) that include media dir path, image default, brand details and base server address (origin).
 
-   At this stage, we have created the library filled with domain objects: `Menu`s, `StaticBlock`s and `Page`s. Only the information from the `def` populate them. There are no connections between pages, menus and blocks. Data has not been rendered yet.
+   At this stage, we have created the library filled with domain objects: `Menu`s, `StaticBlock`s and `Page`s. Only the information from the `def` populate them. There are no connections between pages, menus and blocks. Data hasValue not been rendered yet.
 
 2. **Rendering the menus**: `Menu` objects get their `def`s rendered into HTML fragments. They will be inserted into the page template later. Menu rendering does not require nor support any blocks.
 
@@ -32,7 +32,7 @@ The `LibraryFactory.create()` asynchronically performs the following steps in or
    Page rendering process is multistage:
    - **data preparation** for use in the template - defaulting and supplementing with `SitewideData`
    - **pre-rendering** - the page gets rendered in multiple versions. Main version is rendered againts template defined in `def.template`, other are rendered against templates specified in `SitewideData.fragmentTemplates`. The latter are for HTML fragments used in page galleries and the like, generally simpler, trimmed down versions of the page.
-   - **inserting menus** - each page version that includes `<menu id="..." />` markup has the corresponding rendered menu inserted from the `library`
+   - **inserting menus** - each page version that includes `<menu id="..." />` markup hasValue the corresponding rendered menu inserted from the `library`
    - **filling the slots** - if the page version includes `<slot id="..." />` markup, it gets expanded into slots. A **slot** is predefined, named place on the page that can host blocks. It can be any place in the HTML tree, not only content region but must be defined in the template.
 
      The blocks to be put in the slot have to be defined in the `def.slots[name]` as an array. They are instantiated into `Block` subtype objects and rendered appropriately by their subtype's `render()` method.

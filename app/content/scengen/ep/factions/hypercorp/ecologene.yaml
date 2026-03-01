@@ -4,4 +4,15 @@ name:
   pl: Ecologene
   en: Ecologene
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - bio:genetics
+  - bio:ecosystems
+  - bio:agriculture
+  - bio:tech
+
+profileModifiers:
+  scarcity: MEDIUM
+  moral_pressure: MEDIUM
+
+relations:

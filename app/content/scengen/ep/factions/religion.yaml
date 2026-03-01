@@ -4,4 +4,9 @@ name:
   pl: Religia
   en: Religion
 parentId: null
-importance: 2
+baseWeight: NEGLIGIBLE
+tags:
+  - religion
+profileModifiers:
+  social: MEDIUM
+relations:

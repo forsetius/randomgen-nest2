@@ -4,4 +4,14 @@ name:
   pl: Somatek
   en: Somatek
 parentId: hypercorp
-importance: 1
+baseWeight: LOW
+tags:
+  - bio:uplifts
+  - bio:medicine
+  - science:genetics
+
+profileModifiers:
+  moral_pressure: HIGH
+  hidden_truth: MEDIUM
+
+relations:

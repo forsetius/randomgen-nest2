@@ -4,4 +4,4 @@ name:
   pl: Proteusze
   en: Mercurials
 parentId: movement
-importance: 1
+baseWeight: MEDIUM

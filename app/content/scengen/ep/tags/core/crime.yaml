@@ -1,0 +1,13 @@
+id: crime
+category: core
+description:
+  pl: >
+    Działalność przestępcza: przemyt, oszustwa, szantaż,
+    zorganizowane grupy i czarny rynek.
+  en: >
+    Criminal activity: smuggling, fraud, extortion,
+    organized crime, and black markets.
+usedBy:
+  - goal
+  - scene
+  - relation

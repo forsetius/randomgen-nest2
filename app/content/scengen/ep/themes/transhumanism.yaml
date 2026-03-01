@@ -4,7 +4,10 @@ name:
   pl: Transhumanizm
   en: Transhumanism
 parentId: null
-importance: 1
+baseWeight: LOW
+profileModifiers:
+  social: LOW
+  weirdness: NEGLIGIBLE
 description:
   pl: |
     Transhumanizm to pojęcie używane zamiennie z "ulepszaniem człowieka". Jest to światowy ruch kulturalno-

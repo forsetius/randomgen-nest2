@@ -1,7 +1,0 @@
-kind: theme
-id: plagues
-name:
-  pl: Plagi
-  en: Plagues
-parentId: terror
-importance: 1

@@ -4,4 +4,4 @@ name:
   pl: Drakońskie sposoby na przetrwanie
   en: Draconian survival methods
 parentId: postapocalyptic
-importance: 1
+baseWeight: 3

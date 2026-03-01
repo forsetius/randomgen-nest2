@@ -1,0 +1,7 @@
+kind: faction
+id: anarchists
+name:
+  pl: Anarchiści
+  en: Anarchists
+parentId: autonomists
+baseWeight: MEDIUM

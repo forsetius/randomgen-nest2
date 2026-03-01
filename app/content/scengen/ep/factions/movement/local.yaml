@@ -1,0 +1,7 @@
+kind: faction
+id: local
+name:
+  pl: Lokalne
+  en: Local
+parentId: movement
+baseWeight: NEGLIGIBLE

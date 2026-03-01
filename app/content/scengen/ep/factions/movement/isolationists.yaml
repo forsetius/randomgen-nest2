@@ -1,7 +1,0 @@
-kind: faction
-id: isolationists
-name:
-  pl: Izolacjoniści
-  en: Isolationists
-parentId: movement
-importance: 1

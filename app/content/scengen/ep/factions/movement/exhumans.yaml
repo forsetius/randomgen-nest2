@@ -4,4 +4,4 @@ name:
   pl: Eksludzie
   en: Exhumans
 parentId: movement
-importance: 1
+baseWeight: LOW

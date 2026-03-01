@@ -4,4 +4,9 @@ name:
   pl: Projekt Ozma
   en: Project Ozma
 parentId: conspiracy
-importance: 1
+baseWeight: MEDIUM
+profileModifiers:
+  grit: MEDIUM
+  hidden_truth: MEDIUM
+  violence_pressure: LOW
+  escalation: LOW

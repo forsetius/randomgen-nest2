@@ -4,4 +4,4 @@ name:
   pl: Niedobory
   en: Shortages
 parentId: postapocalyptic
-importance: 1
+baseWeight: 2

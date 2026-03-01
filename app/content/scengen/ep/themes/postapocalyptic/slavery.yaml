@@ -4,4 +4,4 @@ name:
   pl: Niewolnictwo
   en: Slavery
 parentId: postapocalyptic
-importance: 1
+baseWeight: 5

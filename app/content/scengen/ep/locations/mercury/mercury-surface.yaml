@@ -4,4 +4,4 @@ name:
   pl: Powierzchnia Merkurego
   en: Mercury surface
 parentId: mercury
-importance: 2
+baseWeight: 2

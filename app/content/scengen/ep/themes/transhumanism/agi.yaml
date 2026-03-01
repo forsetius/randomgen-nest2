@@ -4,4 +4,4 @@ name:
   pl: AGI
   en: AGI
 parentId: transhumanism
-importance: 1
+baseWeight: 3

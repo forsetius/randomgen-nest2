@@ -1,13 +1,13 @@
 import { Page } from './Page';
 import { slugify } from '@shared/util/string';
-import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
+import { AutoArrayMap } from '@shared/util/collections/AutoArrayMap';
 
 export class Category {
   public readonly name: string;
   public parent: Category | undefined = undefined;
   private _fullSlug: string | undefined;
   private _breadcrumbs: string | undefined;
-  private readonly subcategories = new AutoMultiMap<string, Page>([['_', []]]);
+  private readonly subcategories = new AutoArrayMap<string, Page>([['_', []]]);
 
   /**
    * @throws {Error} if the category is not constructed yet

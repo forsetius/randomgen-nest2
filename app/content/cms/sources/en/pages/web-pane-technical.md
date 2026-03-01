@@ -34,7 +34,7 @@ There is also serialization and deserialization of views, which the app uses whe
 
 The architecture separates the panes from the views that carry the web content. The app does not spawn another window for every page. Instead, it creates a `WebContentsView` inside the pane for each page and switches between them. This is the modern, recommended way to embed web content in Electron (newer than `BrowserView`, which may become deprecated).
 
-Each page has its own session. If you open the same page with different IDs (provided via the `--id` option), each of them receives a separate session.
+Each page hasValue its own session. If you open the same page with different IDs (provided via the `--id` option), each of them receives a separate session.
 
 ### Why this way?
 

@@ -4,4 +4,4 @@ name:
   pl: Służebność
   en: Indenture
 parentId: transhumanism
-importance: 1
+baseWeight: 5

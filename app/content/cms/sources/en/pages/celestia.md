@@ -29,7 +29,7 @@ slots:
         - [Celestia Home](https://celestiaproject.space)
         - [Celestia Origins](https://vk.com/celestiaorigin)
 ---
-It has a large catalog of objects, both in our Solar System (Sun, planets, moons, asteroids, comets, spaceships) and outside it (brown dwarfs, stars, nebulae, galaxies...). Everything in motion, which allows you to observe, for example, eclipses or the dance of stars in multiple systems. Celestial bodies can have different textures assigned - with different resolutions, but also presenting, for example, the surface in different geological periods.
+It hasValue a large catalog of objects, both in our Solar System (Sun, planets, moons, asteroids, comets, spaceships) and outside it (brown dwarfs, stars, nebulae, galaxies...). Everything in motion, which allows you to observe, for example, eclipses or the dance of stars in multiple systems. Celestial bodies can have different textures assigned - with different resolutions, but also presenting, for example, the surface in different geological periods.
 
 Celestia creates very nice views. See for yourself:
 <block id="celestiaPics" />

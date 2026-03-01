@@ -4,4 +4,10 @@ name:
   pl: Ruch społeczny
   en: Social Movement
 parentId: null
-importance: 3
+baseWeight: NEGLIGIBLE
+tags:
+  - social_movement
+profileModifiers:
+  social: LOW
+  grit: NEGLIGIBLE
+relations:

@@ -1,0 +1,73 @@
+{
+  "scenario": {
+    "pattern": "Mission execution",
+    "description": "Onboard the Aphrodite Prime aerostat, an Ecologene laboratory conducts a research into the neogenic life forms able to live in the Venusian atmosphere. One of the results is a transgenic species whose DNA includes code influenced by TITANs. First specimens are out of the vats and it turns out the pollen they produce induces madness in humans.",
+
+    "setup": [
+      "Ecologene laboratory on the Aphrodite Prime aerostat",
+      "Research on the artificial life forms for the Venusian atmosphere",
+      "TITANs infection",
+      "Subverted critters",
+      "Hallucinogenic pathogen",
+      "Field tests on the unwitting population"
+    ]
+  },
+  "theme": {
+    "name": "Terror",
+    "description": "Horror takes many forms, but in Eclipse Phase it is most often psychological horror. After all, the characters in this world face uncertainty about survival (both their own and that of the entire species), fear of the unknown, a sense of poignant emptiness and the indifference of the Universe... Sometimes these fears take on a real form, and characters encounter Things and Beings among the stars that should not exist, or repulsive Aliens. Above all, they witness the harm and injustice that transhumans are capable of inflicting on each other – and in the emptiness of space, when it seems that no society is watching or judging, these things are poignant and terrifying.",
+    "subitem": {
+      "name": "Madness",
+      "description": "In the vast blackness of space, there are things the human mind was not meant to grasp"
+    }
+  },
+  "location": {
+    "name": "Venus",
+    "description": "Venus is a hellishly hot planet with a dense, toxic atmosphere and a surface covered\n    in lava. Despite these extreme conditions, several aerostats float at an altitude of\n    about 50 km above the surface, and mining operations are carried out on the surface.\n",
+    "subitem": {
+      "name": "Venus atmosphere",
+      "description": "Even though Venusian atmosphere is deadly near the surface, at the 50km above it the conditions are quite habitable. Thus, the skies of Venus host numerous aerostats - cities floating among the yellowish clouds.",
+      "subitem": {
+        "name": "Aphrodite Prime",
+        "description": "The center for Venusian tourism and a major research hub for testing transgenic Venusian species.\n"
+      }
+    }
+  },
+  "factions": [
+    {
+      "id": "pcs",
+      "name": "Players party",
+      "role": "player",
+      "goals": [
+        "Infiltrate the research facility",
+        "Destroy the TITANs hybrid specimens",
+        "Destroy the research data"
+      ]
+    },
+    {
+      "id": "firewall",
+      "name": "Firewall",
+      "role": "employer",
+      "goals": [
+        "Prevent the research into TITANs' technology",
+        "Prevent the information leakage"
+      ],
+      "relations": {
+        "pcs": "Deniable assets",
+        "ecologene": "Threat to be defused"
+      }
+    },
+    {
+      "id": "ecologene",
+      "name": "Ecologene",
+      "role": "enemy",
+      "goals": [
+        "Keep out any unauthorised access to the research facility",
+        "Protect the ongoing research",
+        "Keep the hybrid specimens safe and under control"
+      ],
+      "relations": {
+        "pcs": "Threat to be destroyed"
+      }
+    }
+  ]
+}

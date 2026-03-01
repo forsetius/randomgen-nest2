@@ -1,7 +1,12 @@
 id: titans
 kind: faction
 parentId: alien
-importance: 1
 name:
   pl: TITAN-i
   en: TITANs
+baseWeight: HIGH
+profileModifiers:
+  grit: MEDIUM
+  horror: MEDIUM
+  hidden_truth: LOW
+  escalation: MEDIUM

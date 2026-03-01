@@ -4,4 +4,4 @@ name:
   pl: Ocena przydatności
   en: Assessment of usefulness
 parentId: timeless-future
-importance: 1
+baseWeight: 1

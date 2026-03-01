@@ -4,15 +4,15 @@ name:
   pl: Konsorcjum Planetarne
   en: Planetary Consortium
 parentId: polity
-importance: 1
+baseWeight: HIGH
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_encyklopedia_ustroje_ep-konsorcjum-planetarne.html
 relations:
-  owns:
-    - location:mars
-  adversaries:
-    - polity:morningstar-constellation
-    - polity:titanian-commonwealth
-    - polity:tharsis-league
-    - polity:jovian-republic
-    - polity:anarchists
+  presence:
+    location:mars: 8
+  adversary:
+    faction:morningstar-constellation: 3
+    faction:titanian-commonwealth: 5
+    faction:tharsis-league: 2
+    faction:jovian-republic: 5
+    faction:anarchists: 8

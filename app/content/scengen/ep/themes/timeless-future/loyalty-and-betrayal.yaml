@@ -4,4 +4,4 @@ name:
   pl: Lojalność i zdrada
   en: Loyalty and betrayal
 parentId: timeless-future
-importance: 1
+baseWeight: 3

@@ -1,0 +1,14 @@
+id: mind
+category: core
+description:
+  pl: >
+    Zagadnienia związane z umysłem, świadomością, percepcją i tożsamością,
+    w tym kognitywistyka, emulacja umysłu oraz manipulacja psychiką.
+  en: >
+    Topics related to the mind, consciousness, perception, and identity,
+    including cognitive science, mind emulation, and mental manipulation.
+usedBy:
+  - profile
+  - goal
+  - scene
+  - site

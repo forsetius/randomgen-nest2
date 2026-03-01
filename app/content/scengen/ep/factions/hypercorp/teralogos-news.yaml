@@ -4,4 +4,14 @@ name:
   pl: Teralogos News
   en: Teralogos News
 parentId: hypercorp
-importance: 1
+baseWeight: NEGLIGIBLE
+tags:
+  - info:news
+
+profileModifiers:
+  horror: NEGLIGIBLE
+  weirdness: LOW
+  hidden_truth: LOW
+  escalation: LOW
+
+relations:

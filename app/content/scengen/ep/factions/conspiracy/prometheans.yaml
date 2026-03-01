@@ -1,7 +1,12 @@
-kind: faction
 id: prometheans
+kind: faction
+parentId: alien
 name:
-  pl: Prometeusze
-  en: Prometheans
-parentId: conspiracy
-importance: 1
+  pl: Faktorzy
+  en: Factors
+baseWeight: NEGLIGIBLE
+profileModifiers:
+  grit: NEGLIGIBLE
+  moral_pressure: LOW
+  hidden_truth: HIGH
+  complexity: LOW

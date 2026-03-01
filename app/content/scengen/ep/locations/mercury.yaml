@@ -4,7 +4,7 @@ name:
   pl: Merkury
   en: Mercury
 parentId: null
-importance: 1
+baseWeight: 3
 description:
   pl: |
     Merkury to prawdziwa kwintesencja pustyni: zakurzona, sucha i nieustannie prażona przez

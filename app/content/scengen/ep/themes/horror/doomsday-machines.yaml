@@ -1,0 +1,13 @@
+kind: theme
+id: doomsday-machines
+name:
+  pl: Machiny zagłady
+  en: Doomsday Machines
+parentId: horror
+baseWeight: LOW
+profileModifiers:
+  adventure: NEGLIGIBLE
+  grit: HIGH
+  escalation: MEDIUM
+  scope: NEGLIGIBLE
+  complexity: NEGLIGIBLE

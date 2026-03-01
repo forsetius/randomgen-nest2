@@ -4,7 +4,7 @@ name:
   pl: Cannon
   en: Cannon
 parentId: mercury-surface
-importance: 2
+baseWeight: 2
 
 description:
   pl: |
@@ -15,7 +15,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-cannon.html
-
-interests:
-  - production:mining
-  - mass-driver

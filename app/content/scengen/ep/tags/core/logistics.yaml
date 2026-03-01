@@ -1,0 +1,14 @@
+id: logistics
+category: core
+description:
+  pl: >
+    Transport fizyczny, łańcuchy dostaw, handel i dystrybucja zasobów
+    na dużą skalę.
+  en: >
+    Physical transport, supply chains, trade, and large-scale
+    distribution of resources.
+usedBy:
+  - profile
+  - goal
+  - site
+  - relation

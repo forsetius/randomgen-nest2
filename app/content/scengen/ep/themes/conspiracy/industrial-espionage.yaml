@@ -1,0 +1,12 @@
+kind: theme
+id: industrial-espionage
+name:
+  en: Industrial espionage
+  pl: Szpiegostwo przemysłowe
+parentId: conspiration
+baseWeight: 3
+relations:
+  stakeholder:
+    faction:hypercorp/*: 8
+    faction:polity/*: 5
+    faction:movement/*: 3

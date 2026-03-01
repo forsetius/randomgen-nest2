@@ -4,7 +4,7 @@ name:
   pl: V/2011 Caldwell
   en: V/2011 Caldwell
 parentId: vulcanoids
-importance: 8
+baseWeight: 8
 security: 5
 
 description:
@@ -15,6 +15,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_wulkanoidy_ep-habitat-v2011-caldwell.html
-
-features:
-  - vulcanoid-gate

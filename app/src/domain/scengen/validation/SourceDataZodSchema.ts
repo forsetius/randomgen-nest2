@@ -3,6 +3,11 @@ import { EntityKind } from '@domain/scengen/types/EntityKind';
 import { Lang } from '@shared/types/Lang';
 import { Level } from '@domain/scengen/types/Level';
 import { RelationTag } from '@domain/scengen/types/RelationTag';
+import {
+  RelationDataEntry,
+  RelationEntry,
+} from '@domain/scengen/types/SettingModel';
+import * as object from '@shared/util/object';
 
 const PartialLangs = z.partialRecord(z.enum(Lang), z.string());
 
@@ -12,37 +17,47 @@ const CommonSchema = z.object({
   name: PartialLangs,
   description: PartialLangs.optional(),
   url: PartialLangs.optional(),
-  importance: z.enum(Level).default(Level.NEGLIGIBLE),
+  baseWeight: z.enum(Level).default(Level.NEGLIGIBLE),
+  tags: z.array(z.string()).optional(),
+  profileModifiers: z.record(z.string(), z.number()).optional(),
+  relations: z
+    .partialRecord(
+      z.enum(RelationTag),
+      z.array(z.record(z.string().nonempty(), z.enum(Level))),
+    )
+    .optional(),
 });
 
 const LocationSchema = CommonSchema.extend({
   kind: z.literal(EntityKind.LOCATION),
   securityLevel: z.enum(Level).default(Level.NEGLIGIBLE),
-  relations: z
-    .partialRecord(
-      z.enum(RelationTag),
-      z.record(z.string().nonempty(), z.enum(Level).default(Level.NEGLIGIBLE)),
-    )
-    .optional(),
-}).transform(({ relations, ...rest }) => ({
-  relations: relations ?? {},
-  ...rest,
-}));
+});
 
 const FactionSchema = CommonSchema.extend({
   kind: z.literal(EntityKind.FACTION),
   securityLevel: z.enum(Level).default(Level.NEGLIGIBLE),
-  relations: z
-    .partialRecord(
-      z.enum(RelationTag),
-      z.record(z.string().nonempty(), z.enum(Level).default(Level.NEGLIGIBLE)),
-    )
-    .optional(),
 });
 
-export const SourceDataZodSchema = z.discriminatedUnion('kind', [
-  FactionSchema,
-  LocationSchema,
-]);
+const ThemeSchema = CommonSchema.extend({
+  kind: z.literal(EntityKind.THEME),
+});
+
+export const SourceDataZodSchema = z
+  .discriminatedUnion('kind', [FactionSchema, LocationSchema, ThemeSchema])
+  .transform((obj) => {
+    const { relations, ...rest } = obj;
+    const rels = object.entries(relations ?? {}).map(([tag, entries]) => [
+      tag,
+      entries.map((entry: RelationDataEntry) => {
+        const [key, val] = Object.entries(entry)[0]!;
+        return {
+          entityId: key,
+          weight: val,
+        };
+      }),
+    ]) as [RelationTag, RelationEntry[]][];
+
+    return { relations: rels, ...rest };
+  });
 
 export type SourceDataType = z.infer<typeof SourceDataZodSchema>;

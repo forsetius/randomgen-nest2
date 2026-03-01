@@ -1,7 +1,0 @@
-kind: faction
-id: solarians
-name:
-  pl: Solarianie
-  en: Solarians
-parentId: movement
-importance: 1

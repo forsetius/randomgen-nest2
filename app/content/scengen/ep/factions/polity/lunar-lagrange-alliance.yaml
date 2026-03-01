@@ -4,4 +4,4 @@ name:
   pl: Sojusz Księżycowo-Lagrange'owski
   en: Lunar-Lagrange Alliance
 parentId: polity
-importance: 1
+baseWeight: LOW

@@ -4,7 +4,7 @@ name:
   pl: Lumina
   en: Lumina
 parentId: mercury-surface
-importance: 3
+baseWeight: 3
 
 description:
   pl: |
@@ -16,13 +16,3 @@ description:
 
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_atlas_merkury_ep-habitat-lumina.html
-
-features:
-  - particle-accelerator
-
-resources:
-  research:
-    physics: 2
-  energy: 3
-  tourism:
-    hyperelite: 1

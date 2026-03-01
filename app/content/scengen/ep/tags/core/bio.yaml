@@ -1,0 +1,12 @@
+id: bio
+category: core
+description:
+  pl: >
+    Biotechnologia, genetyka, patogeny, ekologia i ingerencje
+    w systemy biologiczne.
+  en: >
+    Biotechnology, genetics, pathogens, ecology,
+    and manipulation of biological systems.
+usedBy:
+  - profile
+  - site

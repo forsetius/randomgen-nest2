@@ -4,4 +4,14 @@ name:
   pl: Solaris
   en: Solaris
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - economy:finance
+  - info:data-brokerage
+  - corp:market
+
+profileModifiers:
+  social_pressure: HIGH
+  economy: HIGH
+
+relations:

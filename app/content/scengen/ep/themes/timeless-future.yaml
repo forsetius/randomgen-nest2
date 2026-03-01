@@ -4,7 +4,7 @@ name:
   pl: Ponadczasowa przyszłość
   en: Timeless future
 parentId: null
-importance: 1
+baseWeight: NEGLIGIBLE
 description:
   pl: |
     Mimo że akcja Eclipse Phase toczy się w odległej przyszłości, wiele elementów tego świata jest

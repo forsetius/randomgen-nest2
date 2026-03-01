@@ -4,7 +4,6 @@ name:
   pl: Comet Express
   en: Comet Express
 parentId: hypercorp
-importance: 1
 description:
   pl: |
     Comet Express to hiperkorporacja specjalizująca się w transporcie kosmicznym i logistyce. 
@@ -16,14 +15,37 @@ description:
     serving both individual and corporate clients.
 url:
   pl: https://forseti.pl/pages/pl/eclipse-phase_encyklopedia_hiperkorpy_ep-comet-express.html
+baseWeight: LOW
+tags:
+  - logistics
+  - space:infrastructure
+  - space:spaceflight
+  - info:tracking
+  - corp:operations
+  - corp:compliance
+  - corp:subcontractors
+  - economy:trade
+
 relations:
-  allies:
-    - hypercorp
-  adversaries:
-    - polity:jovian-republic
-  bases:
-    - location:luna:surface:nectar
-    - location:mars:surface:olympus
-    - location:mars:trojans:transix
-  interests:
-    - services:logistics
+  ally:
+    faction:hypercorp/*: MEDIUM
+
+  provides:
+    service:shipping: EXTREME
+    service:logistics: EXTREME
+    service:courier-delivery: HIGH
+
+  requires:
+    resource:local-subcontractors: HIGH
+    resource:fuel: MEDIUM
+
+  presence:
+    location:nectar: HIGH
+    location:olympus: HIGH
+    location:transix: EXTREME
+
+  adversary:
+    faction:jovian-republic: EXTREME
+
+  stakeholder:
+    faction:planetary-consortium: MEDIUM

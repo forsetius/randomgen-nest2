@@ -1,0 +1,13 @@
+id: security
+category: core
+description:
+  pl: >
+    Ochrona, bezpieczeństwo, operacje policyjne i kontrwywiadowcze,
+    a także środki kontroli i reagowania na zagrożenia.
+  en: >
+    Protection, security, policing, counterintelligence,
+    and threat response measures.
+usedBy:
+  - profile
+  - scene
+  - site

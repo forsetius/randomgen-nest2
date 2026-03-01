@@ -1,0 +1,7 @@
+kind: faction
+id: autonomists
+name:
+  pl: Autonomiści
+  en: Autonomists
+parentId: polity
+baseWeight: MEDIUM

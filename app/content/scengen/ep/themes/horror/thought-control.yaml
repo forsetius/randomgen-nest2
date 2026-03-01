@@ -1,0 +1,13 @@
+kind: theme
+id: thought-control
+name:
+  pl: Kontrola umysłów
+  en: Thought control
+parentId: horror
+baseWeight: LOW
+profileModifiers:
+  social: LOW
+  weirdness: LOW
+  escalation: NEGLIGIBLE
+  scope: LOW
+  complexity: HIGH

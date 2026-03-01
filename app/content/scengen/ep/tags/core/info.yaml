@@ -1,0 +1,13 @@
+id: info
+category: core
+description:
+  pl: >
+    Informacja, komunikacja, sieci danych, propaganda,
+    dezinformacja i operacje informacyjne.
+  en: >
+    Information, communication, data networks, propaganda,
+    disinformation, and information warfare.
+usedBy:
+  - profile
+  - goal
+  - scene

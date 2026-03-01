@@ -4,4 +4,4 @@ name:
   pl: Ciągłość pamięci
   en: Memory continuity
 parentId: transhumanism
-importance: 1
+baseWeight: 5

@@ -4,7 +4,7 @@ name:
   pl: Orbita Słońca
   en: Sun orbit
 parentId: sun
-importance: 1
+baseWeight: 1
 
 description:
   pl: |
@@ -13,15 +13,3 @@ description:
   en: |
     The Sun is the central star of the Solar System and the main source of energy for all its celestial 
     bodies. In the world of Eclipse Phase, it is also home to the Solarian faction clad in Surya morphs.
-
-resources:
-  consumables:
-    antimatter: 3
-    energy: 3
-    goods: -1
-    food: -2
-    water: -3
-  research:
-    energy: 1
-    physics: 1
-  tourism: 1

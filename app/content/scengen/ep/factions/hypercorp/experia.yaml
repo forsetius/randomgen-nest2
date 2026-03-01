@@ -4,4 +4,17 @@ name:
   pl: Experia
   en: Experia
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - info:news
+  - info:memetics
+  - info:entertainment
+  - tech:ar
+  - tech:vr
+
+profileModifiers:
+  social_pressure: HIGH
+  hidden_truth: MEDIUM
+  scope: MEDIUM
+
+relations:

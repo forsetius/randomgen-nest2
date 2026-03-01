@@ -1,0 +1,12 @@
+id: 'mind:identity'
+category: core
+description:
+  pl: >
+    Zagadnienia związane z tożsamością.
+  en: >
+    Topics related to the identity.
+usedBy:
+  - profile
+  - goal
+  - scene
+  - site

@@ -4,10 +4,10 @@ name:
   pl: Konspiracja
   en: Conspiration
 parentId: null
-importance: 1
+baseWeight: MEDIUM
 description:
   pl: |
-    W Eclipse Phase istnieją zarówno realnych spisków jak i mnogość teorii spiskowych. Swoje ukryte agendy mają
+    W Eclipse Phase istnieją zarówno realne spiski jak i mnogość teorii spiskowych. Swoje ukryte agendy mają
     zarówno konspiracje pokroju Zapory czy Projektu Ozma, służby specjalne poszczególnych ustrojów Układu Słonecznego
     ale również hiperkorporacje czy różne ruchy społeczne.
   en: |

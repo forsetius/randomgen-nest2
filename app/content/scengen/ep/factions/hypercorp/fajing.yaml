@@ -4,4 +4,16 @@ name:
   pl: Fa Jing
   en: Fa Jing
 parentId: hypercorp
-importance: 1
+baseWeight: HIGH
+tags:
+  - economy:mining
+  - logistics:resource-extraction
+  - bio:industrial
+  - corp:market
+
+profileModifiers:
+  scarcity: MEDIUM
+  scope: HIGH
+  grit: MEDIUM
+
+relations:

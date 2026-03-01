@@ -4,4 +4,45 @@ name:
   pl: Hiperkorporacja
   en: Hypercorporation
 parentId: null
-importance: 8
+baseWeight: LOW
+tags:
+  - corp:culture
+  - corp:outsourcing
+  - corp:market
+  - info:control
+
+  # identity / org model
+  - hypercorp
+  - economy:adaptative
+  - economy:profit-driven
+  - economy:competitive
+
+profileModifiers:
+  # Tone
+  grit: LOW
+  # Pressures
+  social_pressure: MEDIUM
+  hidden_truth: LOW
+  # Structural
+  complexity: LOW
+  escalation: LOW
+
+relations:
+  ally:
+    hypercorp: LOW
+    argonauts: NEGLIGIBLE
+    celebrities: LOW
+  adversary:
+    autonomists: MEDIUM
+    criminal: NEGLIGIBLE
+    jovian-republic: NEGLIGIBLE
+    morningstar-constellation: NEGLIGIBLE
+    barsoomians: NEGLIGIBLE
+    bioconservatives: LOW
+  stakeholder:
+    planetary-consortium: MEDIUM
+  requires:
+    subcontractors: MEDIUM
+    market_access: HIGH
+  provides:
+    security: LOW

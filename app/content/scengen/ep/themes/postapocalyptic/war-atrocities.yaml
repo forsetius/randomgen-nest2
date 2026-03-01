@@ -1,0 +1,14 @@
+kind: theme
+id: war-atrocities
+name:
+  pl: Zbrodnie wojenne
+  en: War atrocities
+parentId: postapocalyptic
+baseWeight: LOW
+profileModifiers:
+  adventure: LOW
+  horror: MEDIUM
+  grit: LOW
+  escalation: LOW
+  scope: LOW
+  complexity: MEDIUM

@@ -4,4 +4,15 @@ name:
   pl: Skinaesthesia
   en: Skinaesthesia
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - bio:morphs
+  - bio:tech
+  - corp:services
+  - science:genetics
+
+profileModifiers:
+  moral_pressure: HIGH
+  grit: MEDIUM
+
+relations:

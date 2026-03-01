@@ -4,4 +4,14 @@ name:
   pl: Prosperity Group
   en: Prosperity Group
 parentId: hypercorp
-importance: 1
+baseWeight: MEDIUM
+tags:
+  - bio:agriculture
+  - bio:medicine
+  - economy:consumer-goods
+
+profileModifiers:
+  scarcity: MEDIUM
+  social_pressure: LOW
+
+relations:

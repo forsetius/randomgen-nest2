@@ -1,0 +1,9 @@
+kind: faction
+id: barsoomians
+name:
+  pl: Fremeni
+  en: Barsoomians
+parentId: local
+baseWeight: MEDIUM
+tags:
+  - location:mars
