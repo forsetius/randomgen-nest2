@@ -16,7 +16,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=22.11.0"
+    "node": ">=22.16.0"
   },
   "main": "dist/main.js",
   "scripts": {
@@ -38,6 +38,8 @@
     "test": "bash bin/test.sh"
   },
   "dependencies": {
+    "@forsetius/glitnir-config": "^0.3.0",
+    "@forsetius/glitnir-shared": "^0.1.1",
     "@nestjs/axios": "^4.0.1",
     "@nestjs/common": "^11.1.9",
     "@nestjs/config": "^4.0.2",
