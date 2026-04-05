@@ -58,6 +58,7 @@ After changes, prefer the narrowest relevant validation:
 2. Lint for touched package or app
 3. Targeted Jest tests
 4. Broader test suite only if necessary
+5. When linting, check both for TypeScript and Eslint errors
 
 ## Output expectations
 
