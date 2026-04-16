@@ -6,7 +6,7 @@ import {
   Res,
   UseInterceptors,
 } from '@nestjs/common';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 import { CmsService } from './services';
 import type { Response } from 'express';
 import { MailService } from '../../io/mail';

@@ -6,7 +6,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 
 @Catch(NotFoundException)
 export class NotFoundFilter implements ExceptionFilter {
@@ -15,9 +15,9 @@ export class NotFoundFilter implements ExceptionFilter {
     const lang = ctx
       .getRequest<Request>()
       .acceptsLanguages()
-      .some((language) => language.toLowerCase().startsWith(Lang.PL))
-      ? Lang.PL
-      : Lang.EN;
+      .some((language) => language.toLowerCase().startsWith('pl'))
+      ? ('pl' satisfies Lang)
+      : ('en' satisfies Lang);
     const res = ctx.getResponse<Response>();
 
     res.status(HttpStatus.NOT_FOUND).redirect(`/pages/${lang}/error-404.html`);

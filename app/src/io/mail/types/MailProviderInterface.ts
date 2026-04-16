@@ -1,4 +1,4 @@
-import { Attachment } from 'nodemailer/lib/mailer';
+import type { SendMailOptions } from 'nodemailer';
 
 export interface MailProviderData {
   from: { name: string; address: string };
@@ -6,7 +6,7 @@ export interface MailProviderData {
   replyTo?: string;
   subject: string;
   text: string;
-  attachments?: Attachment[];
+  attachments?: NonNullable<SendMailOptions['attachments']>;
 }
 
 export interface MailProviderInterface {

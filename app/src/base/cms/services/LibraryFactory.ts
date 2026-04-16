@@ -1,9 +1,9 @@
 import { Library } from '../domain/Library';
 import { join } from 'node:path';
 import fsAsync from 'node:fs/promises';
+import { getBasename } from '@forsetius/glitnir-shared';
 import { AppConfigService } from '@config/AppConfigService';
 import { Lang } from '@shared/types/Lang';
-import { getBasename } from '@shared/util/string';
 import { Locale } from '../domain/Locale';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';

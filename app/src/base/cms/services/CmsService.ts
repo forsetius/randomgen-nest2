@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { Injectable } from '@nestjs/common';
-import { Lang } from '@shared/types/Lang';
+import { Lang, type Lang as AppLang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { Library } from '../domain/Library';
 import { Locale } from '../domain/Locale';
@@ -16,7 +16,7 @@ import { AppConfigService } from '@config/AppConfigService';
 export class CmsService {
   private readonly sourceDir: string;
   private readonly outputDir: string;
-  private libraries!: Record<Lang, Library>;
+  private libraries!: Record<AppLang, Library>;
   private readonly metadata: SitewideData;
 
   public constructor(
@@ -38,13 +38,13 @@ export class CmsService {
     this.libraries = Object.fromEntries(
       await Promise.all(
         Object.values(Lang).map(
-          async (lang): Promise<[Lang, Library]> => [
+          async (lang): Promise<[AppLang, Library]> => [
             lang,
             await this.libraryFactory.create(new Locale(this.sourceDir, lang)),
           ],
         ),
       ),
-    ) as Record<Lang, Library>;
+    ) as Record<AppLang, Library>;
 
     for (const library of Object.values(this.libraries)) {
       await this.render(library);
@@ -78,7 +78,7 @@ export class CmsService {
   private linkify(content: string): string {
     return content.replace(
       /@\{(?<lang>pl|en)\/(?<slug>[\p{L}\d_-]+?)(?<anchor>#[\p{L}\d_-]+?)?\}/gu,
-      (_match, lang: Lang, slug: string, anchor?: string) => {
+      (_match, lang: AppLang, slug: string, anchor?: string) => {
         const page = this.libraries[lang].getPage(slug);
         const title = page.def.excerpt ? `" title="${page.def.excerpt}` : '';
 
@@ -92,7 +92,7 @@ export class CmsService {
    */
   private async saveContent(
     renderedContents: RenderedContent[],
-    lang: Lang,
+    lang: AppLang,
   ): Promise<void> {
     const pagesDir = join(this.outputDir, lang);
     const pagesTempDir = await fsAsync.mkdtemp(`${pagesDir}-`);
@@ -146,7 +146,7 @@ export class CmsService {
 
   public search(
     term: string,
-    lang: Lang,
+    lang: AppLang,
     template: string,
     limit?: number,
   ): string {
@@ -155,7 +155,7 @@ export class CmsService {
     return JSON.stringify(pages.map((page) => `${template}_${page.slug}.html`));
   }
 
-  public getTag(tag: string, lang: Lang, template: string): string {
+  public getTag(tag: string, lang: AppLang, template: string): string {
     const pages = this.libraries[lang].tags.get(tag) ?? [];
 
     return JSON.stringify(pages.map((page) => `${template}_${page.slug}.html`));
@@ -164,7 +164,7 @@ export class CmsService {
   /**
    * Returns a JSON string containing the URLs of all tags in the given language.
    */
-  public getTags(lang: Lang, template: string): string {
+  public getTags(lang: AppLang, template: string): string {
     const tags = Array.from(this.libraries[lang].tags.keys());
 
     return JSON.stringify(tags.map((tag) => `${template}_tag.html?tag=${tag}`));

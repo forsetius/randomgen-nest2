@@ -1,6 +1,6 @@
 import { TechnobabbleModuleOptions } from '@domain/technobabble/types/TechnobabbleModuleOptions';
 import { registerAsTyped } from '@config/registerAsTyped';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 
 export default () =>
   registerAsTyped(
@@ -8,6 +8,6 @@ export default () =>
     () =>
       ({
         maxResults: 20,
-        supportedLangs: [Lang.EN, Lang.PL],
+        supportedLangs: ['en', 'pl'] satisfies Lang[],
       }) satisfies TechnobabbleModuleOptions,
   );

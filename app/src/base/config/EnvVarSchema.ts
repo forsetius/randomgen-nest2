@@ -1,8 +1,12 @@
+import fs from 'node:fs';
+import {
+  isInsideProject,
+  resolveAppRelativePath,
+} from '@forsetius/glitnir-shared';
 import z from 'zod';
+import { APP_ROOT } from '../../appRoot';
 import { Env } from '@shared/types/Env';
 import { MailProvider } from '../../io/mail/types';
-import { isInsideProject, resolveAppRelativePath } from '@shared/util/path';
-import fs from 'node:fs';
 
 const MIN_PORT_NUMBER = 0;
 const MAX_PORT_NUMBER = 65535;
@@ -15,8 +19,8 @@ const BaseEnvVarSchema = z.object({
   CMS_SOURCE_DIR: z
     .string()
     .min(1)
-    .transform((rawPath: string) => resolveAppRelativePath(rawPath))
-    .refine((absolutePath: string) => isInsideProject(absolutePath), {
+    .transform((rawPath: string) => resolveAppRelativePath(APP_ROOT, rawPath))
+    .refine((absolutePath: string) => isInsideProject(APP_ROOT, absolutePath), {
       message: 'Directory must be inside project root',
     })
     .refine(

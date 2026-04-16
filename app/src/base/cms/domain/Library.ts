@@ -1,5 +1,5 @@
+import { AutoMultiMap } from '@forsetius/glitnir-shared';
 import { Page } from './Page';
-import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
 import { Block } from './blocks/Block';
 import { Menu } from './Menu';
 import { Category } from './Category';

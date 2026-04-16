@@ -4,13 +4,17 @@ import {
   InternalServerErrorException,
   Logger,
 } from '@nestjs/common';
-import { createTransport, Transporter } from 'nodemailer';
+import { createTransport } from 'nodemailer';
 import { AppConfigService } from '@config/AppConfigService';
-import SMTPTransport from 'nodemailer/lib/smtp-transport';
+
+interface MailTransport {
+  verify(): Promise<true>;
+  sendMail(mailData: MailProviderData): Promise<unknown>;
+}
 
 @Injectable()
 export class SmtpProvider implements MailProviderInterface {
-  private mailTransport!: Transporter<SMTPTransport.SentMessageInfo>;
+  private mailTransport!: MailTransport;
   private readonly logger = new Logger(SmtpProvider.name);
 
   constructor(private readonly configService: AppConfigService) {}
@@ -39,7 +43,7 @@ export class SmtpProvider implements MailProviderInterface {
     }
   }
 
-  private getMailTransport(): Transporter<SMTPTransport.SentMessageInfo> {
+  private getMailTransport(): MailTransport {
     const config = this.configService.get('mail.credentials.smtp');
     if (!config) {
       throw new InternalServerErrorException('SMTP mail is not configured');

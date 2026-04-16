@@ -1,6 +1,5 @@
+import { AutoMultiMap, slugify } from '@forsetius/glitnir-shared';
 import { Page } from './Page';
-import { slugify } from '@shared/util/string';
-import { AutoMultiMap } from '@shared/util/collections/AutoMultiMap';
 
 export class Category {
   public readonly name: string;

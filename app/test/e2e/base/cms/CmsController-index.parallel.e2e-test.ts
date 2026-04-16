@@ -1,7 +1,9 @@
 import supertest, { Response } from 'supertest';
 import { HttpStatus } from '@nestjs/common';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 import { getBaseUrl } from '../../globalAppUrl';
+
+const POLISH_LANGUAGE: Lang = 'pl';
 
 function checkStatusAndLanguage(
   response: Response,
@@ -22,7 +24,7 @@ describe('CmsController', () => {
     it('should return status 200 with a page in Polish language', async () => {
       const response = await supertest(getBaseUrl()).get(`/`).redirects(1);
 
-      checkStatusAndLanguage(response, Lang.PL, HttpStatus.OK);
+      checkStatusAndLanguage(response, POLISH_LANGUAGE, HttpStatus.OK);
     });
   });
 

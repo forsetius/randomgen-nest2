@@ -1,5 +1,5 @@
 import { EnvVarSchemaType } from '@config/EnvVarSchema';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 import { AppModuleOptions } from '@app/types/AppModuleOptions';
 import { registerAsTyped } from '@config/registerAsTyped';
 
@@ -14,6 +14,6 @@ export default (envVars: EnvVarSchemaType) =>
         env: envVars.ENV,
         host: envVars.APP_HOST,
         port: envVars.APP_PORT,
-        defaultLanguage: Lang.PL,
+        defaultLanguage: 'pl' satisfies Lang,
       }) satisfies AppModuleOptions,
   );

@@ -2,7 +2,7 @@ import path from 'path';
 import { CmsModuleOptions } from '../../base/cms/types/CmsModuleOptions';
 import { EnvVarSchemaType } from '@config/EnvVarSchema';
 import { registerAsTyped } from '@config/registerAsTyped';
-import { Lang } from '@shared/types/Lang';
+import type { Lang } from '@shared/types/Lang';
 
 export default (envVars: EnvVarSchemaType) =>
   registerAsTyped(
@@ -10,7 +10,7 @@ export default (envVars: EnvVarSchemaType) =>
     () =>
       ({
         appOrigin: envVars.APP_HOST,
-        supportedLangs: [Lang.EN, Lang.PL],
+        supportedLangs: ['en', 'pl'] satisfies Lang[],
         fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
         paths: {
           sourceDir: path.join(envVars.CMS_SOURCE_DIR, 'sources'),

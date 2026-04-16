@@ -2,7 +2,6 @@ import { Controller, Get } from '@nestjs/common';
 import type { BaseGenerator } from './generators/BaseGenerator';
 import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
-import { Lang } from '@shared/types/Lang';
 import {
   type TechnobabbleRequestDto,
   TechnobabbleRequestSchema,
@@ -29,7 +28,7 @@ export class TechnobabbleController {
   }))
   public generateRaw(@ParsedArgs() params: TechnobabbleRequestDto): string {
     const service =
-      params.lang === Lang.PL
+      params.lang === 'pl'
         ? this.polishGeneratorService
         : this.englishGeneratorService;
 

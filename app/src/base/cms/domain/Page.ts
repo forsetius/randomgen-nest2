@@ -1,9 +1,9 @@
 import * as fs from 'node:fs/promises';
 import { join } from 'node:path';
+import { InvalidDateTimeException } from '@forsetius/glitnir-shared';
 import { minify } from 'html-minifier-next';
 import { DateTime } from 'luxon';
 import { PageProps } from '../types/PageMeta';
-import { InvalidDateTimeException } from '@shared/exceptions/InvalidDateTimeException';
 import { MarkdownService } from '../../parser/services/MarkdownService';
 import { BlockFactory } from '../services';
 import { TemplatingService } from '@templating/TemplatingService';

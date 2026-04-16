@@ -1,4 +1,4 @@
-import { Lang } from '@shared/types/Lang';
+import { Lang, type Lang as AppLang } from '@shared/types/Lang';
 import type { AppConfigService } from '@config/AppConfigService';
 import z from 'zod';
 
@@ -6,7 +6,7 @@ export const LangSchema = (config: AppConfigService) => {
   const defaultLang = config.get('app.defaultLanguage');
 
   return z.object({
-    lang: z.enum(Lang).default(defaultLang),
+    lang: z.enum(Lang).default(defaultLang as AppLang),
   });
 };
 

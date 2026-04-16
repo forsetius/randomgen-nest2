@@ -1,5 +1,5 @@
+import { stringifyError } from '@forsetius/glitnir-shared';
 import { Lang } from '@shared/types/Lang';
-import { stringifyError } from '@shared/util/string';
 
 export class RenderingException extends Error {
   public constructor(

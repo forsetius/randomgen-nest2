@@ -7,9 +7,8 @@ import type {
 import type { Reflector } from '@nestjs/core';
 import { type Observable, from, switchMap } from 'rxjs';
 import z from 'zod';
+import { findDuplicates, isRecord } from '@forsetius/glitnir-shared';
 import type { AppConfigService } from '@config/AppConfigService';
-import { findDuplicates } from '@shared/util/array';
-import { isRecord } from '@shared/util/isType';
 import {
   ZOD_REQUEST_SCHEMA_KEY,
   type ZodRequestSchemaMeta,

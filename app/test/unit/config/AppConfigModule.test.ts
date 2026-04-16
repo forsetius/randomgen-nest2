@@ -2,8 +2,11 @@ import path from 'node:path';
 import type { TestingModule } from '@nestjs/testing';
 import { APP_ROOT } from '../../../src/appRoot';
 import { Env } from '../../../src/shared/types/Env';
-import { Lang } from '../../../src/shared/types/Lang';
+import type { Lang } from '../../../src/shared/types/Lang';
 import { MailProvider } from '../../../src/io/mail/types';
+
+const ENGLISH_LANGUAGE: Lang = 'en';
+const POLISH_LANGUAGE: Lang = 'pl';
 
 type ConfigEnvironmentVariableName =
   | 'ENV'
@@ -162,7 +165,9 @@ async function captureConfigBootstrapError(
     expect(caughtError).toBeInstanceOf(Error);
 
     if (!(caughtError instanceof Error)) {
-      throw new Error('Expected config bootstrap to throw an Error instance');
+      throw new Error('Expected config bootstrap to throw an Error instance', {
+        cause: caughtError,
+      });
     }
 
     return caughtError;
@@ -192,12 +197,12 @@ describe('AppConfigModule', () => {
         env: Env.TEST,
         host: 'https://example.test/',
         port: 6543,
-        defaultLanguage: Lang.PL,
+        defaultLanguage: POLISH_LANGUAGE,
       });
 
       expect(configService.get('cms')).toEqual({
         appOrigin: 'https://example.test/',
-        supportedLangs: [Lang.EN, Lang.PL],
+        supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
         fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
         paths: {
           sourceDir: path.join(
@@ -313,7 +318,7 @@ describe('AppConfigModule', () => {
 
       expect(configService.get('technobabble')).toEqual({
         maxResults: 20,
-        supportedLangs: [Lang.EN, Lang.PL],
+        supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
       });
 
       expect(configService.get('templating')).toEqual({
