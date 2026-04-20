@@ -1,5 +1,10 @@
 import { Module } from '@nestjs/common';
-import { AppConfigService } from '@config/AppConfigService';
+import {
+  AppModuleConfigContract,
+  MailModuleConfigContract,
+} from '@config/AppConfigContracts';
+import type { AppModuleOptions } from '@app/types/AppModuleOptions';
+import type { MailModuleOptions } from './types/MailModuleOptions';
 import { MailProvider } from './types';
 import { DummyMailProvider, SmtpProvider } from './providers';
 import { MailService } from './MailService';
@@ -8,14 +13,17 @@ import { MailService } from './MailService';
   providers: [
     {
       provide: 'MAIL_PROVIDER',
-      inject: [AppConfigService],
-      useFactory: (configService: AppConfigService) => {
-        const providerName = configService.get('mail.provider');
+      inject: [MailModuleConfigContract.token, AppModuleConfigContract.token],
+      useFactory: (
+        mailConfig: MailModuleOptions,
+        appConfig: AppModuleOptions,
+      ) => {
+        const providerName = mailConfig.provider;
         switch (providerName) {
           case MailProvider.DUMMY:
-            return new DummyMailProvider(configService);
+            return new DummyMailProvider(appConfig);
           case MailProvider.SMTP:
-            return new SmtpProvider(configService);
+            return new SmtpProvider(mailConfig);
         }
       },
     },

@@ -1,8 +1,10 @@
 import z from 'zod';
-import type { AppConfigService } from '@config/AppConfigService';
+import type { ValidationConfig } from '@forsetius/glitnir-validation';
 import { LangSchema } from './LangDto';
 
-export const SearchQuerySchema = (config: AppConfigService) =>
+type SearchQuerySchemaConfig = Pick<ValidationConfig, 'langs'>;
+
+export const SearchQuerySchema = (config: Readonly<SearchQuerySchemaConfig>) =>
   LangSchema(config).extend({
     count: z.coerce.number().int().min(1).max(10).optional(),
     term: z

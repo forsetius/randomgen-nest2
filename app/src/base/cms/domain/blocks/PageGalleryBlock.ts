@@ -1,14 +1,14 @@
+import type { MarkdownApi } from '@forsetius/glitnir-markdown';
 import { Block } from './Block';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from '../Library';
-import { MarkdownService } from '../../../parser/services/MarkdownService';
 import { PageGalleryBlockDef } from '../../types';
 import { CategoryNotFoundException } from '../../exceptions/CategoryNotFoundException';
 
 export class PageGalleryBlock extends Block {
   public constructor(
     private readonly templatingService: TemplatingService,
-    private readonly markdownService: MarkdownService,
+    private readonly markdownApi: MarkdownApi,
     name: string,
     public override readonly def: PageGalleryBlockDef,
   ) {
@@ -49,7 +49,7 @@ export class PageGalleryBlock extends Block {
       perRow: this.def.columns,
       title: this.def.title,
       content: this.def.content
-        ? this.markdownService.parseInline(this.def.content)
+        ? this.markdownApi.parseInline(this.def.content)
         : undefined,
       lang: library.locale.lang,
       translations: library.locale.translations,

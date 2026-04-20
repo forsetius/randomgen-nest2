@@ -1,6 +1,7 @@
 import {
   Controller,
   Get,
+  Inject,
   InternalServerErrorException,
   Post,
   Res,
@@ -10,16 +11,17 @@ import type { Lang } from '@shared/types/Lang';
 import { CmsService } from './services';
 import type { Response } from 'express';
 import { MailService } from '../../io/mail';
-import { AppConfigService } from '@config/AppConfigService';
-import { AkismetInterceptor } from '../security/interceptors/AkismetInterceptor';
+import { ParsedArgs, ZodSchema } from '@forsetius/glitnir-validation';
+import { MailModuleConfigContract } from '@config/AppConfigContracts';
 import * as Dto from './dtos';
-import { ZodSchema } from '@shared/validation/ZodSchemaDecorator';
-import { ParsedArgs } from '@shared/validation/ParsedArgsDecorator';
+import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
+import type { MailModuleOptions } from '../../io/mail/types/MailModuleOptions';
 
 @Controller()
 export class CmsController {
   public constructor(
-    private configService: AppConfigService,
+    @Inject(MailModuleConfigContract.token)
+    private readonly mailConfig: MailModuleOptions,
     private contentService: CmsService,
     private mailService: MailService,
   ) {}
@@ -65,21 +67,20 @@ export class CmsController {
   }
 
   @Post('/contact')
-  @UseInterceptors(AkismetInterceptor<Dto.ContactDto>)
+  @UseInterceptors(ContactSpamCheckInterceptor)
   @ZodSchema({ body: Dto.ContactRequestSchema })
-  public async submitContactForm(@ParsedArgs() dto: Dto.ContactDto) {
-    const config = this.configService.get('mail');
+  public async submitContactForm(@ParsedArgs() parsedDto: Dto.ContactDto) {
     try {
       await this.mailService.sendMail({
-        from: config.sender,
-        to: config.adminEmail,
-        replyTo: dto.email,
-        subject: dto.title,
+        from: this.mailConfig.sender,
+        to: this.mailConfig.adminEmail,
+        replyTo: parsedDto.email,
+        subject: parsedDto.title,
         text: `
-From: ${dto.name} <${dto.email}>
-Title: ${dto.title}
+From: ${parsedDto.name} <${parsedDto.email}>
+Title: ${parsedDto.title}
 ---
-${dto.content}
+${parsedDto.content}
         `,
       });
 

@@ -1,19 +1,16 @@
-import { EnvVarSchemaType } from '@config/EnvVarSchema';
-import { SecurityModuleOptions } from '../../base/security/types/SecurityModuleOptions';
-import { registerAsTyped } from '@config/registerAsTyped';
+import type { SecurityConfig } from '@forsetius/glitnir-security';
+import type { AppConfigSource } from './AppConfigSource';
 
-export default (envVars: EnvVarSchemaType) =>
-  registerAsTyped(
-    'security',
-    () =>
-      ({
-        akismet: {
-          key: envVars.AKISMET_KEY,
-          siteUrl: envVars.APP_HOST,
-        },
-        rateLimit: {
-          limit: 100,
-          windowMs: 1000,
-        },
-      }) satisfies SecurityModuleOptions,
-  );
+export function resolveSecurityModuleConfig(
+  source: Readonly<AppConfigSource>,
+): SecurityConfig {
+  void source; // FIXME ???
+
+  return {
+    rateLimit: {
+      enabled: true,
+      limit: 100,
+      windowMs: 1000,
+    },
+  };
+}

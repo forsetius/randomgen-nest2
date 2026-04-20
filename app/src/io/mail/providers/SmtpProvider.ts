@@ -5,7 +5,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { createTransport } from 'nodemailer';
-import { AppConfigService } from '@config/AppConfigService';
+import type { MailModuleOptions } from '../types/MailModuleOptions';
 
 interface MailTransport {
   verify(): Promise<true>;
@@ -17,7 +17,7 @@ export class SmtpProvider implements MailProviderInterface {
   private mailTransport!: MailTransport;
   private readonly logger = new Logger(SmtpProvider.name);
 
-  constructor(private readonly configService: AppConfigService) {}
+  constructor(private readonly mailConfig: MailModuleOptions) {}
 
   async onModuleInit(): Promise<void> {
     this.mailTransport = this.getMailTransport();
@@ -44,7 +44,7 @@ export class SmtpProvider implements MailProviderInterface {
   }
 
   private getMailTransport(): MailTransport {
-    const config = this.configService.get('mail.credentials.smtp');
+    const config = this.mailConfig.credentials.smtp;
     if (!config) {
       throw new InternalServerErrorException('SMTP mail is not configured');
     }

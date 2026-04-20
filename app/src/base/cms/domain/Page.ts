@@ -1,10 +1,10 @@
 import * as fs from 'node:fs/promises';
 import { join } from 'node:path';
 import { InvalidDateTimeException } from '@forsetius/glitnir-shared';
+import type { MarkdownApi } from '@forsetius/glitnir-markdown';
 import { minify } from 'html-minifier-next';
 import { DateTime } from 'luxon';
 import { PageProps } from '../types/PageMeta';
-import { MarkdownService } from '../../parser/services/MarkdownService';
 import { BlockFactory } from '../services';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Library } from './Library';
@@ -29,7 +29,7 @@ export class Page {
    */
   public constructor(
     private blockFactory: BlockFactory,
-    private markdownService: MarkdownService,
+    private markdownApi: MarkdownApi,
     private templatingService: TemplatingService,
     private meta: SitewideData,
     public readonly slug: string,
@@ -74,12 +74,10 @@ export class Page {
       title: this.def.title,
       subtitle: this.def.subtitle,
       excerpt: this.def.excerpt
-        ? this.markdownService.parse(this.def.excerpt)
+        ? this.markdownApi.parse(this.def.excerpt)
         : undefined,
-      lead: this.def.lead
-        ? this.markdownService.parse(this.def.lead)
-        : undefined,
-      content: this.markdownService.parse(this.def.content),
+      lead: this.def.lead ? this.markdownApi.parse(this.def.lead) : undefined,
+      content: this.markdownApi.parse(this.def.content),
       categoryData: this.category
         ? {
             current: this.category,
@@ -295,9 +293,9 @@ export class Page {
       this.def.title,
       this.def.subtitle,
       this.def.tags.join(' ').replaceAll('-', ' '),
-      this.def.excerpt && this.markdownService.stripMarkdown(this.def.excerpt),
-      this.def.lead && this.markdownService.stripMarkdown(this.def.lead),
-      includeContent && this.markdownService.stripMarkdown(this.def.content),
+      this.def.excerpt && this.markdownApi.stripMarkdown(this.def.excerpt),
+      this.def.lead && this.markdownApi.stripMarkdown(this.def.lead),
+      includeContent && this.markdownApi.stripMarkdown(this.def.content),
     ]
       .filter((str) => typeof str === 'string')
       .join(' ')

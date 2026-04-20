@@ -1,30 +1,32 @@
 import { Library } from '../domain/Library';
 import { join } from 'node:path';
 import fsAsync from 'node:fs/promises';
+import { Inject, Injectable } from '@nestjs/common';
 import { getBasename } from '@forsetius/glitnir-shared';
-import { AppConfigService } from '@config/AppConfigService';
+import { CmsModuleConfigContract } from '@config/AppConfigContracts';
 import { Lang } from '@shared/types/Lang';
 import { Locale } from '../domain/Locale';
 import { BlockFactory } from './BlockFactory';
 import { MenuFactory } from './MenuFactory';
 import { PageFactory } from './PageFactory';
-import { ParserService } from '../../parser/services/ParserService';
 import stopwatch from '@shared/util/stopwatch';
-import { Injectable } from '@nestjs/common';
 import { RenderingException } from '../exceptions/RenderingException';
+import type { CmsModuleOptions } from '../types/CmsModuleOptions';
+import { CmsSourceParserService } from './CmsSourceParserService';
 
 @Injectable()
 export class LibraryFactory {
   private readonly baseSourcePath: string;
 
   public constructor(
-    private readonly parserService: ParserService,
+    private readonly sourceParserService: CmsSourceParserService,
     private readonly blockFactory: BlockFactory,
     private readonly menuFactory: MenuFactory,
     private readonly pageFactory: PageFactory,
-    configService: AppConfigService,
+    @Inject(CmsModuleConfigContract.token)
+    config: CmsModuleOptions,
   ) {
-    this.baseSourcePath = configService.get('cms.paths.sourceDir');
+    this.baseSourcePath = config.paths.sourceDir;
   }
 
   public async create(locale: Locale): Promise<Library> {
@@ -68,11 +70,15 @@ export class LibraryFactory {
     const fileNames = await fsAsync.readdir(sourcePath);
     const map = [
       ...fileNames
-        .filter((filename: string) => this.parserService.isSupported(filename))
+        .filter((filename: string) =>
+          this.sourceParserService.isSupported(filename),
+        )
         .map(
           async (filename: string): Promise<[string, unknown]> => [
             getBasename(filename),
-            await this.parserService.parseFile(join(sourcePath, filename)),
+            await this.sourceParserService.parseFile(
+              join(sourcePath, filename),
+            ),
           ],
         ),
     ];

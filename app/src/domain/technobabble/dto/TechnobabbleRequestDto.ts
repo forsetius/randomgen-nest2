@@ -1,18 +1,17 @@
 import z from 'zod';
-import { AppConfigService } from '@config/AppConfigService';
+import type { ValidationConfig } from '@forsetius/glitnir-validation';
 
-export const TechnobabbleRequestSchema = (config: AppConfigService) => {
-  const defaultLang = config.get('app.defaultLanguage');
-  const supportedLangs = config.get('technobabble.supportedLangs');
+interface TechnobabbleRequestSchemaConfig {
+  readonly langs: ValidationConfig['langs'];
+  readonly maxResults: number;
+}
 
+export const TechnobabbleRequestSchema = (
+  config: Readonly<TechnobabbleRequestSchemaConfig>,
+) => {
   return z.object({
-    lang: z.enum(supportedLangs).prefault(defaultLang),
-    repeat: z.coerce
-      .number()
-      .int()
-      .min(1)
-      .max(config.get('technobabble.maxResults'))
-      .default(1),
+    lang: z.enum(config.langs.supported).default(config.langs.default),
+    repeat: z.coerce.number().int().min(1).max(config.maxResults).default(1),
   });
 };
 

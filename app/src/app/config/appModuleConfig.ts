@@ -1,19 +1,17 @@
-import { EnvVarSchemaType } from '@config/EnvVarSchema';
 import type { Lang } from '@shared/types/Lang';
 import { AppModuleOptions } from '@app/types/AppModuleOptions';
-import { registerAsTyped } from '@config/registerAsTyped';
+import type { AppConfigSource } from './AppConfigSource';
 
-export default (envVars: EnvVarSchemaType) =>
-  registerAsTyped(
-    'app',
-    () =>
-      ({
-        title: 'RandomGen',
-        description: 'Random generators for RPGs',
-        version: '1.0',
-        env: envVars.ENV,
-        host: envVars.APP_HOST,
-        port: envVars.APP_PORT,
-        defaultLanguage: 'pl' satisfies Lang,
-      }) satisfies AppModuleOptions,
-  );
+export function resolveAppModuleConfig(
+  source: Readonly<AppConfigSource>,
+): AppModuleOptions {
+  return {
+    title: 'RandomGen',
+    description: 'Random generators for RPGs',
+    version: '1.0.0',
+    env: source.ENV,
+    host: source.APP_HOST,
+    port: source.APP_PORT,
+    defaultLanguage: 'pl' satisfies Lang,
+  };
+}

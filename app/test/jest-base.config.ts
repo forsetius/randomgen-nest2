@@ -1,8 +1,9 @@
 import type { Config } from 'jest';
 import tsconfig from '../tsconfig.json';
-import { loadEnvFile } from '@shared/util/loadEnvFile';
+import { APP_CONFIG_ENV_PREFIX } from '../src/app/config/appConfigEnvPrefix';
+import { loadEnvFile } from '../src/shared/util/loadEnvFile';
 
-loadEnvFile('.env.test');
+loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);
 
 function pathsToMapper(): Record<string, string> {
   const paths = tsconfig.compilerOptions.paths;

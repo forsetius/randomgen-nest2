@@ -3,15 +3,16 @@ import {
   isInsideProject,
   resolveAppRelativePath,
 } from '@forsetius/glitnir-shared';
-import z from 'zod';
+import { z } from 'zod';
 import { APP_ROOT } from '../../appRoot';
-import { Env } from '@shared/types/Env';
 import { MailProvider } from '../../io/mail/types';
+import { Env } from '@shared/types/Env';
+import { InvalidEnvVarsException } from './exceptions/InvalidEnvVarsException';
 
 const MIN_PORT_NUMBER = 0;
 const MAX_PORT_NUMBER = 65535;
 
-const BaseEnvVarSchema = z.object({
+const BaseAppConfigSourceSchema = z.object({
   ENV: z.enum(Env),
   AKISMET_KEY: z.string().nonempty(),
   APP_HOST: z.httpUrl({ normalize: true }).or(z.literal('localhost')),
@@ -57,6 +58,23 @@ const MailProviderSchema = z.discriminatedUnion('MAIL_PROVIDER', [
   }),
 ]);
 
-export const EnvVarSchema = BaseEnvVarSchema.and(MailProviderSchema);
+// FIXME nomenklatura
+export const AppConfigSourceSchema =
+  BaseAppConfigSourceSchema.and(MailProviderSchema);
 
-export type EnvVarSchemaType = z.infer<typeof EnvVarSchema>;
+export type AppConfigSource = z.infer<typeof AppConfigSourceSchema>;
+type RawConfigSource = Readonly<Record<string, string | undefined>>;
+
+export function resolveAppConfigSource(
+  rawSource: RawConfigSource,
+): AppConfigSource {
+  try {
+    return AppConfigSourceSchema.parse(rawSource);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      throw new InvalidEnvVarsException(error); // FIXME wyjątek z pakietu
+    }
+
+    throw error; // FIXME stringify error
+  }
+}

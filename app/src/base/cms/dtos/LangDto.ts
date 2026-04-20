@@ -1,20 +1,41 @@
-import type { AppConfigService } from '@config/AppConfigService';
+import type { ValidationConfig } from '@forsetius/glitnir-validation';
+import type { Lang } from '@shared/types/Lang';
 import z from 'zod';
 
-export const LangSchema = (config: AppConfigService) => {
-  const defaultLang = config.get('app.defaultLanguage');
-  const supportedLangs = config.get('cms.supportedLangs');
+type ValidationLangConfig = Pick<ValidationConfig, 'langs'>;
+
+function toAppLangsConfig(config: Readonly<ValidationLangConfig>): {
+  readonly supported: readonly [Lang, ...Lang[]];
+  readonly default: Lang;
+} {
+  const [firstSupportedLang, ...otherSupportedLangs] = config.langs
+    .supported as Lang[];
+
+  if (typeof firstSupportedLang === 'undefined') {
+    throw new Error(
+      'Expected validation config to define at least one supported language',
+    );
+  }
+
+  return {
+    supported: [firstSupportedLang, ...otherSupportedLangs],
+    default: config.langs.default as Lang,
+  };
+}
+
+export const LangSchema = (config: Readonly<ValidationLangConfig>) => {
+  const appLangs = toAppLangsConfig(config);
 
   return z.object({
-    lang: z.enum(supportedLangs).prefault(defaultLang),
+    lang: z.enum(appLangs.supported).default(appLangs.default),
   });
 };
 
-export const OptionalLangSchema = (config: AppConfigService) => {
-  const supportedLangs = config.get('cms.supportedLangs');
+export const OptionalLangSchema = (config: Readonly<ValidationLangConfig>) => {
+  const appLangs = toAppLangsConfig(config);
 
   return z.object({
-    lang: z.enum(supportedLangs).optional(),
+    lang: z.enum(appLangs.supported).optional(),
   });
 };
 

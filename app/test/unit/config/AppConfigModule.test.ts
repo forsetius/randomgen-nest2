@@ -1,6 +1,12 @@
 import path from 'node:path';
+import { AppConfigModule } from '@forsetius/glitnir-config';
 import type { TestingModule } from '@nestjs/testing';
 import { APP_ROOT } from '../../../src/appRoot';
+import { appConfigBindings } from '../../../src/app/config/AppConfigBindings';
+import {
+  type AppConfigRegistry,
+  resolveAppConfigRegistry,
+} from '../../../src/app/config/AppConfigContracts';
 import { Env } from '../../../src/shared/types/Env';
 import type { Lang } from '../../../src/shared/types/Lang';
 import { MailProvider } from '../../../src/io/mail/types';
@@ -27,18 +33,9 @@ type ConfigEnvironmentOverrides = Partial<
 >;
 
 type TestingModulePackage = typeof import('@nestjs/testing');
-type AppConfigModulePackage =
-  typeof import('../../../src/base/config/AppConfigModule');
-type AppConfigServicePackage =
-  typeof import('../../../src/base/config/AppConfigService');
-type AppConfigServiceInstance = InstanceType<
-  AppConfigServicePackage['AppConfigService']
->;
 
 interface ConfigRuntimeModules {
   readonly Test: TestingModulePackage['Test'];
-  readonly AppConfigModule: AppConfigModulePackage['AppConfigModule'];
-  readonly AppConfigService: AppConfigServicePackage['AppConfigService'];
 }
 
 const initialProcessEnvironment = { ...process.env };
@@ -91,54 +88,46 @@ function buildProcessEnvironment(
 function loadConfigRuntimeModules(): ConfigRuntimeModules {
   const testingModulePackage =
     jest.requireActual<TestingModulePackage>('@nestjs/testing');
-  const appConfigModule = jest.requireActual<AppConfigModulePackage>(
-    '../../../src/base/config/AppConfigModule',
-  );
-  const appConfigService = jest.requireActual<AppConfigServicePackage>(
-    '../../../src/base/config/AppConfigService',
-  );
 
   return {
     Test: testingModulePackage.Test,
-    AppConfigModule: appConfigModule.AppConfigModule,
-    AppConfigService: appConfigService.AppConfigService,
   };
 }
 
-async function bootstrapConfigService(
+async function bootstrapConfig(
   overrides: ConfigEnvironmentOverrides = {},
 ): Promise<{
   readonly testingModule: TestingModule;
-  readonly configService: AppConfigServiceInstance;
+  readonly config: AppConfigRegistry;
 }> {
   process.env = buildProcessEnvironment(overrides);
 
   let bootstrappedConfig:
     | {
         readonly testingModule: TestingModule;
-        readonly configService: AppConfigServiceInstance;
+        readonly config: AppConfigRegistry;
       }
     | undefined;
 
   await jest.isolateModulesAsync(async () => {
-    const { Test, AppConfigModule, AppConfigService } =
-      loadConfigRuntimeModules();
+    const { Test } = loadConfigRuntimeModules();
 
     const testingModule = await Test.createTestingModule({
-      imports: [AppConfigModule],
+      imports: [AppConfigModule.forRoot(appConfigBindings)],
     }).compile();
 
-    const configService =
-      testingModule.get<AppConfigServiceInstance>(AppConfigService);
+    const config = resolveAppConfigRegistry((token) =>
+      testingModule.get(token),
+    );
 
     bootstrappedConfig = {
       testingModule,
-      configService,
+      config,
     };
   });
 
   if (typeof bootstrappedConfig === 'undefined') {
-    throw new Error('Expected config service bootstrap to return a module');
+    throw new Error('Expected config bootstrap to return a module');
   }
 
   return bootstrappedConfig;
@@ -148,16 +137,17 @@ async function captureConfigBootstrapError(
   overrides: ConfigEnvironmentOverrides = {},
 ): Promise<Error> {
   try {
-    const { testingModule, configService } =
-      await bootstrapConfigService(overrides);
+    const { testingModule, config } = await bootstrapConfig(overrides);
 
     try {
-      configService.get('app');
-      configService.get('cms');
-      configService.get('mail');
-      configService.get('security');
-      configService.get('technobabble');
-      configService.get('templating');
+      expect(config.app).toBeDefined();
+      expect(config.cms).toBeDefined();
+      expect(config.mail).toBeDefined();
+      expect(config.security).toBeDefined();
+      expect(config.spamcheck).toBeDefined();
+      expect(config.validation).toBeDefined();
+      expect(config.technobabble).toBeDefined();
+      expect(config.templating).toBeDefined();
     } finally {
       await testingModule.close();
     }
@@ -176,31 +166,31 @@ async function captureConfigBootstrapError(
   throw new Error('Expected config bootstrap to fail');
 }
 
-describe('AppConfigModule', () => {
+describe('appConfigBindings', () => {
   afterEach(() => {
     process.env = { ...initialProcessEnvironment };
     jest.resetModules();
   });
 
   test('builds application and CMS config from environment values', async () => {
-    const { testingModule, configService } = await bootstrapConfigService({
+    const { testingModule, config } = await bootstrapConfig({
       APP_HOST: 'https://example.test',
       APP_PORT: '6543',
       CMS_SOURCE_DIR: 'test/e2e/base/cms/_fixtures/',
     });
 
     try {
-      expect(configService.get('app')).toEqual({
+      expect(config.app).toEqual({
         title: 'RandomGen',
         description: 'Random generators for RPGs',
-        version: '1.0',
+        version: '1.0.0',
         env: Env.TEST,
         host: 'https://example.test/',
         port: 6543,
         defaultLanguage: POLISH_LANGUAGE,
       });
 
-      expect(configService.get('cms')).toEqual({
+      expect(config.cms).toEqual({
         appOrigin: 'https://example.test/',
         supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
         fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
@@ -244,14 +234,14 @@ describe('AppConfigModule', () => {
   });
 
   test('builds dummy mail config without SMTP credentials', async () => {
-    const { testingModule, configService } = await bootstrapConfigService({
+    const { testingModule, config } = await bootstrapConfig({
       MAIL_PROVIDER: MailProvider.DUMMY,
       MAIL_SENDER_NAME: 'Local Dummy Sender',
       MAIL_SENDER_EMAIL: 'local-dummy@example.com',
     });
 
     try {
-      expect(configService.get('mail')).toEqual({
+      expect(config.mail).toEqual({
         provider: MailProvider.DUMMY,
         credentials: {},
         sender: {
@@ -266,7 +256,7 @@ describe('AppConfigModule', () => {
   });
 
   test('builds SMTP mail config with credentials from environment values', async () => {
-    const { testingModule, configService } = await bootstrapConfigService({
+    const { testingModule, config } = await bootstrapConfig({
       MAIL_PROVIDER: MailProvider.SMTP,
       MAIL_SENDER_NAME: 'SMTP Sender',
       MAIL_SENDER_EMAIL: 'smtp@example.com',
@@ -277,7 +267,7 @@ describe('AppConfigModule', () => {
     });
 
     try {
-      expect(configService.get('mail')).toEqual({
+      expect(config.mail).toEqual({
         provider: MailProvider.SMTP,
         credentials: {
           smtp: {
@@ -298,30 +288,45 @@ describe('AppConfigModule', () => {
     }
   });
 
-  test('builds security, technobabble, and templating config from inputs and defaults', async () => {
-    const { testingModule, configService } = await bootstrapConfigService({
+  test('builds security, spamcheck, technobabble, and templating config from inputs and defaults', async () => {
+    const { testingModule, config } = await bootstrapConfig({
       AKISMET_KEY: 'akismet-test-key',
       APP_HOST: 'https://example.test',
     });
 
     try {
-      expect(configService.get('security')).toEqual({
-        akismet: {
-          key: 'akismet-test-key',
-          siteUrl: 'https://example.test/',
-        },
+      expect(config.security).toEqual({
         rateLimit: {
+          enabled: true,
           limit: 100,
           windowMs: 1000,
         },
       });
 
-      expect(configService.get('technobabble')).toEqual({
+      expect(config.spamcheck).toEqual({
+        akismetKey: 'akismet-test-key',
+        siteUrl: 'https://example.test/',
+        langs: {
+          supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
+          charset: 'utf-8',
+        },
+      });
+
+      expect(config.validation).toEqual({
+        env: Env.TEST,
+        langs: {
+          supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
+          default: POLISH_LANGUAGE,
+        },
+        strictMode: true,
+      });
+
+      expect(config.technobabble).toEqual({
         maxResults: 20,
         supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
       });
 
-      expect(configService.get('templating')).toEqual({
+      expect(config.templating).toEqual({
         paths: path.join(APP_ROOT, 'content', 'cms', 'templates'),
         options: {
           autoescape: false,
@@ -339,6 +344,19 @@ describe('AppConfigModule', () => {
     });
 
     expect(caughtError.message).toContain('APP_PORT');
+  });
+
+  test('maps stage environment to prod for validation package config', async () => {
+    const { testingModule, config } = await bootstrapConfig({
+      ENV: Env.STAGE,
+    });
+
+    try {
+      expect(config.app.env).toBe(Env.STAGE);
+      expect(config.validation.env).toBe(Env.PROD);
+    } finally {
+      await testingModule.close();
+    }
   });
 
   test.todo(

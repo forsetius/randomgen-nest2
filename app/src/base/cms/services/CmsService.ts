@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
 import { Injectable } from '@nestjs/common';
+import { Inject } from '@nestjs/common';
 import { Lang, type Lang as AppLang } from '@shared/types/Lang';
 import stopwatch from '@shared/util/stopwatch';
 import { Library } from '../domain/Library';
@@ -10,7 +11,7 @@ import { RenderedContent } from '../types/RenderedContent';
 import { TemplatingService } from '@templating/TemplatingService';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { LibraryFactory } from './LibraryFactory';
-import { AppConfigService } from '@config/AppConfigService';
+import { CmsModuleConfigContract } from '@config/AppConfigContracts';
 
 @Injectable()
 export class CmsService {
@@ -22,11 +23,12 @@ export class CmsService {
   public constructor(
     private readonly templatingService: TemplatingService,
     private readonly libraryFactory: LibraryFactory,
-    configService: AppConfigService,
+    @Inject(CmsModuleConfigContract.token)
+    config: SitewideData,
   ) {
-    this.metadata = configService.get('cms');
-    this.sourceDir = configService.get('cms.paths.sourceDir');
-    this.outputDir = configService.get('cms.paths.outputDir');
+    this.metadata = config;
+    this.sourceDir = config.paths.sourceDir;
+    this.outputDir = config.paths.outputDir;
   }
 
   async onModuleInit(): Promise<void> {

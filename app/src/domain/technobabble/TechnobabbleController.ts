@@ -1,4 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
+import { ParsedArgs, ZodSchema } from '@forsetius/glitnir-validation';
 import type { BaseGenerator } from './generators/BaseGenerator';
 import { EnglishGenerator } from './generators/EnglishGenerator';
 import { PolishGenerator } from './generators/PolishGenerator';
@@ -9,8 +10,7 @@ import {
 import { ApiOperation } from '@nestjs/swagger';
 import { SourceTemplateName } from './types/SourceTemplateName';
 import { BaseSource } from './types/SourceData';
-import { ZodSchema } from '@shared/validation/ZodSchemaDecorator';
-import { ParsedArgs } from '@shared/validation/ParsedArgsDecorator';
+import { DEFAULT_TECHNOBABBLE_MAX_RESULTS } from './TechnobabbleDefaults';
 
 @Controller()
 export class TechnobabbleController {
@@ -23,8 +23,11 @@ export class TechnobabbleController {
     description: 'Generate raw array of Star Trek technobabble phrases',
   })
   @Get(['/technobabble', '/api/1.0/startrek/technobabble'])
-  @ZodSchema((configService) => ({
-    query: TechnobabbleRequestSchema(configService),
+  @ZodSchema(({ langs }) => ({
+    query: TechnobabbleRequestSchema({
+      langs,
+      maxResults: DEFAULT_TECHNOBABBLE_MAX_RESULTS,
+    }),
   }))
   public generateRaw(@ParsedArgs() params: TechnobabbleRequestDto): string {
     const service =

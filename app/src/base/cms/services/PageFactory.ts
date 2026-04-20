@@ -1,5 +1,5 @@
-import { Injectable } from '@nestjs/common';
-import { MarkdownService } from '../../parser/services/MarkdownService';
+import type { MarkdownApi } from '@forsetius/glitnir-markdown';
+import { Inject, Injectable } from '@nestjs/common';
 import { TemplatingService } from '@templating/TemplatingService';
 import { Page } from '../domain/Page';
 import { PageDef, PageZodSchema } from '../types';
@@ -8,7 +8,8 @@ import { SourceFileValidationException } from '../exceptions/SourceFileValidatio
 import { BlockFactory } from './BlockFactory';
 import { Locale } from '../domain/Locale';
 import type { SitewideData } from '../types/CmsModuleOptions';
-import { AppConfigService } from '@config/AppConfigService';
+import { CmsModuleConfigContract } from '@config/AppConfigContracts';
+import { CMS_MARKDOWN_API } from '../markdown/CmsMarkdownApiToken';
 
 @Injectable()
 export class PageFactory {
@@ -16,11 +17,13 @@ export class PageFactory {
 
   public constructor(
     private readonly blockFactory: BlockFactory,
-    private readonly markdownService: MarkdownService,
+    @Inject(CMS_MARKDOWN_API)
+    private readonly markdownApi: MarkdownApi,
     private readonly templatingService: TemplatingService,
-    configService: AppConfigService,
+    @Inject(CmsModuleConfigContract.token)
+    config: SitewideData,
   ) {
-    this.metadata = configService.get('cms');
+    this.metadata = config;
   }
 
   /**
@@ -49,7 +52,7 @@ export class PageFactory {
 
     return new Page(
       this.blockFactory,
-      this.markdownService,
+      this.markdownApi,
       this.templatingService,
       this.metadata,
       filename,

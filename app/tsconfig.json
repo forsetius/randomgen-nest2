@@ -31,7 +31,7 @@
     "sourceMap": true,
     "paths": {
       "@app/*": ["./src/app/*"],
-      "@config/*": ["./src/base/config/*"],
+      "@config/*": ["./src/app/config/*"],
       "@domain/*": ["./src/domain/*"],
       "@shared/*": ["./src/shared/*"],
       "@templating/*": ["./src/base/templating/*"]

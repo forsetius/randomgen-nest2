@@ -1,13 +1,19 @@
 import { TechnobabbleModuleOptions } from '@domain/technobabble/types/TechnobabbleModuleOptions';
-import { registerAsTyped } from '@config/registerAsTyped';
-import type { Lang } from '@shared/types/Lang';
+import {
+  DEFAULT_TECHNOBABBLE_MAX_RESULTS,
+  DEFAULT_TECHNOBABBLE_SUPPORTED_LANGS,
+} from '@domain/technobabble/TechnobabbleDefaults';
+import type { AppConfigSource } from './AppConfigSource';
 
-export default () =>
-  registerAsTyped(
-    'technobabble',
-    () =>
-      ({
-        maxResults: 20,
-        supportedLangs: ['en', 'pl'] satisfies Lang[],
-      }) satisfies TechnobabbleModuleOptions,
-  );
+// FIXME przenieść do technobabble, może usunąć stałe?
+
+export function resolveTechnobabbleModuleConfig(
+  source: Readonly<AppConfigSource>,
+): TechnobabbleModuleOptions {
+  void source;
+
+  return {
+    maxResults: DEFAULT_TECHNOBABBLE_MAX_RESULTS,
+    supportedLangs: [...DEFAULT_TECHNOBABBLE_SUPPORTED_LANGS],
+  };
+}

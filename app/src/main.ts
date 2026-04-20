@@ -1,13 +1,12 @@
 import { Settings as LuxonSettings } from 'luxon';
 import { VersioningType } from '@nestjs/common';
-import { NestFactory, Reflector } from '@nestjs/core';
+import { SecurityService } from '@forsetius/glitnir-security';
+import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppModule } from '@app/AppModule';
-import { AppConfigService } from '@config/AppConfigService';
-import { SecurityService } from './base/security/services/SecurityService';
+import { resolveAppConfigRegistry } from '@config/AppConfigContracts';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
 import stopwatch from '@shared/util/stopwatch';
-import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
 
 stopwatch.record('after imports');
 
@@ -17,22 +16,17 @@ async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   stopwatch.record('app created');
 
-  const configService = app.get(AppConfigService);
+  const config = resolveAppConfigRegistry((token) => app.get(token));
   app.enableVersioning({ type: VersioningType.URI, prefix: false });
   app.enableShutdownHooks();
-  app.get(SecurityService).setup(app);
-
-  const reflector = app.get(Reflector);
-  app.useGlobalInterceptors(
-    new ZodRequestInterceptor(configService, reflector),
-  );
+  app.get(SecurityService).setup(app); // FIXME refactor `glitnir-security` to get rid of it
   app.useGlobalFilters(new NotFoundFilter());
 
   try {
     await app.init();
     stopwatch.record('app initialized');
 
-    await app.listen(configService.get('app.port'));
+    await app.listen(config.app.port);
   } catch (error) {
     console.error('Error while starting the application:', error);
     stopwatch.record('Exiting with error');

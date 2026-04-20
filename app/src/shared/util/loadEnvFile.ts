@@ -2,13 +2,19 @@ import { resolve } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
 import { APP_ROOT } from '../../appRoot';
 
-let isEnvVarsLoaded = false;
+const loadedEnvFileKeys = new Set<string>();
 
-export function loadEnvFile(envFile = '.env'): void {
-  if (isEnvVarsLoaded) {
+export function loadEnvFile(
+  envFile = '.env',
+  overwrite = false,
+  keyPrefix = '',
+): void {
+  const loadKey = `${envFile}:${overwrite ? 'overwrite' : 'skip-existing'}:${keyPrefix}`;
+
+  if (loadedEnvFileKeys.has(loadKey)) {
     return;
   }
-  isEnvVarsLoaded = true;
+  loadedEnvFileKeys.add(loadKey);
 
   const envFilePath = resolve(APP_ROOT, envFile);
   if (!existsSync(envFilePath)) {
@@ -30,8 +36,10 @@ export function loadEnvFile(envFile = '.env'): void {
       }
 
       const value = /^"(.*)"$/.exec(val)?.[1] ?? val;
-      if (!(key in process.env)) {
-        process.env[key] = value;
+      const targetKey = `${keyPrefix}${key}`;
+
+      if (overwrite || !(targetKey in process.env)) {
+        process.env[targetKey] = value;
       }
     });
 }

@@ -1,5 +1,9 @@
 import * as fs from 'node:fs';
 import { buildApp, metaFile, ServerMeta } from './buildApp';
+import { APP_CONFIG_ENV_PREFIX } from '../../src/app/config/appConfigEnvPrefix';
+import { loadEnvFile } from '../../src/shared/util/loadEnvFile';
+
+loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);
 
 export default async function globalAppCreate(): Promise<void> {
   const app = await buildApp();

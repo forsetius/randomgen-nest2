@@ -1,34 +1,63 @@
 import * as express from 'express';
 import { HttpModule } from '@nestjs/axios';
-import { Logger, Module, OnModuleInit } from '@nestjs/common';
+import {
+  MarkdownFactory,
+  MarkdownModule,
+  type MarkdownApi,
+} from '@forsetius/glitnir-markdown';
+import {
+  AkismetInterceptor,
+  SpamCheckModule,
+} from '@forsetius/glitnir-spamcheck';
+import { Inject, Logger, Module, OnModuleInit } from '@nestjs/common';
+import {
+  ContentSecurityPolicyRegistry,
+  SecurityModule,
+} from '@forsetius/glitnir-security';
 import { HttpAdapterHost } from '@nestjs/core';
-import { AppConfigModule } from '@config/AppConfigModule';
 import { MailModule } from '../../io/mail';
-import { ParserModule } from '../parser/ParserModule';
-import { SecurityModule } from '../security/SecurityModule';
 import { TemplatingModule } from '@templating/TemplatingModule';
 import { CmsController } from './CmsController';
+import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
+import { CMS_MARKDOWN_API } from './markdown/CmsMarkdownApiToken';
+import { createCmsMarkdownRenderingProfile } from './markdown/createCmsMarkdownRenderingProfile';
 import { BlockFactory, CmsService, MenuFactory, PageFactory } from './services';
-import { ContentSecurityPolicyRegistry } from '../security/ContentSecurityPolicyRegistry';
+import { CmsSourceParserService } from './services/CmsSourceParserService';
 import { LibraryFactory } from './services';
-import { AppConfigService } from '@config/AppConfigService';
+import { CmsModuleConfigContract } from '@config/AppConfigContracts';
+import type { CmsModuleOptions } from './types/CmsModuleOptions';
 
 @Module({
   imports: [
-    AppConfigModule,
     HttpModule,
-    ParserModule,
+    MarkdownModule,
     SecurityModule,
+    SpamCheckModule,
     TemplatingModule,
     MailModule,
   ],
   controllers: [CmsController],
   providers: [
+    {
+      provide: CMS_MARKDOWN_API,
+      inject: [MarkdownFactory, CmsModuleConfigContract.token],
+      useFactory: (
+        markdownFactory: MarkdownFactory,
+        cmsConfig: CmsModuleOptions,
+      ): MarkdownApi => {
+        return markdownFactory.create(
+          createCmsMarkdownRenderingProfile(cmsConfig.appOrigin),
+        );
+      },
+    },
     BlockFactory,
     MenuFactory,
     PageFactory,
     LibraryFactory,
+    AkismetInterceptor,
     CmsService,
+    CmsSourceParserService,
+    ContactSpamCheckInterceptor,
   ],
 })
 export class CmsModule implements OnModuleInit {
@@ -36,7 +65,8 @@ export class CmsModule implements OnModuleInit {
 
   constructor(
     private readonly adapterHost: HttpAdapterHost,
-    private readonly configService: AppConfigService,
+    @Inject(CmsModuleConfigContract.token)
+    private readonly cmsConfig: CmsModuleOptions,
     cspRegistry: ContentSecurityPolicyRegistry,
   ) {
     // FIXME: czy potrzebne?
@@ -54,8 +84,8 @@ export class CmsModule implements OnModuleInit {
       this.logger.log(`Serving ${dir} from: ${path}`);
     };
 
-    useStatic('ui', this.configService.get('cms.paths.uiDir'));
-    useStatic('media', this.configService.get('cms.paths.mediaDir'));
-    useStatic('pages', this.configService.get('cms.paths.outputDir'));
+    useStatic('ui', this.cmsConfig.paths.uiDir);
+    useStatic('media', this.cmsConfig.paths.mediaDir);
+    useStatic('pages', this.cmsConfig.paths.outputDir);
   }
 }

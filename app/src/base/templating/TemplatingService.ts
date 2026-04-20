@@ -1,19 +1,26 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import * as nunjucks from 'nunjucks';
 import { DateTime } from 'luxon';
 import type { TemplatingModuleOptions } from './types/TemplatingModuleOptions';
 import { InvalidTemplateException } from './exceptions/InvalidTemplateException';
 import { Lang } from '@shared/types/Lang';
-import { AppConfigService } from '@config/AppConfigService';
+import { TemplatingModuleConfigContract } from '@config/AppConfigContracts';
 
 @Injectable()
 export class TemplatingService {
   private readonly renderer: nunjucks.Environment;
 
-  constructor(configService: AppConfigService) {
-    const config: TemplatingModuleOptions = configService.get('templating');
+  constructor(
+    @Inject(TemplatingModuleConfigContract.token)
+    config: TemplatingModuleOptions,
+  ) {
+    const templatePaths = Array.isArray(config.paths)
+      ? [...config.paths]
+      : config.paths;
+    const configureOptions =
+      typeof config.options === 'undefined' ? undefined : { ...config.options };
 
-    this.renderer = nunjucks.configure(config.paths, config.options);
+    this.renderer = nunjucks.configure(templatePaths, configureOptions);
     this.renderer.addFilter(
       'formatDate',
       (value: DateTime, lang: Lang, format = 'yyyy-MM-dd') =>

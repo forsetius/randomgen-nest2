@@ -1,10 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import type { MarkdownApi } from '@forsetius/glitnir-markdown';
+import { Inject, Injectable } from '@nestjs/common';
 import { TemplatingService } from '@templating/TemplatingService';
 import { BlockDef, BlockType, BlockZodSchema } from '../types';
 import { ZodError } from 'zod';
 import { SourceFileValidationException } from '../exceptions/SourceFileValidationException';
 import { Block } from '../domain/blocks/Block';
-import { MarkdownService } from '../../parser/services/MarkdownService';
 import {
   ApiCallBlock,
   GalleryBlock,
@@ -12,11 +12,13 @@ import {
   PageGalleryBlock,
   StaticBlock,
 } from '../domain/blocks';
+import { CMS_MARKDOWN_API } from '../markdown/CmsMarkdownApiToken';
 
 @Injectable()
 export class BlockFactory {
   public constructor(
-    private markdownService: MarkdownService,
+    @Inject(CMS_MARKDOWN_API)
+    private readonly markdownApi: MarkdownApi,
     private templatingService: TemplatingService,
   ) {}
 
@@ -56,14 +58,14 @@ export class BlockFactory {
       case BlockType.PAGE_GALLERY:
         return new PageGalleryBlock(
           this.templatingService,
-          this.markdownService,
+          this.markdownApi,
           name,
           def,
         );
       case BlockType.STATIC:
         return new StaticBlock(
           this.templatingService,
-          this.markdownService,
+          this.markdownApi,
           name,
           def,
         );
