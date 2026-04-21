@@ -33,8 +33,7 @@
       "@app/*": ["./src/app/*"],
       "@config/*": ["./src/app/config/*"],
       "@domain/*": ["./src/domain/*"],
-      "@shared/*": ["./src/shared/*"],
-      "@templating/*": ["./src/base/templating/*"]
+      "@shared/*": ["./src/shared/*"]
     },
     "types": ["node", "jest"]
   },

@@ -2,6 +2,7 @@ import path from 'node:path';
 import { AppConfigBuilder } from '@forsetius/glitnir-config';
 import { SecurityConfigContract } from '@forsetius/glitnir-security';
 import { SpamCheckConfigContract } from '@forsetius/glitnir-spamcheck';
+import { TemplatingConfigContract } from '@forsetius/glitnir-templating';
 import { ValidationConfigContract } from '@forsetius/glitnir-validation';
 import { APP_ROOT } from '../../appRoot';
 import {
@@ -9,7 +10,6 @@ import {
   CmsModuleConfigContract,
   MailModuleConfigContract,
   resolveSharedAppConfig,
-  TemplatingModuleConfigContract,
   TechnobabbleModuleConfigContract,
   type SharedAppConfig,
 } from './AppConfigContracts';
@@ -42,5 +42,5 @@ export const appConfigBindings = new AppConfigBuilder<
   .setup(SpamCheckConfigContract, resolveSpamCheckModuleConfig)
   .setup(ValidationConfigContract, resolveValidationModuleConfig)
   .setup(TechnobabbleModuleConfigContract, resolveTechnobabbleModuleConfig)
-  .setup(TemplatingModuleConfigContract, resolveTemplatingModuleConfig)
+  .setup(TemplatingConfigContract, resolveTemplatingModuleConfig)
   .build();

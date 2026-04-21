@@ -1,6 +1,6 @@
 import { Block } from './Block';
 import { GalleryBlockDef } from '../../types';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Library } from '../Library';
 
 export class GalleryBlock extends Block {

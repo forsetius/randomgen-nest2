@@ -1,6 +1,6 @@
 import type { MarkdownApi } from '@forsetius/glitnir-markdown';
 import { Inject, Injectable } from '@nestjs/common';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Page } from '../domain/Page';
 import { PageDef, PageZodSchema } from '../types';
 import { ZodError } from 'zod';

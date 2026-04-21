@@ -1,4 +1,4 @@
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { MenuDef } from '../types';
 import { Locale } from './Locale';
 
@@ -30,9 +30,10 @@ export class Menu {
       if (e instanceof Error) {
         throw new Error(
           `Error rendering menu "${this.name}": ${e.message}\n${this.def.template}`,
+          { cause: e },
         );
       }
-      throw new Error(`Error rendering menu "${this.name}"`);
+      throw new Error(`Error rendering menu "${this.name}"`, { cause: e });
     }
   }
 }

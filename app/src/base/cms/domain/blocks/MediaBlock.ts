@@ -1,6 +1,6 @@
 import { Block } from './Block';
 import { MediaBlockDef } from '../../types';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Library } from '../Library';
 
 export class MediaBlock extends Block {

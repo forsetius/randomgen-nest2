@@ -9,6 +9,7 @@ import {
   AkismetInterceptor,
   SpamCheckModule,
 } from '@forsetius/glitnir-spamcheck';
+import { TemplatingModule } from '@forsetius/glitnir-templating';
 import { Inject, Logger, Module, OnModuleInit } from '@nestjs/common';
 import {
   ContentSecurityPolicyRegistry,
@@ -16,7 +17,6 @@ import {
 } from '@forsetius/glitnir-security';
 import { HttpAdapterHost } from '@nestjs/core';
 import { MailModule } from '../../io/mail';
-import { TemplatingModule } from '@templating/TemplatingModule';
 import { CmsController } from './CmsController';
 import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
 import { CMS_MARKDOWN_API } from './markdown/CmsMarkdownApiToken';

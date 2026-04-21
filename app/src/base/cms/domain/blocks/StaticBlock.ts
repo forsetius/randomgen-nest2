@@ -1,7 +1,7 @@
 import type { MarkdownApi } from '@forsetius/glitnir-markdown';
 import { Block } from './Block';
 import { StaticBlockDef } from '../../types';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Library } from '../Library';
 
 export class StaticBlock extends Block {

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import fsAsync from 'node:fs/promises';
 import { join } from 'node:path';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Injectable } from '@nestjs/common';
 import { Inject } from '@nestjs/common';
 import { Lang, type Lang as AppLang } from '@shared/types/Lang';
@@ -8,7 +9,6 @@ import stopwatch from '@shared/util/stopwatch';
 import { Library } from '../domain/Library';
 import { Locale } from '../domain/Locale';
 import { RenderedContent } from '../types/RenderedContent';
-import { TemplatingService } from '@templating/TemplatingService';
 import type { SitewideData } from '../types/CmsModuleOptions';
 import { LibraryFactory } from './LibraryFactory';
 import { CmsModuleConfigContract } from '@config/AppConfigContracts';

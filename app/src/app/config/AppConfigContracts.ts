@@ -4,14 +4,14 @@ import type { SecurityConfig } from '@forsetius/glitnir-security';
 import { SecurityConfigContract } from '@forsetius/glitnir-security';
 import type { SpamCheckConfig } from '@forsetius/glitnir-spamcheck';
 import { SpamCheckConfigContract } from '@forsetius/glitnir-spamcheck';
+import type { TemplatingConfig } from '@forsetius/glitnir-templating';
+import { TemplatingConfigContract } from '@forsetius/glitnir-templating';
 import type { ValidationConfig } from '@forsetius/glitnir-validation';
 import { ValidationConfigContract } from '@forsetius/glitnir-validation';
-import type { ConfigureOptions } from 'nunjucks';
 import { z } from 'zod';
 import type { AppModuleOptions } from '@app/types/AppModuleOptions';
 import type { CmsModuleOptions } from '../../base/cms/types/CmsModuleOptions';
 import type { TechnobabbleModuleOptions } from '@domain/technobabble/types/TechnobabbleModuleOptions';
-import type { TemplatingModuleOptions } from '@templating/types/TemplatingModuleOptions';
 import type { MailModuleOptions } from '../../io/mail/types/MailModuleOptions';
 import { Env } from '@shared/types/Env';
 import { Lang, Langs } from '@shared/types/Lang';
@@ -26,14 +26,6 @@ const SEMVER_VERSION_REGEXP =
 // FIXME do shared
 const MIN_PORT_NUMBER = 1;
 const MAX_PORT_NUMBER = 65535;
-
-const ConfigureNunjucksOptionsSchema = z.custom<ConfigureOptions>(
-  (value): value is ConfigureOptions =>
-    typeof value === 'object' && value !== null && !Array.isArray(value),
-  {
-    error: 'Expected a nunjucks ConfigureOptions object',
-  },
-);
 
 const AbsolutePathSchema = z
   .string()
@@ -118,16 +110,6 @@ const TechnobabbleModuleConfigSchema = z
   })
   .strict();
 
-const TemplatingModuleConfigSchema = z
-  .object({
-    paths: z.union([
-      AbsolutePathSchema,
-      z.array(AbsolutePathSchema).nonempty(),
-    ]),
-    options: ConfigureNunjucksOptionsSchema.optional(),
-  })
-  .strict();
-
 export interface SharedAppConfig {
   readonly env: ValidationConfig['env'];
   readonly origin: string;
@@ -146,7 +128,7 @@ export interface AppConfigRegistry {
   readonly spamcheck: SpamCheckConfig;
   readonly validation: ValidationConfig;
   readonly technobabble: TechnobabbleModuleOptions;
-  readonly templating: TemplatingModuleOptions;
+  readonly templating: TemplatingConfig;
 }
 
 export function resolveAppConfigRegistry(
@@ -162,9 +144,7 @@ export function resolveAppConfigRegistry(
     technobabble: resolve(
       TechnobabbleModuleConfigContract.token,
     ) as TechnobabbleModuleOptions,
-    templating: resolve(
-      TemplatingModuleConfigContract.token,
-    ) as TemplatingModuleOptions,
+    templating: resolve(TemplatingConfigContract.token) as TemplatingConfig,
   };
 }
 
@@ -220,9 +200,4 @@ export const MailModuleConfigContract = new ConfigContract(
 export const TechnobabbleModuleConfigContract = new ConfigContract(
   'technobabble',
   () => TechnobabbleModuleConfigSchema,
-);
-
-export const TemplatingModuleConfigContract = new ConfigContract(
-  'templating',
-  () => TemplatingModuleConfigSchema,
 );

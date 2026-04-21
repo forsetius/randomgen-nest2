@@ -1,5 +1,5 @@
 import { Block } from './Block';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { ApiCallBlockDef } from '../../types';
 import { Library } from '../Library';
 

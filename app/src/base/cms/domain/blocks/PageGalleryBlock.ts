@@ -1,6 +1,6 @@
 import type { MarkdownApi } from '@forsetius/glitnir-markdown';
 import { Block } from './Block';
-import { TemplatingService } from '@templating/TemplatingService';
+import { TemplatingService } from '@forsetius/glitnir-templating';
 import { Library } from '../Library';
 import { PageGalleryBlockDef } from '../../types';
 import { CategoryNotFoundException } from '../../exceptions/CategoryNotFoundException';

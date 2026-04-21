@@ -3,6 +3,7 @@ import { AppConfigModule } from '@forsetius/glitnir-config';
 import type { TestingModule } from '@nestjs/testing';
 import { APP_ROOT } from '../../../src/appRoot';
 import { appConfigBindings } from '../../../src/app/config/AppConfigBindings';
+import { APP_CONFIG_ENV_PREFIX } from '../../../src/app/config/appConfigEnvPrefix';
 import {
   type AppConfigRegistry,
   resolveAppConfigRegistry,
@@ -55,12 +56,21 @@ const baseConfigEnvironment: Record<ConfigEnvironmentVariableName, string> = {
   CMS_SOURCE_DIR: 'test/e2e/base/cms/_fixtures',
 };
 
+function getPrefixedVariableName(
+  variableName: ConfigEnvironmentVariableName,
+): string {
+  return `${APP_CONFIG_ENV_PREFIX}${variableName}`;
+}
+
 function buildProcessEnvironment(
   overrides: ConfigEnvironmentOverrides = {},
 ): NodeJS.ProcessEnv {
   const nextProcessEnvironment = Object.fromEntries(
     Object.entries(initialProcessEnvironment).filter(([variableName]) => {
-      return !(variableName in baseConfigEnvironment);
+      return !(
+        variableName in baseConfigEnvironment ||
+        variableName.replace(APP_CONFIG_ENV_PREFIX, '') in baseConfigEnvironment
+      );
     }),
   ) as NodeJS.ProcessEnv;
 
@@ -79,7 +89,7 @@ function buildProcessEnvironment(
       continue;
     }
 
-    nextProcessEnvironment[variableName] = value;
+    nextProcessEnvironment[getPrefixedVariableName(variableName)] = value;
   }
 
   return nextProcessEnvironment;
@@ -327,7 +337,7 @@ describe('appConfigBindings', () => {
       });
 
       expect(config.templating).toEqual({
-        paths: path.join(APP_ROOT, 'content', 'cms', 'templates'),
+        paths: [path.join(APP_ROOT, 'content', 'cms', 'templates')],
         options: {
           autoescape: false,
           throwOnUndefined: true,
