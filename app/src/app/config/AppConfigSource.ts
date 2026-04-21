@@ -1,11 +1,11 @@
 import fs from 'node:fs';
+import { MailProvider } from '@forsetius/glitnir-mail';
 import {
   isInsideProject,
   resolveAppRelativePath,
 } from '@forsetius/glitnir-shared';
 import { z } from 'zod';
 import { APP_ROOT } from '../../appRoot';
-import { MailProvider } from '../../io/mail/types';
 import { Env } from '@shared/types/Env';
 import { InvalidEnvVarsException } from './exceptions/InvalidEnvVarsException';
 
@@ -40,8 +40,8 @@ const BaseAppConfigSourceSchema = z.object({
 const MailProviderSchema = z.discriminatedUnion('MAIL_PROVIDER', [
   z.object({
     MAIL_PROVIDER: z.literal(MailProvider.DUMMY),
-    MAIL_SENDER_NAME: z.string(),
-    MAIL_SENDER_EMAIL: z.string(),
+    MAIL_SENDER_NAME: z.string().nonempty(),
+    MAIL_SENDER_EMAIL: z.email(),
   }),
   z.object({
     MAIL_PROVIDER: z.literal(MailProvider.SMTP),

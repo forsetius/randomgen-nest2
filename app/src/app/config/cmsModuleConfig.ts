@@ -25,5 +25,10 @@ export function resolveCmsModuleConfig(
       copyright: '© 2025 by Marcin "Forseti" Paździora',
       logo: 'logo-w.png',
     },
+    contact: {
+      recipient: {
+        address: 'forseti@forseti.pl',
+      },
+    },
   };
 }

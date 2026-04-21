@@ -1,4 +1,5 @@
 import * as express from 'express';
+import { MailModule } from '@forsetius/glitnir-mail';
 import { HttpModule } from '@nestjs/axios';
 import {
   MarkdownFactory,
@@ -16,7 +17,6 @@ import {
   SecurityModule,
 } from '@forsetius/glitnir-security';
 import { HttpAdapterHost } from '@nestjs/core';
-import { MailModule } from '../../io/mail';
 import { CmsController } from './CmsController';
 import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
 import { CMS_MARKDOWN_API } from './markdown/CmsMarkdownApiToken';

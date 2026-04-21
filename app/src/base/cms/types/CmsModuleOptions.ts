@@ -18,6 +18,12 @@ export interface CmsModuleOptions {
     copyright: string;
     logo: string;
   };
+  contact: {
+    recipient: {
+      address: string;
+      name?: string;
+    };
+  };
 }
 
 export interface SitewideData extends CmsModuleOptions {

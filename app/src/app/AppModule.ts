@@ -6,7 +6,6 @@ import { AppController } from './AppController';
 import { AppService } from './services/AppService';
 import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../base/cms/CmsModule';
-import { MailModule } from '../io/mail';
 import { appConfigBindings } from '@config/AppConfigBindings';
 
 @Module({
@@ -14,7 +13,6 @@ import { appConfigBindings } from '@config/AppConfigBindings';
     GlitnirAppConfigModule.forRoot(appConfigBindings),
     ValidationModule,
     SecurityModule,
-    MailModule,
     CmsModule,
     TechnobabbleModule,
   ],

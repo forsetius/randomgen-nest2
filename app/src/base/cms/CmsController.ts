@@ -7,21 +7,21 @@ import {
   Res,
   UseInterceptors,
 } from '@nestjs/common';
+import { MailService } from '@forsetius/glitnir-mail';
 import type { Lang } from '@shared/types/Lang';
 import { CmsService } from './services';
 import type { Response } from 'express';
-import { MailService } from '../../io/mail';
 import { ParsedArgs, ZodSchema } from '@forsetius/glitnir-validation';
-import { MailModuleConfigContract } from '@config/AppConfigContracts';
+import { CmsModuleConfigContract } from '@config/AppConfigContracts';
 import * as Dto from './dtos';
 import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
-import type { MailModuleOptions } from '../../io/mail/types/MailModuleOptions';
+import type { CmsModuleOptions } from './types/CmsModuleOptions';
 
 @Controller()
 export class CmsController {
   public constructor(
-    @Inject(MailModuleConfigContract.token)
-    private readonly mailConfig: MailModuleOptions,
+    @Inject(CmsModuleConfigContract.token)
+    private readonly cmsConfig: CmsModuleOptions,
     private contentService: CmsService,
     private mailService: MailService,
   ) {}
@@ -72,9 +72,13 @@ export class CmsController {
   public async submitContactForm(@ParsedArgs() parsedDto: Dto.ContactDto) {
     try {
       await this.mailService.sendMail({
-        from: this.mailConfig.sender,
-        to: this.mailConfig.adminEmail,
-        replyTo: parsedDto.email,
+        to: [this.cmsConfig.contact.recipient],
+        replyTo: [
+          {
+            address: parsedDto.email,
+            name: parsedDto.name,
+          },
+        ],
         subject: parsedDto.title,
         text: `
 From: ${parsedDto.name} <${parsedDto.email}>

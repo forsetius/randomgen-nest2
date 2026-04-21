@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { AppConfigModule } from '@forsetius/glitnir-config';
+import { MailProvider } from '@forsetius/glitnir-mail';
 import type { TestingModule } from '@nestjs/testing';
 import { APP_ROOT } from '../../../src/appRoot';
 import { appConfigBindings } from '../../../src/app/config/AppConfigBindings';
@@ -10,7 +11,6 @@ import {
 } from '../../../src/app/config/AppConfigContracts';
 import { Env } from '../../../src/shared/types/Env';
 import type { Lang } from '../../../src/shared/types/Lang';
-import { MailProvider } from '../../../src/io/mail/types';
 
 const ENGLISH_LANGUAGE: Lang = 'en';
 const POLISH_LANGUAGE: Lang = 'pl';
@@ -237,6 +237,11 @@ describe('appConfigBindings', () => {
           copyright: '© 2025 by Marcin "Forseti" Paździora',
           logo: 'logo-w.png',
         },
+        contact: {
+          recipient: {
+            address: 'forseti@forseti.pl',
+          },
+        },
       });
     } finally {
       await testingModule.close();
@@ -254,11 +259,18 @@ describe('appConfigBindings', () => {
       expect(config.mail).toEqual({
         provider: MailProvider.DUMMY,
         credentials: {},
+        smtp: {
+          verifyOnStartup: true,
+          connectionTimeoutMs: 120000,
+          greetingTimeoutMs: 30000,
+        },
+        dummy: {
+          logCalls: false,
+        },
         sender: {
           name: 'Local Dummy Sender',
           address: 'local-dummy@example.com',
         },
-        adminEmail: 'forseti@forseti.pl',
       });
     } finally {
       await testingModule.close();
@@ -287,11 +299,18 @@ describe('appConfigBindings', () => {
             pass: 'smtp-secret',
           },
         },
+        smtp: {
+          verifyOnStartup: true,
+          connectionTimeoutMs: 120000,
+          greetingTimeoutMs: 30000,
+        },
+        dummy: {
+          logCalls: false,
+        },
         sender: {
           name: 'SMTP Sender',
           address: 'smtp@example.com',
         },
-        adminEmail: 'forseti@forseti.pl',
       });
     } finally {
       await testingModule.close();

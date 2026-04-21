@@ -1,5 +1,7 @@
 import path from 'node:path';
 import { ConfigContract } from '@forsetius/glitnir-config';
+import type { MailConfig } from '@forsetius/glitnir-mail';
+import { MailConfigContract } from '@forsetius/glitnir-mail';
 import type { SecurityConfig } from '@forsetius/glitnir-security';
 import { SecurityConfigContract } from '@forsetius/glitnir-security';
 import type { SpamCheckConfig } from '@forsetius/glitnir-spamcheck';
@@ -12,10 +14,8 @@ import { z } from 'zod';
 import type { AppModuleOptions } from '@app/types/AppModuleOptions';
 import type { CmsModuleOptions } from '../../base/cms/types/CmsModuleOptions';
 import type { TechnobabbleModuleOptions } from '@domain/technobabble/types/TechnobabbleModuleOptions';
-import type { MailModuleOptions } from '../../io/mail/types/MailModuleOptions';
 import { Env } from '@shared/types/Env';
 import { Lang, Langs } from '@shared/types/Lang';
-import { MailProvider } from '../../io/mail/types';
 import type { AppConfigSource } from './AppConfigSource';
 
 // FIXME Przenieść kontrakty itd. do odpowiednich modułów
@@ -74,32 +74,16 @@ const CmsModuleConfigSchema = z
         logo: z.string().trim().min(1),
       })
       .strict(),
-  })
-  .strict();
-
-const MailModuleConfigSchema = z
-  .object({
-    provider: z.enum(MailProvider),
-    credentials: z
+    contact: z
       .object({
-        smtp: z
+        recipient: z
           .object({
-            host: z.string().trim().min(1),
-            port: z.number().int().min(MIN_PORT_NUMBER).max(MAX_PORT_NUMBER),
-            user: z.string().trim().min(1),
-            pass: z.string().trim().min(1),
+            address: z.email(),
+            name: z.string().trim().min(1).optional(),
           })
-          .strict()
-          .optional(),
+          .strict(),
       })
       .strict(),
-    sender: z
-      .object({
-        name: z.string().trim().min(1),
-        address: z.string().trim().min(1),
-      })
-      .strict(),
-    adminEmail: z.string().trim().min(1),
   })
   .strict();
 
@@ -123,7 +107,7 @@ export interface SharedAppConfig {
 export interface AppConfigRegistry {
   readonly app: AppModuleOptions;
   readonly cms: CmsModuleOptions;
-  readonly mail: MailModuleOptions;
+  readonly mail: MailConfig;
   readonly security: SecurityConfig;
   readonly spamcheck: SpamCheckConfig;
   readonly validation: ValidationConfig;
@@ -137,7 +121,7 @@ export function resolveAppConfigRegistry(
   return {
     app: resolve(AppModuleConfigContract.token) as AppModuleOptions,
     cms: resolve(CmsModuleConfigContract.token) as CmsModuleOptions,
-    mail: resolve(MailModuleConfigContract.token) as MailModuleOptions,
+    mail: resolve(MailConfigContract.token) as MailConfig,
     security: resolve(SecurityConfigContract.token) as SecurityConfig,
     spamcheck: resolve(SpamCheckConfigContract.token) as SpamCheckConfig,
     validation: resolve(ValidationConfigContract.token) as ValidationConfig,
@@ -190,11 +174,6 @@ export const AppModuleConfigContract = new ConfigContract(
 export const CmsModuleConfigContract = new ConfigContract(
   'cms',
   () => CmsModuleConfigSchema,
-);
-
-export const MailModuleConfigContract = new ConfigContract(
-  'mail',
-  () => MailModuleConfigSchema,
 );
 
 export const TechnobabbleModuleConfigContract = new ConfigContract(
