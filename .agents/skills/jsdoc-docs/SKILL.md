@@ -1,6 +1,6 @@
 ---
 name: jsdoc-docs
-description: Use when public APIs or non-trivial internal code in this monorepo need JSDoc that explains behavior, thrown errors, complex typing, defaults, or links to deeper package documentation.
+description: Use when public APIs or non-trivial internal code in this repository need JSDoc that explains behavior, thrown errors, complex typing, defaults, or links to deeper documentation.
 ---
 
 # JSDoc Docs
