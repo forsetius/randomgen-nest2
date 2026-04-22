@@ -1,6 +1,5 @@
 import { Settings as LuxonSettings } from 'luxon';
 import { VersioningType } from '@nestjs/common';
-import { SecurityService } from '@forsetius/glitnir-security';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppModule } from '@app/AppModule';
@@ -19,7 +18,6 @@ async function bootstrap(): Promise<void> {
   const config = resolveAppConfigRegistry((token) => app.get(token));
   app.enableVersioning({ type: VersioningType.URI, prefix: false });
   app.enableShutdownHooks();
-  app.get(SecurityService).setup(app); // FIXME refactor `glitnir-security` to get rid of it
   app.useGlobalFilters(new NotFoundFilter());
 
   try {

@@ -1,14 +1,14 @@
 import type { CallHandler, ExecutionContext } from '@nestjs/common';
 import { of, throwError, firstValueFrom, type Observable } from 'rxjs';
+import type { CmsMdConfig } from '@forsetius/glitnir-cms-md';
 import type { AkismetInterceptor } from '@forsetius/glitnir-spamcheck';
-import type { CmsModuleOptions } from '../../../../../src/base/cms/types/CmsModuleOptions';
-import { ContactSpamCheckInterceptor } from '../../../../../src/base/cms/interceptors/ContactSpamCheckInterceptor';
-import type { ContactDto } from '../../../../../src/base/cms/dtos/ContactDto';
+import { ContactSpamCheckInterceptor } from '../../../../../src/cms/interceptors/ContactSpamCheckInterceptor';
+import type { ContactDto } from '../../../../../src/cms/dtos/ContactDto';
 
 describe('ContactSpamCheckInterceptor', () => {
-  const cmsConfig = {
+  const cmsMdConfig: Pick<CmsMdConfig, 'appOrigin'> = {
     appOrigin: 'https://example.test/',
-  } as CmsModuleOptions;
+  };
 
   function createExecutionContext(request: {
     body: ContactDto;
@@ -63,7 +63,7 @@ describe('ContactSpamCheckInterceptor', () => {
     } as unknown as AkismetInterceptor;
     const interceptor = new ContactSpamCheckInterceptor(
       akismetInterceptor,
-      cmsConfig,
+      cmsMdConfig,
     );
 
     await expect(
@@ -99,7 +99,7 @@ describe('ContactSpamCheckInterceptor', () => {
     } as unknown as AkismetInterceptor;
     const interceptor = new ContactSpamCheckInterceptor(
       akismetInterceptor,
-      cmsConfig,
+      cmsMdConfig,
     );
 
     await expect(

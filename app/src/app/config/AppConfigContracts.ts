@@ -1,5 +1,6 @@
-import path from 'node:path';
 import { ConfigContract } from '@forsetius/glitnir-config';
+import type { CmsMdConfig } from '@forsetius/glitnir-cms-md';
+import { CmsMdConfigContract } from '@forsetius/glitnir-cms-md';
 import type { MailConfig } from '@forsetius/glitnir-mail';
 import { MailConfigContract } from '@forsetius/glitnir-mail';
 import type { SecurityConfig } from '@forsetius/glitnir-security';
@@ -12,7 +13,7 @@ import type { ValidationConfig } from '@forsetius/glitnir-validation';
 import { ValidationConfigContract } from '@forsetius/glitnir-validation';
 import { z } from 'zod';
 import type { AppModuleOptions } from '@app/types/AppModuleOptions';
-import type { CmsModuleOptions } from '../../base/cms/types/CmsModuleOptions';
+import type { CmsModuleOptions } from '../../cms/types/CmsModuleOptions';
 import type { TechnobabbleModuleOptions } from '@domain/technobabble/types/TechnobabbleModuleOptions';
 import { Env } from '@shared/types/Env';
 import { Lang, Langs } from '@shared/types/Lang';
@@ -26,14 +27,6 @@ const SEMVER_VERSION_REGEXP =
 // FIXME do shared
 const MIN_PORT_NUMBER = 1;
 const MAX_PORT_NUMBER = 65535;
-
-const AbsolutePathSchema = z
-  .string()
-  .trim()
-  .min(1)
-  .refine((value) => path.isAbsolute(value), {
-    message: 'Expected an absolute path',
-  });
 
 const AppModuleConfigSchema = z
   .object({
@@ -51,29 +44,6 @@ const AppModuleConfigSchema = z
 
 const CmsModuleConfigSchema = z
   .object({
-    appOrigin: z.string().trim().min(1),
-    supportedLangs: z.array(z.enum(Lang)).nonempty(),
-    fragmentTemplates: z.array(z.string().trim().min(1)).nonempty(),
-    paths: z
-      .object({
-        sourceDir: AbsolutePathSchema,
-        outputDir: AbsolutePathSchema,
-        mediaDir: AbsolutePathSchema,
-        uiDir: AbsolutePathSchema,
-      })
-      .strict(),
-    defaults: z
-      .object({
-        headerImage: z.string().trim().min(1),
-      })
-      .strict(),
-    brand: z
-      .object({
-        name: z.string().trim().min(1),
-        copyright: z.string().trim().min(1),
-        logo: z.string().trim().min(1),
-      })
-      .strict(),
     contact: z
       .object({
         recipient: z
@@ -106,6 +76,7 @@ export interface SharedAppConfig {
 
 export interface AppConfigRegistry {
   readonly app: AppModuleOptions;
+  readonly cmsMd: CmsMdConfig;
   readonly cms: CmsModuleOptions;
   readonly mail: MailConfig;
   readonly security: SecurityConfig;
@@ -120,6 +91,7 @@ export function resolveAppConfigRegistry(
 ): AppConfigRegistry {
   return {
     app: resolve(AppModuleConfigContract.token) as AppModuleOptions,
+    cmsMd: resolve(CmsMdConfigContract.token) as CmsMdConfig,
     cms: resolve(CmsModuleConfigContract.token) as CmsModuleOptions,
     mail: resolve(MailConfigContract.token) as MailConfig,
     security: resolve(SecurityConfigContract.token) as SecurityConfig,

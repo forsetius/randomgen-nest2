@@ -4,7 +4,7 @@
     {% if categoryData.prev %}
     <a href="{{ categoryData.prev.filename }}"
        class="btn btn-outline-success d-flex flex-column align-items-start text-start fw-bold p-3 w-50">
-      <small class="text-secondary">{{ translations.previous }}:</small>
+      <small class="text-secondary">{{ t('previous') }}:</small>
       {{ categoryData.prev.def.title }}
     </a>
     {% endif %}
@@ -12,7 +12,7 @@
     {% if categoryData.next %}
     <a href="{{ categoryData.next.filename }}"
        class="btn btn-outline-success d-flex flex-column align-items-end text-end fw-bold p-3 w-50">
-      <small class="text-secondary">{{ translations.next }}:</small>
+      <small class="text-secondary">{{ t('next') }}:</small>
       {{ categoryData.next.def.title }}
     </a>
     {% endif %}

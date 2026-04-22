@@ -12,16 +12,19 @@ export class Locale {
     sourceDir: string,
     public readonly lang: Lang,
   ) {
-    const filename = join(sourceDir, lang, 'translations.json');
+    const filename = join(sourceDir, lang, 'dictionary.json');
     try {
       this.translations = this.validateTranslation(
         JSON.parse(fs.readFileSync(filename, 'utf-8')),
       );
-    } catch (e) {
+    } catch (error) {
       throw new Error(
-        e instanceof Error
-          ? `${e.message} in ${filename}`
+        error instanceof Error
+          ? `${error.message} in ${filename}`
           : `Nonexistent or invalid translation file ${filename}`,
+        {
+          cause: error,
+        },
       );
     }
   }

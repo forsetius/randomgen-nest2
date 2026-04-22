@@ -1,6 +1,5 @@
 import 'tsconfig-paths/register';
 import path from 'node:path';
-import { SecurityService } from '@forsetius/glitnir-security';
 import { SpamCheckService } from '@forsetius/glitnir-spamcheck';
 import { Test, TestingModule } from '@nestjs/testing';
 import { NestExpressApplication } from '@nestjs/platform-express';
@@ -30,7 +29,6 @@ export const buildApp = async (): Promise<NestExpressApplication> => {
 
   const app = moduleFixture.createNestApplication<NestExpressApplication>();
 
-  app.get(SecurityService).setup(app);
   app.useGlobalFilters(new NotFoundFilter());
 
   await app.init();

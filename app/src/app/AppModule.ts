@@ -5,7 +5,7 @@ import { ValidationModule } from '@forsetius/glitnir-validation';
 import { AppController } from './AppController';
 import { AppService } from './services/AppService';
 import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
-import { CmsModule } from '../base/cms/CmsModule';
+import { CmsModule } from '../cms/CmsModule';
 import { appConfigBindings } from '@config/AppConfigBindings';
 
 @Module({

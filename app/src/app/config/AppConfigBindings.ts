@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { AppConfigBuilder } from '@forsetius/glitnir-config';
+import { CmsMdConfigContract } from '@forsetius/glitnir-cms-md';
 import { MailConfigContract } from '@forsetius/glitnir-mail';
 import { SecurityConfigContract } from '@forsetius/glitnir-security';
 import { SpamCheckConfigContract } from '@forsetius/glitnir-spamcheck';
@@ -19,6 +20,7 @@ import {
 } from './AppConfigSource';
 import { resolveAppModuleConfig } from './appModuleConfig';
 import { resolveCmsModuleConfig } from './cmsModuleConfig';
+import { resolveCmsMdConfig } from './cmsMdConfig';
 import { resolveMailModuleConfig } from './mailModuleConfig';
 import { resolveSecurityModuleConfig } from './securityModuleConfig';
 import { resolveSpamCheckModuleConfig } from './spamcheckModuleConfig';
@@ -36,6 +38,7 @@ export const appConfigBindings = new AppConfigBuilder<
   isGlobal: true, // FIXME usunąć bo default
 })
   .setup(AppModuleConfigContract, resolveAppModuleConfig)
+  .setup(CmsMdConfigContract, resolveCmsMdConfig)
   .setup(CmsModuleConfigContract, resolveCmsModuleConfig)
   .setup(MailConfigContract, resolveMailModuleConfig)
   .setup(SecurityConfigContract, resolveSecurityModuleConfig)

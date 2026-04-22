@@ -151,6 +151,7 @@ async function captureConfigBootstrapError(
 
     try {
       expect(config.app).toBeDefined();
+      expect(config.cmsMd).toBeDefined();
       expect(config.cms).toBeDefined();
       expect(config.mail).toBeDefined();
       expect(config.security).toBeDefined();
@@ -200,10 +201,12 @@ describe('appConfigBindings', () => {
         defaultLanguage: POLISH_LANGUAGE,
       });
 
-      expect(config.cms).toEqual({
+      expect(config.cmsMd).toEqual({
         appOrigin: 'https://example.test/',
-        supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
-        fragmentTemplates: ['fragment-img-card', 'fragment-list-item'],
+        langs: {
+          supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
+          default: POLISH_LANGUAGE,
+        },
         paths: {
           sourceDir: path.join(
             APP_ROOT,
@@ -237,6 +240,19 @@ describe('appConfigBindings', () => {
           copyright: '© 2025 by Marcin "Forseti" Paździora',
           logo: 'logo-w.png',
         },
+        templates: {
+          rssFeed: 'rss-feed',
+          fragmentCard: 'fragment-img-card',
+          fragmentListItem: 'fragment-list-item',
+          pageDefault: 'page-default',
+          blockPlain: 'block-plain',
+          lightboxGallery: 'lightbox-gallery',
+          lightboxImage: 'lightbox-image',
+          partialGallerySet: 'partial-gallery-set',
+        },
+      });
+
+      expect(config.cms).toEqual({
         contact: {
           recipient: {
             address: 'forseti@forseti.pl',
@@ -325,10 +341,46 @@ describe('appConfigBindings', () => {
 
     try {
       expect(config.security).toEqual({
+        proxy: {
+          trustProxy: false,
+        },
+        cors: {
+          enabled: false,
+        },
+        csp: {
+          enabled: true,
+          reportOnly: false,
+          directives: {
+            defaultSrc: ["'self'"],
+            scriptSrc: ["'self'"],
+            styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
+            fontSrc: ["'self'", 'https:', 'data:'],
+            imgSrc: ["'self'", 'data:'],
+            connectSrc: ["'self'"],
+            frameSrc: ["'self'"],
+            objectSrc: ["'none'"],
+            baseUri: ["'self'"],
+            frameAncestors: ["'self'"],
+            formAction: ["'self'"],
+            scriptSrcAttr: ["'none'"],
+          },
+        },
         rateLimit: {
           enabled: true,
-          limit: 100,
-          windowMs: 1000,
+          global: {
+            limit: 100,
+            windowMs: 1000,
+            blockDurationMs: 0,
+            setHeaders: true,
+          },
+        },
+        addons: {
+          csrf: {
+            enabled: false,
+          },
+          slowDown: {
+            enabled: false,
+          },
         },
       });
 

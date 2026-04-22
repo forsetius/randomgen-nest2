@@ -1,4 +1,4 @@
-<h2>{{ translations.contactForm }}</h2>
+<h2>{{ t('contactForm') }}</h2>
 <form
     id="contact-form"
     class="needs-validation"
@@ -19,13 +19,13 @@
             class="form-control"
             id="contactName"
             name="name"
-            placeholder="{{ translations.name }}"
+            placeholder="{{ t('name') }}"
             required
         />
         <div class="invalid-feedback">
-          {{ translations.fieldRequired }}
+          {{ t('fieldRequired') }}
         </div>
-        <label for="contactName">{{ translations.name }}</label>
+        <label for="contactName">{{ t('name') }}</label>
       </div>
     </div>
     
@@ -36,12 +36,12 @@
             class="form-control"
             id="contactEmail"
             name="email"
-            placeholder="{{ translations.yourEmail }}"
+            placeholder="{{ t('yourEmail') }}"
             required
         />
-        <label for="contactEmail" class="form-label">{{ translations.yourEmail }}</label>
+        <label for="contactEmail" class="form-label">{{ t('yourEmail') }}</label>
         <div class="invalid-feedback">
-          {{ translations.emailRequired }}
+          {{ t('emailRequired') }}
         </div>
       </div>
     </div>
@@ -53,12 +53,12 @@
         class="form-control"
         id="contactSubject"
         name="title"
-        placeholder="{{ translations.subject }}"
+        placeholder="{{ t('subject') }}"
         required
     />
-    <label for="contactSubject" class="form-label">{{ translations.subject }}</label>
+    <label for="contactSubject" class="form-label">{{ t('subject') }}</label>
     <div class="invalid-feedback">
-      {{ translations.fieldRequired }}
+      {{ t('fieldRequired') }}
     </div>
   </div>
   
@@ -68,12 +68,12 @@
         id="contactContent"
         name="content"
         rows="4"
-        placeholder="{{ translations.content }}"
+        placeholder="{{ t('content') }}"
         required
     ></textarea>
-    <label for="contactContent" class="form-label">{{ translations.content }}</label>
+    <label for="contactContent" class="form-label">{{ t('content') }}</label>
     <div class="invalid-feedback">
-      {{ translations.fieldRequired }}
+      {{ t('fieldRequired') }}
     </div>
   </div>
   
@@ -81,7 +81,7 @@
           type="submit"
           class="btn btn-success"
           disabled
-  >{{ translations.send }}</button>
+  >{{ t('send') }}</button>
 </form>
 
 <div
@@ -94,8 +94,8 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="contactModalOkLabel">{{ translations.messageSent }}</h5>
-        <h5 class="modal-title d-none" id="contactModalErrorLabel">{{ translations.messageError }}</h5>
+        <h5 class="modal-title" id="contactModalOkLabel">{{ t('messageSent') }}</h5>
+        <h5 class="modal-title d-none" id="contactModalErrorLabel">{{ t('messageError') }}</h5>
         <button
             type="button"
             class="btn-close"
@@ -104,10 +104,10 @@
         ></button>
       </div>
       <div id="contactModalOkBody" class="modal-body">
-        {{ translations.messageThanks }}
+        {{ t('messageThanks') }}
       </div>
       <div id="contactModalErrorBody" class="modal-body d-none">
-        {{ translations.messageSorry }}
+        {{ t('messageSorry') }}
       </div>
       <div class="modal-footer">
         <button

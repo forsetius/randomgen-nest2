@@ -32,7 +32,10 @@ const config: Config = {
       },
     ],
   },
-  moduleNameMapper: pathsToMapper(),
+  moduleNameMapper: {
+    '^marked$': '<rootDir>/../node_modules/marked/lib/marked.umd.js',
+    ...pathsToMapper(),
+  },
 };
 
 export default config;

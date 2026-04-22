@@ -35,10 +35,11 @@
     "test": "bash bin/test.sh"
   },
   "dependencies": {
+    "@forsetius/glitnir-cms-md": "^0.5.0",
     "@forsetius/glitnir-config": "^0.5.0",
     "@forsetius/glitnir-mail": "^0.2.2",
     "@forsetius/glitnir-markdown": "^0.1.5",
-    "@forsetius/glitnir-security": "^0.4.3",
+    "@forsetius/glitnir-security": "^0.5.0",
     "@forsetius/glitnir-shared": "^0.2.1",
     "@forsetius/glitnir-spamcheck": "^0.5.0",
     "@forsetius/glitnir-templating": "^0.4.3",

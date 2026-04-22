@@ -1,16 +1,31 @@
-import type { SecurityConfig } from '@forsetius/glitnir-security';
 import type { AppConfigSource } from './AppConfigSource';
+
+interface SecurityConfigOverrides {
+  readonly rateLimit: {
+    readonly enabled: true;
+    readonly global: {
+      readonly limit: number;
+      readonly windowMs: number;
+      readonly blockDurationMs: number;
+      readonly setHeaders: boolean;
+    };
+  };
+}
 
 export function resolveSecurityModuleConfig(
   source: Readonly<AppConfigSource>,
-): SecurityConfig {
+): SecurityConfigOverrides {
   void source; // FIXME ???
 
   return {
     rateLimit: {
       enabled: true,
-      limit: 100,
-      windowMs: 1000,
+      global: {
+        limit: 100,
+        windowMs: 1000,
+        blockDurationMs: 0,
+        setHeaders: true,
+      },
     },
   };
 }
