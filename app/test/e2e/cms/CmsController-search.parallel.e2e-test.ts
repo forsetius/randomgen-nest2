@@ -1,5 +1,5 @@
 import supertest from 'supertest';
-import { getBaseUrl } from '../../globalAppUrl';
+import { getBaseUrl } from '../globalAppUrl';
 
 describe('CmsController', () => {
   describe('GET /search', () => {

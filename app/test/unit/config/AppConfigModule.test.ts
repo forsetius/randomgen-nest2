@@ -53,7 +53,7 @@ const baseConfigEnvironment: Record<ConfigEnvironmentVariableName, string> = {
   SMTP_PORT: '587',
   SMTP_USER: 'smtp-user',
   SMTP_PASSWORD: 'smtp-password',
-  CMS_SOURCE_DIR: 'test/e2e/base/cms/_fixtures',
+  CMS_SOURCE_DIR: 'test/e2e/cms/_fixtures',
 };
 
 function getPrefixedVariableName(
@@ -187,7 +187,7 @@ describe('appConfigBindings', () => {
     const { testingModule, config } = await bootstrapConfig({
       APP_HOST: 'https://example.test',
       APP_PORT: '6543',
-      CMS_SOURCE_DIR: 'test/e2e/base/cms/_fixtures/',
+      CMS_SOURCE_DIR: 'test/e2e/cms/_fixtures/',
     });
 
     try {
@@ -208,29 +208,20 @@ describe('appConfigBindings', () => {
           default: POLISH_LANGUAGE,
         },
         paths: {
-          sourceDir: path.join(
-            APP_ROOT,
-            'test/e2e/base/cms/_fixtures',
-            'sources',
-          ),
+          sourceDir: path.join(APP_ROOT, 'test/e2e/cms/_fixtures', 'sources'),
           outputDir: path.join(
             APP_ROOT,
-            'test/e2e/base/cms/_fixtures',
+            'test/e2e/cms/_fixtures',
             'static',
             'pages',
           ),
           mediaDir: path.join(
             APP_ROOT,
-            'test/e2e/base/cms/_fixtures',
+            'test/e2e/cms/_fixtures',
             'static',
             'media',
           ),
-          uiDir: path.join(
-            APP_ROOT,
-            'test/e2e/base/cms/_fixtures',
-            'static',
-            'ui',
-          ),
+          uiDir: path.join(APP_ROOT, 'test/e2e/cms/_fixtures', 'static', 'ui'),
         },
         defaults: {
           headerImage: 'index-head.jpg',

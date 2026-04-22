@@ -2,8 +2,8 @@ import type { CallHandler, ExecutionContext } from '@nestjs/common';
 import { of, throwError, firstValueFrom, type Observable } from 'rxjs';
 import type { CmsMdConfig } from '@forsetius/glitnir-cms-md';
 import type { AkismetInterceptor } from '@forsetius/glitnir-spamcheck';
-import { ContactSpamCheckInterceptor } from '../../../../../src/cms/interceptors/ContactSpamCheckInterceptor';
-import type { ContactDto } from '../../../../../src/cms/dtos/ContactDto';
+import { ContactSpamCheckInterceptor } from '../../../../src/cms/interceptors/ContactSpamCheckInterceptor';
+import type { ContactDto } from '../../../../src/cms/dtos/ContactDto';
 
 describe('ContactSpamCheckInterceptor', () => {
   const cmsMdConfig: Pick<CmsMdConfig, 'appOrigin'> = {
