@@ -3,16 +3,19 @@ import { MailProvider } from '@forsetius/glitnir-mail';
 import {
   isInsideProject,
   resolveAppRelativePath,
+  stringifyError,
 } from '@forsetius/glitnir-shared';
 import { z } from 'zod';
-import { APP_ROOT } from '../../appRoot';
+import { APP_ROOT } from '../appConstants';
+import {
+  MAX_PORT_NUMBER,
+  MIN_PORT_NUMBER,
+  MIN_TRANSPORT_PORT_NUMBER,
+} from '@shared/constants/ConfigConstants';
 import { Env } from '@shared/types/Env';
-import { InvalidEnvVarsException } from './exceptions/InvalidEnvVarsException';
+import { InvalidRawConfigDataError } from '@app/exceptions/InvalidRawConfigDataError';
 
-const MIN_PORT_NUMBER = 0;
-const MAX_PORT_NUMBER = 65535;
-
-const BaseAppConfigSourceSchema = z.object({
+const SharedExternalConfigDataSchema = z.object({
   ENV: z.enum(Env),
   AKISMET_KEY: z.string().nonempty(),
   APP_HOST: z.httpUrl({ normalize: true }).or(z.literal('localhost')),
@@ -37,7 +40,7 @@ const BaseAppConfigSourceSchema = z.object({
     ),
 });
 
-const MailProviderSchema = z.discriminatedUnion('MAIL_PROVIDER', [
+const MailConfigDataSchema = z.discriminatedUnion('MAIL_PROVIDER', [
   z.object({
     MAIL_PROVIDER: z.literal(MailProvider.DUMMY),
     MAIL_SENDER_NAME: z.string().nonempty(),
@@ -51,30 +54,37 @@ const MailProviderSchema = z.discriminatedUnion('MAIL_PROVIDER', [
     SMTP_PORT: z.coerce
       .number()
       .int()
-      .min(MIN_PORT_NUMBER)
+      .min(MIN_TRANSPORT_PORT_NUMBER)
       .max(MAX_PORT_NUMBER),
     SMTP_USER: z.string().nonempty(),
     SMTP_PASSWORD: z.string().nonempty(),
   }),
 ]);
 
-// FIXME nomenklatura
-export const AppConfigSourceSchema =
-  BaseAppConfigSourceSchema.and(MailProviderSchema);
+export const ExternalConfigDataSchema =
+  SharedExternalConfigDataSchema.and(MailConfigDataSchema);
 
-export type AppConfigSource = z.infer<typeof AppConfigSourceSchema>;
-type RawConfigSource = Readonly<Record<string, string | undefined>>;
+export type RawExternalConfigData = Readonly<
+  Record<string, string | undefined>
+>;
+export type ExternalConfigData = z.infer<typeof ExternalConfigDataSchema>;
 
-export function resolveAppConfigSource(
-  rawSource: RawConfigSource,
-): AppConfigSource {
+export function parseConfigData(
+  rawExternalConfigData: RawExternalConfigData,
+): ExternalConfigData {
   try {
-    return AppConfigSourceSchema.parse(rawSource);
+    return ExternalConfigDataSchema.parse(rawExternalConfigData);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      throw new InvalidEnvVarsException(error); // FIXME wyjątek z pakietu
+      throw new InvalidRawConfigDataError(
+        `Invalid raw config data:\n${z.prettifyError(error)}`,
+        error,
+      );
     }
 
-    throw error; // FIXME stringify error
+    throw new InvalidRawConfigDataError(
+      `Could not parse raw config data. Reason: ${stringifyError(error)}`,
+      error,
+    );
   }
 }

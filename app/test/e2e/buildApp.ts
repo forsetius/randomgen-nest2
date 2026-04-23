@@ -4,7 +4,7 @@ import { SpamCheckService } from '@forsetius/glitnir-spamcheck';
 import { Test, TestingModule } from '@nestjs/testing';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { NotFoundFilter } from '../../src/shared/filters/NotFoundFilter';
-import { APP_ROOT } from '../../src/appRoot';
+import { APP_ROOT } from '../../src/appConstants';
 
 type AppModuleType = typeof import('../../src/app/AppModule');
 

@@ -1,6 +1,6 @@
 import type { Config } from 'jest';
 import tsconfig from '../tsconfig.json';
-import { APP_CONFIG_ENV_PREFIX } from '../src/app/config/appConfigEnvPrefix';
+import { APP_CONFIG_ENV_PREFIX } from '../src/appConstants';
 import { loadEnvFile } from '../src/shared/util/loadEnvFile';
 
 loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);

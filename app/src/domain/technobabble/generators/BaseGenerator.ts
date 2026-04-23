@@ -3,7 +3,7 @@ import * as path from 'node:path';
 import { Lang } from '@shared/types/Lang';
 import { SourceKeys, SourceData, BaseSource } from '../types/SourceData';
 import { Dataset } from './Dataset';
-import { APP_ROOT } from '../../../appRoot';
+import { APP_ROOT } from '../../../appConstants';
 
 export abstract class BaseGenerator<S extends BaseSource> {
   protected datasets: Record<string, Dataset<S>> = {};

@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
-import { APP_ROOT } from '../../appRoot';
+import { APP_ROOT } from '../../appConstants';
 
 const loadedEnvFileKeys = new Set<string>();
 

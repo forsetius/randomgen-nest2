@@ -1,5 +1,3 @@
-import type { AppConfigSource } from './AppConfigSource';
-
 interface SecurityConfigOverrides {
   readonly rateLimit: {
     readonly enabled: true;
@@ -12,11 +10,7 @@ interface SecurityConfigOverrides {
   };
 }
 
-export function resolveSecurityModuleConfig(
-  source: Readonly<AppConfigSource>,
-): SecurityConfigOverrides {
-  void source; // FIXME ???
-
+export function resolveSecurityModuleConfig(): SecurityConfigOverrides {
   return {
     rateLimit: {
       enabled: true,

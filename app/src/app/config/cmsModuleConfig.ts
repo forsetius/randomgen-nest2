@@ -1,11 +1,6 @@
 import type { CmsModuleOptions } from '../../cms/types/CmsModuleOptions';
-import type { AppConfigSource } from './AppConfigSource';
 
-export function resolveCmsModuleConfig(
-  source: Readonly<AppConfigSource>,
-): CmsModuleOptions {
-  void source;
-
+export function resolveCmsModuleConfig(): CmsModuleOptions {
   return {
     contact: {
       recipient: {

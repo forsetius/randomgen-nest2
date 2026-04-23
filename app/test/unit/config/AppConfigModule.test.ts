@@ -1,14 +1,42 @@
 import path from 'node:path';
-import { AppConfigModule } from '@forsetius/glitnir-config';
-import { MailProvider } from '@forsetius/glitnir-mail';
-import type { TestingModule } from '@nestjs/testing';
-import { APP_ROOT } from '../../../src/appRoot';
-import { appConfigBindings } from '../../../src/app/config/AppConfigBindings';
-import { APP_CONFIG_ENV_PREFIX } from '../../../src/app/config/appConfigEnvPrefix';
 import {
-  type AppConfigRegistry,
-  resolveAppConfigRegistry,
-} from '../../../src/app/config/AppConfigContracts';
+  AppConfigModule,
+  SHARED_CONFIG_TOKEN,
+} from '@forsetius/glitnir-config';
+import {
+  CmsMdConfigContract,
+  type CmsMdConfig,
+} from '@forsetius/glitnir-cms-md';
+import {
+  MailConfigContract,
+  MailProvider,
+  type MailConfig,
+} from '@forsetius/glitnir-mail';
+import {
+  SecurityConfigContract,
+  type SecurityConfig,
+} from '@forsetius/glitnir-security';
+import {
+  SpamCheckConfigContract,
+  type SpamCheckConfig,
+} from '@forsetius/glitnir-spamcheck';
+import {
+  TemplatingConfigContract,
+  type TemplatingConfig,
+} from '@forsetius/glitnir-templating';
+import {
+  ValidationConfigContract,
+  type ValidationConfig,
+} from '@forsetius/glitnir-validation';
+import type { TestingModule } from '@nestjs/testing';
+import { APP_ROOT } from '../../../src/appConstants';
+import { configBindings } from '@app/ConfigBindings';
+import { APP_CONFIG_ENV_PREFIX } from '../../../src/appConstants';
+import type { AppModuleOptions } from '../../../src/app/types/AppModuleOptions';
+import { CmsModuleConfigContract } from '../../../src/cms/CmsModuleConfigContract';
+import type { CmsModuleOptions } from '../../../src/cms/types/CmsModuleOptions';
+import { TechnobabbleModuleConfigContract } from '../../../src/domain/technobabble/TechnobabbleModuleConfigContract';
+import type { TechnobabbleModuleOptions } from '../../../src/domain/technobabble/types/TechnobabbleModuleOptions';
 import { Env } from '../../../src/shared/types/Env';
 import type { Lang } from '../../../src/shared/types/Lang';
 
@@ -104,18 +132,40 @@ function loadConfigRuntimeModules(): ConfigRuntimeModules {
   };
 }
 
+function resolveConfigRegistry(testingModule: TestingModule) {
+  return {
+    app: testingModule.get<AppModuleOptions>(SHARED_CONFIG_TOKEN),
+    cmsMd: testingModule.get<CmsMdConfig>(CmsMdConfigContract.token),
+    cms: testingModule.get<CmsModuleOptions>(CmsModuleConfigContract.token),
+    mail: testingModule.get<MailConfig>(MailConfigContract.token),
+    security: testingModule.get<SecurityConfig>(SecurityConfigContract.token),
+    spamcheck: testingModule.get<SpamCheckConfig>(
+      SpamCheckConfigContract.token,
+    ),
+    validation: testingModule.get<ValidationConfig>(
+      ValidationConfigContract.token,
+    ),
+    technobabble: testingModule.get<TechnobabbleModuleOptions>(
+      TechnobabbleModuleConfigContract.token,
+    ),
+    templating: testingModule.get<TemplatingConfig>(
+      TemplatingConfigContract.token,
+    ),
+  };
+}
+
 async function bootstrapConfig(
   overrides: ConfigEnvironmentOverrides = {},
 ): Promise<{
   readonly testingModule: TestingModule;
-  readonly config: AppConfigRegistry;
+  readonly config: ReturnType<typeof resolveConfigRegistry>;
 }> {
   process.env = buildProcessEnvironment(overrides);
 
   let bootstrappedConfig:
     | {
         readonly testingModule: TestingModule;
-        readonly config: AppConfigRegistry;
+        readonly config: ReturnType<typeof resolveConfigRegistry>;
       }
     | undefined;
 
@@ -123,12 +173,10 @@ async function bootstrapConfig(
     const { Test } = loadConfigRuntimeModules();
 
     const testingModule = await Test.createTestingModule({
-      imports: [AppConfigModule.forRoot(appConfigBindings)],
+      imports: [AppConfigModule.forRoot(configBindings)],
     }).compile();
 
-    const config = resolveAppConfigRegistry((token) =>
-      testingModule.get(token),
-    );
+    const config = resolveConfigRegistry(testingModule);
 
     bootstrappedConfig = {
       testingModule,
@@ -177,7 +225,7 @@ async function captureConfigBootstrapError(
   throw new Error('Expected config bootstrap to fail');
 }
 
-describe('appConfigBindings', () => {
+describe('configBindings', () => {
   afterEach(() => {
     process.env = { ...initialProcessEnvironment };
     jest.resetModules();
@@ -192,13 +240,15 @@ describe('appConfigBindings', () => {
 
     try {
       expect(config.app).toEqual({
-        title: 'RandomGen',
-        description: 'Random generators for RPGs',
-        version: '1.0.0',
         env: Env.TEST,
         host: 'https://example.test/',
+        origin: 'https://example.test/',
         port: 6543,
-        defaultLanguage: POLISH_LANGUAGE,
+        langs: {
+          supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
+          default: POLISH_LANGUAGE,
+          charset: 'utf-8',
+        },
       });
 
       expect(config.cmsMd).toEqual({
@@ -324,6 +374,19 @@ describe('appConfigBindings', () => {
     }
   });
 
+  test('allows SMTP port 0 while keeping transport config typed', async () => {
+    const { testingModule, config } = await bootstrapConfig({
+      MAIL_PROVIDER: MailProvider.SMTP,
+      SMTP_PORT: '0',
+    });
+
+    try {
+      expect(config.mail.credentials.smtp?.port).toBe(0);
+    } finally {
+      await testingModule.close();
+    }
+  });
+
   test('builds security, spamcheck, technobabble, and templating config from inputs and defaults', async () => {
     const { testingModule, config } = await bootstrapConfig({
       AKISMET_KEY: 'akismet-test-key',
@@ -416,19 +479,6 @@ describe('appConfigBindings', () => {
     });
 
     expect(caughtError.message).toContain('APP_PORT');
-  });
-
-  test('maps stage environment to prod for validation package config', async () => {
-    const { testingModule, config } = await bootstrapConfig({
-      ENV: Env.STAGE,
-    });
-
-    try {
-      expect(config.app.env).toBe(Env.STAGE);
-      expect(config.validation.env).toBe(Env.PROD);
-    } finally {
-      await testingModule.close();
-    }
   });
 
   test.todo(

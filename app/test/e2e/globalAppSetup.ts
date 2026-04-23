@@ -1,7 +1,7 @@
 import * as fs from 'node:fs';
 import path from 'node:path';
 import { buildApp, metaFile, ServerMeta } from './buildApp';
-import { APP_CONFIG_ENV_PREFIX } from '../../src/app/config/appConfigEnvPrefix';
+import { APP_CONFIG_ENV_PREFIX } from '../../src/appConstants';
 import { loadEnvFile } from '../../src/shared/util/loadEnvFile';
 
 loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);

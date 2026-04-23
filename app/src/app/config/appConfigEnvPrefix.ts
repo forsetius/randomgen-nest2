@@ -1,1 +1,0 @@
-export const APP_CONFIG_ENV_PREFIX = 'FORSETI_PL_';

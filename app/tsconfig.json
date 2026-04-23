@@ -31,6 +31,7 @@
     "sourceMap": true,
     "paths": {
       "@app/*": ["./src/app/*"],
+      "@config": ["./src/app/config/index.ts"],
       "@config/*": ["./src/app/config/*"],
       "@domain/*": ["./src/domain/*"],
       "@shared/*": ["./src/shared/*"]

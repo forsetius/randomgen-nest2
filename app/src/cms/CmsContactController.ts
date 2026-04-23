@@ -7,10 +7,10 @@ import {
 } from '@nestjs/common';
 import { MailService } from '@forsetius/glitnir-mail';
 import { ParsedArgs, ZodSchema } from '@forsetius/glitnir-validation';
-import { CmsModuleConfigContract } from '@config/AppConfigContracts';
 import { ContactRequestSchema, type ContactDto } from './dtos/ContactDto';
 import { ContactSpamCheckInterceptor } from './interceptors/ContactSpamCheckInterceptor';
 import type { CmsModuleOptions } from './types/CmsModuleOptions';
+import { CmsModuleConfigContract } from './CmsModuleConfigContract';
 
 @Controller()
 export class CmsContactController {

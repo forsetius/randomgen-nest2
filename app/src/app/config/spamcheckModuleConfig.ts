@@ -1,12 +1,12 @@
 import type { SpamCheckConfig } from '@forsetius/glitnir-spamcheck';
-import type { AppConfigSource } from './AppConfigSource';
+import type { ExternalConfigData } from '../ExternalConfigData';
 
 type SpamCheckModuleConfigOverrides = Pick<SpamCheckConfig, 'akismetKey'>;
 
 export function resolveSpamCheckModuleConfig(
-  source: Readonly<AppConfigSource>,
+  configData: Readonly<ExternalConfigData>,
 ): SpamCheckModuleConfigOverrides {
   return {
-    akismetKey: source.AKISMET_KEY,
+    akismetKey: configData.AKISMET_KEY,
   };
 }
