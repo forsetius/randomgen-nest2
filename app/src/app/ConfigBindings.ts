@@ -6,7 +6,7 @@ import { SecurityConfigContract } from '@forsetius/glitnir-security';
 import { SpamCheckConfigContract } from '@forsetius/glitnir-spamcheck';
 import { TemplatingConfigContract } from '@forsetius/glitnir-templating';
 import { ValidationConfigContract } from '@forsetius/glitnir-validation';
-import * as Conf from '@config';
+import * as Conf from './config';
 import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../appConstants';
 import type { AppModuleOptions } from '@app/types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../cms/CmsModuleConfigContract';
