@@ -1,4 +1,4 @@
-import { roll } from '../random';
+import { roll } from '@forsetius/glitnir-shared';
 
 /**
  * Array with helper to pick a random element.

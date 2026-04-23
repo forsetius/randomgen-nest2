@@ -1,19 +1,25 @@
-import { EnvVarSchemaType } from '@config/EnvVarSchema';
-import { SecurityModuleOptions } from '../../base/security/types/SecurityModuleOptions';
-import { registerAsTyped } from '@config/registerAsTyped';
+interface SecurityConfigOverrides {
+  readonly rateLimit: {
+    readonly enabled: true;
+    readonly global: {
+      readonly limit: number;
+      readonly windowMs: number;
+      readonly blockDurationMs: number;
+      readonly setHeaders: boolean;
+    };
+  };
+}
 
-export default (envVars: EnvVarSchemaType) =>
-  registerAsTyped(
-    'security',
-    () =>
-      ({
-        akismet: {
-          key: envVars.AKISMET_KEY,
-          siteUrl: envVars.APP_HOST,
-        },
-        rateLimit: {
-          limit: 100,
-          windowMs: 1000,
-        },
-      }) satisfies SecurityModuleOptions,
-  );
+export function resolveSecurityModuleConfig(): SecurityConfigOverrides {
+  return {
+    rateLimit: {
+      enabled: true,
+      global: {
+        limit: 100,
+        windowMs: 1000,
+        blockDurationMs: 0,
+        setHeaders: true,
+      },
+    },
+  };
+}

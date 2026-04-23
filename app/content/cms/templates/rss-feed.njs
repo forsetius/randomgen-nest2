@@ -3,7 +3,7 @@
   <channel>
     <title>{{ metadata.brand.name }}</title>
     <link>{{ metadata.appOrigin }}</link>
-    <description>{{ translations.lastPosts }}</description>
+    <description>{{ t('lastPosts') }}</description>
     <language>{{ lang }}</language>
     {% for page in pages %}
       <item>

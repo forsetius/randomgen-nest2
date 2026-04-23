@@ -101,7 +101,7 @@
             class="form-control"
             type="search"
             name="term"
-            placeholder="{{ translations.search }}..."
+            placeholder="{{ t('search') }}..."
             aria-label="Search"
             autocomplete="off"
             hx-get="/search?count=7&brief=true&lang={{ lang }}"

@@ -1,28 +1,34 @@
+import 'tsconfig-paths/register';
 import path from 'node:path';
-import { Reflector } from '@nestjs/core';
+import { SpamCheckService } from '@forsetius/glitnir-spamcheck';
 import { Test, TestingModule } from '@nestjs/testing';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { AppModule } from '@app/AppModule';
-import { AppConfigService } from '@config/AppConfigService';
-import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
-import { ZodRequestInterceptor } from '@shared/validation/ZodRequestInterceptor';
-import { SecurityService } from '../../src/base/security/services/SecurityService';
-import { APP_ROOT } from '../../src/appRoot';
+import { NotFoundFilter } from '../../src/shared/filters/NotFoundFilter';
+import { APP_ROOT } from '../../src/appConstants';
+
+type AppModuleType = typeof import('../../src/app/AppModule');
+
+async function loadAppModule(): Promise<AppModuleType['AppModule']> {
+  const appModulePath = '../../src/app/AppModule';
+  const appModulePackage = (await import(appModulePath)) as AppModuleType;
+
+  return appModulePackage.AppModule;
+}
 
 export const buildApp = async (): Promise<NestExpressApplication> => {
+  const AppModule = await loadAppModule();
   const moduleFixture: TestingModule = await Test.createTestingModule({
     imports: [AppModule],
-  }).compile();
+  })
+    .overrideProvider(SpamCheckService)
+    .useValue({
+      onApplicationBootstrap: () => Promise.resolve(),
+      isSpam: () => Promise.resolve(false),
+    })
+    .compile();
 
   const app = moduleFixture.createNestApplication<NestExpressApplication>();
 
-  const configService = app.get(AppConfigService);
-  const reflector = app.get(Reflector);
-
-  app.get(SecurityService).setup(app);
-  app.useGlobalInterceptors(
-    new ZodRequestInterceptor(configService, reflector),
-  );
   app.useGlobalFilters(new NotFoundFilter());
 
   await app.init();

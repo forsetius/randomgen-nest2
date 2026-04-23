@@ -1,17 +1,13 @@
 import path from 'path';
-import { TemplatingModuleOptions } from '@templating/types/TemplatingModuleOptions';
-import { registerAsTyped } from '@config/registerAsTyped';
-import { APP_ROOT } from '../../appRoot';
+import type { TemplatingConfig } from '@forsetius/glitnir-templating';
+import { APP_ROOT } from '../../appConstants';
 
-export default () =>
-  registerAsTyped(
-    'templating',
-    () =>
-      ({
-        paths: path.join(APP_ROOT, 'content', 'cms', 'templates'),
-        options: {
-          autoescape: false,
-          throwOnUndefined: true,
-        },
-      }) satisfies TemplatingModuleOptions,
-  );
+export function resolveTemplatingModuleConfig(): TemplatingConfig {
+  return {
+    paths: [path.join(APP_ROOT, 'content', 'cms', 'templates')],
+    options: {
+      autoescape: false,
+      throwOnUndefined: true,
+    },
+  };
+}

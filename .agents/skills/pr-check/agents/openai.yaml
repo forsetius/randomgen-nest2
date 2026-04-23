@@ -1,0 +1,4 @@
+interface:
+  display_name: 'PR Check'
+  short_description: 'Pre-PR and pre-push readiness audits'
+  default_prompt: 'Use $pr-check to audit this branch before I open a PR or push the remaining local commits.'

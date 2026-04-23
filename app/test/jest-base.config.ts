@@ -1,8 +1,9 @@
 import type { Config } from 'jest';
 import tsconfig from '../tsconfig.json';
-import { loadEnvFile } from '@shared/util/loadEnvFile';
+import { APP_CONFIG_ENV_PREFIX } from '../src/appConstants';
+import { loadEnvFile } from '../src/shared/util/loadEnvFile';
 
-loadEnvFile('.env.test');
+loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);
 
 function pathsToMapper(): Record<string, string> {
   const paths = tsconfig.compilerOptions.paths;
@@ -31,7 +32,10 @@ const config: Config = {
       },
     ],
   },
-  moduleNameMapper: pathsToMapper(),
+  moduleNameMapper: {
+    '^marked$': '<rootDir>/../node_modules/marked/lib/marked.umd.js',
+    ...pathsToMapper(),
+  },
 };
 
 export default config;
