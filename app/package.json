@@ -28,7 +28,7 @@
     "start": "nest start",
     "start:prod": "node --enable-source-maps dist/main",
     "jest": "TS_NODE_PROJECT=tsconfig.jest.json NODE_OPTIONS=\"--enable-source-maps -r ts-node/register -r tsconfig-paths/register\" jest",
-    "test:build": "swc src -d dist-test --source-maps --copy-files",
+    "test:typecheck": "tsc -p tsconfig.jest.json --noEmit",
     "test:unit": "npm run jest -- --config ./test/jest-unit.config.ts",
     "test:e2e:parallel": "npm run jest -- --config ./test/jest-e2e-parallel.config.ts",
     "test:e2e:serial": "npm run jest -- --config ./test/jest-e2e-serial.config.ts",

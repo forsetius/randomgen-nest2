@@ -1,11 +1,10 @@
 import { spawnSync } from 'child_process';
-import { rmSync } from 'fs';
-import { join, resolve } from 'path';
+import { readdirSync } from 'fs';
+import { join, relative, resolve } from 'path';
 import process from 'process';
-import { stringifyError } from '@forsetius/glitnir-shared';
 
 const applicationRootDirectory = resolve(process.cwd());
-const distTestDirectory = join(applicationRootDirectory, 'dist-test');
+const e2eTestDirectory = join(applicationRootDirectory, 'test', 'e2e');
 const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
 const color = {
@@ -16,18 +15,59 @@ const color = {
   reset: '\x1B[0m',
 };
 
-function cleanupDistTest(): void {
-  try {
-    rmSync(distTestDirectory, { force: true, recursive: true });
-  } catch (error: unknown) {
-    console.warn(
-      `${color.red}Failed to delete dist-test: ${describeUnknownError(error)}${color.reset}`,
-    );
-  }
+function isE2eTestFile(filePath: string): boolean {
+  return filePath.endsWith('.e2e-test.ts') || filePath.endsWith('.e2e-spec.ts');
 }
 
-function describeUnknownError(error: unknown): string {
-  return error instanceof Error ? error.message : stringifyError(error);
+function isClassifiedE2eTestFile(filePath: string): boolean {
+  return (
+    filePath.endsWith('.parallel.e2e-test.ts') ||
+    filePath.endsWith('.serial.e2e-test.ts')
+  );
+}
+
+function findE2eTestFiles(directory: string): string[] {
+  const files: string[] = [];
+
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const entryPath = join(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      files.push(...findE2eTestFiles(entryPath));
+      continue;
+    }
+
+    if (entry.isFile() && isE2eTestFile(entryPath)) {
+      files.push(entryPath);
+    }
+  }
+
+  return files;
+}
+
+function runE2eDiscoveryGuard(): number {
+  console.log(`\n${color.blue}> test:e2e:discovery${color.reset}`);
+
+  const unclassifiedTestFiles = findE2eTestFiles(e2eTestDirectory).filter(
+    (filePath) => !isClassifiedE2eTestFile(filePath),
+  );
+
+  if (unclassifiedTestFiles.length === 0) {
+    console.log(`${color.green}test:e2e:discovery OK${color.reset}`);
+    return 0;
+  }
+
+  console.error(
+    `${color.red}Unclassified e2e test files found. Rename each file to ` +
+      `*.parallel.e2e-test.ts or *.serial.e2e-test.ts.${color.reset}`,
+  );
+
+  for (const filePath of unclassifiedTestFiles) {
+    console.error(`  - ${relative(applicationRootDirectory, filePath)}`);
+  }
+
+  console.log(`${color.red}test:e2e:discovery FAIL${color.reset}`);
+  return 1;
 }
 
 function runStep(name: string, command: string, args: string[]): number {
@@ -67,21 +107,26 @@ function formatStatus(exitCode: number): string {
     : `${color.red}FAIL${color.reset}`;
 }
 
-process.on('exit', cleanupDistTest);
-
-runNpmScript('test:build');
-
+const discoveryExitCode = runE2eDiscoveryGuard();
+const typecheckExitCode = runNpmScript('test:typecheck');
 const unitExitCode = runNpmScript('test:unit');
 const parallelExitCode = runNpmScript('test:e2e:parallel');
 const serialExitCode = runNpmScript('test:e2e:serial');
 
 const finalExitCode =
-  unitExitCode === 0 && parallelExitCode === 0 && serialExitCode === 0 ? 0 : 1;
+  discoveryExitCode === 0 &&
+  typecheckExitCode === 0 &&
+  unitExitCode === 0 &&
+  parallelExitCode === 0 &&
+  serialExitCode === 0
+    ? 0
+    : 1;
 
 console.log(`\n${color.bold}Summary:${color.reset}`);
+console.log(`  e2e-discovery: ${formatStatus(discoveryExitCode)}`);
+console.log(`  typecheck:      ${formatStatus(typecheckExitCode)}`);
 console.log(`  unit:          ${formatStatus(unitExitCode)}`);
 console.log(`  e2e-parallel:  ${formatStatus(parallelExitCode)}`);
 console.log(`  e2e-serial:    ${formatStatus(serialExitCode)}`);
-console.log('  cleanup:       dist-test deleted');
 
 process.exitCode = finalExitCode;

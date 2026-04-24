@@ -37,8 +37,17 @@ export const buildApp = async (): Promise<NestExpressApplication> => {
 
 export interface ServerMeta {
   port: number;
-  pid: number;
+  cmsFixtureDirectory: string;
   fileVersion: 1;
+}
+
+export type E2eGlobalRegistry = typeof globalThis & {
+  __randomgenE2eApp__?: NestExpressApplication;
+  __randomgenE2eCmsFixtureDirectory__?: string;
+};
+
+export function getE2eGlobalRegistry(): E2eGlobalRegistry {
+  return globalThis;
 }
 
 export const metaFile = path.join(APP_ROOT, 'test', 'e2e', '.e2e-server.json');

@@ -39,7 +39,6 @@ export default defineConfig([
   {
     ignores: [
       '**/dist/**',
-      '**/dist-test/**',
       '**/node_modules/**',
       '**/*.d.ts',
       '**/*.tgz',
