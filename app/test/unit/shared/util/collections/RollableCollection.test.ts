@@ -1,5 +1,5 @@
 import { roll } from '@forsetius/glitnir-shared';
-import { RollableCollection } from '@shared/util/collections/RollableCollection';
+import { RollableCollection } from '../../../../../src/shared/util/collections/RollableCollection';
 
 jest.mock('@forsetius/glitnir-shared', () => ({
   roll: jest.fn(),

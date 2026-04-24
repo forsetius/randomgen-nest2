@@ -1,20 +1,8 @@
 import type { Config } from 'jest';
-import tsconfig from '../tsconfig.json';
 import { APP_CONFIG_ENV_PREFIX } from '../src/appConstants';
 import { loadEnvFile } from '../src/shared/util/loadEnvFile';
 
 loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);
-
-function pathsToMapper(): Record<string, string> {
-  const paths = tsconfig.compilerOptions.paths;
-  const out: Record<string, string> = {};
-  for (const [key, values] of Object.entries(paths)) {
-    const pattern = '^' + key.replace('*', '(.*)') + '$';
-
-    out[pattern] = '<rootDir>/../' + values[0]!.replace('*', '$1');
-  }
-  return out;
-}
 
 const config: Config = {
   testEnvironment: 'node',
@@ -34,7 +22,6 @@ const config: Config = {
   },
   moduleNameMapper: {
     '^marked$': '<rootDir>/../node_modules/marked/lib/marked.umd.js',
-    ...pathsToMapper(),
   },
 };
 

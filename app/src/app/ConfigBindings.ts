@@ -11,9 +11,9 @@ import { TemplatingConfigContract } from '@forsetius/glitnir-templating';
 import { ValidationConfigContract } from '@forsetius/glitnir-validation';
 import * as Conf from './config';
 import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../appConstants';
-import type { AppModuleOptions } from '@app/types/AppModuleOptions';
+import type { AppModuleOptions } from './types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../cms/CmsModuleConfigContract';
-import { TechnobabbleModuleConfigContract } from '@domain/technobabble/TechnobabbleModuleConfigContract';
+import { TechnobabbleModuleConfigContract } from '../domain/technobabble/TechnobabbleModuleConfigContract';
 import { parseConfigData, type ExternalConfigData } from './ExternalConfigData';
 
 type AppConfigRootOptions = Parameters<

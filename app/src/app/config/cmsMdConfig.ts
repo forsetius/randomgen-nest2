@@ -1,6 +1,6 @@
 import path from 'node:path';
 import type { CmsMdConfig } from '@forsetius/glitnir-cms-md';
-import { normalizeAppOrigin } from '@shared/util/url';
+import { normalizeAppOrigin } from '../../shared/util/url';
 import type { ExternalConfigData } from '../ExternalConfigData';
 
 interface CmsMdConfigOverrides {

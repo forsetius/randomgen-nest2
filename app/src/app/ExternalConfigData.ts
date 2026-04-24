@@ -11,9 +11,9 @@ import {
   MAX_PORT_NUMBER,
   MIN_PORT_NUMBER,
   MIN_TRANSPORT_PORT_NUMBER,
-} from '@shared/constants/ConfigConstants';
-import { Env } from '@shared/types/Env';
-import { InvalidRawConfigDataError } from '@app/exceptions/InvalidRawConfigDataError';
+} from '../shared/constants/ConfigConstants';
+import { Env } from '../shared/types/Env';
+import { InvalidRawConfigDataError } from './exceptions/InvalidRawConfigDataError';
 
 const SharedExternalConfigDataSchema = z.object({
   ENV: z.enum(Env),

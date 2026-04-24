@@ -4,9 +4,9 @@ import { stringifyError } from '@forsetius/glitnir-shared';
 import { VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { AppModule } from '@app/AppModule';
-import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
-import type { AppModuleOptions } from '@app/types/AppModuleOptions';
+import { AppModule } from './app/AppModule';
+import { NotFoundFilter } from './shared/filters/NotFoundFilter';
+import type { AppModuleOptions } from './app/types/AppModuleOptions';
 
 async function bootstrap(): Promise<void> {
   LuxonSettings.throwOnInvalid = true;

@@ -2,7 +2,7 @@ import { flipCoin } from '@forsetius/glitnir-shared';
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
 import { AdjectiveForms, Gender, NounForms, SourcePl } from '../types/SourcePl';
-import type { Lang } from '@shared/types/Lang';
+import type { Lang } from '../../../shared/types/Lang';
 
 @Injectable()
 export class PolishGenerator extends BaseGenerator<SourcePl> {

@@ -1,4 +1,4 @@
-import { Lang } from '@shared/types/Lang';
+import { Lang } from '../../shared/types/Lang';
 
 export const DEFAULT_TECHNOBABBLE_MAX_RESULTS = 20;
 

@@ -1,6 +1,6 @@
-import { Lang, Langs } from '@shared/types/Lang';
-import { AppModuleOptions } from '@app/types/AppModuleOptions';
-import { normalizeAppOrigin } from '@shared/util/url';
+import { Lang, Langs } from '../../shared/types/Lang';
+import { AppModuleOptions } from '../types/AppModuleOptions';
+import { normalizeAppOrigin } from '../../shared/util/url';
 import type { ExternalConfigData } from '../ExternalConfigData';
 
 export function resolveAppConfig(

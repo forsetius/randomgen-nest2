@@ -1,4 +1,3 @@
-import 'tsconfig-paths/register';
 import path from 'node:path';
 import { SpamCheckService } from '@forsetius/glitnir-spamcheck';
 import { Test, TestingModule } from '@nestjs/testing';

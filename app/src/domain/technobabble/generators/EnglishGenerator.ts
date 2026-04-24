@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
-import type { Lang } from '@shared/types/Lang';
+import type { Lang } from '../../../shared/types/Lang';
 import { SourceEn } from '../types/SourceEn';
 
 @Injectable()
