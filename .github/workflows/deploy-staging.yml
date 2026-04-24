@@ -1,0 +1,94 @@
+name: Deploy staging
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: ${{ vars.APP_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: app
+        env:
+          GITHUB_PACKAGES_TOKEN: ${{ secrets.GITHUB_PACKAGES_TOKEN }}
+        run: npm ci
+
+      - name: Validate
+        working-directory: app
+        run: |
+          npm run lint
+          npm run build
+          npm test
+
+      - name: Prepare artifact
+        id: release
+        run: |
+          release_id="$(date -u +'%Y%m%dT%H%M%SZ')-${GITHUB_SHA::7}"
+          echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
+          tar -czf "randomgen-$release_id.tar.gz" -C app dist package.json package-lock.json .npmrc content
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.MYDEVIL_SSH_PRIVATE_KEY }}
+          KNOWN_HOSTS: ${{ vars.MYDEVIL_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_ed25519
+
+      - name: Upload artifact and env
+        env:
+          RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+        run: |
+          remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
+          ssh "$remote" "mkdir -p ~/apps/randomgen/staging/incoming"
+          scp "randomgen-$RELEASE_ID.tar.gz" "$remote:~/apps/randomgen/staging/incoming/"
+          printf '%s\n' "$RUNTIME_ENV" > runtime.env
+          scp runtime.env "$remote:~/apps/randomgen/staging/incoming/runtime.env"
+
+      - name: Install and restart staging
+        env:
+          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+          GITHUB_PACKAGES_TOKEN: ${{ secrets.GITHUB_PACKAGES_TOKEN }}
+        run: |
+          remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
+          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GITHUB_PACKAGES_TOKEN='$GITHUB_PACKAGES_TOKEN' bash -s" <<'REMOTE'
+          set -euo pipefail
+
+          app_base="$HOME/apps/randomgen/staging"
+          release_dir="$app_base/releases/$RELEASE_ID"
+
+          mkdir -p "$release_dir"
+          tar -xzf "$app_base/incoming/randomgen-$RELEASE_ID.tar.gz" -C "$release_dir"
+
+          mv "$app_base/incoming/runtime.env" "$app_base/shared/runtime.env"
+          chmod 600 "$app_base/shared/runtime.env"
+
+          cd "$release_dir"
+          npm24 ci --omit=dev
+
+          printf '%s\n' "$RELEASE_ID" > "$app_base/current-release.tmp"
+          mv "$app_base/current-release.tmp" "$app_base/current-release"
+
+          devil www restart "$DOMAIN"
+          REMOTE
+
+      - name: Smoke test
+        run: curl --fail --show-error --silent "${{ vars.APP_URL }}/ping"
