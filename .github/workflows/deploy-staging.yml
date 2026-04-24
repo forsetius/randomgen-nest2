@@ -51,7 +51,7 @@ jobs:
       - name: Prepare artifact
         id: release
         run: |
-          release_id="$(date -u +'%Y%m%dT%H%M%SZ')-${GITHUB_SHA::7}"
+          release_id="$(date -u +'%Y-%m-%d_%H-%M-%S')-${GITHUB_SHA::7}"
           echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
           tar -czf "randomgen-$release_id.tar.gz" -C app dist package.json package-lock.json .npmrc content
 
@@ -91,6 +91,7 @@ jobs:
 
           mkdir -p "$release_dir"
           tar -xzf "$app_base/incoming/randomgen-$RELEASE_ID.tar.gz" -C "$release_dir"
+          find "$app_base/incoming" -maxdepth 1 -type f -name '*.tar.gz' -delete
           mkdir -p "$release_dir/content/cms/static/pages"
 
           mv "$app_base/incoming/runtime.env" "$app_base/shared/runtime.env"
