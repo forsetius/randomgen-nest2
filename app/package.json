@@ -20,7 +20,7 @@
   },
   "main": "dist/main.js",
   "scripts": {
-    "prepare": "cd .. && husky app/.husky",
+    "prepare": "command -v husky >/dev/null 2>&1 && (cd .. && husky app/.husky) || true",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --report-unused-disable-directives --max-warnings 0 --fix",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
