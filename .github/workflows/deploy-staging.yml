@@ -81,7 +81,7 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.release_id }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GITHUB_PACKAGES_TOKEN='GITHUB_PACKAGES_TOKEN' bash -s" <<'REMOTE'
+          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GITHUB_PACKAGES_TOKEN='$GITHUB_PACKAGES_TOKEN' bash -s" <<'REMOTE'
           set -euo pipefail
 
           [ -n "${GITHUB_PACKAGES_TOKEN:-}" ] || { echo "Missing GH_PACKAGES_TOKEN in remote install step"; exit 1; }
@@ -91,6 +91,7 @@ jobs:
 
           mkdir -p "$release_dir"
           tar -xzf "$app_base/incoming/randomgen-$RELEASE_ID.tar.gz" -C "$release_dir"
+          mkdir -p "$release_dir/content/cms/static/pages"
 
           mv "$app_base/incoming/runtime.env" "$app_base/shared/runtime.env"
           chmod 600 "$app_base/shared/runtime.env"
