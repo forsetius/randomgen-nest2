@@ -1,5 +1,5 @@
-import { Lang } from '@shared/types/Lang';
-import { Env } from '@shared/types/Env';
+import { Lang } from '../../shared/types/Lang';
+import { Env } from '../../shared/types/Env';
 
 export interface AppModuleOptions {
   env: Env;

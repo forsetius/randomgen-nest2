@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { Lang } from '@shared/types/Lang';
+import { Lang } from '../../../shared/types/Lang';
 import { SourceKeys, SourceData, BaseSource } from '../types/SourceData';
 import { Dataset } from './Dataset';
 import { APP_ROOT } from '../../../appConstants';

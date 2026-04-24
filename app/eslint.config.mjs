@@ -1,20 +1,178 @@
-import eslint from '@eslint/js';
+import { defineConfig } from 'eslint/config';
+import js from '@eslint/js';
+import json from '@eslint/json';
+import n from 'eslint-plugin-n';
+import regexp from 'eslint-plugin-regexp';
+import security from 'eslint-plugin-security';
 import tseslint from 'typescript-eslint';
+import yml from 'eslint-plugin-yml';
+import zod from 'eslint-plugin-zod';
 
-export default tseslint.config(
-  eslint.configs.recommended,
-  tseslint.configs.strictTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
+const tsConfigs = [
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+].map((config) => ({
+  ...config,
+  files: ['**/*.ts'],
+  languageOptions: {
+    ...config.languageOptions,
+    parserOptions: {
+      ...config.languageOptions?.parserOptions,
+      projectService: true,
+      tsconfigRootDir: import.meta.dirname,
+      warnOnUnsupportedTypeScriptVersion: false,
+    },
+  },
+}));
+
+const browserGlobals = {
+  console: 'readonly',
+  document: 'readonly',
+  Event: 'readonly',
+  fetch: 'readonly',
+  history: 'readonly',
+  URLSearchParams: 'readonly',
+  window: 'readonly',
+};
+
+export default defineConfig([
   {
+    ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      '**/*.d.ts',
+      '**/*.tgz',
+      '**/coverage/**',
+    ],
+  },
+
+  // JSON files
+  {
+    files: ['**/*.json'],
+    ignores: ['package-lock.json'],
+    plugins: { json },
+    language: 'json/json',
+    extends: ['json/recommended'],
+  },
+
+  // YAML files
+  ...yml.configs['flat/recommended'],
+
+  // JS files
+  {
+    files: ['**/*.{js,cjs,mjs}'],
+    ...js.configs.recommended,
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+    },
+    rules: {
+      'no-console': 'off',
+      'n/no-deprecated-api': 'error',
+      'n/prefer-node-protocol': 'error',
+    },
+    plugins: {
+      n,
+    },
+    settings: {
+      node: {
+        version: '>=22.16.0',
+      },
+    },
+  },
+
+  // Browser JS assets
+  {
+    files: ['content/cms/static/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'script',
+      globals: browserGlobals,
+    },
+  },
+  {
+    files: ['content/cms/static/ui/pager-set.js'],
+    languageOptions: {
+      globals: {
+        loadFragment: 'readonly',
+        qs: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['content/cms/static/ui/search.js'],
+    rules: {
+      'no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^handleSearchResponse$' },
+      ],
+    },
+  },
+
+  // RegExp
+  {
+    ...regexp.configs['flat/recommended'],
+    files: ['**/*.{ts,js,cjs,mjs}'],
+  },
+
+  // Security
+  {
+    files: ['**/*.{ts,js,cjs,mjs}'],
+    plugins: {
+      security,
+    },
+    rules: {
+      'security/detect-bidi-characters': 'error',
+      'security/detect-buffer-noassert': 'error',
+      'security/detect-child-process': 'error',
+      'security/detect-disable-mustache-escape': 'error',
+      'security/detect-eval-with-expression': 'error',
+      'security/detect-new-buffer': 'error',
+      'security/detect-pseudoRandomBytes': 'error',
+    },
+  },
+
+  // TS files
+  ...tsConfigs,
+  {
+    files: ['scripts/**/*.ts'],
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        project: './tsconfig.scripts.json',
+        projectService: false,
         tsconfigRootDir: import.meta.dirname,
       },
+    },
+  },
+
+  // TS, Zod and misc Node
+  {
+    files: ['**/*.ts'],
+    plugins: {
+      n,
+      zod,
     },
     rules: {
       '@typescript-eslint/no-extraneous-class': 'off',
       '@typescript-eslint/no-non-null-assertion': 'off',
-    }
+      'n/no-deprecated-api': 'error',
+      'n/prefer-node-protocol': 'error',
+      'zod/no-any-schema': 'error',
+      'zod/no-empty-custom-schema': 'error',
+      'zod/no-optional-and-default-together': 'error',
+      'zod/no-throw-in-refine': 'error',
+      'zod/require-error-message': 'error',
+    },
+    settings: {
+      node: {
+        version: '>=22.16.0',
+      },
+    },
   },
-);
+  {
+    files: ['scripts/**/*.ts'],
+    rules: {
+      'n/prefer-node-protocol': 'off',
+    },
+  },
+]);

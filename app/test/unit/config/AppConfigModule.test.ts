@@ -30,7 +30,7 @@ import {
 } from '@forsetius/glitnir-validation';
 import type { TestingModule } from '@nestjs/testing';
 import { APP_ROOT } from '../../../src/appConstants';
-import { configBindings } from '@app/ConfigBindings';
+import { configBindings } from '../../../src/app/ConfigBindings';
 import { APP_CONFIG_ENV_PREFIX } from '../../../src/appConstants';
 import type { AppModuleOptions } from '../../../src/app/types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../../../src/cms/CmsModuleConfigContract';

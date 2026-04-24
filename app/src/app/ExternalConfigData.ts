@@ -11,9 +11,9 @@ import {
   MAX_PORT_NUMBER,
   MIN_PORT_NUMBER,
   MIN_TRANSPORT_PORT_NUMBER,
-} from '@shared/constants/ConfigConstants';
-import { Env } from '@shared/types/Env';
-import { InvalidRawConfigDataError } from '@app/exceptions/InvalidRawConfigDataError';
+} from '../shared/constants/ConfigConstants';
+import { Env } from '../shared/types/Env';
+import { InvalidRawConfigDataError } from './exceptions/InvalidRawConfigDataError';
 
 const SharedExternalConfigDataSchema = z.object({
   ENV: z.enum(Env),
@@ -25,7 +25,7 @@ const SharedExternalConfigDataSchema = z.object({
     .min(1)
     .transform((rawPath: string) => resolveAppRelativePath(APP_ROOT, rawPath))
     .refine((absolutePath: string) => isInsideProject(APP_ROOT, absolutePath), {
-      message: 'Directory must be inside project root',
+      error: 'Directory must be inside project root',
     })
     .refine(
       (absolutePath: string) => {
@@ -36,7 +36,7 @@ const SharedExternalConfigDataSchema = z.object({
           return false;
         }
       },
-      { message: 'No such directory' },
+      { error: 'No such directory' },
     ),
 });
 

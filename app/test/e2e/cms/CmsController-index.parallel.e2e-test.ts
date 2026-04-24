@@ -1,6 +1,6 @@
 import supertest, { Response } from 'supertest';
 import { HttpStatus } from '@nestjs/common';
-import type { Lang } from '@shared/types/Lang';
+import type { Lang } from '../../../src/shared/types/Lang';
 import { getBaseUrl } from '../globalAppUrl';
 
 const POLISH_LANGUAGE: Lang = 'pl';

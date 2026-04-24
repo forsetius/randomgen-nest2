@@ -3,7 +3,7 @@ import { z } from 'zod';
 import {
   DEFAULT_TECHNOBABBLE_MAX_RESULTS,
   DEFAULT_TECHNOBABBLE_SUPPORTED_LANGS,
-} from '@domain/technobabble/TechnobabbleDefaults';
+} from './TechnobabbleDefaults';
 
 export const TechnobabbleModuleConfigContract = new ConfigContract(
   'technobabble',

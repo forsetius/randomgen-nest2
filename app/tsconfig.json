@@ -16,7 +16,6 @@
     "skipLibCheck": true,
 
     "outDir": "./dist",
-    "baseUrl": "./",
     "checkJs": false,
     "declaration": true,
     "declarationMap": true,
@@ -27,17 +26,15 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "resolveJsonModule": true,
-    "rootDirs": ["./src", "./test"],
     "sourceMap": true,
-    "paths": {
-      "@app/*": ["./src/app/*"],
-      "@config": ["./src/app/config/index.ts"],
-      "@config/*": ["./src/app/config/*"],
-      "@domain/*": ["./src/domain/*"],
-      "@shared/*": ["./src/shared/*"]
-    },
     "types": ["node", "jest"]
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "src/**/*.json", "test/**/*.ts", "test/**/*.json"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    "test/**/*.ts",
+    "test/**/*.json",
+    "scripts/**/*.ts"
+  ]
 }

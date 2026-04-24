@@ -4,9 +4,9 @@ import { SecurityModule } from '@forsetius/glitnir-security';
 import { ValidationModule } from '@forsetius/glitnir-validation';
 import { AppController } from './AppController';
 import { AppService } from './services/AppService';
-import { TechnobabbleModule } from '@domain/technobabble/TechnobabbleModule';
+import { TechnobabbleModule } from '../domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../cms/CmsModule';
-import { configBindings } from '@app/ConfigBindings';
+import { configBindings } from './ConfigBindings';
 
 @Module({
   imports: [
