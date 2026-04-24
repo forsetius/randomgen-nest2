@@ -12,9 +12,24 @@ jobs:
     environment:
       name: staging
       url: ${{ vars.APP_URL }}
+    env:
+      GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Assert required staging secrets and variables
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.MYDEVIL_SSH_PRIVATE_KEY }}
+          RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
+        run: |
+          [ -n "${GH_PACKAGES_TOKEN:-}" ] || { echo "Missing secret: GH_PACKAGES_TOKEN"; exit 1; }
+          [ -n "${SSH_PRIVATE_KEY:-}" ] || { echo "Missing secret: MYDEVIL_SSH_PRIVATE_KEY"; exit 1; }
+          [ -n "${RUNTIME_ENV:-}" ] || { echo "Missing secret: RANDOMGEN_RUNTIME_ENV"; exit 1; }
+          [ -n "${{ vars.MYDEVIL_HOST }}" ] || { echo "Missing variable: MYDEVIL_HOST"; exit 1; }
+          [ -n "${{ vars.MYDEVIL_USER }}" ] || { echo "Missing variable: MYDEVIL_USER"; exit 1; }
+          [ -n "${{ vars.MYDEVIL_DOMAIN }}" ] || { echo "Missing variable: MYDEVIL_DOMAIN"; exit 1; }
+          [ -n "${{ vars.APP_URL }}" ] || { echo "Missing variable: APP_URL"; exit 1; }
 
       - uses: actions/setup-node@v4
         with:
@@ -24,8 +39,6 @@ jobs:
 
       - name: Install dependencies
         working-directory: app
-        env:
-          GITHUB_PACKAGES_TOKEN: ${{ secrets.GITHUB_PACKAGES_TOKEN }}
         run: npm ci
 
       - name: Validate
@@ -66,11 +79,12 @@ jobs:
       - name: Install and restart staging
         env:
           RELEASE_ID: ${{ steps.release.outputs.release_id }}
-          GITHUB_PACKAGES_TOKEN: ${{ secrets.GITHUB_PACKAGES_TOKEN }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GITHUB_PACKAGES_TOKEN='$GITHUB_PACKAGES_TOKEN' bash -s" <<'REMOTE'
+          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GH_PACKAGES_TOKEN='$GH_PACKAGES_TOKEN' bash -s" <<'REMOTE'
           set -euo pipefail
+
+          [ -n "${GH_PACKAGES_TOKEN:-}" ] || { echo "Missing GH_PACKAGES_TOKEN in remote install step"; exit 1; }
 
           app_base="$HOME/apps/randomgen/staging"
           release_dir="$app_base/releases/$RELEASE_ID"
