@@ -1,5 +1,8 @@
 import path from 'node:path';
-import { AppConfigBuilder } from '@forsetius/glitnir-config';
+import {
+  AppConfigBuilder,
+  type AppConfigModule,
+} from '@forsetius/glitnir-config';
 import { CmsMdConfigContract } from '@forsetius/glitnir-cms-md';
 import { MailConfigContract } from '@forsetius/glitnir-mail';
 import { SecurityConfigContract } from '@forsetius/glitnir-security';
@@ -13,7 +16,11 @@ import { CmsModuleConfigContract } from '../cms/CmsModuleConfigContract';
 import { TechnobabbleModuleConfigContract } from '@domain/technobabble/TechnobabbleModuleConfigContract';
 import { parseConfigData, type ExternalConfigData } from './ExternalConfigData';
 
-export const configBindings = new AppConfigBuilder<
+type AppConfigRootOptions = Parameters<
+  typeof AppConfigModule.forRoot<ExternalConfigData, AppModuleOptions>
+>[0];
+
+export const configBindings: AppConfigRootOptions = new AppConfigBuilder<
   ExternalConfigData,
   AppModuleOptions
 >(parseConfigData, Conf.resolveAppConfig, {

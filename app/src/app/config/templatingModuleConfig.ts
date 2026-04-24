@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 import type { TemplatingConfig } from '@forsetius/glitnir-templating';
 import { APP_ROOT } from '../../appConstants';
 

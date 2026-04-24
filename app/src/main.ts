@@ -6,16 +6,12 @@ import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppModule } from '@app/AppModule';
 import { NotFoundFilter } from '@shared/filters/NotFoundFilter';
-import stopwatch from '@shared/util/stopwatch';
 import type { AppModuleOptions } from '@app/types/AppModuleOptions';
-
-stopwatch.record('after imports');
 
 async function bootstrap(): Promise<void> {
   LuxonSettings.throwOnInvalid = true;
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  stopwatch.record('app created');
 
   app.enableVersioning({ type: VersioningType.URI, prefix: false });
   app.enableShutdownHooks();
@@ -23,7 +19,6 @@ async function bootstrap(): Promise<void> {
 
   try {
     await app.init();
-    stopwatch.record('app initialized');
     const port = app.get<AppModuleOptions>(SHARED_CONFIG_TOKEN).port;
 
     await app.listen(port);
@@ -32,11 +27,8 @@ async function bootstrap(): Promise<void> {
       'Error while starting the application:',
       stringifyError(error),
     );
-    stopwatch.record('Exiting with error');
 
     process.exit(1);
-  } finally {
-    stopwatch.list();
   }
 }
 

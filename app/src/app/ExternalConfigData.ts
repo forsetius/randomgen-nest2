@@ -25,7 +25,7 @@ const SharedExternalConfigDataSchema = z.object({
     .min(1)
     .transform((rawPath: string) => resolveAppRelativePath(APP_ROOT, rawPath))
     .refine((absolutePath: string) => isInsideProject(APP_ROOT, absolutePath), {
-      message: 'Directory must be inside project root',
+      error: 'Directory must be inside project root',
     })
     .refine(
       (absolutePath: string) => {
@@ -36,7 +36,7 @@ const SharedExternalConfigDataSchema = z.object({
           return false;
         }
       },
-      { message: 'No such directory' },
+      { error: 'No such directory' },
     ),
 });
 
