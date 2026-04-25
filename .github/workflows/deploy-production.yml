@@ -1,59 +1,37 @@
-name: Deploy staging
+name: Promote to production
 
 on:
   workflow_dispatch:
+    inputs:
+      release_id:
+        description: Release id produced by the staging workflow
+        required: true
+        type: string
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  promote:
     runs-on: ubuntu-latest
     environment:
-      name: staging
+      name: production
       url: ${{ vars.APP_URL }}
-    env:
-      GITHUB_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Assert required staging secrets and variables
+      - name: Assert required production secrets, variables, and input
         env:
           SSH_PRIVATE_KEY: ${{ secrets.MYDEVIL_SSH_PRIVATE_KEY }}
           RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
+          RELEASE_ID: ${{ inputs.release_id }}
         run: |
-          [ -n "${GITHUB_PACKAGES_TOKEN:-}" ] || { echo "Missing secret: GH_PACKAGES_TOKEN"; exit 1; }
+          [ -n "${RELEASE_ID:-}" ] || { echo "Missing input: release_id"; exit 1; }
           [ -n "${SSH_PRIVATE_KEY:-}" ] || { echo "Missing secret: MYDEVIL_SSH_PRIVATE_KEY"; exit 1; }
           [ -n "${RUNTIME_ENV:-}" ] || { echo "Missing secret: RANDOMGEN_RUNTIME_ENV"; exit 1; }
           [ -n "${{ vars.MYDEVIL_HOST }}" ] || { echo "Missing variable: MYDEVIL_HOST"; exit 1; }
           [ -n "${{ vars.MYDEVIL_USER }}" ] || { echo "Missing variable: MYDEVIL_USER"; exit 1; }
           [ -n "${{ vars.MYDEVIL_DOMAIN }}" ] || { echo "Missing variable: MYDEVIL_DOMAIN"; exit 1; }
           [ -n "${{ vars.APP_URL }}" ] || { echo "Missing variable: APP_URL"; exit 1; }
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: app/package-lock.json
-
-      - name: Install dependencies
-        working-directory: app
-        run: npm ci
-
-      - name: Validate
-        working-directory: app
-        run: |
-          npm run lint
-          npm run build
-          npm test
-
-      - name: Prepare artifact
-        id: release
-        run: |
-          release_id="$(date -u +'%Y-%m-%d_%H-%M-%S')-${GITHUB_SHA::7}"
-          echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
-          tar -czf "randomgen-$release_id.tar.gz" -C app dist package.json package-lock.json .npmrc content
 
       - name: Configure SSH
         env:
@@ -65,53 +43,40 @@ jobs:
           printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/id_ed25519
 
-      - name: Upload artifact and env
+      - name: Upload production env
         env:
           RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
-          RELEASE_ID: ${{ steps.release.outputs.release_id }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "mkdir -p ~/apps/randomgen/staging/incoming"
-          scp "randomgen-$RELEASE_ID.tar.gz" "$remote:~/apps/randomgen/staging/incoming/"
+          ssh "$remote" "mkdir -p ~/apps/randomgen/production/incoming"
           printf '%s\n' "$RUNTIME_ENV" > runtime.env
-          scp runtime.env "$remote:~/apps/randomgen/staging/incoming/runtime.env"
+          scp runtime.env "$remote:~/apps/randomgen/production/incoming/runtime.env"
 
-      - name: Install release and restart staging
+      - name: Promote release and restart production
         env:
-          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+          RELEASE_ID: ${{ inputs.release_id }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' GITHUB_PACKAGES_TOKEN='$GITHUB_PACKAGES_TOKEN' bash -s" <<'REMOTE'
+          ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' bash -s" <<'REMOTE'
           set -euo pipefail
 
-          [ -n "${GITHUB_PACKAGES_TOKEN:-}" ] || { echo "Missing GH_PACKAGES_TOKEN in remote install step"; exit 1; }
-
-          app_base="$HOME/apps/randomgen/staging"
+          app_base="$HOME/apps/randomgen/production"
           releases_base="$HOME/apps/randomgen/releases"
-          incoming_base="$app_base/incoming"
           release_dir="$releases_base/$RELEASE_ID"
           domain_app_js="$HOME/domains/$DOMAIN/public_nodejs/app.js"
 
-          mkdir -p "$app_base/shared" "$incoming_base" "$releases_base" "$(dirname "$domain_app_js")"
+          [ -d "$release_dir" ] || { echo "Shared release not found: $release_dir"; exit 1; }
 
-          if [ -e "$release_dir" ]; then
-            echo "Release already exists: $release_dir"
-            exit 1
-          fi
+          mkdir -p "$app_base/shared" "$app_base/incoming" "$(dirname "$domain_app_js")"
 
-          mkdir -p "$release_dir"
-          tar -xzf "$incoming_base/randomgen-$RELEASE_ID.tar.gz" -C "$release_dir"
-          find "$incoming_base" -maxdepth 1 -type f -name '*.tar.gz' -delete
-          mkdir -p "$release_dir/content/cms/static/pages"
-
-          mv "$incoming_base/runtime.env" "$app_base/shared/runtime.env"
+          mv "$app_base/incoming/runtime.env" "$app_base/shared/runtime.env"
           chmod 600 "$app_base/shared/runtime.env"
 
           cat > "$domain_app_js" <<'APPJS'
           const fs = require('node:fs');
           const path = require('node:path');
 
-          const applicationBase = path.join(process.env.HOME, 'apps/randomgen/staging');
+          const applicationBase = path.join(process.env.HOME, 'apps/randomgen/production');
           const releasesBase = path.join(process.env.HOME, 'apps/randomgen/releases');
           const runtimeEnvironmentPath = path.join(applicationBase, 'shared/runtime.env');
           const currentReleasePath = path.join(applicationBase, 'current-release');
@@ -148,9 +113,6 @@ jobs:
           require(path.join(releaseDirectory, 'dist/main.js'));
           APPJS
 
-          cd "$release_dir"
-          npm24 ci --omit=dev
-
           printf '%s\n' "$RELEASE_ID" > "$app_base/current-release.tmp"
           mv "$app_base/current-release.tmp" "$app_base/current-release"
 
@@ -162,10 +124,10 @@ jobs:
 
       - name: Publish release summary
         env:
-          RELEASE_ID: ${{ steps.release.outputs.release_id }}
+          RELEASE_ID: ${{ inputs.release_id }}
         run: |
           {
-            echo "### Staging release"
+            echo "### Production release"
             echo
             echo "- release_id: \`$RELEASE_ID\`"
             echo "- url: ${{ vars.APP_URL }}"
