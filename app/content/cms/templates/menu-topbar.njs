@@ -105,9 +105,9 @@
             aria-label="Search"
             autocomplete="off"
             hx-get="/search?count=7&brief=true&lang={{ lang }}"
-            hx-trigger="keyup[this.value.length >= 3] delay:300ms"
+            hx-trigger="csp-search"
             hx-target="#searchResults"
-            hx-on:htmx:after-request="handleSearchResponse(event, 'searchResults')"
+            data-results-container="searchResults"
             hx-swap="none"
         />
       

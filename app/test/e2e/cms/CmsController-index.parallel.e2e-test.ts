@@ -26,6 +26,15 @@ describe('CmsController', () => {
 
       checkStatusAndLanguage(response, POLISH_LANGUAGE, HttpStatus.OK);
     });
+
+    it('renders CSP-safe search markup without inline htmx handlers', async () => {
+      const response = await supertest(getBaseUrl()).get(`/`).redirects(1);
+
+      expect(response.text).toContain('hx-trigger="csp-search"');
+      expect(response.text).toContain('data-results-container="searchResults"');
+      expect(response.text).not.toContain('hx-on:');
+      expect(response.text).not.toContain('keyup[this.value.length >= 3]');
+    });
   });
 
   describe('GET /?lang=$lang', () => {
