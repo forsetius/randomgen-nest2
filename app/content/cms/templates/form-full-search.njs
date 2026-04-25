@@ -10,9 +10,9 @@
             aria-label="Search"
             autocomplete="off"
             hx-get="/search?lang={{ lang }}"
-            hx-trigger="load[this.value.length >= 3], keyup[this.value.length >= 3] delay:300ms"
+            hx-trigger="csp-search"
             hx-include="#fullSearchInput"
-            hx-on:htmx:after-request="handleSearchResponse(event, 'fullSearchResults')"
+            data-results-container="fullSearchResults"
             hx-swap="none"
         />
         <button
@@ -20,11 +20,6 @@
             class="btn btn-outline-secondary"
             type="button"
             aria-label="Clear search"
-            hx-on:click="
-                fullSearchInput.value = '';
-                fullSearchResults.innerHTML = '';
-                fullSearchResults.classList.add('d-none');
-            "
         >
             <i class="bi bi-x-lg"></i>
         </button>
@@ -34,9 +29,3 @@
     {% endif %}
     <div id="fullSearchResults" class="w-100 mt-1 row row-cols-1 row-cols-md-3 g-5"></div>
 </div>
-
-{% block javascript %}
-<script>
-    document.getElementById('fullSearchInput').value = qs.term ?? ''
-</script>
-{% endblock %}

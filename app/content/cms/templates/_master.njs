@@ -12,6 +12,7 @@
   <link id="theme" rel="stylesheet" type="text/css" href="/ui/styles.css" title="theme" />
   <link rel="icon" type="image/x-icon" href="/ui/{{ brand.logo }}" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/pages/{{ lang }}/rss.xml" />
+  <meta name="htmx-config" content='{"allowEval":false}'>
   <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
   <script src="/ui/head.js"></script>
   {% block meta %}
