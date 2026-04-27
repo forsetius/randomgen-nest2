@@ -1,8 +1,15 @@
 import { resolve } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
+import { parseEnv } from 'node:util';
 import { APP_ROOT } from '../../appConstants';
 
 const loadedEnvFileKeys = new Set<string>();
+
+export class EnvFileNotFoundError extends Error {
+  public constructor(public readonly envFilePath: string) {
+    super(`Env file ${envFilePath} does not exist`);
+  }
+}
 
 export function loadEnvFile(
   envFile = '.env',
@@ -18,28 +25,16 @@ export function loadEnvFile(
 
   const envFilePath = resolve(APP_ROOT, envFile);
   if (!existsSync(envFilePath)) {
-    throw new Error(`Env file ${envFilePath} does not exist`);
+    throw new EnvFileNotFoundError(envFilePath);
   }
 
-  const content = readFileSync(envFilePath, 'utf8');
-  content
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0 && !line.startsWith('#'))
-    .forEach((line) => {
-      const [key, val] = line.split('=').map((part) => part.trim()) as [
-        string,
-        string | undefined,
-      ];
-      if (typeof val === 'undefined') {
-        return;
-      }
+  const envValues = parseEnv(readFileSync(envFilePath, 'utf8'));
 
-      const value = /^"(.*)"$/.exec(val)?.[1] ?? val;
-      const targetKey = `${keyPrefix}${key}`;
+  for (const [key, value] of Object.entries(envValues)) {
+    const targetKey = `${keyPrefix}${key}`;
 
-      if (overwrite || !(targetKey in process.env)) {
-        process.env[targetKey] = value;
-      }
-    });
+    if (overwrite || !(targetKey in process.env)) {
+      process.env[targetKey] = value;
+    }
+  }
 }

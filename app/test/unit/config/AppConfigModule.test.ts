@@ -35,8 +35,10 @@ import { APP_CONFIG_ENV_PREFIX } from '../../../src/appConstants';
 import type { AppModuleOptions } from '../../../src/app/types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../../../src/cms/CmsModuleConfigContract';
 import type { CmsModuleOptions } from '../../../src/cms/types/CmsModuleOptions';
-import { TechnobabbleModuleConfigContract } from '../../../src/domain/technobabble/TechnobabbleModuleConfigContract';
-import type { TechnobabbleModuleOptions } from '../../../src/domain/technobabble/types/TechnobabbleModuleOptions';
+import {
+  TechnobabbleModuleConfig,
+  TechnobabbleModuleConfigContract,
+} from '../../../src/domain/technobabble/types/TechnobabbleModuleConfigContract';
 import { Env } from '../../../src/shared/types/Env';
 import type { Lang } from '../../../src/shared/types/Lang';
 
@@ -93,14 +95,14 @@ function getPrefixedVariableName(
 function buildProcessEnvironment(
   overrides: ConfigEnvironmentOverrides = {},
 ): NodeJS.ProcessEnv {
-  const nextProcessEnvironment = Object.fromEntries(
+  const nextProcessEnvironment: NodeJS.ProcessEnv = Object.fromEntries(
     Object.entries(initialProcessEnvironment).filter(([variableName]) => {
       return !(
         variableName in baseConfigEnvironment ||
         variableName.replace(APP_CONFIG_ENV_PREFIX, '') in baseConfigEnvironment
       );
     }),
-  ) as NodeJS.ProcessEnv;
+  );
 
   for (const variableName of Object.keys(
     baseConfigEnvironment,
@@ -145,7 +147,7 @@ function resolveConfigRegistry(testingModule: TestingModule) {
     validation: testingModule.get<ValidationConfig>(
       ValidationConfigContract.token,
     ),
-    technobabble: testingModule.get<TechnobabbleModuleOptions>(
+    technobabble: testingModule.get<TechnobabbleModuleConfig>(
       TechnobabbleModuleConfigContract.token,
     ),
     templating: testingModule.get<TemplatingConfig>(
@@ -457,6 +459,7 @@ describe('configBindings', () => {
       });
 
       expect(config.technobabble).toEqual({
+        contentDir: 'content/technobabble',
         maxResults: 20,
         supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
       });

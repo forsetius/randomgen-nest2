@@ -13,7 +13,7 @@ import * as Conf from './config';
 import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../appConstants';
 import type { AppModuleOptions } from './types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../cms/CmsModuleConfigContract';
-import { TechnobabbleModuleConfigContract } from '../domain/technobabble/TechnobabbleModuleConfigContract';
+import { TechnobabbleModuleConfigContract } from '../domain/technobabble/types/TechnobabbleModuleConfigContract';
 import { parseConfigData, type ExternalConfigData } from './ExternalConfigData';
 
 type AppConfigRootOptions = Parameters<
@@ -33,6 +33,8 @@ export const configBindings: AppConfigRootOptions = new AppConfigBuilder<
   .setup(SecurityConfigContract, Conf.resolveSecurityModuleConfig)
   .setup(SpamCheckConfigContract, Conf.resolveSpamCheckModuleConfig)
   .setup(ValidationConfigContract, { strictMode: true })
-  .setup(TechnobabbleModuleConfigContract)
+  .setup(TechnobabbleModuleConfigContract, {
+    contentDir: 'content/technobabble',
+  })
   .setup(TemplatingConfigContract, Conf.resolveTemplatingModuleConfig)
   .build();

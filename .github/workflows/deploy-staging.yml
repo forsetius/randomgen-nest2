@@ -33,7 +33,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version-file: .nvmrc
           cache: npm
           cache-dependency-path: app/package-lock.json
 
@@ -110,36 +110,19 @@ jobs:
           cat > "$domain_app_js" <<'APPJS'
           const fs = require('node:fs');
           const path = require('node:path');
+          const { parseEnv } = require('node:util');
 
           const applicationBase = path.join(process.env.HOME, 'apps/randomgen/staging');
           const releasesBase = path.join(process.env.HOME, 'apps/randomgen/releases');
           const runtimeEnvironmentPath = path.join(applicationBase, 'shared/runtime.env');
           const currentReleasePath = path.join(applicationBase, 'current-release');
 
-          function loadRuntimeEnvironment(filePath) {
-            const content = fs.readFileSync(filePath, 'utf8');
-
-            for (const rawLine of content.split(/\r?\n/)) {
-              const line = rawLine.trim();
-
-              if (line.length === 0 || line.startsWith('#')) {
-                continue;
-              }
-
-              const separatorIndex = line.indexOf('=');
-
-              if (separatorIndex === -1) {
-                continue;
-              }
-
-              const key = line.slice(0, separatorIndex).trim();
-              const value = line.slice(separatorIndex + 1).trim().replace(/^"(.*)"$/, '$1');
-
-              process.env[key] = value;
-            }
+          const nodeMajorVersion = Number(process.versions.node.split('.')[0]);
+          if (nodeMajorVersion !== 24) {
+            throw new Error(`Expected Node 24 runtime, got ${process.version}`);
           }
 
-          loadRuntimeEnvironment(runtimeEnvironmentPath);
+          Object.assign(process.env, parseEnv(fs.readFileSync(runtimeEnvironmentPath, 'utf8')));
 
           const releaseName = fs.readFileSync(currentReleasePath, 'utf8').trim();
           const releaseDirectory = path.join(releasesBase, releaseName);

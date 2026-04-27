@@ -1,11 +1,14 @@
-import { spawnSync } from 'child_process';
-import { readdirSync } from 'fs';
-import { join, relative, resolve } from 'path';
-import process from 'process';
+import { spawnSync } from 'node:child_process';
+import { globSync } from 'node:fs';
+import { matchesGlob, relative, resolve } from 'node:path';
+import process from 'node:process';
 
 const applicationRootDirectory = resolve(process.cwd());
-const e2eTestDirectory = join(applicationRootDirectory, 'test', 'e2e');
 const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+const e2eTestPatterns = [
+  'test/e2e/**/*.e2e-test.ts',
+  'test/e2e/**/*.e2e-spec.ts',
+];
 
 const color = {
   blue: '\x1B[1;34m',
@@ -16,39 +19,33 @@ const color = {
 };
 
 function isE2eTestFile(filePath: string): boolean {
-  return filePath.endsWith('.e2e-test.ts') || filePath.endsWith('.e2e-spec.ts');
-}
-
-function isClassifiedE2eTestFile(filePath: string): boolean {
-  return (
-    filePath.endsWith('.parallel.e2e-test.ts') ||
-    filePath.endsWith('.serial.e2e-test.ts')
+  return e2eTestPatterns.some((pattern) =>
+    matchesGlob(relative(applicationRootDirectory, filePath), pattern),
   );
 }
 
-function findE2eTestFiles(directory: string): string[] {
-  const files: string[] = [];
+function isClassifiedE2eTestFile(filePath: string): boolean {
+  const relativeFilePath = relative(applicationRootDirectory, filePath);
 
-  for (const entry of readdirSync(directory, { withFileTypes: true })) {
-    const entryPath = join(directory, entry.name);
+  return (
+    matchesGlob(relativeFilePath, 'test/e2e/**/*.parallel.e2e-test.ts') ||
+    matchesGlob(relativeFilePath, 'test/e2e/**/*.serial.e2e-test.ts')
+  );
+}
 
-    if (entry.isDirectory()) {
-      files.push(...findE2eTestFiles(entryPath));
-      continue;
-    }
-
-    if (entry.isFile() && isE2eTestFile(entryPath)) {
-      files.push(entryPath);
-    }
-  }
-
-  return files;
+function findE2eTestFiles(): string[] {
+  return globSync(e2eTestPatterns, {
+    cwd: applicationRootDirectory,
+  })
+    .map((filePath) => resolve(applicationRootDirectory, filePath))
+    .filter(isE2eTestFile)
+    .sort();
 }
 
 function runE2eDiscoveryGuard(): number {
   console.log(`\n${color.blue}> test:e2e:discovery${color.reset}`);
 
-  const unclassifiedTestFiles = findE2eTestFiles(e2eTestDirectory).filter(
+  const unclassifiedTestFiles = findE2eTestFiles().filter(
     (filePath) => !isClassifiedE2eTestFile(filePath),
   );
 

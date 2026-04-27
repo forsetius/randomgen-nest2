@@ -7,10 +7,10 @@
  */
 import { spawn } from 'node:child_process';
 import { mkdir } from 'node:fs/promises';
-import { createLogUpdate } from 'log-update';
 import os from 'node:os';
 import { performance } from 'node:perf_hooks';
 import path from 'node:path';
+import readline from 'node:readline';
 
 type Status = 'WAITING' | 'RUNNING' | 'OK' | 'WARN' | 'ERROR' | 'SKIPPED';
 type StageKey = 'format' | 'unit' | 'e2eParallel' | 'e2eSerial' | 'build';
@@ -67,9 +67,6 @@ const EXIT_ALTERNATE_SCREEN = '\u001B[?1049l';
 
 class Dashboard {
   private readonly useDynamicRedraw = shouldUseDynamicDashboard();
-  private readonly dynamicRenderer = createLogUpdate(process.stdout, {
-    showCursor: true,
-  });
   private readonly handleProcessExit = (): void => {
     this.teardownDynamicSession();
   };
@@ -128,9 +125,15 @@ class Dashboard {
         return;
       }
 
-      this.dynamicRenderer(this.pendingDynamicSnapshot);
+      this.renderDynamic(this.pendingDynamicSnapshot);
       this.pendingDynamicSnapshot = undefined;
     });
+  }
+
+  private renderDynamic(snapshot: string): void {
+    readline.cursorTo(process.stdout, 0, 0);
+    readline.clearScreenDown(process.stdout);
+    process.stdout.write(snapshot);
   }
 
   private renderNonInteractive(stages: StageMap): void {
@@ -186,7 +189,8 @@ class Dashboard {
 
     this.isClosed = true;
     process.removeListener('exit', this.handleProcessExit);
-    this.dynamicRenderer.clear();
+    readline.cursorTo(process.stdout, 0, 0);
+    readline.clearScreenDown(process.stdout);
     process.stdout.write(EXIT_ALTERNATE_SCREEN);
   }
 }
