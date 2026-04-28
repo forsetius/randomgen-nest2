@@ -29,9 +29,8 @@ import {
   type ValidationConfig,
 } from '@forsetius/glitnir-validation';
 import type { TestingModule } from '@nestjs/testing';
-import { APP_ROOT } from '../../../src/appConstants';
+import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../../../src/appConstants';
 import { configBindings } from '../../../src/app/ConfigBindings';
-import { APP_CONFIG_ENV_PREFIX } from '../../../src/appConstants';
 import type { AppModuleOptions } from '../../../src/app/types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../../../src/cms/CmsModuleConfigContract';
 import type { CmsModuleOptions } from '../../../src/cms/types/CmsModuleOptions';
@@ -86,7 +85,7 @@ const baseConfigEnvironment: Record<ConfigEnvironmentVariableName, string> = {
   CMS_SOURCE_DIR: 'test/e2e/cms/_fixtures',
 };
 
-function getPrefixedVariableName(
+function getEnvironmentVariableName(
   variableName: ConfigEnvironmentVariableName,
 ): string {
   return `${APP_CONFIG_ENV_PREFIX}${variableName}`;
@@ -97,10 +96,7 @@ function buildProcessEnvironment(
 ): NodeJS.ProcessEnv {
   const nextProcessEnvironment: NodeJS.ProcessEnv = Object.fromEntries(
     Object.entries(initialProcessEnvironment).filter(([variableName]) => {
-      return !(
-        variableName in baseConfigEnvironment ||
-        variableName.replace(APP_CONFIG_ENV_PREFIX, '') in baseConfigEnvironment
-      );
+      return !(variableName in baseConfigEnvironment);
     }),
   );
 
@@ -119,7 +115,7 @@ function buildProcessEnvironment(
       continue;
     }
 
-    nextProcessEnvironment[getPrefixedVariableName(variableName)] = value;
+    nextProcessEnvironment[getEnvironmentVariableName(variableName)] = value;
   }
 
   return nextProcessEnvironment;
@@ -450,12 +446,11 @@ describe('configBindings', () => {
       });
 
       expect(config.validation).toEqual({
-        env: Env.TEST,
+        isProduction: false,
         langs: {
           supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
           default: POLISH_LANGUAGE,
         },
-        strictMode: true,
       });
 
       expect(config.technobabble).toEqual({

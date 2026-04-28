@@ -1,7 +1,7 @@
-import type { Config } from 'jest';
-import baseE2eConfig from './jest-e2e-base.config';
+const baseE2eConfig = require('./jest-e2e-base.config.cjs');
 
-const config: Config = {
+/** @type {import('jest').Config} */
+const config = {
   ...baseE2eConfig,
   testMatch: ['<rootDir>/e2e/**/*.parallel.e2e-test.ts'],
   globalSetup: '<rootDir>/e2e/globalAppSetup.ts',
@@ -9,4 +9,4 @@ const config: Config = {
   setupFilesAfterEnv: ['<rootDir>/e2e/globalAppUrl.ts'],
 };
 
-export default config;
+module.exports = config;

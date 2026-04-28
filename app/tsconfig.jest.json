@@ -11,15 +11,5 @@
     "sourceMap": true
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*.ts", "test/**/*.ts", "test/**/*.json"],
-  "ts-node": {
-    "project": "./tsconfig.jest.json",
-    "transpileOnly": true,
-    "files": true,
-    "pretty": true,
-    "compilerOptions": {
-      "module": "CommonJS",
-      "moduleResolution": "Node"
-    }
-  }
+  "include": ["src/**/*.ts", "test/**/*.ts", "test/**/*.json"]
 }

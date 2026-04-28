@@ -1,10 +1,7 @@
-import type { Config } from 'jest';
-import { APP_CONFIG_ENV_PREFIX } from '../src/appConstants';
-import { loadEnvFile } from '../src/shared/util/loadEnvFile';
+process.env.NODE_ENV = 'test';
 
-loadEnvFile('.env.test', true, APP_CONFIG_ENV_PREFIX);
-
-const config: Config = {
+/** @type {import('jest').Config} */
+const config = {
   testEnvironment: 'node',
   rootDir: '.',
   transform: {
@@ -25,4 +22,4 @@ const config: Config = {
   },
 };
 
-export default config;
+module.exports = config;
