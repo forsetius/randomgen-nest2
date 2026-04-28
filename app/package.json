@@ -15,7 +15,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=24.15.0 <25"
+    "node": ">=24.4.1 <25"
   },
   "main": "dist/main.js",
   "scripts": {
@@ -35,15 +35,15 @@
     "pre-push": "node --import tsx ./scripts/pre-push.ts"
   },
   "dependencies": {
-    "@forsetius/glitnir-cms-md": "^0.6.1",
-    "@forsetius/glitnir-config": "^0.7.0",
-    "@forsetius/glitnir-mail": "^0.3.1",
-    "@forsetius/glitnir-markdown": "^0.2.0",
-    "@forsetius/glitnir-security": "^0.6.1",
-    "@forsetius/glitnir-shared": "^0.3.0",
-    "@forsetius/glitnir-spamcheck": "^0.6.1",
-    "@forsetius/glitnir-templating": "^0.5.1",
-    "@forsetius/glitnir-validation": "^0.6.0",
+    "@forsetius/glitnir-cms-md": "^0.6.2",
+    "@forsetius/glitnir-config": "^0.7.1",
+    "@forsetius/glitnir-mail": "^0.3.2",
+    "@forsetius/glitnir-markdown": "^0.2.1",
+    "@forsetius/glitnir-security": "^0.6.2",
+    "@forsetius/glitnir-shared": "^0.3.1",
+    "@forsetius/glitnir-spamcheck": "^0.6.2",
+    "@forsetius/glitnir-templating": "^0.5.2",
+    "@forsetius/glitnir-validation": "^0.6.1",
     "@nestjs/common": "^11.1.19",
     "@nestjs/core": "^11.1.19",
     "@nestjs/platform-express": "^11.1.19",

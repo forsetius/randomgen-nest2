@@ -83,7 +83,7 @@ module.exports = defineConfig([
     },
     settings: {
       node: {
-        version: '>=24.15.0 <25',
+        version: '>=24.4.1 <25',
       },
     },
   },
@@ -172,7 +172,7 @@ module.exports = defineConfig([
     },
     settings: {
       node: {
-        version: '>=24.15.0 <25',
+        version: '>=24.4.1 <25',
       },
     },
   },
