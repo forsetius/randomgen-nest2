@@ -1,13 +1,20 @@
 import { flipCoin } from '@forsetius/glitnir-shared';
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
 import { AdjectiveForms, Gender, NounForms, SourcePl } from '../types/SourcePl';
 import type { Lang } from '../../../shared/types/Lang';
+import {
+  type TechnobabbleModuleConfig,
+  TechnobabbleModuleConfigContract,
+} from '../types/TechnobabbleModuleConfigContract';
 
 @Injectable()
 export class PolishGenerator extends BaseGenerator<SourcePl> {
-  public constructor() {
-    super('pl' satisfies Lang);
+  public constructor(
+    @Inject(TechnobabbleModuleConfigContract.token)
+    config: TechnobabbleModuleConfig,
+  ) {
+    super(config, 'pl' satisfies Lang);
   }
 
   public generate(datasetName: string): string {

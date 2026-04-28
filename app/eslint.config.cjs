@@ -1,12 +1,19 @@
-import { defineConfig } from 'eslint/config';
-import js from '@eslint/js';
-import json from '@eslint/json';
-import n from 'eslint-plugin-n';
-import regexp from 'eslint-plugin-regexp';
-import security from 'eslint-plugin-security';
-import tseslint from 'typescript-eslint';
-import yml from 'eslint-plugin-yml';
-import zod from 'eslint-plugin-zod';
+const { defineConfig } = require('eslint/config');
+
+function requireDefault(moduleName) {
+  const mod = require(moduleName);
+
+  return mod.default ?? mod;
+}
+
+const js = requireDefault('@eslint/js');
+const json = requireDefault('@eslint/json');
+const n = requireDefault('eslint-plugin-n');
+const regexp = requireDefault('eslint-plugin-regexp');
+const security = requireDefault('eslint-plugin-security');
+const tseslint = requireDefault('typescript-eslint');
+const yml = requireDefault('eslint-plugin-yml');
+const zod = requireDefault('eslint-plugin-zod');
 
 const tsConfigs = [
   ...tseslint.configs.strictTypeChecked,
@@ -19,7 +26,7 @@ const tsConfigs = [
     parserOptions: {
       ...config.languageOptions?.parserOptions,
       projectService: true,
-      tsconfigRootDir: import.meta.dirname,
+      tsconfigRootDir: __dirname,
       warnOnUnsupportedTypeScriptVersion: false,
     },
   },
@@ -35,7 +42,7 @@ const browserGlobals = {
   window: 'readonly',
 };
 
-export default defineConfig([
+module.exports = defineConfig([
   {
     ignores: [
       '**/dist/**',
@@ -76,7 +83,7 @@ export default defineConfig([
     },
     settings: {
       node: {
-        version: '>=22.16.0',
+        version: '>=24.4.1 <25',
       },
     },
   },
@@ -140,7 +147,7 @@ export default defineConfig([
       parserOptions: {
         project: './tsconfig.scripts.json',
         projectService: false,
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: __dirname,
       },
     },
   },
@@ -165,7 +172,7 @@ export default defineConfig([
     },
     settings: {
       node: {
-        version: '>=22.16.0',
+        version: '>=24.4.1 <25',
       },
     },
   },

@@ -1,12 +1,19 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { BaseGenerator } from './BaseGenerator';
 import type { Lang } from '../../../shared/types/Lang';
 import { SourceEn } from '../types/SourceEn';
+import {
+  type TechnobabbleModuleConfig,
+  TechnobabbleModuleConfigContract,
+} from '../types/TechnobabbleModuleConfigContract';
 
 @Injectable()
 export class EnglishGenerator extends BaseGenerator<SourceEn> {
-  public constructor() {
-    super('en' satisfies Lang);
+  public constructor(
+    @Inject(TechnobabbleModuleConfigContract.token)
+    config: TechnobabbleModuleConfig,
+  ) {
+    super(config, 'en' satisfies Lang);
   }
 
   public generate(datasetName: string): string {

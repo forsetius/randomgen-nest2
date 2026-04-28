@@ -29,14 +29,15 @@ import {
   type ValidationConfig,
 } from '@forsetius/glitnir-validation';
 import type { TestingModule } from '@nestjs/testing';
-import { APP_ROOT } from '../../../src/appConstants';
+import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../../../src/appConstants';
 import { configBindings } from '../../../src/app/ConfigBindings';
-import { APP_CONFIG_ENV_PREFIX } from '../../../src/appConstants';
 import type { AppModuleOptions } from '../../../src/app/types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../../../src/cms/CmsModuleConfigContract';
 import type { CmsModuleOptions } from '../../../src/cms/types/CmsModuleOptions';
-import { TechnobabbleModuleConfigContract } from '../../../src/domain/technobabble/TechnobabbleModuleConfigContract';
-import type { TechnobabbleModuleOptions } from '../../../src/domain/technobabble/types/TechnobabbleModuleOptions';
+import {
+  TechnobabbleModuleConfig,
+  TechnobabbleModuleConfigContract,
+} from '../../../src/domain/technobabble/types/TechnobabbleModuleConfigContract';
 import { Env } from '../../../src/shared/types/Env';
 import type { Lang } from '../../../src/shared/types/Lang';
 
@@ -84,7 +85,7 @@ const baseConfigEnvironment: Record<ConfigEnvironmentVariableName, string> = {
   CMS_SOURCE_DIR: 'test/e2e/cms/_fixtures',
 };
 
-function getPrefixedVariableName(
+function getEnvironmentVariableName(
   variableName: ConfigEnvironmentVariableName,
 ): string {
   return `${APP_CONFIG_ENV_PREFIX}${variableName}`;
@@ -93,14 +94,11 @@ function getPrefixedVariableName(
 function buildProcessEnvironment(
   overrides: ConfigEnvironmentOverrides = {},
 ): NodeJS.ProcessEnv {
-  const nextProcessEnvironment = Object.fromEntries(
+  const nextProcessEnvironment: NodeJS.ProcessEnv = Object.fromEntries(
     Object.entries(initialProcessEnvironment).filter(([variableName]) => {
-      return !(
-        variableName in baseConfigEnvironment ||
-        variableName.replace(APP_CONFIG_ENV_PREFIX, '') in baseConfigEnvironment
-      );
+      return !(variableName in baseConfigEnvironment);
     }),
-  ) as NodeJS.ProcessEnv;
+  );
 
   for (const variableName of Object.keys(
     baseConfigEnvironment,
@@ -117,7 +115,7 @@ function buildProcessEnvironment(
       continue;
     }
 
-    nextProcessEnvironment[getPrefixedVariableName(variableName)] = value;
+    nextProcessEnvironment[getEnvironmentVariableName(variableName)] = value;
   }
 
   return nextProcessEnvironment;
@@ -145,7 +143,7 @@ function resolveConfigRegistry(testingModule: TestingModule) {
     validation: testingModule.get<ValidationConfig>(
       ValidationConfigContract.token,
     ),
-    technobabble: testingModule.get<TechnobabbleModuleOptions>(
+    technobabble: testingModule.get<TechnobabbleModuleConfig>(
       TechnobabbleModuleConfigContract.token,
     ),
     templating: testingModule.get<TemplatingConfig>(
@@ -448,15 +446,15 @@ describe('configBindings', () => {
       });
 
       expect(config.validation).toEqual({
-        env: Env.TEST,
+        isProduction: false,
         langs: {
           supported: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
           default: POLISH_LANGUAGE,
         },
-        strictMode: true,
       });
 
       expect(config.technobabble).toEqual({
+        contentDir: 'content/technobabble',
         maxResults: 20,
         supportedLangs: [ENGLISH_LANGUAGE, POLISH_LANGUAGE],
       });
