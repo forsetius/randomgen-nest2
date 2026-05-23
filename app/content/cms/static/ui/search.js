@@ -1,302 +1,191 @@
-async function loadFragment(url) {
+async function loadFragment(e) {
   try {
-    const res = await fetch(url);
-    if (res.status === 404) {
-      console.warn(`Fragment from ${url} returned 404`);
-      return '';
-    }
-    if (!res.ok) {
-      console.error(`Error ${res.status} while loading ${url}`);
-      return '';
-    }
-
-    return await res.text();
+    const t = await fetch(e);
+    return 404 === t.status
+      ? (console.warn(`Fragment from ${e} returned 404`), '')
+      : t.ok
+        ? await t.text()
+        : (console.error(`Error ${t.status} while loading ${e}`), '');
+  } catch (t) {
+    return (console.error(`Network error while loading ${e}:`, t), '');
+  }
+}
+function parseResultUrls(e, t) {
+  const n = JSON.parse(e);
+  if (!Array.isArray(n))
+    throw new Error(`${t} response payload is not an array.`);
+  return n;
+}
+async function loadResultUrls(e, t) {
+  try {
+    const n = await fetch(e);
+    return 404 === n.status
+      ? (console.warn(`${t} request to ${e} returned 404`), [])
+      : n.ok
+        ? parseResultUrls(await n.text(), t)
+        : (console.error(`Error ${n.status} while loading ${e}`), []);
   } catch (e) {
-    console.error(`Network error while loading ${url}:`, e);
-    return '';
+    return (console.error(`Invalid JSON response for ${t}:`, e), []);
   }
 }
-
-const SEARCH_TRIGGER_EVENT = 'csp-search';
-const TAG_TRIGGER_EVENT = 'tag-load';
-const SEARCH_DEBOUNCE_MS = 300;
+async function renderResultFragments(e, t) {
+  e.innerHTML = '';
+  for (const n of t) e.insertAdjacentHTML('beforeend', await loadFragment(n));
+  e.classList.remove('d-none');
+}
 const searchRequestTimers = new WeakMap();
-
-function clearResultsContainer(container) {
-  container.innerHTML = '';
-  container.classList.add('d-none');
+function clearResultsContainer(e) {
+  ((e.innerHTML = ''), e.classList.add('d-none'));
 }
-
-function scheduleSearchRequest(element) {
-  const currentTimer = searchRequestTimers.get(element);
-
-  if (currentTimer) {
-    window.clearTimeout(currentTimer);
-  }
-
-  const nextTimer = window.setTimeout(() => {
-    htmx.trigger(element, SEARCH_TRIGGER_EVENT);
-    searchRequestTimers.delete(element);
-  }, SEARCH_DEBOUNCE_MS);
-
-  searchRequestTimers.set(element, nextTimer);
+function scheduleSearchRequest(e) {
+  const t = searchRequestTimers.get(e);
+  t && window.clearTimeout(t);
+  const n = window.setTimeout(() => {
+    (htmx.trigger(e, 'csp-search'), searchRequestTimers.delete(e));
+  }, 300);
+  searchRequestTimers.set(e, n);
 }
-
-async function handleSearchResponse(event, containerName) {
-  const container = document.getElementById(containerName);
-
-  if (!container) {
-    return;
-  }
-
-  let urls;
+async function handleSearchResponse(e, t) {
+  const n = document.getElementById(t);
+  if (!n) return;
+  let s;
   try {
-    urls = JSON.parse(event.detail.xhr.responseText);
-    if (!Array.isArray(urls)) {
-      throw new Error('Search response payload is not an array.');
-    }
-  } catch (err) {
-    console.error('Invalid JSON response for search:', err);
-    return;
+    s = parseResultUrls(e.detail.xhr.responseText, 'search');
+  } catch (e) {
+    return void console.error('Invalid JSON response for search:', e);
   }
-
-  container.innerHTML = '';
-  for (const url of urls) {
-    container.insertAdjacentHTML('beforeend', await loadFragment(url));
-  }
-
-  container.classList.remove('d-none');
+  await renderResultFragments(n, s);
 }
-
 function initializeTopbarSearch() {
-  const form = document.getElementById('searchForm');
-  const input = document.getElementById('searchInput');
-  const results = document.getElementById('searchResults');
-  const overlay = document.getElementById('pageOverlay');
-
-  if (!form || !input || !results || !overlay) {
-    return;
-  }
-
-  const resetSearch = () => {
-    input.value = '';
-    overlay.classList.add('d-none');
-    clearResultsContainer(results);
+  const e = document.getElementById('searchForm'),
+    t =
+      document.getElementById('site-search') ??
+      document.getElementById('searchInput'),
+    n = document.getElementById('searchResults'),
+    s = document.getElementById('pageOverlay');
+  if (!(e && t && n && s)) return;
+  const a = () => {
+    ((t.value = ''), s.classList.add('d-none'), clearResultsContainer(n));
   };
-
-  input.addEventListener('input', function () {
-    if (this.value.length > 0) {
-      overlay.classList.remove('d-none');
-    } else {
-      overlay.classList.add('d-none');
-    }
-
-    if (this.value.length < 3) {
-      clearResultsContainer(results);
-      return;
-    }
-
-    results.classList.remove('d-none');
-    scheduleSearchRequest(this);
-  });
-
-  input.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' || event.key === 'Esc') {
-      resetSearch();
-    }
-  });
-
-  document.addEventListener('click', function (event) {
-    if (!form.contains(event.target)) {
-      resetSearch();
-    }
-  });
+  (t.addEventListener('input', function () {
+    (this.value.length > 0
+      ? s.classList.remove('d-none')
+      : s.classList.add('d-none'),
+      this.value.length < 3
+        ? clearResultsContainer(n)
+        : (n.classList.remove('d-none'), scheduleSearchRequest(this)));
+  }),
+    t.addEventListener('keydown', function (e) {
+      ('Escape' !== e.key && 'Esc' !== e.key) || a();
+    }),
+    document.addEventListener('click', function (t) {
+      e.contains(t.target) || a();
+    }));
 }
-
 function initializeFullSearch() {
-  const input = document.getElementById('fullSearchInput');
-  const results = document.getElementById('fullSearchResults');
-  const clearButton = document.getElementById('clearFullSearchBtn');
-
-  if (!input || !results || !clearButton) {
-    return;
-  }
-
-  const updateResults = () => {
-    if (input.value.length < 3) {
-      clearResultsContainer(results);
-      return;
-    }
-
-    results.classList.remove('d-none');
-    scheduleSearchRequest(input);
-  };
-
-  const resetSearch = () => {
-    input.value = '';
-    clearResultsContainer(results);
-  };
-
-  input.value = qs.term ?? '';
-  input.addEventListener('input', updateResults);
-  input.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' || event.key === 'Esc') {
-      resetSearch();
-    }
-  });
-  clearButton.addEventListener('click', resetSearch);
-
-  updateResults();
+  const e = document.getElementById('fullSearchInput'),
+    t = document.getElementById('fullSearchResults'),
+    n = document.getElementById('clearFullSearchBtn');
+  if (!e || !t || !n) return;
+  const s = () => {
+      e.value.length < 3
+        ? clearResultsContainer(t)
+        : (t.classList.remove('d-none'), scheduleSearchRequest(e));
+    },
+    a = () => {
+      ((e.value = ''), clearResultsContainer(t));
+    };
+  ((e.value = qs.term ?? ''),
+    e.addEventListener('input', s),
+    e.addEventListener('keydown', function (e) {
+      ('Escape' !== e.key && 'Esc' !== e.key) || a();
+    }),
+    n.addEventListener('click', a),
+    s());
 }
-
 function initializeTagPage() {
-  const container = document.getElementById('tagResults');
-
-  if (!container) {
-    return;
-  }
-
-  const tag = qs.tag;
-
-  if (!tag) {
-    window.location.href = '/error-404.html';
-    return;
-  }
-
-  const mainTitle = document.getElementById('main-title');
-  const lang = container.dataset.lang ?? document.documentElement.lang ?? 'pl';
-
-  if (mainTitle) {
-    mainTitle.insertAdjacentText('beforeend', ` #${tag}`);
-  }
-
-  container.dataset.tag = tag;
-  container.setAttribute(
-    'hx-get',
-    `/tag/${encodeURIComponent(tag)}?lang=${lang}`,
-  );
-  htmx.trigger(container, TAG_TRIGGER_EVENT);
+  const e = document.getElementById('tagResults');
+  if (!e) return;
+  const t = qs.tag;
+  if (!t) return void (window.location.href = '/error-404.html');
+  const n = document.getElementById('main-title'),
+    s = e.dataset.lang ?? document.documentElement.lang ?? 'pl';
+  (n && n.insertAdjacentText('beforeend', ` #${t}`),
+    (e.dataset.tag = t),
+    loadResultUrls(`/pages/tag/${encodeURIComponent(t)}?lang=${s}`, 'tag').then(
+      (t) => renderResultFragments(e, t),
+    ));
 }
-
-function updateValidationState(input) {
-  if (input.checkValidity()) {
-    input.classList.remove('is-invalid');
-    input.classList.add('is-valid');
-  } else {
-    input.classList.remove('is-valid');
-    input.classList.add('is-invalid');
-  }
+function updateValidationState(e) {
+  e.checkValidity()
+    ? (e.classList.remove('is-invalid'), e.classList.add('is-valid'))
+    : (e.classList.remove('is-valid'), e.classList.add('is-invalid'));
 }
-
 function initializeContactForm() {
-  const form = document.getElementById('contact-form');
-  const submitButton = document.getElementById('contactSubmitBtn');
-
-  if (!form || !submitButton) {
-    return;
-  }
-
-  const inputs = form.querySelectorAll('.form-control');
-  const toggleSubmit = () => {
-    submitButton.disabled = !form.checkValidity();
-  };
-
-  inputs.forEach((input) => {
-    input.addEventListener('blur', () => {
-      updateValidationState(input);
-      toggleSubmit();
-    });
-    input.addEventListener('input', () => {
-      if (
-        input.classList.contains('is-valid') ||
-        input.classList.contains('is-invalid')
-      ) {
-        updateValidationState(input);
-      }
-
-      toggleSubmit();
-    });
-  });
-
-  form.addEventListener('change', toggleSubmit);
-  toggleSubmit();
+  const e = document.getElementById('contact-form'),
+    t = document.getElementById('contactSubmitBtn');
+  if (!e || !t) return;
+  const n = e.querySelectorAll('.form-control'),
+    s = () => {
+      t.disabled = !e.checkValidity();
+    };
+  (n.forEach((e) => {
+    (e.addEventListener('blur', () => {
+      (updateValidationState(e), s());
+    }),
+      e.addEventListener('input', () => {
+        ((e.classList.contains('is-valid') ||
+          e.classList.contains('is-invalid')) &&
+          updateValidationState(e),
+          s());
+      }));
+  }),
+    e.addEventListener('change', s),
+    s());
 }
-
-function handleContactFormResponse(event) {
-  const modal = document.getElementById('contactModal');
-  const modalTitleOk = document.getElementById('contactModalOkLabel');
-  const modalTitleError = document.getElementById('contactModalErrorLabel');
-  const modalBodyOk = document.getElementById('contactModalOkBody');
-  const modalBodyError = document.getElementById('contactModalErrorBody');
-  const form = document.getElementById('contact-form');
-
-  if (
-    !modal ||
-    !modalTitleOk ||
-    !modalTitleError ||
-    !modalBodyOk ||
-    !modalBodyError ||
-    !form
-  ) {
-    return;
-  }
-
-  const status = event.detail.xhr.status;
-  const modalInstance = new bootstrap.Modal(modal);
-
-  if (status >= 200 && status < 300) {
-    modal.addEventListener(
-      'hidden.bs.modal',
-      function () {
-        form.reset();
-        form.classList.remove('was-validated');
-        form
-          .querySelectorAll('.form-control')
-          .forEach((input) => input.classList.remove('is-valid', 'is-invalid'));
-
-        const submitButton = document.getElementById('contactSubmitBtn');
-
-        if (submitButton) {
-          submitButton.disabled = true;
-        }
-      },
-      { once: true },
-    );
-
-    modalTitleOk.classList.remove('d-none');
-    modalTitleError.classList.add('d-none');
-    modalBodyOk.classList.remove('d-none');
-    modalBodyError.classList.add('d-none');
-  } else {
-    modalTitleOk.classList.add('d-none');
-    modalTitleError.classList.remove('d-none');
-    modalBodyOk.classList.add('d-none');
-    modalBodyError.classList.remove('d-none');
-  }
-
-  modalInstance.show();
+function handleContactFormResponse(e) {
+  const t = document.getElementById('contactModal'),
+    n = document.getElementById('contactModalOkLabel'),
+    s = document.getElementById('contactModalErrorLabel'),
+    a = document.getElementById('contactModalOkBody'),
+    o = document.getElementById('contactModalErrorBody'),
+    r = document.getElementById('contact-form');
+  if (!(t && n && s && a && o && r)) return;
+  const c = e.detail.xhr.status,
+    i = new bootstrap.Modal(t);
+  (c >= 200 && c < 300
+    ? (t.addEventListener(
+        'hidden.bs.modal',
+        function () {
+          (r.reset(),
+            r.classList.remove('was-validated'),
+            r
+              .querySelectorAll('.form-control')
+              .forEach((e) => e.classList.remove('is-valid', 'is-invalid')));
+          const e = document.getElementById('contactSubmitBtn');
+          e && (e.disabled = !0);
+        },
+        { once: !0 },
+      ),
+      n.classList.remove('d-none'),
+      s.classList.add('d-none'),
+      a.classList.remove('d-none'),
+      o.classList.add('d-none'))
+    : (n.classList.add('d-none'),
+      s.classList.remove('d-none'),
+      a.classList.add('d-none'),
+      o.classList.remove('d-none')),
+    i.show());
 }
-
-document.body.addEventListener('htmx:afterRequest', function (event) {
-  const targetElement = event.target;
-
-  if (!(targetElement instanceof HTMLElement)) {
-    return;
-  }
-
-  const resultsContainerName = targetElement.dataset.resultsContainer;
-
-  if (resultsContainerName) {
-    void handleSearchResponse(event, resultsContainerName);
-    return;
-  }
-
-  if (targetElement.id === 'contact-form') {
-    handleContactFormResponse(event);
-  }
-});
-
-initializeTopbarSearch();
-initializeFullSearch();
-initializeTagPage();
-initializeContactForm();
+(document.body.addEventListener('htmx:afterRequest', function (e) {
+  const t = e.target;
+  if (!(t instanceof HTMLElement)) return;
+  const n = t.dataset.resultsContainer;
+  n
+    ? handleSearchResponse(e, n)
+    : 'contact-form' === t.id && handleContactFormResponse(e);
+}),
+  initializeTopbarSearch(),
+  initializeFullSearch(),
+  initializeTagPage(),
+  initializeContactForm());

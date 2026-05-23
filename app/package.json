@@ -1,6 +1,6 @@
 {
   "name": "randomgen",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Random generators for RPGs",
   "keywords": [
     "rpg",
@@ -15,7 +15,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=24.4.1 <25"
+    "node": ">=24.15.0 <25"
   },
   "main": "dist/main.js",
   "scripts": {
@@ -35,32 +35,32 @@
     "pre-push": "node --import tsx ./scripts/pre-push.ts"
   },
   "dependencies": {
-    "@forsetius/glitnir-cms-md": "^0.6.2",
-    "@forsetius/glitnir-config": "^0.7.1",
-    "@forsetius/glitnir-mail": "^0.3.2",
-    "@forsetius/glitnir-markdown": "^0.2.1",
-    "@forsetius/glitnir-security": "^0.6.2",
-    "@forsetius/glitnir-shared": "^0.3.1",
-    "@forsetius/glitnir-spamcheck": "^0.6.2",
-    "@forsetius/glitnir-templating": "^0.5.2",
-    "@forsetius/glitnir-validation": "^0.6.1",
-    "@nestjs/common": "^11.1.19",
-    "@nestjs/core": "^11.1.19",
-    "@nestjs/platform-express": "^11.1.19",
-    "@nestjs/swagger": "^11.4.1",
+    "@forsetius/glitnir-cms-md": "^0.8.0",
+    "@forsetius/glitnir-config": "^0.8.0",
+    "@forsetius/glitnir-mail": "^0.3.3",
+    "@forsetius/glitnir-markdown": "^0.2.3",
+    "@forsetius/glitnir-security": "^0.6.3",
+    "@forsetius/glitnir-shared": "^0.3.2",
+    "@forsetius/glitnir-spamcheck": "^0.6.3",
+    "@forsetius/glitnir-templating": "^0.5.4",
+    "@forsetius/glitnir-validation": "^0.6.2",
+    "@nestjs/common": "^11.1.23",
+    "@nestjs/core": "^11.1.23",
+    "@nestjs/platform-express": "^11.1.23",
+    "@nestjs/swagger": "^11.4.4",
     "@nestjs/throttler": "^6.5.0",
     "luxon": "^3.7.2",
     "reflect-metadata": "0.1.14",
     "rxjs": "^7.8.2",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^1.2.0",
     "@nestjs/schematics": "^11.1.0",
-    "@nestjs/testing": "^11.1.19",
+    "@nestjs/testing": "^11.1.23",
     "@swc/cli": "^0.8.1",
-    "@swc/core": "^1.15.32",
+    "@swc/core": "^1.15.33",
     "@swc/jest": "^0.2.39",
     "@tsconfig/node24": "^24.0.4",
     "@types/express": "^5.0.6",
@@ -68,20 +68,20 @@
     "@types/luxon": "^3.7.1",
     "@types/node": "^24.0.0",
     "@types/supertest": "^7.2.0",
-    "eslint": "^10.2.1",
+    "eslint": "^10.4.0",
     "eslint-plugin-n": "^17.24.0",
     "eslint-plugin-regexp": "^3.1.0",
     "eslint-plugin-security": "^4.0.0",
-    "eslint-plugin-yml": "^3.3.1",
-    "eslint-plugin-zod": "^3.11.0",
+    "eslint-plugin-yml": "^3.3.2",
+    "eslint-plugin-zod": "^3.12.1",
     "husky": "^9.1.7",
-    "jest": "^30.3.0",
+    "jest": "^30.4.2",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
     "supertest": "^7.2.2",
-    "tsx": "^4.21.0",
+    "tsx": "^4.22.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.1"
+    "typescript-eslint": "^8.59.4"
   },
   "lint-staged": {
     "**/*.{ts,tsx,js,cjs,mjs,json,md,yml,yaml}": [

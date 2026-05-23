@@ -11,10 +11,15 @@
   "messageThanks": "Dziękuję za wiadomość, odpowiem najszybciej jak będę mógł.",
   "messageSorry": "Nie udało się wysłać emaili ale zdarzenie zostało zalogowane.",
   "previous": "Poprzednie",
+  "readingTime": "czytania",
   "search": "Szukaj",
   "seeMore": "Zobacz więcej",
   "send": "Wyślij",
   "subject": "Temat wiadomości",
-  "technobabbleButton": "Trzeba tylko...",
-  "yourEmail": "Twój email"
+  "yourEmail": "Twój email",
+  "searchLabel": "Szukaj w serwisie",
+  "theme": "MOTYW",
+  "themeLight": "Jasny",
+  "themeDark": "Ciemny",
+  "themeSystem": "Systemowy"
 }
