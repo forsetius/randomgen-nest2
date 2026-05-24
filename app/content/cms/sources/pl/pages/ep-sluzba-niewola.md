@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Powrót do niewoli
 excerpt: Powrót kontraktów służebnych — jak korporacje przywróciły nowoczesne niewolnictwo.
 category: ep-sluzba

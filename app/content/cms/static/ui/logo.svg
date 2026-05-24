@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Forseti abstract worlds</title>
+  <defs>
+    <linearGradient id="planet" x1="42" y1="28" x2="204" y2="226" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="0.18" stop-color="#9fd8ff"/>
+      <stop offset="0.62" stop-color="#1f7fc1"/>
+      <stop offset="1" stop-color="#0a3767"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="16" y1="118" x2="240" y2="138" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a5a9a"/>
+      <stop offset="0.5" stop-color="#5bb8ff"/>
+      <stop offset="1" stop-color="#0a5a9a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="104" fill="#f9fcff"/>
+  <circle cx="128" cy="128" r="92" fill="url(#planet)"/>
+  <path d="M52 142c30-42 78-67 142-76" fill="none" stroke="#f8fbff" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+  <path d="M48 157c34-44 85-69 153-78" fill="none" stroke="#0b3768" stroke-width="6" stroke-linecap="round" opacity=".46"/>
+  <ellipse cx="128" cy="128" rx="118" ry="38" fill="none" stroke="url(#orbit)" stroke-width="9" transform="rotate(-24 128 128)"/>
+  <ellipse cx="128" cy="128" rx="118" ry="38" fill="none" stroke="#f8fbff" stroke-width="3" transform="rotate(-24 128 128)" opacity=".92"/>
+  <path d="M200 69l25-14-11 28 28 10-31 7-3 32-18-27-31 7 20-24-18-27z" fill="#0b5f9f" stroke="#f8fbff" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="128" cy="128" r="106" fill="none" stroke="#0a5592" stroke-width="8"/>
+  <circle cx="128" cy="128" r="118" fill="none" stroke="#cfeeff" stroke-width="5"/>
+</svg>

@@ -14,6 +14,7 @@ export class CmsContentSecurityPolicyContributor implements ContentSecurityPolic
       scriptSrc: ['https://cdn.jsdelivr.net', 'https://unpkg.com'],
       styleSrc: ['https://cdn.jsdelivr.net', 'https://fonts.googleapis.com'],
       fontSrc: ['https://cdn.jsdelivr.net', 'https://fonts.gstatic.com'],
+      imgSrc: ['https://i.imgur.com'],
     };
   }
 }

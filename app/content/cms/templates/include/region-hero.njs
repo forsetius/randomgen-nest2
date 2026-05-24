@@ -1,4 +1,4 @@
-<section class="hero" aria-labelledby="article-title">
+<section class="hero hero-{{ "with-lead" if lead else "no-lead" }}" aria-labelledby="article-title">
     <div class="container-fluid position-relative z-1">
         <div class="row g-5">
             <div class="col-lg-5 pt-5 pb-lg-4 d-flex flex-column">

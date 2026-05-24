@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Delacroix-Shelley
 excerpt: Tajna baza Fa Jing na Markurym
 headerImage: mid-ep-delacroix-head.jpg
@@ -18,6 +18,7 @@ slots:
 lead: |
   Ten podwójny krater, położony między 42° a 50° szerokości południowej, jest tajną bazą [Fa Jing]{pl/ep-fajing}. Delacroix-Shelley znajduje się w bardzo dogodnej lokalizacji. Leżąc blisko skromnych pokładów lodu polarnego Merkurego, jest jednym z nielicznych habitatów, które mają tanie i wystarczające źródło wody. Co ważniejsze, znajduje się daleko od bardziej rozwiniętej półkuli północnej.
 ---
+
 Północny krater, Delacroix, to silnie zautomatyzowana instalacja wojskowa. Oddziały i automaty stacjonujące w tym miejscu jak dotąd skutecznie powstrzymały wszystkich przed odkryciem, czym dokładnie Fa Jing zajmuje się w Shelley.
 
 Spekulacje są różne: od zakazanych badań nad technologią [TITAN-ów]{pl/ep-titans}, po budowę armii zombie. Czymkolwiek okaże się prawda, strażnicy mogą kiedyś zostać zmuszeni, by przeniknąć do kompleksu Shelley i przekonać się na własne oczy.

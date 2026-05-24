@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Zdarzyło się za 100 lat...
-excerpt: "Najbliższe dekady to galopujący rozwój technologii i społeczeństwa, które usiłują za nim nadążyć"
+excerpt: 'Najbliższe dekady to galopujący rozwój technologii i społeczeństwa, które usiłują za nim nadążyć'
 headerImage: mid-happened-in-100-years-head.jpg
 category: ep-intro
 sort: 1
-
 ---
+
 Nieustający i wciąż przyspieszający rozwój cywilizacji technicznej przyniósł dobrobyt i wyzwolenie od chorób i śmierci. Odkrycia na polu inżynierii genetycznej, nanotechnologii, technologii informatycznej oraz neurokognitywistyki zaowocowały takimi wynalazkami jak: wszechstronne [biomodyfikacje](#), szybkie leczenie i regeneracja nawet po biologicznej śmierci organizmu, [nanofabrykatory](#), miniaturowe i wszechobecne [zsieciowane]{pl/ep-splot} komputery… I wreszcie ukoronowanie myśli technicznej Homo sapiens sapiens: kopiowanie i emulacja [umysłu]{pl/ep-ego} w postaci cyfrowej, umożliwiające praktyczną nieśmiertelność, silna [sztuczna inteligencja]{pl/ep-sztuczna-inteligencja} dorównująca ludzkiej oraz [uplifty]{pl/ep-uplift} – nasi pierwsi bracia (czy raczej dzieci) w rozumie, zwierzęta wyniesione do rozumności ludzkiej.
 
 Dzięki tym wynalazkom świat zmienił się tak, że właściwie nie mówi się już o ludzkości – jest **_transludzkość_**. Biomodyfikacje są obecne w prawie każdym [biologicznym ciele]{pl/ep-biomorf}, dając wolność od chorób, większą odporność i wydajność organizmu. Przeciętne ciało ma szansę żyć dłużej, sprawniej i pełniej niż każde ze znanych obecnie. A później się je wyrzuca i wgrywa umysł do następnego.

@@ -1,9 +1,6 @@
-import supertest, { Response } from 'supertest';
 import { HttpStatus } from '@nestjs/common';
-import type { Lang } from '../../../src/shared/types/Lang';
+import supertest, { Response } from 'supertest';
 import { getBaseUrl } from '../globalAppUrl';
-
-const POLISH_LANGUAGE: Lang = 'pl';
 
 function checkStatusAndLanguage(
   response: Response,
@@ -21,10 +18,11 @@ function checkStatusAndLanguage(
 
 describe('CmsController', () => {
   describe('GET /', () => {
-    it('should return status 200 with a page in Polish language', async () => {
-      const response = await supertest(getBaseUrl()).get(`/`).redirects(1);
-
-      checkStatusAndLanguage(response, POLISH_LANGUAGE, HttpStatus.OK);
+    it('should redirect to Polish CMS index page', async () => {
+      await supertest(getBaseUrl())
+        .get(`/`)
+        .expect(HttpStatus.FOUND)
+        .expect('Location', '/pages/pl/index.html');
     });
 
     it('renders CSP-safe search markup without inline htmx handlers', async () => {
@@ -37,49 +35,41 @@ describe('CmsController', () => {
     });
   });
 
-  describe('GET /?lang=$lang', () => {
+  describe('GET /pages/:lang/index.html', () => {
     it.each([
       ['en', HttpStatus.OK],
       ['pl', HttpStatus.OK],
-      ['de', HttpStatus.BAD_REQUEST],
     ])(
       'should return a page in "%s" language and status %d',
       async (lang, status) => {
         const response = await supertest(getBaseUrl())
-          .get(`/?lang=${lang}`)
+          .get(`/pages/${lang}/index.html`)
           .redirects(1);
 
         checkStatusAndLanguage(response, lang, status);
       },
     );
+  });
+
+  describe('GET /pages/:lang/:slug.html', () => {
+    it('renders legacy aside slot content in the right sidebar', async () => {
+      const response = await supertest(getBaseUrl())
+        .get('/pages/en/item-c.html')
+        .expect(HttpStatus.OK);
+
+      expect(response.text).toContain('class="aside-right col-lg-3 col-xl-4"');
+      expect(response.text).toContain('Test aside content');
+    });
   });
 
   describe('GET /:lang', () => {
-    it.each([
-      ['en', HttpStatus.OK],
-      ['pl', HttpStatus.OK],
-      ['de', HttpStatus.BAD_REQUEST],
-    ])(
-      'should return a page in "%s" language and status %d',
-      async (lang, status) => {
-        const response = await supertest(getBaseUrl())
-          .get(`/${lang}`)
-          .redirects(1);
-
-        checkStatusAndLanguage(response, lang, status);
-      },
-    );
-  });
-
-  describe('GET /:lang?lang=$lang', () => {
     it.each(['en', 'pl'])(
-      `when calling /en?lang=%s should error with status 400`,
+      'should redirect "%s" language root to the CMS index page',
       async (lang: string) => {
-        const response = await supertest(getBaseUrl())
-          .get(`/en?lang=${lang}`)
-          .redirects(1);
-
-        checkStatusAndLanguage(response, '', HttpStatus.BAD_REQUEST);
+        await supertest(getBaseUrl())
+          .get(`/${lang}`)
+          .expect(HttpStatus.FOUND)
+          .expect('Location', `/pages/${lang}/index.html`);
       },
     );
   });

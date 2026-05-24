@@ -7,10 +7,6 @@ interface CmsMdConfigOverrides {
   readonly appOrigin: CmsMdConfig['appOrigin'];
   readonly brand: CmsMdConfig['brand'];
   readonly paths: CmsMdConfig['paths'];
-  readonly templates: Pick<
-    CmsMdConfig['templates'],
-    'fragmentCard' | 'fragmentListItem'
-  >;
 }
 
 export function resolveCmsMdConfig(
@@ -19,19 +15,15 @@ export function resolveCmsMdConfig(
   return {
     appOrigin: normalizeAppOrigin(configData.APP_HOST),
     brand: {
-      name: 'Forseti: Abstract Works',
-      copyright: '© 2025 by Marcin "Forseti" Paździora',
-      logo: 'logo-w.png',
+      name: 'Forseti: abstract worlds',
+      copyright: '© 2026 Marcin Paździora',
+      logo: 'logo.svg',
     },
     paths: {
       sourceDir: path.join(configData.CMS_SOURCE_DIR, 'sources'),
       outputDir: path.join(configData.CMS_SOURCE_DIR, 'static', 'pages'),
       mediaDir: path.join(configData.CMS_SOURCE_DIR, 'static', 'media'),
       uiDir: path.join(configData.CMS_SOURCE_DIR, 'static', 'ui'),
-    },
-    templates: {
-      fragmentCard: 'fragment-img-card',
-      fragmentListItem: 'fragment-list-item',
     },
   };
 }

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Blackrock
 excerpt: Martwa, napromieniowana stacja z zagadkowymi oznakami aktywności
 headerImage: mid-ep-blackrock-head.jpg

@@ -16,13 +16,13 @@
   <div class="pager-buttons d-flex justify-content-center gap-5 w-75 mx-auto mt-5">
     <a href="#"
        data-page="prev"
-       class="prev-btn btn btn-outline-success d-flex flex-column align-items-start text-start fw-bold p-3 w-50">
+       class="prev-btn btn pager-button d-flex flex-column align-items-start text-start fw-bold p-3 w-50">
       ‹ {{ t('previous') }}
     </a>
     
     <a href="#"
        data-page="next"
-       class="next-btn btn btn-outline-success d-flex flex-column align-items-end text-end fw-bold p-3 w-50">
+       class="next-btn btn pager-button d-flex flex-column align-items-end text-end fw-bold p-3 w-50">
       {{ t('next') }} ›
     </a>
   </div>

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Nectar
 headerImage: mid-lunar-city-head.jpg
 excerpt: Największe i najbardziej kosmopolityczne miasto Luny, nowoczesna architektura, napięcia społeczne.
@@ -17,6 +17,7 @@ slots:
 lead: |
   **Nectar**, położone wzdłuż trasy mobilnego księżycowego [skyhooka](#), jest największym i najbardziej kosmopolitycznym miastem na Lunie. Ścisłe powiązania osady z [Konsorcjum Planetarnym]{pl/ep-konsorcjum-planetarne} sprawiają, że mieszka tu więcej obcych niż we wszystkich innych miastach Luny razem wziętych, a sami mieszkańcy Nectar są średnio mniej nieufni wobec przybyszów niż pozostali Lunarni. Jest to też jedyna duża osada, gdzie trwa duża rozbudowa.
 ---
+
 Obecnie Nectar składa się z dwóch miast. **Stare Nectar** to duża, choć niepozorna, księżycowa osada zbudowana według standardowego schematu tuneli i grot. Około 3 kilometry dalej leży nowy cud Księżyca – **Nowe Nectar**, które coraz częściej nazywane jest po prostu Nectar. Pięć lat temu budowę nowego miasta rozpoczęto od starannie kontrolowanej eksplozji plazmowej, która utworzyła prawie sferyczną komorę o średnicy 900 metrów, sto metrów pod powierzchnią Luny. Od tamtej pory, przy pomocy dronów, [kontraktowych]{pl/ep-sluzba} [synthmorfów]{pl/ep-syntmorf} i zaawansowanej [nanotechnologii](#) budowlanej, wyłożono ściany barierą ciśnieniową, a boki i dno komory przekształcono w tarasowe poziomy zabudowane budynkami. Dodatkowo wykuto krótkie tunele prowadzące do magazynów, fabryk i innych obiektów niepotrzebujących łatwego dostępu publicznego. Budowę Nowego Miasta zakończono 11 miesięcy temu, a w ciągu ostatnich 7 miesięcy niemal jedna trzecia mieszkańców Starego Miasta przeniosła się do nowego, obecnie znanego po prostu jako Nectar.
 
 Nowe Nectar, zaprojektowane, by konkurować z przepychem i pięknem [Erato]{pl/ep-habitat-erato}, oferuje ogromne otwarte przestrzenie. W wielu aspektach jego powstanie jest przejawem rywalizacji między odłamami [lunarnymi]{pl/ep-sojusz-wokolziemski} a [konsorcyjnymi]{pl/ep-konsorcjum-planetarne} odłamami, a także elementem szerszej konkurencji kulturowej i międzyosiedlowej. Tak jak Erato, Nowe Nectar jest miastem-ogrodem – centralny park i rozległe tereny zielone zamieszkane przez ptaki, wiewiórki, gekony i inne sympatyczne zwierzęta. Klimat i wystrój środowiska stylizowane są na Hawaje, a Nectar jest już znane z licznych stad papug nocujących wśród palm.

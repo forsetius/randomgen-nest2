@@ -1,6 +1,6 @@
 ---
-template: page-default
-title: Atlas świata 
+template: page/default-sf
+title: Atlas świata
 excerpt: Przewodnik po miejscach zasiedlonych przez transludzkość - w Układzie Słonecznym i poza nim
 headerImage: mid-ep-atlas-head.jpg
 category: eclipse-phase
@@ -16,6 +16,7 @@ slots:
       sources:
         - category: ep-atlas
 ---
+
 Transludzkie [habitaty]{pl/ep-habitat} istnieją nawet wokół [Słońca]{pl/ep-atlas-slonce} i na spalonych nim [Wulkanoidach]{pl/ep-atlas-wulkanoidy}. Z drugiej strony, pojedyncze bazy dryfują daleko w Obłoku Oorta. Z trzeciej strony, na niektórych z wielu odkrytych lokacji pozasłonecznych, które dostępne są przez Wrota Pandoriańskie.
 
 [Merkury]{pl/ep-atlas-merkury}, [Wenus]{pl/ep-atlas-wenus}, okolice [Ziemi]{pl/ep-atlas-ziemia-orbita} (wraz z Księżycem, zwanym powszechnie [Luną]{pl/ep-atlas-luna} bo zamieszkałych w Układzie Słonecznym księżyców jest dostatek) oraz [Mars]{pl/ep-atlas-mars} to domena społeczeństw wyrosłych na ideach kapitalistycznych. W szczególności Mars jest siedzibą [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne}, które zrzesza [hiperkorporacje]{pl/ep-hiperkorporacja} i ma mocno post-cyberpunkowy charakter. Wenusjańska [Konstelacja Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej} to z kolei przykład "kapitalizmu z ludzką twarzą", można powiedzieć: daleki, duchowy potomek Unii Europejskiej. [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}, skupiający habitaty z orbity Ziemi oraz Luny próbuje zachować _status quo ante_ i zachować styl życia sprzed Upadku, ale coraz bardziej zostaje w tyle za pozostałymi dwoma ustrojami [Wewnętrznego Układu Słonecznego]{pl/ep-wewnetrze}.

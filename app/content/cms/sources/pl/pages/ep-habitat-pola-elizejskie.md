@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Pola Elizejskie
 excerpt: Habitat ExoTechu w L5 Marsa, znany z badań nad AI i przyspieszonymi symulacjami.
 category: ep-atlas-wewnetrzne-asteroidy
@@ -14,8 +14,9 @@ slots:
         - **Przynależność**: [Izolacjoniści]{pl/ep-izolacjonisci}
         - **Główne języki**: angielski, japoński
 lead: |
-  **Pola Elizejskie** to wyjątkowa kolonia [izolacjonistów]{pl/ep-izolacjonisci} – jedna z najbliżej położonych [Ziemi]{pl/ep-atlas-ziemia}, a zarazem niezwykła przez to, że jej mieszkańcy przybyli tu w poszukiwaniu tego, czego transhumanizm starał się uniknąć: śmierci. 
+  **Pola Elizejskie** to wyjątkowa kolonia [izolacjonistów]{pl/ep-izolacjonisci} – jedna z najbliżej położonych [Ziemi]{pl/ep-atlas-ziemia}, a zarazem niezwykła przez to, że jej mieszkańcy przybyli tu w poszukiwaniu tego, czego transhumanizm starał się uniknąć: śmierci.
 ---
+
 Habitat został założony niedługo po [Upadku]{pl/ep-upadek} przez magnata hiperkorporacyjnego **Masamune Nami**, który ogłosił, że ma dość życia i że żadna istota nie powinna przeżyć własnego świata ojczystego. Wydając znaczną część swojego majątku na budowę stacji w punkcie L3 układu Ziemia–Słońce (po przeciwnej stronie Słońca niż Ziemia), zaprosił wszystkich, którzy pragnęli prowadzić naturalne, ludzkie życie zakończone spokojną – lub wspomaganą – śmiercią.
 
 Choć przez wielu transhumanistów habitat ten jest potępiany jako akt tchórzostwa i całkowicie błędna odpowiedź na Upadek, Pola Elizejskie przyciągnęły tysiące [biokonserwatystów]{pl/ep-biokonserwatysci} i innych, którzy nie chcieli już dłużej żyć jako transludzie. Każdy jest tu mile widziany, ale stacja nie posiada możliwości egokastu ani zmiany [morfa]{pl/ep-morf}, więc dotarcie wymaga fizycznej podróży. Obowiązują tylko trzy zasady: zakaz używania [syntmorficznych]{pl/ep-syntmorf} ciał, brak kontaktu ze światem zewnętrznym i brak możliwości opuszczenia habitatu.

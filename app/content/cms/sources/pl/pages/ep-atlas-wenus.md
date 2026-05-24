@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Wenus
 excerpt: Planeta podniebnych miast-aerostatów i piekła na powierzchni
 headerImage: mid-aerostat-head.jpg
@@ -22,11 +22,11 @@ slots:
           - 0,892g (50km nad powierzchnią)
         - **Temperatura**: 737K (464°C)
          ## Mapa Wenus
-        <a href="https://i.imgur.com/iNqp25z.jpg">![Mapa Wenus](https://i.imgur.com/iNqp25z.jpg)</a>
+        <a href="https://i.imgur.com/iNqp25z.jpeg">![Mapa Wenus](https://i.imgur.com/iNqp25z.jpeg)</a>
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
-      sources: 
+      sources:
         - category: ep-atlas-wenus
           subcategory: more
 
@@ -38,7 +38,7 @@ slots:
       title: Aerostaty
       content: |
         Najbardziej niezwykłe habitaty Układu Słonecznego i ikoniczny widok na wenusjańskim niebie
-    
+
     - type: pageGallery
       sources:
         - category: ep-atlas-wenus
@@ -46,10 +46,11 @@ slots:
       title: Stacje orbitalne
       content: |
         Orbita Wenus to miejsce spotkania pomiędzy Konstelacją Gwiazdy Zarannej a Konsorcjum Planetarnym. Obecnie wokół Wenus mieszka 350 000 przedstawicieli transludzkości. Większość stacji orbitalnych należy do Konstelacji Gwiazdy Zarannej, jednak nieco ponad 100 000 mieszkańców wenusjańskiej orbity wciąż posiada obywatelstwo Konsorcjum Planetarnego.
-      
+
 lead: |
   Wenus to jednocześnie najbardziej obca i najbardziej podobna do [Ziemi]{pl/ep-atlas-ziemia} planeta [wewnętrznego systemu]{pl/ep-wewnetrze}. Jej grawitacja stanowi 90% ziemskiej – bliższa ziemskiej niż jakikolwiek inny zamieszkany świat. Na wysokości 52–58 kilometrów ciśnienie atmosferyczne i temperatura są również bardzo zbliżone do ziemskich, co czyni ten rejon Wenus znacznie bardziej przyjaznym niż jakiekolwiek miejsce na [Marsie]{pl/ep-atlas-mars} przed rozpoczęciem obecnego procesu terraformacji.
 ---
+
 Dziś ponad 5 milionów mieszkańców żyje w 20 miastach unoszących się w atmosferze Wenus. Te miasta, znane jako [aerostaty]{pl/ep-aerostaty-wenus}, to duże i wygodne osiedla, utrzymywane w powietrzu przez powietrze wewnątrz ich struktur. Choć otaczająca je atmosfera z dwutlenku węgla jest niezdatna do oddychania, mieszkańcy aerostatów muszą jedynie założyć maskę tlenową lub wstrzymać oddech, by wyjść na zewnętrzny balkon i poczuć ciepłe wenusjańskie powietrze na twarzy.
 
 Wenus obraca się wyjątkowo wolno – jej doba trwa 243 dni ziemskie, czyli nieco dłużej niż wenusjański rok. Jednak wiatry w górnych warstwach atmosfery okrążają planetę w cztery dni, i przez większość czasu aerostaty dryfują wraz z nimi. Zdatna do życia górna atmosfera Wenus stanowi uderzający kontrast wobec jej powierzchni, która jest najbardziej nieprzyjaznym miejscem w całym wewnętrznym systemie – nawet nasłoneczniona powierzchnia Merkurego jest znacznie bardziej przyjazna. Temperatury na powierzchni Wenus są porównywalne z dzienną temperaturą na Merkurym, ale ciśnienie panujące tam dorównuje temu z dna najgłębszych oceanów Ziemi.
@@ -60,7 +61,8 @@ W ciągu zaledwie roku Wenus stała się najszybciej rozwijającą się gospodar
 
 Choć atmosfera ta pozostanie w większości złożona z dwutlenku węgla i trująca dla nieprzystosowanych biomorfów, przy odpowiednich augmentacjach [biomorfy]{pl/ep-biomorf} będą mogły oddychać nią równie łatwo jak powietrzem Ziemi.
 
-# Kwestia grawitacji
+## Kwestia grawitacji
+
 Bezpośrednio po [Upadku]{pl/ep-upadek}, plany terraformowania Wenus cieszyły się ogromną popularnością — w dużej mierze dlatego, że Wenus jest tak podobna do Ziemi. To jedyna inna skalista planeta lub księżyc w Układzie Słonecznym, którego grawitacja jest chociaż zbliżona do ziemskiej. Jednak w ciągu kilku lat entuzjazm wobec życia na Wenus zaczął słabnąć, ponieważ zdecydowana większość ocalałych przedstawicieli transludzkości zaadaptowała się do życia na światach o znacznie niższej grawitacji.
 
 Każdy, kto przylatuje na Wenus statkiem kosmicznym, musi przejść trudny okres adaptacji. Choć wszystkie współczesne [morfy]{pl/ep-morf} są projektowane tak, aby szybko dostosowywać się do wyższej lub niższej grawitacji, to nieświadome przyzwyczajenia związane z życiem w świecie, gdzie chodzenie odbywa się nieco inaczej, a przedmioty spadają znacznie szybciej niż dotąd, mogą sprawiać poważne problemy.

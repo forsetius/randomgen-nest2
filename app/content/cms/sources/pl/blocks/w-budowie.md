@@ -1,8 +1,9 @@
 ---
 id: w-budowie
 type: static
-template: partial-alert-warning
+template: block/alert-warning
 ---
+
 ## Strona w budowie
 
 Serwis jest jeszcze w fazie beta. To znaczy: działa, ale opublikowane w nim treści będą się jeszcze trochę zmieniały - będę wygładzał teksty, dodawał obrazki itp.

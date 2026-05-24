@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Pod
 subtitle: Pod
 headerImage: mid-pod-head.jpg
@@ -13,4 +13,5 @@ slots:
       sources:
         - category: ep-pod
 ---
+
 **Pod** to rodzaj zaawansowanego biorobota, nie dorównującego jednak złożonością i spójnością [bio-]{pl/ep-biomorf} czy [syntmorfom]{pl/ep-syntmorf}.

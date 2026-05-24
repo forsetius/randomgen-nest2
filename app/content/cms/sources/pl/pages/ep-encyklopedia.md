@@ -1,6 +1,6 @@
 ---
-template: page-default
-title: Encyklopedia 
+template: page/noaside-sf
+title: Encyklopedia
 headerImage: mid-ency-head.jpg
 excerpt: Wikipedyczny opis świata Eclipse Phase
 category: eclipse-phase

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Psychochirurgia
 headerImage: mid-ep-psychosurgery-head.jpg
 excerpt: Sztuka edycji umysłu — od terapii po tortury.
@@ -17,6 +17,7 @@ slots:
 lead: |
   W epoce Eclipse Phase łatwo myśleć o [umyśle]{pl/ep-ego} jak o oprogramowaniu — czymś, co można odczytać wstecznie, przepisać, zaktualizować i załatać. W dużej mierze jest to prawda. Wspomagana nanotechnologią, genetyką i kognitywistyką neuronauka zburzyła liczne bariery w zrozumieniu struktury i funkcji umysłu, a nawet poczyniła duże postępy w odkrywaniu prawdziwej natury świadomości. Modyfikacje genetyczne, neuro-mody i implanty neuronalne oferują szeroką gamę opcji pozwalających zwiększyć możliwości mózgu. Umysł transludzki stał się placem zabaw — i polem bitwy.
 ---
+
 Nanowirusy uwolnione podczas [Upadku]{pl/ep-upadek} zainfekowały miliony, trwale przekształcając ich mózgi; ich ogniska wybuchają sporadycznie nawet dekadę później. Po [Splocie]{pl/ep-splot} krążą wirusy kognitywne, infekujące [infomorfy]{pl/ep-infomorf} i [AI]{pl/ep-sztuczna-inteligencja}, przeprogramowujące stany mentalne. „Zaraźliwa idea” stała się określeniem dosłownym.
 
 Prawda jest jednak taka, że edycja umysłu nie jest procesem łatwym, bezpiecznym ani wolnym od błędów — jest trudna, ryzykowna i często wadliwa. Mimo że neuronauka znajduje się o lata świetlne dalej niż sto lat temu, wiele aspektów mózgu i funkcji neurologicznych wciąż wymyka się nawet najjaśniejszym umysłom i najpotężniejszym AI. Technologie takie jak mapowanie nanoneuronalne, uploadowanie, cyfrowa emulacja umysłu czy sztuczna inteligencja wciąż są względnie młode — liczą zaledwie kilka dekad. Choć transludzkość nauczyła się, jak je stosować, nie zawsze rozumie, dlaczego działają.
@@ -26,6 +27,7 @@ Każdy specjalista od neurotechnologii przyzna, że grzebanie w błotnistych gł
 W praktyce oznacza to, że choć ogólną architekturę i topografię sieci neuronowej można przeskanować i zrekonstruować, diabeł tkwi w szczegółach. Techniki modyfikacji, naprawy lub ulepszania jednego umysłu nie gwarantują powodzenia w przypadku drugiego. Na przykład sposób, w jaki mózg przechowuje wiedzę, umiejętności i wspomnienia, tworzy dziwne łańcuchy powiązań, w których jedna pamięć jest sprzężona z innymi — a próby zmiany jednej mogą wpłynąć niekorzystnie na pozostałe. Ostatecznie, umysły to zjawiska śliskie i wymykające się uchwyceniu, a próby ich kształtowania rzadko przebiegają zgodnie z planem.
 
 ## Proces psychochirurgii
+
 Psychochirurgia to proces selektywnej, chirurgicznej modyfikacji umysłu transludzkiego. Jest to dziedzina odrębna od genetycznej modyfikacji neuronowej (czyli zmiany kodu genetycznego), implantacji neuralware (dodawania cybernetycznych lub biotechnologicznych wszczepów do mózgu lub układu nerwowego) czy [hakowania mózgu]{pl/ep-atak-bazyliszkowy} (ataków programowych na mózgi komputerowe, wszczepy i infomorfy), choć czasem się z nimi łączy.
 
 Psychochirurgia prawie zawsze przeprowadzana jest na cyfrowym stanie umysłu, czy to w czasie rzeczywistym jako emulacja, kopia zapasowa, czy [fork]{pl/ep-fork}. W większości przypadków stan umysłu kopiowany jest przy użyciu tej samej technologii i procedury, co upload lub forking, a następnie uruchamiany w przestrzeni symulacyjnej. Zgoda pacjenta nie jest wymagana — w takich przypadkach jego uprawnienia są ograniczane. Dostępnych jest wiele środowisk do psychochirurgii w [simulspace]{pl/ep-vr}, z których każde zaprojektowane zostało pod kątem konkretnego celu zabiegu i zawiera bogaty zestaw opcji terapeutycznych.

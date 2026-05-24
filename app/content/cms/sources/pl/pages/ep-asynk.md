@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Asynk
 subtitle: Async
 headerImage: mid-ep-asynk-head.jpg
@@ -8,7 +8,8 @@ category: ep-titans
 lead: |
   **Asynkowie** to transludzie zainfekowani jednym z wariantów [egzowirusa]{pl/ep-egzowirus}, znanym jako **szczep Wattsa-MacLeoda**. W przeciwieństwie do większości ofiar tego patogenu, którzy kończą jako przekształcone istoty zwane [egzoidami]{pl/ep-egzoid}, asynkowie zdołali przetrwać infekcję, zachowując tożsamość, samokontrolę i — przynajmniej częściową — niezależność. Choć uznaje się ich za „stabilnych nosicieli”, nie są wolni od zmian. Szczep Wattsa-MacLeoda trwale modyfikuje strukturę ich [ego]{pl/ep-ego}, skutkując powstaniem [zdolności psionicznych]{pl/ep-psi} — form aktywności umysłowej wykraczających poza znane ramy biologii i technologii.
 ---
-Zdolności asynków są zróżnicowane i mogą obejmować m.in. telepatię, wykrywanie obecności świadomości, zakłócanie zmysłów, kontrolę emocji, a nawet zakrzywianie postrzegania czasu lub rzeczywistości. Ich źródłem nie są jednak nanotechnologiczne wszczepy ani interfejsy systemowe — wynikają one bezpośrednio z mutacji neurologicznych spowodowanych infekcją. 
+
+Zdolności asynków są zróżnicowane i mogą obejmować m.in. telepatię, wykrywanie obecności świadomości, zakłócanie zmysłów, kontrolę emocji, a nawet zakrzywianie postrzegania czasu lub rzeczywistości. Ich źródłem nie są jednak nanotechnologiczne wszczepy ani interfejsy systemowe — wynikają one bezpośrednio z mutacji neurologicznych spowodowanych infekcją.
 
 Pomimo ich niezwykłych zdolności, asynkowie nie są znani opinii publicznej. Ich istnienie jest skrzętnie ukrywane przez organizacje takie jak [Zapora]{pl/ep-zapora}, a także przez [hiperkorporacje]{pl/ep-hiperkorporacja} i władze habitatów. W większości społeczeństw wiedza o psi zdolnościach to mit, teoria spiskowa lub temat tabu. Ujawnienie się jako asynk wiąże się z ogromnym ryzykiem: przymusowym uwięzieniem, badaniami laboratoryjnymi, „zniknięciem” lub ostracyzmem. W wielu przypadkach asynkowie sami nie rozumieją, czym są ich zdolności, i ukrywają je nawet przed najbliższymi. Nawet w bardziej otwartych społecznościach anarchistycznych wiedza o asynkach pozostaje szczątkowa, a relacje na ich temat traktuje się z ostrożnością lub sceptycyzmem.
 

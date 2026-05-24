@@ -1,10 +1,10 @@
 ---
-template: page-default
+template: page/default-sf
 title: Życie sługi kontraktowego
-excerpt: "Codzienność sług kontraktowych: od nudnych prac w VR po wyzysk i niewolę."
+excerpt: 'Codzienność sług kontraktowych: od nudnych prac w VR po wyzysk i niewolę.'
 category: ep-sluzba
 lead: |
-  Choć przeciwnicy systemu kontraktów służebnych często przedstawiają tę formę pracy jako pasmo nieludzkich warunków i bezlitosnego wyzysku, takie sytuacje są raczej wyjątkiem niż normą. Większość sług kontraktowych pracuje na rzecz sponsorów [korporacyjnych]{pl/ep-hiperkorporacja}, którzy oczekują od nich wydajności i niezawodności. Najlepsze rezultaty osiąga się wtedy, gdy warunki pracy są co najwyżej nużące, a słudzy mają możliwość wykazania się, by szybciej zakończyć kontrakt. 
+  Choć przeciwnicy systemu kontraktów służebnych często przedstawiają tę formę pracy jako pasmo nieludzkich warunków i bezlitosnego wyzysku, takie sytuacje są raczej wyjątkiem niż normą. Większość sług kontraktowych pracuje na rzecz sponsorów [korporacyjnych]{pl/ep-hiperkorporacja}, którzy oczekują od nich wydajności i niezawodności. Najlepsze rezultaty osiąga się wtedy, gdy warunki pracy są co najwyżej nużące, a słudzy mają możliwość wykazania się, by szybciej zakończyć kontrakt.
 ---
 
 Ponieważ większość służby odbywa się w środowiskach symulacyjnych, zwanych potocznie „fabrykami snów”, nie występuje tu fizyczne cierpienie czy deprywacja. Najgorsze, z czym zwykle trzeba się mierzyć, to długie godziny bez przerw oraz brak dostępu do rozrywki i informacji z zewnątrz.

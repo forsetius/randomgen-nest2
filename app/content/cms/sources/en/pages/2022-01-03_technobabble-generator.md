@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Technobabble generator
 headerImage: startrek-engineers-head.png
 langs:
@@ -14,13 +14,13 @@ tags:
   - generator
   - startrek
   - sf
-  
+
 blocks:
   technobabbleGenerator:
     type: apiCall
-    template: form-technobabble
+    template: block/form-technobabble
     url: /api/1.0/startrek/technobabble?lang=en
-    
+
 slots:
   aside:
     - type: static
@@ -32,6 +32,7 @@ slots:
 
         Only when integrating this generator into some application or tool of yours do I ask for attribution and reporting it to me (in order to stroke my ego and boost my motivation for further work)
 ---
+
 And here comes the **Technobabble Generator**. It creates a random, 5-word phrase that means nothing, but sounds very clever and technical. For example:
 
 > ...reset the tetryon phase secondary coupler
@@ -55,10 +56,12 @@ GET https://forseti.pl/api/1.0/startrek/technobabble
 ```
 
 Optionally, you can add two parameters to the query string:
+
 - `lang` - language, allowed values: 'en' or 'pl'. Default: 'pl'
 - `repeat` - how many phrases to randomly select. Allowed values: 1 to 20, default: 1
 
 The response is plain text. If `repeat` > 1, then phrases are separated by a new line.
 
 ## Technicalities
+
 I implemented this generator as a module of an application in Node.js+TypeScript, based on NestJS. Supports languages: Polish and English, with the possibility of adding more. Individual words (or in Polish - sets of grammatical forms of a given word) are read from JSON files. If anyone would like to help me implement a new language or add some fancy vocabulary, please [contact me]{en/contact}.

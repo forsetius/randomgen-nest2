@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Omnicor
 subtitle: Omnicor
 excerpt: Nanofabrykacja, Chemikalia, Energia, Antymateria
@@ -19,6 +19,7 @@ slots:
         - MonoLit3 ([Merkury]{pl/ep-atlas-merkury}), 
         - [Feynman]{pl/ep-habitat-feynman} ([Luna]{pl/ep-atlas-luna})
 ---
+
 **Omnicor** specjalizuje się w projektowaniu [nanotechnologii](https://pl.wikipedia.org/wiki/Nanotechnologia) i procesie [nanofabrykacji](#), rafinacji chemicznej, paliwach alternatywnych i badaniach nad [antymaterią](https://pl.wikipedia.org/wiki/Antymateria).
 
 Mimo tego, że w czasie [Upadku]{pl/ep-upadek} transludzkość walczyła o przetrwanie, równolegle na polu korporacyjnym trwały zażarte walki o schedę po **Monolith Industries** - gigantycznej megakorporacji zajmującej się m.in. nanotechnologią, przetwórstwem chemicznym i energetyką, która nie była w stanie sprostać dramatycznym wyzwaniom czasu apokalipsy i została od środka rozerwana przez usamodzielniające się elementy jej wewnętrznej struktury. Omnicor był jednym z potomnych [hiperkorpów]{pl/ep-hiperkorporacja}, któremu udało mu się zabezpieczyć kluczowe zasoby badawcze, zaskarbiając sobie jednak trwałą nienawiść [Starware]{pl/ep-starware} - kolejnego spadkobiercy Monolitha, który również chciał położyć łapę na tych zasobach. Obecnie relacje tych dwu hiperkorpów można określić jako korporacyjną wojnę.

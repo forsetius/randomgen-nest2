@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Diaspora
 headerImage: mid-diaspora-head.jpg
 thumbnailImage: mid-diaspora-card.jpg
@@ -9,6 +9,7 @@ excerpt: Zagłada cywilizacji na Ziemi spowodowała rozproszenie transludzi na c
 lead: |
   Po [Upadku]{pl/ep-upadek}, transludzie rozpierzchli się po całym Układzie Słonecznym. Znane ze Starego Globu państwa upadły, kiedy rządy pokazały, że nie są w stanie zapobiec katastrofie. Podobnie upadły stare ponadpaństwowe korporacje i organizacje.
 ---
+
 Przetrwały [hiperkorporacje]{pl/ep-hiperkorporacja}. To byty znacznie mniejsze, ale zwinniejsze i bardziej agresywne od ponadnarodowych molochów korporacyjnych znanych z [Ziemi]{pl/ep-atlas-ziemia}. Na Ziemi były tłamszone przez kolosy, uciekły zatem w Kosmos, gdzie mogły swobodnie rozwinąć skrzydła. Z jednej strony okopana politycznie i biznesowo konkurencja pozostała na Ziemi, z drugiej - tam też pozostali narodowi regulatorzy wymuszający stosowanie się do praw człowieka, pracownika itp.
 
 To hiperkorporacje dysponujące infrastrukturą w przestrzeni kosmicznej, (przede wszystkim w [Wewnętrzu]{pl/ep-wewnetrze}) w największym stopniu wspomogła wysiłek ewakuacji i szybkiej rozbudowy [habitatów]{pl/ep-habitat}, które mogłyby pomieścić setki milionów istnień transludzkich. Część z tych istnień istniała tylko wirtualnie – jako uruchomione w wirtualu [infomorfy]{pl/ep-infomorf} albo wręcz jako pasywne kopie zapasowe poległych na Ziemi.

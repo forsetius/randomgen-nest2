@@ -1,8 +1,8 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ekonomia
 headerImage: mid-ep-gospodarka-head.jpg
-excerpt: "Trzy modele gospodarki w erze nanotechnologii: stara, przejściowa i nowa"
+excerpt: 'Trzy modele gospodarki w erze nanotechnologii: stara, przejściowa i nowa'
 category: ep-encyklopedia
 subcategoryName: Ekonomia
 

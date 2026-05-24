@@ -1,4 +1,4 @@
-template: menu-topbar
+template: menu/topbar
 menu:
   - title: Blog
     url: '@{pl/blog}'
@@ -21,12 +21,12 @@ menu:
       - title: Technobełkot
         items:
           - title: RandomGen
-            url: '@{pl/technobelkot}'
+            url: '@{pl/2022-01-03_generator-technobelkotu}'
             text: Różnorodne generatory treści, głównie do RPG
 
-  - title: RPG
+  - title: Eclipse Phase
     columns:
-      - title: Eclipse Phase
+      - title: Intro
         items:
           - title: O grze Eclipse Phase
             url: '@{pl/eclipse-phase}'
@@ -36,13 +36,66 @@ menu:
             url: '@{pl/ep-intro}'
             text: 'Historia przyszłości: rozwój w kierunku transludzkości, wojna z AI i Upadek oraz rozproszenie po Układzie Słonecznym i poza nim'
 
-          - title: Encyklopedia settingu
-            url: '@{pl/ep-encyklopedia}'
-            text: 'Realia Eclipse Phase: neopaństwa, hiperkorporacje, przestępczość, technologia i cała reszta'
-
-          - title: Atlas
-            url: '@{pl/ep-atlas}'
-            text: Habitaty i inne lokacje na ciałach Układu Słonecznego i poza nim
+      - title: Encyklopedia
+        url: '@{pl/ep-encyklopedia}'
+        colspan: 2
+        repeatTitle: false
+        items:
+          - title: Ego
+            url: '@{pl/ep-ego}'
+          - title: Habitaty
+            url: '@{pl/ep-habitat}'
+          - title: Hiperkorporacje
+            url: '@{pl/ep-hiperkorporacja}'
+          - title: Konspiracje
+            url: '@{pl/ep-konspiracje}'
+          - title: Morfy
+            url: '@{pl/ep-morf}'
+          - title: Przestępczość
+            url: '@{pl/ep-przestepczosc}'
+          - title: Realia świata
+            url: '@{pl/ep-realia}'
+          - title: Stronnictwa
+            url: '@{pl/ep-stronnictwa}'
+          - title: Technologia
+            url: '@{pl/ep-technologia}'
+          - title: TITAN-i
+            url: '@{pl/ep-titans}'
+          - title: Ustroje
+            url: '@{pl/ep-ustroje}'
+      - title: Atlas
+        url: '@{pl/ep-atlas}'
+        colspan: 2
+        repeatTitle: false
+        items:
+          - title: Słońce
+            url: '@{pl/ep-atlas-slonce}'
+          - title: Merkury
+            url: '@{pl/ep-atlas-merkury}'
+          - title: Wenus
+            url: '@{pl/ep-atlas-wenus}'
+          - title: Ziemia
+            url: '@{pl/ep-atlas-ziemia}'
+          - title: Luna
+            url: '@{pl/ep-atlas-luna}'
+          - title: Mars
+            url: '@{pl/ep-atlas-mars}'
+          - title: Wewnętrzne asteroidy
+            url: '@{pl/ep-atlas-wewnetrzne-asteroidy}'
+          - title: Pas asteroid
+            url: '@{pl/ep-atlas-merkury}'
+          - title: Jowisz
+            url: '@{pl/ep-atlas-wenus}'
+          - title: Saturn
+            url: '@{pl/ep-atlas-ziemia}'
+          - title: Uran
+            url: '@{pl/ep-atlas-luna}'
+          - title: Neptun
+            url: '@{pl/ep-atlas-mars}'
+          - title: Dalekie obiekty
+            url: '@{pl/ep-atlas-mars}'
+          - title: Egzoplanety
+            url: '@{pl/ep-atlas-mars}'
 
 #      - title: Przygody
 #        url: "@{pl/rpg-scenariusze}"

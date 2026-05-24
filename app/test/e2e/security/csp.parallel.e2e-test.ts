@@ -25,18 +25,18 @@ describe('Content Security Policy (e2e)', () => {
       expectedLocation: '/pages/en/index.html',
     },
     {
-      name: 'GET /search',
-      send: () => client.get('/search').query({ term: 'E2E PL Poz C' }),
+      name: 'GET /pages/search',
+      send: () => client.get('/pages/search').query({ term: 'E2E PL Poz C' }),
       expectedStatus: 200,
     },
     {
-      name: 'GET /tag/:tag',
-      send: () => client.get('/tag/testTagA').query({ lang: 'pl' }),
+      name: 'GET /pages/tag/:tag',
+      send: () => client.get('/pages/tag/testTagA').query({ lang: 'pl' }),
       expectedStatus: 200,
     },
     {
-      name: 'GET /tag',
-      send: () => client.get('/tag').query({ lang: 'pl' }),
+      name: 'GET /pages/tag',
+      send: () => client.get('/pages/tag').query({ lang: 'pl' }),
       expectedStatus: 200,
     },
     {
@@ -72,9 +72,9 @@ describe('Content Security Policy (e2e)', () => {
       expectedStatus: 200,
     },
     {
-      name: 'GET /technobabble (shadowed route)',
+      name: 'GET /technobabble',
       send: () => client.get('/technobabble').query({ lang: 'pl' }),
-      expectedStatus: 400,
+      expectedStatus: 200,
     },
     {
       name: 'GET /api/1.0/startrek/technobabble',

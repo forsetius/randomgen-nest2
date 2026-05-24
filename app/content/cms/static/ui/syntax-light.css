@@ -1,0 +1,15 @@
+.glitnir-code-block {
+  --glitnir-code-background: #f7fbff;
+  --glitnir-code-border: #cfe0f2;
+  --glitnir-code-foreground: #172033;
+  --glitnir-code-muted: #65758b;
+  --glitnir-code-keyword: #315fa8;
+  --glitnir-code-string: #9a5d00;
+  --glitnir-code-number: #0b72b9;
+  --glitnir-code-title: #006b70;
+  --glitnir-code-attribute: #135f9b;
+  --glitnir-code-built-in: #9f274a;
+  --glitnir-code-symbol: #6b4bb3;
+  --glitnir-code-deletion: #b91c1c;
+  --glitnir-code-addition: #157f4f;
+}

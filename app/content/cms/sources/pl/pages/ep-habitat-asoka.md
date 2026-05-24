@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Aśoka
 subtitle: Ashoka
 headerImage: mid-ep-ashoka-head.jpg
@@ -14,10 +14,11 @@ slots:
         - **Położenie**: [Chryse Planitia](https://planetarynames.wr.usgs.gov/Feature/1203) ([Mars]{pl/ep-atlas-mars})
         - **Typ**: Krater pod kopułą
         - **Przynależność**: [Liga Tharsis]{pl/ep-liga-tharsis}
-        - **Główne języki**: angielski, arabski, japoński, koreański i mandaryński 
+        - **Główne języki**: angielski, arabski, japoński, koreański i mandaryński
 lead: |
   Aśoka to miasto wbudowane w grunt, sięgające dziesiątki metrów pod wieczną zmarzlinę chaotycznej równiny, na której się znajduje – aż do warstwy litej skały. Miasto odgrywa istotną rolę mimo stosunkowo niewielkich rozmiarów. Stanowi centrum działalności [Ruchu Fremenów]{pl/ep-fremeni}, ekskluzywne miejsce wypoczynku dla zamożnych oraz ważny ośrodek operacyjny **Organizacji Terraformacyjnej Tytana** (TTO). Aśoka łączy funkcje miejskie i pustynne – to przestrzeń na styku oazy, miasta i infrastruktury.
 ---
+
 Zamiast rozciągać się pod kopułą jak inne metropolie, Aśoka została zbudowana w cylindrycznym zagłębieniu o głębokości 60 metrów i szerokości jednego kilometra, przykrytym przezroczystą kopułą w kształcie soczewki. Budynki naziemne – w tym bloki mieszkalne i hotele – znajdują się na krawędzi zagłębienia, z wejściami prowadzącymi do wnętrza przez jego ściany u podstawy. Wewnątrz miasta znajdują się m.in. bazar, park i świątynia hinduistyczna.
 
 W pobliżu położony jest Historyczny Park Vikingów, obejmujący miejsca lądowania sond kosmicznych [Viking 1](https://pl.wikipedia.org/wiki/Viking_1) oraz łazika [Sojourner](https://pl.wikipedia.org/wiki/Sojourner). Oba pojazdy zostały przekształcone w interaktywne eksponaty z zastosowaniem AI. Pomysł ten – choć krytykowany przez niektóre środowiska – cieszy się dużym zainteresowaniem wśród turystów.

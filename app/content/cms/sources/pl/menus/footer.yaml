@@ -1,4 +1,4 @@
-template: menu-footer
+template: menu/footer
 menu:
   - title: Kontakt
     items:

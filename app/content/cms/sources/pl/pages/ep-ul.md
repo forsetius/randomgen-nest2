@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ul
 headerImage: mid-beehive-head.jpg
 excerpt: Asteroidy wydrążone w sieć tuneli i komór
@@ -8,6 +8,7 @@ lead: |
 category: ep-habitat
 subcategory: kosmiczne
 ---
+
 **Ule** to asteroidy wydrążone w sieć tuneli i komór. Najczęściej powstają przez przekształcenie asteroid, które wcześniej poddano eksploatacji górniczej – głównie w poszukiwaniu metali lub krzemianów. Są to habitaty mikrograwitacyjne i bez pomocy rozszerzonej rzeczywistości mogą być bardzo trudne do nawigowania.
 
 Większość uli znajduje się w Pasie Głównym lub w grupach trojańskich. Choć zwykle są niewielkie, niektóre z nich mieszczą populacje sięgające milionów mieszkańców, rozlokowanych w ogromnych mikrograwitacyjnych miastach jaskiniowych.

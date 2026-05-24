@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Karawaniarze
 subtitle: Scum
 excerpt: Włóczędzy podróżujący we flotyllach połatanych barek i statków kosmicznych
@@ -16,6 +16,7 @@ slots:
         ## Główne habitaty
         - brak
 ---
+
 **Karawaniarze** to społeczności nomadów kosmicznych, żyjące na dryfujących flotyllach przerobionych statków, autonomicznych [habitatów]{pl/ep-habitat} i wraków technicznych cudów przeszłości. Ich karawany krążą po Układzie Słonecznym — od Pasa Głównego po obrzeża Transneptunowe — handlując, tworząc, imprezując i przekraczając granice norm, które reszta transludzkości uznaje za świętość.
 
 Pochodzą ze wszelkich możliwych środowisk. Są wśród nich wyrzutki, anarchiści, kryminaliści, włóczędzy, artyści, ekscentrycy... Jako kultura wybierają jednak eksperymentowanie i postawę "wszystko jest dozwolone". Wielu to zagorzali fani ekstremalnych modyfikacji transludzkich - długoletni Karawaniarze są czasem ledwo rozpoznawalni jako będący kiedyś ludźmi.

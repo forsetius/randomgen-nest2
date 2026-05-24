@@ -1,11 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Akolici Mroku
 excerpt: Sekta czcząca kosmiczny intelekt złożony z ciemnej materii i ciemnej energii
 #category: ep-religie
 tags:
   - niekanoniczne
 ---
+
 Sekta **Akolitów Mroku** oddaje cześć kosmicznej istocie zwanej po prostu Mrokiem. Jej guru, znany jako **Mędrzec Maicho** łącząc filozofię [New Age](http://pl.wikipedia.org/wiki/New_Age) z nowoczesną astrofizyką, doszedł do wniosku, że Wszechświat jaki znamy, możliwy jest tylko przy założeniu istnienia kierującego nim ultrapotężnego intelektu. Nie jest to jednak wszechpotężna istota antropomorficzna - Maicho twierdzi, że jest ona raczej złożona z [ciemnej materii](http://pl.wikipedia.org/wiki/Ciemna_materia) i [ciemnej energii](http://pl.wikipedia.org/wiki/Ciemna_energia) rozproszonej w przestrzeni międzygwiezdnej.
 
 ## Wierzenia

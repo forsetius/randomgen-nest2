@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Noctis-Qianjiao
 headerImage: mid-ep-noctis-qianjiao-head.jpg
 excerpt: Największe miasto Marsa, centrum kulturalne i gospodarcze.
@@ -18,6 +18,7 @@ slots:
 lead: |
   Z populacją wynoszącą 13 milionów mieszkańców, **Noctis–Qianjiao** to główny zespół miejski zachodniego obszaru [Valles Marineris](https://planetarynames.wr.usgs.gov/Feature/1013), znanego jako [Noctis Labirynthus](#). Choć region ten nie jest tak przyjazny jak okolice Eos, w których leży [Valles–Nowy Szanghaj]{pl/ep-habitat-valles-nowy-szanghaj}, Noctis Labyrinthus jest ceniony za swoje malownicze krajobrazy oraz dobrze rozwinięty system rzeczny.
 ---
+
 Metropleks obejmuje dwa główne miasta-kopuły: **Qianjiao**, położone na północnym brzegu Rzeki Noctis, oraz **Noctis City** (zwykle nazywane po prostu „Noctis”) po stronie południowej. Obie kopuły połączone są rozbudowaną siecią mniejszych kopuł i zadaszonych pasaży handlowych (souków), które w miarę ocieplania klimatu i poszerzania rzeki zostały przesunięte odpowiednio na północ i południe.
 
 Noctis–Qianjiao stanowi centrum marsjańskiego przemysłu projektowego i modowego, co w kontekście zasobnej gospodarki Marsa czyni je miastem równie ważnym co znacznie większe Valles–Nowy Szanghaj. Bliskość [Strefy Kwarantanny TITAN-ów]{pl/ep-habitat-tqz} budzi czasem niepokój odwiedzających, jednak jak dotąd nie odnotowano żadnych incydentów, które mogłyby wzbudzać obawy.
@@ -35,9 +36,10 @@ Zespoły miejskie Noctis i Qianjiao łączy sieć trzech głównych mostów prze
 Mosty Noctis–Qianjiao stanowią ważne centra handlowe i społeczne regionu, umożliwiając nie tylko transport między kopułami, ale także wspierając rozwój sektorów mody, technologii i biotechnologii.
 
 ## Noctis City
+
 Noctis City to większa z dwóch kopuł wchodzących w skład aglomeracji Noctis–Qianjiao. Położona na południowo-wschodnim brzegu rzeki Noctis, skupia nieco ponad połowę całkowitej populacji metropolii. Miasto pełni funkcję centrum administracyjnego i infrastrukturalnego regionu, z licznymi dzielnicami pełniącymi wyspecjalizowane funkcje.
 
-- W centrum kopuły znajduje się **Centrum Park**, będący największą przestrzenią zieloną Noctis City i miejscem licznych wydarzeń kulturalnych. 
+- W centrum kopuły znajduje się **Centrum Park**, będący największą przestrzenią zieloną Noctis City i miejscem licznych wydarzeń kulturalnych.
 - Na północy znajduje się **Watertown**, dzielnica finansowa i medialna, w której zlokalizowane są siedziby wielu firm, instytucji medialnych i centrów analitycznych.
 - **Gastown**, usytuowana przy południowym przyczółku mostu Kledingsbrug, to główna strefa rozrywki miasta, znana z szerokiej oferty gastronomicznej, klubów, teatrów immersyjnych i sal koncertowych.
 - Na wschodnich obrzeżach znajduje się obszar infrastrukturalny, obejmujący m.in. tory kolei magnetycznej obsługujące połączenia z innymi częściami regionu Valles Marineris.
@@ -45,6 +47,7 @@ Noctis City to większa z dwóch kopuł wchodzących w skład aglomeracji Noctis
 - Na północnym wschodzie znajduje się dzielnica Tito, skupiająca biura **Terraforming Trust Organization** (TTO). Obecnie część z nich pozostaje niewykorzystana z powodu przesunięcia głównych działań terraformacyjnych na południe i wschód Marsa. W dzielnicy tej znajdują się również biura innych instytucji związanych z [Ligą Tharsis]{pl/ep-liga-tharsis} i administracją [wewnętrznego Układu]{pl/ep-wewnetrze}.
 
 ## Qianjiao
+
 Qianjiao to północna część aglomeracji Noctis–Qianjiao, położona na północnym brzegu rzeki Noctis. Dzielnica znana jest z różnorodnych funkcji, od przemysłu modowego po zaplecze akademickie i inżynieryjne.
 
 Centralnym punktem dzielnicy odzieżowej jest **Dumont Building**, w którym mieści się wiele firm związanych z projektowaniem, produkcją i dystrybucją ubrań. W pobliżu znajduje się Kuypers-Lalley – gęsto zabudowany rejon biur firm projektowych, technologicznych i inżynieryjnych.
@@ -63,6 +66,7 @@ Warto wymienić kilka charakterystycznych punktów tej części aglomeracji:
 Na obrzeżach Qianjiao, przy autostradzie M-4 prowadzącej przez Przesmyk w kierunku Olymposa, mieści się centrum operacyjne TTO (Terraforming Trust Organization).
 
 ## Prawo i porządek
+
 NQPD (Noctis-Qianjiao Police Department) to jedna z najbardziej rozsądnych formacji policyjnych na Marsie — co znaczy tyle, że mogą najpierw sprawdzić, czy faktycznie robisz coś złego, zanim cię skuć, rzucić na ziemię i pobić twojego dziwnie wyglądającego znajomego, który akurat stał obok. W gruncie rzeczy sprowadza się to do ekonomii: brutalność policji występuje w odwrotnej proporcji do liczby biednych, zdesperowanych ludzi, których trzeba „utrzymać w ryzach” — a nasze miasto akurat ma ich mniej.
 
 Standardowe umundurowanie patroli to granatowy i czarny. Jednostki taktyczne noszą ciemnoszare kamuflaże miejskie. Sprzęt taktyczny NQPD dorównuje pod względem zaawansowania temu, czym dysponują oddziały z [Olimpu]{pl/ep-habitat-olimp}, ale brakuje im doświadczenia, które tamci zdobyli podczas patroli w rejonie Fuxingmen, polując na dzikie sztuczne inteligencje.

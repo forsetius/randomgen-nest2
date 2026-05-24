@@ -1,0 +1,33 @@
+.hero-no-lead::before {
+  background:
+    url("decor-dark-galaxy2.png") 45% 50% no-repeat,
+    url("decor-dark-chart2.png") left bottom no-repeat
+}
+
+.hero-with-lead::before {
+  background: url("decor-dark-galaxy2.png") 45% 50% no-repeat
+}
+
+.article-shell {
+  background: url("decor-seti.png") left bottom no-repeat, #ffffff;
+}
+
+.article pre {
+  background: url("decor-panel.svg") no-repeat top right;
+}
+
+.aside-right {
+  background: url("decor-bridge.png") no-repeat top center;
+}
+
+.aside-right > .d-grid > section:not(.card) {
+  background:
+    url("decor-system.png") top right / 180px 146px no-repeat,
+    var(--surface-blue-panel);
+}
+
+.footer {
+  background:
+    url("decor-belt2.png") 40% 50% no-repeat,
+    var(--surface-blue-footer);
+}

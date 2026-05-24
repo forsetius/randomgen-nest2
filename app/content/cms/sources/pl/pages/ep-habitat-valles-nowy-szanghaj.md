@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Valles - Nowy Szanghaj
 subtitle: Valles - New Shanghai
 headerImage: mid-mars-domes-head.jpg
@@ -20,6 +20,7 @@ slots:
 lead: |
   Valles–Nowy Szanghaj to największe i najgęściej zaludnione miasto na [Marsie]{pl/ep-atlas-mars}, położone w regionie [Eos](https://planetarynames.wr.usgs.gov/Feature/1810) u wschodniego krańca kanionu [Valles Marineris](https://planetarynames.wr.usgs.gov/Feature/6288). Obecnie mieszka w nim około 37 milionów osób. Miasto powstało na szczycie góry stołowej [Capri Mensa](https://planetarynames.wr.usgs.gov/Feature/1013), która według planów terraformacyjnych ma w przyszłości stać się wyspą na powstającym w tym rejonie morzu.
 ---
+
 Miasto składa się z pięciu głównych kopuł osłaniających zabudowę miejską i liczne dzielnice mieszkalne. Centrum metropolii tworzą dzielnice Nowy Szanghaj, Little Shanghai i Valles Center, położone na wysokim wzgórzu u zbiegu trzech rzek: Xi, Monongahela i Nanjing. W pobliżu znajdują się również kopuły miast-satelitów New Pittsburgh i Nytrondheim.
 
 Poszczególne części aglomeracji połączone są siecią infrastruktury transportowej: szybkich kolei maglev (Valles-Nowy Szanghaj Transit Maglev, znana jako „vi”), autostrad i podniebnych korytarzy lotniczych, oznaczonych systemem świetlnych znaczników.
@@ -31,6 +32,7 @@ Valles–Nowy Szanghaj ma charakter wielokulturowy i wielojęzyczny. W jego stru
 Miasto powstało w wyniku współpracy kilku dawnych bloków politycznych z [Ziemi]{pl/ep-atlas-ziemia}. Trzy z najstarszych dzielnic odzwierciedlają ich kulturowe pochodzenie: Nowy Szanghaj zostało założone przez Chiny, Nytrondheim przez europejskie konsorcja, a New Pittsburgh przez podmioty amerykańskie. Valles Center był projektem korporacyjnym, natomiast dzielnica Little Shanghai powstała już po [Upadku]{pl/ep-upadek}.
 
 ## Nowy Szanghaj
+
 Nowy Szanghaj to jedna z największych marsjańskich metropolii, położona pod pojedynczą kopułą przeciętą sztuczną Rzeką Ares. Centrum miasta stanowi Zhongshan Road oraz Bund – rekonstrukcja [nadbrzeża dawnego Szanghaju](https://en.wikipedia.org/wiki/The_Bund) z [Ziemi]{pl/ep-atlas-ziemia}, odwzorowana cegła po cegle. Wzdłuż tej arterii znajdują się najważniejsze budynki administracyjne i dyplomatyczne planety.
 
 Pod adresem Bund 13 znajduje się konsulat [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} na Marsie. W bezpośrednim sąsiedztwie mieszczą się: administracja [Ligi Tharsis]{pl/ep-liga-tharsis} (pełniąca również funkcję ratusza), Biuro Terraformacji Tharsis, siedziba Rail Eos, konsulaty dużych marsjańskich miast (takich jak [Noctis]{pl/ep-habitat-noctis-qianjiao} czy [Elizjum]{pl/ep-habitat-elizjum}), ambasady [Sojuszu Wokółziemskiego]{pl/ep-sojusz-wokolziemski}, [Republiki Jowiszowej]{pl/ep-republika-jowiszowa} i [Wspólnoty Tytana]{pl/ep-wspolnota-tytana} (te dwie ostatnie znajdują się obok siebie), misja handlowa [Extropian]{pl/ep-ekstropisci} oraz kluby towarzyskie, w tym stylizowany na brytyjski [Shanghai Club](https://en.wikipedia.org/wiki/Shanghai_Club_Building) pod numerem 2. Adres przy Bund uchodzi za jeden z najbardziej prestiżowych w całym Układzie Słonecznym.
@@ -46,6 +48,7 @@ Poza strefą Bund zabudowa miasta składa się z siatki arkologii, parków i wie
 Nowy Szanghaj stanowi kluczowe centrum administracyjne, gospodarcze i kulturalne Marsa, a jednocześnie jedno z najbardziej chronionych i prestiżowych miejsc na całej planecie.
 
 ## Mały Szanghaj
+
 Mały Szanghaj to jedna z najbardziej gęsto zaludnionych i najmniej zorganizowanych dzielnic kopuły Nowego Szanghaju. Charakteryzuje się chaotyczną zabudową, różnorodnością stylów architektonicznych i silnie zurbanizowanym środowiskiem. Rejon ten jest znany z dużego odsetka mieszkańców w powłokach [podów]{pl/ep-pod} i [syntów]{pl/ep-synt} – stanowią oni znaczną część lokalnej populacji.
 
 Obszar ten wyróżnia się intensywnym użyciem neonowych reklam i rozszerzonej rzeczywistości, zwłaszcza w gęstych siatkach ulic i zaułków, które wypełnione są barami, salonami masażu, czarnorynkowymi punktami augmentacyjnymi i punktami usługowymi. W tej dzielnicy znajduje się największe skupisko nielegalnego handlu i działalności przestępczej w całym Nowym Szanghaju.

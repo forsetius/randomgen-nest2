@@ -22,12 +22,12 @@ jobs:
       - name: Assert required production secrets, variables, and input
         env:
           SSH_PRIVATE_KEY: ${{ secrets.MYDEVIL_SSH_PRIVATE_KEY }}
-          RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
+          RUNTIME_ENV: ${{ secrets.RUNTIME_ENV }}
           RELEASE_ID: ${{ inputs.release_id }}
         run: |
           [ -n "${RELEASE_ID:-}" ] || { echo "Missing input: release_id"; exit 1; }
           [ -n "${SSH_PRIVATE_KEY:-}" ] || { echo "Missing secret: MYDEVIL_SSH_PRIVATE_KEY"; exit 1; }
-          [ -n "${RUNTIME_ENV:-}" ] || { echo "Missing secret: RANDOMGEN_RUNTIME_ENV"; exit 1; }
+          [ -n "${RUNTIME_ENV:-}" ] || { echo "Missing secret: RUNTIME_ENV"; exit 1; }
           [ -n "${{ vars.MYDEVIL_HOST }}" ] || { echo "Missing variable: MYDEVIL_HOST"; exit 1; }
           [ -n "${{ vars.MYDEVIL_USER }}" ] || { echo "Missing variable: MYDEVIL_USER"; exit 1; }
           [ -n "${{ vars.MYDEVIL_DOMAIN }}" ] || { echo "Missing variable: MYDEVIL_DOMAIN"; exit 1; }
@@ -45,12 +45,12 @@ jobs:
 
       - name: Upload production env
         env:
-          RUNTIME_ENV: ${{ secrets.RANDOMGEN_RUNTIME_ENV }}
+          RUNTIME_ENV: ${{ secrets.RUNTIME_ENV }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "mkdir -p ~/apps/randomgen/production/incoming"
+          ssh "$remote" "mkdir -p ~/apps/rpg/production/incoming"
           printf '%s\n' "$RUNTIME_ENV" > runtime.env
-          scp runtime.env "$remote:~/apps/randomgen/production/incoming/runtime.env"
+          scp runtime.env "$remote:~/apps/rpg/production/incoming/runtime.env"
 
       - name: Promote release and restart production
         env:
@@ -60,8 +60,8 @@ jobs:
           ssh "$remote" "RELEASE_ID='$RELEASE_ID' DOMAIN='${{ vars.MYDEVIL_DOMAIN }}' bash -s" <<'REMOTE'
           set -euo pipefail
 
-          app_base="$HOME/apps/randomgen/production"
-          releases_base="$HOME/apps/randomgen/releases"
+          app_base="$HOME/apps/rpg/production"
+          releases_base="$HOME/apps/rpg/releases"
           release_dir="$releases_base/$RELEASE_ID"
           domain_app_js="$HOME/domains/$DOMAIN/public_nodejs/app.js"
 
@@ -77,8 +77,8 @@ jobs:
           const path = require('node:path');
           const { parseEnv } = require('node:util');
 
-          const applicationBase = path.join(process.env.HOME, 'apps/randomgen/production');
-          const releasesBase = path.join(process.env.HOME, 'apps/randomgen/releases');
+          const applicationBase = path.join(process.env.HOME, 'apps/rpg/production');
+          const releasesBase = path.join(process.env.HOME, 'apps/rpg/releases');
           const runtimeEnvironmentPath = path.join(applicationBase, 'shared/runtime.env');
           const currentReleasePath = path.join(applicationBase, 'current-release');
 
@@ -110,7 +110,7 @@ jobs:
           RELEASE_ID: ${{ inputs.release_id }}
         run: |
           {
-            echo "### Production release"
+            echo "### RPG production release"
             echo
             echo "- release_id: \`$RELEASE_ID\`"
             echo "- url: ${{ vars.APP_URL }}"

@@ -1,7 +1,8 @@
 ---
 type: static
-template: partial-alert-warning
+template: block/alert-warning
 ---
+
 ## Under construction
 
 The service is still in beta. That means: it works, but the content published in it will still change a bit - I will smooth out the texts, add images, etc.

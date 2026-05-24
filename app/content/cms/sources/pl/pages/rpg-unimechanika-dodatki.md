@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default
 title: Dodatki do UniMechaniki
 headerImage: index-head.jpg
 searchable: false

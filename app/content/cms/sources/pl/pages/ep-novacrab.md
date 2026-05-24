@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Novacrab
 subtitle: Novacrab
 excerpt: Biomechaniczny krab wielkości dostawczaka
@@ -26,5 +26,5 @@ slots:
         - [Tolerancja temperatury](#), 
         - [Hermetyczna skorupa](#)
 ---
-**Novakraby** są [podami]{pl/ep-pod} powstałymi na bazie krzyżówki [kraba palmowego](https://pl.wikipedia.org/wiki/Krab_palmowy) i [japońskiego kraba pacyficznego](https://pl.wikipedia.org/wiki/Japo%C5%84ski_krab_pacyficzny) powiększonego do wielkości człowieka. Novakraby dzięki swym 2-metrowym nogom, masywnym pazurom i chitynowemu pancerzowi są idealne do pracy w niebezpiecznych środowiskach, a także wykonywania prac w próżni czy wykonywaniu obowiązków strażniczych lub policyjnych. Świetnie się wspinają, dobrze znoszą mikrorawitację i są w stanie znieść szeroki zakres ciśnienia atmosferycznego, a także nagłe zmiany ciśnienia. Novakraby mają oczy złożone o rozdzielczośści ludzkich, skrzela, zręczne palce na piątej parze odnóży i transgeniczne struny głosowe.
 
+**Novakraby** są [podami]{pl/ep-pod} powstałymi na bazie krzyżówki [kraba palmowego](https://pl.wikipedia.org/wiki/Krab_palmowy) i [japońskiego kraba pacyficznego](https://pl.wikipedia.org/wiki/Japo%C5%84ski_krab_pacyficzny) powiększonego do wielkości człowieka. Novakraby dzięki swym 2-metrowym nogom, masywnym pazurom i chitynowemu pancerzowi są idealne do pracy w niebezpiecznych środowiskach, a także wykonywania prac w próżni czy wykonywaniu obowiązków strażniczych lub policyjnych. Świetnie się wspinają, dobrze znoszą mikrorawitację i są w stanie znieść szeroki zakres ciśnienia atmosferycznego, a także nagłe zmiany ciśnienia. Novakraby mają oczy złożone o rozdzielczośści ludzkich, skrzela, zręczne palce na piątej parze odnóży i transgeniczne struny głosowe.

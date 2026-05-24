@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Generator technobełkotu
 langs:
   en: 2022-01-03_technobabble-generator
@@ -18,9 +18,9 @@ tags:
 blocks:
   technobabbleGenerator:
     type: apiCall
-    template: form-technobabble
+    template: block/form-technobabble
     url: /api/1.0/startrek/technobabble?lang=pl
-    
+
 slots:
   aside:
     - type: static
@@ -29,9 +29,10 @@ slots:
         - Endpointy API: [polski](https://forseti.pl/api/1.0/startrek/technobabble?lang=pl), [angielski](https://forseti.pl/api/1.0/startrek/technobabble?lang=en)
         ## Warunki użycia
         Użycie jest oczywiście darmowe, nie używam też żadnych Waszych danych. 
-        
+
         Jedynie przy integracji tego generatora do jakiś aplikacji czy narzędzi proszę o atrybucję i zgłoszenie mi tego (w celu łechtania ego i podbijania motywacji do dalszej pracy)
 ---
+
 I tu na scenę wchodzi **Generator Technobełkotu**. Tworzy on losową, 5-wyrazową frazę, która nie znaczy nic, ale brzmi bardzo mądrze i technicznie. Przykładowo:
 
 > ...zresetować wtórny sprzęg fazy tetrionowej
@@ -54,10 +55,12 @@ GET https://forseti.pl/api/1.0/startrek/technobabble
 ```
 
 Opcjonalnie w query stringu można dodać dwa parametry:
+
 - `lang` - język, dozwolone wartości: 'en' lub 'pl'. Domyślnie: 'pl'
 - `repeat` - ile fraz wylosować. Dozwolone wartości: od 1 do 20, domyślnie: 1
 
 Odpowiedź jest czystym tekstem. Jeśli `repeat` > 1 to frazy są rozdzielane nową linią
 
 ## Technikalia
+
 Generator ten zaimplementowałem jako moduł aplikacji w Node.js+TypeScript, opartej na NestJS. Obsługuje języki: polski i angielski, z możliwością dodania kolejnych. Poszczególne słowa (lub w języku polskim - zestawy form gramatycznych danego słowa) są zaczytywane z plików JSON. Jeśli ktoś chciałby pomóc mi zaimplementować nowy język albo dodać jakieś klawe słownictwo to zapraszam do [kontaktu]{pl/kontakt}.

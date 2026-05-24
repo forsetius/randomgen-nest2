@@ -3,7 +3,7 @@ const themePreferenceStorageKey = 'theme-preference',
   themeStylesheetBasePath = '/ui/',
   themeStylesheetFileNamesByMode = {
     light: ['styles-light.css', 'syntax-light.css'],
-    dark: ['styles-dark.css', 'syntax-forseti-dark.css'],
+    dark: ['styles-dark.css', 'syntax-dark.css'],
   },
   darkModeMediaQuery =
     'function' == typeof window.matchMedia

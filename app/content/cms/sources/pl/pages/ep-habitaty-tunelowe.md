@@ -1,11 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Habitaty tunelowe
 headerImage: mid-lunar-city-head.jpg
 excerpt: Habitaty wydrążone pod powierzchniami ciał niebieskich
 category: ep-habitat
 subcategory: powierzchniowe
 ---
+
 Większość osad na [Lunie]{pl/ep-atlas-luna}, podobnie jak te na [Ganimedesie](#), [Merkurym]{pl/ep-atlas-merkury}, [Tytanie](#) czy [Kallisto](#), to sieci podziemnych tuneli i komór wydrążonych za pomocą wiertnic plazmowych. Osady te różnią się między sobą w zależności od świata, na którym się znajdują. W większości tych tunelowych miast, grunt w otwartych przestrzeniach publicznych oraz w wielu mieszkaniach pokryty jest genetycznie zmodyfikowaną trawą, zaprojektowaną z myślą o komforcie i trwałości. Stropy wyłożone są panelami świetlnymi emitującymi jasne światło pełnego widma.
 
 Niektóre z tych podziemnych miast dodatkowo wzmacniają wrażenie naturalności, wprowadzając drzewa, a w niektórych przypadkach także specjalnie zaprojektowane ekosystemy – zarówno w przestrzeniach publicznych, jak i w prywatnych mieszkaniach. W kilku z tych miejskich tunelowych lasów i dżungli spotkać można kwitnące pnącza oraz jaskrawe, tropikalne motyle. W nielicznych osadach na Tytanie i Lunie żyją kolonie niewielkich małp i papug, których metabolizm i zachowania zostały zmodyfikowane zgodnie ze współczesnymi standardami czystości i higieny, co nadaje niektórym z tych miast atmosferę dżungli.

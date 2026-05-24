@@ -97,7 +97,11 @@ export function expectBalancedContentSecurityPolicy(response: Response): void {
     'https://cdn.jsdelivr.net',
     'https://fonts.gstatic.com',
   ]);
-  expectDirectiveToMatchExactly(directives, 'img-src', ["'self'", 'data:']);
+  expectDirectiveToMatchExactly(directives, 'img-src', [
+    "'self'",
+    'data:',
+    'https://i.imgur.com',
+  ]);
   expectDirectiveToMatchExactly(directives, 'connect-src', [
     "'self'",
     'https://cdn.jsdelivr.net',

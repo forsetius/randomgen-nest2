@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Octavia
 headerImage: mid-ep-octavia-head.jpg
 excerpt: Aerostat - stolica Konstelacji Gwiazdy Zarannej

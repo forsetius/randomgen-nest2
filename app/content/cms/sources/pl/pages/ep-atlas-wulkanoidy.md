@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Wulkanoidy
 excerpt: Niewielka grupa asteroidów bliskich Słońcu
 headerImage: mid-ep-wulkanoidy-head.jpg

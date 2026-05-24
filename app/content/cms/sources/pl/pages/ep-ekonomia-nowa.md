@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Nowa ekonomia
 headerImage: mid-ep-new-economy-head.jpg
 excerpt: Zdecentralizowana produkcja dóbr i dostęp warunkowany obywatelstwem lub pracą
@@ -8,6 +8,7 @@ sort: 3
 lead: |
   Mniej niż czterdzieści procent populacji transludzi żyje w warunkach, które ekonomiści określają mianem **nowej gospodarki**. W [zewnętrznym Układzie Słonecznym]{pl/ep-zewnetrze} alternatywne modele gospodarcze stają się coraz rzadsze. Nowe gospodarki znacznie lepiej niż modele stare czy przejściowe wspierają zdecentralizowane społeczności, co sprawia, że ponad połowa wszystkich nowych habitatów i osiedli przyjęła ten właśnie model.
 ---
+
 W społeczeństwach opartych na nowej gospodarce jednostki mogą swobodnie wytwarzać i wykorzystywać praktycznie dowolne dobra, o ile tylko posiadają odpowiednie szablony oraz surowce. W rezultacie potrzeby mieszkańców — żywność, odzież, opieka medyczna, dostęp do informacji i inne podstawowe zasoby — są łatwo zaspokajane. Niemniej jednak wciąż istnieją dobra, o które jednostki walczą z determinacją. Choć takie społeczności bywają określane mianem postniedoborowych, pewne formy niedoboru wciąż pozostają realne.
 
 W większości [habitatów]{pl/ep-habitat} nowej gospodarki dobra powszechnego użytku są swobodnie dostępne dla wszystkich mieszkańców — lub przynajmniej dla tych, którzy spełniają określone kryteria. Kryteria te zazwyczaj przyjmują jedną z dwóch form: obywatelstwa lub udziału w pracach publicznych.

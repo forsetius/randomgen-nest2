@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Elizjum
 subtitle: Eysium City
 headerImage: mid-ep-elysium-head.jpg
@@ -35,6 +35,7 @@ Choć Elizjum ma zaledwie 30 lat, jego populacja przekracza już 9 milionów tra
 Marsjańskie Elizjum to duchowy następca dawnego Los Angeles – stolica rozrywki Układu Słonecznego. Pełne gwiazd glamour i żądnych krwi producentów, z solidną domieszką ekstrawaganckiej (choć często miałkiej) twórczości transhumanistycznej, uczyniło Mars niekwestionowaną potęgą medialną. Elizjum może poszczycić się najwyższą wśród transludzkich miast liczbą powłok typu [Egzalt]{pl/ep-egzalt} i [Rusałka]{pl/ep-rusalka} na mieszkańca. Wizerunek to tu wszystko – odwiedzającym może się wydawać, że każdy w tym mieście jest albo oślepiająco piękny, albo celowo odpychający. Największe gwiazdy i magnaci branży rozrywkowej prowadzą życie pełne blasku, któremu zazdrościłby nawet najbogatszy gerontokrata z [Nowego Szanghaju]{pl/ep-habitat-valles-nowy-szanghaj}. Cała reszta – od początkujących twórców gier po wirtualnych performerów erotycznych – musi nieustannie walczyć o przetrwanie.
 
 ## Centrum miasta
+
 Palazzo to dzielnica rządowa i siedziba rodu Oaxaca‑Maartens. Architektura ma tu charakter pałacowy – można dostrzec elementy amerykańskiego federalizmu, odrobinę chińskiego „nowego imperializmu” i tyle austriackiego baroku, że mogłoby udławić cały pułk cherubinów.
 
 Elizjum określa się jako monarchię konstytucyjną, z rodem Oaxaca‑Maartens i ich potomkami jako monarchami dziedzicznymi. Jest to monarchia silna – głowa rodu (Zevi) posiada szerokie uprawnienia wykonawcze, m.in. prawo weta wobec parlamentu, eksterytorialność dla wszystkich posiadłości rodziny, możliwość wydawania wiążących dekretów wykonawczych (które mogą zostać unieważnione tylko większością 2/3 parlamentu), immunitet karny dla siebie i rodziny oraz immunitet od wezwań sądowych dla ich forków i backupów.
@@ -47,7 +48,7 @@ Na północ i zachód od Palazzo rozciąga się Hyblaeus City – rozległa dzie
 
 Pomimo pozornej normalności, dzielnica ta bywa wykorzystywana przez grupy przestępcze jako tymczasowa baza operacyjna – m.in. dla kradzieży tożsamości, nielegalnych klinik i produkcji substancji chemicznych. Znane są przypadki krótkoterminowego wynajmu nieruchomości w celu prowadzenia działalności przestępczej, a następnie ich opuszczania w celu zatarcia śladów. W przeszłości zanotowano obecność siatki [Les Goules]{pl/ep-przestepczosc-mars#h2-les-goules} oraz podejrzewa się, że w rejonie rozmieszczono roje autonomicznych botów antenowych, które wspierają działalność informacyjną organizacji [Conduit]{pl/ep-przestepczosc-mars#h2-conduit}.
 
-**Bainbridge** to rozgałęzienie kanionu prowadzące z głównej arterii północnej. Mieszka tu wielu wysoko wynagradzanych specjalistów z branży rozrywkowej, w tym scenarzystów, inżynierów, producentów i programistów. Okolica charakteryzuje się wysokim poziomem bezpieczeństwa oraz dużym odsetkiem uzbrojonych mieszkańców. Dzielnica znana jest z incydentów związanych z ochroną własności intelektualnej pomiędzy konkurującymi hiperkorporacjami. 
+**Bainbridge** to rozgałęzienie kanionu prowadzące z głównej arterii północnej. Mieszka tu wielu wysoko wynagradzanych specjalistów z branży rozrywkowej, w tym scenarzystów, inżynierów, producentów i programistów. Okolica charakteryzuje się wysokim poziomem bezpieczeństwa oraz dużym odsetkiem uzbrojonych mieszkańców. Dzielnica znana jest z incydentów związanych z ochroną własności intelektualnej pomiędzy konkurującymi hiperkorporacjami.
 
 **Dulcimer Canyon** to zamknięta i obecnie nieużywana odnoga Bainbridge, prowadząca niemal do górnej granicy kopuły miejskiej. Dostęp do niej jest zablokowany barierą drogową, a rozszerzona rzeczywistość informuje o zakazie wstępu na mocy decyzji Milicji Ludowej Elizjum.
 

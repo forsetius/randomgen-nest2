@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/noaside
 title: Wtem, na blogu!
 langs:
   en: blog
@@ -8,7 +8,7 @@ subcategoryName: Blog
 slots:
   bottom:
     - type: pageGallery
-      sources: 
+      sources:
         - category: blog
       sortDir: desc
 lead: |

@@ -9,5 +9,12 @@ export const CmsModuleConfigContract = new ConfigContract('cms', () =>
         name: z.string().trim().min(1).optional(),
       }),
     }),
+    legacyRedirects: z.array(
+      z.strictObject({
+        sourcePathPrefix: z.string().trim().startsWith('/'),
+        targetOrigin: z.url(),
+        statusCode: z.union([z.literal(301), z.literal(302)]),
+      }),
+    ),
   }),
 );

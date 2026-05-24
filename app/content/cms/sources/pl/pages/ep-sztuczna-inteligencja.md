@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Sztuczna inteligencja
 excerpt: Różne rodzaje sztucznych inteligencji przyszłości
 headerImage: mid-ep-ai-head.jpg
@@ -11,6 +11,7 @@ slots:
       sources:
         - category: ep-sztuczna-inteligencja
 ---
+
 **Sztuczne inteligencje** wyewoluowały z programów pomocniczych tworzonych w celu usprawnienia transludzkich możliwości poznawczych.
 
 Pierwsze sztuczne inteligencje o możliwościach wykraczających poza realizowanie zadań pół-automatycznej wyszukiwarki i planera były programowane z myślą o konkretnych, wyspecjalizowanych zastosowaniach. Owszem, te **[Ekspertowe Sztuczne Inteligencje](#)** są samoświadome i w przypisanej im roli niesamowicie szybkie, precyzyjne i wyręczające człowieka w rutynowej pracy, ale ich kompetencje kończą się na dziedzinie, do której je stworzono. Szczególnym typem ESI są **[Muzy]{pl/ep-muza}** - osobiste AI służące za sekretarza i zarządcę osobistego info-systemu w codziennym życiu niemal każdego transczłowieka.

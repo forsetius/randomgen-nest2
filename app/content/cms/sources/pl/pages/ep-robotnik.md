@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Pod-robotnik
 subtitle: Worker pod
 excerpt: Wzmocniony i bardziej wytrzymały pod używany jako muł roboczy
@@ -20,7 +20,7 @@ slots:
         - [Ulepszenie pamięci](#)
         - [Gniazdo zdalnej kontroli]{pl/ep-gniazdo-zdalnej-kontroli}
 ---
+
 [Pody]{pl/ep-pod} te to składanka części [Genfiksa]{pl/ep-genfiks} wspomaganych cyborgizacjami - niemal niewidocznymi z zewnątrz. Są zwykle używane przy pracach prostych, fizycznych i często uwłaczających, przy których jest jednak konieczna interakcja z ludźmi.
 
 Mimo stygmatyzacji, jaka dotyka podów, ten model jest często wybierany jako tania alternatywa wobec [syntów]{pl/ep-synt}. Ze względu na usprawnienia fizyczne jest często popularny w gangach i wśród radykałów identyfikujących się z [proletariatem]{pl/ep-szmelcen-proletariat}.
-

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Atak bazyliszkowy
 headerImage: mid-ep-basilisk-head.jpg
 excerpt: Hakowanie umysłu bodźcami zmysłowymi - broń TITAN-ów oparta na percepcji.
@@ -7,6 +7,7 @@ category: ep-titans
 lead: |
   Dzięki ogromnym bazom danych wiedzy, które pochłonęli [TITAN-i]{pl/ep-titans}, byli w stanie dogłębnie przeanalizować biologię i funkcjonowanie transludzkich umysłów. W ciągu zaledwie kilku miesięcy dostępu do wszystkich dostępnych badań, inteligencje TITAN-ów dokonały kilku skoków poznawczych w zrozumieniu funkcji mózgu transludzi — przełomów, na które transludzkość będzie potrzebować dekad. Jednym z tych odkryć była metoda użycia bodźców zmysłowych jako broni, wykorzystująca słabości w neurocerebralnym układzie mózgu.
 ---
+
 Znane jako **ataki bazyliszkowe**, techniki te wykorzystują sposób, w jaki biologiczne mózgi transludzi interpretują i przetwarzają dane sensoryczne w korze mózgowej. Podobnie jak osoby z [epilepsją](https://pl.wikipedia.org/wiki/Padaczka) są podatne na wizualizacje migające w określonych częstotliwościach, ataki bazyliszkowe stosują specjalne wzory wizualne i dźwiękowe, które wywołują zakłócenia w przewodzeniu neuronalnym mózgu, powodując nudności, zawroty głowy, dezorientację, a nawet napady — często mylone z udarem mózgu lub incydentem naczyniowym.
 
 Niektóre ataki bazyliszkowe sięgają dalej niż tylko powodowanie awarii mózgu, umożliwiając mechanizm przepisywania kodu neuronalnego u ofiar, które obejrzą lub usłyszą nieodpowiedni sygnał. Ten nieznany mechanizm przeprogramowania umożliwia wirusowi zainfekowanie nawet biologicznego mózgu jednym ze swoich szczepów. Podobne ataki stosowane są przeciwko [syntmorfom]{pl/ep-syntmorf} i [podom]{pl/ep-pod}, wykorzystując sposób, w jaki cybermózgi naśladują biologiczne umysły poprzez wirtualny stan mózgu, a zatem również mogą być manipulowane za pomocą informacji zakodowanej w danych sensorycznych.

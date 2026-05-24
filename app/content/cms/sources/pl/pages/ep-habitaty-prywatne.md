@@ -1,11 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Habitaty prywatne
 excerpt: Luksusowe prywatne "dacze" hiperelit
 headerImage: mid-private-habitat-head.jpg
 category: ep-habitat
 subcategory: more
 ---
+
 Najrzadszymi i najbardziej egzotycznymi spośród wszystkich typów habitatów są luksusowe habitaty prywatne, należące do niezwykle zamożnych lub wysoko notowanych w reputacji jednostek. Większość z nich jest niewielka, ale zapewnia każdemu mieszkańcowi kilka tysięcy metrów sześciennych prywatnej przestrzeni.
 
 Typowy habitat prywatny to albo cylinder o średnicy 150 metrów (minimum wymagane do uzyskania marsjańskiej grawitacji przy prędkości obrotowej bezpiecznej dla wszystkich typów [morfów]{pl/ep-morf}) i długości od 50 do 200 metrów, albo sfera zerowej grawitacji o średnicy od 100 do 200 metrów. Habitaty te są zawsze przycumowane do zestawu surowców – brył krzemianów, żelazo-niklu oraz węglanowych asteroid zawierających wodę – o masie co najmniej równej masie samego habitatu.

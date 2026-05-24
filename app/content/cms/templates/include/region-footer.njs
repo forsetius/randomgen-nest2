@@ -4,7 +4,7 @@
         <p class="footer__copyright mb-0">{{ brand.copyright }}</p>
     </div>
     
-    <nav class="col-lg-8" aria-label="Linki w stopce">
+    <nav class="col-lg-8 footer__navigation" aria-label="Linki w stopce">
         <menu id="footer" />
     </nav>
 </div>

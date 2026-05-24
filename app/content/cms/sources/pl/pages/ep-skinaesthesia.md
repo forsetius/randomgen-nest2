@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Skinaesthesia
 subtitle: Skinaesthesia
 excerpt: Genetyka, Klonowanie, Biotechnologia
@@ -19,9 +19,9 @@ slots:
         ## Główne habitaty
         - Ptah ([Mars]{pl/ep-atlas-mars})
 ---
+
 Jako wiodący projektant [biomorfów]{pl/ep-biomorf}, **Skinaesthesia** cieszy się respektem i popularnością w całym Układzie Słonecznym. Szczególnie sławne są jej wyrafinowane produkty w rodzaju dostosowywanych pod klienta modeli z wyższej półki. Najbardziej znana jest ze swoich osiągnięć na polu inżynierii genetycznej i [biomodów](#). Mniej znanym faktem jest to, że [hiperkorporacja]{pl/ep-hiperkorporacja} ta wytwarza również zaawansowane morfy bojowe oraz [sex-pody]{pl/ep-sex-pod} - towary te sprzedawane są zwykle pod inną marką, przez spółki-wydmuszki i lokalnych dystrybutorów.
 
 Skinaestesia skupia się na adaptacjach środowiskowych i użytecznych [usprawnieniach cybernetycznych](#), poprawiając szanse transludzkości na przetrwanie i dalszy dobrobyt.
 
 Ciekawostką jest to, że eksperymentalne morfy są czasem oferowane desperackim [info-uchodźcom]{pl/ep-info-uchodzcy} do przetestowania w terenie.
-

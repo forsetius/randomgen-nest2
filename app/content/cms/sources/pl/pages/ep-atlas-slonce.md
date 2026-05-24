@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Słońce
 excerpt: Centrum Układu Słonecznego i dom Solarian
 headerImage: mid-sunward-head.jpg
@@ -15,9 +15,9 @@ slots:
         - **Rodzaj**: [żółty karzeł](https://pl.wikipedia.org/wiki/%C5%BB%C3%B3%C5%82ty_karze%C5%82)
         - _Typ widmowy_: [G2 V](https://pl.wikipedia.org/wiki/Gwiazdy_typu_widmowego_G)
         - **Średnica**: 695 500 km
-        
+
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
       sources:
         - category: ep-atlas-slonce
@@ -28,11 +28,12 @@ slots:
       sources:
         - category: ep-atlas-slonce
           subcategory: habitaty
-      
+
 lead: |
   Układ Słoneczny powstał miliardy lat temu w wyniku akrecji materii pozostałej po uformowaniu jego gwiazdy – Sol, czyli Słońca. Od tamtej pory wszystkie obiekty w promieniu dwóch lat świetlnych pozostają z nim związane grawitacyjnie, a ich przeszłość i teraźniejszość są ukształtowane przez relację z tym ciałem niebieskim. Słońce to jasna gwiazda typu G2 ciągu głównego – teoretycznie po gorącej stronie spektrum gwiazd zdolnych podtrzymać życie.
 ---
-Przez większość swojej historii transludzkość zawdzięczała wzloty i upadki energii Słońca – najpierw tej zmagazynowanej w materiałach takich jak węglowodory, a później już bezpośrednio, poprzez konwertery słoneczne. 
+
+Przez większość swojej historii transludzkość zawdzięczała wzloty i upadki energii Słońca – najpierw tej zmagazynowanej w materiałach takich jak węglowodory, a później już bezpośrednio, poprzez konwertery słoneczne.
 
 Dziś Słońce pozostaje kluczowym źródłem energii, ale jego zewnętrzne obszary stały się również domem dla niektórych transludzi nazywanych Solarianami. Przystosowania niezbędne do zamieszkania tak blisko tej gwiazdy uczyniły z nich jedno z najbardziej osobliwych odgałęzień transludzkości.
 
@@ -44,4 +45,4 @@ Zewnętrzne warstwy habitatów okołosłonecznych pokryte są tysiącami elektro
 
 Wewnątrz warstwy wodnej mieści się [habitat klastrowy]{pl/ep-kolonia-klastrowa}: zespół modułów osadzonych na szkielecie konstrukcyjnym o z grubsza sferycznym układzie.
 
-Habitaty koronalne są łatwe do wykrycia z dużej odległości ze względu na [falę uderzeniową](# "zjawisko powstające, gdy silne pole magnetyczne habitatu przecina strumień wiatru słonecznego – podobnie jak dziób statku tworzy falę na wodzie. W jego następstwie powstaje również ogon plazmowy – smuga jonizowanej materii rozciągająca się w przeciwnym kierunku do ruchu habitatu lub strumienia cząstek, analogiczna do ogona komety.") poprzedzającą ich ruch oraz plazmowy ogon pozostawiany w wietrze słonecznym.
+Habitaty koronalne są łatwe do wykrycia z dużej odległości ze względu na [falę uderzeniową](# 'zjawisko powstające, gdy silne pole magnetyczne habitatu przecina strumień wiatru słonecznego – podobnie jak dziób statku tworzy falę na wodzie. W jego następstwie powstaje również ogon plazmowy – smuga jonizowanej materii rozciągająca się w przeciwnym kierunku do ruchu habitatu lub strumienia cząstek, analogiczna do ogona komety.') poprzedzającą ich ruch oraz plazmowy ogon pozostawiany w wietrze słonecznym.

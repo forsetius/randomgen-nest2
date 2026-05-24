@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Asteroidy Wewnętrza
 excerpt: Obiekty większe niż 50 m, krążące do orbity Marsa włącznie.
 headerImage: mid-ep-asteroid-door-head.jpg
@@ -31,7 +31,7 @@ slots:
       title: Planetoidy bliskie Ziemi
       content: |
         Planetoidy bliskie Ziemi (NEA) to obiekty, które okrążają Słońce głównie wewnątrz orbity Marsa. Z definicji mają one średnicę większą niż 50 metrów (mniejsze obiekty klasyfikowane są jako meteory), a największe z nich osiągają szerokość do 34 kilometrów. Dzieli się je na kilka rodzin, w zależności od średniego promienia ich orbit, porównywanego do orbity Ziemi (1 AU). Ponieważ większość planetoid ma orbity ekscentryczne (bardziej eliptyczne niż kołowe), klasyfikacja ta nie zawsze precyzyjnie określa ich rzeczywiste położenie względem Ziemi czy innych ciał niebieskich.
-        
+
     - type: pageGallery
       sources:
         - category: ep-atlas-wewnetrzne-asteroidy
@@ -39,7 +39,7 @@ slots:
       title: Trojańczycy marsjańscy
       content: |
         Trojańczycy Marsa to skupiska asteroidów krążące w punktach Lagrange’a L4 i L5 układu Mars–Słońce. Technicznie należą do grupy asteroidów typu Apollo. Choć nie są tak liczne jak trojańczycy Jowisza czy Urana, wciąż liczą się w setkach. Znajdują się tam także dziesiątki habitatów.
-      
+
     - type: pageGallery
       sources:
         - category: ep-atlas-wewnetrzne-asteroidy

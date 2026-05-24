@@ -4,8 +4,9 @@ export function resolveCmsModuleConfig(): CmsModuleOptions {
   return {
     contact: {
       recipient: {
-        address: 'forseti@forseti.pl',
+        address: 'marcin.pazdziora@forseti.pl',
       },
     },
+    legacyRedirects: [],
   };
 }

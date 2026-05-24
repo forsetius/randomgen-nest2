@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Zalążkowa sztuczna inteligencja
 subtitle: Seed AI
 headerImage: mid-ep-seedai-head.jpg
 excerpt: Sztuczna inteligencja zdolna samodoskonalić się bez ograniczeń
 category: ep-sztuczna-inteligencja
-
 ---
+
 Ze względu na potencjał do nieograniczonego samo-udoskonalania, **Zalążkowe Sztuczne Inteligencje** mają zdolność do rozrastania się w niemal boskie cyfrowe istoty, dysponujące inteligencją daleko wykraczającą poza możliwości transludzi czy [ogólnych AI](#). Wymagają one olbrzymich i coraz większych mocy obliczeniowych - cały czas trwa w nich proces zwiększania ich złożoności na skutek ciągłej metamorfozy ich kodu.
 
 Zalążkowe AI są zbyt złożone i obszerne, by dało się je skopiować do fizycznego [morfa]{pl/ep-morf}, nawet [syntetycznego]{pl/ep-syntmorf}. Nawet ich okrojone [forki]{pl/ep-fork} mają imponujące wymagania sprzętowe, więc są rzadko spotykane. W normalnych warunkach uruchomienie ZSI wymaga dedykowanego kompleksu serwerowego wyposażonego w wysokoprzepustowe połączenia przewodowe.

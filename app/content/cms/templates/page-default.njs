@@ -1,0 +1,1 @@
+{% include "page/default.njs" %}

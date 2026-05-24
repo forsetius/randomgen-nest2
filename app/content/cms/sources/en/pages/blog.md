@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default
 title: Suddenly, on the blog!
 langs:
   pl: blog

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import { MailProvider } from '@forsetius/glitnir-mail';
 import {
+  formatZodError,
   isInsideProject,
   resolveAppRelativePath,
   stringifyError,
@@ -77,7 +78,7 @@ export function parseConfigData(
   } catch (error) {
     if (error instanceof z.ZodError) {
       throw new InvalidRawConfigDataError(
-        `Invalid raw config data:\n${z.prettifyError(error)}`,
+        `Invalid raw config data:\n${formatZodError(error, rawExternalConfigData)}`,
         error,
       );
     }

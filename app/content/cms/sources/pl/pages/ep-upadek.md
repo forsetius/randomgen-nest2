@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Upadek
 headerImage: mid-fall-head.jpg
 category: ep-intro
@@ -7,8 +7,8 @@ sort: 2
 excerpt: Upadek cywilizacji na Ziemi
 lead: |
   Pytanie “co poszło nie tak?” zakłada, że transludzkość żyła w sielance a apokalipsę sprowadził jakiś jeden czynnik. To nie do końca prawda.
-
 ---
+
 ## Świat przed Upadkiem
 
 Świat rozwijał się bardzo dynamicznie i nierównomiernie. Nowe wynalazki – z początku dostępne jedynie wybranym – czasem wręcz wywracały do góry nogami stare ekonomie, systemy społeczne i polityczne, religijność, moralność. Drastycznie zmieniały życie ludzi, państw i organizacji ponadpaństwowych. Do tego globalne ocieplenie zmieniło się w globalną katastrofę klimatyczną, powodując klęski humanitarne i migracje ludności.
@@ -21,7 +21,7 @@ Na świecie zaś, poza bezpiecznymi kopułami miast szalał głód, pragnienie, 
 
 Dlatego, gdy nadszedł koniec, niewielu go zauważyło.
 
-[TITAN-i]{pl/ep-titans} – *Total Information Tactical Awareness Networks* był zsieciowanym, autonomicznym wojskowym systemem świadomości taktycznej armii USA. Został skonstruowany jako [zalążkowa sztuczna inteligencja](#), mająca pełen dostęp do informacji znanej służbom Stanów Zjednoczonych. Nie miała za to ograniczeń dla swojego rozwoju, ponieważ jej twórcy uznali, że odbierałoby to im przewagę w starciu z podobnymi konstruktami innych mocarstw. I TITAN-i rekurencyjnie przepisując swój kod bardzo szybko rozwinęli się – wykładniczo! – osiągając poziom inteligencji przekraczający wszystko, z czym miał do czynienia transczłowiek.
+[TITAN-i]{pl/ep-titans} – _Total Information Tactical Awareness Networks_ był zsieciowanym, autonomicznym wojskowym systemem świadomości taktycznej armii USA. Został skonstruowany jako [zalążkowa sztuczna inteligencja](#), mająca pełen dostęp do informacji znanej służbom Stanów Zjednoczonych. Nie miała za to ograniczeń dla swojego rozwoju, ponieważ jej twórcy uznali, że odbierałoby to im przewagę w starciu z podobnymi konstruktami innych mocarstw. I TITAN-i rekurencyjnie przepisując swój kod bardzo szybko rozwinęli się – wykładniczo! – osiągając poziom inteligencji przekraczający wszystko, z czym miał do czynienia transczłowiek.
 
 Na początku TITANi robili to, co im kazano. Zbierali dane. Uczyli się o ludziach, ich środowisku, konfliktach, tajemnicach. Wyszli poza Ziemię, wszędzie tam, gdzie sięgały podsłuchy i sensory Służb.
 

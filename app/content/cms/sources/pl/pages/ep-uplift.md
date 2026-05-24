@@ -1,14 +1,14 @@
 ---
-template: page-default
+template: page/default-sf
 title: Uplift
 headerImage: mid-ep-uplift-head.jpg
 excerpt: Podnoszenie zwierząt do rozumności ludzkiego poziomu
 category: ep-realia
-
 ---
+
 **Uplifting** to proces usprawniania gatunku zwierząt do rozumności ludzkiej. Osobniki wzorcowe dla pierwotnego gatunku powstałe w toku miliardów lat ewolucji są sztucznie przekształcane tak, by ciągu zaledwie kilku pokoleń mówiły, używały narzędzi, a przede wszystkim myślały podobnie jak Homo Sapiens sapiens.
 
-Jest to proces przechodzenia od wrażliwości (samoświadomości, którą posiada większość zwierząt: czucie, postrzeganie i cierpienie) po rozumność (myślenie i posługiwanie się intelektem, osądem i mądrością). Nie jest to jakieś proste "podkręcenie" pojedynczego osobnika, by *pstryk* i stał się inteligentny. To wieloletnie manipulacje genetyczne, selektywny rozród i transplantacje transgeniczne. To litania eksperymentów, pomyłek i zwycięstw - a wszystko to przeprowadzane na pokoleniach żywych istot nazywanych **upliftami**.
+Jest to proces przechodzenia od wrażliwości (samoświadomości, którą posiada większość zwierząt: czucie, postrzeganie i cierpienie) po rozumność (myślenie i posługiwanie się intelektem, osądem i mądrością). Nie jest to jakieś proste "podkręcenie" pojedynczego osobnika, by _pstryk_ i stał się inteligentny. To wieloletnie manipulacje genetyczne, selektywny rozród i transplantacje transgeniczne. To litania eksperymentów, pomyłek i zwycięstw - a wszystko to przeprowadzane na pokoleniach żywych istot nazywanych **upliftami**.
 
 ## Historia
 

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Hibernoid
 subtitle: Hibernoid
 headerImage: mid-hibernoid-head.jpg
@@ -7,7 +7,6 @@ excerpt: Model biomorfa z ograniczonym zapotrzebowaniem na sen oraz zdolnością
 lead: |
   > Mamy wysyp takich zawsze jak przycumuje jakiś frachtowiec. Wbiją do baru, zamówią kilka głębszych i zwijają się w kąciku, nie reagują na krzyki, muzykę, nawet strobo. Jakby rzeczywistość to był jakiś hologram. Kiedyś jeden przespał eksplozję. Obudził się tylko po to, żeby się przeciągnąć.
 category: ep-biomorf
-
 slots:
   aside:
     - type: static
@@ -19,6 +18,7 @@ slots:
         - [Regulacja zegara biologicznego](#), 
         - [Hibernacja](#)
 ---
+
 **Hibernoidzi** to transgenicznie modyfikowane morfy z mocno zmodyfikowanymi cyklami snu i metabolizmem. Hibernoidzi mają obniżone zapotrzebowanie na sen - potrzebują go średnio 1-2 godziny na dobę. Poza tym są zdolne do dobrowolnego wejścia w stan hibernacji, w zasadzie zatrzymując swój metabolizm i redukując zapotrzebowanie na tlen niemalże do zera.
 
 Hibernoidzi to doskonali długoterminowi podróżnicy kosmiczni i habtechy. Morfy te znajdują jednak coraz szersze zastosowanie w kręgach [hiperkorporacyjnego]{pl/ep-hiperkorporacja} kierownictwa i personelu pomocniczego, którzy mają wypełnione grafiki i tryb życia 24.6/7.

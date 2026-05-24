@@ -1,18 +1,18 @@
   <dl class="side-meta m-0">
-    {% if categoryData.prev %}
-      <div class="side-meta__item">
-        <dt>{{ t('previous') }}</dt>
-        <dd>
-          <a href="{{ categoryData.prev.filename }}">{{ categoryData.prev.def.title }}</a>
-        </dd>
-      </div>
-    {% endif %}
-    
-    {% if categoryData.next %}
+    {% if categoryData and categoryData.next %}
       <div class="side-meta__item">
         <dt>{{ t('next') }}</dt>
         <dd>
           <a href="{{ categoryData.next.filename }}">{{ categoryData.next.def.title }}</a>
+        </dd>
+      </div>
+    {% endif %}
+
+    {% if categoryData and categoryData.prev %}
+      <div class="side-meta__item">
+        <dt>{{ t('previous') }}</dt>
+        <dd>
+          <a href="{{ categoryData.prev.filename }}">{{ categoryData.prev.def.title }}</a>
         </dd>
       </div>
     {% endif %}

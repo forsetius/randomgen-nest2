@@ -1,8 +1,8 @@
 ---
-template: page-default
+template: page/default-sf
 title: Gerlach
 headerImage: mid-ep-gerlach-head.jpg
-excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus" 
+excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus"
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
@@ -17,6 +17,7 @@ slots:
 lead: |
   Gerlach to klasyczny cylindryczny [habitat]{pl/ep-habitat} [typu O’Neilla]{pl/ep-cylinder-oneilla}. Ma 1 kilometr średnicy, 4 kilometry długości i liczy niemal 120 000 mieszkańców. Jest głównym wenusjańskim portem kosmicznym, a także najstarszą zamieszkaną lokalizacją na lub wokół [Wenus]{pl/ep-atlas-wenus}. Początkowo był mniejszy, a jego budowę rozpoczęto z zamiarem prowadzenia badań nad atmosferą Wenus, wznoszenia kolejnych habitatów i aerostatów oraz docelowo — terraformowania planety.
 ---
+
 Wnętrze stacji zajmowało kilka ogromnych, piramidopodobnych arkologii, każda wysoka na 250 metrów i o podstawie niemal 900 metrów szerokości. Między tymi strukturami rozmieszczono dziesiątki małych bio-rezerwatów, zawierających wielką różnorodność życia z [Ziemi]{pl/ep-atlas-ziemia}, żyjącego w warunkach możliwie zbliżonych do naturalnych. Rezerwaty te stanowiły symbol planowanego programu terraformowania — ich twórcy obiecywali, że potomkowie zamieszkujących je roślin i zwierząt kiedyś zasiedlą powierzchnię Wenus.
 
 Na skutek [Upadku]{pl/ep-upadek} przeznaczenie Gerlach uległo radykalnej zmianie — stacja została zalana przez uchodźców. W szczytowym momencie pomieściła 750 000 osób, znacznie przekraczając swoje projektowane możliwości. W trybie awaryjnym wydłużono cylinder, dobudowano nowe arkologie i przekształcono Gerlach w schronienie dla [info-uchodźców]{pl/ep-info-uchodzcy}.

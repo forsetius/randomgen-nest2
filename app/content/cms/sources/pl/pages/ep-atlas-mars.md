@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Mars
 excerpt: Nowe centrum transludzkości, gigantyczna populacja, terraformowanie, kolonie, kontrasty i Barsoomianie.
 headerImage: mid-ep-mars-head.jpg
@@ -21,24 +21,24 @@ slots:
         - **Temperatura**: 183K (-90°C) - 298K (25°C)
         ## Mapa
         <a href="https://i.imgur.com/YRtt469.jpg">![Mapa Marsa](https://i.imgur.com/YRtt469.jpg)</a>
-        
+
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
       sources:
         - category: ep-atlas-mars
           subcategory: more
         - items:
             - ep-przestepczosc-mars
-# terraforming
+  # terraforming
   bottom:
     - type: pageGallery
       title: Stronnictwa polityczne i ruchy społeczne
       sources:
         - items:
-          - ep-konsorcjum-planetarne
-          - ep-liga-tharsis
-          - ep-fremeni
+            - ep-konsorcjum-planetarne
+            - ep-liga-tharsis
+            - ep-fremeni
           # - ep-nomadzi-marsjanscy
     - type: pageGallery
       sources:
@@ -50,10 +50,11 @@ slots:
         - category: ep-atlas-mars
           subcategory: orbitale
       title: Habitaty orbitalne
-      
+
 lead: |
-  [Ziemia]{pl/ep-atlas-ziemia} była kolebką cywilizacji transludzkiej, ale Mars, z populacją 200 milionów, jest dziś jej sercem. Gdy ludzkość rozpoczęła swoją diasporę w przestrzeń kosmiczną, [Luna]{pl/ep-atlas-luna} była pierwszym przystankiem. Mimo że Luna ma dziś pokaźną populację, to właśnie Mars był pierwszym światem, na którym ludzie mogli przetrwać w pełni opierając się na lokalnych zasobach. 
+  [Ziemia]{pl/ep-atlas-ziemia} była kolebką cywilizacji transludzkiej, ale Mars, z populacją 200 milionów, jest dziś jej sercem. Gdy ludzkość rozpoczęła swoją diasporę w przestrzeń kosmiczną, [Luna]{pl/ep-atlas-luna} była pierwszym przystankiem. Mimo że Luna ma dziś pokaźną populację, to właśnie Mars był pierwszym światem, na którym ludzie mogli przetrwać w pełni opierając się na lokalnych zasobach.
 ---
+
 W pierwszych dekadach osadnictwa marsjańscy pionierzy żyli w ciasnych modułach mieszkalnych, wydobywali metan z lokalnej atmosfery na paliwo rakietowe i wodę z wiecznej zmarzliny, uprawiali rośliny w nadmuchiwanych szklarniach, a z czasem zaczęli produkować wystarczająco dużo gazów cieplarnianych, by ogrzać klimat planety do poziomu, w którym transludzie mogli chodzić po powierzchni bez ochronnych kombinezonów — wystarczały im maski tlenowe.
 
 Druga faza wielkiego projektu terraformowania Marsa — uprawa roślin i mikroorganizmów zaprojektowanych do szybkiego przekształcania atmosferycznego dwutlenku węgla w tlen — była już w toku w chwili [Upadku]{pl/ep-upadek}. Pas orbitalnych luster pomaga dogrzewać planetę, skupiając światło słoneczne. Rozprzestrzenianie się roślinności to projekt rozpisany na stulecia, zanim atmosfera stanie się w pełni zdatna do oddychania, ale niemal nieśmiertelni Marsjanie potrafią czekać — nowy świat jest tego wart. Badania nad nowymi gatunkami roślin i mikroorganizmów, zdolnymi przyspieszyć uwalnianie tlenu i azotu do atmosfery, stanowią dziś jeden z głównych filarów marsjańskiej gospodarki.

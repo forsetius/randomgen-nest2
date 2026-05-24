@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Orbita Ziemi
 excerpt: Stacje orbitalne Ziemi i habitaty w punktach Lagrange’a przed Upadkiem.
 headerImage: mid-torus-head.jpg
@@ -16,9 +16,9 @@ slots:
         - **MEO**: Średnia orbita okołoziemska (Medium Earth Orbit). Od 2 000 do 35 786 km nad poziomem morza.
         - **GEO**: Orbita geostacjonarna (Geosynchronous Orbit). 35 786 km nad poziomem morza i blisko równika, odpowiadająca okresowi obrotu Ziemi względem gwiazd. Obiekty na orbicie geostacjonarnej (bez nachylenia) wydają się z powierzchni pozostawać w stałym miejscu na niebie.
         - **HEO**: Wysoka orbita okołoziemska (High Earth Orbit). Powyżej 35 786 km nad poziomem morza.
-        
+
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
       sources:
         - category: ep-atlas-ziemia-orbita
@@ -32,10 +32,11 @@ slots:
       title: Habitaty
       content: |
         Wokół Ziemi krąży nawet pięćset habitatów o bardzo zróżnicowanych rozmiarach i przeznaczeniu. Większość to ciasne, metalowe [puszki]{pl/ep-puszka} mieszczące najwyżej kilkanaście osób, ale istnieją też ogromne struktury, takie jak [bańki Cole’a]{pl/ep-banka-colea} czy [cylindry O’Neilla]{pl/ep-cylinder-oneilla}, zaprojektowane dla setek tysięcy mieszkańców. Między nimi znajdują się stacje o różnej wielkości, pełniące funkcje laboratoriów, fabryk, portów kosmicznych, hoteli, stacji handlowych oraz instalacji obronnych i komunikacyjnych.
-      
+
 lead: |
-  Przed [Upadkiem]{pl/ep-upadek}, gdy [Ziemia]{pl/ep-atlas-ziemia} była jeszcze domem i centrum transludzkości, to właśnie stacje na orbicie okołoziemskiej odgrywały kluczową rolę. Ich bliskie położenie względem planety macierzystej zapewniało im ogromne znaczenie, nie wspominając o bezkonkurencyjnym dostępie do zasobów i personelu.   
+  Przed [Upadkiem]{pl/ep-upadek}, gdy [Ziemia]{pl/ep-atlas-ziemia} była jeszcze domem i centrum transludzkości, to właśnie stacje na orbicie okołoziemskiej odgrywały kluczową rolę. Ich bliskie położenie względem planety macierzystej zapewniało im ogromne znaczenie, nie wspominając o bezkonkurencyjnym dostępie do zasobów i personelu.
 ---
+
 Szczególne znaczenie miały [habitaty]{pl/ep-habitat} zlokalizowane w pięciu punktach Lagrange’a, gdzie siły grawitacyjne i odśrodkowe Ziemi oraz [Luny]{pl/ep-atlas-luna} „znoszą się nawzajem”, co pozwala im pozostawać w stałej pozycji względem obu ciał i obracać się wraz z nimi, bez potrzeby stałego korygowania położenia lub orientacji. Dosłownie tysiące satelitów, stacji, habitatów, fabryk i baz istniało w tych stałych punktach w przestrzeni, a większość z nich świetnie prosperowała. Kolejne powstawały także w punktach Lagrange’a na linii Ziemia–[Słońce]{pl/ep-atlas-slonce}. Razem stanowiły dla transludzkości bramę do reszty Układu Słonecznego.
 
 Niestety, ich bliskość, bogactwo i znaczenie sprawiły, że te miejsca stały się oczywistym celem, gdy tylko [TITAN-i]{pl/ep-titans} się uaktywnili i rozpoczęli ataki. Wiele stacji bliskiej orbity ziemskiej zostało opanowanych podczas miesięcy walk, poddając się elektronicznym atakom TITAN-ów. Niektóre zostały opuszczone zanim mogły zostać zdobyte, a kilka nawet zniszczono, by nie wpadły w ręce wroga. Niemal wszystkie pozostałe zostały zalane uchodźcami i [info-uchodźcami]{pl/ep-info-uchodzcy}, co doprowadziło ich systemy podtrzymywania życia na skraj wytrzymałości. Niestety, część z tych stacji także została zniszczona, rozerwana przez wybuchające konflikty – zarówno pomiędzy zdesperowanymi uchodźcami i równie zdesperowanymi miejscowymi, jak i przez stare urazy narodowe czy ideologiczne, przyniesione z Ziemi. Ci, którzy mogli, uciekli dalej w głąb Układu Słonecznego, ale nie zawsze była to realna opcja.

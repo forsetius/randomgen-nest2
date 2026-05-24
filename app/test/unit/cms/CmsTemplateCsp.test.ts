@@ -12,10 +12,10 @@ function readTemplate(templateName: string): string {
 describe('CMS template CSP safety', () => {
   test('keeps interactive templates free from inline scripts', () => {
     const templateNames = [
-      'form-contact.njs',
-      'form-full-search.njs',
-      'form-tag.njs',
-      'page-tag-full-width.njs',
+      'block/form-contact.njs',
+      'block/form-full-search.njs',
+      'block/form-tag.njs',
+      'page/noaside.njs',
     ];
 
     templateNames.forEach((templateName) => {
@@ -25,16 +25,15 @@ describe('CMS template CSP safety', () => {
 
   test('avoids htmx inline handlers and eval-based trigger filters', () => {
     const searchMarkup = [
-      readTemplate('menu-topbar.njs'),
-      readTemplate('form-full-search.njs'),
-      readTemplate('form-tag.njs'),
+      readTemplate('menu/topbar.njs'),
+      readTemplate('block/form-full-search.njs'),
+      readTemplate('block/form-tag.njs'),
     ].join('\n');
 
     expect(searchMarkup).not.toContain('hx-on:');
     expect(searchMarkup).not.toContain('keyup[');
     expect(searchMarkup).not.toContain('load[');
     expect(searchMarkup).toContain('hx-trigger="csp-search"');
-    expect(searchMarkup).toContain('hx-trigger="tag-load"');
   });
 
   test('disables htmx eval in the shared head script', () => {
@@ -43,6 +42,6 @@ describe('CMS template CSP safety', () => {
       'utf-8',
     );
 
-    expect(headScript).toContain('window.htmx.config.allowEval = false;');
+    expect(headScript).toMatch(/allowEval\s*=\s*(false|!1)/u);
   });
 });

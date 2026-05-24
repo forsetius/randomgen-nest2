@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Przymierze Autonomistów
 subtitle: Autonomists Alliance
 excerpt: Sojusz Anarchistów, Extropistów, Karawaniarzy i Tytańczyków
 headerImage: leo-autonomist-alliance-head.jpg
 category: ep-ustroje
-
 ---
+
 [Zewnętrzny Układ Słoneczny]{pl/ep-zewnetrze} oferował ludziom, którym nie po drodze było z autorytarnymi, fasadowymi demokracjami [Wewnętrza]{pl/ep-wewnetrze} i [Republiki Jowiszowej]{pl/ep-republika-jowiszowa} szansę na zorganizowanie się w sposób drastycznie odmienny. Daleko poza zasięgiem rządów i [hiperkorpów]{pl/ep-hiperkorporacja}, to pogranicze zostało zaludnione politycznymi radykałami, społecznymi wyrzutkami, eksperymentatorami czy po prostu ludźmi, którzy chcieli, by zostawić ich w spokoju. Te pierwsze [habitaty]{pl/ep-habitat} przyciągnęły uwagę powstańców z [Ziemi]{pl/ep-atlas-ziemia}, naukowców i techników, którym nie podobała się korporacyjna smycz, [służebnych]{pl/ep-sluzba} pracowników kosmicznych, którzy chcieli uciec od niewolniczych warunków ich kontraktu, a nawet kryminalistów uciekających przed hiperkorporacyjnym wymiarem sprawiedliwości lub ukaranych przez niego banicją. Ich szeregi powiększały się z każdym aktem niesprawiedliwości w Wewnętrzu, choć życie na obrzeżach było często surowe i zabójcze. Wprawdzie autonomiści doświadczali okazjonalnych aktów wrogości ze strony wojsk narodowych czy sił bezpieczeństwa hiperkorpów, ale koszt okiełznania tych radykałów i ekspatriantów był zbyt wielki, żeby im poważniej zaszkodzić. A do pewnego stopnia ich obecność była użyteczna dla ówczesnych władz - jako wentyl bezpieczeństwa.
 
 Odkrycia związane z [nanofabrykacją](#) dały tym libertynom i outsiderom atut, którego potrzebowali by utrzymać swą autonomię w długim okresie. Gdy [maszyny obfitości](#) stały się szeroko osiągalne, każdy miał już środki by utrzymać się i obronić bez polegania na zewnętrznych czy wyższych władzach. Będąc już przedtem przedmurzem wolnej i otwartej kultury i domem aktywistów walczących z restrykcjami nakładanymi na idee, media i cyfrowe treści, Zewnętrze stało się również przystanią udostępniania szablonów do [nanofabów](#) i obchodzenia zabezpieczeń, które hiperkorpy umieszczały na swoim oprogramowaniu i cyfrowych dobrach.
