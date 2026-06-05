@@ -6,7 +6,7 @@ excerpt: Klasyczne stacje kosmiczne o kształcie cylindra
 category: ep-habitat
 subcategory: kosmiczne
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## O cylindrach O'Neilla

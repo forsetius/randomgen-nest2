@@ -6,7 +6,7 @@ excerpt: Lokalizacja Wrót Marsjańskich w Ma’adim Vallis i miasta Pathfinder
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Pathfinder

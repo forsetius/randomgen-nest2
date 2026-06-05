@@ -6,7 +6,7 @@ excerpt: Najstarsze i najpiękniejsze miasto górnicze Luny, słynna Wielka Grot
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Erato

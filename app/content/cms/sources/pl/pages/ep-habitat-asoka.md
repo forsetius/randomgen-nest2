@@ -7,7 +7,7 @@ excerpt: Miasto w kraterze, bastion Ruchu Fremenów
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Aśoka

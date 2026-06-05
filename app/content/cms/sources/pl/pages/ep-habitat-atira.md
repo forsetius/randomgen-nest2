@@ -6,7 +6,7 @@ headerImage: leo-ep-atira-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: near-earth
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Atira

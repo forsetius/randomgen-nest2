@@ -8,7 +8,7 @@ category: ep-ustroje
 subcategoryName: Konsorcjum Planerarne
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

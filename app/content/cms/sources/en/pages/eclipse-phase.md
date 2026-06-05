@@ -16,7 +16,7 @@ slots:
             - ep-encyklopedia
             - ep-atlas
 
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Links

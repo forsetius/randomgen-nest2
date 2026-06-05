@@ -7,7 +7,7 @@ excerpt: Stacja Cognite mieszczące zaawansowane laboratoria AI
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Myśl

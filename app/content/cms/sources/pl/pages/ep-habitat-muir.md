@@ -6,7 +6,7 @@ headerImage: mid-ep-muir-head.jpg
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Muir

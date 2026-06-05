@@ -6,7 +6,7 @@ category: ep-realia
 tags:
   - niekanoniczne
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Źródło

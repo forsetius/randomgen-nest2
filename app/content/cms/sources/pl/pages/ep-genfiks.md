@@ -8,7 +8,7 @@ lead: |
   > Najzwyklejszy, jakich pełno na Ganimedesie. Trochę lepszy niż Normals, ale w oczach miał ten sam strach przed lekarzem. Nic dziwnego, że pracował w hydroponice — nie za głupi, ale zbyt przeciętny, by ryzykować cokolwiek poza codziennością.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

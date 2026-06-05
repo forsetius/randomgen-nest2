@@ -9,7 +9,7 @@ headerImage: mid-ep-solaris-head.jpg
 category: ep-hiperkorporacja
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

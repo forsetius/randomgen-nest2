@@ -7,7 +7,7 @@ excerpt: Biokonserwatywny, autorytarny reżim trzymający w żelaznym uścisku c
 category: ep-ustroje
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

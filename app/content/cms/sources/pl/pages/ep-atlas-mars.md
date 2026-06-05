@@ -8,7 +8,7 @@ subcategoryName: Mars
 sort: 8
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Mars](https://pl.wikipedia.org/wiki/Mars)
@@ -30,9 +30,11 @@ slots:
           subcategory: more
         - items:
             - ep-przestepczosc-mars
+            - ep-habitaty-marsa
   # terraforming
   bottom:
     - type: pageGallery
+      columns: 2
       title: Stronnictwa polityczne i ruchy społeczne
       sources:
         - items:
@@ -41,11 +43,13 @@ slots:
             - ep-fremeni
           # - ep-nomadzi-marsjanscy
     - type: pageGallery
+      columns: 2
       sources:
         - category: ep-atlas-mars
           subcategory: habitaty
       title: Habitaty planetarne
     - type: pageGallery
+      columns: 2
       sources:
         - category: ep-atlas-mars
           subcategory: orbitale

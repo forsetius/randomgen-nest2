@@ -9,7 +9,7 @@ lead: |
   > Zaczynasz w niskograwitacyjnej kopalni. Jeśli masz szczęście, awansujesz do logistyki. Jeśli masz pecha, stajesz się strukturą własnościową.
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

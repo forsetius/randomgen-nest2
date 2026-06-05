@@ -8,7 +8,7 @@ lead: |
   > Płynął środkiem modułu kontroli, każde ramię zajęte czymś innym. Dwa poprawiały makijaż, jedno obracało kamerę, a inne obracały kawę w lewitującym kubku. Nie potrzebował pomocy. Właściwie — ja przeszkadzałem. Przeprosiłem i się wylogowałem.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

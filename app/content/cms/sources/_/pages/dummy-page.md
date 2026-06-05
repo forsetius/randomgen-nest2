@@ -6,13 +6,13 @@ headerImage: index
 excerpt: ?Excerpt
 lead: |
   lead
-tags: 
+tags:
   - tag
-template: 
-slots: 
-  aside:
-    - 
-blocks: 
+template:
+slots:
+  asideRight:
+    -
+blocks:
   block:
     type: static
     content: |

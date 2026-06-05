@@ -16,8 +16,14 @@
   background: url("decor-panel.svg") no-repeat top right;
 }
 
-.aside-right {
+.aside-right:has(> .d-grid:last-child)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 369 / 297;
+  margin-top: 1.5rem;
   background: url("decor-bridge.png") no-repeat top center;
+  pointer-events: none;
 }
 
 .aside-right > .d-grid > section:not(.card) {

@@ -8,7 +8,7 @@ subcategoryName: Merkury
 sort: 3
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Merkury](https://pl.wikipedia.org/wiki/Merkury)

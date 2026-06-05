@@ -7,7 +7,7 @@ excerpt: Aerostat - stocznia, budujący nowe aerostaty
 category: ep-atlas-wenus
 subcategory: aerostaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Szopa

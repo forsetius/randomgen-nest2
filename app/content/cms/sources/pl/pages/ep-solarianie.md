@@ -6,7 +6,7 @@ excerpt: Transludzie w morfach solarnych zamieszkujący koronę Słońca
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główne habitaty

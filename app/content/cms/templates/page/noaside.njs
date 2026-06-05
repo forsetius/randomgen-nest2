@@ -2,7 +2,7 @@
 {% set isAsideRight = false %}
 
 {% block article %}
-  <div class="content">
+  <div class="content two-columns">
     {{ content }}
   </div>
   

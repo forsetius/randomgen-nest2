@@ -8,7 +8,7 @@ lead: |
   > Wbiegła przez wyrwę w śluzie, osłaniając dzieciaka Neotenika za plecami. Dwóch uzbrojonych najemników nie miało szans. Była jak rozbłysk plazmy — błysk, krzyk i cisza. A potem tylko wyprostowała się i spojrzała w kamerę, jakby mówiła: 'następny’.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

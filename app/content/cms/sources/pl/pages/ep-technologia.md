@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Technologia
 headerImage: mid-ep-technologia-head.jpg
 excerpt: Technologia w świecie Eclipse Phase

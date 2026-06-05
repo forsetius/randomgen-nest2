@@ -7,7 +7,7 @@ category: ep-stronnictwa
 excerpt: Marsjańscy redneckowie i autonomiści występujący przeciw hiperkorporacjom
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

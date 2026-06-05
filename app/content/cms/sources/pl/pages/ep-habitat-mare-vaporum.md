@@ -6,7 +6,7 @@ headerImage: leo-ep-triads-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Wokółlunarna Ludowa Republika Mare Vaporum

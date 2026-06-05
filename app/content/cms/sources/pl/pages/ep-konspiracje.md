@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Konspiracje
 headerImage: mid-ep-conspiracy-head.jpg
 category: ep-encyklopedia

@@ -7,13 +7,13 @@ headerImage: test.jpg
 slots:
   aside:
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Latest posts
       sources:
         - category: blog
       count: 2
       sortDir: desc
-      
+
 blocks:
   competence:
     type: pageGallery
@@ -21,12 +21,12 @@ blocks:
     columns: 2
     sources:
       - items:
-        - item-c
-        - item-d
-
+          - item-c
+          - item-d
 ---
+
 **This is a test page.**
 
 <block id="competence"></block>
 
-Privately, I'm called Forseti 
+Privately, I'm called Forseti

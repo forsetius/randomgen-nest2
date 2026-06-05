@@ -6,7 +6,7 @@ headerImage: mid-sunward-head.jpg
 category: ep-intro
 sort: 4
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Mapa Układu Wewnętrznego

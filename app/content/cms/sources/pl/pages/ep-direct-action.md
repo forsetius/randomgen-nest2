@@ -8,7 +8,7 @@ lead: |
   > Zabijają czysto, raportują bez emocji, płacisz bez zwłoki
 category: ep-hiperkorporacja
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

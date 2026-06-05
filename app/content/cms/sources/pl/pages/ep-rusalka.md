@@ -8,7 +8,7 @@ lead: |
   > Na scenie nie było nic oprócz niej i światła. Ruchy idealnie zsynchronizowane z muzyką, skóra błyszczała jak krople rtęci. Rusałki są piękne jak coś stworzonego do obserwacji — nie do dotyku. I może o to właśnie chodzi.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

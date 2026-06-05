@@ -7,7 +7,7 @@ excerpt: Korporacyjne miasto Fa Jing
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Nowe Dazhai

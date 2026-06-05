@@ -5,7 +5,7 @@ langs:
   pl: index
 headerImage: index-head.jpg
 slots:
-  aside:
+  asideRight:
     - type: pageGallery
       template: page-gallery/aside-cards
       title: Latest posts

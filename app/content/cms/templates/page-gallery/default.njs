@@ -13,7 +13,7 @@
   ></div>
   
   <hr>
-  <div class="pager-buttons d-flex justify-content-center gap-5 w-75 mx-auto mt-5">
+  <div class="pager-buttons d-flex justify-content-center gap-5 w-75 mx-auto my-3">
     <a href="#"
        data-page="prev"
        class="prev-btn btn pager-button d-flex flex-column align-items-start text-start fw-bold p-3 w-50">

@@ -7,7 +7,7 @@ excerpt: Strefa wykluczenia wokół terenu zajętego przez pozostałości po TIT
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Strefa Kwarantanny TITAN-ów

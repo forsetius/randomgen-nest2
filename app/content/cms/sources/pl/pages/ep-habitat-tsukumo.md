@@ -6,7 +6,7 @@ headerImage: mid-gonin-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Tsukumo

@@ -14,7 +14,7 @@ slots:
         - category: eclipse-phase
           subcategory: main
 
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Linki

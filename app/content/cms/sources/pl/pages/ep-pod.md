@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Pod
 subtitle: Pod
 headerImage: mid-pod-head.jpg

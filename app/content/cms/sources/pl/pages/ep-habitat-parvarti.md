@@ -6,7 +6,7 @@ excerpt: Aerostat - siedlisko hedonizmu, dekadencji i podejrzanych transakcji
 category: ep-atlas-wenus
 subcategory: aerostaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Parvarti

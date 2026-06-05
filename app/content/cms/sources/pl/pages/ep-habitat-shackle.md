@@ -6,7 +6,7 @@ excerpt: Księżycowe miasto lodu i wody, centrum kultury indyjskiej, rezerwy st
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Shackle

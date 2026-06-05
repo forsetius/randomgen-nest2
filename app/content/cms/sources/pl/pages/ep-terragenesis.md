@@ -7,7 +7,7 @@ headerImage: mid-terragenesis-head.jpg
 category: ep-hiperkorporacja
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

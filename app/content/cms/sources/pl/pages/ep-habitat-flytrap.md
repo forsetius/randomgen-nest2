@@ -7,7 +7,7 @@ headerImage: mid-ep-flytrap-head.jpg
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Muchołapka

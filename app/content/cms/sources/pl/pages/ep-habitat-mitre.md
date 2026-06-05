@@ -6,7 +6,7 @@ headerImage: mid-argonauts-head.jpg
 category: ep-atlas-luna
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Mitre

@@ -8,7 +8,7 @@ subcategoryName: Asteroidy wewnętrzne
 sort: 9
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Grupy asteroidów

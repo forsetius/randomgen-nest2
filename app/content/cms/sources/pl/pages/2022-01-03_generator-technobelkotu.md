@@ -3,7 +3,7 @@ template: page/default-sf
 title: Generator technobełkotu
 langs:
   en: 2022-01-03_technobabble-generator
-headerImage: startrek-engineers-head.png
+headerImage: startrek-engineers-head.jpg
 category: blog
 date: 2022-01-03
 excerpt: |-
@@ -22,7 +22,7 @@ blocks:
     url: /api/1.0/startrek/technobabble?lang=pl
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Źródła

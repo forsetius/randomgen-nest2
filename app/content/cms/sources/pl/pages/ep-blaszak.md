@@ -7,7 +7,7 @@ excerpt: Tandetne syntetyczne ciała dla biedoty
 category: ep-syntmorf
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

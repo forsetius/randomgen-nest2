@@ -7,7 +7,7 @@ category: ep-atlas-slonce
 subcategory: habitaty
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Aten

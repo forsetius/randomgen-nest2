@@ -7,7 +7,7 @@ headerImage: mid-tharsis-league-head.jpg
 category: ep-ustroje
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

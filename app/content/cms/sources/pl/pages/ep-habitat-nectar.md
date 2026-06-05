@@ -6,7 +6,7 @@ excerpt: Największe i najbardziej kosmopolityczne miasto Luny, nowoczesna archi
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Nectar

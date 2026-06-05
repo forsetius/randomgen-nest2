@@ -5,7 +5,7 @@ excerpt: Habitat giełdowy Konsorcjum zlokalizowany w punkcie Mars–Słońce L2
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: remote-habs
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## PEX

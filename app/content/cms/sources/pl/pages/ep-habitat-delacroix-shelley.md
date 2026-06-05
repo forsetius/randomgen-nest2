@@ -7,7 +7,7 @@ category: ep-atlas-merkury
 subcategory: habitaty
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Delacroix-Shelley

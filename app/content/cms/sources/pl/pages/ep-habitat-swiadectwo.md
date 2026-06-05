@@ -7,7 +7,7 @@ excerpt: Przepełniona uchodźcami stolica Sojuszu Wokółziemskiego.
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Świadectwo

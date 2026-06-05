@@ -7,7 +7,7 @@ excerpt: Wielka forteca wojskowa Direct Action w punkcie L5 Ziemia-Luna, centrum
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Heksagon

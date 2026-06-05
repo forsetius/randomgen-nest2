@@ -95,6 +95,21 @@ describe('CMS theme contract', () => {
     );
   });
 
+  test('places the bridge decor below right aside content', () => {
+    const scienceFictionDecorStylesheet = readCmsFile(
+      'static',
+      'ui',
+      'decors-sf.css',
+    );
+
+    expect(scienceFictionDecorStylesheet).not.toMatch(
+      /\.aside-right\s*\{[\s\S]*decor-bridge\.png/u,
+    );
+    expect(scienceFictionDecorStylesheet).toMatch(
+      /\.aside-right:has\(> \.d-grid:last-child\)::after\s*\{[\s\S]*content: "";[\s\S]*display: block;[\s\S]*width: 100%;[\s\S]*aspect-ratio: 369 \/ 297;[\s\S]*margin-top: 1\.5rem;[\s\S]*background: url\("decor-bridge\.png"\) no-repeat top center \/ contain;[\s\S]*\}/u,
+    );
+  });
+
   test('uses blue themed gallery pager buttons', () => {
     const galleryTemplate = readCmsFile(
       'templates',

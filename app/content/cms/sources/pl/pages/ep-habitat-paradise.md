@@ -7,7 +7,7 @@ excerpt: Ekskluzywna stacja – kurort odzyskany przez elitę Konsorcjum
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Raj

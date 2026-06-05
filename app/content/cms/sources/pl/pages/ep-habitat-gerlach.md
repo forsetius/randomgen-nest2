@@ -6,7 +6,7 @@ excerpt: Niezależna stacja kosmiczna nazywana "Bramą do Wenus"
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Gerlach

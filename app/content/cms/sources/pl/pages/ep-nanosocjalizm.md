@@ -6,7 +6,7 @@ excerpt: Model gospodarczo-społeczny, w którym kluczową rolę odgrywa automat
 category: ep-ekonomia
 sort: 4
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

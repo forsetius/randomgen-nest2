@@ -8,7 +8,7 @@ subcategoryName: Wenus
 sort: 4
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Wenus](https://pl.wikipedia.org/wiki/Wenus)

@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Hiperkorporacja
 subtitle: Hypercorporation
 excerpt: Następcy ponadnarodowych megakorporacji z Ziemi, trzymający władzę w Wewnętrznym Układzie Słonecznym

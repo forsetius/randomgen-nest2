@@ -7,7 +7,7 @@ excerpt: Centrum władzy i prestiżu Marsa nad rzeką Ares
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Valles - Nowy Szanghaj

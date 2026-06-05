@@ -7,7 +7,7 @@ headerImage: leo-exhumans-head.jpg
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

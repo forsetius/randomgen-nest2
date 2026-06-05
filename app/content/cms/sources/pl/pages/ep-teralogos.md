@@ -7,7 +7,7 @@ category: ep-hiperkorporacja
 tags:
   - niekanoniczne
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

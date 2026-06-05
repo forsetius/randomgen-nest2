@@ -8,7 +8,7 @@ subcategoryName: Luna
 sort: 7
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Luna](https://pl.wikipedia.org/wiki/Ksi%C4%99%C5%BCyc)

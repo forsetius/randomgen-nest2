@@ -6,7 +6,7 @@ headerImage: mid-ep-ra-head.jpg
 category: ep-atlas-wulkanoidy
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ra

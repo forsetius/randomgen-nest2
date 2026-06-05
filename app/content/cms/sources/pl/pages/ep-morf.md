@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Morf
 subtitle: Morph
 headerImage: mid-morph-head.jpg

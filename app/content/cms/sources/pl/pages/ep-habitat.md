@@ -7,7 +7,7 @@ category: ep-encyklopedia
 subcategoryName: Habitaty
 
 slots:
-  aside:
+  asideRight:
     - type: pageGallery
       template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
@@ -20,6 +20,7 @@ slots:
       sources:
         - category: ep-habitat
           subcategory: kosmiczne
+      columns: 2
       title: Habitaty kosmiczne
       content: |
         Z wyjątkiem prywatnych habitatów należących do bogatych i wpływowych, zdecydowana większość habitatów kosmicznych mieści od dwóch i pół tysiąca do miliona mieszkańców. Prawie dwie trzecie z nich powstało w ciągu pierwszych siedmiu lat po Upadku, kiedy ogromna część ocalałej infrastruktury Układu Słonecznego została wykorzystana do budowy habitatów zdolnych pomieścić setki milionów [info-uchodźców]{pl/ep-info-uchodzcy}.
@@ -28,6 +29,7 @@ slots:
       sources:
         - category: ep-habitat
           subcategory: powierzchniowe
+      columns: 2
       title: Habitaty powierzchniowe
       content: |
         Miasta-państwa na Marsie i Lunie oraz inne osady planetarne oferują środowiska najbardziej zbliżone do tego, które znali uchodźcy z Ziemi. To podobieństwo jest jednym z powodów, dla których dwie trzecie wszystkich info-uchodźców zamieszkuje Marsa, Lunę lub Tytana. Dokładny typ osad zależy od planety lub księżyca, na którym się znajdują – niektóre przypominają ziemskie miasta bardziej niż inne.

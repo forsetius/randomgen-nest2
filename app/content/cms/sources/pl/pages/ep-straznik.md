@@ -9,7 +9,7 @@ headerImage: mid-security-pod-head.jpg
 category: ep-pod
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

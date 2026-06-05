@@ -6,7 +6,7 @@ excerpt: Centrum recyklingu, a w praktyce piracka baza na obrzeżach L5 Ziemia-L
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Fresh Kills

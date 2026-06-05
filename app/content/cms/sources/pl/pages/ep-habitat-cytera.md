@@ -7,7 +7,7 @@ excerpt: Stacja specjalizująca się w badaniach nad terroformacją Wenus
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Cytera

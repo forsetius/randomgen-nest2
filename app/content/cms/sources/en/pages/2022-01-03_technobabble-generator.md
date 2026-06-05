@@ -1,7 +1,7 @@
 ---
 template: page/default-sf
 title: Technobabble generator
-headerImage: startrek-engineers-head.png
+headerImage: startrek-engineers-head.jpg
 langs:
   pl: 2022-01-03_generator-technobelkotu
 category: blog
@@ -22,7 +22,7 @@ blocks:
     url: /api/1.0/startrek/technobabble?lang=en
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Sources

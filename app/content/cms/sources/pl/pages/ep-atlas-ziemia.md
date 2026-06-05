@@ -8,7 +8,7 @@ subcategoryName: Ziemia
 sort: 5
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Ziemia](https://pl.wikipedia.org/wiki/Ziemia)

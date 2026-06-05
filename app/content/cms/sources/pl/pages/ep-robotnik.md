@@ -9,7 +9,7 @@ headerImage: mid-worker-pod-head.jpg
 category: ep-pod
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

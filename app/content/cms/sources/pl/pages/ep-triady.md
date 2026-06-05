@@ -7,7 +7,7 @@ headerImage: leo-ep-triads-head.jpg
 category: ep-przestepczosc
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główne habitaty

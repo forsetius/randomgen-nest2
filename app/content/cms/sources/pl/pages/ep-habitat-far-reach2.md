@@ -6,7 +6,7 @@ excerpt: Stacja Omnicoru specjalizująca się w procesach chemicznych i nanofabr
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Far Reach II

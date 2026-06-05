@@ -8,7 +8,7 @@ subcategoryName: Słońce
 sort: 1
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Słońce

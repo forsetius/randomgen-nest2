@@ -5,7 +5,7 @@ excerpt: Habitat ExoTechu w L5 Marsa, znany z badań nad AI i przyspieszonymi sy
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: remote-habs
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Pola Elizejskie

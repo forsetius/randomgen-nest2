@@ -7,7 +7,7 @@ headerImage: mid-argonauts-head.jpg
 category: ep-konspiracje
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

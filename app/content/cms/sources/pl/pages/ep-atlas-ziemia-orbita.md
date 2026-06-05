@@ -8,7 +8,7 @@ subcategoryName: Orbita Ziemi
 sort: 6
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Rodzaje orbit

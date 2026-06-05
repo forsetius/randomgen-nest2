@@ -5,7 +5,7 @@ headerImage: mid-ep-psychosurgery-head.jpg
 excerpt: Sztuka edycji umysłu — od terapii po tortury.
 category: ep-ego
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Tło historyczne

@@ -7,7 +7,7 @@ excerpt: Winda kosmiczna i podupadłe miasto wokół niej.
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Olimp

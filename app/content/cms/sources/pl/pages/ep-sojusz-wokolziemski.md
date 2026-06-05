@@ -7,7 +7,7 @@ headerImage: mid-ep-lla-head.jpg
 category: ep-ustroje
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

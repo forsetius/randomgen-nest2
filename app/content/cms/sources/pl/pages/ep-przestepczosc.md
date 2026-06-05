@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Przestępczość
 excerpt: Kryminaliści w świecie Eclipse Phase
 headerImage: mid-ep-criminals-head.jpg

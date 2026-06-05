@@ -6,7 +6,7 @@ headerImage: leo-ep-quin-long-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Qing Long

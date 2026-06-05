@@ -6,7 +6,7 @@ excerpt: Ściśle strzeżona stacja Omnicor, oskarżenia o badania nad nanoplaga
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Feynman

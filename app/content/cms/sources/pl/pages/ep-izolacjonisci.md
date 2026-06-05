@@ -7,7 +7,7 @@ headerImage: leo-ep-brinkers-head.jpg
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

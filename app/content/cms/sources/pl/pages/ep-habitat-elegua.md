@@ -6,7 +6,7 @@ excerpt: Stacja badawcza TerraGenesis, centrum badań ekologicznych i terraformi
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Elegua

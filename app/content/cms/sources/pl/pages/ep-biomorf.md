@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Biomorf
 subtitle: Biomorph
 headerImage: leo-biomorph-head.jpg

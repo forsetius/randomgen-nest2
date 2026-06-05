@@ -9,7 +9,7 @@ headerImage: mid-bouncer-head.jpg
 category: ep-biomorf
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

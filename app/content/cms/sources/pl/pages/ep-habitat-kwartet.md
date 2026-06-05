@@ -6,7 +6,7 @@ headerImage: mid-ep-quartet-head.jpg
 category: ep-atlas-wulkanoidy
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Kwartet

@@ -5,7 +5,7 @@ headerImage: index-head.jpg
 langs:
   en: index
 slots:
-  aside:
+  asideRight:
     - type: pageGallery
       template: page-gallery/aside-cards
       title: Ostatnie wpisy

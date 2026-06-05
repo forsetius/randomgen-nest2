@@ -1,5 +1,5 @@
 ---
-template: page/default-sf
+template: page/noaside-sf
 title: Syntmorf
 subtitle: Synthmorph
 headerImage: mid-syntmorph-head.jpg

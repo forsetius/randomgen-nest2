@@ -5,32 +5,51 @@ excerpt: niziny północne, wyżyny południowe i wyzwania dla terraformowania.
 headerImage: mid-ep-mars-head.jpg
 category: ep-atlas-mars
 subcategory: more
+slots:
+  asideRight:
+    - type: toc
 
 lead: |
   Mars dzieli się ogólnie na niziny północne i wyżyny południowe, które w wielu miejscach oddzielone są widowiskowymi klifami sięgającymi nawet dwóch kilometrów wysokości. Planeta ma pory roku, podobnie jak Ziemia, a na obu biegunach znajdują się trwałe czapy lodowe, które przetrwały mimo sukcesów transludzkości w ocieplaniu klimatu. Oba obszary stanowią wyzwanie dla terraformowania. Północne równiny są otwarte i smagane wiatrem, natomiast surowe południowe wyżyny pozostają trudnym terenem, na którym życie z trudem się utrzymuje. Mimo to odporne ziemskie gatunki, takie jak kaktusy i sukulenty, potrafią rosnąć w niektórych miejscach.
 ---
 
+::: group inline-links
+
 ## Argyre Planitia
 
-> **[Info](https://pl.wikipedia.org/wiki/Argyre_Planitia)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/371)**
+:---
+[Info](https://pl.wikipedia.org/wiki/Argyre_Planitia) - [Mapa](https://planetarynames.wr.usgs.gov/Feature/371)
+:::
 
 Argyre Planitia to wielka niecka uderzeniowa, w którą włożono mnóstwo pracy terraformacyjnej. Jest tak ogromna, że mieszczą się w niej inne kratery — jeden z nich, [Galle](https://planetarynames.wr.usgs.gov/Feature/2080), z orbity wygląda jak wielka uśmiechnięta buźka. Teoretycznie Argyre powinno być rozwinięte na równi z Hellas, ale lokalna polityka mocno spowolniła wzrost populacji — głównie przez fatalną obsługę kolei magnetycznej przez [Nowe Dazhai]{pl/ep-habitat-nowe-dazhai}.
 
+::: group inline-links
+
 ## Hellas Planitia
 
-> **[Info](https://pl.wikipedia.org/wiki/Hellas_Planitia)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/2432)**
+:---
+[Info](https://pl.wikipedia.org/wiki/Hellas_Planitia) - [Mapa](https://planetarynames.wr.usgs.gov/Feature/2432)
+:::
 
 Hellas to ogromna niecka uderzeniowa — pozostałość po gigantycznym uderzeniu asteroidy tak odległym w czasie, że aż trudno to pojąć. Lodowiec znajdujący się w jej centrum — a raczej to, co z niego zostało — jest głównym źródłem wody dla okolicznych osiedli. W Hellas znajduje się kilkanaście miasteczek i wiele mniejszych osad. To także centrum tej części Ruchu [Fremenów]{pl/ep-fremeni}, która najbardziej angażuje się w politykę terraformowania.
 
+::: group inline-links
+
 ## Ma'adim Vallis
 
-> **[Info](https://pl.wikipedia.org/wiki/Ma%27adim_Vallis)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/3772)**
+:---
+[Info](https://pl.wikipedia.org/wiki/Ma%27adim_Vallis) - [Mapa](https://planetarynames.wr.usgs.gov/Feature/3772)
+:::
 
 Ten głęboki system kanionów na Marsie skrywa jeden z najcenniejszych skarbów [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} — **Wrota Marsjańskie**. Te [Wrota Pandory](#) zostały pierwotnie odkryte przez wędrownych Fremenów, po czym brutalnie odebrane im przez wojska [hiperkorpów]{pl/ep-hiperkorporacja} — wydarzenie, które do dziś budzi wśród nich gorycz. Gdy niemal doszło do otwartego konfliktu między samymi hiperkorpami, Rada Hiperkorporacyjna została zmuszona do interwencji i zaproponowania rozwiązania, które wszyscy zaakceptowali. Powołano nową hiperkorporację — [Pathfinder]{pl/ep-pathfinder} — której powierzono kontrolę nad eksploracją i eksploatacją Wrót oraz zasobów po drugiej stronie, przyznając specjalne prawa i przywileje członkom Konsorcjum Planetarnego. Wrota Marsjańskie są dziś punktem wypadowym dla licznych kolonii egzoplanetarnych, choć niektórzy obawiają się konsekwencji utrzymywania artefaktu prawdopodobnie pochodzącego od [TITAN-ów]{pl/ep-titans} na najbardziej zaludnionej planecie transludzkości.
 
+::: group inline-links
+
 ## Olympus Mons
 
-> **[Info](https://pl.wikipedia.org/wiki/Olympus_Mons)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/4453)**
+:---
+[Info](https://pl.wikipedia.org/wiki/Olympus_Mons) - [Mapa](https://planetarynames.wr.usgs.gov/Feature/4453)
+:::
 
 Najbardziej rozpoznawalnym punktem Marsa jest potężny wulkan tarczowy Olympus Mons, na którego zboczach zbudowano pierwszą — i do dziś główną — marsjańską windę kosmiczną. Powstały w sposób podobny do hawajskich wysp na Ziemi, obecnie wygasły, Olympus Mons jest jednym z najwyższych górskich masywów w Układzie Słonecznym — wznosi się na wysokość 27 kilometrów.
 
@@ -44,9 +63,13 @@ Na południe od równika Mars jest w większości surowy, pełen kraterów, a te
 
 Północ to twarda ziemia. Wysokość jest niższa, ale to nie to samo co na południu, gdzie mikroklimat w kraterze czy kanionie może dać początek całemu ekosystemowi. Terraformowanie tutaj postępuje powoli — prowadzone jest w odizolowanych ekostacjach, oddalonych od siebie o 50, czasem 100 kilometrów. Osad jest jeszcze mniej, więc większość ludzi mieszkających na tych terenach to prawdziwi Fremeni — nomadzi.
 
+::: group inline-links
+
 ## Valles Marineris
 
-> **[Info](https://pl.wikipedia.org/wiki/Valles_Marineris)** - **[Mapa](https://planetarynames.wr.usgs.gov/Feature/6288)**
+:---
+[Info](https://pl.wikipedia.org/wiki/Valles_Marineris) - [Mapa](https://planetarynames.wr.usgs.gov/Feature/6288)
+:::
 
 Większość wysiłków terraformacyjnych transludzkości koncentruje się wokół wijącego się systemu kanionów Valles Marineris, który rozciąga się na ponad 4 000 kilometrów ze wschodu na zachód wzdłuż równika Marsa. W tych stosunkowo ciepłych nizinach coraz częściej występuje płynna woda, a krajobraz zazielenia się dzięki odpornym gatunkom roślin, takim jak perz, mlecze i ogromne daglezje (które według botaników w niskiej marsjańskiej grawitacji mogą osiągać nawet 180 metrów wysokości). 75% populacji transludzkiej Marsa mieszka w tym regionie, co czyni go najgęściej zaludnionym obszarem transludzkości w całym Układzie Słonecznym.
 

@@ -7,7 +7,7 @@ category: ep-atlas-luna
 subcategory: powierzchnia
 sort: 99
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Nowy Mumbaj

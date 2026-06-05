@@ -7,7 +7,7 @@ category: ep-hiperkorporacja
 excerpt: Kognitywistyka, psychochirurgia i udoskonalanie umysłu
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność

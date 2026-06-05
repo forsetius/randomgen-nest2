@@ -7,7 +7,7 @@ headerImage: mid-ep-rewitalizatorzy-head.jpg
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy

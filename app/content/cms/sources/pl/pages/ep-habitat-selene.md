@@ -5,7 +5,7 @@ excerpt: Gigantyczny torus, centrum handlu i dyplomacji Luny, wielopoziomowy par
 category: ep-atlas-luna
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Selene

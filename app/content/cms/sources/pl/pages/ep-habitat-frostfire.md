@@ -6,7 +6,7 @@ excerpt: Transport asteroidów lodowych na Wenus i bombardowanie nimi atmosfery
 category: ep-atlas-wenus
 subcategory: orbitale
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Frostfire

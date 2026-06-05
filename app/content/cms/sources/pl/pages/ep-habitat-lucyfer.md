@@ -6,7 +6,7 @@ excerpt: Aerostat wydobywczy
 category: ep-atlas-wenus
 subcategory: aerostaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Lucyfer

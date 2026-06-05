@@ -8,7 +8,7 @@ lead: |
   > Z maską na twarzy i karabinem w ręku, wyglądał jak duch Oryginalnego Marsjańskiego Pogranicza. Spod płaszcza wystawały mu narzędzia, czujniki i filtr wodny. Mówił, że mieszka sam, 40 klików od najbliższej kopuły. Rdzawi to inny gatunek samotności.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

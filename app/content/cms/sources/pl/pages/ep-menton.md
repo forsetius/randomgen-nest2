@@ -8,7 +8,7 @@ lead: |
   > Z Mentonami nigdy nie ma burzy mózgów — tylko sucha dekonstrukcja twoich błędów. Jak im nie przeszkadzać, to zrobią całą robotę lepiej, szybciej i bez ciebie. Tylko czekam, aż przez nich dostanę z HR notkę w stylu "dziękujemy John, nie potrzebujemy już Twojego wsparcia, masz 30 minut na spakowanie rzeczy."
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

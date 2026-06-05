@@ -7,7 +7,7 @@ excerpt: Kanionowe miasto show-biznesu i celebrytów
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Elizjum

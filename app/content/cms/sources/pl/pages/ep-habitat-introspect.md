@@ -6,7 +6,7 @@ headerImage: mid-ep-introspect-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Introspect

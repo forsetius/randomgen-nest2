@@ -8,7 +8,7 @@ lead: |
   > Przyszedł bez koszulki, jakby chciał, żeby wszyscy wiedzieli, że nie jest zwykłym genfiksem. Skóra bez skazy, oczy błyszczące jak genetycznie wzmacniana stal. W laboratorium poruszał się jak reklama wydajności, zdawało się, że jego pot potrafi sortować dane.
 category: ep-biomorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

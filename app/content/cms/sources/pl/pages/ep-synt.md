@@ -8,7 +8,7 @@ lead: |
   > Zbudowaliśmy Synty jako funkcję, a potem obraziliśmy się, że nie mają duszy. To nie ich wina, że odbijają nasze chłodne intencje jak lustro.
 category: ep-syntmorf
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia

@@ -9,7 +9,7 @@ lead: |
   > Powiedzieli, że mój związek ma świetny potencjał narracyjny. Zapłacili za rozstanie, dorzucili nową twarz dla byłej i podpisaliśmy umowę na sezon drugi. Teraz gram konkurencyjnego kochanka — samego siebie, tylko innego.
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Główna działalność
