@@ -5,6 +5,9 @@ excerpt: Piekło na powierzchni Wenus
 headerImage: mid-ep-venus-surface-head.jpg
 category: ep-atlas-wenus
 subcategory: more
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Powierzchnia Wenus to jedno z najmniej gościnnych miejsc w całym Układzie Słonecznym. Temperatury sięgają 500°C, a ciśnienie atmosferyczne wynosi prawie 100 razy tyle co na Ziemi. W takich warunkach ołów pozostaje w stanie ciekłym, a temperatury są wystarczająco wysokie, by osłabiać większość konwencjonalnych stopów metali.
 ---

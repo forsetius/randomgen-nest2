@@ -23,7 +23,7 @@ Zamiast rozciągać się pod kopułą jak inne metropolie, Aśoka została zbudo
 
 W pobliżu położony jest Historyczny Park Vikingów, obejmujący miejsca lądowania sond kosmicznych [Viking 1](https://pl.wikipedia.org/wiki/Viking_1) oraz łazika [Sojourner](https://pl.wikipedia.org/wiki/Sojourner). Oba pojazdy zostały przekształcone w interaktywne eksponaty z zastosowaniem AI. Pomysł ten – choć krytykowany przez niektóre środowiska – cieszy się dużym zainteresowaniem wśród turystów.
 
-# Kultura i demografia
+## Kultura i demografia
 
 W Aśoce rzadko spotyka się [sztuczne powłoki]{pl/ep-syntmorf} – to miasto zamieszkiwane głównie przez [rdzawych]{pl/ep-rdzawy}. Spośród dziesięciu tysięcy turystów przebywających tu jednocześnie, wiele osób przybywa jednak w różnego rodzaju [morfach]{pl/ep-morf}.
 

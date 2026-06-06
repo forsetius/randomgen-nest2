@@ -4,6 +4,9 @@ title: Przestępczość na Marsie
 headerImage: mid-ep-mars-crime.jpg
 excerpt: Przestępczość zorganizowana na Marsie – grupy lokalne i działalność nielegalna
 category: ep-przestepczosc
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Na Marsie działają liczne grupy przestępcze, zarówno o zasięgu systemowym, jak i lokalnym. Poniżej przedstawiono najważniejsze organizacje operujące na planecie:
 ---

@@ -532,7 +532,6 @@ span.hero__category a,
 
 .aside-left {
   position: relative;
-  width: auto;
 }
 
 .side-meta {
@@ -1036,15 +1035,15 @@ blockquote {
   margin: 0;
 }
 
-.gallery-set .card-container {
-  margin-top: 0;
-}
-
 .article h2 {
   margin-top: 1em;
 }
 
-.gallery-set .col {
+.article .gallery-set .card-container {
+  margin-top: 0;
+}
+
+.article .gallery-set .col {
   margin-top: 0;
   margin-bottom: var(--bs-gutter-y);
 }

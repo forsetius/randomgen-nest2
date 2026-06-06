@@ -6,6 +6,9 @@ headerImage: mid-ep-other-stations-mars-head.jpg
 category: ep-atlas-mars
 subcategory: orbitale
 sort: 99
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Na orbicie Marsa znajduje się zbyt wiele stacji, by omówić je wszystkie, dlatego poniżej przedstawiono kilka z ważniejszych. Każdą z nich zarządza głównie jeden hiperkorp, choć udział w ich własności i działalności mogą mieć również inne korporacje.
 ---

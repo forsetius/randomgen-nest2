@@ -5,6 +5,9 @@ headerImage: mid-ep-themes-head.jpg
 category: eclipse-phase
 subcategory: more
 excerpt: Transhumanizm, postapokalipsa, konspiracja i groza
+slots:
+  asideRight:
+    - type: toc
 lead: |
   W Eclipse Phase przewija się kilka istotnych motywów przewodnich:
 

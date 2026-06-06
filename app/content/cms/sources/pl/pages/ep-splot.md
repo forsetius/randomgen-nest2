@@ -5,6 +5,9 @@ subtitle: Mesh
 excerpt: Następca Internetu
 headerImage: mid-nimbus-head.jpg
 category: ep-technologia
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Istnienie **Splotu** w Eclipse Phase jest możliwe tylko i wyłącznie dzięki znacznemu postępowi w dziedzinie komputerów, technologii informacyjnej oraz [nanoprodukcji](#). Bezprzewodowe odbiorniki radiowe są tak mikroskopijne, że mogą być wmontowane właściwie wszędzie, dzięki czemu wszystko jest skomputeryzowane i połączone ze sobą.
 ---

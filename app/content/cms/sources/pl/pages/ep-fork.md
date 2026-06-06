@@ -5,7 +5,9 @@ subtitle: Forking
 headerImage: mid-ep-fork-head.jpg
 excerpt: Proces tworzenia funkcjonujących kopii żyjącej osoby.
 category: ep-ego
-
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Biorąc pod uwagę liczbę kopii zapasowych transludzkich umysłów oraz obfitość przestrzeni w [Splocie]{pl/ep-splot}, na której można je uruchamiać jako wirtualne mózgi, nasuwa się pytanie: co powstrzymuje transludzkość po [Upadku]{pl/ep-upadek} przed mnożeniem swojej liczby poprzez uruchamianie kolejnych kopii samych siebie? Krótka odpowiedź brzmi: nic — poza ogromnym społecznym piętnem i trudnymi konsekwencjami psychologicznymi. Wzięcie kopii zapasowej umysłu transludzkiego, skopiowanie jej i zainicjowanie jako [infomorfa]{pl/ep-infomorf} to proces zwany **forkowaniem**. Jest to jedna z najbardziej użytecznych, a jednocześnie wciąż kontrowersyjnych technologii w dziedzinie mózgu transludzkiego.
 ---

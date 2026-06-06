@@ -106,7 +106,7 @@ describe('CMS theme contract', () => {
       /\.aside-right\s*\{[\s\S]*decor-bridge\.png/u,
     );
     expect(scienceFictionDecorStylesheet).toMatch(
-      /\.aside-right:has\(> \.d-grid:last-child\)::after\s*\{[\s\S]*content: "";[\s\S]*display: block;[\s\S]*width: 100%;[\s\S]*aspect-ratio: 369 \/ 297;[\s\S]*margin-top: 1\.5rem;[\s\S]*background: url\("decor-bridge\.png"\) no-repeat top center \/ contain;[\s\S]*\}/u,
+      /\.aside-right:has\(> \.d-grid:last-child\)::after\s*\{[\s\S]*content: "";[\s\S]*display: block;[\s\S]*width: 100%;[\s\S]*aspect-ratio: 369 \/ 297;[\s\S]*margin-top: 1\.5rem;[\s\S]*background: url\("decor-bridge\.png"\) no-repeat top center;[\s\S]*\}/u,
     );
   });
 
@@ -121,10 +121,10 @@ describe('CMS theme contract', () => {
     expect(galleryTemplate).not.toContain('btn-outline-success');
     expect(galleryTemplate).toContain('pager-button');
     expect(themeStylesheet).toMatch(
-      /\.pager-buttons \.pager-button\s*\{[\s\S]*border-color: var\(--surface-blue-border\);[\s\S]*color: var\(--brand-green-700\);[\s\S]*background-color: var\(--surface-soft\);[\s\S]*\}/u,
+      /\.pager-buttons \.pager-button\s*\{[\s\S]*border-color: var\(--surface-blue-border\);[\s\S]*color: var\(--brand-blue-700\);[\s\S]*background-color: var\(--surface-soft\);[\s\S]*\}/u,
     );
     expect(themeStylesheet).toMatch(
-      /\.pager-buttons \.pager-button:is\(:hover, :focus-visible\)\s*\{[\s\S]*border-color: var\(--brand-green-600\);[\s\S]*color: #ffffff;[\s\S]*background-color: var\(--brand-green-600\);[\s\S]*\}/u,
+      /\.pager-buttons \.pager-button:is\(:hover, :focus-visible\)\s*\{[\s\S]*border-color: var\(--brand-blue-600\);[\s\S]*color: #ffffff;[\s\S]*background-color: var\(--brand-blue-600\);[\s\S]*\}/u,
     );
   });
 

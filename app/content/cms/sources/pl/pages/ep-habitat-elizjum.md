@@ -8,6 +8,7 @@ category: ep-atlas-mars
 subcategory: habitaty
 slots:
   asideRight:
+    - type: toc
     - type: static
       content: |
         ## Elizjum

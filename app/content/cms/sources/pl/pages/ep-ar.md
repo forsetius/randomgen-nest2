@@ -5,6 +5,9 @@ subtitle: Augmented reality
 headerImage: mid-ep-ar-head.jpg
 excerpt: Entoptyka, awatary, tagi i skórki na świat.
 category: ep-technologia
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Większość użytkowników odbiera dane ze [Splotu]{pl/ep-splot} w formie **rzeczywistości rozszerzonej** (AR) — czyli informacji nakładanych na fizyczne zmysły.
 ---

@@ -60,6 +60,9 @@
             {% if slots.asideRight %}
               <slot id="asideRight" />
             {% endif %}
+            {% if slots.aside %}
+              <slot id="aside" />
+            {% endif %}
           </div>
         {% endif %}
       </aside>
