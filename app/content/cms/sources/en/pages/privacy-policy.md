@@ -1,5 +1,5 @@
 ---
-template: page/default
+template: page/noaside
 title: Privacy policy
 langs:
   pl: polityka-prywatnosci

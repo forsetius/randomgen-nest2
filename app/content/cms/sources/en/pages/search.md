@@ -1,8 +1,8 @@
 ---
+template: page/noaside
 title: Search
 langs:
   pl: search
-template: page/default
 headerImage: mid-search-head.jpg
 searchable: false
 slots:

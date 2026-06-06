@@ -1,5 +1,5 @@
 ---
-template: page/default
+template: page/noaside
 title: Wyszukiwanie
 langs:
   en: search

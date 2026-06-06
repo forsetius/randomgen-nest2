@@ -1,6 +1,9 @@
 ---
-title: "404: Not found"
+template: page/noaside
+title: '404: Not found'
+searchable: false
 lead: |
   The page with the specified address could not be found.
 ---
+
 If you think this is a bug on the site, please send me a [bug report]{en/contact}. Thanks in advance!

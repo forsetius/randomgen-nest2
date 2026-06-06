@@ -1,4 +1,5 @@
 ---
+template: page/noaside
 title: '404: Nie znaleziono'
 subtitle: ...choć szukano
 searchable: false

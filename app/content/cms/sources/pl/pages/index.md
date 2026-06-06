@@ -11,22 +11,10 @@ slots:
       title: Ostatnie wpisy
       sources:
         - category: blog
-      count: 5
+      count: 3
       sortDir: desc
 
 blocks:
-  competence:
-    type: pageGallery
-    count: 6
-    columns: 2
-    sources:
-      - items:
-          - prog-umiejetnosci
-          - prog-doswiadczenia
-          - randomgen
-          - mod_cms
-          - web-pane
-
   interests:
     type: pageGallery
     count: 4
