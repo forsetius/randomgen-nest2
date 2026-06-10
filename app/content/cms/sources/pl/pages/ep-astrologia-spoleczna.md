@@ -1,7 +1,8 @@
 ---
 template: page/default-sf
 title: Astrologia społeczna
-excerpt: Obrzydliwie bogata arystokracja nieśmiertelnych
+excerpt: Metoda wizualizacji powiązań społecznych.
+headerImage: ep-social-astrology.jpg
 category: ep-realia
 tags:
   - niekanoniczne

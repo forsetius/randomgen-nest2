@@ -13,6 +13,14 @@ slots:
       sources:
         - category: eclipse-phase
           subcategory: main
+      columns: 2
+
+    - type: pageGallery
+      title: Chcesz wiedzieć więcej?
+      sources:
+        - category: eclipse-phase
+          subcategory: more
+      columns: 2
 
   asideRight:
     - type: static
@@ -29,12 +37,13 @@ slots:
         ## Rzeczy niekanoniczne
         Świat Eclipse Phase jest bardzo bogaty, ale aż prosi się o dopełnienie rzeczami, których nie znajdziecie w podręcznikach. W tej wiki znajdziecie więc również moje dodatki - zapożyczenia z kompatybilnej literatury i systemów RPG hard SF. Do tego dochodzą pomysły, które jakoś nie znalazły ujścia w moich przygodach, ale żal mi je wyrzucić na śmietnik. Żeby jednak była jasność co do statusu materiału, owe dodatki są oznaczone tagiem [#niekanoniczne](/pages/pl/tag.html?tag=niekanoniczne).
 
-    - type: pageGallery
-      template: page-gallery/aside-cards
-      sources:
-        - category: eclipse-phase
-          subcategory: more
-      title: Chcesz wiedzieć więcej?
+        ## Tłumaczenia
+        Staram się jak mogę oddawać znaczenie stosując zgrabne językowo i (o ile to możliwe) polskie tłumaczenie. Jednak nie jestem profesjonalnym tłumaczem - moje tłumaczenia mogą kłuć w oczy, godzić w poczytalność i powodować łysienie plackowate. Do tego nie ma kanonu tłumaczenia wielu specyficznych nazw i zwrotów wykorzystywanych w tym systemie.
+
+        Zdaję sobie też sprawę, że niektóre tłumaczenia mogą być kontrowersyjne - na przykład przełożenie Barsoomians na Fremeni podyktowane jest tym, że niewielu Polaków czytało "Księżniczkę Marsa" i pewnie niewielu przeczyta tę dość starą pozycję, natomiast zdecydowanie więcej czytało bądź widziało "Diunę".
+
+        Nie wszyscy muszą to jednak akceptować - jeśli nie pasują Ci moje tłumaczenia to zapraszam do zapoznania się z oryginałem i ew. konstruktywnej [dyskusji]{pl/kontakt}.
+
 lead: |
   **Eclipse Phase** jest [systemem RPG](http://pl.wikipedia.org/wiki/Gra_fabularna), którego akcja osadzona jest w odległej o około 120 lat przyszłości, po zagładzie Ziemi spowodowanej buntem [TITAN-ów]{pl/ep-titans} - wojskowych sztucznych inteligencji*. Jest opisywana jako post-apokaliptyczna gra konspiracji i horroru, poruszająca kwestie [transhumanizmu](http://pl.wikipedia.org/wiki/Transhumanizm), ścierania się rozmaitych ideologii politycznych i ekonomicznych oraz przetrwania w obliczu zagrożeń godzących w istnienie rodzaju ludzkiego.
 ---

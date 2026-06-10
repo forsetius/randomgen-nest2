@@ -15,20 +15,21 @@ slots:
       sortDir: desc
 
 blocks:
-  interests:
+  generators:
     type: pageGallery
-    count: 4
-    columns: 2
+    title: Generators
+    content: |
+      These tools randomly generate content suitable for RPGs.
     sources:
       - items:
-          - 2022-01-03_technobabble-generator
-          - eclipse-phase
+          - technobabble-generator
+    columns: 2
 ---
 
-**My name is Marcin and I don't like to describe myself.**
+**My name is Forseti and I don't like to describe myself.**
 
 All right...
 
-I'm called Forseti and I'm a nerd. I play [role-playing games](https://en.wikipedia.org/wiki/Role-playing_game), read science fiction, go to conventions. I do a bit of scenario writing, which I then run (or not), I create my own mechanics and settings, I program tools for RPGs. I also have other interests, see menu at the top.
+I'm called Forseti and I'm a nerd. I play role-playing games, read science fiction, go to conventions. I do a bit of scenario writing, which I then run (or not), I create my own mechanics and settings, I program tools for RPGs. I also have other interests, but I describe them on my [personal web page](https://forseti.pl/en).
 
-<block id="interests"></block>
+<block id="generators"></block>

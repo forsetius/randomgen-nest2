@@ -4,7 +4,9 @@ title: Solarne zagrożenia egzystencjalne
 headerImage: mid-ep-sun-xrisk-head.jpg
 category: ep-atlas-slonce
 subcategory: more
-
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Pierwsza rzecz, o której trzeba pamiętać, to fakt, że Słońce samo w sobie stanowi kilka zagrożeń egzystencjalnych. Jasne, wydaje się stabilne i bezpieczne – ale w gruncie rzeczy to tykająca bomba zegarowa. Sol to najpotężniejsza siła w całym Układzie i wystarczy drobne szturchnięcie w złą stronę, by doprowadzić do śmierci milionów – albo wszystkich. Oto tylko kilka z możliwych scenariuszy:
 ---

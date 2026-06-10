@@ -34,6 +34,7 @@ slots:
         - category: ep-atlas-merkury
           subcategory: habitaty
       title: Habitaty
+      columns: 2
 
 lead: |
   Merkury to pierwsza duża planeta Układu Słonecznego – i zarazem najmniejsza. To prawdziwa kwintesencja pustyni: zakurzona, sucha i nieustannie prażona przez Słońce. Idealne miejsce, żeby popracować nad opalenizną.

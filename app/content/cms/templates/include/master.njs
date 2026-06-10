@@ -43,13 +43,7 @@
       </aside>
     {% endblock %}
     
-    <article class="article
-    {% if isAsideRight %}
-      col-lg-6 col-xl-6
-    {% else %}
-      col-lg-9 col-xl-10
-    {% endif %}
-    ">
+    <article class="article col">
       {% block article %} {% endblock %}
     </article>
       

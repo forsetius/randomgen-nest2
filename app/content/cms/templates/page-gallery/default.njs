@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
   {% endif %}
   {% if content %}
-    {{ content }}
+    <p>{{ content }}</p>
   {% endif %}
   
   <div data-card-template="{{ cardTemplate }}"

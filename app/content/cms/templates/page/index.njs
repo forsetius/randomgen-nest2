@@ -1,7 +1,8 @@
 {% extends "include/master.njs" %}
-{% set isAsideRight = true %}
 
 {% block bodyClass %}home-page{% endblock %}
+
+{% block asideLeft %}{% endblock %}
 
 {% block article %}
     <div class="content">

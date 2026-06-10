@@ -15,20 +15,35 @@ slots:
       sortDir: desc
 
 blocks:
-  interests:
+  generators:
     type: pageGallery
-    count: 4
+    title: Generatory
+    content: |
+      Te narzędzia losowo generują rzeczy przydatne w grach fabularnych.
+    sources:
+      - tag: generator
     columns: 2
+
+  ep:
+    type: pageGallery
+    title: Eclipse Phase
+    content: Mnóstwo informacji o settingu Eclipse Phase.
     sources:
       - items:
-          - 2022-01-03_generator-technobelkotu
-          - eclipse-phase
+          - ep-intro
+          - ep-encyklopedia
+          - ep-atlas
+    columns: 2
 ---
 
-**Jestem Marcin i nie lubię się opisywać.**
+**Jestem Forseti i nie lubię się opisywać.**
 
 No dobrze...
 
-Mówią na mnie Forseti i jestem nerdem. Gram w gry fabularne, czytuję fantastykę, jeżdżę na konwenty. Trochę piszę scenariusze, które potem prowadzę (albo i nie), tworzę własną mechanikę i settingi, programuję narzędzia pod RPG-i. Mam też inne zainteresowania, patrz menu na górze.
+Mówią na mnie Forseti i jestem nerdem. Gram w gry fabularne, czytuję fantastykę, jeżdżę na konwenty. Trochę piszę scenariusze, które potem prowadzę (albo i nie), tworzę własną mechanikę i settingi, programuję narzędzia pod RPG-i. Mam też inne zainteresowania, ale o tym piszę na mojej [stronie osobistej](https://forseti.pl).
 
-<block id="interests"></block>
+W tym serwisie prezentuję treści, narzędzia i zasoby związane z grami fabularnymi.
+
+<block id="generators"></block>
+
+<block id="ep"></block>

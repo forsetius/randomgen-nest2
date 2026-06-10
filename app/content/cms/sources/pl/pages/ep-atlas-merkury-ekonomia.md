@@ -4,7 +4,9 @@ title: Ekonomia Merkurego
 headerImage: mid-ep-mercury-economy-head.jpg
 category: ep-atlas-merkury
 subcategory: more
-
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Poza wszechobecnym czarnym rynkiem istnieją tylko dwa legalne sposoby zarabiania kredytów na Merkurym: wydobycie i energia.
 ---

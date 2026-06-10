@@ -1,5 +1,4 @@
 {% extends "include/master.njs" %}
-{% set isAsideRight = false %}
 
 {% block article %}
   <div class="content two-columns">
@@ -8,3 +7,5 @@
   
   <slot id="bottom" />
 {% endblock %}
+
+{% block asideRight %}{% endblock %}

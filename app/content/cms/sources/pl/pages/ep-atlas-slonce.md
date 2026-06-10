@@ -28,6 +28,7 @@ slots:
       sources:
         - category: ep-atlas-slonce
           subcategory: habitaty
+      columns: 2
 
 lead: |
   Układ Słoneczny powstał miliardy lat temu w wyniku akrecji materii pozostałej po uformowaniu jego gwiazdy – Sol, czyli Słońca. Od tamtej pory wszystkie obiekty w promieniu dwóch lat świetlnych pozostają z nim związane grawitacyjnie, a ich przeszłość i teraźniejszość są ukształtowane przez relację z tym ciałem niebieskim. Słońce to jasna gwiazda typu G2 ciągu głównego – teoretycznie po gorącej stronie spektrum gwiazd zdolnych podtrzymać życie.

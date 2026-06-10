@@ -1,6 +1,7 @@
 ---
 template: page/default-sf
 title: Nastroje na Lunie
+headerImage: ep-atlas-luna-nastroje-head.jpg
 excerpt: Paranoja, konserwatyzm, silny lokalny regionalizm i rywalizacja między miastami.
 category: ep-atlas-luna
 subcategory: more
@@ -11,7 +12,7 @@ lead: |
 
 ## Paranoja
 
-Jednym z oczywistych faktów po Upadku jest to, że Luna jest najbardziej paranoicznym ze wszystkich dużych zamieszkanych światów. Zarówno bliskość [Ziemi]{pl/ep-atlas-ziemia}, jak i pamięć zniszczenia [Nowego Mumbaju]{pl/ep-habitat-nowy-mumbaj} w pełni uzasadniają te lęki. Gdy większość mieszkańców Układu wierzy, że [TITAN-i]{pl/ep-titans} odeszły przez [Wrota Pandory](#) i raczej już nie wrócą, wielu Lunarnych albo w to nie wierzy, albo obawia się ich powrotu.
+Jednym z oczywistych faktów po Upadku jest to, że Luna jest najbardziej paranoicznym ze wszystkich dużych zamieszkanych światów. Zarówno bliskość [Ziemi]{pl/ep-atlas-ziemia}, jak i pamięć zniszczenia [Nowego Mumbaju]{pl/ep-habitat-nowy-mumbaj} w pełni uzasadniają te lęki. Podczas gdy większość mieszkańców Układu wierzy, że [TITAN-i]{pl/ep-titans} odeszli przez [Wrota Pandory](#) i raczej już nie wrócą, wielu Lunarnych albo w to nie wierzy, albo obawia się ich powrotu.
 
 Lunarni doskonale pamiętają, jak jeden zarażony uchodźca z Ziemi zdołał przemycić infekcję, która zmieniła niemal całą populację Nowego Mumbai w jedno śmiercionośne gniazdo [egzoidów]{pl/ep-egzoid}. Wydarzenie to sprawiło, że wielu mieszkańców Luny jest nieufnych wobec przybyszów – zarówno spoza Luny, jak i z innych księżycowych osiedli. Te lęki doprowadziły do powstania procedur kontrolnych i kwarantannowych niespotykanych nigdzie indziej w Układzie Słonecznym.
 

@@ -60,6 +60,16 @@ describe('CmsController', () => {
       expect(response.text).toContain('class="aside-right col-lg-3 col-xl-4"');
       expect(response.text).toContain('Test aside content');
     });
+
+    it('renders inline media blocks that reuse the gallery lightbox template', async () => {
+      const response = await supertest(getBaseUrl())
+        .get('/pages/pl/poz-d.html')
+        .expect(HttpStatus.OK);
+
+      expect(response.text).toContain('href="/media/test-inline-image.jpg"');
+      expect(response.text).toContain('src="/media/test-inline-image.jpg"');
+      expect(response.text).toContain('data-caption="Inline test image"');
+    });
   });
 
   describe('GET /:lang', () => {

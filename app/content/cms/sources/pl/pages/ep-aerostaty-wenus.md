@@ -5,6 +5,15 @@ headerImage: mid-aerostat-head.jpg
 excerpt: Miasta unoszące się wysoko w atmosferze Wenus
 category: ep-habitat
 subcategory: powierzchniowe
+slots:
+  asideRight:
+    - type: pageGallery
+      template: page-gallery/aside-cards
+      title: Aerostaty
+      columns: 2
+      sources:
+        - category: ep-atlas-wenus
+          subcategory: aerostaty
 lead: |
   [Wenusjańskie]{pl/ep-atlas-wenus} miasta w chmurach należą do najbardziej niezwykłych [habitatów]{pl/ep-habitat} w całym Układzie Słonecznym. Ich egzotyczny charakter potęguje możliwość obserwowania licznych nowo wprowadzonych, unoszących się i latających [form życia]{pl/ep-atlas-wenus-zycie}, zmodyfikowanych tak, by mogły przetrwać wśród chmur. Choć znajdują się niemal pięćdziesiąt kilometrów nad jedną z najbardziej śmiercionośnych stref w Układzie, życie w tych miastach chmur należy do najbardziej ziemskich spośród wszystkich habitatów – pod względem grawitacji, temperatury i ciśnienia atmosferycznego.
 ---

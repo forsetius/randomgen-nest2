@@ -20,9 +20,10 @@ menu:
     columns:
       - title: Technobełkot
         items:
-          - title: RandomGen
-            url: '@{pl/2022-01-03_generator-technobelkotu}'
-            text: Różnorodne generatory treści, głównie do RPG
+          - title: Generator technobełkotu
+            url: '@{pl/generator-technobelkotu}'
+          - title: 'Technikalia'
+            url: '@{pl/generator-technobelkotu-technikalia}'
 
   - title: Eclipse Phase
     columns:

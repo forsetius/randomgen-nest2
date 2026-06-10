@@ -18,11 +18,12 @@ menu:
 
   - title: Generators
     columns:
-      - title: Technobełkot
+      - title: Technobabble
         items:
-          - title: RandomGen
-            url: '@{en/2022-01-03_technobabble-generator}'
-            text: Różnorodne generatory treści, głównie do RPG
+          - title: Technobabble generator
+            url: '@{en/generator-technobabble}'
+          - title: 'Technicalities'
+            url: '@{en/generator-technobabble-technical}'
 
 #  - title: RPG
 #    columns:
