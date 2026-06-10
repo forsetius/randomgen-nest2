@@ -9,7 +9,8 @@
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link id="theme" rel="stylesheet" type="text/css" href="/ui/styles.css" title="theme" />
+  <link rel="stylesheet" type="text/css" href="/ui/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/ui/syntax.css" />
   {% block css %}{% endblock %}
   <link rel="icon" type="image/x-icon" href="/ui/{{ brand.logo }}" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/pages/{{ lang }}/rss.xml" />
