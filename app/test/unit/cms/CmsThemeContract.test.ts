@@ -1,17 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import vm from 'node:vm';
 import { APP_ROOT } from '../../../src/appConstants';
-
-type DomEventListener = (event: unknown) => void;
-
-interface ThemeStylesheetLink {
-  rel?: string;
-  type?: string;
-  href?: string;
-  dataset: Record<string, string>;
-  remove: () => void;
-}
 
 function readCmsFile(...segments: string[]): string {
   return fs.readFileSync(
@@ -28,25 +17,29 @@ function readDictionary(lang: 'pl' | 'en'): Record<string, string> {
 }
 
 describe('CMS theme contract', () => {
-  test('defines translated labels for the theme selector in both dictionaries', () => {
+  test('does not define obsolete translated labels for the theme selector', () => {
     const polishDictionary = readDictionary('pl');
     const englishDictionary = readDictionary('en');
 
-    expect(polishDictionary).toMatchObject({
-      theme: 'MOTYW',
-      themeLight: 'Jasny',
-      themeDark: 'Ciemny',
-      themeSystem: 'Systemowy',
-    });
-    expect(englishDictionary).toMatchObject({
-      theme: 'THEME',
-      themeLight: 'Light',
-      themeDark: 'Dark',
-      themeSystem: 'System',
-    });
+    expect(polishDictionary).not.toHaveProperty('theme');
+    expect(polishDictionary).not.toHaveProperty('themeLight');
+    expect(polishDictionary).not.toHaveProperty('themeDark');
+    expect(polishDictionary).not.toHaveProperty('themeSystem');
+    expect(englishDictionary).not.toHaveProperty('theme');
+    expect(englishDictionary).not.toHaveProperty('themeLight');
+    expect(englishDictionary).not.toHaveProperty('themeDark');
+    expect(englishDictionary).not.toHaveProperty('themeSystem');
   });
 
-  test('keeps all theme stylesheets referenced by the theme script on disk', () => {
+  test('keeps only the light-mode stylesheet assets on disk', () => {
+    for (const fileName of ['styles.css', 'syntax.css']) {
+      expect(
+        fs.existsSync(
+          path.join(APP_ROOT, 'content', 'cms', 'static', 'ui', fileName),
+        ),
+      ).toBe(true);
+    }
+
     for (const fileName of [
       'styles-light.css',
       'styles-dark.css',
@@ -57,7 +50,7 @@ describe('CMS theme contract', () => {
         fs.existsSync(
           path.join(APP_ROOT, 'content', 'cms', 'static', 'ui', fileName),
         ),
-      ).toBe(true);
+      ).toBe(false);
     }
   });
 
@@ -137,130 +130,24 @@ describe('CMS theme contract', () => {
     expect(themeStylesheet).toMatch(
       /\.topbar__lang-link\s*\{[\s\S]*border-radius: 999px;[\s\S]*\}/u,
     );
-    expect(themeStylesheet).toMatch(
-      /\.theme-switcher__menu\s*\{[\s\S]*border-radius: 1rem;[\s\S]*\}/u,
-    );
-    expect(themeStylesheet).toMatch(
-      /\.theme-switcher__item\s*\{[\s\S]*border-radius: 0\.8rem;[\s\S]*\}/u,
-    );
+    expect(themeStylesheet).not.toContain('.theme-switcher');
     expect(themeStylesheet).toMatch(
       /\.search-form\s*\{\s*min-width: 100px;\s*\}/u,
     );
     expect(themeStylesheet).not.toContain('.search-form .form-control');
   });
 
-  test('switches syntax stylesheet according to the stored theme preference', () => {
+  test('keeps head bootstrap script free from theme switching logic', () => {
     const headScript = readCmsFile('static', 'ui', 'head.js');
-    const themeIcon = {
-      className: 'bi bi-moon-stars-fill',
-    };
-    const toggleButton = {
-      dataset: {},
-      setAttribute: jest.fn(),
-      addEventListener: jest.fn(),
-      querySelector: jest.fn(() => themeIcon),
-    };
-    const themeOptions = [
-      {
-        dataset: { themeValue: 'light' },
-        addEventListener: jest.fn(),
-        setAttribute: jest.fn(),
-      },
-      {
-        dataset: { themeValue: 'dark' },
-        addEventListener: jest.fn(),
-        setAttribute: jest.fn(),
-      },
-      {
-        dataset: { themeValue: 'system' },
-        addEventListener: jest.fn(),
-        setAttribute: jest.fn(),
-      },
-    ];
-    const mediaQueryList = {
-      matches: false,
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-    };
-    const localStorageMock = {
-      getItem: jest.fn(() => 'dark'),
-      setItem: jest.fn(),
-    };
-    const documentListeners = new Map<string, DomEventListener>();
-    const themeStylesheetLinks: ThemeStylesheetLink[] = [];
-    const context = {
-      window: {
-        htmx: { config: { allowEval: true } },
-        location: { search: '' },
-        localStorage: localStorageMock,
-        matchMedia: jest.fn(() => mediaQueryList),
-      },
-      document: {
-        addEventListener: jest.fn(
-          (eventName: string, listener: DomEventListener) => {
-            documentListeners.set(eventName, listener);
-          },
-        ),
-        createElement: jest.fn(() => {
-          const linkElement: ThemeStylesheetLink = {
-            dataset: {},
-            remove: () => {
-              const currentIndex = themeStylesheetLinks.indexOf(linkElement);
 
-              if (currentIndex >= 0) {
-                themeStylesheetLinks.splice(currentIndex, 1);
-              }
-            },
-          };
-
-          return linkElement;
-        }),
-        getElementById: jest.fn((id: string) => {
-          switch (id) {
-            case 'theme-toggle':
-              return toggleButton;
-            default:
-              return null;
-          }
-        }),
-        head: {
-          appendChild: jest.fn((element: ThemeStylesheetLink) => {
-            themeStylesheetLinks.push(element);
-          }),
-        },
-        querySelectorAll: jest.fn((selector: string) => {
-          if (selector === '[data-theme-value]') {
-            return themeOptions;
-          }
-
-          if (selector === 'link[data-theme-stylesheet]') {
-            return themeStylesheetLinks;
-          }
-
-          return [];
-        }),
-      },
-      URLSearchParams,
-      console,
-    };
-
-    vm.runInNewContext(headScript, context);
-
-    const domContentLoadedListener = documentListeners.get('DOMContentLoaded');
-
-    expect(domContentLoadedListener).toBeDefined();
-
-    domContentLoadedListener?.(new Event('DOMContentLoaded'));
-
-    expect(localStorageMock.getItem).toHaveBeenCalledWith('theme-preference');
-    expect(themeStylesheetLinks.map(({ href }) => href)).toEqual([
-      '/ui/styles-dark.css',
-      '/ui/syntax-dark.css',
-    ]);
-    expect(themeIcon.className).toBe('bi bi-moon-fill');
-    expect(mediaQueryList.addEventListener).toHaveBeenCalledWith(
-      'change',
-      expect.any(Function),
-    );
+    expect(headScript).not.toContain('theme-preference');
+    expect(headScript).not.toContain('prefers-color-scheme');
+    expect(headScript).not.toContain('styles-dark.css');
+    expect(headScript).not.toContain('styles-light.css');
+    expect(headScript).not.toContain('syntax-dark.css');
+    expect(headScript).not.toContain('syntax-light.css');
+    expect(headScript).not.toContain('theme-toggle');
+    expect(headScript).not.toContain('data-theme-value');
+    expect(headScript).not.toContain('data-theme-stylesheet');
   });
 });
