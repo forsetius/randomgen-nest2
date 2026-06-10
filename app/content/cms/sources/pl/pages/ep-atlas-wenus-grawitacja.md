@@ -2,7 +2,7 @@
 template: page/default-sf
 title: Kwestia grawitacji
 excerpt: Niemal-ziemskie ciążenie Wenus
-headerImage: mid-ep-venus-surface-head.jpg
+headerImage: mid-ep-venus-gravity-head.jpg
 category: ep-atlas-wenus
 subcategory: more
 slots:

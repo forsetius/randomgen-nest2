@@ -1,11 +1,13 @@
 ---
 template: page/default-sf
-title: Społeczeństwo i kultura orbity wokółziemskiej
+title: Kultura orbity okołoziemskiej
 excerpt: 'Społeczeństwo i kultura orbity wokółziemskiej: życie, różnorodność, wykluczenie'
 headerImage: mid-torus-head.jpg
 category: ep-atlas-ziemia-orbita
 subcategory: more
-
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Orbita Ziemi jest usiana stacjami – zarówno sprawnymi, jak i nieczynnymi. Łącznie mieszka tu nawet trzy miliony transludzi, rozproszonych po setkach różnych habitatów. Zakres tych miejsc jest szeroki: od ciasnych i archaicznych [puszek]{pl/ep-puszka} z początków programów kosmicznych, przez zatłoczone [cylindry O’Neilla]{pl/ep-cylinder-oneilla} i [torusy]{pl/ep-torus}, po monolityczne orbitalne fabryki.
 ---

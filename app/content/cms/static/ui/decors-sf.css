@@ -16,6 +16,13 @@
   background: url("decor-panel.svg") no-repeat top right;
 }
 
+#aside-right.empty {
+  background-image: url("decor-shuttle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .aside-right:has(> .d-grid:last-child)::after {
   content: "";
   display: block;

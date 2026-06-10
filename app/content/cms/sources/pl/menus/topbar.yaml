@@ -84,19 +84,19 @@ menu:
           - title: Wewnętrzne asteroidy
             url: '@{pl/ep-atlas-wewnetrzne-asteroidy}'
           - title: Pas asteroid
-            url: '@{pl/ep-atlas-merkury}'
+            url: '#'
           - title: Jowisz
-            url: '@{pl/ep-atlas-wenus}'
+            url: '@{pl/ep-atlas-jowisz}'
           - title: Saturn
-            url: '@{pl/ep-atlas-ziemia}'
+            url: '#'
           - title: Uran
-            url: '@{pl/ep-atlas-luna}'
+            url: '@{pl/ep-atlas-uran}'
           - title: Neptun
-            url: '@{pl/ep-atlas-mars}'
+            url: '#'
           - title: Dalekie obiekty
-            url: '@{pl/ep-atlas-mars}'
+            url: '#'
           - title: Egzoplanety
-            url: '@{pl/ep-atlas-mars}'
+            url: '#'
 
 #      - title: Przygody
 #        url: "@{pl/rpg-scenariusze}"

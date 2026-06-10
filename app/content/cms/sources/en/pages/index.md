@@ -22,11 +22,11 @@ blocks:
       These tools randomly generate content suitable for RPGs.
     sources:
       - items:
-          - technobabble-generator
+          - generator-technobabble
     columns: 2
+lead: |
+  **My name is Forseti and I don't like to describe myself.**
 ---
-
-**My name is Forseti and I don't like to describe myself.**
 
 All right...
 

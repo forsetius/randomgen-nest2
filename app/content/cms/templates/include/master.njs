@@ -48,7 +48,7 @@
     </article>
       
     {% block asideRight %}
-      <aside class="aside-right col-lg-3 col-xl-4">
+      <aside id="aside-right" class="aside-right col-lg-3 col-xl-4{% if not (slots and (slots.asideRight or slots.aside)) %} empty{% endif %}">
         {% if slots and (slots.asideRight or slots.aside) %}
           <div class="d-grid gap-4">
             {% if slots.asideRight %}

@@ -21,7 +21,8 @@ blocks:
     content: |
       Te narzędzia losowo generują rzeczy przydatne w grach fabularnych.
     sources:
-      - tag: generator
+      - items:
+          - generator-technobelkotu
     columns: 2
 
   ep:
@@ -34,9 +35,9 @@ blocks:
           - ep-encyklopedia
           - ep-atlas
     columns: 2
+lead: |
+  **Jestem Forseti i nie lubię się opisywać.**
 ---
-
-**Jestem Forseti i nie lubię się opisywać.**
 
 No dobrze...
 

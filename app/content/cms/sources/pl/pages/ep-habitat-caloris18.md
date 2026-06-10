@@ -1,7 +1,7 @@
 ---
 template: page/default-sf
 title: Caloris 18
-excerpt: Miejsce dawnej aktywności TYTAN-ów. Pod ścisłą kwarantanną
+excerpt: Miejsce dawnej aktywności TITAN-ów. Pod ścisłą kwarantanną
 headerImage: mid-ep-caloris18-head.jpg
 category: ep-atlas-merkury
 subcategory: habitaty

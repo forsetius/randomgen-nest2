@@ -29,6 +29,7 @@ slots:
       sources:
         - category: ep-atlas-ziemia-orbita
           subcategory: habitaty
+      columns: 2
       title: Habitaty
       content: |
         Wokół Ziemi krąży nawet pięćset habitatów o bardzo zróżnicowanych rozmiarach i przeznaczeniu. Większość to ciasne, metalowe [puszki]{pl/ep-puszka} mieszczące najwyżej kilkanaście osób, ale istnieją też ogromne struktury, takie jak [bańki Cole’a]{pl/ep-banka-colea} czy [cylindry O’Neilla]{pl/ep-cylinder-oneilla}, zaprojektowane dla setek tysięcy mieszkańców. Między nimi znajdują się stacje o różnej wielkości, pełniące funkcje laboratoriów, fabryk, portów kosmicznych, hoteli, stacji handlowych oraz instalacji obronnych i komunikacyjnych.
