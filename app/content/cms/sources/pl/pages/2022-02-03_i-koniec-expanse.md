@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: I koniec Expanse...
 excerpt: Koniec serialu Expanse. Żal, żal, serce płacze ;(
 lead: Skończył się szósty, wg zapowiedzi Amazon Prime, ostatni sezon Expanse. Żal, żal, serce płacze, był to bowiem chyba najtwardszy serial SF ever.
@@ -18,4 +18,4 @@ Myślę, że długo nie będzie równie ambitnego dzieła SF. Chyba że ktoś pr
 
 Na koniec easter egg z ostatniego odcinka. Rzut oka na monitor z odczytami funkcji życiowych członków oddziałów abordażowych. Popatrzcie na nazwiska…
 
-<block id="article-img1" type="media" template="lightbox-image" src="expanse-boarding-party-names.jpg" title="Drużyny abordażowe" />
+<block id="article-img1" type="media" template="media-gallery/lightbox" src="expanse-boarding-party-names.jpg" title="Drużyny abordażowe" />

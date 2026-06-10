@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Olimp
 subtitle: Olympus City
 headerImage: mid-ep-olympus-head.jpg
@@ -7,7 +7,7 @@ excerpt: Winda kosmiczna i podupadłe miasto wokół niej.
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Olimp
@@ -18,6 +18,7 @@ slots:
 lead: |
   Miasto w kalderze Olympus Mons, szczególnie widziane przez zawiesinę pyłu podczas burzy, przypomina zwęglony stożek kadzidła otoczony warstwami zanieczyszczeń. Przy lepszej widoczności widać centrum z wysokimi, jasno oświetlonymi wieżowcami o funkcji mieszkalno-biurowej, skupionymi wokół podstawy windy kosmicznej. Otaczają je podupadłe struktury: ciśnieniowe bloki mieszkalne, obiekty przemysłowe oraz tymczasowa zabudowa, w której światła są rozproszone i nieliczne. Lokalne targowiska są uważane za niebezpieczne, a niektóre z ich sekcji są nieogrzewane i tylko częściowo pod ciśnieniem.
 ---
+
 W szczytowym okresie populacja miasta wynosiła sześć milionów, jednak wraz z postępem terraformowania i poprawą warunków w innych [rejonach]{pl/ep-atlas-mars-regiony}, takich jak Valles Marineris, Argyre czy Hellas, wielu mieszkańców przeniosło się do bardziej sprzyjających osiedli. Dalszy spadek liczby ludności nastąpił w wyniku masowych ewakuacji podczas [Upadku]{pl/ep-upadek}.
 
 Ewakuacja, zorganizowana przez zarządzające miastem Władze Infrastruktury Olimpu, miała na celu zabezpieczenie infrastruktury po pojawieniu się doniesień o możliwości infekowania ludzi przez wirusy [TITAN-ów]{pl/ep-titans}. Z powodów politycznych i logistycznych wielu ewakuowanych nie zostało przyjętych przez inne duże miasta, takie jak [Noctis](#) czy [Nowy Szanghaj](#). Zamiast tego zostali przesiedleni do tymczasowych obozów w regionach Amazonis i Tharsis, wykorzystujących nadmuchiwane kopuły i prefabrykowane moduły mieszkalne.

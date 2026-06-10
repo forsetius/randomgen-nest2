@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Shackle
 headerImage: mid-ep-shackle-head.jpg
 excerpt: Księżycowe miasto lodu i wody, centrum kultury indyjskiej, rezerwy strategiczne.
 category: ep-atlas-luna
 subcategory: powierzchnia
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Shackle
@@ -15,8 +15,9 @@ slots:
         - **Przynależność**: [Sojusz Wokółziemski]{pl/ep-sojusz-wokolziemski}
         - **Główne języki**: angielski, hindi
 lead: |
-  Shackle to drugie co do wielkości i zarazem najważniejsze miasto na [Lunie]{pl/ep-atlas-luna}. Powstało przy niewielkich, lecz kluczowych złożach lodu księżycowego znajdujących się w głębokich kraterach i płytkich jaskiniach w rejonie południowego bieguna. To właśnie Shackle jest źródłem całej wody na Lunie, a osada została założona, by wydobywać i przetwarzać ten lód. 
+  Shackle to drugie co do wielkości i zarazem najważniejsze miasto na [Lunie]{pl/ep-atlas-luna}. Powstało przy niewielkich, lecz kluczowych złożach lodu księżycowego znajdujących się w głębokich kraterach i płytkich jaskiniach w rejonie południowego bieguna. To właśnie Shackle jest źródłem całej wody na Lunie, a osada została założona, by wydobywać i przetwarzać ten lód.
 ---
+
 Obecnie inżynierowie środowiskowi zarządzający Shackle odpowiadają za gospodarkę lodem; większość złóż już wydobyto i umieszczono w szczelnie zamkniętych komorach. Poszukiwacze lodu nadal korzystają z różnorodnych metod geologicznych, by odnaleźć nowe złoża. Odkąd trzy lata temu mała firma poszukiwawcza odkryła nieznane wcześniej, średniej wielkości złoże, wiele osób ma nadzieję, że na Lunie zostały jeszcze znaczne ilości lodu do odkrycia. Większość dużych firm górniczych uważa jednak, że duże złoża się skończyły, i skupia się na ewentualnym uzupełnianiu zasobów wody poprzez sprowadzanie lodu z innych światów.
 
 Choć Shackle zostało założone przede wszystkim przez konsorcjum [hiperkorpów]{pl/ep-hiperkorporacja}, istotny udział w jego powstaniu miały rząd indyjski i duże korporacje indyjskie. Dzięki temu Shackle pozostaje największym centrum kultury indyjskiej na Lunie – ponad 40% jego mieszkańców identyfikuje się kulturowo i religijnie jako Hindusi.

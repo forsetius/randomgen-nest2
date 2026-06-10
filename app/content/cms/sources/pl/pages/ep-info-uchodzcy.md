@@ -1,15 +1,14 @@
 ---
-template: page-default
+template: page/default-sf
 title: Info-uchodźcy
 subtitle: Infugees
 headerImage: mid-ep-infugee-head.jpg
 excerpt: Wirtualni uchodźcy z Ziemi pozbawieni wszelkich rzeczy materialnych - nawet ciał
 lead: |
-    W ostatniej fazie [Upadku]{pl/ep-upadek} i ewakuacji Ziemi ponad czterysta milionów uchodźców zostało załadowanych i [przetransmitowanych](#) do orbitalnych baz danych w całym Układzie Słonecznym. Zmuszeni byli opuścić Ziemię bez jakiegokolwiek dobytku — nawet bez własnych ciał. Stali się [infomorfami]{pl/ep-infomorf}, którzy nie posiadali nic prócz własnego umysłu i wspomnień — była to najbiedniejsza grupa uchodźców w historii transhumanizmu.
+  W ostatniej fazie [Upadku]{pl/ep-upadek} i ewakuacji Ziemi ponad czterysta milionów uchodźców zostało załadowanych i [przetransmitowanych](#) do orbitalnych baz danych w całym Układzie Słonecznym. Zmuszeni byli opuścić Ziemię bez jakiegokolwiek dobytku — nawet bez własnych ciał. Stali się [infomorfami]{pl/ep-infomorf}, którzy nie posiadali nic prócz własnego umysłu i wspomnień — była to najbiedniejsza grupa uchodźców w historii transhumanizmu.
 category: ep-realia
-
-
 ---
+
 W latach po Upadku znaczna część tych _info-uchodźców_ została [przyodziana]{pl/ep-przyodziewanie} w nowe [morfy]{pl/ep-morf}. W pierwszej kolejności ciała otrzymali ci, którzy dysponowali cennymi umiejętnościami, a następnie osoby posiadające przyjaciół lub krewnych żyjących już na orbicie, którzy mogli wziąć odpowiedzialność za ich przyodzianie.
 
 Te dwie grupy stanowiły jednak tylko połowę uchodźców. Pozostali znaleźli się w znacznie trudniejszej sytuacji. Pozbawieni zarówno kontaktów osobistych, jak i przydatnych umiejętności, nie mieli nikogo, kto mógłby im pomóc. W pierwszych latach wielu z nich podpisywało [kontrakty]{pl/ep-sluzba}, w których w zamian za przyodzianie i gwarancję podstawowego dochodu zobowiązywali się do pracy lub innych usług. Z powodu krytycznych niedoborów siły roboczej w pierwszych pięciu latach po Upadku, kolejne trzydzieści procent uchodźców odzyskało ciała (najczęściej tanie [morfy syntetyczne]{pl/ep-syntmorf}. Ci kontraktowi pracownicy wykonywali wszelkiego rodzaju kluczowe zadania — od odzyskiwania przydatnych urządzeń z ruin habitatów, przez górnictwo i zaganianie asteroid, po służbę u bogatych jako ochroniarze czy służący, a nawet świadczenie mniej moralnych usług na rzecz syndykatów przestępczych. Większość z nich pracowała przy budowie nowych habitatów orbitalnych, które z czasem stały się ich domem.

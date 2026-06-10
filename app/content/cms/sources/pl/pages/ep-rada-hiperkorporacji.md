@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Rada Hiperkorporacji
 excerpt: Faktyczne centrum władzy Konsorcjum
 headerImage: leo-planetary-consortium-head.jpg
@@ -9,6 +9,7 @@ sort: 3
 lead: |
   Choć tysiące [hiperkorpów]{pl/ep-hiperkorporacja} są pełnoprawnymi członkami [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} — jako podmiotu gospodarczego — zdecydowana większość nie posiada realnej siły głosu (poza [Ministerstwem]{pl/ep-ministerstwo-konsorcjum}) ani udziałów. Przywileje te są zarezerwowane dla korporacji założycielskich Konsorcjum, których skład od dekady niemal się nie zmienił.
 ---
+
 W praktyce to **Rada Hiperkorpów** stanowi najwyższą władzę w strukturze Konsorcjum. Posiada de facto władzę wykonawczą, prawo weta wobec każdego aktu prawnego oraz ostateczną decyzję w sprawach sądowych i apelacyjnych. Mimo dominującej pozycji, Rada stara się unikać zbyt jawnego sprzeciwu wobec opinii publicznej — a raczej wobec opinii innych hiperkorpów — zwłaszcza w przypadkach bliskiego konsensusu. Jej członkowie dobrze wiedzą, że ich władza opiera się na przychylności społeczeństwa i wsparciu innych korporacji, dlatego zatrudniają całe zespoły inżynierów społecznych dbających o odpowiedni odbiór społeczny.
 
 Ostatnią rzeczą, jakiej Rada chce, to zostać postrzegana jako dyktatorski reżim, więc dokłada wszelkich starań, by tego uniknąć. Nie oznacza to jednak, że nie potrafi narzucić swojej woli, kiedy uzna to za konieczne — czego dowodzą choćby pogorzeliska po kilku zbyt pewnych siebie korporacjach i koloniach. Tego rodzaju interwencje są jednak przeprowadzane z zachowaniem subtelności i wyczucia, nawet jeśli niosą za sobą zdecydowane przesłanie.

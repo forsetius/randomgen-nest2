@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Szopa
 subtitle: The Shack
 headerImage: leo-ep-shack-head.jpg
@@ -7,7 +7,7 @@ excerpt: Aerostat - stocznia, budujący nowe aerostaty
 category: ep-atlas-wenus
 subcategory: aerostaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Szopa
@@ -18,6 +18,7 @@ slots:
 lead: |
   Największy z wenusjańskich [aerostatów]{pl/ep-aerostaty-wenus} ma zarazem najmniejszą populację. Znany jest wyłącznie jako Szopa. Mieszka w nim 130 000 osób, a jego jedynym celem istnienia jest budowa kolejnych aerostatów. Konstrukcja obiektów unoszących się w atmosferze to zadanie niełatwe — dopóki aerostat nie zostanie wypełniony powietrzem nadającym się do oddychania i odpowiednio uszczelniony, bardzo łatwo może runąć w ogniste głębiny Wenus.
 ---
+
 Aby ułatwić budowę, Szopa wykorzystuje szereg dużych platform konstrukcyjnych podtrzymywanych przez ogromne balony wypełnione powietrzem. Balony te mają formę kopuł umieszczonych na wierzchołkach platform, tak aby pracownicy mieli dostęp do atmosfery zdatnej do oddychania. Sam habitat ma formę raczej niewielkiego miasta, z którego wychodzi sześć wysięgników — każdy o długości 400 metrów — zakończonych właśnie tymi kopułkowymi platformami budowlanymi.
 
 Dopóki populacja Wenus będzie się rozrastać, potrzebne będą nowe aerostaty, a Szopa będzie miała ręce pełne roboty. Obecnie trwają prace nad dwoma nowymi aerostatami, a trzeci jest już zamówiony.

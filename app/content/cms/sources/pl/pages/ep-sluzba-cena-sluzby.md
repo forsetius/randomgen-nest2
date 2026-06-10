@@ -1,11 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Cena służby
-excerpt: "Społeczna cena kontraktu służebnego: pętla ubóstwa, VR-przynęty i opór abolicjonistów."
+excerpt: 'Społeczna cena kontraktu służebnego: pętla ubóstwa, VR-przynęty i opór abolicjonistów.'
 category: ep-sluzba
 lead: |
-  [Kontrakt służebny]{pl/ep-sluzba} towarzyszy społeczeństwu transludzkiemu jeszcze od czasów sprzed [Upadku]{pl/ep-upadek}, a z biegiem lat stał się zjawiskiem coraz powszechniejszym i silniej zakorzenionym w porządku społecznym. Pierwsze wielkie fale sług kontraktowych na [Marsie]{pl/ep-atlas-mars} i w [habitatach]{pl/ep-habitat} [księżycowych]{pl/ep-atlas-luna} w większości ukończyły już swoje pierwotne okresy służby — mniej lub bardziej pomyślnie — choć wiele osób nadal pozostaje zadłużonych i musi kontynuować pracę. 
+  [Kontrakt służebny]{pl/ep-sluzba} towarzyszy społeczeństwu transludzkiemu jeszcze od czasów sprzed [Upadku]{pl/ep-upadek}, a z biegiem lat stał się zjawiskiem coraz powszechniejszym i silniej zakorzenionym w porządku społecznym. Pierwsze wielkie fale sług kontraktowych na [Marsie]{pl/ep-atlas-mars} i w [habitatach]{pl/ep-habitat} [księżycowych]{pl/ep-atlas-luna} w większości ukończyły już swoje pierwotne okresy służby — mniej lub bardziej pomyślnie — choć wiele osób nadal pozostaje zadłużonych i musi kontynuować pracę.
 ---
+
 Info-uchodźcy z czasów Upadku wciąż powoli wracają do społeczeństwa, a [hiperkorpy]{pl/ep-hiperkorporacja} zaangażowane w ten handel stworzyły całe działy wypełnione wyłącznie sługami kontraktowymi, którymi łatwo manipulować za pomocą systemu zachęt do zmiany lub skrócenia okresów służby. Początkowa niestabilność społeczna i konkurencja o zasoby, które wystąpiły bezpośrednio po Upadku, zostały w dużej mierze opanowane, a ponieważ kontrakt służebny jest legalny w większości habitatów, istnieją instytucje nadzoru i egzekwowania przepisów, mające rzekomo zapewniać, że system ten pozostaje bezpieczny i „humanitarny”.
 
 Zwolennicy kontraktów służebnych wskazują te fakty jako dowód na to, że mamy do czynienia z systemem stabilnym, który przynosi korzyści wszystkim stronom. Coraz częściej pojawia się jednak krytyka, że powszechność tego systemu prowadzi do samonapędzających się cykli zniewolenia.

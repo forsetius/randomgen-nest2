@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ekonomia przejściowa
 headerImage: mid-ep-mixed-economy-head.jpg
 excerpt: Gospodarka hybrydowa między starą a nową ekonomią
@@ -8,6 +8,7 @@ sort: 2
 lead: |
   **Gospodarka przejściowa** to system znacznie bardziej stabilny i łatwiejszy w utrzymaniu niż [stary model]{pl/ep-ekonomia-stara}. Łączy ona elementy starej i [nowej gospodarki]{pl/ep-ekonomia-nowa}; [habitaty]{pl/ep-habitat} opierające się na tym systemie oferują zarówno prywatną własność [maszyn obfitości](#), jak i publiczne fabbery oraz makery, do których dostęp jest wolny. Publiczne maszyny są jednak ściśle ograniczone pod względem rodzajów dóbr, które mogą wytwarzać, a surowce wymagane do produkcji złożonych przedmiotów podlegają ścisłej kontroli. Przykładami gospodarek przejściowych są [Mars]{pl/ep-atlas-mars}, [Wenus]{pl/ep-atlas-wenus}, [Luna]{pl/ep-atlas-luna} oraz większość habitatów [wewnętrznego Układu]{pl/ep-wewnetrze}.
 ---
+
 Dla mieszkańców gospodarki przejściowej wytwarzanie jedzenia, niesmartowej odzieży, mebli i większości innych prostych, nieformatowalnych przedmiotów to sprawa trywialna. Publiczne maszyny do nanofabrykacji mogą jednak tworzyć jedynie obiekty pozbawione elektroniki lub zawierające tylko proste układy elektroniczne informujące o stanie i położeniu przedmiotu. Produkcja takich dóbr wymaga jedynie maszyny oraz podstawowych pierwiastków: węgla, wodoru, tlenu, azotu, krzemu, żelaza, aluminium oraz niewielkich ilości pierwiastków śladowych. Wszystkie te surowce są na tyle powszechne, że ich zdobycie jest łatwe i tanie.
 
 W oparciu o te składniki, dostępne dla wszystkich obywateli płacących podatki, nanofabbery mogą wytwarzać ogromny wachlarz dóbr: od jedwabnych garniturów, przez stoły imitujące polerowane hebanowe i mahoniowe drewno, po kolorowe kielichy ze szkła artystycznego i porcelanowe filiżanki. Mogą także przygotować wykwintną kolację wraz z kompletem naczyń i sztućców. Aby pokryć koszt energii i surowców, wszyscy mieszkańcy płacą niewielki podatek.

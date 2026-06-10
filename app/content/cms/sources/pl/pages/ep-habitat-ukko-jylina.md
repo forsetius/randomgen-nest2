@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ukko Jylinä
 excerpt: Główna baza Solarian
 headerImage: mid-ep-ukko-jylina-head.jpg
@@ -7,7 +7,7 @@ category: ep-atlas-slonce
 subcategory: habitaty
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ukko Jylinä
@@ -16,11 +16,12 @@ slots:
         - **Przynależność**: [Solarianie]{pl/ep-solarianie}
         - **Główne języki**: fiński, solariański
 lead: |
-  Ukko Jylinä to habitat wyróżniający się tym, że został zaprojektowany przez i dla [Solarian]{pl/ep-solarianie}, którzy uważają się za miejscowych mieszkańców korony słonecznej – a nie przedstawicieli odległych mocarstw. 
+  Ukko Jylinä to habitat wyróżniający się tym, że został zaprojektowany przez i dla [Solarian]{pl/ep-solarianie}, którzy uważają się za miejscowych mieszkańców korony słonecznej – a nie przedstawicieli odległych mocarstw.
 ---
-Nazwa habitatu pochodzi od charakterystycznej sekwencji [heliosejsmicznych](https://pl.wikipedia.org/wiki/Heliosejsmologia) drgań, przetransponowanej o piętnaście oktaw w górę, do zakresu słyszalnego dla transludzi. [Surjowie](#) uważają tę harmonię za jeden z najpiękniejszych dźwięków, jakie wydaje [Słońce]{pl/ep-atlas-slonce}. 
 
-Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz słonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania zapasów wody, [egotransferów]{pl/ep-egotransfer} i [przyodziewania]{pl/ep-przyodziewanie}. 
+Nazwa habitatu pochodzi od charakterystycznej sekwencji [heliosejsmicznych](https://pl.wikipedia.org/wiki/Heliosejsmologia) drgań, przetransponowanej o piętnaście oktaw w górę, do zakresu słyszalnego dla transludzi. [Surjowie](#) uważają tę harmonię za jeden z najpiękniejszych dźwięków, jakie wydaje [Słońce]{pl/ep-atlas-slonce}.
+
+Habitat służy jako bezpieczna przystań dla surjów podczas silnych burz słonecznych, a także jako miejsce spotkań, rozrodu, uzupełniania zapasów wody, [egotransferów]{pl/ep-egotransfer} i [przyodziewania]{pl/ep-przyodziewanie}.
 
 Liczba jego mieszkańców waha się od 300 do nawet 3000 (czyli niemal całej populacji surjów) w okresach złej pogody. Surjowie tłoczą się wtedy w osłoniętych modułach hangarowo-użytkowych, spędzając czas w symuloprzestrzeniach [VR]{pl/ep-vr}) i zazwyczaj wysyłając [forki]{pl/ep-fork}, by przyodziać się w morfy typu salamandra, jeśli potrzebne jest działanie w bardziej humanoidalnej formie.
 

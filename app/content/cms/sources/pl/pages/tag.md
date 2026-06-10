@@ -1,11 +1,12 @@
 ---
-template: page-tag-full-width
+template: page/noaside
 title: Strony z tagiem
 searchable: false
 slots:
   bottom:
     - type: static
-      template: form-tag
-      content: ""
+      template: block/form-tag
+      content: ''
 ---
+
 Znaleziono następujące strony:

@@ -1,13 +1,17 @@
 ---
-template: page-default
+template: page/default-sf
 title: Powierzchnia Wenus
 excerpt: Piekło na powierzchni Wenus
 headerImage: mid-ep-venus-surface-head.jpg
 category: ep-atlas-wenus
 subcategory: more
+slots:
+  asideRight:
+    - type: toc
 lead: |
   Powierzchnia Wenus to jedno z najmniej gościnnych miejsc w całym Układzie Słonecznym. Temperatury sięgają 500°C, a ciśnienie atmosferyczne wynosi prawie 100 razy tyle co na Ziemi. W takich warunkach ołów pozostaje w stanie ciekłym, a temperatury są wystarczająco wysokie, by osłabiać większość konwencjonalnych stopów metali.
 ---
+
 Chmury kwasu siarkowego blokują zdecydowaną większość światła widzialnego, a różnorodne złożone związki chemiczne w dolnych warstwach atmosfery ograniczają widoczność do kilku kilometrów, często znacznie mniej. Najdziwniejsze jednak jest to, że atmosfera przy powierzchni planety jest tak gęsta, że światło ulega załamaniu w sposób sprawiający wrażenie, że każda osoba znajdująca się na powierzchni stoi na dnie ogromnej misy, z horyzontem wznoszącym się ze wszystkich stron.
 
 [Biomorfy]{pl/ep-biomorf} i [pody]{pl/ep-pod} nie są w stanie przetrwać na powierzchni Wenus. Nawet konwencjonalne [morfy syntetyczne]{pl/ep-syntmorf}, które zazwyczaj cechują się dużą wytrzymałością, ulegałyby zniszczeniu w ciągu mniej niż minuty. W związku z tym wszystkie robotyczne drony i morfy syntetyczne używane na powierzchni Wenus są wykonane z kwarcu i rozmaitych stopów odpornych na wysoką temperaturę.
@@ -33,6 +37,7 @@ Oczywiście minusem pracy na powierzchni jest ryzyko, że pracownik zostanie zab
 Niekiedy również niezależni poszukiwacze i badacze, niepowiązani z żadną korporacją wydobywczą ani hiperkorporacją, przyodziewają się w morfy przystosowane do powierzchni, by eksplorować wenusjański krajobraz. Szczególnie dotyczy to tych, którzy chcą uniknąć transmisji mogących zdradzić cenne znaleziska lub wskazówki dotyczące ich działań.
 
 ## Polityka i surowce
+
 Jednym z głównych wyzwań, z którymi mierzy się populacja Wenus, jest kwestia samowystarczalności. Powierzchnia planety to jedyny lokalny dostęp do metali i innych ciężkich pierwiastków. Import takich surowców spoza świata jest kosztowny. Dodatkowo, nieufność między [Konstelacją Gwiazdy Zarannej]{pl/ep-konstelacja-gwiazdy-zarannej} a [Konsorcjum Planetarnym]{pl/ep-konsorcjum-planetarne}, oraz obawa, że kiedyś może dojść do poważnych napięć między nimi, inspiruje wielu Wenusjan do dążenia do możliwie pełnej samowystarczalności, przynajmniej w zakresie podstawowych surowców.
 
 Ponadto, popularna jest idea, że każdy aerostat powinien być niezależną częścią Konstelacji Gwiazdy Zarannej. W rezultacie, większość surowców potrzebnych aerostatom i rosnącej populacji Wenus jest obecnie pozyskiwana z gęstej atmosfery lub z powierzchni planety. Oznacza to, że wydobycie powierzchniowe prawdopodobnie wzrośnie w nadchodzącej dekadzie.

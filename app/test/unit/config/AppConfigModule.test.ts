@@ -275,28 +275,19 @@ describe('configBindings', () => {
           headerImage: 'index-head.jpg',
         },
         brand: {
-          name: 'Forseti: Abstract Works',
-          copyright: '© 2025 by Marcin "Forseti" Paździora',
-          logo: 'logo-w.png',
-        },
-        templates: {
-          rssFeed: 'rss-feed',
-          fragmentCard: 'fragment-img-card',
-          fragmentListItem: 'fragment-list-item',
-          pageDefault: 'page-default',
-          blockPlain: 'block-plain',
-          lightboxGallery: 'lightbox-gallery',
-          lightboxImage: 'lightbox-image',
-          partialGallerySet: 'partial-gallery-set',
+          name: 'Forseti: abstract worlds',
+          copyright: '© 2026 Marcin Paździora',
+          logo: 'logo.svg',
         },
       });
 
       expect(config.cms).toEqual({
         contact: {
           recipient: {
-            address: 'forseti@forseti.pl',
+            address: 'marcin.pazdziora@forseti.pl',
           },
         },
+        legacyRedirects: [],
       });
     } finally {
       await testingModule.close();

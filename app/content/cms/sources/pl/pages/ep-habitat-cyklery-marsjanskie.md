@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Marsjanskie cyklery
 excerpt: Wielkie statki na trajektorii Ziemia–Mars, niektóre dziś to bastiony przestępczości i niezależności.
 headerImage: leo-ep-cycler-head.jpg
@@ -8,6 +8,7 @@ subcategory: remote-habs
 lead: |
   Cyklery marsjańskie to duże statki umieszczone na trajektorii wspomaganej grawitacyjnie, zaprojektowanej tak, by nieustannie „krążyły” między [Ziemią]{pl/ep-atlas-ziemia} a [Marsem]{pl/ep-atlas-mars}, zużywając niemal zerowe ilości paliwa (poza drobnymi korektami kursu). Chiński program kolonizacyjny intensywnie inwestował w te statki przed [Upadkiem]{pl/ep-upadek}.
 ---
+
 Połowa z nich podąża trasą, w której przelot z Ziemi na Marsa zajmuje 5 miesięcy, a powrót – 21 miesięcy (z czego 16 spędzają poza orbitą Marsa), co daje pełny cykl o długości 2 lat. Druga połowa cyklerów porusza się odwrotną trasą, także z pięciomiesięcznym czasem transferu z Marsa na Ziemię.
 
 Wiele z tych statków wciąż działa, przewożąc ludzi i towary między Marsem a systemem Ziemia–[Luna]{pl/ep-atlas-luna}. Wyróżniają się zwłaszcza cztery jednostki:

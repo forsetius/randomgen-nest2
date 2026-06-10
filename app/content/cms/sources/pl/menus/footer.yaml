@@ -1,32 +1,30 @@
-template: menu-footer
+template: menu/footer
 menu:
   - title: Kontakt
     items:
       - title: Formularz kontaktowy
-        url: "@{pl/kontakt}"
+        url: '@{pl/kontakt}'
 
       - title: Zasubskrybuj RSS
         url: /pages/pl/rss.xml
 
   - title: Linki
     items:
+      - title: Forseti.pl
+        url: https://forseti.pl
+
       - title: GitHub
         url: https://github.com/forsetius
 
       - title: LinkedIn
         url: https://www.linkedin.com/in/marcin-paździora-09a94625a
 
-  - title: Projekty
-    items:
-      - title: RandomGen
-        url: "@{pl/randomgen}"
-      - title: Mod_CMS
-        url: "@{pl/mod_cms}"
-      - title: Web-pane
-        url: "@{pl/web-pane}"
+  #  - title: Do pobrania
+  #    items:
+  #      - title: RandomGen
+  #        url: "@{pl/randomgen}"
 
   - title: Blurby
     items:
       - title: Polityka prywatności
-        url: "@{pl/polityka-prywatnosci}"
-
+        url: '@{pl/polityka-prywatnosci}'

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Muchołapka
 subtitle: Flytrap
 excerpt: Zdewastowany, śmierdzący habitat z przerostem flory i zmutowaną fauną
@@ -7,7 +7,7 @@ headerImage: mid-ep-flytrap-head.jpg
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Muchołapka
@@ -16,6 +16,7 @@ slots:
 lead: |
   Początkowo znany jako De Milo, ten habitat typu torus został zaprojektowany i zbudowany jako prywatne miejsce wypoczynkowe dla najwyższej kadry [hiperkorpu]{pl/ep-hiperkorporacja} OneCom oraz ich wybranych gości. Luksusowy klub prywatny De Milo oferował najwyższej klasy jedzenie, wina, zakwaterowanie i obsługę w bujnym, leśnym otoczeniu przy niskiej grawitacji. OneCom chwaliło się prywatnie swoimi winnicami, gajami, basenami i ogrodami, a także specjalnie zaprojektowaną fauną — unikalnymi, licencjonowanymi chimerami dostarczonymi przez [Ecologene]{pl/ep-ecologene}.
 ---
+
 Na wczesnym etapie [Upadku]{pl/ep-upadek} De Milo padło ofiarą cyfrowej inwazji ze strony [TITAN-ów]{pl/ep-titans}. Choć część mieszkańców i gości zdołała uciec, setki osób zginęły, najwyraźniej zwrócone przeciwko sobie nawzajem (co może świadczyć o infekcji [egzowirusem]{pl/ep-egzowirus}). Nieudana próba zniszczenia stacji zakończyła się jedynie wysadzeniem fragmentu pierścienia torusa, pozostawiając ziejącą wyrwę w strukturze.
 
 Wkrótce po Upadku jednostki wojskowe [SWZ]{pl/ep-sojusz-wokolziemski} przeprowadziły inspekcję i oczyszczenie stacji, nie znajdując żadnych oznak aktywności TITAN-ów ani ich maszyn. OneCom nie przetrwał likwidacji kierownictwa w wyniku ataku oraz innych incydentów z czasu Upadku, co doprowadziło do rozpadu korporacji i jej przejęcia przez rywali. Wobec braku właściciela, SWZ przejęło stację i przekształciło ją w prowizoryczny obóz dla uchodźców, transportując setki zubożałych ocalałych z przeludnionych [habitatów]{pl/ep-habitat}.

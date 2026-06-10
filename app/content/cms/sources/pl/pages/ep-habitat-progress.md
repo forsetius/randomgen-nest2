@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Progres
 subtitle: Progress
 excerpt: Centrum władzy Konsorcjum Planetarnego i przemysłu orbitalnego
@@ -9,6 +9,7 @@ subcategory: orbitale
 lead: |
   **Progres** to stacja orbitalna znajdująca się na orbicie Marsa, której pełny obieg wokół planety trwa około 30 godzin. Dawniej znana jako księżyc [Deimos](https://pl.wikipedia.org/wiki/Deimos_(ksi%C4%99%C5%BCyc)), obecnie ma postać [bańki Cole’a]{pl/ep-banka-colea} z panoramicznymi oknami, przypominającego masywny kamienny [cylinder O’Neilla]{pl/ep-cylinder-oneilla} o lekko zwężających się końcach. Przy obu osiach obrotu znajdują się ruchliwe porty kosmiczne.
 ---
+
 Stacja pełni funkcję centrum działalności [hiperkorpów]{pl/ep-hiperkorporacja}, szczególnie w sektorach zarządzania, transportu i usług. Znajdują się tu m.in. bazy korporacyjne, luksusowe osiedla oraz rozbudowana infrastruktura obsługująca pracowników wyższego szczebla i ich rodziny.
 
 Palenie tytoniu jest tu powszechną praktyką i pełni funkcję statusową – rodzaj i marka papierosów wskazują na miejsce danej osoby w hierarchii korporacyjnej. Wokół stacji orbitują dwie instalacje hydroponiczne przeznaczone wyłącznie do uprawy tytoniu.

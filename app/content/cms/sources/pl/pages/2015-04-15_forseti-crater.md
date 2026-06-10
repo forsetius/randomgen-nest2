@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 headerImage: fb-forseti-crater-head.jpg
 title: Forseti Crater
 subtitle: Tytan
@@ -12,6 +12,6 @@ tags:
   - astro
 ---
 
-Jestem bardzo zadowolony, że imię [patrona](https://pl.wikipedia.org/wiki/Forseti), od którego wziąłem swój przydomek, zostało przyjęte jako nazwa obiektu na ciele niebieskim - i nie byle jakim, ale moim ulubionym Tytanie! 
+Jestem bardzo zadowolony, że imię [patrona](https://pl.wikipedia.org/wiki/Forseti), od którego wziąłem swój przydomek, zostało przyjęte jako nazwa obiektu na ciele niebieskim - i nie byle jakim, ale moim ulubionym Tytanie!
 
 Teraz wiem, kiedy świętować imieniny ;)

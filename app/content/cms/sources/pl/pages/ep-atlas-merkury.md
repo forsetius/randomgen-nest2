@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Merkury
 excerpt: Spalona Słońcem planeta-kopalnia odkrywkowa
 headerImage: mid-ep-mercury-head.jpg
@@ -8,7 +8,7 @@ subcategoryName: Merkury
 sort: 3
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## [Merkury](https://pl.wikipedia.org/wiki/Merkury)
@@ -22,7 +22,7 @@ slots:
         ## Mapa Merkurego
         <a href="https://i.imgur.com/KrVzZHK.jpg">![Mapa Merkurego](https://i.imgur.com/KrVzZHK.jpg)</a>
     - type: pageGallery
-      template: aside-cards
+      template: page-gallery/aside-cards
       title: Chcesz wiedzieć więcej?
       sources:
         - category: ep-atlas-merkury
@@ -34,10 +34,12 @@ slots:
         - category: ep-atlas-merkury
           subcategory: habitaty
       title: Habitaty
-      
+      columns: 2
+
 lead: |
   Merkury to pierwsza duża planeta Układu Słonecznego – i zarazem najmniejsza. To prawdziwa kwintesencja pustyni: zakurzona, sucha i nieustannie prażona przez Słońce. Idealne miejsce, żeby popracować nad opalenizną.
 ---
+
 [Doba syderyczna](https://pl.wikipedia.org/wiki/Doba_gwiazdowa) Merkurego trwa dwie trzecie jego krótkiego roku, co oznacza, że Słońce pełznie po czarnym niebie planety, a powierzchnia doświadcza piekielnych skrajności temperatury – od palącego żaru po lodowaty chłód. Ponieważ Merkury nie ma atmosfery, która mogłaby je wyrównywać, średnia amplituda dobowych wahań temperatury sięga 620 stopni Celsjusza. Może nie być oczywiste, że można zamarznąć dosłownie o krok od wrzącej powierzchni Słońca – ale można.
 
 Powierzchnia Merkurego usiana jest kraterami uderzeniowymi – świadectwem nieustannego bombardowania przez meteoryty, przyciągane przez ogromną grawitację [Słońca]{pl/ep-atlas-slonce}. Burzliwa historia planety – w połączeniu z wielokrotnymi cyklami cieplnymi – doprowadziła do rozpadu skał i pokrycia jej powierzchni grubą warstwą pyłu. Płaszcz czasu zalega ciężko na obliczu tego małego świata. Obecnie nowe blizny dodają do tej skorupy liczne kopalnie odkrywkowe.

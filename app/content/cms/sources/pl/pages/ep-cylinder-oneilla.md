@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Cylinder O'Nealla
 headerImage: mid-oneill-head.jpg
 excerpt: Klasyczne stacje kosmiczne o kształcie cylindra
 category: ep-habitat
 subcategory: kosmiczne
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## O cylindrach O'Neilla
@@ -15,6 +15,7 @@ slots:
 lead: |
   > Klasyka gatunku. Jakby ktoś zwinął Ziemię w rolkę i puścił ją w obrót. Sześć pasów – trzy zielone, trzy przezroczyste, wszystko obraca się jak karuzela dla bogatych. Można tam żyć całe życie i nigdy nie spojrzeć w prawdziwe niebo. Czasem zapominam, że to w ogóle stacja, nie planeta.
 ---
+
 **Cylindry O’Neilla**, znajdujące się głównie na orbitach [Ziemi]{pl/ep-atlas-ziemia}, [Luny]{pl/ep-atlas-luna}, [Wenus]{pl/ep-atlas-wenus} i [Marsa]{pl/ep-atlas-mars}, były jednymi z pierwszych wielkoskalowych projektów habitatów kosmicznych w historii transludzkości. Obecnie nie są już budowane – zastąpiono je wydajniejszymi konstrukcjami – jednak nadal zamieszkują je dziesiątki milionów ludzi.
 
 Cylindry O’Neilla budowano z metali pozyskiwanych na Lunie lub [Merkurym]{pl/ep-atlas-merkury}, lotnych związków z Luny (w tym lodów polarnych) oraz krzemianów asteroidowych.

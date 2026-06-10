@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Blackrock
 excerpt: Martwa, napromieniowana stacja z zagadkowymi oznakami aktywności
 headerImage: mid-ep-blackrock-head.jpg
 category: ep-atlas-ziemia-orbita
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Blackrock

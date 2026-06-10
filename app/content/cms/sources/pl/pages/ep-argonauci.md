@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Argonauci
 excerpt: Naukowcy propagujący odpowiedzialne używanie technologii, zwolennicy podejścia Open Source
 subtitle: Argonauts
@@ -7,7 +7,7 @@ headerImage: mid-argonauts-head.jpg
 category: ep-konspiracje
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy
@@ -17,10 +17,11 @@ slots:
         - Technoprogresywizm
         ## Główne habitaty
         - [Hooverman-Geischecker]{pl/ep-habitat-hooverman-geischecker} ([Słońce]{pl/ep-atlas-slonce})
-        - Mitre (orbita [Luny]{pl/ep-atlas-luna})
+        - [Mitre]{pl/ep-habitat-mitre} (orbita [Luny]{pl/ep-atlas-luna})
         - Markov ([Pas Kuipera](#))
+lead: |
+  Argonauci to publiczna organizacja propagująca społecznie odpowiedzialne używanie technologii. Grupa nawiązuje nazwą do Jazonów - przed-[Upadkowej]{pl/ep-upadek} grupy doradczej przy rządzie Stanów Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Po Upadku to Argonauci przejęli od Jazonów pałeczkę i oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym Układzie Słonecznym, odmawiając jednocześnie uwikłania się w bieżącą politykę.
 ---
-Argonauci to publiczna organizacja propagująca społecznie odpowiedzialne używanie technologii. Grupa nawiązuje nazwą do Jazonów - [przed-Upadkowej]{pl/ep-upadek} grupy doradczej przy rządzie Stanów Zjednoczonych zajmującej się konsultacjami na temat postępu naukowego i technologicznego i związanych z nim niebezpieczeństw. Po Upadku to Argonauci przejęli od Jazonów pałeczkę i oferują usługi konsultingowe władzom politycznym i ekonomicznym w całym Układzie Słonecznym, odmawiając jednocześnie uwikłania się w bieżącą politykę Układu.
 
 Tuż przed Upadkiem drogi Argonautów i [hiperkorporacji]{pl/ep-hiperkorporacja} rozeszły się, co w wielu przypadkach oznaczało zawłaszczanie przez Argonautów danych i zasobów korporacji. Jednak później, w trakcie Upadku, ich kompetencje i wsparcie, jakiego udzielali wszystkim potrzebującym w walce z [TITAN-ami]{pl/ep-titans}, przywróciło im respekt i poważanie wśród decydentów.
 

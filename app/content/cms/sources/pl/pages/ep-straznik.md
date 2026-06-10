@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Pod-strażnik
 subtitle: Security pod
 excerpt: Pod stworzony jako biorobot ochroniarsko i policyjny
@@ -9,7 +9,7 @@ headerImage: mid-security-pod-head.jpg
 category: ep-pod
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Ulepszenia
@@ -24,7 +24,7 @@ slots:
         - [Pazury](Pazury), [Rzepy](Rzepy), 
         - [Taser](Taser), 
         - [Ulepszony wzrok](Ulepszony+wzrok), 
-        - [T-Radar](T-Radar), 
+        - [T-Radar](T-Radar),
 ---
-[Pody]{pl/ep-pod} strażniczo-ochroniarskie to taśmowo produkowani bio-cybernetyczni żołnierze przeznaczeni do utrzymywania porządku. Przed [Upadkiem]{pl/ep-upadek} były używane jako sztuczni, zarządzani przez [AI](./Encyklopedia/Sztuczna-inteligencja.md) żołnierze w ramach wielonarodowych sił pokojowych oraz w misjach patrolowania granic i utrzymywania porządku w enklawach. W czasie Upadku takie rozwiązanie przestało być brane pod uwagę w związku z przejmowaniem przez [TITAN-ów]{pl/ep-titans} kontroli nad systemami informatycznymi, jednak teraz pody te znowu zaczynają być akceptowane a nawet stają się ulubionymi powłokami najemników używanych przy infiltracjach czy partyzantce.
 
+[Pody]{pl/ep-pod} strażniczo-ochroniarskie to taśmowo produkowani bio-cybernetyczni żołnierze przeznaczeni do utrzymywania porządku. Przed [Upadkiem]{pl/ep-upadek} były używane jako sztuczni, zarządzani przez [AI](./Encyklopedia/Sztuczna-inteligencja.md) żołnierze w ramach wielonarodowych sił pokojowych oraz w misjach patrolowania granic i utrzymywania porządku w enklawach. W czasie Upadku takie rozwiązanie przestało być brane pod uwagę w związku z przejmowaniem przez [TITAN-ów]{pl/ep-titans} kontroli nad systemami informatycznymi, jednak teraz pody te znowu zaczynają być akceptowane a nawet stają się ulubionymi powłokami najemników używanych przy infiltracjach czy partyzantce.

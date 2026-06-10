@@ -1,3 +1,1 @@
-<div class="alert alert-warning" role="alert">
-  {{ content }}
-</div>
+{% include "block/alert-warning.njs" %}

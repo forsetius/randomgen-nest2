@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Memory Hole
 excerpt: Archiwa Stellar Intelligence - magazyn wiedzy i narzędzie memetycznej wojny
 headerImage: mid-ep-memory-hole-head.jpg
 category: ep-atlas-wewnetrzne-asteroidy
 subcategory: mars-trojans
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memory Hole
@@ -17,6 +17,7 @@ slots:
 lead: |
   Bazy danych i archiwa przechowywane w bezpieczeństwie przez [Stellar Intelligence]{pl/ep-stellar-intelligence} w tym [torusie]{pl/ep-torus} to ogromne przedsięwzięcie mające na celu gromadzenie i analizowanie informacji przydatnych dla tej korporacji wywiadowczej, [Konsorcjum Planetarnego]{pl/ep-konsorcjum-planetarne} lub jego różnych klientów. Archiwa te sięgają czasów sprzed [Upadku]{pl/ep-upadek} i zawierają aktualizowane na bieżąco kopie danych oraz ruchu w [Splocie]{pl/ep-splot} rozproszonych po całym Układzie — a nawet dalej.
 ---
+
 Pamiętasz ten kompromitujący post publiczny, który wrzuciłeś w 12 BF? Tak, Stellar prawdopodobnie nadal go ma w swoich zasobach — wraz z pełnym zapisem twojego życia, mapą twoich znajomych, współpracowników i kontaktów, przechwyconymi wiadomościami oraz kopią wszystkich zaszyfrowanych plików, które kiedykolwiek wysłałeś — tak na wypadek, gdyby kiedyś udało się złamać szyfrowanie. Możesz być praktycznie nieśmiertelny, ale twoje bezpieczeństwo danych raczej nie jest, a Stellar liczy na to, że kiedyś znajdzie wśród nich coś soczystego.
 
 Wszystkie te dane są oczywiście atrakcyjnym celem dla kradzieży lub sabotażu, jednak Stellar stosuje jedne z najbrutalniejszych zabezpieczeń sieciowych, jakie istnieją, i niemal na pewno posiada kopie zapasowe wszystkiego w wielu bezpiecznych lokalizacjach.

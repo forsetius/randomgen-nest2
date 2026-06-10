@@ -53,7 +53,7 @@ jobs:
         run: |
           release_id="$(date -u +'%Y-%m-%d_%H-%M-%S')-${GITHUB_SHA::7}"
           echo "release_id=$release_id" >> "$GITHUB_OUTPUT"
-          tar -czf "randomgen-$release_id.tar.gz" -C app dist package.json package-lock.json .npmrc content
+          tar -czf "rpg-$release_id.tar.gz" -C app dist package.json package-lock.json .npmrc content
 
       - name: Configure SSH
         env:
@@ -71,10 +71,10 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.release_id }}
         run: |
           remote="${{ vars.MYDEVIL_USER }}@${{ vars.MYDEVIL_HOST }}"
-          ssh "$remote" "mkdir -p ~/apps/randomgen/staging/incoming"
-          scp "randomgen-$RELEASE_ID.tar.gz" "$remote:~/apps/randomgen/staging/incoming/"
+          ssh "$remote" "mkdir -p ~/apps/rpg/staging/incoming"
+          scp "rpg-$RELEASE_ID.tar.gz" "$remote:~/apps/rpg/staging/incoming/"
           printf '%s\n' "$RUNTIME_ENV" > runtime.env
-          scp runtime.env "$remote:~/apps/randomgen/staging/incoming/runtime.env"
+          scp runtime.env "$remote:~/apps/rpg/staging/incoming/runtime.env"
 
       - name: Install release and restart staging
         env:
@@ -86,8 +86,8 @@ jobs:
 
           [ -n "${GITHUB_PACKAGES_TOKEN:-}" ] || { echo "Missing GH_PACKAGES_TOKEN in remote install step"; exit 1; }
 
-          app_base="$HOME/apps/randomgen/staging"
-          releases_base="$HOME/apps/randomgen/releases"
+          app_base="$HOME/apps/rpg/staging"
+          releases_base="$HOME/apps/rpg/releases"
           incoming_base="$app_base/incoming"
           release_dir="$releases_base/$RELEASE_ID"
           domain_app_js="$HOME/domains/$DOMAIN/public_nodejs/app.js"
@@ -100,7 +100,7 @@ jobs:
           fi
 
           mkdir -p "$release_dir"
-          tar -xzf "$incoming_base/randomgen-$RELEASE_ID.tar.gz" -C "$release_dir"
+          tar -xzf "$incoming_base/rpg-$RELEASE_ID.tar.gz" -C "$release_dir"
           find "$incoming_base" -maxdepth 1 -type f -name '*.tar.gz' -delete
           mkdir -p "$release_dir/content/cms/static/pages"
 
@@ -112,8 +112,8 @@ jobs:
           const path = require('node:path');
           const { parseEnv } = require('node:util');
 
-          const applicationBase = path.join(process.env.HOME, 'apps/randomgen/staging');
-          const releasesBase = path.join(process.env.HOME, 'apps/randomgen/releases');
+          const applicationBase = path.join(process.env.HOME, 'apps/rpg/staging');
+          const releasesBase = path.join(process.env.HOME, 'apps/rpg/releases');
           const runtimeEnvironmentPath = path.join(applicationBase, 'shared/runtime.env');
           const currentReleasePath = path.join(applicationBase, 'current-release');
 
@@ -148,7 +148,7 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.release_id }}
         run: |
           {
-            echo "### Staging release"
+            echo "### RPG staging release"
             echo
             echo "- release_id: \`$RELEASE_ID\`"
             echo "- url: ${{ vars.APP_URL }}"

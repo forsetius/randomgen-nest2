@@ -1,119 +1,52 @@
-template: menu-topbar
+template: menu/topbar
 menu:
-  - title: My expertise
-    columns:
-      - title: <i class="text-warning bi bi-braces-asterisk"></i> Programming
-        items:
-          - title: Skills
-            url: "@{en/prog-skills}"
-            text: My coding skills
-
-      - title: <i class="text-warning bi bi-code-slash"></i> Experience
-        url: "@{en/prog-experience}"
-        text: "I have had the opportunity to work with quite a variety of projects: from backends in Symfony or Nest.js, through chat over websockets, to APIs connecting sensors and cameras with displays, ticketing systems, and barriers."   
-        colspan: 2
-        repeatTitle: false
-        items:
-          - title: Parking systems
-            url: "@{en/prog-parking-systems}"
-            text: "Systems integrating sensors, cameras, displays, and backoffice applications for parking management"
-          - title: Casinos
-            url: "@{en/prog-casinos}"
-            text: "Platform supporting casinos, games, payments, and all player-related activities"
-          - title: 1-on-1 Conversations
-            url: "@{en/prog-1on1}"
-            text: "A tool for HR departments for 1-on-1 conversations with employees"
-          - title: Job placement
-            url: "@{en/prog-job-placement}"
-            text: "Advanced system for broadcasting job offers and collecting applications"
-          - title: Tool requisition
-            url: "@{en/prog-requisitions}"
-            text: "Mobile app allowing employees to request tool purchases"
-          - title: Application for a window manufacturer
-            url: "@{en/prog-windows}"
-            text: "Application with an overview of orders, documents, and window rack rentals"
-
-  - title: Projects
-    columns:
-      - title: <i class="text-warning bi bi-layout-wtf"></i> Mod_CMS
-        items:
-          - title: Presentation
-            url: "@{en/mod_cms}"
-            text: CMS module generating static HTML pages
-            # - title: Technical details
-            #   url: "@{en/mod_cms-technikalia}"
-            #   text: Implementation and integration in NestJS
-      - title: <i class="text-warning bi bi-layout-sidebar-inset-reverse"></i> Web-pane
-        items:
-          - title: Presentation and download
-            url: "@{en/web-pane}"
-            text: Handy "cheat sheet windows" floating above other windows
-          - title: Instructions
-            url: "@{en/web-pane-user-guide}"
-            text: How to use and fully utilize `web-pane`
-          - title: Technica l details
-            url: "@{en/web-pane-technical}"
-            text: Implementation aspects of `web-pane`
-      - title: <i class="text-warning bi bi-easel"></i> Other projects
-        items:
-          - title: RandomGen
-            url: "@{en/randomgen}"
-            text: Various content generators, mainly for RPGs
-
   - title: Blog
-    url: "@{en/blog}"
+    url: '@{en/blog}'
 
-  - separator: "|"
+  - separator: '|'
 
-  - title: Hobbies
+  # - title: <i class="text-warning bi bi-plus-square"></i> UniMechanika
+  #   text: "Uniwersalna mechanika do gier fabularnych i jej implementacje"
+  #   items:
+  #     - title: Zasady podstawowe
+  #       url: "@{pl/rpg-unimechanika}"
+  #       text: "Podstawowe zasady Unimechaniki: tworzenie postaci, akcje i testy, walka, zagrożenia"
+  #
+  #     - title: Dodatki
+  #       url: "@{pl/rpg-unimechanika-dodatki}"
+  #       text: "Dodatki do Unimechaniki: tabele broni, pancerzy i tarcz, rasy fantasy i przeciwnicy"
+
+  - title: Generators
     columns:
-      - title: <i class="text-warning bi bi-globe-europe-africa"></i> Role Playing Games
+      - title: Technobabble
         items:
-          - title: Eclipse Phase
-            url: "@{en/eclipse-phase}"
-            text: Hard science-fiction game of conspiracy and horror
+          - title: Technobabble generator
+            url: '@{en/generator-technobabble}'
+          - title: 'Technicalities'
+            url: '@{en/generator-technobabble-technical}'
 
-      - title: <i class="text-warning bi bi-stars"></i> Astronomy
-        items:
-          - title: Celestia
-            url: "@{en/celestia}"
-            text: |-
-              Nieco zapomniana już aplikacja, Celestia jest symulatorem Kosmosu. 
-              Od poziomu widoku z orbity po panoramy galaktyk, pozwala zawrzeć bliższą znajomość z obiektami, 
-              które na niebie są tylko kropkami.  
+#  - title: RPG
+#    columns:
+#      - title: Przygody
+#        url: "@{pl/rpg-scenariusze}"
+#        text: Scenariusze do gier fabularnych
+#        items:
+#          - title: Jaskółki [Dungeons & Dragons 5e]
+#            url: "@{pl/dnd-scenariusz-jaskolki}"
+#            text: Rada Wojenna Waterdeep wysyła drużynę, aby zdobyła magiczne ingrediencje do artefaktów przeciw smokom. Tymczasem w miasteczku Greenest rozpleniło się zło...
+#
+#          - title: Krew dla boga krwi [Dungeons & Dragons 5e]
+#            url: "@{pl/dnd-scenariusz-krew-dla-boga-krwi}"
+#            text: Po krwawych atakach orków, miejscowy kasztelan organizuje poszukiwania ich obozowiska na stokach tajemniczej góry
+#
+#          - title: Ego Sum [Eclipse Phase]
+#            url: "@{pl/ep-scenariusz-ego-sum}"
+#            text: Kilka postaci budzi się w rozbitym kontenerze na lodowych pustkowiach Tytana. Wkrótce przekonują się, że czyha na nich nie tylko surowa natura.
 
-          - title: Lokacje w Układzie Słonecznym
-            url: "@{en/planetary-names-scraper}"
-            text: |-
-              Aplikacja, która wyciąga nazwy lokalizacji na ciałach niebieskich Układu Słonecznego 
-              i konwertuje je na format symulatora Celestia
-
-      - title: <i class="text-warning bi bi-display"></i> Other
-        items:
-        - title: Dioramas
-          url: "@{en/dioramas}"
-          text: Small, modular dioramas
-
-        - title: Geopolitics
-          url: "@{en/geopolitics}"
-          text: State of the World and other overarching topics
-
-        - title: Outdoors
-          url: "@{en/outdoors}"
-          text: Sometimes my gf or I get struck by the wanderlust...
-
-  - separator: "|"
-
-  - title: Resources
-    columns:
-      - title: <i class="text-warning bi bi-gear-wide-connected"></i> Generators
-        items:
-          - title: Technobabble
-            url: "@{en/2022-01-03_technobabble-generator}"
-            text: Generator of Star Trek pseudo-technical gibberish
-
-      - title: <i class="text-warning bi bi-download"></i> Do pobrania
-        items:
-          - title: Solar System locations
-            url: "@{en/solar-system-locations}"
-            text: International Astronomical Union-approved names for craters, mountains, valleys, and other locations in the Solar System
+#  - title: Do pobrania
+#    columns:
+# - title: <i class="text-warning bi bi-download"></i> Do pobrania
+#   items:
+#     - title: Lokacje w Układzie Słonecznym
+#       url: "@{pl/lokacje-uklad-slonecznym}"
+#       text: Zatwierdzone przez Międzynarodową Unię Astronomiczną nazwy kraterów, gór, dolin i innych lokacji w Układzie Słonecznym

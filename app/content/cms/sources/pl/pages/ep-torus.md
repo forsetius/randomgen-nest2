@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Torus
 headerImage: mid-torus-head.jpg
 excerpt: Toroidalne habitaty kosmiczne, obecnie już nie konstruowane
@@ -10,6 +10,7 @@ lead: |
 category: ep-habitat
 subcategory: kosmiczne
 ---
+
 **Torusy** – zwane zamiennie toroidami, obręczami, kołami albo po prostu pączkami – to okrągłe [habitaty]{pl/ep-habitat} kosmiczne, które stanowiły tańszą alternatywę dla [cylindrów O’Neilla]{pl/ep-cylinder-oneilla}, wykorzystywaną głównie w mniejszych instalacjach. Podobnie jak O’Neille, torusy obecnie rzadko się buduje, ale wiele z nich nadal funkcjonuje w [wewnętrznym Układzie Słonecznym]{pl/ep-wewnetrze}, zwłaszcza na [orbitach Ziemi]{pl/ep-atlas-ziemia-orbita} i [Luny]{pl/ep-atlas-luna}.
 
 Typowy habitat toroidalny wygląda jak obracający się pączek o średnicy 1 kilometra, osadzony na wielkich szprychach. Port kosmiczny znajduje się w centralnej części koła, w strefie zerowej grawitacji. Odwiedzający zjeżdżają windą wzdłuż szprychy na poziom obręczy, gdzie obrót konstrukcji wytwarza grawitację równą ziemskiej.
@@ -19,4 +20,3 @@ Plany torusów są bardzo zróżnicowane – wiele z nich projektowano do konkre
 Torusy przystosowane do rolnictwa zwykle ustawione są przodem do Słońca, w osi prostopadłej do ich osi obrotu, a do uzyskania cyklu dnia i nocy używają powolnego precesyjnego kołysania całej konstrukcji.
 
 Większość torusów była budowana dla niewielkich załóg – do 500 osób, choć istnieją także większe egzemplarze, zdolne pomieścić nawet 50 000 mieszkańców. Rzadko spotykanym wariantem są torusy podwójne – dwie duże obręcze obracające się w przeciwnych kierunkach, połączone w osi.
-

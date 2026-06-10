@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Orbitalni eksploratorzy
 excerpt: Eksploracja i eksploatacja opuszczonych instalacji orbitalnych
 headerImage: mid-torus-head.jpg
@@ -7,7 +7,7 @@ category: ep-atlas-ziemia-orbita
 subcategory: more
 
 lead: |
-  Dla niektórych bliskość reliktów [Upadku]{pl/ep-upadek} to ekscytujące wyzwanie – czy to dla poszukiwaczy mocnych wrażeń, czy dla tych, którzy widzą tu okazję do zysku. Na orbicie wokółziemskiej kultura zbieraczy i eksploratorów jest silnie obecna – dzięki łatwemu dostępowi do licznych zrujnowanych stacji. 
+  Dla niektórych bliskość reliktów [Upadku]{pl/ep-upadek} to ekscytujące wyzwanie – czy to dla poszukiwaczy mocnych wrażeń, czy dla tych, którzy widzą tu okazję do zysku. Na orbicie wokółziemskiej kultura zbieraczy i eksploratorów jest silnie obecna – dzięki łatwemu dostępowi do licznych zrujnowanych stacji.
 ---
 
 Zbieracze występują wszędzie, działając solo, w małych grupach albo w ramach finansowanych operacji. Poza plądrowaniem opuszczonych habitatów w poszukiwaniu utraconej wiedzy, [infomorfów]{pl/ep-infomorf} lub innych wartościowych rzeczy, wielu na stałe zajmuje się zbieraniem i sortowaniem kosmicznych śmieci i zagubionych części dryfujących na orbicie. Eksploratorzy są równie powszechni, często to znudzeni [celebryci]{pl/ep-celebryci}, którzy cenią sobie odkrywanie map dawnych stacji i grzebanie w ruinach przeszłości. Niektórzy eksploratorzy-salonowcy organizują nawet spontaniczne imprezy towarzyskie w martwych stacjach, gdzie uczestnicy mogą tańczyć całą noc w stanie nieważkości albo znajdować inne sposoby na zabawę.

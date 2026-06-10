@@ -1,7 +1,7 @@
 ---
-template: page-default
+template: page/noaside-sf
 title: Stronnictwa
-excerpt: Ruchy społeczne i ideologiczne odłamy transludzkości 
+excerpt: Ruchy społeczne i ideologiczne odłamy transludzkości
 headerImage: mid-ep-factions-head.jpg
 category: ep-encyklopedia
 subcategoryName: Stronnictwa

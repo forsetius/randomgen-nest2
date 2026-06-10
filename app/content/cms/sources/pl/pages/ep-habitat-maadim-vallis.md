@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ma'adim Vallis i miasto Pathfinder
 headerImage: mid-ep-maadim-vallis-head.jpg
 excerpt: Lokalizacja Wrót Marsjańskich w Ma’adim Vallis i miasta Pathfinder
 category: ep-atlas-mars
 subcategory: habitaty
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Pathfinder
@@ -17,6 +17,7 @@ slots:
 lead: |
   **Ma’adim Vallis** to kanion mniejszy niż niektóre inne doliny na Marsie, ale wciąż robiący ogromne wrażenie – jego rozmiary przewyższają nawet [Wielki Kanion]() na [Ziemi]{pl/ep-atlas-ziemia}. Około 400 metrów od wejścia do kanionu od strony [krateru Gusev](https://planetarynames.wr.usgs.gov/Feature/2289) znajduje się idealnie cylindryczne wycięcie o średnicy 10 metrów w jednej ze ścian. Wejście do tej struktury ma szerokość około 3 metrów. W samym centrum tej przestrzeni, pod gołym niebem, znajdują się Wrota Marsjańskie, obecnie zarządzana przez [hiperkorporację]{pl/ep-hiperkorporacja} [Pathfinder]{pl/ep-pathfinder}.
 ---
+
 Wrota zostały pierwotnie odkryte przez wędrujących na południe sufickich nomadów z rejonu Krateru Guseva. O znalezisku szybko dowiedzieli się przedstawiciele [Konsorcjum]{pl/ep-konsorcjum-planetarne}, którzy, zrozumiawszy jego wartość, próbowali odkupić teren od nomadów. Gdy próba negocjacji zakończyła się niepowodzeniem, zakupili teren prawnie, wykorzystując fakt, że obszar nie należał do żadnego uznawanego rządu. Następnie wynajęli firmę ochroniarską **Herzog** z obszaru Valles Marineris, która przejęła kontrolę nad miejscem i siłą usunęła suficką społeczność.
 
 Istnieją pogłoski, że jeden z sufich – będący [asynkiem]{pl/ep-asynk} – zdołał aktywować Wrota i część jego klanu zdążyła przez nią przejść przed interwencją Herzoga. Informacja ta nie została jednak potwierdzona.

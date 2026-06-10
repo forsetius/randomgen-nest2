@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Lumina
 excerpt: Laboratoria naukowe i kurort dla elit na Merkurym
 headerImage: mid-ep-mercury-economy-head.jpg
@@ -7,7 +7,7 @@ category: ep-atlas-merkury
 subcategory: habitaty
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Lumina
@@ -17,6 +17,7 @@ slots:
 lead: |
   Położona w kraterze Aristoxenes, w pobliżu bieguna północnego [Merkurego]{pl/ep-atlas-merkury}, Lumina to niezwykła osada [hiperkorpowa]{pl/ep-hiperkorporacja}. Znaczną część kolonii zajmują rozległe pola kolektorów słonecznych, rozmieszczone na grzbiecie licznych szczytów – zarówno naturalnych, jak i sztucznych – które pozostają nieprzerwanie oświetlone przez Słońce.
 ---
+
 Zebrana przez te kolektory energia wykorzystywana jest do zasilania energochłonnych procesów badań i produkcji jądrowej oraz radiochemicznej – takich jak produkcja izotopów czy ekstrakcja produktów rozszczepienia. Całość tych instalacji, łącznie z akceleratorem cząstek do badań fizyki jądrowej, mieści się w kompleksie podziemnych tuneli. Dostęp do stacji prowadzi przez wiecznie zacienione ściany krateru, co czyni ten rejon również dobrym miejscem do pozyskiwania zamarzniętej wody. W projektach i operacjach Luminy uczestniczy liczne grono hiperkorpów. Nie trzeba dodawać, że środki bezpieczeństwa są wyjątkowo rygorystyczne.
 
 Poza swoim praktycznym zastosowaniem, Lumina mieści również niespodziewany luksusowy kurort. Żartobliwie określana jako „najlepsze miejsce na opalanie w całym Układzie Słonecznym”, strefa kurortowa jest niewielka, ale ekstrawagancka. Oferowane tu usługi skierowane są do najwyższych sfer hiperelit, które muszą osobiście pojawić się na Merkurym w celach służbowych.

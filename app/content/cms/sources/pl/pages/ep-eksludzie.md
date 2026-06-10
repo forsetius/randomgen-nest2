@@ -1,13 +1,13 @@
 ---
-template: page-default
+template: page/default-sf
 title: Eksludzie
 subtitle: Exhumans
-excerpt: Frakcja pragnąca ulepszać się by przekroczyć limity człowieczeństwa i stać się postludźmi 
+excerpt: Frakcja pragnąca ulepszać się by przekroczyć limity człowieczeństwa i stać się postludźmi
 headerImage: leo-exhumans-head.jpg
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy
@@ -17,6 +17,7 @@ slots:
         ## Główne habitaty
         - nieznane
 ---
+
 Bardziej niż jakiekolwiek inne stronnictwo, eksludzie pragną osiągnąć absolutne maksimum samo-modyfikacji i w rezultacie stać się [postludźmi](http://pl.wikipedia.org/wiki/Postcz%C5%82owiek). Typowi eksludzie postrzegają [Upadek]{pl/ep-upadek} jako przegapioną szansę ewolucyjną i/lub jako przykład ułomności transludzkości.
 
 Choć grupy eksludzi różnią się między sobą ideologiami, to ogólnie chcą samo-wyewoluować się do wyższego stanu bytu. Dla niektórych oznacza to genetyczne przekształcenie się w superbystrego, zdolnego przetrwać wszędzie [drapieżnika alfa](http://en.wikipedia.org/wiki/Apex_predator), który może przewyższyć wszystkie inne formy życia. Dla innych oznacza to rozwinięcie własnej inteligencji do poziomu inteligencji [TITAN-ów]{pl/ep-titans} przez rozległe modyfikacje genetyczne i terapie farmakologiczne. Inni jeszcze zostają [infomorfami]{pl/ep-infomorf} i próbują modyfikować swój kod źródłowy.

@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Ministerstwo i Zgromadzenie Konsorcjum Planetarnego
 excerpt: Reprezentacja polityczna hiperkorporacji członkowskich Konsorcjum Planetarnego
 headerImage: leo-planetary-consortium-head.jpg
@@ -7,6 +7,7 @@ category: ep-konsorcjum-planetarne
 subcategory: organy
 sort: 2
 ---
+
 ## Ministerstwo
 
 To, czym [Kongres Planetarny]{pl/ep-kongres-planetarny} jest dla obywateli, tym **Ministerstwo** jest dla [hiperkorpów]{pl/ep-hiperkorporacja}. Każda hiperkorporacja posiadająca pełne członkostwo w [Konsorcjum]{pl/ep-konsorcjum-planetarne} ma prawo powołać jednego ministra. To właśnie ministrowie ustanawiają prawo w sprawach kluczowych dla funkcjonowania Konsorcjum — w szczególności w zakresie handlu, biotechnologii, obrony cywilnej, imigracji, bezpieczeństwa, terraformowania, stosunków z [Faktorami](#) i kolonizacji.

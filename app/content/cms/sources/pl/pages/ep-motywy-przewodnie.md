@@ -1,19 +1,22 @@
 ---
-template: page-default
+template: page/default-sf
 title: Motywy przewodnie
 headerImage: mid-ep-themes-head.jpg
 category: eclipse-phase
 subcategory: more
 excerpt: Transhumanizm, postapokalipsa, konspiracja i groza
+slots:
+  asideRight:
+    - type: toc
 lead: |
-    W Eclipse Phase przewija się kilka istotnych motywów przewodnich:
-    
-    *   **transhumanizm** - jak ulepszenia człowieka wpływają na niego samego i jego kulturę? jakie wiążą się z nimi zagrożenia i możliwości?
-    *   **postapokaliptyczny** - transludzkość przegrała, straciła niemal wszystko. Jak przetrwać? Jak to przetrwanie zmieni transludzi?
-    *   **konspiracja** - czy masy są zdolne do osiągnięcia dobrostanu, czy muszą mieć ukrytych pasterzy, którzy lepiej wiedzą, co dla nich dobre? I któż obroni owe masy przed złowrogimi manipulatorami, gotowymi dla własnej korzyści skrycie je zniewolić?
-    *   **groza** - czego nauczymy się w dzieciństwie wydaje nam się naturalne, to co przychodzi później - sprzeczne z naturą, zagrażające. Zmiana wpisana jest w rzeczywistość Eclipse Phase a [Upadek]{pl/ep-upadek} spowodował, że zmiany te są drastyczne. Mówiąc o Upadku - wydobył on z transludzi wszystkie te skazy naszej duszy, które sprawiają, że potrafimy być prawdziwymi potworami; efekty są czasem wstrząsające. Ale transczłowiek i jego społeczeństwo to nie wszystko - Kosmos jest obcy i przeogromny i chowa w sobie przerażające tajemnice.
+  W Eclipse Phase przewija się kilka istotnych motywów przewodnich:
 
+  *   **transhumanizm** - jak ulepszenia człowieka wpływają na niego samego i jego kulturę? jakie wiążą się z nimi zagrożenia i możliwości?
+  *   **postapokaliptyczny** - transludzkość przegrała, straciła niemal wszystko. Jak przetrwać? Jak to przetrwanie zmieni transludzi?
+  *   **konspiracja** - czy masy są zdolne do osiągnięcia dobrostanu, czy muszą mieć ukrytych pasterzy, którzy lepiej wiedzą, co dla nich dobre? I któż obroni owe masy przed złowrogimi manipulatorami, gotowymi dla własnej korzyści skrycie je zniewolić?
+  *   **groza** - czego nauczymy się w dzieciństwie wydaje nam się naturalne, to co przychodzi później - sprzeczne z naturą, zagrażające. Zmiana wpisana jest w rzeczywistość Eclipse Phase a [Upadek]{pl/ep-upadek} spowodował, że zmiany te są drastyczne. Mówiąc o Upadku - wydobył on z transludzi wszystkie te skazy naszej duszy, które sprawiają, że potrafimy być prawdziwymi potworami; efekty są czasem wstrząsające. Ale transczłowiek i jego społeczeństwo to nie wszystko - Kosmos jest obcy i przeogromny i chowa w sobie przerażające tajemnice.
 ---
+
 ## Transhumanizm
 
 [Transhumanizm](http://pl.wikipedia.org/wiki/Transhumanizm) to pojęcie używane zamiennie z "ulepszaniem człowieka". Jest to światowy ruch kulturalno-intelektualny popierający rozwój nauki i techniki oraz używanie ich w celu poprawy kondycji ludzkiej. Poprawa ta wyrażałaby się w eliminacji chorób, starości, niedostatku przy jednoczesnym rozszerzaniu możliwości fizycznych i umysłowych istoty transludzkiej. Umożliwiło by to transczłowiekowi pełniejsze życie wolne od trosk, znosząc przy tym ograniczenia, które przykuwają go do Starego Globu.
@@ -52,12 +55,12 @@ Teorie te uznają, że za zdarzeniem (czy łańcuchem zdarzeń), którzy niewtaj
 
 W Eclipse Phase istnieją zarówno realne konspiracje (jak choćby [Zapora]{pl/ep-zapora} – organizacja chroniąca transludzkość przed [zagrożeniami godzącymi w jej dalszą egzystencję](http://en.wikipedia.org/wiki/Global_catastrophic_risk), jak i mnogość teorii spiskowych. Te ostatnie biorą się z wielu źródeł:
 
-*   z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITAN-ami]{pl/ep-titans} a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
-*   z utrudnień w przepływie informacji między poszczególnymi [habitatami]{pl/ep-habitat}, rozdzielonymi od siebie pustką Kosmosu czy nawet [Wrotami pandoriańskimi](#). Brakujące informacje na temat złowróżbnych zdarzeń uzupełnia się wtedy zatrważającymi przypuszczeniami, a nawet _trans_ludzki umysł ma tendencję do szukania wzorców i celowości
-*   z traumy Upadku – transludzie, którzy przeżyli apokalipsę często boją się powtórki. Słabsi psychiczne wszędzie upatrują symptomów knowań TITAN-ów i ich sekretnych sprzymierzeńców. W latach po Upadku wielokrotnie doprowadziło to do polowań na czarownice a nawet pogromów i zniszczenia całych habitatów, na które padł cień podejrzenia.
-*   z rozpaczy uciemiężonych mas niewolników [hiperkorpów]{pl/ep-hiperkorporacja}, i innych rzuconych na dno nieszczęśników, którzy chcą widzieć sprawców swojego nieszczęścia
-*   z paranoi prawdziwych spiskowców, mierzących innych swoją miarą
-*   z nadmiaru wyzwań i nowych odkryć, których jeszcze nie zdążono satysfakcjonująco wyjaśnić - Obcy, wrota pandoriańskie, artefakty TITAN-ów i wymarłych cywilizacji rozpalają wyobraźnię nie pojedynczych transludzi, ale całych mas!
+- z chaosu informacyjnego, jaki towarzyszył Upadkowi – głównie wojnie [memetycznej](http://pl.wikipedia.org/wiki/Memetyka) jaka toczyła się między [TITAN-ami]{pl/ep-titans} a transludzkością (oraz między poszczególnymi frakcjami transludzkości)
+- z utrudnień w przepływie informacji między poszczególnymi [habitatami]{pl/ep-habitat}, rozdzielonymi od siebie pustką Kosmosu czy nawet [Wrotami pandoriańskimi](#). Brakujące informacje na temat złowróżbnych zdarzeń uzupełnia się wtedy zatrważającymi przypuszczeniami, a nawet \_trans_ludzki umysł ma tendencję do szukania wzorców i celowości
+- z traumy Upadku – transludzie, którzy przeżyli apokalipsę często boją się powtórki. Słabsi psychiczne wszędzie upatrują symptomów knowań TITAN-ów i ich sekretnych sprzymierzeńców. W latach po Upadku wielokrotnie doprowadziło to do polowań na czarownice a nawet pogromów i zniszczenia całych habitatów, na które padł cień podejrzenia.
+- z rozpaczy uciemiężonych mas niewolników [hiperkorpów]{pl/ep-hiperkorporacja}, i innych rzuconych na dno nieszczęśników, którzy chcą widzieć sprawców swojego nieszczęścia
+- z paranoi prawdziwych spiskowców, mierzących innych swoją miarą
+- z nadmiaru wyzwań i nowych odkryć, których jeszcze nie zdążono satysfakcjonująco wyjaśnić - Obcy, wrota pandoriańskie, artefakty TITAN-ów i wymarłych cywilizacji rozpalają wyobraźnię nie pojedynczych transludzi, ale całych mas!
 
 Z drugiej strony, nikt nie jest w stanie zapewnić, że wszystkie teorie spisku to tylko wymysł. A może prawda jest bardziej przerażająca niż jakakolwiek teoria?
 

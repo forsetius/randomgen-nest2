@@ -1,12 +1,12 @@
 ---
-template: page-default
+template: page/default-sf
 title: Nanosocjalizm
 headerImage: mid-ep-nonosocjalizm-head.jpg
 excerpt: Model gospodarczo-społeczny, w którym kluczową rolę odgrywa automatyzacja, nanotechnologia i post-scarcity
 category: ep-ekonomia
 sort: 4
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy
@@ -18,6 +18,7 @@ slots:
         - [Locus](#)
         - [Hooverman-Geischecker]{pl/ep-habitat-hooverman-geischecker}
 ---
+
 To model gospodarczo-społeczny charakterystyczny dla niektórych autonomistycznych habitatów i wspólnot transludzkich, w którym kluczową rolę odgrywa automatyzacja, nanotechnologia i post-scarcity (świat po niedoborze).
 
 ## W nanosocjalizmie
@@ -29,6 +30,7 @@ To model gospodarczo-społeczny charakterystyczny dla niektórych autonomistyczn
 - Wkład jednostki mierzony jest raczej przez [reputację](#) (np. a-rep, i-rep) niż przez pieniądz czy majątek.
 
 ## Przykłady nanosocjalizmu
-- [Wspólnota Tytana]{pl/ep-wspolnota-tytana} opiera się częściowo na nanosocjalistycznych zasadach, łącząc je z [technokratycznym](https://pl.wikipedia.org/wiki/Technokracja_(polityka)) [republikanizmem](https://pl.wikipedia.org/wiki/Republikanizm).
+
+- [Wspólnota Tytana]{pl/ep-wspolnota-tytana} opiera się częściowo na nanosocjalistycznych zasadach, łącząc je z [technokratycznym](<https://pl.wikipedia.org/wiki/Technokracja_(polityka)>) [republikanizmem](https://pl.wikipedia.org/wiki/Republikanizm).
 - Niektóre habitaty anarchistów (np. [Locus](#)) rozwijają bardziej skrajne formy nanosocjalizmu, często całkowicie eliminując rynki towarowe.
 - Habitaty badawcze, takie jak [Hooverman-Geischecker]{pl/ep-habitat-hooverman-geischecker}, wdrażają go jako efektywny i etyczny model wspólnej pracy naukowej i dzielenia się zasobami.

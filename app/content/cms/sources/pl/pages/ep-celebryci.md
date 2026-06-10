@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: Celebryci
 subtitle: Glitterati
 excerpt: Kasta ultrabogaczy bez umiaru żyjących chwilą
@@ -7,7 +7,7 @@ headerImage: leo-ep-glitterati-head.jpg
 category: ep-stronnictwa
 
 slots:
-  aside:
+  asideRight:
     - type: static
       content: |
         ## Memy
@@ -20,7 +20,8 @@ slots:
         - [Elizjum]{pl/ep-habitat-elizjum} ([Mars]{pl/ep-atlas-mars})
         - [Noctis-Qianjiao]{pl/ep-habitat-noctis-qianjiao} ([Mars]{pl/ep-atlas-mars})
 ---
-[Kopiowanie umysłu]{pl/ep-ego} i [przyodziewanie]{pl/ep-przyodziewanie} pozwoliło wreszcie uzyskać praktyczną nieśmiertelność - tym, których na to stać. To spowodowało zmianę wśród elit [Wewnętrza]{pl/ep-wewnetrze} - czy to prezesów [hiperkorpów]{pl/ep-hiperkorporacja}, członków starych dynastii czy innych oligarchów. Najbardziej wpływowi i bogaci nie musieli już obawiać się śmierci i mogli planować naprawdę dalekosiężnie. 
+
+[Kopiowanie umysłu]{pl/ep-ego} i [przyodziewanie]{pl/ep-przyodziewanie} pozwoliło wreszcie uzyskać praktyczną nieśmiertelność - tym, których na to stać. To spowodowało zmianę wśród elit [Wewnętrza]{pl/ep-wewnetrze} - czy to prezesów [hiperkorpów]{pl/ep-hiperkorporacja}, członków starych dynastii czy innych oligarchów. Najbardziej wpływowi i bogaci nie musieli już obawiać się śmierci i mogli planować naprawdę dalekosiężnie.
 
 Członkowie elit stojący niżej w hierarchii mieli mniej szczęścia - nie mogą już liczyć na naturalne przekazanie im władzy i bogactwa, wspięcia się na szczyty hierarchii i zastąpienia przywódców alfa. mają wprawdzie bardziej-niż-komfortowe życia i dostęp do ogromnych fortun... ale żadnych widoków na przejęcie kontroli nad tymi fortunami czy pozycji starszych rodu. Zresztą nie tylko zawiedzeni spadkobiercy grają w drugiej lidze bogaczy - nie zaliczają się do niej też nuworysze, którzy może i doszli sami do podobnej potęgi, co ekstraklasa, ale wciąż musieliby pożyć z pięćdziesiąt lat, by przestać być uważanymi za młodzików.
 

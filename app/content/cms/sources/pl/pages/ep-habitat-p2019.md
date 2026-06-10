@@ -1,5 +1,5 @@
 ---
-template: page-default
+template: page/default-sf
 title: P/2019
 excerpt: Na tej komecie wykryto ślady struktur i emisje podobne do aktywności TITAN-ów.
 headerImage: leo-ep-p2019-head.jpg
