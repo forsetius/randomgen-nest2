@@ -1,7 +1,12 @@
 import { Star } from '../domain/Star';
+import { Mass } from '../domain/valueObjects';
+
+export interface StarSeed {
+  readonly mass: Mass;
+}
 
 export class StarFactory {
-  public createStar(): Star {
-    return new Star();
+  public createStar(seed: Readonly<StarSeed>): Star {
+    return new Star(seed.mass);
   }
 }

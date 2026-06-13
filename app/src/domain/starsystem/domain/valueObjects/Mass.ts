@@ -6,9 +6,17 @@ export const SUN_MASS = BigInt(1.9886e30);
 export const MIN_STAR_MASS = 80n * JUPITER_MASS;
 export const MAX_STAR_MASS = 300n * SUN_MASS;
 export const MIN_BROWN_DWARF_MASS = 13n * JUPITER_MASS;
+const SOLAR_MASS_SCALE = 1_000_000n;
 
 export class Mass extends ValueObject<bigint> {
   public readonly unit = 'kg';
+
+  public static fromSunMasses(sunMasses: number): Mass {
+    return new Mass(
+      (BigInt(Math.floor(sunMasses * Number(SOLAR_MASS_SCALE))) * SUN_MASS) /
+        SOLAR_MASS_SCALE,
+    );
+  }
 
   public getAsEarthMass(): number {
     return Number(this.value / EARTH_MASS);
