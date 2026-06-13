@@ -7,6 +7,7 @@ import { AppService } from './services/AppService';
 import { TechnobabbleModule } from '../domain/technobabble/TechnobabbleModule';
 import { CmsModule } from '../cms/CmsModule';
 import { configBindings } from './ConfigBindings';
+import { StarSystemModule } from '../domain/starsystem/StarSystemModule';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { configBindings } from './ConfigBindings';
     SecurityModule,
     CmsModule,
     TechnobabbleModule,
+    StarSystemModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -8,6 +8,7 @@ import { Mass } from '../domain/valueObjects';
 import { MAX_STAR_MASS, MIN_STAR_MASS } from '../domain/valueObjects/Mass';
 import { rollBetween, rollStarMassBetween } from '../util/rollBetween';
 import { StarFactory } from './StarFactory';
+import { Injectable } from '@nestjs/common';
 
 type Multiplicity = 'single' | 'binary' | 'triple';
 type BinaryRelation = 'close' | 'wide';
@@ -17,6 +18,7 @@ const CLOSE_BINARY_EQUALITY_EXPONENT = 0.75;
 const WIDE_BINARY_EQUALITY_EXPONENT = 1.6;
 const OUTER_BINARY_PRIMARY_MAX_RATIO = 0.45;
 
+@Injectable()
 export class StarHierarchyGenerator {
   public constructor(private readonly starFactory: StarFactory) {}
 
