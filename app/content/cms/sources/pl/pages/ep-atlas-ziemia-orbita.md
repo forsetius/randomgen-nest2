@@ -12,10 +12,10 @@ slots:
     - type: static
       content: |
         ## Rodzaje orbit
-        - **LEO**: Niska orbita okołoziemska (Low Earth Orbit). Od 150 do 2 000 km nad poziomem morza. Obecnie dolny zakres tej strefy to teren objęty ograniczeniami, chroniony przez kordon satelitów bojowych rozmieszczonych na wysokości 300–350km, które zestrzeliwują wszystko, co próbuje się przez nie przedostać w obie strony.
-        - **MEO**: Średnia orbita okołoziemska (Medium Earth Orbit). Od 2 000 do 35 786 km nad poziomem morza.
-        - **GEO**: Orbita geostacjonarna (Geosynchronous Orbit). 35 786 km nad poziomem morza i blisko równika, odpowiadająca okresowi obrotu Ziemi względem gwiazd. Obiekty na orbicie geostacjonarnej (bez nachylenia) wydają się z powierzchni pozostawać w stałym miejscu na niebie.
-        - **HEO**: Wysoka orbita okołoziemska (High Earth Orbit). Powyżej 35 786 km nad poziomem morza.
+        - **LEO**: Niska orbita okołoziemska (Low Earth OrbitData). Od 150 do 2 000 km nad poziomem morza. Obecnie dolny zakres tej strefy to teren objęty ograniczeniami, chroniony przez kordon satelitów bojowych rozmieszczonych na wysokości 300–350km, które zestrzeliwują wszystko, co próbuje się przez nie przedostać w obie strony.
+        - **MEO**: Średnia orbita okołoziemska (Medium Earth OrbitData). Od 2 000 do 35 786 km nad poziomem morza.
+        - **GEO**: Orbita geostacjonarna (Geosynchronous OrbitData). 35 786 km nad poziomem morza i blisko równika, odpowiadająca okresowi obrotu Ziemi względem gwiazd. Obiekty na orbicie geostacjonarnej (bez nachylenia) wydają się z powierzchni pozostawać w stałym miejscu na niebie.
+        - **HEO**: Wysoka orbita okołoziemska (High Earth OrbitData). Powyżej 35 786 km nad poziomem morza.
 
     - type: pageGallery
       template: page-gallery/aside-cards
