@@ -8,4 +8,11 @@ export class Acceleration extends ValueObject<number> {
   public getAsEarthG(): number {
     return this.value / EARTH_GRAVITY;
   }
+
+  public override toJSON(): object {
+    return {
+      value: this.value,
+      earthG: this.getAsEarthG(),
+    };
+  }
 }

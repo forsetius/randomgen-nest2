@@ -6,4 +6,6 @@ export abstract class ValueObject<T> {
   public isEqual(other: ValueObject<T>): boolean {
     return other.unit === this.unit && other.value === this.value;
   }
+
+  public abstract toJSON(): object;
 }

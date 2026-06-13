@@ -19,4 +19,12 @@ export class Period extends ValueObject<Duration> {
   public getHumanized(locale: string): string {
     return this.value.reconfigure({ locale }).toHuman({ showZeros: false });
   }
+
+  public override toJSON(): object {
+    return {
+      value: this.value.toJSON(),
+      years: this.getAsYears(),
+      days: this.getAsDays(),
+    };
+  }
 }
