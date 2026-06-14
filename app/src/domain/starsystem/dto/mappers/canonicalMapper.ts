@@ -7,6 +7,11 @@ import type {
   StarData,
   StarSystemData,
 } from '../../types';
+import {
+  formatAlphabeticOrdinal,
+  formatHierarchyBarycenterName,
+  normalizeHierarchyPath,
+} from '../../util/canonicalBodyNaming';
 import type { StarSystemResponseDto } from '../StarSystemResponseDto';
 
 interface HierarchyMappingResult {
@@ -23,8 +28,20 @@ const DEFAULT_TIME_UNIT = 'day';
 export function canonicalMapper(starSystem: StarSystem): StarSystemResponseDto {
   const responseId = randomUUID();
   const systemName = `Generated star system ${responseId.slice(0, 8)}`;
-  const hierarchyData = mapHierarchyNode(starSystem.root, 'root', 1);
-  const starSystemData: StarSystemData = {
+  const starSystemData =
+    starSystem.data ?? buildFallbackHierarchyData(starSystem.root);
+
+  return {
+    id: responseId,
+    name: systemName,
+    starSystem: starSystemData,
+  };
+}
+
+function buildFallbackHierarchyData(root: StarHierarchyNode): StarSystemData {
+  const hierarchyData = mapHierarchyNode(root, 'root', 1);
+
+  return {
     rootBodyId: hierarchyData.rootBodyId,
     referenceEpoch: DEFAULT_REFERENCE_EPOCH,
     defaultLengthUnit: DEFAULT_LENGTH_UNIT,
@@ -37,12 +54,6 @@ export function canonicalMapper(starSystem: StarSystem): StarSystemResponseDto {
     coOrbitalGroupIds: [],
     coOrbitalGroups: [],
   };
-
-  return {
-    id: responseId,
-    name: systemName,
-    starSystem: starSystemData,
-  };
 }
 
 function mapHierarchyNode(
@@ -52,7 +63,7 @@ function mapHierarchyNode(
 ): HierarchyMappingResult {
   if (node.kind === 'single') {
     const starSuffix = formatAlphabeticOrdinal(nextStarOrdinal);
-    const starId = `body-${normalizePath(path)}-star-${starSuffix.toLowerCase()}`;
+    const starId = `body-${normalizeHierarchyPath(path)}-star-${starSuffix.toLowerCase()}`;
     const starData: StarData = {
       id: starId,
       type: 'star',
@@ -78,9 +89,9 @@ function mapHierarchyNode(
     primaryResult.nextStarOrdinal,
   );
   const barycenterData: BarycenterData = {
-    id: `body-${normalizePath(path)}-barycenter`,
+    id: `body-${normalizeHierarchyPath(path)}-barycenter`,
     type: 'barycenter',
-    name: `${formatBarycenterName(path)} barycenter`,
+    name: `${formatHierarchyBarycenterName(path)} barycenter`,
     memberBodyIds: [primaryResult.rootBodyId, secondaryResult.rootBodyId],
     computedMass: node.mass,
   };
@@ -94,34 +105,4 @@ function mapHierarchyNode(
     ],
     nextStarOrdinal: secondaryResult.nextStarOrdinal,
   };
-}
-
-function normalizePath(path: string): string {
-  return path.replaceAll('.', '-');
-}
-
-function formatBarycenterName(path: string): string {
-  if (path === 'root') {
-    return 'Root';
-  }
-
-  return path
-    .split('.')
-    .map((segment) => {
-      return segment.charAt(0).toUpperCase() + segment.slice(1);
-    })
-    .join(' ');
-}
-
-function formatAlphabeticOrdinal(ordinal: number): string {
-  let remaining = ordinal;
-  let result = '';
-
-  while (remaining > 0) {
-    const zeroBasedOrdinal = (remaining - 1) % 26;
-    result = String.fromCharCode(65 + zeroBasedOrdinal) + result;
-    remaining = Math.floor((remaining - 1) / 26);
-  }
-
-  return result;
 }

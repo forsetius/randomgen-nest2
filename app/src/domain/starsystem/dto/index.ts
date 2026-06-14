@@ -2,6 +2,13 @@ export {
   StarSystemRequestSchema,
   type StarSystemRequestDto,
 } from './StarSystemRequestDto';
+export type {
+  BriefSystemData,
+  BriefPlanetData,
+  BriefStarData,
+  BriefStarSystemResponseDto,
+  BriefTopology,
+} from './BriefStarSystemResponseDto';
 export type { StarSystemResponseDto } from './StarSystemResponseDto';
 export type {
   AsteroidBeltData,
@@ -23,4 +30,5 @@ export type {
   StarData,
   StarSystemData,
 } from '../types';
+export { briefMapper } from './mappers/briefMapper';
 export { canonicalMapper } from './mappers/canonicalMapper';

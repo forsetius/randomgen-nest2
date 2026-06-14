@@ -1,4 +1,4 @@
-export type { TechnobabbleModuleConfig } from './StarSystemModuleConfigContract';
+export type { StarSystemModuleConfig } from './StarSystemModuleConfigContract';
 export { StarSystemModuleConfigContract } from './StarSystemModuleConfigContract';
 export type {
   AsteroidBeltData,

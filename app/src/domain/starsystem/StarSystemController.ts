@@ -21,6 +21,20 @@ export class StarSystemController {
     return DTO.canonicalMapper(this.generator.generate());
   }
 
+  @Get(['/api/1.0/starsystem/brief'])
+  @ZodSchema(({ langs }) => ({
+    query: DTO.StarSystemRequestSchema({
+      langs,
+    }),
+  }))
+  public generateBrief(
+    @ParsedArgs() params: DTO.StarSystemRequestDto,
+  ): DTO.BriefStarSystemResponseDto {
+    console.log(`Generating brief star system for ${params.lang}...`);
+
+    return DTO.briefMapper(this.generator.generate());
+  }
+
   @Get(['/api/1.0/astronomenclature/name'])
   public getAstroName(): string {
     return 'Coprulu IV';

@@ -13,6 +13,7 @@ import * as Config from './config';
 import { APP_CONFIG_ENV_PREFIX, APP_ROOT } from '../appConstants';
 import type { AppModuleOptions } from './types/AppModuleOptions';
 import { CmsModuleConfigContract } from '../cms/CmsModuleConfigContract';
+import { StarSystemModuleConfigContract } from '../domain/starsystem/types';
 import { TechnobabbleModuleConfigContract } from '../domain/technobabble/types/TechnobabbleModuleConfigContract';
 import { parseConfigData, type ExternalConfigData } from './ExternalConfigData';
 import { Env } from '../shared/types/Env';
@@ -40,6 +41,10 @@ export const configBindings: AppConfigRootOptions = new AppConfigBuilder<
   .setup(SpamCheckConfigContract, Config.resolveSpamCheckModuleConfig)
   .setup(ValidationConfigContract, Config.resolveValidationModuleConfig)
   .setup(TemplatingConfigContract, Config.resolveTemplatingModuleConfig)
+  .setup(StarSystemModuleConfigContract, {
+    contentDir: 'content/starsystem',
+    additionalPlanetBearingSystemAttempts: 3,
+  })
   .setup(TechnobabbleModuleConfigContract, {
     contentDir: 'content/technobabble',
   })

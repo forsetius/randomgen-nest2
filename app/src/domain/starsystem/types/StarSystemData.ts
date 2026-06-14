@@ -113,6 +113,7 @@ export interface PhysicalBodyData extends CommonBodyData {
 
 export interface BarycenterData extends CommonBodyData {
   type: 'barycenter';
+  orbitId?: string;
   memberBodyIds: string[];
   computedMass: Mass;
 }
