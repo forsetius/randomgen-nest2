@@ -22,6 +22,21 @@ Reason:
 - JSON is the easiest format to inspect, test, persist, and adapt
 - Celestia export is important, but it is a projection, not the source of truth
 
+### Hybrid Canonical Astronomical Model
+
+The target JSON model should use:
+
+- one top-level `system` record
+- first-class `bodies`
+- first-class `orbits`
+- first-class `coOrbitalGroups`
+
+Reason:
+
+- nested stellar systems need explicit barycenters
+- explicit orbit records are easier to validate and export than implicit tree edges
+- co-orbital objects such as trojans should be representable without inventing a full resonance-analysis subsystem
+
 ### Astrophysics-Informed But RPG-Usable
 
 The generator is intended to follow current astrophysical understanding while remaining useful for RPG scenario design.
@@ -36,14 +51,15 @@ Reason:
 - support for single, binary, and triple systems is the immediate stellar scope
 - Celestia is the first export target
 - future exporters such as SpaceEngine are possible but not currently planned in detail
-- object and field inventories below the stellar layer are still undecided
+- the astronomical object catalog now includes stars, barycenters, planets, dwarf planets, moons, ring systems, asteroid belts, and selected minor bodies
+- general resonance modeling is deferred; targeted co-orbital grouping is in scope
 
 ## Deferred Decisions
 
 The following decisions are intentionally deferred to the next documentation step:
 
 - the full catalog of generated object types
-- the exact JSON schema beyond the current stellar hierarchy
-- which astrophysical properties are mandatory for each object
-- which RPG-facing descriptive properties are mandatory for each object
-- how Celestia-specific metadata maps from canonical generated data
+- which documented canonical properties are mandatory at generation time
+- how bigint-backed value objects become stable public JSON values
+- which additional RPG-facing descriptive properties should exist above the astronomical layer
+- how Celestia-specific file fields are derived from canonical generated data

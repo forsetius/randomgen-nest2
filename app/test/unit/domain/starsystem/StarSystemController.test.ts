@@ -9,7 +9,7 @@ import {
 import type { StarSystemGenerator } from '../../../../src/domain/starsystem/generator/StarSystemGenerator';
 
 describe('StarSystemController', () => {
-  it('returns the hierarchical response shape', () => {
+  it('returns the wrapped star system response shape', () => {
     const generator = {
       generate: jest.fn(() => {
         return new StarSystem(new SingleStarNode(new Star(new Mass(SUN_MASS))));
@@ -22,9 +22,21 @@ describe('StarSystemController', () => {
 
     const result = controller.generate({ lang: 'en' });
 
-    expect(result).toHaveProperty('root');
-    expect(result.root.kind).toBe('single');
-    expect(result).not.toHaveProperty('innerSystem');
-    expect(result).not.toHaveProperty('outerSystem');
+    expect(result.id).toMatch(
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i,
+    );
+    expect(result.name).toEqual(expect.any(String));
+    expect(result.starSystem.rootBodyId).toBe('body-root-star-a');
+    expect(result.starSystem.bodies).toEqual([
+      {
+        id: 'body-root-star-a',
+        type: 'star',
+        name: 'Star A',
+        mass: new Mass(SUN_MASS),
+      },
+    ]);
+    expect(result.starSystem.orbits).toEqual([]);
+    expect(result.starSystem.coOrbitalGroups).toEqual([]);
+    expect(result).not.toHaveProperty('root');
   });
 });

@@ -68,20 +68,59 @@ That means the current API documentation should be read as:
 ## Planned Evolution
 
 The eventual JSON output is expected to become the main serialized representation of a generated system.
-That future JSON contract will likely include data for:
+That future JSON contract is expected to use a canonical astronomical model with top-level collections for `system`, `bodies`, `orbits`, and `coOrbitalGroups`.
 
-- stars and stellar subsystems
-- orbital relationships
-- planets and dwarf planets
-- moons
-- rings
-- asteroid belts
-- selected individual minor bodies
-- metadata needed by exporters such as Celestia
+Illustrative target shape:
 
-This future contract is not defined yet and should be documented only after the object inventory and field requirements are agreed.
+```ts
+interface CanonicalStarSystemJson {
+  system: {
+    id: string;
+    name: string;
+    rootBodyId: string;
+    referenceEpoch: string;
+    defaultLengthUnit: string;
+    defaultAngleUnit: string;
+    defaultTimeUnit: string;
+    bodyIds: string[];
+    orbitIds: string[];
+    coOrbitalGroupIds: string[];
+  };
+  bodies: CanonicalBodyJson[];
+  orbits: CanonicalOrbitJson[];
+  coOrbitalGroups: CanonicalCoOrbitalGroupJson[];
+}
+```
+
+The target canonical contract should be able to represent:
+
+- `barycenter`
+- `star`
+- `planet`
+- `dwarfPlanet`
+- `moon`
+- `ringSystem`
+- `asteroidBelt`
+- `minorBody`
+
+It should also carry first-class orbit records and co-orbital grouping metadata for objects such as trojans or other libration-point bodies.
+
+Detailed field inventory lives in [Architecture](./Architecture.md).
+
+## Canonical Semantics
+
+The planned canonical API model should follow these rules:
+
+- every standalone astronomical object gets a stable body `id`
+- every orbiting object references its orbit through `orbitId`
+- every orbit record names both `primaryBodyId` and `orbitingBodyId`
+- barycenters are represented explicitly as bodies rather than inferred on the fly
+- co-orbital objects do not share one literal orbit record by definition; they may instead reference comparable individual orbit records and a shared `coOrbitalGroupId`
+
+This keeps the model explicit enough for dynamical reasoning and future Celestia `.ssc` export without hardwiring exporter-specific fields into the public transport contract today.
 
 ## Compatibility Note
 
 The module no longer exposes the removed `innerSystem` / `outerSystem` response model.
-Current and future work should assume the hierarchy-first API shape.
+Current work should keep the hierarchy-first stellar semantics, even if the future canonical JSON contract normalizes them into `rootBodyId`, `bodies`, and `orbits`.
+The current HTTP endpoint still returns only the minimal stellar-hierarchy DTO, so the canonical contract above is a documented target rather than an already-live response schema.

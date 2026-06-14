@@ -8,6 +8,7 @@ Its long-term goal is to generate usable fictional systems for science-fiction R
 The current implementation stops at stellar hierarchy generation.
 It produces a single, binary, or triple star hierarchy with generated stellar masses and exposes that hierarchy as JSON.
 Planetary systems, dwarf planets, moons, rings, asteroid belts, selected asteroids, and export files are planned but not implemented yet.
+The target canonical astronomical model is now documented as a hybrid JSON structure with first-class bodies, orbits, and co-orbital groups.
 
 ## How to Run or Integrate
 
@@ -72,6 +73,7 @@ Illustrative response shape:
 ```
 
 At the moment, the hierarchy shape is stable, but the final external JSON representation of `Mass` still needs to be formalized before the module can treat it as a stable public contract.
+The documented canonical model should therefore be read as the target contract shape, not as the exact wire format already returned by the current endpoint.
 
 ## Links to Deeper Docs
 

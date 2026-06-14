@@ -18,6 +18,11 @@ export class StarSystemController {
   ): DTO.StarSystemResponseDto {
     console.log(`Generating star system for ${params.lang}...`);
 
-    return this.generator.generate();
+    return DTO.canonicalMapper(this.generator.generate());
+  }
+
+  @Get(['/api/1.0/astronomenclature/name'])
+  public getAstroName(): string {
+    return 'Coprulu IV';
   }
 }
