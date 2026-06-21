@@ -44,6 +44,8 @@ export function briefMapper(
   return {
     id: randomUUID(),
     topology: describeSupportedTopology(starSystem.root),
+    starCount: systems.map((system) => system.system.stars.length),
+    planetCount: systems.map((system) => system.system.planets.length),
     systems: systems.map((system) => system.system),
   };
 }

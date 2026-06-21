@@ -25,7 +25,7 @@ import type { PlanetaryHostZone } from './OrbitalZoneDeriver';
 
 const DEFAULT_REFERENCE_EPOCH = 'J2000';
 const MINIMUM_ZONE_SPAN_RATIO = 1.2;
-const MAXIMUM_PLANETS_PER_HOST = 6;
+// const MAXIMUM_PLANETS_PER_HOST = 6;
 
 interface ArchitectureProfile {
   minimumHillSpacing: number;
@@ -228,7 +228,8 @@ export class PlanetaryOrbitGenerator {
       Math.floor(Math.log(spanRatio) / Math.log(1.8)) +
       (architectureProfile.maximumHillSpacing <= 14 ? 2 : 1);
 
-    return Math.max(1, Math.min(MAXIMUM_PLANETS_PER_HOST, approximateCount));
+    // return Math.max(1, Math.min(MAXIMUM_PLANETS_PER_HOST, approximateCount));
+    return Math.max(1, approximateCount);
   }
 
   private rollFirstPlanetSeed(

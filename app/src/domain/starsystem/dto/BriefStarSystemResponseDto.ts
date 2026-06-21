@@ -37,4 +37,6 @@ export interface BriefStarSystemResponseDto {
   id: string;
   topology: BriefTopology;
   systems: BriefSystemData[];
+  starCount: number[];
+  planetCount: number[];
 }
